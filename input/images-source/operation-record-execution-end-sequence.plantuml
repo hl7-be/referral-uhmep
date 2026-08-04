@@ -1,0 +1,13 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+alt No assignment exists
+Client->API: POST /Task with completed status
+API->API: Validate start and end
+API-->Client: 201 Created
+else Execution already started
+Client->API: PATCH /Task/{executionID}
+API->API: Add executionPeriod.end
+API-->Client: 200 OK
+end
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: DELETE /Task/{executionID}
+API->API: Verify task exists and status is ready
+API->API: Verify caller may remove the assignment
+API->API: Delete task
+API-->Client: 204 No Content
+@enduml

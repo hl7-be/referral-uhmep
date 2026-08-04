@@ -1,0 +1,8 @@
+@startuml
+participant Performer
+participant "FHIR API" as API
+Performer->API: PATCH /Task/{executionId}
+API->API: Validate radiology task and performer rights
+API->API: Apply accepted, substituted or rejected outcome
+API-->Performer: 200 OK
+@enduml

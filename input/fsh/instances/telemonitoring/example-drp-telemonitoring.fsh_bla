@@ -1,0 +1,153 @@
+Instance: example-drp-telemonitoring-full
+InstanceOf: ServiceRequestTelemonitoring
+Title: "Example: Telemonitoring referral - full"
+Description: "Full telemonitoring ServiceRequest example intended for hospitals and the patient."
+Usage: #example
+
+* extension[validity].url = $be-ext-validity-period
+* extension[validity].valuePeriod.start = "2026-05-22"
+* extension[validity].valuePeriod.end = "2026-11-22"
+* extension[statusReason].url = $request-statusReason
+* extension[statusReason].valueCodeableConcept.text = "urn:be:fgov:pseudo:v2:status-reason-telemonitoring-active"
+* extension[statusReason].valueCodeableConcept.text.extension[0].url = $be-ext-pseudonymization
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[0].url = "marker"
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[0].valueBoolean = true
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].url = "format"
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].valueCode = #direct
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].url = "version"
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 2
+
+// Monitoring plan: body weight change of 2 kg over 3 days.
+* extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][0].extension[parameter].url = "parameter"
+* extension[monitoringPlan][0].extension[parameter].valueCodeableConcept = $loinc#29463-7 "Body weight"
+* extension[monitoringPlan][0].extension[change][0].url = "change"
+* extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.value = 2
+* extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.code = #kg
+* extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.value = 3
+* extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.code = #d
+
+// Monitoring plan: systolic blood pressure alert threshold.
+* extension[monitoringPlan][1].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][1].extension[parameter].url = "parameter"
+* extension[monitoringPlan][1].extension[parameter].valueCodeableConcept = $loinc#8480-6 "Systolic blood pressure"
+* extension[monitoringPlan][1].extension[threshold][0].url = "threshold"
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].url = "range"
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.value = 160
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.code = #mm[Hg]
+
+// Monitoring plan: diastolic blood pressure alert threshold.
+* extension[monitoringPlan][2].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][2].extension[parameter].url = "parameter"
+* extension[monitoringPlan][2].extension[parameter].valueCodeableConcept = $loinc#8462-4 "Diastolic blood pressure"
+* extension[monitoringPlan][2].extension[threshold][0].url = "threshold"
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].url = "range"
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].valueRange.low.value = 100
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].valueRange.low.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].valueRange.low.code = #mm[Hg]
+
+// Monitoring plan: heart rate alert threshold.
+* extension[monitoringPlan][3].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][3].extension[parameter].url = "parameter"
+* extension[monitoringPlan][3].extension[parameter].valueCodeableConcept = $loinc#8867-4 "Heart rate"
+* extension[monitoringPlan][3].extension[threshold][0].url = "threshold"
+* extension[monitoringPlan][3].extension[threshold][0].extension[range].url = "range"
+* extension[monitoringPlan][3].extension[threshold][0].extension[range].valueRange.low.value = 110
+* extension[monitoringPlan][3].extension[threshold][0].extension[range].valueRange.low.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][3].extension[threshold][0].extension[range].valueRange.low.code = #/min
+
+* contained[0] = telemonitoring-hospital-encounter
+* contained[1] = telemonitoring-patient-consent
+* status = #active
+* intent = #order
+* category[discipline] = $sct#363679005
+* category[prescriptionType] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type#chronic-heart-failure
+* code = $sct#84114007 "Heart failure"
+* subject.identifier.use = #official
+* subject.identifier.system = $be-ns-ssin
+* subject.identifier.value = "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}"
+* subject.identifier.value.extension[0].url = $be-ext-pseudonymization
+* subject.identifier.value.extension[0].extension[0].url = "marker"
+* subject.identifier.value.extension[0].extension[0].valueBoolean = true
+* subject.identifier.value.extension[0].extension[1].url = "format"
+* subject.identifier.value.extension[0].extension[1].valueCode = #direct
+* subject.identifier.value.extension[0].extension[2].url = "version"
+* subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
+* occurrenceTiming.repeat.boundsDuration.value = 6
+* occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
+* occurrenceTiming.repeat.boundsDuration.code = #mo
+* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #d
+* authoredOn = "2026-05-22T09:30:00+02:00"
+* requester = Reference(PractitionerRole/72101230445-PHYSICIAN)
+* encounter.reference = "#telemonitoring-hospital-encounter"
+* supportingInfo[0].reference = "#telemonitoring-patient-consent"
+* reasonCode[0] = $sct#410429000 "Cardiac arrest due to underlying cardiac condition"
+* reasonCode[1] = $sct#48724000 "Mitral valve regurgitation"
+* reasonCode[2] = $sct#49436004 "Atrial fibrillation"
+* reasonCode[3] = $sct#30288003 "Ventricular septal defect"
+* reasonCode[4] = $sct#698247007 "Cardiogenic shock"
+* reasonCode[5] = $sct#3238004 "Acute pericarditis"
+* reasonCode[6] = $sct#84114007 "Heart failure"
+* reasonCode[7] = $sct#22298006 "Myocardial infarction"
+* reasonCode[8] = $sct#50920009 "Myocarditis"
+* reasonCode[9] = $sct#70995007 "Pulmonary hypertension"
+* reasonCode[10] = $sct#90688005 "Chronic renal insufficiency"
+* reasonCode[11] = $sct#233604007 "Pneumonia"
+* note[0].extension[0].url = $be-ext-codeable-concept
+* note[0].extension[0].valueCodeableConcept.coding[0].system = $be-cs-note-types
+* note[0].extension[0].valueCodeableConcept.coding[0].code = #general-remarks
+* note[0].text = "urn:be:fgov:pseudo:v2:patient-should-be-contacted-if-thresholds-are-exceeded"
+* note[0].text.extension[0].url = $be-ext-pseudonymization
+* note[0].text.extension[0].extension[0].url = "marker"
+* note[0].text.extension[0].extension[0].valueBoolean = true
+* note[0].text.extension[0].extension[1].url = "format"
+* note[0].text.extension[0].extension[1].valueCode = #direct
+* note[0].text.extension[0].extension[2].url = "version"
+* note[0].text.extension[0].extension[2].valuePositiveInt = 2
+
+Instance: example-drp-telemonitoring-provider
+InstanceOf: ServiceRequestTelemonitoringProviderView
+Title: "Example: Telemonitoring referral - provider view"
+Description: "Reduced telemonitoring ServiceRequest example intended for telemonitoring providers. It keeps non-clinical routing data and the inline telemonitoring plan only."
+Usage: #example
+
+* extension[validity].url = $be-ext-validity-period
+* extension[validity].valuePeriod.start = "2026-05-22"
+* extension[validity].valuePeriod.end = "2026-11-22"
+* extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][0].extension[parameter].url = "parameter"
+* extension[monitoringPlan][0].extension[parameter].valueCodeableConcept = $loinc#29463-7 "Body weight"
+* extension[monitoringPlan][0].extension[change][0].url = "change"
+* extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.value = 2
+* extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.code = #kg
+* extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.value = 3
+* extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.code = #d
+* extension[monitoringPlan][1].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][1].extension[parameter].url = "parameter"
+* extension[monitoringPlan][1].extension[parameter].valueCodeableConcept = $loinc#8480-6 "Systolic blood pressure"
+* extension[monitoringPlan][1].extension[threshold][0].url = "threshold"
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].url = "range"
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.value = 160
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.code = #mm[Hg]
+* extension[monitoringPlan][2].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][2].extension[parameter].url = "parameter"
+* extension[monitoringPlan][2].extension[parameter].valueCodeableConcept = $loinc#8867-4 "Heart rate"
+* extension[monitoringPlan][2].extension[threshold][0].url = "threshold"
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].url = "range"
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].valueRange.low.value = 110
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].valueRange.low.system = "http://unitsofmeasure.org"
+* extension[monitoringPlan][2].extension[threshold][0].extension[range].valueRange.low.code = #/min
+* status = #active
+* intent = #order
+* category[discipline] = $sct#363679005
+* category[prescriptionType] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type#chronic-heart-failure
+* subject.extension[dataAbsentReason].url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* subject.extension[dataAbsentReason].valueCode = #masked

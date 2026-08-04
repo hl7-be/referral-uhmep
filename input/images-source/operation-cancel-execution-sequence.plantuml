@@ -1,0 +1,7 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: PATCH /Task/{executionID}
+API->API: Replace Task.status by cancelled
+API-->Client: 200 OK
+@enduml

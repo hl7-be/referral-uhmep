@@ -1,0 +1,10 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: POST /ServiceRequest
+API->API: Rewrite federal profile when needed
+API->API: Validate profile, requester, patient and access rights
+API->API: Persist ServiceRequest
+API->API: Create related BeReferralTask
+API-->Client: 201 Created + Location
+@enduml

@@ -1,0 +1,27 @@
+        
+<div id="ig-nav">
+  {% if site.data.fhir.ig.publisher == "Smals Platform" %}
+  <a id="smals-logo" no-external="true" href="index.html">
+    <img alt="Smals" src="https://smals.be/themes/custom/websmals_bs4/logo.svg"/>
+  </a>
+  {% elsif site.data.fhir.ig.publisher == "Riziv-Inami Platform" %}
+  <a id="riziv-inami-logo" no-external="true" href="index.html">
+    <img alt="Smals" src="assets/images/logo-riziv-inami.png"/>
+  </a>
+  <!-- no fitting stylesheet found (status/publisher)-->
+  {% endif %}
+</div>
+<div id="uhmep-header-brand">
+  {% if site.data.fhir.ig.publisher == "Smals Platform" %}
+  <a id="uhmep-logo" no-external="true" href="index.html">
+    <img alt="UHMEP Referral Implementation Guide" src="assets/images/uhmep-referral-ig-logo.png"/>
+  </a>
+  {% elsif site.data.fhir.ig.publisher == "Riziv-Inami Platform" %}
+  <a id="eReferral-logo" no-external="true" href="index.html">
+    <img alt="eReferral Implementation Guide" src="assets/images/eReferral-logo.png" width="150px"/>
+  </a>
+  <!-- no fitting stylesheet found (status/publisher)-->
+  {% endif %}
+
+  <span class="uhmep-version-badge">v{{site.data.fhir.ig.version}}</span>
+</div>

@@ -1,0 +1,8 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: GET /ServiceRequest/{id} or POST /ServiceRequest/_search
+API->API: Check visibility, suspension, privacy and access matrix
+API->API: Resolve matching ServiceRequest resources
+API-->Client: ServiceRequest or Bundle
+@enduml

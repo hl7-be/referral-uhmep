@@ -1,0 +1,8 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: POST /Task
+API->API: Validate focus, partOf, owner and assignment rights
+API->API: Persist BePerformerTask or BeOrganizationTask
+API-->Client: 201 Created + Location
+@enduml

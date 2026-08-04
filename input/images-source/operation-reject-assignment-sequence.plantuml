@@ -1,0 +1,8 @@
+@startuml
+participant Caregiver
+participant "FHIR API" as API
+Caregiver->API: PATCH /Task/{executionId}
+API->API: Verify assignment can be rejected
+API->API: Replace Task.status by rejected
+API-->Caregiver: 200 OK
+@enduml

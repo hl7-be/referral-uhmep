@@ -1,0 +1,15 @@
+@startuml
+participant Prescriber
+participant "FHIR API" as API
+alt Approve proposal
+Prescriber->API: POST /ServiceRequest/{id}/$approve
+API->API: Validate proposal and prescriber rights
+API->API: Create approved prescription and update tasks
+API-->Prescriber: 200 OK + Parameters.location
+else Reject proposal
+Prescriber->API: POST /ServiceRequest/{id}/$reject
+API->API: Validate proposal and prescriber rights
+API->API: Mark proposal workflow as rejected
+API-->Prescriber: 200 OK + Parameters.location
+end
+@enduml

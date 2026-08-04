@@ -1,0 +1,12 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: DELETE /Task/{oldExecutionID}
+API->API: Verify old task status is ready
+API-->Client: 204 No Content
+Client->API: POST /Task for new professional
+API->API: Validate new owner and assignment rights
+API-->Client: 201 Created
+Client->API: GET /Task?based-on={ServiceRequestID}
+API-->Client: Bundle with updated task graph
+@enduml

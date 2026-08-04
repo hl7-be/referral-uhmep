@@ -1,0 +1,8 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: PATCH /ServiceRequest/{prescriptionId}
+API->API: Check ownership and visibility rules
+API->API: Replace ServiceRequest.status by revoked
+API-->Client: 200 OK
+@enduml

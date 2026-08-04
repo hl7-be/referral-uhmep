@@ -1,0 +1,9 @@
+@startuml
+participant Client
+participant "FHIR API" as API
+Client->API: PATCH /Task/{prescriptionId}
+API->API: Verify related performer tasks are not in-progress
+API->API: Derive global execution period
+API->API: Mark BeReferralTask as completed
+API-->Client: 200 OK
+@enduml
