@@ -3,7 +3,7 @@ url: https://www.ehealth.fgov.be/standards/fhir/drp
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: hl7.fhir.be.drp-fix
+id: be.smals.fhir.drp-fix
 name: eReferral Prescription
 title: eReferral Prescription Implementation Guide
 description: eReferral Prescription Implementation Guide
