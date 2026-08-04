@@ -1,0 +1,21 @@
+ValueSet: BeVSParameterType
+Id: be-vs-parameter-type
+Title: "eReferral Parameter Type"
+Description: "Types of parameters/vital signs that can be measured."
+* ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-parameter-type"
+* ^experimental = false
+* ^copyright = """This value set includes content from SNOMED CT, which is copyright Â© 2002+ International Health Terminology Standards Development Organisation (IHTSDO)."""
+* $sct-version#75367002 "Blood Pressure (observable entity)"
+* $sct-version#163033001 "Lying Blood Pressure (observable entity)"
+* $sct-version#163034007 "Standing Blood Pressure (observable entity)"
+* $sct-version#8499008 "Pulse, function (observable entity)"
+* $sct-version#431314004 "Peripheral oxygen saturation (observable entity)"
+* $sct-version#415882003 "Axillary temperature (observable entity)"
+* $sct-version#86290005 "Respiratory rate (observable entity)"
+* $sct-version#162098000 "Frequency of defecation (observable entity)"
+* $sct-version#27113001 "Body weight (observable entity)"
+* $sct-version#246124003 "Volume of urine produced (observable entity)"
+* $sct-version#225908003 "Pain score (observable entity)"
+* $sct-version#364632003 "Pain character (observable entity)"
+* $sct-version#364689004 "Stool observable (observable entity)"
+* $sct-version#363787002 "Observable entity"
