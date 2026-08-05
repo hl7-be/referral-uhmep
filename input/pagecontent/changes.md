@@ -2,7 +2,7 @@ This page documents the changes to the eReferral Implementation Guide specificat
 
 ---
 
-## **2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4**
+### **2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4**
 
 #### Cookbook integration
 The legacy eReferral API cookbook (`UHMEP_API_cookbook.pdf`) has been fully integrated into this Implementation Guide. This IG now supersedes the cookbook and serves as the single source of truth for integrators. See [Cookbook migration notes](cookbook-migration-notes.html) for details.
