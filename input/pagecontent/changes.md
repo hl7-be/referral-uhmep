@@ -44,13 +44,14 @@ Field-by-field mapping table has been added for radiology prescription, showing 
 
 #### Machine-to-Machine (M2M) integration
 The following operations have been expanded to support M2M workflows:
-1. **[Create Medical Document](operation-create-medical-document.html)** — now supports creation of a medical document by an internal professional of an organization
+1. **[Create Medical Document](operation-create-medical-document.html)** — now supports creation of a medical document, prescription or proposal, by an internal professional of an organization
 2. **[Assign Care Provider](operation-assign-care-provider.html)** — expanded to:
    - Assign to an organization (`BeOrganizationTask`)
    - Assign to an internal professional within an organization (`BePerformerTask`)
-3. **[Record Execution Start](operation-record-execution-start.html)** — now supports:
-   - Initiation by an internal professional of an organization via POST
-4. **[Unassign Care Provider](operation-unassign-care-provider.html)** — new operation to withdraw assignments of an organization or internal professional from a prescription
+3. **[Record Execution Start](operation-record-execution-start.html)** — now supports initiation by an internal professional of an organization via POST
+4. **[Unassign Care Provider](operation-unassign-care-provider.html)** — operation to withdraw assignments of an organization or internal professional from a prescription
+5. **[Evaluate Proposal](operation-evaluate-proposal.html)** — now supports evaluation by an internal professional of an organization
+6. **[Evaluate Radiology Prescription](operation-evaluate-radiology-prescription.html)** — supports evaluation by an internal professional of an organization
 
 
 #### Security & privacy

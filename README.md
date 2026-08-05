@@ -1,4 +1,4 @@
-8# eReferral Implementation Guide — For Integrators 📖
+# eReferral Implementation Guide — For Integrators 📖
 
 Welcome! This is the **eReferral Implementation Guide** — your step-by-step reference for integrating your system with the **UHMEP eReferral REST API**.
 
