@@ -6,21 +6,20 @@ This table maps the business fields to the corresponding FHIR elements.
 
 ### Business fields
 
-| Business field               | Values / constraints                                                                                                    | Data type              | Notes |
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------| --- |
-| Prescription type            | Optional imaging prescription type category.                                                                            | code                   |  |
-| Discipline                   | Required diagnostic imaging discipline.                                                                                 | code                   |  |
-| Track                        | Optional request track when applicable.                                                                                 | code                   |  |
-| Requested imaging            | Required requested imaging procedure.                                                                                   | code                   | Main imaging request. |
-| Priority                     | Optional request priority. When the value is `urgent`, an urgency justification must also be present.                   | code                   |  |
-| Urgency justification        | Required when priority is `urgent`; value must be encrypted with a pseudonymized key.                                                        | String                 | Pseudonymized free text. |
-| Patient                      | Required patient identity. `subject.reference`, `subject.identifier`, and the contained Patient must remain consistent. | Reference / Identifier | Contained Patient reference; SSIN identifier must follow pseudonymization rules. |
-| Patient birthdate            | Required patient birthdate input.                          | Date                   | `Patient.birthDate` must not carry a clear value; the encrypted date is carried in `_birthDate` with `be-ext-pseudonymized-content`. |
-| Patient gender at birth      | Required gender at birth.                                                                                               | code                      | The visible code is fixed to administrative gender `other`; the actual value is encrypted in `be-ext-pseudonymized-content`. |
-| Additionnal relevant information             | Required imaging attention conditions checklist.                                                                        | Reference              | Must reference the contained `eReferralImagingAttentionConditionsResponse`. |
-| Patient condition | Zero or more Patient conditions. Use either an allowed code or encrypted free text in `CodeableConcept.text`. | code                   |  |
-| Prior request                | Zero or more prior imaging request references or coded/textual prior-request details.                                   | Reference / code       | Captures relevant prior imaging request information. |
-| Status reason                | Optional status reason; textual reason details must be encrypted with a pseudonymized key.                                                   | code                   | Text must be encrypted with a pseudonymized key. |
+| Business field               | Values / constraints                                                                                         | Data type              | Notes                                                                                                                                |
+|------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| Prescription type            | Required                                                                                                     | code                   | Required imaging prescription type.                                                                                                  |
+| Discipline                   | Required                                                                                                     | code                   | Required diagnostic imaging discipline.                                                                                              |
+| Track                        | Required.<br>Possible values:<br>- inpatient <br> - ambulatory <br> - urgency                                | code                   | Required request track.                                                                                                              |
+| Requested imaging            | Required                                                                                                     | code                   | Imaging request.                                                                                                                     |
+| Priority                     | Required                                                                                                     | code                   | Optional request priority. When the value is `urgent`, an urgency justification must also be present.                                |
+| Urgency justification        | Required when priority is `urgent`.                                                                          | String                 | Value must be encrypted with a pseudonymized key                                                                                     |
+| Patient                      | Required                                                                                                     | Reference / Identifier | Contained Patient reference; SSIN identifier must follow pseudonymization rules.                                                     |
+| Patient birthdate            | Required                                                                                                     | Date                   | `Patient.birthDate` must not carry a clear value; the encrypted date is carried in `_birthDate` with `be-ext-pseudonymized-content`. |
+| Patient gender at birth      | Required                                                                                                     | code                      | The visible code is fixed to administrative gender `other`; the actual value is encrypted in `be-ext-pseudonymized-content`.         |
+| Additionnal relevant information             | Required                                                                                                     | Reference              | Must reference the contained `eReferralImagingAttentionConditionsResponse`.                                                          |
+| Patient condition | One or more Patient conditions. Use either an allowed code or encrypted free text in `CodeableConcept.text`. | code                   |                                                                                                                                      |
+| Prior request                | Zero or more prior imaging request references or coded/textual prior-request details.                        | Reference / code       | Captures relevant prior imaging request information.                                                                                 |
 
 ### FHIR mapping
 
@@ -83,7 +82,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track</code></a></li><li>code: <code>ambulatory</code></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track"><code>be-vs-request-track</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track"><code>be-vs-request-track</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Requested imaging</td>
@@ -98,7 +97,7 @@ This table maps the business fields to the corresponding FHIR elements.
     ]
   }
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>77477000</code></li></ul></td>
+      <td><ul><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure"><code>DiagnosticImagingProcedure</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Priority</td>
@@ -106,7 +105,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "priority": "urgent"
 }</code></pre></td>
-      <td><ul><li>binding: <a href="http://hl7.org/fhir/R4/valueset-request-priority.html"><code>RequestPriority</code></a></li></ul></td>
+      <td><ul><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-imaging-priority"><code>ImagingPriority</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Urgency justification</td>
@@ -151,7 +150,7 @@ This table maps the business fields to the corresponding FHIR elements.
     "identifier": {
       "use": "official",
       "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
-      "value": "urn:be:fgov:pseudo:v2:79012312345",
+      "value": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}",
       "_value": {
         "extension": [
           {
@@ -338,7 +337,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication"><code>https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication</code></a></li><li>code: <code>2506</code></li><li>binding: <a href="ValueSet-ereferral-vs-imaging-patient-condition-indication.html"><code>eReferralVSImagingPatientConditionIndication</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication"><code>https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication</code></a></li><li>binding: <a href="ValueSet-ereferral-vs-imaging-patient-condition-indication.html"><code>eReferralVSImagingPatientConditionIndication</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Prior request</td>
