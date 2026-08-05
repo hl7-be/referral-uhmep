@@ -18,7 +18,7 @@ dependencies:
   #hl7.fhir.be.medication: 1.0.0
   hl7.fhir.be.core-clinical: 1.1.0
   #hl7.fhir.be.allergy: 1.1.0
-  hl7.fhir.be.drp: 1.1.0
+  be.smals.fhir.drp-fix: current$drp-1.1.0-fixed
   hl7.fhir.be.infsec: 1.3.0
 
 # The publisher can be a single item or a list, each with a name and
