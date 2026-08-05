@@ -20,10 +20,10 @@ This table maps the business fields to the corresponding FHIR elements.
 | - Duration | ... | Integer | Duration value. |
 | - Time unit | - Week(s)<br>- Month<br>- Year(s) | Enum |  |
 | Number of sessions (max) | ... | Integer | Required in business template. Total number of planned sessions. |
-| Diagnosis | ... | String | Free text diagnosis; must be pseudonymized. |
+| Diagnosis | ... | String | Free text diagnosis; must be encrypted with a pseudonymized key. |
 | Medical reason | ... (field becomes mandatory when frequency is more than once per day) | String | Medical reason; coded value when available, otherwise pseudonymized text. |
-| Contraindications | ... | String | Free text; must be pseudonymized. |
-| General remarks | ... | String | Free text; must be pseudonymized. |
+| Contraindications | ... | String | Free text; must be encrypted with a pseudonymized key. |
+| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes<br>- No (par defaut) | Boolean | Required in business template. `be-ext-feedback-to-prescriber`. |
 | Validity start date | Today (default) | Date | Required in business template. `be-ext-validity-period`. |
 

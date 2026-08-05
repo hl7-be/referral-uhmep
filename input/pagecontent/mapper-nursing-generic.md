@@ -15,8 +15,8 @@ This table maps the business fields to the corresponding FHIR elements.
 | Requester / prescriber |  |  | Reference to the prescribing practitioner role. |
 | Care type | - Medication administration<br>- Respiratory care<br>- Gastrointestinal care<br>- Urogenital care<br>- Catheter care<br>- Wound care<br>- Compression therapy<br>- Other | List |  |
 | This field appears when "Care type" = "Other" |  |  |  |
-| Other: |  | String | Required in business template. Conditional free text for ?other?; must be pseudonymized when patient-specific. |
-| Diagnosis | ... | String | Required in business template. Free text diagnosis; must be pseudonymized. |
+| Other: |  | String | Required in business template. Conditional free text for "other"; must be encrypted with a pseudonymized key. |
+| Diagnosis | ... | String | Required in business template. Free text diagnosis; must be encrypted with a pseudonymized key. |
 | Frequency |  |  | Required in business template. Timing repeat block. |
 | - Number of repetitions | ... times per | Integer | Number of repetitions per period. |
 | - Time unit | - Day<br>- Week<br>- Month | Enum |  |
@@ -25,8 +25,8 @@ This table maps the business fields to the corresponding FHIR elements.
 | - Time unit | - Day<br>- Week<br>- Month<br>- Year(s) | Enum |  |
 | Number of sessions (max) | ... | Integer | Required in business template. Total number of planned sessions. |
 | Medical reason | ... (field becomes mandatory when frequency is more than once per day) | String | Medical reason; coded value when available, otherwise pseudonymized text. |
-| Contraindications | ... | String | Free text; must be pseudonymized. |
-| General remarks | ... | String | Free text; must be pseudonymized. |
+| Contraindications | ... | String | Free text; must be encrypted with a pseudonymized key. |
+| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
 | Medical reason | ... | String | Medical reason; coded value when available, otherwise pseudonymized text. |
 | Feedback required | - Yes<br>- No | Boolean | Required in business template. `be-ext-feedback-to-prescriber`. |
 | Validity start date | Today (default) | Date | Required in business template. `be-ext-validity-period`. |

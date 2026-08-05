@@ -19,7 +19,7 @@ This table maps the business fields to the corresponding FHIR elements.
 | Session type | - Individual session (30 min)<br>- Group session (2 hours)<br>- Combination | Enum | or be-vs-session-type-extended. |
 | This field appears when "Session type" = "Individual session (30 min)" |  |  |  |
 | Number of sessions (max) | - First five sessions<br>- Five additional sessions | Enum | Required in business template. Total number of planned sessions. |
-| General remarks | ... | String | Free text; must be pseudonymized. |
+| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes<br>- No | Boolean | Required in business template. `be-ext-feedback-to-prescriber`. |
 | Prescription validity |  |  | `be-ext-validity-period`. |
 | - Start date | Today (default, max. January 1 of the next calendar year) | Date | Required in business template. Start of prescription validity. |

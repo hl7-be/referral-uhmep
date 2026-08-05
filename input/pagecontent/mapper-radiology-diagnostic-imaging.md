@@ -13,14 +13,14 @@ This table maps the business fields to the corresponding FHIR elements.
 | Track                        | Optional request track when applicable.                                                                                 | code                   |  |
 | Requested imaging            | Required requested imaging procedure.                                                                                   | code                   | Main imaging request. |
 | Priority                     | Optional request priority. When the value is `urgent`, an urgency justification must also be present.                   | code                   |  |
-| Urgency justification        | Required when priority is `urgent`; value must be pseudonymized.                                                        | String                 | Pseudonymized free text. |
+| Urgency justification        | Required when priority is `urgent`; value must be encrypted with a pseudonymized key.                                                        | String                 | Pseudonymized free text. |
 | Patient                      | Required patient identity. `subject.reference`, `subject.identifier`, and the contained Patient must remain consistent. | Reference / Identifier | Contained Patient reference; SSIN identifier must follow pseudonymization rules. |
 | Patient birthdate            | Required patient birthdate input.                          | Date                   | `Patient.birthDate` must not carry a clear value; the encrypted date is carried in `_birthDate` with `be-ext-pseudonymized-content`. |
 | Patient gender at birth      | Required gender at birth.                                                                                               | code                      | The visible code is fixed to administrative gender `other`; the actual value is encrypted in `be-ext-pseudonymized-content`. |
 | Additionnal relevant information             | Required imaging attention conditions checklist.                                                                        | Reference              | Must reference the contained `eReferralImagingAttentionConditionsResponse`. |
 | Patient condition | Zero or more Patient conditions. Use either an allowed code or encrypted free text in `CodeableConcept.text`. | code                   |  |
 | Prior request                | Zero or more prior imaging request references or coded/textual prior-request details.                                   | Reference / code       | Captures relevant prior imaging request information. |
-| Status reason                | Optional status reason; textual reason details must be pseudonymized.                                                   | code                   | Text must be pseudonymized. |
+| Status reason                | Optional status reason; textual reason details must be encrypted with a pseudonymized key.                                                   | code                   | Text must be encrypted with a pseudonymized key. |
 
 ### FHIR mapping
 

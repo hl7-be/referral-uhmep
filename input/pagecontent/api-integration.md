@@ -64,7 +64,7 @@ The organization assignment is represented by a `BeOrganizationTask`, and the in
 ### Pseudonymization
 
 See [Guidance – Pseudonymization and Free Text](guidance.html#pseudonymization-and-free-text) for
-the list of fields that carry patient-specific free text and must be pseudonymized.
+the list of fields that carry patient-specific free text and must be encrypted with a pseudonymized key.
 
 Patient SSIN values must be sent as direct pseudonyms in transit:
 

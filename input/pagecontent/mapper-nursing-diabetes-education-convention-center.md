@@ -21,7 +21,7 @@ This table maps the business fields to the corresponding FHIR elements.
 | - Duration | ... | Integer | Duration value. |
 | - Time unit | - Day(s)<br>- Week(s)<br>- Month<br>- Year(s) | Enum |  |
 | Number of sessions (max) | ... | Integer | Required in business template. Total number of planned sessions. |
-| General remarks | ... | String | Free text; must be pseudonymized. |
+| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes<br>- No (par defaut) | Boolean | Required in business template. `be-ext-feedback-to-prescriber`. |
 | Prescription validity |  |  | `be-ext-validity-period`. |
 | - Start date | Today (default) | Date | Required in business template. Start of prescription validity. |
