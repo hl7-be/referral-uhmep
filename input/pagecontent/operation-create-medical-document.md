@@ -33,7 +33,7 @@ Use this variant when the connected healthcare professional is the requester.
     }
   ],
   "subject": {
-    "reference": "Patient/urn:be:fgov:pseudo:v2:{SEC1}:{transitInfo}"
+    "reference": "Patient/urn:be:fgov:pseudo:v2:{SEC1}:{transit-info}"
   },
   "requester": {
     "reference": "PractitionerRole/{SSIN}-{DISCIPLINE}"

@@ -181,7 +181,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
       <td>Other:</td>
       <td><code>CodeableConcept.text</code></td>
       <td><pre><code class="language-json">{
-  "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-free-text}}"
+  "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 }</code></pre></td>
       <td></td>
     </tr>
@@ -264,7 +264,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
       <td><pre><code class="language-json">{
   "reasonCode": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-medical-reason}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -393,7 +393,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
       <td><pre><code class="language-json">{
   "reasonCode": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-medical-reason}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -439,7 +439,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
           }
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-contraindication}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -472,7 +472,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
       <td><pre><code class="language-json">{
   "note": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "extension": [
         {
           "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",

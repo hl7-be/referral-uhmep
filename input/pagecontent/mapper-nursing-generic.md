@@ -175,7 +175,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td>Other:</td>
       <td><code>CodeableConcept.text</code></td>
       <td><pre><code class="language-json">{
-  "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-free-text}}"
+  "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 }</code></pre></td>
       <td></td>
     </tr>
@@ -191,7 +191,7 @@ This table maps the business fields to the corresponding FHIR elements.
           "code": "404684003"
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-reason-code}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -328,7 +328,7 @@ This table maps the business fields to the corresponding FHIR elements.
           "code": "404684003"
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-reason-code}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -374,7 +374,7 @@ This table maps the business fields to the corresponding FHIR elements.
           }
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-contraindication}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -420,7 +420,7 @@ This table maps the business fields to the corresponding FHIR elements.
           }
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -459,7 +459,7 @@ This table maps the business fields to the corresponding FHIR elements.
           "code": "404684003"
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-reason-code}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {

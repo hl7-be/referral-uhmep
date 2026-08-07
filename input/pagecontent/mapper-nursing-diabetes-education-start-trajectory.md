@@ -197,7 +197,7 @@ This table maps the business fields to the corresponding FHIR elements.
           }
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {

@@ -54,7 +54,7 @@ Usage: #example
 // code
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #225964003
-* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-code}}"
+* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * code.text.extension[0].url = $be-ext-pseudonymization
 * code.text.extension[0].extension[0].url = "marker"
 * code.text.extension[0].extension[0].valueBoolean = true
@@ -92,7 +92,7 @@ Usage: #example
 * note[0].extension[0].valueCodeableConcept.coding[0].system = $be-cs-note-types
 * note[0].extension[0].valueCodeableConcept.coding[0].code = #medical-reason
 
-* note[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-medical-reason}}"
+* note[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * note[0].text.extension[0].url = $be-ext-pseudonymization
 * note[0].text.extension[0].extension[0].url = "marker"
 * note[0].text.extension[0].extension[0].valueBoolean = true

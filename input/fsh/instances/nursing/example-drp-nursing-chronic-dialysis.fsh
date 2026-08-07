@@ -55,7 +55,7 @@ Usage: #example
 // code
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #225230008
-* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-procedure-code}}"
+* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * code.text.extension[0].url = $be-ext-pseudonymization
 * code.text.extension[0].extension[0].url = "marker"
 * code.text.extension[0].extension[0].valueBoolean = true
@@ -89,7 +89,7 @@ Usage: #example
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)
 
 // reasonCode
-* reasonCode[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-medical-reason}}"
+* reasonCode[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * reasonCode[0].text.extension[0].url = $be-ext-pseudonymization
 * reasonCode[0].text.extension[0].extension[0].url = "marker"
 * reasonCode[0].text.extension[0].extension[0].valueBoolean = true
@@ -102,7 +102,7 @@ Usage: #example
 * note[0].extension[0].url = $be-ext-codeable-concept
 * note[0].extension[0].valueCodeableConcept.coding[0].system = $be-cs-note-types
 * note[0].extension[0].valueCodeableConcept.coding[0].code = #medical-reason
-* note[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-medical-reason}}"
+* note[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * note[0].text.extension[0].url = $be-ext-pseudonymization
 * note[0].text.extension[0].extension[0].url = "marker"
 * note[0].text.extension[0].extension[0].valueBoolean = true
@@ -114,7 +114,7 @@ Usage: #example
 * note[1].extension[0].url = $be-ext-codeable-concept
 * note[1].extension[0].valueCodeableConcept.coding[0].system = $be-cs-note-types
 * note[1].extension[0].valueCodeableConcept.coding[0].code = #contraindication
-* note[1].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-contraindication}}"
+* note[1].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * note[1].text.extension[0].url = $be-ext-pseudonymization
 * note[1].text.extension[0].extension[0].url = "marker"
 * note[1].text.extension[0].extension[0].valueBoolean = true
@@ -126,7 +126,7 @@ Usage: #example
 * note[2].extension[0].url = $be-ext-codeable-concept
 * note[2].extension[0].valueCodeableConcept.coding[0].system = $be-cs-note-types
 * note[2].extension[0].valueCodeableConcept.coding[0].code = #general-remarks
-* note[2].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}"
+* note[2].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * note[2].text.extension[0].url = $be-ext-pseudonymization
 * note[2].text.extension[0].extension[0].url = "marker"
 * note[2].text.extension[0].extension[0].valueBoolean = true

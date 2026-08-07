@@ -19,7 +19,7 @@ This page describes how a prescriber approves or rejects an Annex 81 proposal.
         "extension": [
           {
             "url": "key",
-            "valueString": "urn:be:fgov:pseudo:v2:{{pseudonymizedKey}}",
+            "valueString": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}",
             "_valueString": {
               "extension": [
                 {
@@ -68,7 +68,7 @@ This page describes how a prescriber approves or rejects an Annex 81 proposal.
         "extension": [
           {
             "url": "key",
-            "valueString": "urn:be:fgov:pseudo:v2:{{pseudonymizedKey}}",
+            "valueString": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}",
             "_valueString": {
               "extension": [
                 {
@@ -105,7 +105,7 @@ This page describes how a prescriber approves or rejects an Annex 81 proposal.
     {
       "name": "note",
       "valueCodeableConcept": {
-        "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encryptedFreeText_reasonCode}}",
+        "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
         "_text": {
           "extension": [
             {
@@ -150,7 +150,7 @@ If no note is needed, the request may be sent with no body, an empty body, or an
         "extension": [
           {
             "url": "key",
-            "valueString": "urn:be:fgov:pseudo:v2:{{pseudonymizedKey}}",
+            "valueString": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}",
             "_valueString": {
               "extension": [
                 {
@@ -200,7 +200,7 @@ If no note is needed, the request may be sent with no body, an empty body, or an
         "extension": [
           {
             "url": "key",
-            "valueString": "urn:be:fgov:pseudo:v2:{{pseudonymizedKey}}",
+            "valueString": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}",
             "_valueString": {
               "extension": [
                 {
@@ -237,7 +237,7 @@ If no note is needed, the request may be sent with no body, an empty body, or an
     {
       "name": "note",
       "valueCodeableConcept": {
-        "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encryptedFreeText_proposalReason}}",
+        "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
         "_text": {
           "extension": [
             {

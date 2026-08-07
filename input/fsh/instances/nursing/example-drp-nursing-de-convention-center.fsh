@@ -55,7 +55,7 @@ Inputs and values used in this example:
 // code
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #385805005
-* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-procedure-code}}"
+* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * code.text.extension[0].url = $be-ext-pseudonymization
 * code.text.extension[0].extension[0].url = "marker"
 * code.text.extension[0].extension[0].valueBoolean = true
@@ -72,7 +72,7 @@ Inputs and values used in this example:
 // orderDetail[1] diabetic education type + encrypted text
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
 * orderDetail[1].coding[0].code = #diabetic-education-other
-* orderDetail[1].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-diabetic-education}}"
+* orderDetail[1].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * orderDetail[1].text.extension[0].url = $be-ext-pseudonymization
 * orderDetail[1].text.extension[0].extension[0].url = "marker"
 * orderDetail[1].text.extension[0].extension[0].valueBoolean = true
@@ -110,7 +110,7 @@ Inputs and values used in this example:
 * note[0].extension[0].valueCodeableConcept.coding[0].system = $be-cs-note-types
 * note[0].extension[0].valueCodeableConcept.coding[0].code = #general-remarks
 
-* note[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}"
+* note[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * note[0].text.extension[0].url = $be-ext-pseudonymization
 * note[0].text.extension[0].extension[0].url = "marker"
 * note[0].text.extension[0].extension[0].valueBoolean = true

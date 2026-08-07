@@ -237,7 +237,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "reasonCode": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-reason}}"
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
     }
   ]
 }</code></pre></td>
@@ -249,7 +249,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "reasonCode": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-reason}}"
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
     }
   ]
 }</code></pre></td>
@@ -261,7 +261,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "note": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-contraindication}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "extension": [
         {
           "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
@@ -286,7 +286,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "note": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "extension": [
         {
           "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",

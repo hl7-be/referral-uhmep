@@ -238,7 +238,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "note": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "extension": [
         {
           "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",

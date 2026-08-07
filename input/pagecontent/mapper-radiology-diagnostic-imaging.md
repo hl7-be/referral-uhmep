@@ -114,7 +114,7 @@ This table maps the business fields to the corresponding FHIR elements.
   "extension": [
     {
       "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification",
-      "valueString": "urn:be:fgov:pseudo:v2:urgent-ct-after-acute-symptoms",
+      "valueString": "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}",
       "_valueString": {
         "extension": [
           {
@@ -126,11 +126,11 @@ This table maps the business fields to the corresponding FHIR elements.
               },
               {
                 "url": "format",
-                "valueCode": "direct"
+                "valueCode": "encrypted"
               },
               {
                 "url": "version",
-                "valuePositiveInt": 2
+                "valuePositiveInt": 1
               }
             ]
           }
@@ -198,7 +198,7 @@ This table maps the business fields to the corresponding FHIR elements.
             "extension": [
               {
                 "url": "encryptedValue",
-                "valueString": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted_patient_birthdate}}"
+                "valueString": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
               },
               {
                 "url": "marker",
@@ -245,7 +245,7 @@ This table maps the business fields to the corresponding FHIR elements.
                 "extension": [
                   {
                     "url": "encryptedValue",
-                    "valueString": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted_patient_gender}}"
+                    "valueString": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
                   },
                   {
                     "url": "marker",
@@ -309,7 +309,7 @@ This table maps the business fields to the corresponding FHIR elements.
                 "display": "AAA screening, family history of AAA"
               }
             ],
-            "text": "urn:be:fgov:pseudo:v2:free-text-indication",
+            "text": "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}",
             "_text": {
               "extension": [
                 {
@@ -321,11 +321,11 @@ This table maps the business fields to the corresponding FHIR elements.
                     },
                     {
                       "url": "format",
-                      "valueCode": "direct"
+                      "valueCode": "encrypted"
                     },
                     {
                       "url": "version",
-                      "valuePositiveInt": 2
+                      "valuePositiveInt": 1
                     }
                   ]
                 }
@@ -365,7 +365,7 @@ This table maps the business fields to the corresponding FHIR elements.
     {
       "url": "http://hl7.org/fhir/StructureDefinition/request-statusReason",
       "valueCodeableConcept": {
-        "text": "urn:be:fgov:pseudo:v2:status-reason-radiology-urgent",
+        "text": "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}",
         "_text": {
           "extension": [
             {
@@ -377,11 +377,11 @@ This table maps the business fields to the corresponding FHIR elements.
                 },
                 {
                   "url": "format",
-                  "valueCode": "direct"
+                  "valueCode": "encrypted"
                 },
                 {
                   "url": "version",
-                  "valuePositiveInt": 2
+                  "valuePositiveInt": 1
                 }
               ]
             }

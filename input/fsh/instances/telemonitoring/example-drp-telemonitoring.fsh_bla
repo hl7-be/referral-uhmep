@@ -8,14 +8,14 @@ Usage: #example
 * extension[validity].valuePeriod.start = "2026-05-22"
 * extension[validity].valuePeriod.end = "2026-11-22"
 * extension[statusReason].url = $request-statusReason
-* extension[statusReason].valueCodeableConcept.text = "urn:be:fgov:pseudo:v2:status-reason-telemonitoring-active"
+* extension[statusReason].valueCodeableConcept.text = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * extension[statusReason].valueCodeableConcept.text.extension[0].url = $be-ext-pseudonymization
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[0].url = "marker"
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[0].valueBoolean = true
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].url = "format"
-* extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].valueCode = #direct
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].valueCode = #encrypted
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].url = "version"
-* extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 2
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 1
 
 // Monitoring plan: body weight change of 2 kg over 3 days.
 * extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
@@ -101,14 +101,14 @@ Usage: #example
 * note[0].extension[0].url = $be-ext-codeable-concept
 * note[0].extension[0].valueCodeableConcept.coding[0].system = $be-cs-note-types
 * note[0].extension[0].valueCodeableConcept.coding[0].code = #general-remarks
-* note[0].text = "urn:be:fgov:pseudo:v2:patient-should-be-contacted-if-thresholds-are-exceeded"
+* note[0].text = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * note[0].text.extension[0].url = $be-ext-pseudonymization
 * note[0].text.extension[0].extension[0].url = "marker"
 * note[0].text.extension[0].extension[0].valueBoolean = true
 * note[0].text.extension[0].extension[1].url = "format"
-* note[0].text.extension[0].extension[1].valueCode = #direct
+* note[0].text.extension[0].extension[1].valueCode = #encrypted
 * note[0].text.extension[0].extension[2].url = "version"
-* note[0].text.extension[0].extension[2].valuePositiveInt = 2
+* note[0].text.extension[0].extension[2].valuePositiveInt = 1
 
 Instance: example-drp-telemonitoring-provider
 InstanceOf: ServiceRequestTelemonitoringProviderView

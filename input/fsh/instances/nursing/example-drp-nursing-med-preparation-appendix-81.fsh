@@ -58,7 +58,7 @@ Usage: #example
 // code
 // Parent BeAnnex81 fixes code to be-cs-temp-requested-service#tmp-prep-x081-2.
 * code = $sct#385796006
-* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-code}}"
+* code.text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * code.text.extension[0].url = $be-ext-pseudonymization
 * code.text.extension[0].extension[0].url = "marker"
 * code.text.extension[0].extension[0].valueBoolean = true

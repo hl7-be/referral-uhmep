@@ -157,7 +157,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "reasonCode": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-reason-code}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -288,7 +288,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "reasonCode": [
     {
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-reason-code}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -334,7 +334,7 @@ This table maps the business fields to the corresponding FHIR elements.
           }
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-contraindication}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {
@@ -380,7 +380,7 @@ This table maps the business fields to the corresponding FHIR elements.
           }
         }
       ],
-      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}",
+      "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
       "_text": {
         "extension": [
           {

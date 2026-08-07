@@ -27,14 +27,14 @@ Usage: #example
 
 // request-statusReason
 * extension[statusReason].url = $request-statusReason
-* extension[statusReason].valueCodeableConcept.text = "urn:be:fgov:pseudo:v2:status-reason-radiology-urgent"
+* extension[statusReason].valueCodeableConcept.text = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * extension[statusReason].valueCodeableConcept.text.extension[0].url = $be-ext-pseudonymization
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[0].url = "marker"
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[0].valueBoolean = true
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].url = "format"
-* extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].valueCode = #direct
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[1].valueCode = #encrypted
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].url = "version"
-* extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 2
+* extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 1
 
 // PSS info
 * extension[pssInfo].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-pss-info"
@@ -43,14 +43,14 @@ Usage: #example
 
 // urgency justification
 * extension[urgencyJustification].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification"
-* extension[urgencyJustification].valueString = "urn:be:fgov:pseudo:v2:urgent-ct-after-acute-symptoms"
+* extension[urgencyJustification].valueString = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * extension[urgencyJustification].valueString.extension[0].url = $be-ext-pseudonymization
 * extension[urgencyJustification].valueString.extension[0].extension[0].url = "marker"
 * extension[urgencyJustification].valueString.extension[0].extension[0].valueBoolean = true
 * extension[urgencyJustification].valueString.extension[0].extension[1].url = "format"
-* extension[urgencyJustification].valueString.extension[0].extension[1].valueCode = #direct
+* extension[urgencyJustification].valueString.extension[0].extension[1].valueCode = #encrypted
 * extension[urgencyJustification].valueString.extension[0].extension[2].url = "version"
-* extension[urgencyJustification].valueString.extension[0].extension[2].valuePositiveInt = 2
+* extension[urgencyJustification].valueString.extension[0].extension[2].valuePositiveInt = 1
 
 * status = #active
 * intent = #order
@@ -64,7 +64,7 @@ Usage: #example
 * subject.reference = "#patient"
 * subject.identifier.use = #official
 * subject.identifier.system = $be-ns-ssin
-* subject.identifier.value = "urn:be:fgov:pseudo:v2:79012312345"
+* subject.identifier.value = "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}"
 * subject.identifier.value.extension[0].url = $be-ext-pseudonymization
 * subject.identifier.value.extension[0].extension[0].url = "marker"
 * subject.identifier.value.extension[0].extension[0].valueBoolean = true
@@ -75,14 +75,14 @@ Usage: #example
 * authoredOn = "2026-03-03T10:15:00+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)
 
-* reasonCode[0].text = "urn:be:fgov:pseudo:v2:suspected-pulmonary-embolism"
+* reasonCode[0].text = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * reasonCode[0].text.extension[0].url = $be-ext-pseudonymization
 * reasonCode[0].text.extension[0].extension[0].url = "marker"
 * reasonCode[0].text.extension[0].extension[0].valueBoolean = true
 * reasonCode[0].text.extension[0].extension[1].url = "format"
-* reasonCode[0].text.extension[0].extension[1].valueCode = #direct
+* reasonCode[0].text.extension[0].extension[1].valueCode = #encrypted
 * reasonCode[0].text.extension[0].extension[2].url = "version"
-* reasonCode[0].text.extension[0].extension[2].valuePositiveInt = 2
+* reasonCode[0].text.extension[0].extension[2].valuePositiveInt = 1
 
 // --------------------------------------------------------
 // supportingInfo[priorRequest] - reference to prior ServiceRequest
@@ -108,14 +108,17 @@ Usage: #example
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication"
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].code = #2506
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].display = "AAA screening, family history of AAA"
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text = "urn:be:fgov:pseudo:v2:free-text-indication"
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].url = $be-ext-pseudonymization
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[0].url = "marker"
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[0].valueBoolean = true
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[1].url = "format"
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[1].valueCode = #direct
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[2].url = "version"
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 2
+* supportingInfo[patientCondition][1].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
+* supportingInfo[patientCondition][1].extension[role].valueCode = #patient-condition
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].url = $BeDRPCodeableConcept
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].url = $be-ext-pseudonymization
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[0].url = "marker"
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[0].valueBoolean = true
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[1].url = "format"
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[1].valueCode = #encrypted
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[2].url = "version"
+* supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 1
 
 // --------------------------------------------------------
 // supportingInfo[safetyChecklist]
@@ -143,7 +146,7 @@ Usage: #inline
 * item[0].answer[0].valueCoding = $sct#40388003
 * item[0].answer[0].item[0].linkId = "implants-other"
 * item[0].answer[0].item[0].text = "Other implant type"
-* item[0].answer[0].item[0].answer[0].valueString = "urn:be:fgov:pseudo:v1:{{kid}}:{{encrypted_cardiac_stent}}"
+* item[0].answer[0].item[0].answer[0].valueString = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * item[0].answer[0].item[0].answer[0].valueString.extension[0].url = $be-ext-pseudonymization
 * item[0].answer[0].item[0].answer[0].valueString.extension[0].extension[0].url = "marker"
 * item[0].answer[0].item[0].answer[0].valueString.extension[0].extension[0].valueBoolean = true
@@ -174,14 +177,14 @@ Usage: #inline
 
 * item[6].linkId = "other"
 * item[6].text = "Other"
-* item[6].answer[0].valueString = "urn:be:fgov:pseudo:v2:claustrophobia-reported"
+* item[6].answer[0].valueString = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * item[6].answer[0].valueString.extension[0].url = $be-ext-pseudonymization
 * item[6].answer[0].valueString.extension[0].extension[0].url = "marker"
 * item[6].answer[0].valueString.extension[0].extension[0].valueBoolean = true
 * item[6].answer[0].valueString.extension[0].extension[1].url = "format"
-* item[6].answer[0].valueString.extension[0].extension[1].valueCode = #direct
+* item[6].answer[0].valueString.extension[0].extension[1].valueCode = #encrypted
 * item[6].answer[0].valueString.extension[0].extension[2].url = "version"
-* item[6].answer[0].valueString.extension[0].extension[2].valuePositiveInt = 2
+* item[6].answer[0].valueString.extension[0].extension[2].valuePositiveInt = 1
 
 * item[7].linkId = "none"
 * item[7].text = "None"
@@ -199,7 +202,7 @@ Usage: #inline
 * extension[genderAtBirth].valueCodeableConcept.coding[0].code = #other
 * extension[genderAtBirth].valueCodeableConcept.extension[0].url = $be-ext-pseudonymized-content
 * extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].url = "encryptedValue"
-* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].valueString = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted_gender_at_birth}}"
+* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].valueString = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].url = "marker"
 * extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].valueBoolean = true
 * extension[genderAtBirth].valueCodeableConcept.extension[0].extension[1].url = "format"
@@ -209,10 +212,10 @@ Usage: #inline
 
 * birthDate.extension[0].url = $be-ext-pseudonymized-content
 * birthDate.extension[0].extension[0].url = "encryptedValue"
-* birthDate.extension[0].extension[0].valueString = "urn:be:fgov:pseudo:v2:{{kid}}:{{encrypted_birth_date}}"
+* birthDate.extension[0].extension[0].valueString = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * birthDate.extension[0].extension[1].url = "marker"
 * birthDate.extension[0].extension[1].valueBoolean = true
 * birthDate.extension[0].extension[2].url = "format"
-* birthDate.extension[0].extension[2].valueCode = #direct
+* birthDate.extension[0].extension[2].valueCode = #encrypted
 * birthDate.extension[0].extension[3].url = "version"
-* birthDate.extension[0].extension[3].valuePositiveInt = 2
+* birthDate.extension[0].extension[3].valuePositiveInt = 1
