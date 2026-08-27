@@ -105,7 +105,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "priority": "urgent"
 }</code></pre></td>
-      <td><ul><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-imaging-priority"><code>ImagingPriority</code></a></li></ul></td>
+      <td><ul><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/referral/ValueSet/be-vs-imaging-priority"><code>ImagingPriority</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Urgency justification</td>
@@ -113,7 +113,7 @@ This table maps the business fields to the corresponding FHIR elements.
       <td><pre><code class="language-json">{
   "extension": [
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-urgency-justification",
       "valueString": "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}",
       "_valueString": {
         "extension": [
@@ -278,7 +278,7 @@ This table maps the business fields to the corresponding FHIR elements.
     {
       "extension": [
         {
-          "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
+          "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
           "valueCode": "safety-checklist"
         }
       ],
@@ -296,11 +296,11 @@ This table maps the business fields to the corresponding FHIR elements.
     {
       "extension": [
         {
-          "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
+          "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
           "valueCode": "patient-condition"
         },
         {
-          "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
+          "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -347,7 +347,7 @@ This table maps the business fields to the corresponding FHIR elements.
     {
       "extension": [
         {
-          "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
+          "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
           "valueCode": "prior-request"
         }
       ],

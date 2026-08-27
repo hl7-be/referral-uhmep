@@ -22,17 +22,7 @@ Description: "The diagnostic imaging profile. eReferral version."
 // --------------------------------------------------------
 // SupportingInfo slicing eReferral
 // --------------------------------------------------------
-* supportingInfo ^slicing.discriminator.type = #value
-* supportingInfo ^slicing.discriminator.path =
-    "extension('https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role').value"
-* supportingInfo ^slicing.rules = #open
 
-* supportingInfo contains
-    priorRequest 0..* MS and
-    safetyChecklist 1..1 MS and
-    patientCondition 0..* MS
-    //priorResults 0..* MS
-    //attentionCondition 0..* MS
 
 
 // --------------------------------------------------------

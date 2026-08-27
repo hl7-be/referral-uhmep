@@ -37,12 +37,12 @@ Usage: #example
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 1
 
 // PSS info
-* extension[pssInfo].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-pss-info"
+* extension[pssInfo].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-pss-info"
 * extension[pssInfo].valueIdentifier.system = "https://www.ehealth.fgov.be/standards/fhir/pss/NamingSystem/pss-id"
 * extension[pssInfo].valueIdentifier.value = "PSS-DRP-IMG-001"
 
 // urgency justification
-* extension[urgencyJustification].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification"
+* extension[urgencyJustification].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-urgency-justification"
 * extension[urgencyJustification].valueString = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * extension[urgencyJustification].valueString.extension[0].url = $be-ext-pseudonymization
 * extension[urgencyJustification].valueString.extension[0].extension[0].url = "marker"
@@ -88,13 +88,13 @@ Usage: #example
 // supportingInfo[priorRequest] - reference to prior ServiceRequest
 // --------------------------------------------------------
 * supportingInfo[priorRequest][0].reference = "ServiceRequest/550e8400-e29b-41d4-a716-446655440000"
-* supportingInfo[priorRequest][0].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
+* supportingInfo[priorRequest][0].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[priorRequest][0].extension[role].valueCode = #prior-request
 
 // --------------------------------------------------------
 // supportingInfo[priorRequest] - coded concept only
 // --------------------------------------------------------
-* supportingInfo[priorRequest][1].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
+* supportingInfo[priorRequest][1].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[priorRequest][1].extension[role].valueCode = #prior-request
 * supportingInfo[priorRequest][1].extension[priorRequestCodeableConcept].url = $BeDRPCodeableConcept
 * supportingInfo[priorRequest][1].extension[priorRequestCodeableConcept].valueCodeableConcept = $sct#77477000
@@ -102,13 +102,13 @@ Usage: #example
 // --------------------------------------------------------
 // supportingInfo[patientCondition]
 // --------------------------------------------------------
-* supportingInfo[patientCondition][0].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
+* supportingInfo[patientCondition][0].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[patientCondition][0].extension[role].valueCode = #patient-condition
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].url = $BeDRPCodeableConcept
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication"
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].code = #2506
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].display = "AAA screening, family history of AAA"
-* supportingInfo[patientCondition][1].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
+* supportingInfo[patientCondition][1].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[patientCondition][1].extension[role].valueCode = #patient-condition
 * supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].url = $BeDRPCodeableConcept
 * supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
@@ -124,7 +124,7 @@ Usage: #example
 // supportingInfo[safetyChecklist]
 // --------------------------------------------------------
 * supportingInfo[safetyChecklist].reference = "#ci-attention-qr"
-* supportingInfo[safetyChecklist].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
+* supportingInfo[safetyChecklist].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[safetyChecklist].extension[role].valueCode = #safety-checklist
 
 // body site
@@ -137,7 +137,7 @@ InstanceOf: eReferralImagingAttentionConditionsResponse
 Usage: #inline
 
 * meta.profile[0] = "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response"
-* questionnaire = "https://www.ehealth.fgov.be/standards/fhir/drp/Questionnaire/be-questionnaire-imaging-attention-conditions"
+* questionnaire = "https://www.ehealth.fgov.be/standards/fhir/referral/Questionnaire/be-questionnaire-imaging-attention-conditions"
 * status = #completed
 * authored = "2026-03-03T10:15:00+01:00"
 

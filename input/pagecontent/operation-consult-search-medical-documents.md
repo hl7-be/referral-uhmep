@@ -93,7 +93,7 @@ GET /Task?focus={ServiceRequestID}&_profile=Profile/be-performer-task
 | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Business operation | Consult a medical document and all attached resources                                                                                                                   |
 | Endpoints | `GET /ServiceRequest/{id}/$graph?graph={GraphDefinitionURI}` |
-| URI | `https://www.ehealth.fgov.be/standards/fhir/drp/GraphDefinition/full-referral-prescription` |
+| URI | `https://www.ehealth.fgov.be/standards/fhir/referral/GraphDefinition/full-referral-prescription` |
 | Successful response | `Bundle`                                                                                                                                            |
 
 This is useful when the client needs the `ServiceRequest`, related tasks, practitioner roles, practitioners and organizations in a single response.

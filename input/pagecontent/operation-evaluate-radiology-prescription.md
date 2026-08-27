@@ -196,7 +196,7 @@ The same decision can be recorded by creating a performer task directly. Use thi
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
     ]
   },
   "partOf": {
@@ -251,7 +251,7 @@ When the performer acts within an organization assignment, add `basedOn` pointin
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
     ]
   },
   "partOf": {

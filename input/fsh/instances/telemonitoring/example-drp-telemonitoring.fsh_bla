@@ -18,7 +18,7 @@ Usage: #example
 * extension[statusReason].valueCodeableConcept.text.extension[0].extension[2].valuePositiveInt = 1
 
 // Monitoring plan: body weight change of 2 kg over 3 days.
-* extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][0].extension[parameter].url = "parameter"
 * extension[monitoringPlan][0].extension[parameter].valueCodeableConcept = $loinc#29463-7 "Body weight"
 * extension[monitoringPlan][0].extension[change][0].url = "change"
@@ -30,7 +30,7 @@ Usage: #example
 * extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.code = #d
 
 // Monitoring plan: systolic blood pressure alert threshold.
-* extension[monitoringPlan][1].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][1].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][1].extension[parameter].url = "parameter"
 * extension[monitoringPlan][1].extension[parameter].valueCodeableConcept = $loinc#8480-6 "Systolic blood pressure"
 * extension[monitoringPlan][1].extension[threshold][0].url = "threshold"
@@ -40,7 +40,7 @@ Usage: #example
 * extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.code = #mm[Hg]
 
 // Monitoring plan: diastolic blood pressure alert threshold.
-* extension[monitoringPlan][2].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][2].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][2].extension[parameter].url = "parameter"
 * extension[monitoringPlan][2].extension[parameter].valueCodeableConcept = $loinc#8462-4 "Diastolic blood pressure"
 * extension[monitoringPlan][2].extension[threshold][0].url = "threshold"
@@ -50,7 +50,7 @@ Usage: #example
 * extension[monitoringPlan][2].extension[threshold][0].extension[range].valueRange.low.code = #mm[Hg]
 
 // Monitoring plan: heart rate alert threshold.
-* extension[monitoringPlan][3].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][3].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][3].extension[parameter].url = "parameter"
 * extension[monitoringPlan][3].extension[parameter].valueCodeableConcept = $loinc#8867-4 "Heart rate"
 * extension[monitoringPlan][3].extension[threshold][0].url = "threshold"
@@ -119,7 +119,7 @@ Usage: #example
 * extension[validity].url = $be-ext-validity-period
 * extension[validity].valuePeriod.start = "2026-05-22"
 * extension[validity].valuePeriod.end = "2026-11-22"
-* extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][0].extension[parameter].url = "parameter"
 * extension[monitoringPlan][0].extension[parameter].valueCodeableConcept = $loinc#29463-7 "Body weight"
 * extension[monitoringPlan][0].extension[change][0].url = "change"
@@ -129,7 +129,7 @@ Usage: #example
 * extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.value = 3
 * extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.system = "http://unitsofmeasure.org"
 * extension[monitoringPlan][0].extension[change][0].valueRatio.denominator.code = #d
-* extension[monitoringPlan][1].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][1].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][1].extension[parameter].url = "parameter"
 * extension[monitoringPlan][1].extension[parameter].valueCodeableConcept = $loinc#8480-6 "Systolic blood pressure"
 * extension[monitoringPlan][1].extension[threshold][0].url = "threshold"
@@ -137,7 +137,7 @@ Usage: #example
 * extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.value = 160
 * extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.system = "http://unitsofmeasure.org"
 * extension[monitoringPlan][1].extension[threshold][0].extension[range].valueRange.low.code = #mm[Hg]
-* extension[monitoringPlan][2].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-telemonitoring-plan"
+* extension[monitoringPlan][2].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][2].extension[parameter].url = "parameter"
 * extension[monitoringPlan][2].extension[parameter].valueCodeableConcept = $loinc#8867-4 "Heart rate"
 * extension[monitoringPlan][2].extension[threshold][0].url = "threshold"
