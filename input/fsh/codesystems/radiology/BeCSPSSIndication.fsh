@@ -1,5 +1,5 @@
 CodeSystem: BeCSPSSIndication
-Id: be-cs-pss-qsi-indication
+Id: be-cs-pss-qsi-indications
 Title: "PSS Indication"
 Description: "PSS indication codes for diagnostic imaging requests."
 * ^url = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"

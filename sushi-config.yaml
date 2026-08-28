@@ -1,10 +1,10 @@
 canonical: https://www.riziv-inami.be/standards/fhir/ereferral
-url: https://www.riziv-inami.be/standards/fhir/ereferral
+url: https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: inami.fhir.be.ereferral
-name: eReferral
+name: EReferral
 title: eReferral Implementation Guide
 description: eReferral Implementation Guide
 status: active
@@ -14,9 +14,9 @@ copyrightYear: 2026+
 releaseLabel: STU
 jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 dependencies:
-  hl7.fhir.be.core: 2.1.2
+  hl7.fhir.be.core: 2.2.0
   #hl7.fhir.be.medication: 1.0.0
-  hl7.fhir.be.core-clinical: 1.1.0
+  hl7.fhir.be.core-clinical: 1.3.0
   #hl7.fhir.be.allergy: 1.1.0
   hl7.fhir.be.referral: 1.0.0
   hl7.fhir.be.infsec: 1.3.0
@@ -91,6 +91,9 @@ pages:
       generation: markdown
     operation-consult-search-medical-documents.md:
       title: Consult or Search Medical Documents
+      generation: markdown
+    operation-complete-medical-document.md:
+      title: Complete a Medical Document
       generation: markdown
     operation-cancel-medical-document.md:
       title: Cancel a Medical Document
@@ -247,10 +250,16 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'
-  # Provided by the parent DRP IG; keep disabled locally to avoid generating a duplicate Parameters/terminology-expansion.
+  # The Publisher currently cannot validate the complete local SNOMED supplement
+  # when the Belgian edition is forced through path-expansion-params.
   # path-expansion-params: Parameters-terminology-expansion.json
   pin-canonicals: pin-multiples
   special-url:
+    # Resources temporarily hosted in this IG pending their promotion to hl7.fhir.be.referral.
+    - https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept
+    - https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-for-patients-without-trajectory
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-with-trajectory
     - https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types
@@ -290,6 +299,11 @@ parameters:
     - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-imaging-priority
     - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track
     - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role
+    - https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication
 
 resources:
   ServiceRequest/example-drp-nursing-bloodletting:
