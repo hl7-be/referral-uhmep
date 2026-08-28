@@ -61,3 +61,13 @@ pages:
 
 Encryption of pseudonymized identifiers and free text is performed through the eHealth
 Pseudonymization service (see the referenced eHealth "Pseudonymization REST" document above).
+
+### Implementation Guide Metadata
+
+{% include ip-statements.xhtml %}
+
+{% include dependency-table.xhtml %}
+
+{% include globals-table.xhtml %}
+
+{% include cross-version-analysis.xhtml %}

@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: diagnostic imaging prescription type from [`be-vs-prescription-type`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type).
 
 Example: [example-drp-clinical-imaging](ServiceRequest-example-drp-clinical-imaging.html).
@@ -304,7 +306,7 @@ This table maps the business fields to the corresponding FHIR elements.
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication",
+                "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
                 "code": "2506",
                 "display": "AAA screening, family history of AAA"
               }
@@ -337,7 +339,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication"><code>https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication</code></a></li><li>binding: <a href="ValueSet-ereferral-vs-imaging-patient-condition-indication.html"><code>eReferralVSImagingPatientConditionIndication</code></a></li></ul></td>
+      <td><ul><li>system: <a href="CodeSystem-be-cs-pss-qsi-indications.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications</code></a></li><li>binding: <a href="ValueSet-ereferral-vs-imaging-patient-condition-indication.html"><code>EReferralVSImagingPatientConditionIndication</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Prior request</td>
@@ -351,7 +353,7 @@ This table maps the business fields to the corresponding FHIR elements.
           "valueCode": "prior-request"
         }
       ],
-      "reference": "ServiceRequest/550e8400-e29b-41d4-a716-446655440000"
+      "reference": "ServiceRequest/example-prior-drp-clinical-imaging"
     }
   ]
 }</code></pre></td>
@@ -395,3 +397,5 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+
+{% endraw %}

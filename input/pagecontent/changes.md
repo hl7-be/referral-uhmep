@@ -5,13 +5,13 @@ This page documents the changes to the eReferral Implementation Guide specificat
 ### **2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4**
 
 #### Cookbook integration
-The legacy eReferral API cookbook (`UHMEP_API_cookbook.pdf`) has been fully integrated into this Implementation Guide. This IG now supersedes the cookbook and serves as the single source of truth for integrators. See [Cookbook migration notes](cookbook-migration-notes.html) for details.
+The legacy eReferral API cookbook (`UHMEP_API_cookbook.pdf`) has been fully integrated into this Implementation Guide. This IG now supersedes the cookbook and serves as the single source of truth for integrators.
 
 #### Nursing support
 ##### Profiling
 New nursing profiles to add constraints on nursing prescriptions and Annex 81 proposals:
-- [eReferralServiceRequestNursing](StructureDefinition-eReferralServiceRequestNursing.html)
-- [eReferralAnnex81](StructureDefinition-eReferralAnnex81.html)
+- [eReferralServiceRequestNursing](StructureDefinition-ereferral-servicerequest-nursing.html)
+- [eReferralAnnex81](StructureDefinition-ereferral-annex-81.html)
 
 ##### Mapping tables
 Field-by-field mapping tables have been added for every prescription type, showing exactly how business concepts map to FHIR:
@@ -28,14 +28,14 @@ Field-by-field mapping tables have been added for every prescription type, showi
 #### Radiology (Diagnostic Imaging) support
 ##### Profiling
 New profiles and operations enable prescription and management of radiology exams:
-- [eReferral Service Request — Diagnostic Imaging](StructureDefinition-eReferralServiceRequestDiagnosticImaging.html)
-- [eReferral Imaging Attention Conditions Response](StructureDefinition-eReferralImagingAttentionConditionsResponse.html)
+- [eReferral Service Request — Diagnostic Imaging](StructureDefinition-ereferral-servicerequest-diagnosticimaging.html)
+- [eReferral Imaging Attention Conditions Response](StructureDefinition-ereferral-imaging-attention-conditions-response.html)
 
 ##### New radiology-specific operations
 Three new operations handle specific parts of radiology prescription workflows:
-1. **[Accept a Radiology Prescription](operation-accept-radiology-prescription.html)** — confirms the requested exam and readiness to perform the exam
-2. **[Substitute a Radiology Exam](operation-substitute-radiology-exam.html)** — replaces the exam (e.g., CT instead of X-ray)
-3. **[Refuse a Radiology Exam](operation-refuse-radiology-exam.html)** — declines to perform the requested exam
+1. **Accept a Radiology Prescription** — confirms the requested exam and readiness to perform the exam
+2. **Substitute a Radiology Exam** — replaces the exam (e.g., CT instead of X-ray)
+3. **Refuse a Radiology Exam** — declines to perform the requested exam
 
 ##### Mapping tables for integrators
 Field-by-field mapping table has been added for radiology prescription, showing exactly how business concepts map to FHIR:

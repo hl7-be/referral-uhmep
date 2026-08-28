@@ -16,7 +16,7 @@ Support contacts, certificates, required headers, authentication details, and AP
 | Execution | The performance of the care covered by an assignment. Its current state is represented by `Task.status`, while `Task.executionPeriod` records when execution started and, when applicable, ended. |
 | Prescription type | The eReferral category identifying the specific kind of prescription, such as hygienic care, phlebotomy, or diagnostic imaging. It is represented by the prescription-type coding in `ServiceRequest.category`. See [Prescription Templates](topic-prescription-templates.html). |
 | Validity period | The eReferral-defined period during which the prescribed care may be performed, expressed through `validity.start` and `validity.end` or `validity.latest`. See [API Integration – Date and Validity Computation](api-integration.html#date-and-validity-computation). |
-| Prescription extension | The creation of a new prescription that supersedes and extends a previous prescription. The new `ServiceRequest` references the original one through `ServiceRequest.replaces`. See [Prescription Extension](topic-prescription-lifecycle-replacement.html). |
+| Prescription extension | The creation of a new prescription that supersedes and extends a previous prescription. The new `ServiceRequest` references the original one through `ServiceRequest.replaces`. See [Prescription Extension](topic-prescription-lifecycle-extension.html). |
 
 ## FHIR and Technical Terms
 
