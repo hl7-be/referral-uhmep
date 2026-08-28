@@ -23,9 +23,9 @@ Description: "The diagnostic imaging profile. eReferral version."
 // --------------------------------------------------------
 // Prior request
 // --------------------------------------------------------
-//* supportingInfo[priorResults].extension contains
-//    BeRadiologySupportingInfoRole named role 1..1
-//* supportingInfo[priorResults].extension[role].valueCode = #prior-results
+* supportingInfo[priorResults].extension contains
+    BeRadiologySupportingInfoRole named role 1..1
+* supportingInfo[priorResults].extension[role].valueCode = #prior-results
 
 * supportingInfo[priorRequest] only Reference(ServiceRequest)
 * supportingInfo[priorRequest].extension contains
@@ -45,9 +45,9 @@ Description: "The diagnostic imaging profile. eReferral version."
 // --------------------------------------------------------
 // Patient condition
 // --------------------------------------------------------
-//* supportingInfo[attentionCondition].extension contains
-//    BeRadiologySupportingInfoRole named role 1..1
-//* supportingInfo[attentionCondition].extension[role].valueCode = #attention-condition
+* supportingInfo[attentionCondition].extension contains
+    BeRadiologySupportingInfoRole named role 1..1
+* supportingInfo[attentionCondition].extension[role].valueCode = #attention-condition
 
 * supportingInfo[patientCondition] only Reference(Condition)
 * supportingInfo[patientCondition].extension contains

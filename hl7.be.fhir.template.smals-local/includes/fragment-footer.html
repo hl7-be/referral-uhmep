@@ -1,10 +1,15 @@
 <div class="smals-footer">
-  <div class="smals-footer-brand">
-    <a id="smals-logo" href="https://www.smals.be" style="text-decoration:none">
-      <img alt="Welcome to Smals website" src="https://smals.be/themes/custom/websmals_bs4/logo.svg"/>
+  <div class="smals-footer-brand" aria-label="Publishing organisations">
+    <a class="smals-footer-logo" href="https://www.smals.be">
+      <img alt="Smals" src="https://smals.be/themes/custom/websmals_bs4/logo.svg"/>
     </a>
-    <a id="riziv-inami-logo" href="https://www.inami.be" style="text-decoration:none">
-      <img alt="Welcome to Riziv-Inami website" src="assets/images/logo-riziv-inami.png"/>
+    <a class="riziv-inami-footer-logo" href="https://www.inami.be">
+      <img alt="RIZIV-INAMI" src="assets/images/logo-riziv-inami.png"/>
     </a>
   </div>
+  <nav class="smals-footer-links" aria-label="Implementation Guide links">
+    <a href="{{site.data.info.assets}}toc.html">{{site.data.stringsBase[include.lang]['TableOfContents']}}</a>
+    <span aria-hidden="true">|</span>
+    <a href="../qa.html">{{site.data.stringsBase[include.lang]['QAReport']}}</a>
+  </nav>
 </div>

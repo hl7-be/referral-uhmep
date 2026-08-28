@@ -5,6 +5,20 @@ This implementation guide defines the local eReferral FHIR profiles, examples, m
 <br>
 <br>
 <br>
+{% if site.data.fhir.ig.status == "draft" %}
+<div class="ig-draft-disclaimers">
+  <section style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
+    <strong>This documentation and set of artefacts are still undergoing development.</strong>
+  </section>
+  <section style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
+    <strong>The canonical URL and publication address of this Implementation Guide are provisional and subject to change.</strong>
+  </section>
+  <section style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
+    <strong>This Implementation Guide contains only demonstrative examples of terminology resources.</strong>
+    <span>ValueSets and CodeSystems in this Implementation Guide are provided as examples only. The actual ValueSets and CodeSystems will be made available from a terminology package and can then be consulted in the FHIR terminology ecosystem.</span>
+  </section>
+</div>
+{% endif %}
 <div style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
   <strong>Technical scope only.</strong> This Implementation Guide has a <strong>technical purpose</strong>: it helps integrators
   implement the eReferral FHIR API. It does <strong>not</strong> define, and is not the guarantor of, the

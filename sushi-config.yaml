@@ -7,7 +7,7 @@ id: inami.fhir.be.ereferral
 name: EReferral
 title: eReferral Implementation Guide
 description: eReferral Implementation Guide
-status: active
+status: draft
 date: 2026-08-05
 version: 2.0.0
 copyrightYear: 2026+

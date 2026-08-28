@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
-  "url" : "https://www.riziv-inami.be/standards/fhir/ereferralRequirements/fromNarrative",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/Requirements/fromNarrative",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",

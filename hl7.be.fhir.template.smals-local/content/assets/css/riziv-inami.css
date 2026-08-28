@@ -954,6 +954,105 @@ a:focus {
   }
 }
 
+/* Draft notices and footer links
+----------------------------------------------------------------------------------------*/
+
+.ig-draft-disclaimers {
+  grid-column: 1 / -1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ig-draft-disclaimer {
+  display: block;
+  margin: 8px 0;
+  padding: 14px 22px;
+  border-left: 4px solid #ff7043;
+  background: #ffccbc;
+  color: #263238;
+  text-align: left;
+}
+
+.ig-draft-disclaimer::before {
+  display: block;
+  width: max-content;
+  margin-bottom: 6px;
+  padding: 0 2px;
+  background: #ffff00;
+  color: #ff0000;
+  line-height: 1.15;
+}
+
+.ig-draft-disclaimer > strong,
+.ig-draft-disclaimer > span {
+  display: block;
+}
+
+.ig-draft-disclaimer > strong {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.ig-draft-disclaimer > span {
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+#segment-footer .smals-footer {
+  gap: 24px;
+  justify-content: space-between;
+}
+
+#segment-footer .smals-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+#segment-footer .smals-footer-brand a {
+  display: inline-flex;
+  align-items: center;
+  border: 0;
+  text-decoration: none;
+}
+
+#segment-footer .smals-footer-brand .smals-footer-logo img,
+#segment-footer .smals-footer-brand .riziv-inami-footer-logo img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+}
+
+#segment-footer .smals-footer-brand .smals-footer-logo img {
+  height: 34px;
+}
+
+#segment-footer .smals-footer-brand .riziv-inami-footer-logo img {
+  height: 38px;
+}
+
+#segment-footer .smals-footer-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  #segment-footer .smals-footer,
+  #segment-footer .smals-footer-brand {
+    justify-content: center;
+  }
+
+  #segment-footer .smals-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 /* Riziv-Inami-inspired theme
 ----------------------------------------------------------------------------------------*/
 
@@ -1631,7 +1730,7 @@ a:focus,
   height: auto;
 }
 
-.uhmep-version-badge {
+.ereferral-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1747,5 +1846,52 @@ a:focus,
   #segment-footer .riziv-inami-footer {
     justify-content: center;
     min-height: 42px;
+  }
+}
+
+/* Final footer layout: aligned brands on the left, IG links on the right. */
+#eReferral-logo {
+  display: inline-flex;
+  align-items: center;
+  width: 150px;
+  max-width: 100%;
+  border: 0;
+  text-decoration: none;
+}
+
+#eReferral-logo img {
+  display: block;
+  width: 150px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+#segment-footer .smals-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+#segment-footer .smals-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+#segment-footer .smals-footer-links {
+  margin-left: auto;
+}
+
+@media (max-width: 700px) {
+  #segment-footer .smals-footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  #segment-footer .smals-footer-links {
+    margin-left: 0;
   }
 }

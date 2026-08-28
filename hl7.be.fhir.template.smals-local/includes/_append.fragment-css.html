@@ -2,12 +2,12 @@
 <!-- Placeholder for child template CSS declarations -->
 <!-- {{site.data.fhir.ig.publisher}} -->
 <!-- {{site.data.fhir.ig.status}} -->
-{% if site.data.fhir.ig.status == "draft" %}
-<link href="{{site.data.info.assets}}assets/css/smals.css" rel="stylesheet"/>
-{% elsif site.data.fhir.ig.publisher == "Smals Platform" %}
+{% if site.data.fhir.ig.publisher == "Smals Platform" %}
 <link href="{{site.data.info.assets}}assets/css/smals.css" rel="stylesheet"/>
 {% elsif site.data.fhir.ig.publisher == "Riziv-Inami Platform" %}
 <link href="{{site.data.info.assets}}assets/css/riziv-inami.css" rel="stylesheet"/>
+{% elsif site.data.fhir.ig.status == "draft" %}
+<link href="{{site.data.info.assets}}assets/css/smals.css" rel="stylesheet"/>
 <!-- no fitting stylesheet found (status/publisher)-->
 {% endif %}
 <link href="{{site.data.info.assets}}assets/css/lforms.min.css" rel="stylesheet"/>

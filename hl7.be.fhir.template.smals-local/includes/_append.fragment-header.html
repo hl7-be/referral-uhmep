@@ -18,13 +18,10 @@
   </a>
   {% elsif site.data.fhir.ig.publisher == "Riziv-Inami Platform" %}
   <a id="eReferral-logo" no-external="true" href="index.html">
-    <img alt="eReferral Implementation Guide" src="assets/images/eReferral-logo.png" width="150px"/>
+    <img alt="eReferral Implementation Guide" src="assets/images/eReferral-logo.png"/>
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   {% endif %}
-
-  <span class="uhmep-version-badge">v{{site.data.fhir.ig.version}}</span>
-</div>
-<div style="grid-column: 1 / -1; width: 100%; box-sizing: border-box; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; border-radius: 4px; padding: 8px 16px; margin: 8px 0 4px; font-size: 13px; text-align: center; clear: both;">
-  ⚠️ <strong>Warning:</strong> The canonical URL and publication address of this Implementation Guide are provisional and subject to change.
+  <span class="ereferral-badge">v{{site.data.fhir.ig.version}}</span>
+<span class="ereferral-badge">{{site.data.fhir.ig.status}}</span>
 </div>
