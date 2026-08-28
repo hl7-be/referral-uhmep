@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `generic-nursing`.
 
 Example: [example-drp-nursing-generic](ServiceRequest-example-drp-nursing-generic.html).
@@ -516,3 +518,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

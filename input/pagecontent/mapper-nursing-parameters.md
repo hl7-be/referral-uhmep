@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `parameters`.
 
 Example: [example-drp-nursing-parameters](ServiceRequest-example-drp-nursing-parameters.html).
@@ -440,3 +442,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

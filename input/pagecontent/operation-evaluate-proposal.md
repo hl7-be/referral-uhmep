@@ -1,3 +1,5 @@
+{% raw %}
+
 This page describes how a prescriber approves or rejects an Annex 81 proposal.
 
 | Item | Approve | Reject |
@@ -302,6 +304,8 @@ Reject returns the proposal id.
 Prescriber.
 
 ### Possible Error Codes
+
+{% endraw %}
 
 {% include error-codes-reference.md %}
 

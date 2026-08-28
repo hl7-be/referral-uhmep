@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `medication-prefill-preparation-not-refunded`.
 
 Example: [example-drp-nursing-med-prep-not-refunded](ServiceRequest-example-drp-nursing-med-prep-not-refunded.html).
@@ -343,3 +345,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

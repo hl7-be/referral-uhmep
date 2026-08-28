@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `hygienic-care`.
 
 Example: [example-drp-nursing-hygienic-care](ServiceRequest-example-drp-nursing-hygienic-care.html).
@@ -335,3 +337,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

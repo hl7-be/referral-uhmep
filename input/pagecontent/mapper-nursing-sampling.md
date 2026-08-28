@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `sampling`.
 
 Example: [example-drp-nursing-sampling](ServiceRequest-example-drp-nursing-sampling.html).
@@ -521,3 +523,4 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     </tr>
   </tbody>
 </table>
+{% endraw %}

@@ -1,3 +1,5 @@
+{% raw %}
+
 This page describes how a radiology performer evaluates an exam request.
 
 | Item | Value |
@@ -302,6 +304,8 @@ When the performer acts within an organization assignment, add `basedOn` pointin
 Caregiver (radiology performer), Organization.
 
 ### Possible Error Codes
+
+{% endraw %}
 
 {% include error-codes-reference.md %}
 

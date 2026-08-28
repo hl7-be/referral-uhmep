@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `diabetic-education-without-care-trajectory`.
 
 Example: [example-drp-nursing-de-without-care-trajectory](ServiceRequest-example-drp-nursing-de-without-care-trajectory.html).
@@ -349,3 +351,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

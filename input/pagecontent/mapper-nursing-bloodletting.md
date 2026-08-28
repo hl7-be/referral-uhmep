@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `bloodletting`.
 
 Example: [example-drp-nursing-bloodletting](ServiceRequest-example-drp-nursing-bloodletting.html).
@@ -410,3 +412,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

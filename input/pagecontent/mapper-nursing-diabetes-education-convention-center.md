@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `diabetic-education-convention-center`.
 
 Example: [example-drp-nursing-de-convention-center](ServiceRequest-example-drp-nursing-de-convention-center.html).
@@ -358,3 +360,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

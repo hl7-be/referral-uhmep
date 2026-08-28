@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `chronic-dialysis`.
 
 Example: [example-drp-nursing-chronic-dialysis](ServiceRequest-example-drp-nursing-chronic-dialysis.html).
@@ -453,3 +455,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

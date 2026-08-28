@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `medication-prefill-preparation-appendix-81`.
 
 Example: [example-drp-nursing-med-preparation-appendix-81](ServiceRequest-example-drp-nursing-med-preparation-appendix-81.html).
@@ -207,3 +209,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}

@@ -1,3 +1,5 @@
+{% raw %}
+
 Prescription type code: `glycemic-test`.
 
 Example: [example-drp-nursing-glycemic-test](ServiceRequest-example-drp-nursing-glycemic-test.html).
@@ -437,3 +439,4 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
   </tbody>
 </table>
+{% endraw %}
