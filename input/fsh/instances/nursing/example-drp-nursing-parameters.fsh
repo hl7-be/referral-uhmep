@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-parameters
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Measurement of parameters"
 Description: "Example of clinical parameter monitoring.
 

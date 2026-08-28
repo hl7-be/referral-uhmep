@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-de-within-care-trajectory
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education within care trajectory"
 Description: "Example of diabetes education within an established care pathway.
 

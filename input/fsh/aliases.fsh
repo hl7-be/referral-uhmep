@@ -43,7 +43,7 @@ Alias: $be-annex-81 = https://www.ehealth.fgov.be/standards/fhir/referral/Struct
 
 //CodeSystems
 Alias: $be-cs-diabetic-education-type = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type
-Alias: $be-cs-session-type = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-session-type
+Alias: $be-cs-session-type = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-session-types
 Alias: $be-cs-note-types = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types
 Alias: $be-cs-generic-care-types = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types
 Alias: $be-cs-prescription-type = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type

@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-med-prep-not-refunded
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Preparation of medicines (not refunded)"
 Description: "Example of non-reimbursed medication prefill preparation.
 

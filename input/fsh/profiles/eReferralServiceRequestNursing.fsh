@@ -1,10 +1,13 @@
-Profile: eReferralServiceRequestNursing
+Profile: EReferralServiceRequestNursing
 Parent: BeReferralServiceRequestNursing
 Id: ereferral-servicerequest-nursing
 Description: "The nursing profile, generic version. Please note the nursing referral for medication does NOT depend on this generic version but is a FHIR prodfile on a different FHIR resource (MedicationRequest)"
 
 * category[prescriptionType].coding 1..1
 * category[prescriptionType] from be-vs-nursing-prescription-technical-type (required)
+* category[discipline].coding.system = "http://snomed.info/sct" (exactly)
+* category[prescriptionType].coding.system = $be-cs-prescription-type (exactly)
+
 
 * occurrence[x] only Timing
 * occurrenceTiming.repeat.bounds[x] only Duration
@@ -24,7 +27,6 @@ Description: "The nursing profile, generic version. Please note the nursing refe
 // --------------------------------------------------------
 * implicitRules 0..0
 * language 0..0
-* text 0..0
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0
 * requisition 0..0

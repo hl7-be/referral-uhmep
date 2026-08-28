@@ -4,14 +4,14 @@ After clinical assessment her physician identifies a medical need for continued 
 */
 
 Instance: example-drp-nursing-generic
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Generic nursing care"
 Description: "Example of a generic nursing ServiceRequest.
 
 Inputs and values used in this example:
 - Prescription type: generic-nursing
 - Care code (SNOMED): 9632001
-- Care detail (orderDetail): preparation-and-administration-of-medication-for-psychiatric-patient
+- Care detail (orderDetail): preparation-and-administration-of-medication-to-psychiatric-patient
 - Validity start date: 2026-02-18
 - Timing:
   * boundsDuration: 4 months
@@ -66,7 +66,7 @@ Usage: #example
 
 // orderDetail
 * orderDetail[0].coding[0].system = $be-cs-generic-care-types
-* orderDetail[0].coding[0].code = #preparation-and-administration-of-medication-for-psychiatric-patient
+* orderDetail[0].coding[0].code = #preparation-and-administration-of-medication-to-psychiatric-patient
 
 // subject.identifier (SSIN pseudonymized)
 * subject.identifier.use = #official

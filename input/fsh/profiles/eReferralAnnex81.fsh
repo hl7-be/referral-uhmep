@@ -1,4 +1,4 @@
-Profile: eReferralAnnex81
+Profile: EReferralAnnex81
 Parent: BeAnnex81
 Description: "Annex81 proposal and approval"
 Id: ereferral-annex-81
@@ -10,7 +10,6 @@ Id: ereferral-annex-81
 // --------------------------------------------------------
 * implicitRules 0..0
 * language 0..0
-* text 0..0
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0
 * requisition 0..0

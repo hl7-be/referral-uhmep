@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-chronic-dialysis
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Chronic home dialysis"
 Description: "Example of chronic home dialysis prescription.
 

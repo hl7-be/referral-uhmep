@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-de-without-care-trajectory
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education without care trajectory"
 Description: "Example of diabetes education for patients without a care trajectory.
 

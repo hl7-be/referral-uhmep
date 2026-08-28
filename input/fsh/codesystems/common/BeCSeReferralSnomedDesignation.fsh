@@ -8,9 +8,8 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
 * ^experimental = true
 * ^date = "2026-08-03"
 * ^publisher = "eHealth Platform"
-* ^caseSensitive = true
 * ^content = #supplement
-* ^supplements = "http://snomed.info/sct"
+* ^supplements = "http://snomed.info/sct/11000172109"
 * ^copyright = "This supplement contains identifiers and project-specific terms for SNOMED CT concepts. SNOMED CT is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). Use is subject to the applicable SNOMED CT licence."
 
 // =============================================================================

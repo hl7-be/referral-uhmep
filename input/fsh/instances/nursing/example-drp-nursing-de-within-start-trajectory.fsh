@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-de-within-start-trajectory
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education within start trajectory"
 Description: "Example of diabetes education within a start trajectory.
 

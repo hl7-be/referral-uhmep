@@ -1,5 +1,5 @@
 Instance: example-drp-clinical-imaging
-InstanceOf: eReferralServiceRequestDiagnosticImaging
+InstanceOf: EReferralServiceRequestDiagnosticImaging
 Title: "Example: Diagnostic imaging referral"
 Description: "Example of a diagnostic imaging referral prescription with contained patient and imaging attention questionnaire response."
 Usage: #example
@@ -60,7 +60,7 @@ Usage: #example
 * category[prescriptionType] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type#diagnostic-imaging-appendix-82
 * category[track] = BeCSRequestTrack#ambulatory
 
-* code = $sct#77477000
+* code = $sct#32962002 "Computed tomography of abdomen with contrast (procedure)"
 * subject.reference = "#patient"
 * subject.identifier.use = #official
 * subject.identifier.system = $be-ns-ssin
@@ -87,7 +87,7 @@ Usage: #example
 // --------------------------------------------------------
 // supportingInfo[priorRequest] - reference to prior ServiceRequest
 // --------------------------------------------------------
-* supportingInfo[priorRequest][0].reference = "ServiceRequest/550e8400-e29b-41d4-a716-446655440000"
+* supportingInfo[priorRequest][0] = Reference(example-prior-drp-clinical-imaging)
 * supportingInfo[priorRequest][0].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[priorRequest][0].extension[role].valueCode = #prior-request
 
@@ -96,20 +96,23 @@ Usage: #example
 // --------------------------------------------------------
 * supportingInfo[priorRequest][1].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[priorRequest][1].extension[role].valueCode = #prior-request
+* supportingInfo[priorRequest][1].display = "Coded prior imaging request"
 * supportingInfo[priorRequest][1].extension[priorRequestCodeableConcept].url = $BeDRPCodeableConcept
-* supportingInfo[priorRequest][1].extension[priorRequestCodeableConcept].valueCodeableConcept = $sct#77477000
+* supportingInfo[priorRequest][1].extension[priorRequestCodeableConcept].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-modality#ct "CT"
 
 // --------------------------------------------------------
 // supportingInfo[patientCondition]
 // --------------------------------------------------------
 * supportingInfo[patientCondition][0].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[patientCondition][0].extension[role].valueCode = #patient-condition
+* supportingInfo[patientCondition][0].display = "Coded patient condition"
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].url = $BeDRPCodeableConcept
-* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-indication"
+* supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].system = "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].code = #2506
 * supportingInfo[patientCondition][0].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0].display = "AAA screening, family history of AAA"
 * supportingInfo[patientCondition][1].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[patientCondition][1].extension[role].valueCode = #patient-condition
+* supportingInfo[patientCondition][1].display = "Free-text patient condition"
 * supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].url = $BeDRPCodeableConcept
 * supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
 * supportingInfo[patientCondition][1].extension[patientConditionCodeableConcept].valueCodeableConcept.text.extension[0].url = $be-ext-pseudonymization
@@ -133,7 +136,7 @@ Usage: #example
 
 
 Instance: ci-attention-qr
-InstanceOf: eReferralImagingAttentionConditionsResponse
+InstanceOf: EReferralImagingAttentionConditionsResponse
 Usage: #inline
 
 * meta.profile[0] = "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response"
@@ -195,7 +198,7 @@ Instance: patient
 InstanceOf: BePatient
 Usage: #inline
 
-* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient"
+* meta.profile[0] = "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0"
 
 * extension[genderAtBirth].url = "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-gender-at-birth"
 * extension[genderAtBirth].valueCodeableConcept.coding[0].system = "http://hl7.org/fhir/administrative-gender"
@@ -203,16 +206,16 @@ Usage: #inline
 * extension[genderAtBirth].valueCodeableConcept.extension[0].url = $be-ext-pseudonymized-content
 * extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].url = "encryptedValue"
 * extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].valueString = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
-* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].url = "marker"
-* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[0].valueBoolean = true
-* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[1].url = "format"
-* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[1].valueCode = #encrypted
-* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[2].url = "version"
-* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[2].valuePositiveInt = 1 
+* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[1].url = "marker"
+* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[1].valueBoolean = true
+* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[2].url = "format"
+* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[2].valueCode = #encrypted
+* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[3].url = "version"
+* extension[genderAtBirth].valueCodeableConcept.extension[0].extension[3].valuePositiveInt = 1
 
 * birthDate.extension[0].url = $be-ext-pseudonymized-content
 * birthDate.extension[0].extension[0].url = "encryptedValue"
-* birthDate.extension[0].extension[0].valueString = "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}"
+* birthDate.extension[0].extension[0].valueString = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * birthDate.extension[0].extension[1].url = "marker"
 * birthDate.extension[0].extension[1].valueBoolean = true
 * birthDate.extension[0].extension[2].url = "format"

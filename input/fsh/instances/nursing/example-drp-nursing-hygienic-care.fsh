@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-hygienic-care
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Hygienic care"
 Description: "Example of hygienic nursing care.
 

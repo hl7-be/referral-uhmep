@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-de-convention-center
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education via convention centre"
 Description: "Example of diabetes education delivered through a convention centre.
 

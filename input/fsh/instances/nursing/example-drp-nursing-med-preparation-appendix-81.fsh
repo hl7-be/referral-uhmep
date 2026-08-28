@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-med-preparation-appendix-81
-InstanceOf: eReferralAnnex81
+InstanceOf: EReferralAnnex81
 Title: "Annex 81 - Preparing medication (proposal)"
 Description: "Example of an Annex 81 ServiceRequest proposal for preparing medication.
 

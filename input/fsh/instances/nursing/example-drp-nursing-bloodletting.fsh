@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-bloodletting
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Bloodletting"
 Description: "Example of therapeutic bloodletting including quantity.
 

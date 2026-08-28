@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-sampling
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Sample collection"
 Description: "Example of a biological sample collection prescription.
 

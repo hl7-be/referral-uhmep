@@ -1,4 +1,4 @@
-Profile: eReferralImagingAttentionConditionsResponse
+Profile: EReferralImagingAttentionConditionsResponse
 Parent: BeImagingAttentionConditionsResponse
 Id: ereferral-imaging-attention-conditions-response
 Description: "eReferral response to the imaging attention conditions questionnaire."

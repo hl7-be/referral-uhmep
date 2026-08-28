@@ -5,4 +5,6 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
 * ^url = "https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation"
 * ^status = #draft
 * ^experimental = false
-* include codes from system BeCSeReferralSnomedDesignation
+* include codes from system $sct
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/valueset-supplement"
+* ^extension[=].valueCanonical = Canonical(BeCSeReferralSnomedDesignation)

@@ -1,4 +1,4 @@
-Profile: eReferralServiceRequestDiagnosticImaging
+Profile: EReferralServiceRequestDiagnosticImaging
 Parent: BeServiceRequestDiagnosticImaging
 Id: ereferral-servicerequest-diagnosticimaging
 Description: "The diagnostic imaging profile. eReferral version."
@@ -10,7 +10,7 @@ Description: "The diagnostic imaging profile. eReferral version."
 * contained 2..2
 * contained[patient] 1..1
 * contained[safetyChecklist] 1..1
-* contained[safetyChecklist] only eReferralImagingAttentionConditionsResponse
+* contained[safetyChecklist] only EReferralImagingAttentionConditionsResponse
 
 //Snomed CT Only
 * code from be-vs-diagnostic-imaging-procedure (required)
@@ -19,28 +19,25 @@ Description: "The diagnostic imaging profile. eReferral version."
 // PSS/QSI Codes Only
 //* code from be-vs-pss-qsi-diagnostic-imaging-procedure (required)
 
-// --------------------------------------------------------
-// SupportingInfo slicing eReferral
-// --------------------------------------------------------
-
-
 
 // --------------------------------------------------------
 // Prior request
 // --------------------------------------------------------
+//* supportingInfo[priorResults].extension contains
+//    BeRadiologySupportingInfoRole named role 1..1
+//* supportingInfo[priorResults].extension[role].valueCode = #prior-results
+
 * supportingInfo[priorRequest] only Reference(ServiceRequest)
 * supportingInfo[priorRequest].extension contains
     BeRadiologySupportingInfoRole named role 1..1
 * supportingInfo[priorRequest].extension[role].valueCode = #prior-request
 
-* supportingInfo[priorRequest].extension contains
-    BeExtCodeableConcept named priorRequestCodeableConcept 0..1 MS
 * supportingInfo[priorRequest].extension[priorRequestCodeableConcept].valueCodeableConcept from BeVSImagingModality (required)
 
 // --------------------------------------------------------
 // Safety checklist
 // --------------------------------------------------------
-* supportingInfo[safetyChecklist] only Reference(eReferralImagingAttentionConditionsResponse)
+* supportingInfo[safetyChecklist] only Reference(EReferralImagingAttentionConditionsResponse)
 * supportingInfo[safetyChecklist].extension contains
     BeRadiologySupportingInfoRole named role 1..1
 * supportingInfo[safetyChecklist].extension[role].valueCode = #safety-checklist
@@ -48,14 +45,16 @@ Description: "The diagnostic imaging profile. eReferral version."
 // --------------------------------------------------------
 // Patient condition
 // --------------------------------------------------------
+//* supportingInfo[attentionCondition].extension contains
+//    BeRadiologySupportingInfoRole named role 1..1
+//* supportingInfo[attentionCondition].extension[role].valueCode = #attention-condition
+
 * supportingInfo[patientCondition] only Reference(Condition)
 * supportingInfo[patientCondition].extension contains
     BeRadiologySupportingInfoRole named role 1..1
 * supportingInfo[patientCondition].extension[role].valueCode = #patient-condition
 
-* supportingInfo[patientCondition].extension contains
-    BeExtCodeableConcept named patientConditionCodeableConcept 0..1 MS
-* supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept from eReferralVSImagingPatientConditionIndication (preferred)
+* supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept from EReferralVSImagingPatientConditionIndication (preferred)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept obeys ereferral-inv-patient-condition-strict
 // --------------------------------------------------------
 // Removed attributes
@@ -64,7 +63,6 @@ Description: "The diagnostic imaging profile. eReferral version."
 //* supportingInfo[attentionCondition] 0..0
 * implicitRules 0..0
 * language 0..0
-* text 0..0
 * instantiatesCanonical 0..0
 * instantiatesUri 0..0
 * requisition 0..0
@@ -87,9 +85,6 @@ Description: "The diagnostic imaging profile. eReferral version."
 * orderDetail.id 0..0
 * orderDetail.extension 0..0
 * orderDetail.coding.userSelected 0..0
-* quantityQuantity.id 0..0
-* quantityQuantity.extension 0..0
-* quantityQuantity.comparator 0..0
 * encounter 0..0
 * orderDetail 0..0
 * quantity[x] 0..0

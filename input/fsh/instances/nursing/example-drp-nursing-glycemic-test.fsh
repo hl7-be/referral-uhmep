@@ -1,5 +1,5 @@
 Instance: example-drp-nursing-glycemic-test
-InstanceOf: eReferralServiceRequestNursing
+InstanceOf: EReferralServiceRequestNursing
 Title: "Glycemic control with glucometer"
 Description: "Example of glycemic monitoring using a glucometer.
 
