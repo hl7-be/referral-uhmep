@@ -61,6 +61,17 @@ pages:
 
 Encryption of pseudonymized identifiers and free text is performed through the eHealth
 Pseudonymization service (see the referenced eHealth "Pseudonymization REST" document above).
+Encrypted free-text payloads use the JWE value returned by that service and are transported in the
+wire format documented under [API Integration – Pseudonymization](api-integration.html#pseudonymization).
+Clear patient-specific text must not be sent alongside the encrypted value.
+
+### Privacy Logging and Execution Traceability
+
+The platform records additional privacy audit information for protected-data processing and keeps
+the treatment execution history needed to trace execution lifecycle operations. Integrators must
+send the required identity, authorization, and tracing headers and use the documented Task
+operations so these events can be attributed correctly. Audit logs are platform records and are not
+a substitute for FHIR workflow resources returned by the API.
 
 ### Implementation Guide Metadata
 

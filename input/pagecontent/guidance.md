@@ -67,10 +67,23 @@ Key modelling points:
 | Safety checklist | Contained `eReferralImagingAttentionConditionsResponse` referenced from `supportingInfo[safetyChecklist]` |
 | Supporting information role | `supportingInfo.extension[role]` |
 | Patient condition indication | `supportingInfo[patientCondition].extension[patientConditionCodeableConcept]` |
+| Prescription track | `ServiceRequest.category[track]`: `ambulatory`, `inpatient`, or `urgency` |
 | Urgency justification | Required when `ServiceRequest.priority = urgent` |
 | Status reason | `request-statusReason` extension |
 
 The profile enforces that the subject references the contained patient and that the safety checklist supportingInfo references the contained questionnaire response. Patient condition information can be coded using the local indication ValueSet or represented as pseudonymized text.
+
+### Radiology Track Management
+
+The required radiology track identifies the operational context of the prescription:
+`ambulatory`, `inpatient`, or `urgency`. The gateway uses this value when applying the workflow's
+assignment and validation rules and when authorizing substitution, execution, or refusal actions.
+Integrators must preserve the selected track throughout the prescription lifecycle and may only
+submit operations permitted for that track. Track-dependent rules are enforced by the API; a FHIR
+resource being structurally valid does not by itself authorize an operation.
+
+The track is distinct from `ServiceRequest.priority`. In particular, the rule requiring an urgency
+justification is driven by `priority = urgent`, as defined by the diagnostic imaging profile.
 
 ### Supporting Information in Radiology
 

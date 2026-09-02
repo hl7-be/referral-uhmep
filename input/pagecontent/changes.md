@@ -2,7 +2,72 @@ This page documents the changes to the eReferral Implementation Guide specificat
 
 ---
 
+### **2026-09-02 — v2.1.0 Release: Validation, Radiology Tracks, and Security — FHIR R4**
+
+This release aligns gateway validation with the NIHDI/RIZIV-INAMI profiles, introduces
+track-dependent radiology workflow management, and strengthens security and execution
+traceability. Existing nursing integrations remain compatible, while radiology resources must
+conform to the latest diagnostic imaging profile.
+
+<details markdown="1">
+<summary><strong>View detailed v2.1.0 release notes</strong></summary>
+
+#### FHIR validation and profile compatibility
+
+The FHIR Gateway now aligns validation with the current NIHDI/RIZIV-INAMI profiles. For backward
+compatibility, it continues to accept the supported legacy eHealth profile URLs and rewrites them
+to the corresponding NIHDI/RIZIV-INAMI canonical URLs before validation. The mappings cover
+diagnostic imaging ServiceRequests, nursing ServiceRequests, and Annex 81 resources.
+
+The rewrite is transparent and does not transform resource content. Validation may therefore be
+stricter than in previous releases, and resources with profile deviations may now produce errors.
+Existing nursing integrations remain compatible but should progressively adopt the current
+canonical URLs. Radiology integrations must conform to the latest diagnostic imaging profile. See
+[Profile Rewriting](topic-profile-rewriting.html).
+
+#### Radiology track management
+
+Radiology prescriptions now use their required `ambulatory`, `inpatient`, or `urgency` track when
+the API applies assignment, validation, substitution, execution, and refusal rules. See
+[Guidance – Radiology Track Management](guidance.html#radiology-track-management).
+
+#### Security and compliance
+
+- Free-text prescription fields use the JWE-based encryption model provided by the eHealth
+  Pseudonymization service.
+- Privacy audit logging has been extended.
+- Treatment execution traceability has been improved through the documented Task lifecycle and
+  tracing requirements.
+
+See [Technical – Encryption](technical.html#encryption) and
+[API Integration – Pseudonymization](api-integration.html#pseudonymization).
+
+#### Documentation consolidation
+
+The Implementation Guide remains the single authoritative source for supported workflows, FHIR
+structures, profiles, validation rules, and integration examples. The retired PDF Cookbook must
+not be used as the reference for new development. This consolidation was introduced in v2.0.0;
+v2.1.0 reinforces the migration recommendation without duplicating the Cookbook content.
+
+#### Deployed but unavailable capabilities
+
+Heart Failure Medical Orders, Technical Orders, Medical Order consultation, and Heart Failure
+parameter management are deployed behind feature flags but remain disabled in acceptance and
+production. They are not part of the public API capabilities in this release and will be documented
+as available only when activated in a future release.
+
+</details>
+
+---
+
 ### **2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4**
+
+This release makes the Implementation Guide the single source of truth for eReferral integration.
+It adds nursing and radiology profiles and mappings, expands machine-to-machine workflows, and
+documents the API's security, access-control, and operational requirements.
+
+<details markdown="1">
+<summary><strong>View detailed v2.0.0 release notes</strong></summary>
 
 #### Cookbook integration
 The legacy eReferral API cookbook (`UHMEP_API_cookbook.pdf`) has been fully integrated into this Implementation Guide. This IG now supersedes the cookbook and serves as the single source of truth for integrators.
@@ -66,3 +131,5 @@ The following operations have been expanded to support M2M workflows:
 - **[Access Control Matrix](operation-access-matrix.html)** — which roles can perform which operations
 - **[Error Codes](error-codes.html)** — complete error catalogue and troubleshooting
 - **[Visibility & Blacklisting](topic-visibility-blacklisting.html)** — data filtering rules
+
+</details>

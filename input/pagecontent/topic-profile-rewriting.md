@@ -64,8 +64,17 @@ After rewriting, validation is performed against the eReferral profile. Implemen
 
 The rewrite only addresses the canonical profile URL used for routing and validation. It does not automatically transform elements, terminology, cardinalities, extensions, or business data.
 
+Resources that were accepted by earlier gateway versions despite minor deviations from the
+NIHDI/RIZIV-INAMI profiles may consequently be rejected. Integrators should test their resources
+against the current profiles and correct validation errors before deployment.
+
 ### Implementation Notes
 
 Implementers sending resources directly to the eReferral API should preferably use the eReferral profile URL in `ServiceRequest.meta.profile`. The rewrite exists to support systems that still identify the request by its federal eHealth DRP profile.
 
 Systems that log or audit incoming requests may record both values: the profile received at the gateway boundary and the profile used internally after rewriting.
+
+Existing nursing integrations may continue to use a supported legacy URL, but should progressively
+migrate to the NIHDI/RIZIV-INAMI canonical URL for new development. Radiology integrations must use
+resources conforming to the current NIHDI/RIZIV-INAMI diagnostic imaging profile; URL rewriting does
+not provide compatibility for a resource that fails that profile's constraints.
