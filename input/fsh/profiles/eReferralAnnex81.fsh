@@ -4,7 +4,7 @@ Description: "Annex81 proposal and approval"
 Id: ereferral-annex-81
 * ^status = #active
 
-
+* category[annex81TechnicalType] 1..1
 // --------------------------------------------------------
 // Removed attributes
 // --------------------------------------------------------
