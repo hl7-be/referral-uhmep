@@ -23,7 +23,7 @@ Usage: #example
 * extension[validity].valuePeriod.start = "2025-11-18"
 * extension[validity].valuePeriod.end = "2026-11-18"
 
-* status = #completed
+* status = #active
 * intent = #order
 * priority = #routine
 * category[discipline] = $sct#363679005
@@ -33,6 +33,16 @@ Usage: #example
 * subject.reference = "#prior-imaging-patient"
 * authoredOn = "2025-11-18T09:30:00+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)
+
+// reasonCode
+* reasonCode[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
+* reasonCode[0].text.extension[0].url = $be-ext-pseudonymization
+* reasonCode[0].text.extension[0].extension[0].url = "marker"
+* reasonCode[0].text.extension[0].extension[0].valueBoolean = true
+* reasonCode[0].text.extension[0].extension[1].url = "format"
+* reasonCode[0].text.extension[0].extension[1].valueCode = #encrypted
+* reasonCode[0].text.extension[0].extension[2].url = "version"
+* reasonCode[0].text.extension[0].extension[2].valuePositiveInt = 1
 
 * supportingInfo[safetyChecklist].reference = "#prior-imaging-attention-qr"
 * supportingInfo[safetyChecklist].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"

@@ -5,6 +5,7 @@ Description: "The diagnostic imaging profile. eReferral version."
 * ^status = #draft
 
 * category[prescriptionType] 1..1
+* reasonCode 1..1
 // --------------------------------------------------------
 // Contained
 // --------------------------------------------------------

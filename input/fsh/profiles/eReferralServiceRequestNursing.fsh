@@ -8,6 +8,7 @@ Description: "The nursing profile, generic version. Please note the nursing refe
 * category[prescriptionType] from be-vs-nursing-prescription-technical-type (required)
 * category[discipline].coding.system = "http://snomed.info/sct" (exactly)
 * category[prescriptionType].coding.system = $be-cs-prescription-type (exactly)
+* reasonCode 1..1
 
 
 * occurrence[x] only Timing
