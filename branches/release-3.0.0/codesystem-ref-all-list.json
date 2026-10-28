@@ -1,0 +1,305 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/days-of-week",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DaysOfWeek",
+    "title" : "DaysOfWeek",
+    "description" : "The days of the week.",
+    "oids" : ["2.16.840.1.113883.4.642.4.513"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+  },
+  {
+    "url" : "http://hl7.org/fhir/event-timing",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "EventTiming",
+    "title" : "EventTiming",
+    "description" : "Real world event relating to the schedule.",
+    "oids" : ["2.16.840.1.113883.4.642.4.76"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+  },
+  {
+    "url" : "http://hl7.org/fhir/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/questionnaire-answers-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "QuestionnaireResponseStatus",
+    "title" : "QuestionnaireResponseStatus",
+    "description" : "Lifecycle status of the questionnaire response.",
+    "oids" : ["2.16.840.1.113883.4.642.4.448"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers-status.html" : "QuestionnaireResponseStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestIntent",
+    "title" : "RequestIntent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.114"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-priority",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestPriority",
+    "title" : "RequestPriority",
+    "description" : "Identifies the level of importance to be assigned to actioning the request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.116"],
+    "uses" : {
+    },
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-imaging-priority.html" : "eReferral Imaging Priority ValueSet",
+    "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestStatus",
+    "title" : "RequestStatus",
+    "description" : "Codes identifying the lifecycle stage of a request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.112"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-nursing-care-requested.html" : "eReferral Nursing Care Requested",
+    "ValueSet-be-vs-ereferral-snomed-designation.html" : "SNOMED CT eReferral Supplement Designations",
+    "ValueSet-be-vs-diagnostic-imaging-condition.html" : "eReferral/PSS Diagnostic Imaging Condition",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "ValueSet-be-vs-diagnostic-imaging-procedure.html" : "eReferral/PSS Diagnostic Imaging Procedure",
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-categories-of-care.html" : "eReferral Categories of Care",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-questionnaire-answers.html" : "Questionnaire Answer Codes",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommonTags",
+    "title" : "Common Tags",
+    "description" : "Common Tag Codes defined by FHIR project",
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+    "oids" : ["2.16.840.1.113883.18.108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "GTSAbbreviation",
+    "title" : "GTSAbbreviation",
+    "description" : "*Open Issue:* It appears that the printnames are suboptimal and should be improved for many of the existing codes.",
+    "oids" : ["2.16.840.1.113883.5.1022"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-timing-abbreviation.html" : "TimingAbbreviation"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "RoleCode",
+    "title" : "RoleCode",
+    "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+    "oids" : ["2.16.840.1.113883.5.111"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "TimingEvent",
+    "title" : "TimingEvent",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.139"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+  },
+  {
+    "url" : "http://unitsofmeasure.org",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "UCUM",
+    "title" : "Unified Code for Units of Measure (UCUM)",
+    "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/CodeSystem/be-prescription-status-reason",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BePrescriptionStatusReason",
+    "title" : "BePrescriptionStatusReason",
+    "description" : "DEMONSTRATIVE EXAMPLE - Status reason for the prescription. Initially defined as supporting CodeSystem for the referral prescription.",
+    "uses" : {
+    },
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-prescription-status-reason.html" : "BeVSPrescriptionStatusReason"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-modality",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "BeCSImagingModality",
+    "title" : "eReferral Imaging Modality",
+    "description" : "Imaging modality types for prior imaging requests",
+    "uses" : {
+    },
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-imaging-modality.html" : "eReferral Imaging Modality ValueSet"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSNoteTypes",
+    "title" : "eReferral Note Types",
+    "description" : "Types of notes that can be associated with a prescription.",
+    "uses" : {
+    },
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-note-type.html" : "eReferral Note Type"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeCSPrescriptionType",
+    "title" : "eReferral Prescription Type",
+    "description" : "Technical types of prescriptions supported by the eReferral system. Used for routing and workflow purposes.",
+    "uses" : {
+    },
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-prescription-type.html" : "eReferral Prescription Type ValueSet",
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-nursing-prescription-technical-type.html" : "eReferral Nursing Prescription Technical Type"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeCSPSSQSIDiagnosticImagingProcedure",
+    "title" : "PSS/QSI Diagnostic Imaging Procedure",
+    "description" : "PSS/QSI diagnostic imaging procedure codes with English displays and Belgian French, Dutch and German designations.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.html" : "PSS/QSI Diagnostic Imaging Procedure"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeCSPSSIndication",
+    "title" : "PSS Indication",
+    "description" : "PSS indication codes for diagnostic imaging requests.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-pss-qsi-indication.html" : "PSS/QSI Indication"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeCSRadiologySupportingInfoRole",
+    "title" : "eReferral Radiology SupportingInfo Role CodeSystem",
+    "description" : "Identifies the role represented by an entry in ServiceRequest.supportingInfo for a diagnostic imaging referral.",
+    "uses" : {
+    },
+    "ValueSet-be-vs-radiology-supporting-info-role.html" : "eReferral Radiology SupportingInfo Role ValueSet"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "BeCSRequestTrack",
+    "title" : "eReferral Request Track",
+    "description" : "Care setting track codes for diagnostic imaging requests",
+    "uses" : {
+    },
+    "https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-request-track.html" : "eReferral request track"
+  },
+  {
+    "url" : "urn:ietf:bcp:47",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Ietf3066",
+    "title" : "Tags for the Identification of Languages",
+    "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+  }]
+}

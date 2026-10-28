@@ -1,0 +1,117 @@
+# eReferral Glycemia Measurement Timing - eReferral Prescription Implementation Guide v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **eReferral Glycemia Measurement Timing**
+
+## CodeSystem: eReferral Glycemia Measurement Timing 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-glycemia-measurement-timing | *Version*:1.1.1 |
+| Active as of 2026-10-28 | *Computable Name*:BeCSGlycemiaMeasurementTiming |
+
+ 
+Timing of glycemia measurements. 
+
+ This Code system is referenced in the content logical definition of the following value sets: 
+
+* [eReferral Glycemia Measurement Time](ValueSet-be-vs-glycemia-measurement-time.md)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-glycemia-measurement-timing",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-glycemia-measurement-timing",
+  "version" : "1.1.1",
+  "name" : "BeCSGlycemiaMeasurementTiming",
+  "title" : "eReferral Glycemia Measurement Timing",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-28T16:38:41+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Timing of glycemia measurements.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "fasting",
+    "display" : "Fasting",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Nuchter"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "À jeun"
+    }]
+  },
+  {
+    "code" : "before-insulin-administration",
+    "display" : "Before insulin administration",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Voor insuline toediening"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Avant l'administration d'insuline"
+    }]
+  },
+  {
+    "code" : "before-medication-administration",
+    "display" : "Before medication administration",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Voor medicatietoediening"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Avant l'administration de médicaments"
+    }]
+  },
+  {
+    "code" : "glycemic-day-profile",
+    "display" : "Daily glycaemic profile",
+    "designation" : [{
+      "language" : "nl-BE",
+      "value" : "Glycemiedagprofiel"
+    },
+    {
+      "language" : "fr-BE",
+      "value" : "Profil glycémique quotidien"
+    }]
+  }]
+}
+
+```

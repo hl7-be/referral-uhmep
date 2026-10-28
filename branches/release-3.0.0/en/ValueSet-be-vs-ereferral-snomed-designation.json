@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-ereferral-snomed-designation",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-ereferral-snomed-designation</b></p><a name=\"be-vs-ereferral-snomed-designation\"> </a><a name=\"hcbe-vs-ereferral-snomed-designation\"> </a><p>This ValueSet requires the Code system Supplement <a href=\"CodeSystem-be-cs-ereferral-snomed-designation.html\">SNOMED CT eReferral Supplement Designations</a>.</p><ul><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/valueset-supplement",
+    "valueCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation"
+  }],
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation",
+  "version" : "3.0.0",
+  "name" : "BeVSeReferralSnomedDesignation",
+  "title" : "SNOMED CT eReferral Supplement Designations",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-28T14:55:19+00:00",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "SNOMED CT supplement containing multilingual designations maintained for the eReferral project.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct"
+    }]
+  }
+}

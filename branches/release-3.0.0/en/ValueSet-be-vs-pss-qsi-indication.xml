@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-pss-qsi-indication"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-vs-pss-qsi-indication</b></p><a name="be-vs-pss-qsi-indication"> </a><a name="hcbe-vs-pss-qsi-indication"> </a><ul><li>Include all codes defined in <a href="CodeSystem-be-cs-pss-qsi-indications.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;3.0.0</span></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication"/>
+  <version value="3.0.0"/>
+  <name value="BeVSPSSQSIIndication"/>
+  <title value="PSS/QSI Indication"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-28T14:55:19+00:00"/>
+  <publisher value="Riziv-Inami Platform"/>
+  <contact>
+    <name value="Riziv-Inami Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.riziv-inami.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure Smals"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Indication codes for diagnostic imaging requests as PSS Internal Codes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"/>
+    </include>
+  </compose>
+</ValueSet>

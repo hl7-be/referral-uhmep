@@ -1,0 +1,441 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "be-questionnaire-imaging-attention-conditions",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Questionnaire be-questionnaire-imaging-attention-conditions</b></p><a name=\"be-questionnaire-imaging-attention-conditions\"> </a><a name=\"hcbe-questionnaire-imaging-attention-conditions\"> </a><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder1\"><tr class=\"xhtRowBorder2\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Cardinality</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the item\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireRoot\" class=\"hierarchy\"/> BeQuestionnaireImagingAttentionConditions</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Questionnaire for capturing attention-worthy conditions relevant to diagnostic imaging requests (implants, pregnancy, diabetes, allergies, etc.)</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Questionnaire</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">https://www.ehealth.fgov.be/standards/fhir/drp/Questionnaire/be-questionnaire-imaging-attention-conditions#1.1.1</td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" id=\"item.implants\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-coding.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"coding\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>implants</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Implants</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice\">choice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Value Set: <a href=\"ValueSet-be-vs-implant-type.html\">eReferral Implant Type</a></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" id=\"item.implants-other\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-text.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"text\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / implants / </span>implants-other</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Other implant type</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..*</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-text\">text</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Enable When: <span><a href=\"#item.implants\">implants</a> = Implant (SNOMED CT#40388003)</span></td></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.pregnancy\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>pregnancy</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Pregnancy</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.diabetes\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>diabetes</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Diabetes</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.allergy-contrast-agent\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>allergy-contrast-agent</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Allergy to contrast agent</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.metallic-debris\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>metallic-debris</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Metallic debris</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.renal-dysfunction\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>renal-dysfunction</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Renal dysfunction</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" id=\"item.other\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-text.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"text\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>other</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Other</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-text\">text</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" id=\"item.none\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-boolean.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"boolean\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">BeQuestionnaireImagingAttentionConditions / </span>none</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">None</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-boolean\">boolean</a></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "attn-1"
+    },
+    {
+      "url" : "severity",
+      "valueCode" : "error"
+    },
+    {
+      "url" : "human",
+      "valueString" : "At least one attention condition must be answered"
+    },
+    {
+      "url" : "expression",
+      "valueString" : "item.where(answer.exists()).exists()"
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"
+  }],
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/Questionnaire/be-questionnaire-imaging-attention-conditions",
+  "version" : "1.1.1",
+  "name" : "BeQuestionnaireImagingAttentionConditions",
+  "title" : "Imaging Attention Conditions Questionnaire",
+  "status" : "active",
+  "date" : "2026-10-28T16:38:41+00:00",
+  "publisher" : "eHealth Platform",
+  "contact" : [{
+    "name" : "eHealth Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ehealth.fgov.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net"
+    }]
+  },
+  {
+    "name" : "Message Structure eHealth",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support@be-ehealth-standards.atlassian.net",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Questionnaire for capturing attention-worthy conditions relevant to diagnostic imaging requests (implants, pregnancy, diabetes, allergies, etc.)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "item" : [{
+    "linkId" : "implants",
+    "text" : "Implants",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Implants"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Implantaten"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Implantate"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "choice",
+    "required" : false,
+    "repeats" : true,
+    "answerValueSet" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-implant-type",
+    "item" : [{
+      "linkId" : "implants-other",
+      "text" : "Other implant type",
+      "_text" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "fr-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Autre type d'implant"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        },
+        {
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "nl-BE"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Ander type implantaat"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        },
+        {
+          "extension" : [{
+            "url" : "lang",
+            "valueCode" : "de"
+          },
+          {
+            "url" : "content",
+            "valueString" : "Sonstiger Implantattyp"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+        }]
+      },
+      "type" : "text",
+      "enableWhen" : [{
+        "question" : "implants",
+        "operator" : "=",
+        "answerCoding" : {
+          "system" : "http://snomed.info/sct",
+          "code" : "40388003"
+        }
+      }],
+      "required" : true,
+      "repeats" : true
+    }]
+  },
+  {
+    "linkId" : "pregnancy",
+    "text" : "Pregnancy",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Grossesse"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Zwangerschap"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Schwangerschaft"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "boolean",
+    "required" : false
+  },
+  {
+    "linkId" : "diabetes",
+    "text" : "Diabetes",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Diabète"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Diabetes"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Diabetes"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "boolean",
+    "required" : true
+  },
+  {
+    "linkId" : "allergy-contrast-agent",
+    "text" : "Allergy to contrast agent",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Allergie à l'agent de contraste"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Allergie voor contrastmiddel"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Allergie gegen Kontrastmittel"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "boolean",
+    "required" : true
+  },
+  {
+    "linkId" : "metallic-debris",
+    "text" : "Metallic debris",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Débris métalliques"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Metaalfragment"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Metallischer Fremdkörper"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "boolean",
+    "required" : true
+  },
+  {
+    "linkId" : "renal-dysfunction",
+    "text" : "Renal dysfunction",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Insuffisance rénale"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Nierinsufficiëntie"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Niereninsuffizienz"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "boolean",
+    "required" : true
+  },
+  {
+    "linkId" : "other",
+    "text" : "Other",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Autre"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Andere"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Sonstiges"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "text",
+    "required" : false
+  },
+  {
+    "linkId" : "none",
+    "text" : "None",
+    "_text" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "fr-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Aucun"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "nl-BE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Geen"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      },
+      {
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Kein"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
+    "type" : "boolean",
+    "required" : true
+  }]
+}

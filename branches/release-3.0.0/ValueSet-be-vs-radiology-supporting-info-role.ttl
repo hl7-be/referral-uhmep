@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-radiology-supporting-info-role> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "be-vs-radiology-supporting-info-role"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-radiology-supporting-info-role</b></p><a name=\"be-vs-radiology-supporting-info-role\"> </a><a name=\"hcbe-vs-radiology-supporting-info-role\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-radiology-supporting-info-role.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version ?3.0.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role"] ;
+  fhir:ValueSet.version [ fhir:value "3.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "BeVSRadiologySupportingInfoRole"] ;
+  fhir:ValueSet.title [ fhir:value "eReferral Radiology SupportingInfo Role ValueSet"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-28T14:55:19+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Riziv-Inami Platform"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Riziv-Inami Platform" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.riziv-inami.be/standards/fhir" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "support-uhmep@smals.be" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Message Structure Smals" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "support-uhmep@smals.be" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "3.0.0" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-radiology-supporting-info-role.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

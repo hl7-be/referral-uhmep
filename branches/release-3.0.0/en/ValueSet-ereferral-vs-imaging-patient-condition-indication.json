@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ereferral-vs-imaging-patient-condition-indication",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ereferral-vs-imaging-patient-condition-indication</b></p><a name=\"ereferral-vs-imaging-patient-condition-indication\"> </a><a name=\"hcereferral-vs-imaging-patient-condition-indication\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-be-vs-pss-qsi-indication.html\">PSS/QSI Indication</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-be-vs-diagnostic-imaging-condition.html\">eReferral/PSS Diagnostic Imaging Condition</a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication",
+  "version" : "3.0.0",
+  "name" : "EReferralVSImagingPatientConditionIndication",
+  "title" : "eReferral Imaging Patient Condition Indication",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-28T14:55:19+00:00",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Allowed coded indications for patient condition in diagnostic imaging.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication"]
+    },
+    {
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition"]
+    }]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-radiology-supporting-info-role",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-radiology-supporting-info-role</b></p><a name=\"be-vs-radiology-supporting-info-role\"> </a><a name=\"hcbe-vs-radiology-supporting-info-role\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-radiology-supporting-info-role.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version &#x1F4CD;3.0.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role",
+  "version" : "3.0.0",
+  "name" : "BeVSRadiologySupportingInfoRole",
+  "title" : "eReferral Radiology SupportingInfo Role ValueSet",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-28T14:55:19+00:00",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
+      "version" : "3.0.0"
+    }]
+  }
+}

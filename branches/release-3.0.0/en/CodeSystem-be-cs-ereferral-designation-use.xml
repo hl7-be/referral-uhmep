@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="be-cs-ereferral-designation-use"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem be-cs-ereferral-designation-use</b></p><a name="be-cs-ereferral-designation-use"> </a><a name="hcbe-cs-ereferral-designation-use"> </a><p>This case-sensitive code system <code>https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">eReferral-preferred<a name="be-cs-ereferral-designation-use-eReferral-preferred"> </a></td><td>eReferral preferred term</td></tr><tr><td style="white-space:nowrap">eReferral-synonym<a name="be-cs-ereferral-designation-use-eReferral-synonym"> </a></td><td>eReferral synonym</td></tr></table></div>
+  </text>
+  <url value="https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"/>
+  <version value="3.0.0"/>
+  <name value="BeCSeReferralDesignationUse"/>
+  <title value="eReferral Designation Use"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-28T14:55:19+00:00"/>
+  <publisher value="Riziv-Inami Platform"/>
+  <contact>
+    <name value="Riziv-Inami Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.riziv-inami.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure Smals"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Identifies terminology designations maintained specifically for the eReferral project."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="eReferral-preferred"/>
+    <display value="eReferral preferred term"/>
+  </concept>
+  <concept>
+    <code value="eReferral-synonym"/>
+    <display value="eReferral synonym"/>
+  </concept>
+</CodeSystem>

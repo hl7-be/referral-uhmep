@@ -1,0 +1,42 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeCSPSSQSIDiagnosticImagingProcedure",
+    "title" : "PSS/QSI Diagnostic Imaging Procedure",
+    "description" : "PSS/QSI diagnostic imaging procedure codes with English displays and Belgian French, Dutch and German designations."
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeCSPSSIndication",
+    "title" : "PSS Indication",
+    "description" : "PSS indication codes for diagnostic imaging requests."
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeCSRadiologySupportingInfoRole",
+    "title" : "eReferral Radiology SupportingInfo Role CodeSystem",
+    "description" : "Identifies the role represented by an entry in ServiceRequest.supportingInfo for a diagnostic imaging referral."
+  },
+  {
+    "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "BeCSeReferralDesignationUse",
+    "title" : "eReferral Designation Use",
+    "description" : "Identifies terminology designations maintained specifically for the eReferral project."
+  },
+  {
+    "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeCSeReferralSnomedDesignation",
+    "title" : "SNOMED CT eReferral Supplement Designations",
+    "description" : "SNOMED CT supplement containing multilingual designations maintained for the eReferral project."
+  }]
+}

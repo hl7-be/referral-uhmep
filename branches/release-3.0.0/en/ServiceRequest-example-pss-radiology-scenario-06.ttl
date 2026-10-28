@@ -1,0 +1,386 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-06> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-pss-radiology-scenario-06"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+       fhir:index -1 ;
+       fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest example-pss-radiology-scenario-06</b></p><a name=\"example-pss-radiology-scenario-06\"> </a><a name=\"hcexample-pss-radiology-scenario-06\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ereferral-servicerequest-diagnosticimaging.html\">EReferralServiceRequestDiagnosticImaging</a></p></div><p><b>BeValidityPeriod</b>: 2026-09-24 --&gt; 2027-09-24</p><p><b>BePSSInfo</b>: <a href=\"https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/NamingSystem-be-ns-pss-id.html\" title=\"PSS ID naming system\">BePSSId</a>/PSS-RAD-006</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type diagnostic-imaging-appendix-82}\">Diagnostic imaging (Appendix 82)</span>, <span title=\"Codes:{http://snomed.info/sct 363679005}\">Imaging</span>, <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track ambulatory}\">Ambulatory</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 702684006}\">Magnetic resonance angiography of head with contrast (procedure)</span></p><p><b>subject</b>: <a href=\"#hcexample-pss-radiology-scenario-06/pss-radiology-scenario-06-patient\">Anonymous Patient (no stated gender), DoB: </a></p><p><b>authoredOn</b>: 2026-09-24 10:15:00+0200</p><p><b>requester</b>: <a href=\"PractitionerRole-72101230445-PHYSICIAN.html\">Physician Example (official) (https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#72101230445 (use: official)): physician</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}</span></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"#hcexample-pss-radiology-scenario-06/pss-radiology-scenario-06-checklist\">Response to Questionnaire '-&gt;Imaging Attention Conditions Questionnaire' about 'Unspecified Subject'</a></li><li>Patient condition</li><li>Patient condition</li></ul><p><b>note</b>: </p><blockquote><div><p>urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}</p>\n</div></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Patient #pss-radiology-scenario-06-patient</b></p><a name=\"example-pss-radiology-scenario-06/pss-radiology-scenario-06-patient\"> </a><a name=\"hcexample-pss-radiology-scenario-06/pss-radiology-scenario-06-patient\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/StructureDefinition-be-patient.html\">BePatient</a> version: 2.2.0</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB: </p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Gender at the time of birth. The gender at birth has lasting consequences on clinical and medical level.\"><a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/StructureDefinition-be-ext-gender-at-birth.html\">BeExtGenderAtBirth</a></td><td colspan=\"3\"><span title=\"Codes:{http://hl7.org/fhir/administrative-gender other}\">Other</span></td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: QuestionnaireResponse #pss-radiology-scenario-06-checklist</b></p><a name=\"example-pss-radiology-scenario-06/pss-radiology-scenario-06-checklist\"> </a><a name=\"hcexample-pss-radiology-scenario-06/pss-radiology-scenario-06-checklist\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ereferral-imaging-attention-conditions-response.html\">EReferralImagingAttentionConditionsResponse</a></p></div><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder1\"><tr class=\"xhtRowBorder2\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The linkID for the item\">LinkID</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the item can appear in the instance\">Definition</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder1\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Answer</a><span style=\"float: right\"><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> pss-radiology-scenario-06-checklist</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\"></td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Questionnaire:<a href=\"https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/Questionnaire-be-questionnaire-imaging-attention-conditions.html\">Imaging Attention Conditions Questionnaire</a></td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>implants</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Implants</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>pregnancy</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Pregnancy</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">false</td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>diabetes</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Diabetes</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">false</td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>allergy-contrast-agent</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Allergy to contrast agent</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">false</td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>metallic-debris</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Metallic debris</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">false</td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>renal-dysfunction</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Renal dysfunction</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">false</td></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>other</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">Other</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\"/></tr>#xD;\n<tr class=\"xhtRowBorder1 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder1 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">pss-radiology-scenario-06-checklist / </span>none</td><td style=\"\" class=\"hierarchy xhtCellBorder1\">None</td><td style=\"\" class=\"hierarchy xhtCellBorder1\"/><td style=\"\" class=\"hierarchy xhtCellBorder1\">true</td></tr>#xD;\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"https://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></blockquote></div>"
+  ] ;
+  fhir:DomainResource.contained [
+     a fhir:Patient ;
+     fhir:index -1 ;
+     fhir:Resource.id [ fhir:value "pss-radiology-scenario-06-patient" ] ;
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0" ;
+         fhir:index -1 ;
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0>
+       ]
+     ] ;
+     fhir:DomainResource.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-gender-at-birth" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "encryptedValue" ] ;
+             fhir:Extension.valueString [ fhir:value "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}" ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "marker" ] ;
+             fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "format" ] ;
+             fhir:Extension.valueCode [ fhir:value "encrypted" ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "version" ] ;
+             fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+           ] ;
+           fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymized-content" ]
+         ] ;
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "http://hl7.org/fhir/administrative-gender" ] ;
+           fhir:Coding.code [ fhir:value "other" ]
+         ]
+       ]
+     ] ;
+     fhir:Patient.birthDate [
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "encryptedValue" ] ;
+           fhir:Extension.valueString [ fhir:value "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "marker" ] ;
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "format" ] ;
+           fhir:Extension.valueCode [ fhir:value "encrypted" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "version" ] ;
+           fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+         ] ;
+         fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymized-content" ]
+       ]
+     ]
+  ], [
+     a fhir:QuestionnaireResponse ;
+     fhir:index -1 ;
+     fhir:Resource.id [ fhir:value "pss-radiology-scenario-06-checklist" ] ;
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response" ;
+         fhir:index -1 ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response>
+       ]
+     ] ;
+     fhir:QuestionnaireResponse.questionnaire [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/Questionnaire/be-questionnaire-imaging-attention-conditions" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/referral/Questionnaire/be-questionnaire-imaging-attention-conditions>
+     ] ;
+     fhir:QuestionnaireResponse.status [ fhir:value "completed" ] ;
+     fhir:QuestionnaireResponse.authored [ fhir:value "2026-09-24T10:15:00+02:00"^^xsd:dateTime ] ;
+     fhir:QuestionnaireResponse.item [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "implants" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Implants" ]
+     ], [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "pregnancy" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Pregnancy" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index -1 ;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "diabetes" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Diabetes" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index -1 ;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "allergy-contrast-agent" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Allergy to contrast agent" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index -1 ;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "metallic-debris" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Metallic debris" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index -1 ;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "renal-dysfunction" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Renal dysfunction" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index -1 ;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "other" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "Other" ]
+     ], [
+       fhir:index -1 ;
+       fhir:QuestionnaireResponse.item.linkId [ fhir:value "none" ] ;
+       fhir:QuestionnaireResponse.item.text [ fhir:value "None" ] ;
+       fhir:QuestionnaireResponse.item.answer [
+         fhir:index -1 ;
+         fhir:QuestionnaireResponse.item.answer.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ]
+     ]
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period" ] ;
+     fhir:Extension.valuePeriod [
+       fhir:Period.start [ fhir:value "2026-09-24"^^xsd:date ] ;
+       fhir:Period.end [ fhir:value "2027-09-24"^^xsd:date ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-pss-info" ] ;
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/pss/NamingSystem/pss-id" ] ;
+       fhir:Identifier.value [ fhir:value "PSS-RAD-006" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "active"] ;
+  fhir:ServiceRequest.intent [ fhir:value "order"] ;
+  fhir:ServiceRequest.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type" ] ;
+       fhir:Coding.code [ fhir:value "diagnostic-imaging-appendix-82" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:363679005 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "363679005" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track" ] ;
+       fhir:Coding.code [ fhir:value "ambulatory" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.priority [ fhir:value "routine"] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:702684006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "702684006" ] ;
+       fhir:Coding.display [ fhir:value "Magnetic resonance angiography of head with contrast (procedure)" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:Reference.reference [ fhir:value "#pss-radiology-scenario-06-patient" ] ;
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin" ] ;
+       fhir:Identifier.value [
+         fhir:value "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}" ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "marker" ] ;
+             fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "format" ] ;
+             fhir:Extension.valueCode [ fhir:value "direct" ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "version" ] ;
+             fhir:Extension.valuePositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+           ] ;
+           fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+         ]
+       ]
+     ]
+  ] ;
+  fhir:ServiceRequest.authoredOn [ fhir:value "2026-09-24T10:15:00+02:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.requester [
+     fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/PractitionerRole/72101230445-PHYSICIAN> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/72101230445-PHYSICIAN" ]
+  ] ;
+  fhir:ServiceRequest.reasonCode [
+     fhir:index -1 ;
+     fhir:CodeableConcept.text [
+       fhir:value "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "marker" ] ;
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "format" ] ;
+           fhir:Extension.valueCode [ fhir:value "encrypted" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "version" ] ;
+           fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+         ] ;
+         fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+       ]
+     ]
+  ] ;
+  fhir:ServiceRequest.supportingInfo [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role" ] ;
+       fhir:Extension.valueCode [ fhir:value "safety-checklist" ]
+     ] ;
+     fhir:Reference.reference [ fhir:value "#pss-radiology-scenario-06-checklist" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role" ] ;
+       fhir:Extension.valueCode [ fhir:value "patient-condition" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications" ] ;
+           fhir:Coding.code [ fhir:value "5000247" ] ;
+           fhir:Coding.display [ fhir:value "Head trauma, headache" ]
+         ] ;
+         fhir:CodeableConcept.text [
+           fhir:value "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}" ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Element.extension [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "marker" ] ;
+               fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "format" ] ;
+               fhir:Extension.valueCode [ fhir:value "encrypted" ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "version" ] ;
+               fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+             ] ;
+             fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+           ]
+         ]
+       ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Patient condition" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role" ] ;
+       fhir:Extension.valueCode [ fhir:value "patient-condition" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications" ] ;
+           fhir:Coding.code [ fhir:value "193" ]
+         ] ;
+         fhir:CodeableConcept.text [
+           fhir:value "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}" ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Element.extension [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "marker" ] ;
+               fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "format" ] ;
+               fhir:Extension.valueCode [ fhir:value "encrypted" ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "version" ] ;
+               fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+             ] ;
+             fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+           ]
+         ]
+       ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Patient condition" ]
+  ] ;
+  fhir:ServiceRequest.note [
+     fhir:index -1 ;
+     fhir:Annotation.text [
+       fhir:value "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "marker" ] ;
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "format" ] ;
+           fhir:Extension.valueCode [ fhir:value "encrypted" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "version" ] ;
+           fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+         ] ;
+         fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-06.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

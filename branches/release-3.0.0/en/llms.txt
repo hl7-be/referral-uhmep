@@ -1,0 +1,130 @@
+# inami.fhir.be.ereferral#3.0.0: eReferral Implementation Guide(en)
+
+## Pages
+
+* [](index.md)
+* [Downloads](downloads.md)
+* [Annex 81 Medication Preparation](mapper-nursing-annex81-medication-preparation.md)
+* [Profiles Architecture](topic-profiles-architecture.md)
+* [Cancel a Medical Document](operation-cancel-medical-document.md)
+* [Hygienic Care](mapper-nursing-hygienic-care.md)
+* [Changes](changes.md)
+* [Unassign a Care Provider](operation-unassign-care-provider.md)
+* [Proposal Life Cycle](topic-prescription-lifecycle-proposal.md)
+* [Radiology](mappings-radiology.md)
+* [Chronic Dialysis](mapper-nursing-chronic-dialysis.md)
+* [API Operations](api-operations.md)
+* [API Integration](api-integration.md)
+* [Diabetes Education without Trajectory](mapper-nursing-diabetes-education-without-trajectory.md)
+* [Life Cycle](topic-prescription-lifecycle.md)
+* [Guidance](guidance.md)
+* [Medication Prefill Preparation Not Refunded](mapper-nursing-medication-prefill-not-refunded.md)
+* [Cancel Execution](operation-cancel-execution.md)
+* [Diabetes Education within Care Trajectory](mapper-nursing-diabetes-education-care-trajectory.md)
+* [Error Codes](error-codes.md)
+* [Artifacts Summary](artifacts.md)
+* [Create a Medical Document](operation-create-medical-document.md)
+* [Assign a Care Provider](operation-assign-care-provider.md)
+* [Evaluate Radiology Prescription](operation-evaluate-radiology-prescription.md)
+* [Consult or Search Medical Documents](operation-consult-search-medical-documents.md)
+* [Visibility & Blacklisting](topic-visibility-blacklisting.md)
+* [Glossary](glossary.md)
+* [Nursing](mappings-nursing.md)
+* [Diagnostic Imaging](mapper-radiology-diagnostic-imaging.md)
+* [Record Execution End](operation-record-execution-end.md)
+* [Complex Operations](api-complex-operations.md)
+* [Evaluate Proposal](operation-evaluate-proposal.md)
+* [Prescription Extension](topic-prescription-lifecycle-extension.md)
+* [Parameters](mapper-nursing-parameters.md)
+* [Technical](technical.md)
+* [Access Matrix](operation-access-matrix.md)
+* [Record Execution Interruption](operation-record-execution-interruption.md)
+* [Prescription Templates](topic-prescription-templates.md)
+* [Business Field Mappings](mappings-business.md)
+* [Profile Rewriting](topic-profile-rewriting.md)
+* [Generic Nursing](mapper-nursing-generic.md)
+* [Sampling](mapper-nursing-sampling.md)
+* [Complete a Medical Document](operation-complete-medical-document.md)
+* [Record Execution Start](operation-record-execution-start.md)
+* [Diabetes Education via Convention Centre](mapper-nursing-diabetes-education-convention-center.md)
+* [Bloodletting](mapper-nursing-bloodletting.md)
+* [Glycemic Test](mapper-nursing-glycemic-test.md)
+* [Diabetes Education within Start Trajectory](mapper-nursing-diabetes-education-start-trajectory.md)
+
+## Resources
+
+### CodeSystems
+
+* [eReferral Designation Use](CodeSystem-be-cs-ereferral-designation-use.md)
+* [SNOMED CT eReferral Supplement Designations](CodeSystem-be-cs-ereferral-snomed-designation.md)
+* [PSS/QSI Diagnostic Imaging Procedure](CodeSystem-be-cs-pss-qsi-diagnostic-imaging-procedure.md)
+* [PSS Indication](CodeSystem-be-cs-pss-qsi-indications.md)
+* [eReferral Radiology SupportingInfo Role CodeSystem](CodeSystem-be-cs-radiology-supporting-info-role.md)
+
+### ValueSets
+
+* [eReferral/PSS Diagnostic Imaging Condition](ValueSet-be-vs-diagnostic-imaging-condition.md)
+* [eReferral/PSS Diagnostic Imaging Procedure](ValueSet-be-vs-diagnostic-imaging-procedure.md)
+* [SNOMED CT eReferral Supplement Designations](ValueSet-be-vs-ereferral-snomed-designation.md)
+* [Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure](ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.md)
+* [PSS/QSI Diagnostic Imaging Procedure](ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.md)
+* [PSS/QSI Indication](ValueSet-be-vs-pss-qsi-indication.md)
+* [eReferral Radiology SupportingInfo Role ValueSet](ValueSet-be-vs-radiology-supporting-info-role.md)
+* [eReferral Imaging Patient Condition Indication](ValueSet-ereferral-vs-imaging-patient-condition-indication.md)
+
+### Resource Profiles
+
+* [EReferralAnnex81](StructureDefinition-ereferral-annex-81.md)
+* [EReferralImagingAttentionConditionsResponse](StructureDefinition-ereferral-imaging-attention-conditions-response.md)
+* [EReferralServiceRequestDiagnosticImaging](StructureDefinition-ereferral-servicerequest-diagnosticimaging.md)
+* [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicerequest-nursing.md)
+
+### Extensions
+
+* [CodeableConcept Extension for Reference](StructureDefinition-be-ext-codeable-concept.md)
+* [eReferral Radiology SupportingInfo Role](StructureDefinition-be-ext-radiology-supporting-info-role.md)
+
+### ImplementationGuides
+
+* [eReferral Implementation Guide](ImplementationGuide-inami.fhir.be.ereferral.md)
+
+### Tasks
+
+* [ereferral-referral-task](Task-ereferral-referral-task.md)
+
+### Examples
+
+* [67120919457 (Practitioner)](Practitioner-67120919457.md)
+* [72101230445 (Practitioner)](Practitioner-72101230445.md)
+* [Requester1 (Practitioner)](Practitioner-Requester1.md)
+* [practitioner2 (Practitioner)](Practitioner-practitioner2.md)
+* [67120919457-NURSE (PractitionerRole)](PractitionerRole-67120919457-NURSE.md)
+* [72101230445-PHYSICIAN (PractitionerRole)](PractitionerRole-72101230445-PHYSICIAN.md)
+* [72101230446-PHYSICIAN (PractitionerRole)](PractitionerRole-72101230446-PHYSICIAN.md)
+* [DOCTOR-10829059004 (PractitionerRole)](PractitionerRole-DOCTOR-10829059004.md)
+* [NURSE-45094508408 (PractitionerRole)](PractitionerRole-NURSE-45094508408.md)
+* [example-drp-clinical-imaging (ServiceRequest)](ServiceRequest-example-drp-clinical-imaging.md)
+* [example-drp-nursing-bloodletting (ServiceRequest)](ServiceRequest-example-drp-nursing-bloodletting.md)
+* [example-drp-nursing-chronic-dialysis (ServiceRequest)](ServiceRequest-example-drp-nursing-chronic-dialysis.md)
+* [example-drp-nursing-de-convention-center (ServiceRequest)](ServiceRequest-example-drp-nursing-de-convention-center.md)
+* [example-drp-nursing-de-within-care-trajectory (ServiceRequest)](ServiceRequest-example-drp-nursing-de-within-care-trajectory.md)
+* [example-drp-nursing-de-within-start-trajectory (ServiceRequest)](ServiceRequest-example-drp-nursing-de-within-start-trajectory.md)
+* [example-drp-nursing-de-without-care-trajectory (ServiceRequest)](ServiceRequest-example-drp-nursing-de-without-care-trajectory.md)
+* [example-drp-nursing-generic (ServiceRequest)](ServiceRequest-example-drp-nursing-generic.md)
+* [example-drp-nursing-glycemic-test (ServiceRequest)](ServiceRequest-example-drp-nursing-glycemic-test.md)
+* [example-drp-nursing-hygienic-care (ServiceRequest)](ServiceRequest-example-drp-nursing-hygienic-care.md)
+* [example-drp-nursing-med-prep-not-refunded (ServiceRequest)](ServiceRequest-example-drp-nursing-med-prep-not-refunded.md)
+* [example-drp-nursing-med-preparation-appendix-81 (ServiceRequest)](ServiceRequest-example-drp-nursing-med-preparation-appendix-81.md)
+* [example-drp-nursing-parameters (ServiceRequest)](ServiceRequest-example-drp-nursing-parameters.md)
+* [example-drp-nursing-sampling (ServiceRequest)](ServiceRequest-example-drp-nursing-sampling.md)
+* [example-prior-drp-clinical-imaging (ServiceRequest)](ServiceRequest-example-prior-drp-clinical-imaging.md)
+* [example-pss-radiology-scenario-01 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-01.md)
+* [example-pss-radiology-scenario-02 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-02.md)
+* [example-pss-radiology-scenario-03 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-03.md)
+* [example-pss-radiology-scenario-04 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-04.md)
+* [example-pss-radiology-scenario-05 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-05.md)
+* [example-pss-radiology-scenario-06 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-06.md)
+* [example-pss-radiology-scenario-07 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-07.md)
+* [example-pss-radiology-scenario-08 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-08.md)
+* [example-pss-radiology-scenario-09 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-09.md)
+* [example-pss-radiology-scenario-10 (ServiceRequest)](ServiceRequest-example-pss-radiology-scenario-10.md)

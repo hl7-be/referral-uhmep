@@ -1,0 +1,17 @@
+{
+  "resourceType" : "Task",
+  "id" : "ereferral-referral-task",
+  "meta" : {
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-task"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task ereferral-referral-task</b></p><a name=\"ereferral-referral-task\"> </a><a name=\"hcereferral-referral-task\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/StructureDefinition-be-referral-task.html\">BeReferralTask</a></p></div><p><b>status</b>: Draft</p><p><b>intent</b>: order</p><p><b>description</b>: Example referral task associated with a nursing prescription.</p><p><b>focus</b>: <a href=\"ServiceRequest-example-drp-nursing-bloodletting.html\">ServiceRequest urn:be:fgov:pseudo-encrypted:v2:{{kid}}:{{jwe}}</a></p></div>"
+  },
+  "status" : "draft",
+  "intent" : "order",
+  "description" : "Example referral task associated with a nursing prescription.",
+  "focus" : {
+    "reference" : "ServiceRequest/example-drp-nursing-bloodletting"
+  }
+}

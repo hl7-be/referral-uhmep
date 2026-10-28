@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="example-drp-nursing-generic"/>
+  <meta>
+    <extension id="{{kid}}" url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-key-pseudonymization">
+      <extension url="key">
+        <valueString value="urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}">
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+            <extension url="marker">
+              <valueBoolean value="true"/>
+            </extension>
+            <extension url="format">
+              <valueCode value="direct"/>
+            </extension>
+            <extension url="version">
+              <valuePositiveInt value="2"/>
+            </extension>
+          </extension>
+        </valueString>
+      </extension>
+    </extension>
+    <profile value="https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest example-drp-nursing-generic</b></p><a name="example-drp-nursing-generic"> </a><a name="hcexample-drp-nursing-generic"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></p></div><p><b>BeValidityPeriod</b>: 2026-02-18 --&gt; (ongoing)</p><p><b>BeFeedbackToPrescriber</b>: false</p><p><b>status</b>: Draft</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 9632001}">Nursing procedure</span>, <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type generic-nursing}">Generic nursing care</span></p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 9632001}">Nursing procedure</span></p><p><b>orderDetail</b>: <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types preparation-and-administration-of-medication-to-psychiatric-patient}">Preparation and administration of medication to a psychiatric patient</span></p><p><b>subject</b>: Identifier: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html" title="NISS/INSZ">BeSSINNamingSystem</a>/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)</p><p><b>occurrence</b>: Count 360  times, 3 per 1 day</p><p><b>authoredOn</b>: 2026-02-18 13:54:36+0100</p><p><b>requester</b>: <a href="PractitionerRole-72101230445-PHYSICIAN.html">Physician Example (official) (https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#72101230445 (use: official)): physician</a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 404684003}">urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}</span></p><p><b>note</b>: , , </p><blockquote><div><p>urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}</p>
+</div></blockquote><blockquote><div><p>urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}</p>
+</div></blockquote><blockquote><div><p>urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}</p>
+</div></blockquote></div>
+  </text>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period">
+    <valuePeriod>
+      <start value="2026-02-18"/>
+    </valuePeriod>
+  </extension>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-feedback-to-prescriber">
+    <valueBoolean value="false"/>
+  </extension>
+  <status value="draft"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="9632001"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"/>
+      <code value="generic-nursing"/>
+    </coding>
+  </category>
+  <priority value="routine"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="9632001"/>
+    </coding>
+  </code>
+  <orderDetail>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types"/>
+      <code value="preparation-and-administration-of-medication-to-psychiatric-patient"/>
+    </coding>
+  </orderDetail>
+  <subject>
+    <identifier>
+      <use value="official"/>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"/>
+      <value value="urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}">
+        <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+          <extension url="marker">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="format">
+            <valueCode value="direct"/>
+          </extension>
+          <extension url="version">
+            <valuePositiveInt value="2"/>
+          </extension>
+        </extension>
+      </value>
+    </identifier>
+  </subject>
+  <occurrenceTiming>
+    <repeat>
+      <boundsDuration>
+        <value value="4"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mo"/>
+      </boundsDuration>
+      <count value="360"/>
+      <frequency value="3"/>
+      <period value="1"/>
+      <periodUnit value="d"/>
+    </repeat>
+  </occurrenceTiming>
+  <authoredOn value="2026-02-18T13:54:36+01:00"/>
+  <requester>
+    <reference value="PractitionerRole/72101230445-PHYSICIAN"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="404684003"/>
+    </coding>
+    <text value="urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}">
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+        <extension url="marker">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="format">
+          <valueCode value="encrypted"/>
+        </extension>
+        <extension url="version">
+          <valuePositiveInt value="1"/>
+        </extension>
+      </extension>
+    </text>
+  </reasonCode>
+  <note>
+    <extension url="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-codeableconcept">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"/>
+          <code value="medical-reason"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <text value="urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}">
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+        <extension url="marker">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="format">
+          <valueCode value="encrypted"/>
+        </extension>
+        <extension url="version">
+          <valuePositiveInt value="1"/>
+        </extension>
+      </extension>
+    </text>
+  </note>
+  <note>
+    <extension url="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-codeableconcept">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"/>
+          <code value="contraindication"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <text value="urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}">
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+        <extension url="marker">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="format">
+          <valueCode value="encrypted"/>
+        </extension>
+        <extension url="version">
+          <valuePositiveInt value="1"/>
+        </extension>
+      </extension>
+    </text>
+  </note>
+  <note>
+    <extension url="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-codeableconcept">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"/>
+          <code value="general-remarks"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <text value="urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}">
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+        <extension url="marker">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="format">
+          <valueCode value="encrypted"/>
+        </extension>
+        <extension url="version">
+          <valuePositiveInt value="1"/>
+        </extension>
+      </extension>
+    </text>
+  </note>
+</ServiceRequest>

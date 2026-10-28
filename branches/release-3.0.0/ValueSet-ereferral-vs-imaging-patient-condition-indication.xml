@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ereferral-vs-imaging-patient-condition-indication"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ereferral-vs-imaging-patient-condition-indication</b></p><a name="ereferral-vs-imaging-patient-condition-indication"> </a><a name="hcereferral-vs-imaging-patient-condition-indication"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-be-vs-pss-qsi-indication.html">PSS/QSI Indication</a></li><li>Import all the codes that are contained in <a href="ValueSet-be-vs-diagnostic-imaging-condition.html">eReferral/PSS Diagnostic Imaging Condition</a></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication"/>
+  <version value="3.0.0"/>
+  <name value="EReferralVSImagingPatientConditionIndication"/>
+  <title value="eReferral Imaging Patient Condition Indication"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-28T14:55:19+00:00"/>
+  <publisher value="Riziv-Inami Platform"/>
+  <contact>
+    <name value="Riziv-Inami Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.riziv-inami.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure Smals"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Allowed coded indications for patient condition in diagnostic imaging."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication"/>
+    </include>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition"/>
+    </include>
+  </compose>
+</ValueSet>

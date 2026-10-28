@@ -1,0 +1,2431 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "inami.fhir.be.ereferral"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide inami.fhir.be.ereferral</b></p><a name=\"inami.fhir.be.ereferral\"> </a><a name=\"hcinami.fhir.be.ereferral\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>EReferral</h2><p>The official URL for this implementation guide is: </p><pre>https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral</pre><div><p>eReferral Implementation Guide</p>\n</div></div>"
+  ] ;
+  fhir:ImplementationGuide.url [ fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral"] ;
+  fhir:ImplementationGuide.version [ fhir:value "3.0.0"] ;
+  fhir:ImplementationGuide.name [ fhir:value "EReferral"] ;
+  fhir:ImplementationGuide.title [ fhir:value "eReferral Implementation Guide"] ;
+  fhir:ImplementationGuide.status [ fhir:value "draft"] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-02"^^xsd:date] ;
+  fhir:ImplementationGuide.publisher [ fhir:value "Riziv-Inami Platform"] ;
+  fhir:ImplementationGuide.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Riziv-Inami Platform" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.riziv-inami.be/standards/fhir" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "support-uhmep@smals.be" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Message Structure Smals" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "support-uhmep@smals.be" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:ImplementationGuide.description [ fhir:value "eReferral Implementation Guide"] ;
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:ImplementationGuide.packageId [ fhir:value "inami.fhir.be.ereferral"] ;
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1" ;
+     fhir:index 0
+  ] ;
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "hl7tx" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.5.0" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.id [ fhir:value "hl7ext" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.4.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_be_core" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.be.core" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "2.2.0" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_be_core_clinical" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ImplementationGuide/hl7.fhir.be.core-clinical" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/core-clinical/ImplementationGuide/hl7.fhir.be.core-clinical>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.be.core-clinical" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.3.0" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_be_referral" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/ImplementationGuide/hl7.fhir.be.referral" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/referral/ImplementationGuide/hl7.fhir.be.referral>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.be.referral" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_be_infsec" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/ImplementationGuide/hl7.fhir.be.infsec" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/infsec/ImplementationGuide/hl7.fhir.be.infsec>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.be.infsec" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.3.0" ]
+  ] ;
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
+       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.3.0" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2026+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "STU" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "shownav" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "pin-canonicals" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "pin-multiples" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-for-patients-without-trajectory" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-with-trajectory" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-glycemia-measurement-timing" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-session-types" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-implant-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-modality" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-priority" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-care-requested" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-medical-problem" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-nursing-diagnosis" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-technical-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-laterality" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-site" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-categories-of-care" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diabetes-education-identifier" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-education-type-with-trajectory" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-education-type-without-trajectory" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-educator-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-glycemia-measurement-time" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-note-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-care-requested" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-parameter-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-sample-substance-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-session-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-session-type-extended" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-implant-type" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-imaging-modality" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-imaging-priority" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 54 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 55 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 56 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 57 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 58 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 59 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 60 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 61 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 62 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 63 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 64 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 65 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 66 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 67 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 68 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 69 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 70 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 71 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 72 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 73 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 74 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 75 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 76 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ] ;
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-codeable-concept> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-codeable-concept" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeableConcept Extension for Reference" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension able to hold a coded concept on a Reference element." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-ereferral-designation-use" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eReferral Designation Use" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifies terminology designations maintained specifically for the eReferral project." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/ereferral-vs-imaging-patient-condition-indication> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/ereferral-vs-imaging-patient-condition-indication" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eReferral Imaging Patient Condition Indication" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Allowed coded indications for patient condition in diagnostic imaging." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-radiology-supporting-info-role> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-ext-radiology-supporting-info-role" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eReferral Radiology SupportingInfo Role" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifies the role of a ServiceRequest.supportingInfo entry used in a diagnostic imaging referral." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-radiology-supporting-info-role> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-radiology-supporting-info-role" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eReferral Radiology SupportingInfo Role CodeSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifies the role represented by an entry in ServiceRequest.supportingInfo for a diagnostic imaging referral." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-radiology-supporting-info-role> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-radiology-supporting-info-role" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eReferral Radiology SupportingInfo Role ValueSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Task" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/Task/ereferral-referral-task> ;
+         fhir:Reference.reference [ fhir:value "Task/ereferral-referral-task" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ereferral-referral-task" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example referral task associated with a nursing prescription." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-diagnostic-imaging-condition> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-diagnostic-imaging-condition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eReferral/PSS Diagnostic Imaging Condition" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Clinical conditions that can support a diagnostic imaging request using SNOMED CT." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-diagnostic-imaging-procedure> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-diagnostic-imaging-procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eReferral/PSS Diagnostic Imaging Procedure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ereferral-annex-81" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EReferralAnnex81" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Annex81 proposal and approval" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ereferral-imaging-attention-conditions-response" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EReferralImagingAttentionConditionsResponse" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "eReferral response to the imaging attention conditions questionnaire." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ereferral-servicerequest-diagnosticimaging" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EReferralServiceRequestDiagnosticImaging" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The diagnostic imaging profile. eReferral version." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ereferral-servicerequest-nursing" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EReferralServiceRequestNursing" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The nursing profile, generic version. Please note the nursing referral for medication does NOT depend on this generic version but is a FHIR prodfile on a different FHIR resource (MedicationRequest)" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/Practitioner/67120919457> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/67120919457" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example nurse identified by SSIN" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example nurse referenced by the eReferral examples." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/PractitionerRole/67120919457-NURSE> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/67120919457-NURSE" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example nurse role" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nurse role whose identifier follows the {ssin}-{discipline} convention." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 15 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/Practitioner/72101230445> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/72101230445" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example physician identified by SSIN" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example physician referenced by the eReferral examples." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 16 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/PractitionerRole/72101230445-PHYSICIAN> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/72101230445-PHYSICIAN" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example physician role" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Physician role whose identifier follows the {ssin}-{discipline} convention." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 17 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-med-preparation-appendix-81> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-med-preparation-appendix-81" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Annex 81 - Preparing medication (proposal)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of an Annex 81 ServiceRequest proposal for preparing medication.\n\nInputs and values used in this example:\n- Profile: be-annex-81\n- Intent: proposal\n- Prescription type: medication-prefill-preparation-appendix-81\n- Procedure code (SNOMED): 385796006\n- Validity period: 2026-02-18 - 2027-02-18\n- Requester role: nurse (PractitionerRole/67120919457-NURSE)\n- Indications (reasonCode - 13 SNOMED codes):\n  * 1290542000\n  * 129834002\n  * 271299001\n  * 275928001\n  * 359748005\n  * 448176008\n  * 62014003\n  * 708014007\n  * 1137439008\n  * 211071000172100\n  * 211101000172107\n  * 397540003\n  * 52448006" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81>
+       ]
+     ], [
+       fhir:index 18 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-bloodletting> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-bloodletting" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Bloodletting" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of therapeutic bloodletting including quantity.\n\nInputs and values used in this example:\n- Prescription type: bloodletting\n- Procedure code (SNOMED): 127606004\n- Quantity: 300 mL\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 1 week\n  * count: 3\n  * frequency: 3\n  * period: 1 week\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 19 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-chronic-dialysis> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-chronic-dialysis" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Chronic home dialysis" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of chronic home dialysis prescription.\n\nInputs and values used in this example:\n- Prescription type: chronic-dialysis\n- Procedure code (SNOMED): 225230008\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 2 months\n  * count: 9\n  * frequency: 1\n  * period: 1 week\n- Feedback to prescriber: true\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication\n  * general-remarks" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 20 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-de-convention-center> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-de-convention-center" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Diabetes education via convention centre" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of diabetes education delivered through a convention centre.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-convention-center\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 211141000172109\n- Education type: diabetic-education-other\n- Validity period: 2026-02-18 - 2027-02-18\n- Timing:\n  * boundsDuration: 4 months\n  * count: 52\n  * frequency: 3\n  * period: 1 week\n- Feedback to prescriber: false\n- Notes:\n  * general-remarks" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 21 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-de-within-care-trajectory> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-de-within-care-trajectory" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Diabetes education within care trajectory" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of diabetes education within an established care pathway.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-within-care-trajectory\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 370858005\n- Education type: diabetic-education-additional-hba1c\n- Session type: group-session\n- Performer types (SNOMED):\n  * 106292003\n  * 224543004\n- Validity period: 2026-02-18 - 2026-12-31\n- Number of sessions: 5" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 22 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-de-within-start-trajectory> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-de-within-start-trajectory" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Diabetes education within start trajectory" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of diabetes education within a start trajectory.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-within-start-trajectory\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 211151000172106\n- Session type: individual-session\n- Validity period: 2026-02-18 – 2026-12-31\n- Number of sessions (count): 4\n- Performer type (SNOMED): 224543004\n- Feedback to prescriber: false\n- Notes:\n  * general-remarks" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 23 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-de-without-care-trajectory> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-de-without-care-trajectory" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Diabetes education without care trajectory" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of diabetes education for patients without a care trajectory.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-without-care-trajectory\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 211161000172108\n- Education type: diabetic-education-self-care\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 3 weeks\n  * count: 21\n  * frequency: 1\n  * period: 1 day\n- Feedback to prescriber: true\n- Notes:\n  * general-remarks" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 24 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-clinical-imaging> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-clinical-imaging" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Diagnostic imaging referral" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging referral prescription with contained patient and imaging attention questionnaire response." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 25 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-generic> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-generic" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Generic nursing care" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a generic nursing ServiceRequest.\n\nInputs and values used in this example:\n- Prescription type: generic-nursing\n- Care code (SNOMED): 9632001\n- Care detail (orderDetail): preparation-and-administration-of-medication-for-psychiatric-patient\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 4 months\n  * count: 360\n  * frequency: 3\n  * period: 1 day\n- Priority: routine\n- Feedback to prescriber: false\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication\n  * general-remarks" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 26 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-glycemic-test> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-glycemic-test" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Glycemic control with glucometer" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of glycemic monitoring using a glucometer.\n\nInputs and values used in this example:\n- Prescription type: glycemic-test\n- Procedure code (SNOMED): 166900001\n- Measurement timing: before-insulin-administration\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 3 weeks\n  * count: 21\n  * frequency: 1\n  * period: 1 day\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication\n  * general-remarks" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 27 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-hygienic-care> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-hygienic-care" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Hygienic care" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of hygienic nursing care.\n\nInputs and values used in this example:\n- Prescription type: hygienic-care\n- Procedure code (SNOMED): 225964003\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 3 months\n  * count: 39\n  * frequency: 3\n  * period: 1 week\n- Notes:\n  * medical-reason" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 28 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-parameters> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-parameters" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Measurement of parameters" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of clinical parameter monitoring.\n\nInputs and values used in this example:\n- Prescription type: parameters\n- Procedure code (SNOMED): 61746007\n- Parameter detail (SNOMED): 431314004\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 2 months\n  * count: 180\n  * frequency: 3\n  * period: 1 day\n  * when: C\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-med-prep-not-refunded> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-med-prep-not-refunded" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Preparation of medicines (not refunded)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of non-reimbursed medication prefill preparation.\n\nInputs and values used in this example:\n- Prescription type: medication-prefill-preparation-not-refunded\n- Procedure code (SNOMED): 385796006\n- Validity period: 2026-02-18 – 2027-02-18\n- Timing:\n  * frequency: 3\n  * period: 1 week\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * contraindication\n  * general-remarks" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-prior-drp-clinical-imaging> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-prior-drp-clinical-imaging" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Prior diagnostic imaging referral" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A complete prior diagnostic imaging prescription referenced by the main diagnostic imaging example." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-sampling> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-drp-nursing-sampling" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example: Sample collection" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a biological sample collection prescription.\n\nInputs and values used in this example:\n- Prescription type: sampling\n- Procedure code (SNOMED): 17636008\n- Sampling detail (SNOMED): 78014005\n- Occurrence count: 1\n- Validity start date: 2026-02-18\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing>
+       ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-hybrid-diagnostic-imaging-procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT and PSS/QSI Codes." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/Practitioner/practitioner2> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nurse" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example practitioner acting as a nurse." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/PractitionerRole/NURSE-45094508408> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/NURSE-45094508408" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nurse Requester" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nurse acting as a Requester" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/Practitioner/Requester1> ;
+         fhir:Reference.reference [ fhir:value "Practitioner/Requester1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Physician" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example practitioner acting as a requesting physician." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/PractitionerRole/DOCTOR-10829059004> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/DOCTOR-10829059004" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Physician Requester" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Physician acting as a Requester" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-qsi-indications> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-pss-qsi-indications" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS Indication" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PSS indication codes for diagnostic imaging requests." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-01> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-01" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 01" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Henry Dutronc, male, 41 years old\n- Indication: progressive shortness of breath, orthopnea, dry cough and suspected pulmonary edema\n- Selected examination: chest X-ray\n- Procedure code (SNOMED): 399208008\n- Initially predefined examination: chest CT with IV contrast\n- Clinical context from Excel: hypertension for 5 years, non-smoker, no documented cardiac disease or known allergies; symptoms progressing over 24-48 hours, oxygen saturation approximately 88%, blood pressure 160/100 mmHg and bilateral basal crackles\n- Final examination rationale from Excel: rapid initial assessment and confirmation\n\nFictitious completions (not specified in Excel): date of birth 1985-04-12, PSS identifier PSS-RAD-001, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-02> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-02" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 02" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Ilse Vandekerk, female, 18 years old\n- Indication: persistent fever and unresolved or complicated pneumonia\n- Selected examination: chest X-ray\n- Procedure code (SNOMED): 399208008\n- Predefined examination: chest X-ray\n- Clinical context from Excel: previously diagnosed pneumonia, persistent fever despite antibiotics, continued cough, dyspnea and pleuritic chest pain; no immunodeficiency or known allergies; assess possible abscess, pleural effusion or empyema\n\nFictitious completions (not specified in Excel): date of birth 2008-04-12, PSS identifier PSS-RAD-002, prescription and validity dates, requester, ambulatory track and routine priority; not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-03> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-03" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 03" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Gabriel Santini, sex at birth unknown, 79 years old\n- Indication: chest pain with a normal EKG\n- Selected examination: MR angiography of the heart with or without IV contrast\n- Procedure code (SNOMED): 736793003, using the Excel mapping for MR angiography of the heart wo/w IV contrast\n- Initially predefined examination: MR angiography of the chest without IV contrast\n- Clinical context from Excel: chest pain with normal EKG and stable vital signs; no reported syncope, dyspnea, palpitations or signs of heart failure; cardiovascular history, risk factors and medication remain to be assessed\n\nFictitious completions (not specified in Excel): date of birth 1947-04-12, PSS identifier PSS-RAD-003, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, contrast allergy, metallic debris or renal dysfunction and no other safety concern. Fictitious examination rationale: assess cardiac vascular anatomy in addition to the chest pain presentation.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 439." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-04> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-04" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 04" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Jeanne Darc, female, 20 years old, currently pregnant\n- Indication: new-onset headaches during pregnancy\n- Selected examination: non-contrast CT of the head\n- Procedure code (SNOMED): 383371000119108\n- Initially predefined examination: MR angiography of the head with or without IV contrast\n- Clinical context from Excel: new headaches during pregnancy; no prior chronic headache, migraine, trauma, neurological disorder or known allergies; assess blood pressure, preeclampsia and neurological warning signs\n\nFictitious completions (not specified in Excel): date of birth 2006-04-12, PSS identifier PSS-RAD-004, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern beyond the documented pregnancy. Fictitious examination rationale: the prescriber selects non-contrast head CT for this illustrative scenario; this is not clinical guidance.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-05> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-05" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 05" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Amhet Dine El Ottomani, male, 25 years old\n- Indication: tongue weakness with no other focal neurological deficits\n- Selected examination: MRI of the head with and without contrast\n- Procedure code (SNOMED): 432874000, using the Excel mapping for MR head wo/w IV contrast\n- Predefined examination: none\n- Clinical context from Excel: recent tongue weakness; assess dysarthria, dysphagia, tongue deviation, atrophy and fasciculations; no known neurological disease, recent trauma or surgery, stroke, TIA, neuromuscular disease, head or neck cancer, radiation or known allergies\n\nFictitious completions (not specified in Excel): date of birth 2001-04-12, PSS identifier PSS-RAD-005, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 518." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-06> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-06" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 06" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Anne De Montmorency, sex at birth unknown, 39 years old\n- Indication: head trauma with headaches and follow-up after stroke\n- Selected examination: MR angiography of the head with or without IV contrast\n- Procedure code (SNOMED): 702684006, using the Excel mapping for MR angiography of the head wo/w IV contrast\n- Predefined examination: same as selected examination\n- Clinical context from Excel: history of stroke and head trauma with persistent or worsening headaches; assess trauma details, new neurological deficits and stroke risk factors; medications to be reviewed; no known drug allergies\n\nFictitious completions (not specified in Excel): date of birth 1987-04-12, PSS identifier PSS-RAD-006, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, metallic debris or renal dysfunction and no other safety concern. Unspecified cardiovascular risk factors are not treated as confirmed diagnoses.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 435." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-07> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-07" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 07" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Anne De Montmorency, male at birth, 8 years old\n- Indication: head trauma with headaches and follow-up after stroke\n- Selected examination: MR angiography of the head with or without IV contrast\n- Procedure code (SNOMED): 702684006, using the Excel mapping for MR angiography of the head wo/w IV contrast\n- Predefined examination: same as selected examination\n- Clinical context from Excel: history of stroke and head trauma with persistent or worsening headaches; assess trauma details, new neurological deficits and stroke risk factors; medications to be reviewed; no known drug allergies\n\nFictitious completions (not specified in Excel): date of birth 2018-04-12, PSS identifier PSS-RAD-007, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. This child is a separate fictitious patient from scenario 06 despite the shared name. Unspecified cardiovascular risk factors are not treated as confirmed diagnoses.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 435." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-08> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-08" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 08" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Leslie Unknown, female, 55 years old\n- Indication: stage I breast cancer, asymptomatic, for initial evaluation and exclusion of bone metastases\n- Selected examination: breast MRI without IV contrast\n- Procedure code (SNOMED): 241615005, using the Excel mapping for MR breast wo IV contrast without specified laterality\n- Predefined examination: none\n- Additional indication from Excel: evaluation of tumor size and extent before neoadjuvant chemotherapy\n- Clinical context from Excel: recent stage I breast cancer diagnosis, no bone pain, neurological or systemic symptoms, no prior cancer or known allergies; menopausal status and medication remain to be confirmed\n\nFictitious completions (not specified in Excel): date of birth 1971-04-12, PSS identifier PSS-RAD-008, prescription and validity dates, requester, ambulatory track and routine priority; not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. Breast laterality is intentionally left unspecified, as in Excel.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 475." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-09> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-09" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 09" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Jean-Eude Delacompta, male, 61 years old\n- Indication: abnormal sputum production, persistent cough and acute respiratory illness\n- Selected examination: chest X-ray\n- Procedure code (SNOMED): 399208008\n- Predefined examination: chest X-ray\n- Clinical context from Excel: persistent cough for several weeks and abnormal sputum with acute respiratory worsening; assess fever, dyspnea, sputum characteristics, smoking, chronic bronchitis, COPD and recent infection; no known lung cancer, tuberculosis or drug allergies\n\nFictitious completions (not specified in Excel): date of birth 1965-04-12, PSS identifier PSS-RAD-009, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. Possible smoking, chronic bronchitis and COPD are not treated as confirmed diagnoses.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-pss-radiology-scenario-10> ;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/example-pss-radiology-scenario-10" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS radiology scenario 10" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Robin Haarkoe, sex at birth unknown, 37 years old\n- Indication: tongue weakness and facial weakness\n- Selected examination: CT of the head with contrast\n- Procedure code (SNOMED): 711232001\n- Predefined examination: none\n- Clinical context from Excel: recent tongue and facial weakness with dysarthria, dysphagia or tongue deviation to be assessed; assess facial distribution and associated neurological symptoms; no known neurological disease, recent trauma or surgery, stroke, TIA, neuromuscular disease, allergies, recent infection or vaccination\n\nFictitious completions (not specified in Excel): date of birth 1989-04-12, PSS identifier PSS-RAD-010, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging" ;
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging>
+       ]
+     ], [
+       fhir:index 48 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS/QSI Diagnostic Imaging Procedure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All PSS/QSI diagnostic imaging procedure codes." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS/QSI Diagnostic Imaging Procedure" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PSS/QSI diagnostic imaging procedure codes with English displays and Belgian French, Dutch and German designations." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-pss-qsi-indication> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-pss-qsi-indication" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSS/QSI Indication" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indication codes for diagnostic imaging requests as PSS Internal Codes." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/be-vs-ereferral-snomed-designation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED CT eReferral Supplement Designations" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT supplement containing multilingual designations maintained for the eReferral project." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/be-cs-ereferral-snomed-designation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED CT eReferral Supplement Designations" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT supplement containing multilingual designations maintained for the eReferral project." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/PractitionerRole/72101230446-PHYSICIAN> ;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/72101230446-PHYSICIAN" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urgency Physician Requester" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urgency Physician acting as a Requester" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ] ;
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ] ;
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ] ;
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ] ;
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ] ;
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "eReferral Implementation Guide" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "guidance.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Guidance" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "topic-profiles-architecture.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-profiles-architecture.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles Architecture" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "topic-profile-rewriting.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-profile-rewriting.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profile Rewriting" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "topic-prescription-lifecycle.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-prescription-lifecycle.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Life Cycle" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "topic-prescription-lifecycle-proposal.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-prescription-lifecycle-proposal.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Proposal Life Cycle" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "topic-prescription-lifecycle-extension.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-prescription-lifecycle-extension.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Prescription Extension" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
+       ], [
+         fhir:index 5 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "topic-prescription-templates.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-prescription-templates.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Prescription Templates" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "topic-visibility-blacklisting.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-visibility-blacklisting.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Visibility & Blacklisting" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "api-integration.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "api-integration.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "API Integration" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 8 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "api-operations.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "api-operations.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "API Operations" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-access-matrix.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-access-matrix.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Access Matrix" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-create-medical-document.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-create-medical-document.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Create a Medical Document" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 2 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-consult-search-medical-documents.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-consult-search-medical-documents.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Consult or Search Medical Documents" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 3 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-complete-medical-document.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-complete-medical-document.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Complete a Medical Document" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 4 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-cancel-medical-document.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-cancel-medical-document.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Cancel a Medical Document" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 5 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-assign-care-provider.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-assign-care-provider.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Assign a Care Provider" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 6 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-unassign-care-provider.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-unassign-care-provider.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Unassign a Care Provider" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 7 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-record-execution-start.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-record-execution-start.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Record Execution Start" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 8 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-record-execution-end.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-record-execution-end.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Record Execution End" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 9 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-record-execution-interruption.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-record-execution-interruption.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Record Execution Interruption" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 10 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-cancel-execution.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-cancel-execution.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Cancel Execution" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 11 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-evaluate-proposal.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-evaluate-proposal.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Evaluate Proposal" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 12 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "operation-evaluate-radiology-prescription.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operation-evaluate-radiology-prescription.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Evaluate Radiology Prescription" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 13 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "api-complex-operations.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "api-complex-operations.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Complex Operations" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ], [
+           fhir:index 14 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "error-codes.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "error-codes.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Error Codes" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
+       ], [
+         fhir:index 9 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "mappings-business.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mappings-business.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Business Field Mappings" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "mappings-nursing.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mappings-nursing.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Nursing" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
+           fhir:ImplementationGuide.definition.page.page [
+             fhir:index 0 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-generic.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-generic.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Generic Nursing" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 1 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-bloodletting.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-bloodletting.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Bloodletting" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 2 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-chronic-dialysis.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-chronic-dialysis.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Chronic Dialysis" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 3 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-diabetes-education-convention-center.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-diabetes-education-convention-center.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Diabetes Education via Convention Centre" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 4 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-diabetes-education-start-trajectory.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-diabetes-education-start-trajectory.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Diabetes Education within Start Trajectory" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 5 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-diabetes-education-care-trajectory.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-diabetes-education-care-trajectory.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Diabetes Education within Care Trajectory" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 6 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-diabetes-education-without-trajectory.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-diabetes-education-without-trajectory.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Diabetes Education without Trajectory" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 7 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-glycemic-test.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-glycemic-test.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Glycemic Test" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 8 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-hygienic-care.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-hygienic-care.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Hygienic Care" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 9 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-medication-prefill-not-refunded.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-medication-prefill-not-refunded.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Medication Prefill Preparation Not Refunded" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 10 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-parameters.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-parameters.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Parameters" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 11 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-sampling.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-sampling.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Sampling" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ], [
+             fhir:index 12 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-nursing-annex81-medication-preparation.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-nursing-annex81-medication-preparation.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Annex 81 Medication Preparation" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ]
+         ], [
+           fhir:index 1 ;
+           fhir:Element.extension [
+             fhir:index 0 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "mappings-radiology.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mappings-radiology.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Radiology" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
+           fhir:ImplementationGuide.definition.page.page [
+             fhir:index 0 ;
+             fhir:Element.extension [
+               fhir:index 0 ;
+               fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+               fhir:Extension.valueUrl [ fhir:value "mapper-radiology-diagnostic-imaging.html" ]
+             ] ;
+             fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mapper-radiology-diagnostic-imaging.html" ] ;
+             fhir:ImplementationGuide.definition.page.title [ fhir:value "Diagnostic Imaging" ] ;
+             fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+           ]
+         ]
+       ], [
+         fhir:index 10 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "technical.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "technical.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Technical" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 11 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "glossary.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "glossary.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Glossary" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 12 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "changes.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 13 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+       ]
+     ] ;
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

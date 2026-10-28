@@ -1,0 +1,160 @@
+{
+  "package": "inami.fhir.be.ereferral",
+  "version": "3.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "BE",
+  "extensions": [
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+      "title": "CodeableConcept Extension for Reference",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "title": "eReferral Radiology SupportingInfo Role",
+      "types": [
+        "code"
+      ]
+    }
+  ],
+  "profiles": {
+    "ServiceRequest": [
+      {
+        "url": "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging",
+        "title": "EReferralServiceRequestDiagnosticImaging"
+      },
+      {
+        "url": "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing",
+        "title": "EReferralServiceRequestNursing"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response",
+        "title": "EReferralImagingAttentionConditionsResponse"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-statusReason": [
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-statusReason|5.3.0": [
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-supplement": [
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
+      "ImplementationGuide.definition.page.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints": [
+      "StructureDefinition.snapshot.element.type.profile"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography": [
+      "ServiceRequest.bodySite"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality": [
+      "ServiceRequest.bodySite"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-codeable-reference|2.2.0": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-codeableconcept": [
+      "ServiceRequest.note"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-codeableconcept|2.2.0": [
+      "ServiceRequest.note"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-gender-at-birth": [
+      "ServiceRequest.contained"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-key-pseudonymization": [
+      "ServiceRequest.meta"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization": [
+      "ServiceRequest.code.text",
+      "ServiceRequest.contained.identifier.value",
+      "ServiceRequest.contained.item.answer.item.answer.valueString",
+      "ServiceRequest.contained.item.answer.valueString",
+      "ServiceRequest.note.text",
+      "ServiceRequest.orderDetail.text",
+      "ServiceRequest.reasonCode.text",
+      "ServiceRequest.subject.identifier.value"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymized-content": [
+      "ServiceRequest.contained.birthDate"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept|3.0.0": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-feedback-to-prescriber": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-latest-end-date": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-performer-type": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-pss-info": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-urgency-justification": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period": [
+      "ServiceRequest"
+    ]
+  }
+}

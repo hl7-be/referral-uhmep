@@ -1,0 +1,250 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-med-preparation-appendix-81> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-drp-nursing-med-preparation-appendix-81"] ;
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "{{kid}}" ] ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "key" ] ;
+         fhir:Extension.valueString [
+           fhir:value "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}" ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Element.extension [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "marker" ] ;
+               fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "format" ] ;
+               fhir:Extension.valueCode [ fhir:value "direct" ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "version" ] ;
+               fhir:Extension.valuePositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+             ] ;
+             fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-key-pseudonymization" ]
+     ] ;
+     fhir:Meta.profile [
+       fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81" ;
+       fhir:index -1 ;
+       fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest example-drp-nursing-med-preparation-appendix-81</b></p><a name=\"example-drp-nursing-med-preparation-appendix-81\"> </a><a name=\"hcexample-drp-nursing-med-preparation-appendix-81\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ereferral-annex-81.html\">EReferralAnnex81</a></p></div><p><b>BeValidityPeriod</b>: 2026-02-18 --&gt; 2027-02-18</p><p><b>status</b>: Draft</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 9632001}\">Nursing procedure</span>, <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type medication-prefill-preparation-appendix-81}\">Preparing medication (Appendix 81)</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 385796006}\">urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}</span></p><p><b>subject</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html\" title=\"NISS/INSZ\">BeSSINNamingSystem</a>/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)</p><p><b>authoredOn</b>: 2026-02-18 15:03:57+0100</p><p><b>requester</b>: <a href=\"PractitionerRole-67120919457-NURSE.html\">Nurse Example (official) (https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#67120919457 (use: official)): nurse</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 275928001}\">Drugs - partial non-compliance</span>, <span title=\"Codes:{http://snomed.info/sct 1290542000}\">Unintentional misuse of medication</span>, <span title=\"Codes:{http://snomed.info/sct 129834002}\">Noncompliance with medication regimen</span>, <span title=\"Codes:{http://snomed.info/sct 448176008}\">Uses less medication than prescribed</span>, <span title=\"Codes:{http://snomed.info/sct 359748005}\">Patient condition unchanged</span>, <span title=\"Codes:{http://snomed.info/sct 271299001}\">Patient's condition worsened</span>, <span title=\"Codes:{http://snomed.info/sct 62014003}\">Adverse reaction to drug</span>, <span title=\"Codes:{http://snomed.info/sct 708014007}\">Does not have an informal caregiver</span>, <span title=\"Codes:{http://snomed.info/sct 1137439008}\">On complex medication regime</span>, <span title=\"Codes:{http://snomed.info/sct 211071000172100}\">211071000172100</span>, <span title=\"Codes:{http://snomed.info/sct 211101000172107}\">211101000172107</span>, <span title=\"Codes:{http://snomed.info/sct 397540003}\">Visual impairment</span>, <span title=\"Codes:{http://snomed.info/sct 52448006}\">Dementia</span></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period" ] ;
+     fhir:Extension.valuePeriod [
+       fhir:Period.start [ fhir:value "2026-02-18"^^xsd:date ] ;
+       fhir:Period.end [ fhir:value "2027-02-18"^^xsd:date ]
+     ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "draft"] ;
+  fhir:ServiceRequest.intent [ fhir:value "proposal"] ;
+  fhir:ServiceRequest.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:9632001 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "9632001" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type" ] ;
+       fhir:Coding.code [ fhir:value "medication-prefill-preparation-appendix-81" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:385796006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "385796006" ]
+     ] ;
+     fhir:CodeableConcept.text [
+       fhir:value "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "marker" ] ;
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "format" ] ;
+           fhir:Extension.valueCode [ fhir:value "encrypted" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "version" ] ;
+           fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+         ] ;
+         fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+       ]
+     ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin" ] ;
+       fhir:Identifier.value [
+         fhir:value "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}" ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "marker" ] ;
+             fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "format" ] ;
+             fhir:Extension.valueCode [ fhir:value "direct" ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "version" ] ;
+             fhir:Extension.valuePositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+           ] ;
+           fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+         ]
+       ]
+     ]
+  ] ;
+  fhir:ServiceRequest.authoredOn [ fhir:value "2026-02-18T15:03:57+01:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.requester [
+     fhir:link <https://www.riziv-inami.be/standards/fhir/ereferral/PractitionerRole/67120919457-NURSE> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/67120919457-NURSE" ]
+  ] ;
+  fhir:ServiceRequest.reasonCode [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:275928001 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "275928001" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:1290542000 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "1290542000" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:129834002 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "129834002" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:448176008 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "448176008" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:359748005 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "359748005" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:271299001 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "271299001" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:62014003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "62014003" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:708014007 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "708014007" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:1137439008 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "1137439008" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:211071000172100 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "211071000172100" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:211101000172107 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "211101000172107" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:397540003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "397540003" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:52448006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "52448006" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.riziv-inami.be/standards/fhir/ereferral/ServiceRequest/example-drp-nursing-med-preparation-appendix-81.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

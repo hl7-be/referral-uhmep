@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-hybrid-diagnostic-imaging-procedure",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-hybrid-diagnostic-imaging-procedure</b></p><a name=\"be-vs-hybrid-diagnostic-imaging-procedure\"> </a><a name=\"hcbe-vs-hybrid-diagnostic-imaging-procedure\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.html\">PSS/QSI Diagnostic Imaging Procedure</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-be-vs-diagnostic-imaging-procedure.html\">eReferral/PSS Diagnostic Imaging Procedure</a></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure",
+  "version" : "3.0.0",
+  "name" : "BeVSHybridDiagnosticImagingProcedure",
+  "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-28T14:55:19+00:00",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT and PSS/QSI Codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO).",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure"]
+    },
+    {
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.0"]
+    }]
+  }
+}

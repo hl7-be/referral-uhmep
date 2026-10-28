@@ -1,0 +1,76 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeVSDiagnosticImagingCondition",
+    "title" : "eReferral/PSS Diagnostic Imaging Condition",
+    "description" : "Clinical conditions that can support a diagnostic imaging request using SNOMED CT.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeVSDiagnosticImagingProcedure",
+    "title" : "eReferral/PSS Diagnostic Imaging Procedure",
+    "description" : "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeVSHybridDiagnosticImagingProcedure",
+    "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
+    "description" : "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT and PSS/QSI Codes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeVSPSSQSIDiagnosticImagingProcedure",
+    "title" : "PSS/QSI Diagnostic Imaging Procedure",
+    "description" : "All PSS/QSI diagnostic imaging procedure codes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeVSPSSQSIIndication",
+    "title" : "PSS/QSI Indication",
+    "description" : "Indication codes for diagnostic imaging requests as PSS Internal Codes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeVSRadiologySupportingInfoRole",
+    "title" : "eReferral Radiology SupportingInfo Role ValueSet",
+    "description" : "Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "EReferralVSImagingPatientConditionIndication",
+    "title" : "eReferral Imaging Patient Condition Indication",
+    "description" : "Allowed coded indications for patient condition in diagnostic imaging.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation",
+    "version" : "3.0.0",
+    "status" : "draft",
+    "name" : "BeVSeReferralSnomedDesignation",
+    "title" : "SNOMED CT eReferral Supplement Designations",
+    "description" : "SNOMED CT supplement containing multilingual designations maintained for the eReferral project.",
+    "systems" : ["http://snomed.info/sct"]
+  }]
+}

@@ -1,0 +1,567 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Changes - eReferral Implementation Guide v3.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- Riziv-Inami Platform -->
+<!-- draft -->
+
+<link href="assets/css/riziv-inami.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<div id="ig-nav">
+  
+  <a id="riziv-inami-logo" no-external="true" href="index.html">
+    <img alt="Smals" src="assets/images/logo-riziv-inami.png"/>
+  </a>
+  <!-- no fitting stylesheet found (status/publisher)-->
+  
+</div>
+<div id="uhmep-header-brand">
+  
+  <a id="eReferral-logo" no-external="true" href="index.html">
+    <img alt="eReferral Implementation Guide" src="assets/images/eReferral-logo.png"/>
+  </a>
+  <!-- no fitting stylesheet found (status/publisher)-->
+  
+  <span class="ereferral-badge">v3.0.0</span>
+<span class="ereferral-badge">draft</span>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">3.0.0 - 
+
+
+
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Topics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="topic-profiles-architecture.html">Profiles Architecture</a>
+      </li>
+      <li>
+        <a href="topic-profile-rewriting.html">Profile Rewriting</a>
+      </li>
+      <li>
+        <a href="topic-prescription-lifecycle.html">Life Cycle</a>
+      </li>
+      <li>
+        <a href="topic-prescription-templates.html">Prescription Templates</a>
+      </li>
+      <li>
+        <a href="topic-visibility-blacklisting.html">Visibility &amp; Blacklisting</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="api-integration.html">Integration Rules</a>
+      </li>
+      <li>
+        <a href="api-operations.html">Operations</a>
+      </li>
+      <li>
+        <a href="operation-access-matrix.html">Access Matrix</a>
+      </li>
+      <li>
+        <a href="api-complex-operations.html">Complex Operations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Mappings
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mappings-business.html">Overview</a>
+      </li>
+      <li>
+        <a href="mappings-nursing.html">Nursing</a>
+      </li>
+      <li>
+        <a href="mappings-radiology.html">Radiology</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#structures-resource-profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#structures-extension-definitions">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#terminology-value-sets">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#terminology-code-systems">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#example-example-instances">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="technical.html">Technical</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Changes</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="glossary.html">&lt; prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="downloads.html">next &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Changes</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2026-10-28---v300-release--radiology-workflow-improvements" id="markdown-toc-2026-10-28---v300-release--radiology-workflow-improvements"><strong>2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements</strong></a></li>
+  <li><a href="#2026-09-02--v210-release-validation-radiology-tracks-and-security--fhir-r4" id="markdown-toc-2026-09-02--v210-release-validation-radiology-tracks-and-security--fhir-r4"><strong>2026-09-02 — v2.1.0 Release: Validation, Radiology Tracks, and Security — FHIR R4</strong></a></li>
+  <li><a href="#2026-08-05--v200-release-ereferral-referral-prescription-stu1--fhir-r4" id="markdown-toc-2026-08-05--v200-release-ereferral-referral-prescription-stu1--fhir-r4"><strong>2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4</strong></a></li>
+</ul>
+
+</div>
+<p>This page documents the changes to the eReferral Implementation Guide specification.</p>
+
+<hr />
+
+<h3 id="2026-10-28---v300-release--radiology-workflow-improvements"><strong>2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements</strong></h3>
+
+<p>This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,
+and adds examples for the updated PSS/QSI radiology terminology.</p>
+
+<details>
+  <summary><strong>View detailed v3.0.0 release notes</strong></summary>
+
+  <h4 id="radiology-workflow-clarifications">Radiology workflow clarifications</h4>
+
+  <ul>
+    <li><strong>Remove an assignment on the ambulatory track:</strong> An assignment may be removed while the radiology prescription is <code class="language-plaintext highlighter-rouge">READY</code> or <code class="language-plaintext highlighter-rouge">IN_PROGRESS</code> and its execution task is <code class="language-plaintext highlighter-rouge">ready</code> or <code class="language-plaintext highlighter-rouge">in-progress</code>. The task is deleted and the prescription returns to <code class="language-plaintext highlighter-rouge">READY</code>. Other tracks and prescription types retain their applicable removal rules.</li>
+    <li><strong>Complete execution on the urgency track:</strong> Radiology execution may be completed while the prescription remains in business state <code class="language-plaintext highlighter-rouge">READY</code>. When completing an existing execution, the backend starts the caregiver activity before completing it.</li>
+    <li><strong>Cancel a radiology prescription:</strong> A Patient may cancel a radiology prescription while its business state is <code class="language-plaintext highlighter-rouge">PENDING</code> or <code class="language-plaintext highlighter-rouge">READY</code>. This rule is specific to radiology.</li>
+  </ul>
+
+  <h4 id="fhir-profile-constraints-and-examples">FHIR profile constraints and examples</h4>
+
+  <ul>
+    <li>The Annex 81 technical-type category and the nursing and diagnostic-imaging prescription-type categories are explicitly required.</li>
+    <li><code class="language-plaintext highlighter-rouge">ServiceRequest.reasonCode</code> is required by the nursing and diagnostic-imaging profiles. Updated examples represent free-text reasons with the pseudonymization extension.</li>
+    <li>The prior diagnostic-imaging example now uses an active request, and the urgency requester example uses the PractitionerRole identifier expected by its references.</li>
+  </ul>
+
+  <h4 id="radiology-terminology-and-scenarios">Radiology terminology and scenarios</h4>
+
+  <ul>
+    <li>PSS/QSI indication and diagnostic-imaging procedure terminology is updated, including the corresponding value sets used by the diagnostic-imaging profile.</li>
+    <li>Ten illustrative PSS radiology business-case examples demonstrate the updated terminology in diagnostic-imaging requests.</li>
+  </ul>
+
+</details>
+
+<hr />
+
+<h3 id="2026-09-02--v210-release-validation-radiology-tracks-and-security--fhir-r4"><strong>2026-09-02 — v2.1.0 Release: Validation, Radiology Tracks, and Security — FHIR R4</strong></h3>
+
+<p>This release aligns gateway validation with the NIHDI/RIZIV-INAMI profiles, introduces
+track-dependent radiology workflow management, and strengthens security and execution
+traceability. Existing nursing integrations remain compatible, while radiology resources must
+conform to the latest diagnostic imaging profile.</p>
+
+<details>
+  <summary><strong>View detailed v2.1.0 release notes</strong></summary>
+
+  <h4 id="fhir-validation-and-profile-compatibility">FHIR validation and profile compatibility</h4>
+
+  <p>The FHIR Gateway now aligns validation with the current NIHDI/RIZIV-INAMI profiles. For backward
+compatibility, it continues to accept the supported legacy eHealth profile URLs and rewrites them
+to the corresponding NIHDI/RIZIV-INAMI canonical URLs before validation. The mappings cover
+diagnostic imaging ServiceRequests, nursing ServiceRequests, and Annex 81 resources.</p>
+
+  <p>The rewrite is transparent and does not transform resource content. Validation may therefore be
+stricter than in previous releases, and resources with profile deviations may now produce errors.
+Existing nursing integrations remain compatible but should progressively adopt the current
+canonical URLs. Radiology integrations must conform to the latest diagnostic imaging profile. See
+<a href="topic-profile-rewriting.html">Profile Rewriting</a>.</p>
+
+  <h4 id="radiology-track-management">Radiology track management</h4>
+
+  <p>Radiology prescriptions now use their required <code class="language-plaintext highlighter-rouge">ambulatory</code>, <code class="language-plaintext highlighter-rouge">inpatient</code>, or <code class="language-plaintext highlighter-rouge">urgency</code> track when
+the API applies assignment, validation, substitution, execution, and refusal rules. See
+<a href="guidance.html#radiology-track-management">Guidance – Radiology Track Management</a>.</p>
+
+  <h4 id="security-and-compliance">Security and compliance</h4>
+
+  <ul>
+    <li>Free-text prescription fields use the JWE-based encryption model provided by the eHealth
+Pseudonymization service.</li>
+    <li>Privacy audit logging has been extended.</li>
+    <li>Treatment execution traceability has been improved through the documented Task lifecycle and
+tracing requirements.</li>
+  </ul>
+
+  <p>See <a href="technical.html#encryption">Technical – Encryption</a> and
+<a href="api-integration.html#pseudonymization">API Integration – Pseudonymization</a>.</p>
+
+  <h4 id="documentation-consolidation">Documentation consolidation</h4>
+
+  <p>The Implementation Guide remains the single authoritative source for supported workflows, FHIR
+structures, profiles, validation rules, and integration examples. The retired PDF Cookbook must
+not be used as the reference for new development. This consolidation was introduced in v2.0.0;
+v2.1.0 reinforces the migration recommendation without duplicating the Cookbook content.</p>
+
+</details>
+
+<hr />
+
+<h3 id="2026-08-05--v200-release-ereferral-referral-prescription-stu1--fhir-r4"><strong>2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4</strong></h3>
+
+<p>This release makes the Implementation Guide the single source of truth for eReferral integration.
+It adds nursing and radiology profiles and mappings, expands machine-to-machine workflows, and
+documents the API’s security, access-control, and operational requirements.</p>
+
+<details>
+  <summary><strong>View detailed v2.0.0 release notes</strong></summary>
+
+  <h4 id="cookbook-integration">Cookbook integration</h4>
+  <p>The legacy eReferral API cookbook (<code class="language-plaintext highlighter-rouge">UHMEP_API_cookbook.pdf</code>) has been fully integrated into this Implementation Guide. This IG now supersedes the cookbook and serves as the single source of truth for integrators.</p>
+
+  <h4 id="nursing-support">Nursing support</h4>
+  <h5 id="profiling">Profiling</h5>
+  <p>New nursing profiles to add constraints on nursing prescriptions and Annex 81 proposals:</p>
+  <ul>
+    <li><a href="StructureDefinition-ereferral-servicerequest-nursing.html">eReferralServiceRequestNursing</a></li>
+    <li><a href="StructureDefinition-ereferral-annex-81.html">eReferralAnnex81</a></li>
+  </ul>
+
+  <h5 id="mapping-tables">Mapping tables</h5>
+  <p>Field-by-field mapping tables have been added for every prescription type, showing exactly how business concepts map to FHIR:</p>
+  <ul>
+    <li><a href="mapper-nursing-generic.html">Nursing — Generic</a></li>
+    <li><a href="mapper-nursing-annex81-medication-preparation.html">Nursing — Medication Preparation (Annex 81)</a></li>
+    <li><a href="mapper-nursing-bloodletting.html">Nursing — Bloodletting</a></li>
+    <li><a href="mapper-nursing-chronic-dialysis.html">Nursing — Chronic Dialysis</a></li>
+    <li><a href="mapper-nursing-glycemic-test.html">Nursing — Glycemic Test</a></li>
+    <li><a href="mapper-nursing-hygienic-care.html">Nursing — Hygienic Care</a></li>
+    <li><a href="mapper-nursing-medication-prefill-not-refunded.html">Nursing — Medication Prefill (not refunded)</a></li>
+    <li><a href="mapper-nursing-sampling.html">Nursing — Sampling</a></li>
+    <li><a href="mapper-nursing-diabetes-education-start-trajectory.html">Nursing — Diabetes Education</a> (multiple variants)</li>
+  </ul>
+
+  <h4 id="radiology-diagnostic-imaging-support">Radiology (Diagnostic Imaging) support</h4>
+  <h5 id="profiling-1">Profiling</h5>
+  <p>New profiles and operations enable prescription and management of radiology exams:</p>
+  <ul>
+    <li><a href="StructureDefinition-ereferral-servicerequest-diagnosticimaging.html">eReferral Service Request — Diagnostic Imaging</a></li>
+    <li><a href="StructureDefinition-ereferral-imaging-attention-conditions-response.html">eReferral Imaging Attention Conditions Response</a></li>
+  </ul>
+
+  <h5 id="new-radiology-specific-operations">New radiology-specific operations</h5>
+  <p>Three new operations handle specific parts of radiology prescription workflows:</p>
+  <ol>
+    <li><strong>Accept a Radiology Prescription</strong> — confirms the requested exam and readiness to perform the exam</li>
+    <li><strong>Substitute a Radiology Exam</strong> — replaces the exam (e.g., CT instead of X-ray)</li>
+    <li><strong>Refuse a Radiology Exam</strong> — declines to perform the requested exam</li>
+  </ol>
+
+  <h5 id="mapping-tables-for-integrators">Mapping tables for integrators</h5>
+  <p>Field-by-field mapping table has been added for radiology prescription, showing exactly how business concepts map to FHIR:</p>
+  <ul>
+    <li><a href="mapper-radiology-diagnostic-imaging.html">Radiology / Diagnostic Imaging</a></li>
+  </ul>
+
+  <h4 id="machine-to-machine-m2m-integration">Machine-to-Machine (M2M) integration</h4>
+  <p>The following operations have been expanded to support M2M workflows:</p>
+  <ol>
+    <li><strong><a href="operation-create-medical-document.html">Create Medical Document</a></strong> — now supports creation of a medical document, prescription or proposal, by an internal professional of an organization</li>
+    <li><strong><a href="operation-assign-care-provider.html">Assign Care Provider</a></strong> — expanded to:
+      <ul>
+        <li>Assign to an organization (<code class="language-plaintext highlighter-rouge">BeOrganizationTask</code>)</li>
+        <li>Assign to an internal professional within an organization (<code class="language-plaintext highlighter-rouge">BePerformerTask</code>)</li>
+      </ul>
+    </li>
+    <li><strong><a href="operation-record-execution-start.html">Record Execution Start</a></strong> — now supports initiation by an internal professional of an organization via POST</li>
+    <li><strong><a href="operation-unassign-care-provider.html">Unassign Care Provider</a></strong> — operation to withdraw assignments of an organization or internal professional from a prescription</li>
+    <li><strong><a href="operation-evaluate-proposal.html">Evaluate Proposal</a></strong> — now supports evaluation by an internal professional of an organization</li>
+    <li><strong><a href="operation-evaluate-radiology-prescription.html">Evaluate Radiology Prescription</a></strong> — supports evaluation by an internal professional of an organization</li>
+  </ol>
+
+  <h4 id="security--privacy">Security &amp; privacy</h4>
+  <ul>
+    <li>Authentication via <a href="https://ehealth.fgov.be/ehealthplatform/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/9a7dc4d16e58378f81f999fc3a5333448bcdec8b/iam-mobile-integration-tech-specs-v1-13.pdf">Identity &amp; Authorization Management (I.AM)</a></li>
+    <li>Free-text and sensitive fields protected via <a href="https://ehealth.fgov.be/ehealthplatform/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/c6094d06e6a7b74d2e3c1a8c93cce78acb2d6359/pseudonymisation-rest-v1-9-1.pdf">Pseudonymization REST</a> service</li>
+    <li>See <a href="api-integration.html#authentication-and-headers">API Integration</a> for full authentication and header requirements</li>
+  </ul>
+
+  <h4 id="reference-materials">Reference materials</h4>
+  <ul>
+    <li><strong><a href="api-integration.html">API Integration</a></strong> — authentication, headers, request/response structure</li>
+    <li><strong><a href="api-operations.html">API Operations</a></strong> — overview of all available operations</li>
+    <li><strong><a href="technical.html">Technical</a></strong> — entry points, support contacts, certificates</li>
+    <li><strong><a href="operation-access-matrix.html">Access Control Matrix</a></strong> — which roles can perform which operations</li>
+    <li><strong><a href="error-codes.html">Error Codes</a></strong> — complete error catalogue and troubleshooting</li>
+    <li><strong><a href="topic-visibility-blacklisting.html">Visibility &amp; Blacklisting</a></strong> — data filtering rules</li>
+  </ul>
+
+</details>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="glossary.html">&lt; prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="downloads.html">next ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
+          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Wed, Oct 28, 2026 14:55+0000">2026-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div class="smals-footer">
+  <div class="smals-footer-brand" aria-label="Publishing organisations">
+    <a class="smals-footer-logo" href="https://www.smals.be">
+      <img alt="Smals" src="https://smals.be/themes/custom/websmals_bs4/logo.svg"/>
+    </a>
+    <a class="riziv-inami-footer-logo" href="https://www.inami.be">
+      <img alt="RIZIV-INAMI" src="assets/images/logo-riziv-inami.png"/>
+    </a>
+  </div>
+  <nav class="smals-footer-links" aria-label="Implementation Guide links">
+    <a href="toc.html">Table of Contents</a>
+    <span aria-hidden="true">|</span>
+    <a href="../qa.html">QA Report</a>
+  </nav>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

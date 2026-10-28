@@ -1,0 +1,140 @@
+[{
+  "id" : "be-ext-codeable-concept",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+  "version" : "3.0.0",
+  "name" : "BeExtCodeableConcept"
+},
+{
+  "id" : "be-ext-radiology-supporting-info-role",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+  "version" : "3.0.0",
+  "name" : "BeRadiologySupportingInfoRole"
+},
+{
+  "id" : "be-cs-pss-qsi-diagnostic-imaging-procedure",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure",
+  "version" : "3.0.0",
+  "name" : "BeCSPSSQSIDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-cs-pss-qsi-indications",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
+  "version" : "3.0.0",
+  "name" : "BeCSPSSIndication"
+},
+{
+  "id" : "be-cs-radiology-supporting-info-role",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
+  "version" : "3.0.0",
+  "name" : "BeCSRadiologySupportingInfoRole"
+},
+{
+  "id" : "be-vs-diagnostic-imaging-condition",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition",
+  "version" : "3.0.0",
+  "name" : "BeVSDiagnosticImagingCondition"
+},
+{
+  "id" : "be-vs-diagnostic-imaging-procedure",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure",
+  "version" : "3.0.0",
+  "name" : "BeVSDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-vs-hybrid-diagnostic-imaging-procedure",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure",
+  "version" : "3.0.0",
+  "name" : "BeVSHybridDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-vs-pss-qsi-diagnostic-imaging-procedure",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure",
+  "version" : "3.0.0",
+  "name" : "BeVSPSSQSIDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-vs-pss-qsi-indication",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication",
+  "version" : "3.0.0",
+  "name" : "BeVSPSSQSIIndication"
+},
+{
+  "id" : "be-vs-radiology-supporting-info-role",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role",
+  "version" : "3.0.0",
+  "name" : "BeVSRadiologySupportingInfoRole"
+},
+{
+  "id" : "ereferral-vs-imaging-patient-condition-indication",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication",
+  "version" : "3.0.0",
+  "name" : "EReferralVSImagingPatientConditionIndication"
+},
+{
+  "id" : "be-cs-ereferral-designation-use",
+  "type" : "CodeSystem",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
+  "version" : "3.0.0",
+  "name" : "BeCSeReferralDesignationUse"
+},
+{
+  "id" : "be-cs-ereferral-snomed-designation",
+  "type" : "CodeSystem",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation",
+  "version" : "3.0.0",
+  "name" : "BeCSeReferralSnomedDesignation"
+},
+{
+  "id" : "inami.fhir.be.ereferral",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral",
+  "version" : "3.0.0",
+  "name" : "EReferral"
+},
+{
+  "id" : "ereferral-annex-81",
+  "type" : "StructureDefinition",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81",
+  "version" : "3.0.0",
+  "name" : "EReferralAnnex81"
+},
+{
+  "id" : "ereferral-imaging-attention-conditions-response",
+  "type" : "StructureDefinition",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response",
+  "version" : "3.0.0",
+  "name" : "EReferralImagingAttentionConditionsResponse"
+},
+{
+  "id" : "ereferral-servicerequest-diagnosticimaging",
+  "type" : "StructureDefinition",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging",
+  "version" : "3.0.0",
+  "name" : "EReferralServiceRequestDiagnosticImaging"
+},
+{
+  "id" : "ereferral-servicerequest-nursing",
+  "type" : "StructureDefinition",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing",
+  "version" : "3.0.0",
+  "name" : "EReferralServiceRequestNursing"
+},
+{
+  "id" : "be-vs-ereferral-snomed-designation",
+  "type" : "ValueSet",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation",
+  "version" : "3.0.0",
+  "name" : "BeVSeReferralSnomedDesignation"
+}]

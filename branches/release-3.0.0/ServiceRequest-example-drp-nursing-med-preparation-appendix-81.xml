@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="example-drp-nursing-med-preparation-appendix-81"/>
+  <meta>
+    <extension id="{{kid}}" url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-key-pseudonymization">
+      <extension url="key">
+        <valueString value="urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}">
+          <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+            <extension url="marker">
+              <valueBoolean value="true"/>
+            </extension>
+            <extension url="format">
+              <valueCode value="direct"/>
+            </extension>
+            <extension url="version">
+              <valuePositiveInt value="2"/>
+            </extension>
+          </extension>
+        </valueString>
+      </extension>
+    </extension>
+    <profile value="https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ServiceRequest example-drp-nursing-med-preparation-appendix-81</b></p><a name="example-drp-nursing-med-preparation-appendix-81"> </a><a name="hcexample-drp-nursing-med-preparation-appendix-81"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ereferral-annex-81.html">EReferralAnnex81</a></p></div><p><b>BeValidityPeriod</b>: 2026-02-18 --&gt; 2027-02-18</p><p><b>status</b>: Draft</p><p><b>intent</b>: Proposal</p><p><b>category</b>: <span title="Codes:{http://snomed.info/sct 9632001}">Nursing procedure</span>, <span title="Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type medication-prefill-preparation-appendix-81}">Preparing medication (Appendix 81)</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 385796006}">urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}</span></p><p><b>subject</b>: Identifier: <a href="https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html" title="NISS/INSZ">BeSSINNamingSystem</a>/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)</p><p><b>authoredOn</b>: 2026-02-18 15:03:57+0100</p><p><b>requester</b>: <a href="PractitionerRole-67120919457-NURSE.html">Nurse Example (official) (https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#67120919457 (use: official)): nurse</a></p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 275928001}">Drugs - partial non-compliance</span>, <span title="Codes:{http://snomed.info/sct 1290542000}">Unintentional misuse of medication</span>, <span title="Codes:{http://snomed.info/sct 129834002}">Noncompliance with medication regimen</span>, <span title="Codes:{http://snomed.info/sct 448176008}">Uses less medication than prescribed</span>, <span title="Codes:{http://snomed.info/sct 359748005}">Patient condition unchanged</span>, <span title="Codes:{http://snomed.info/sct 271299001}">Patient's condition worsened</span>, <span title="Codes:{http://snomed.info/sct 62014003}">Adverse reaction to drug</span>, <span title="Codes:{http://snomed.info/sct 708014007}">Does not have an informal caregiver</span>, <span title="Codes:{http://snomed.info/sct 1137439008}">On complex medication regime</span>, <span title="Codes:{http://snomed.info/sct 211071000172100}">211071000172100</span>, <span title="Codes:{http://snomed.info/sct 211101000172107}">211101000172107</span>, <span title="Codes:{http://snomed.info/sct 397540003}">Visual impairment</span>, <span title="Codes:{http://snomed.info/sct 52448006}">Dementia</span></p></div>
+  </text>
+  <extension url="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period">
+    <valuePeriod>
+      <start value="2026-02-18"/>
+      <end value="2027-02-18"/>
+    </valuePeriod>
+  </extension>
+  <status value="draft"/>
+  <intent value="proposal"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="9632001"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"/>
+      <code value="medication-prefill-preparation-appendix-81"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385796006"/>
+    </coding>
+    <text value="urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}">
+      <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+        <extension url="marker">
+          <valueBoolean value="true"/>
+        </extension>
+        <extension url="format">
+          <valueCode value="encrypted"/>
+        </extension>
+        <extension url="version">
+          <valuePositiveInt value="1"/>
+        </extension>
+      </extension>
+    </text>
+  </code>
+  <subject>
+    <identifier>
+      <use value="official"/>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"/>
+      <value value="urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}">
+        <extension url="https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization">
+          <extension url="marker">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="format">
+            <valueCode value="direct"/>
+          </extension>
+          <extension url="version">
+            <valuePositiveInt value="2"/>
+          </extension>
+        </extension>
+      </value>
+    </identifier>
+  </subject>
+  <authoredOn value="2026-02-18T15:03:57+01:00"/>
+  <requester>
+    <reference value="PractitionerRole/67120919457-NURSE"/>
+  </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="275928001"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1290542000"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="129834002"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="448176008"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="359748005"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="271299001"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="62014003"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="708014007"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1137439008"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="211071000172100"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="211101000172107"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="397540003"/>
+    </coding>
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="52448006"/>
+    </coding>
+  </reasonCode>
+</ServiceRequest>

@@ -1,0 +1,2293 @@
+# Resource eReferral Implementation Guide
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "inami.fhir.be.ereferral",
+  "language" : "en",
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral",
+  "version" : "3.0.0",
+  "name" : "EReferral",
+  "title" : "eReferral Implementation Guide",
+  "status" : "draft",
+  "date" : "2026-09-02",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "eReferral Implementation Guide",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "packageId" : "inami.fhir.be.ereferral",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.5.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.4.0"
+  },
+  {
+    "id" : "hl7_fhir_be_core",
+    "uri" : "https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core",
+    "packageId" : "hl7.fhir.be.core",
+    "version" : "2.2.0"
+  },
+  {
+    "id" : "hl7_fhir_be_core_clinical",
+    "uri" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/ImplementationGuide/hl7.fhir.be.core-clinical",
+    "packageId" : "hl7.fhir.be.core-clinical",
+    "version" : "1.3.0"
+  },
+  {
+    "id" : "hl7_fhir_be_referral",
+    "uri" : "https://www.ehealth.fgov.be/standards/fhir/referral/ImplementationGuide/hl7.fhir.be.referral",
+    "packageId" : "hl7.fhir.be.referral",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "hl7_fhir_be_infsec",
+    "uri" : "https://www.ehealth.fgov.be/standards/fhir/infsec/ImplementationGuide/hl7.fhir.be.infsec",
+    "packageId" : "hl7.fhir.be.infsec",
+    "version" : "1.3.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.3.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "STU"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "shownav"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "pin-canonicals"
+      },
+      {
+        "url" : "value",
+        "valueString" : "pin-multiples"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-for-patients-without-trajectory"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-with-trajectory"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-glycemia-measurement-timing"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-session-types"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-implant-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-modality"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-priority"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-care-requested"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-medical-problem"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-nursing-diagnosis"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-technical-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-laterality"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-site"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-categories-of-care"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diabetes-education-identifier"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-education-type-with-trajectory"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-education-type-without-trajectory"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-educator-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-glycemia-measurement-time"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-note-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-care-requested"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-parameter-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-sample-substance-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-session-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-session-type-extended"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-implant-type"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-imaging-modality"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-imaging-priority"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.riziv-inami.be/standards/fhir/ereferral/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-be-ext-codeable-concept.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/be-ext-codeable-concept"
+      },
+      "name" : "CodeableConcept Extension for Reference",
+      "description" : "Extension able to hold a coded concept on a Reference element.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-be-cs-ereferral-designation-use.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/be-cs-ereferral-designation-use"
+      },
+      "name" : "eReferral Designation Use",
+      "description" : "Identifies terminology designations maintained specifically for the eReferral project.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-ereferral-vs-imaging-patient-condition-indication.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ereferral-vs-imaging-patient-condition-indication"
+      },
+      "name" : "eReferral Imaging Patient Condition Indication",
+      "description" : "Allowed coded indications for patient condition in diagnostic imaging.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-be-ext-radiology-supporting-info-role.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/be-ext-radiology-supporting-info-role"
+      },
+      "name" : "eReferral Radiology SupportingInfo Role",
+      "description" : "Identifies the role of a ServiceRequest.supportingInfo entry used in a diagnostic imaging referral.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-be-cs-radiology-supporting-info-role.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/be-cs-radiology-supporting-info-role"
+      },
+      "name" : "eReferral Radiology SupportingInfo Role CodeSystem",
+      "description" : "Identifies the role represented by an entry in ServiceRequest.supportingInfo for a diagnostic imaging referral.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-be-vs-radiology-supporting-info-role.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/be-vs-radiology-supporting-info-role"
+      },
+      "name" : "eReferral Radiology SupportingInfo Role ValueSet",
+      "description" : "Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Task-ereferral-referral-task.html"
+      }],
+      "reference" : {
+        "reference" : "Task/ereferral-referral-task"
+      },
+      "name" : "ereferral-referral-task",
+      "description" : "Example referral task associated with a nursing prescription.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-be-vs-diagnostic-imaging-condition.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/be-vs-diagnostic-imaging-condition"
+      },
+      "name" : "eReferral/PSS Diagnostic Imaging Condition",
+      "description" : "Clinical conditions that can support a diagnostic imaging request using SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-be-vs-diagnostic-imaging-procedure.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/be-vs-diagnostic-imaging-procedure"
+      },
+      "name" : "eReferral/PSS Diagnostic Imaging Procedure",
+      "description" : "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ereferral-annex-81.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ereferral-annex-81"
+      },
+      "name" : "EReferralAnnex81",
+      "description" : "Annex81 proposal and approval",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ereferral-imaging-attention-conditions-response.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ereferral-imaging-attention-conditions-response"
+      },
+      "name" : "EReferralImagingAttentionConditionsResponse",
+      "description" : "eReferral response to the imaging attention conditions questionnaire.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+      },
+      "name" : "EReferralServiceRequestDiagnosticImaging",
+      "description" : "The diagnostic imaging profile. eReferral version.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ereferral-servicerequest-nursing.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ereferral-servicerequest-nursing"
+      },
+      "name" : "EReferralServiceRequestNursing",
+      "description" : "The nursing profile, generic version. Please note the nursing referral for medication does NOT depend on this generic version but is a FHIR prodfile on a different FHIR resource (MedicationRequest)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-67120919457.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/67120919457"
+      },
+      "name" : "Example nurse identified by SSIN",
+      "description" : "Example nurse referenced by the eReferral examples.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-67120919457-NURSE.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/67120919457-NURSE"
+      },
+      "name" : "Example nurse role",
+      "description" : "Nurse role whose identifier follows the {ssin}-{discipline} convention.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-72101230445.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/72101230445"
+      },
+      "name" : "Example physician identified by SSIN",
+      "description" : "Example physician referenced by the eReferral examples.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-72101230445-PHYSICIAN.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/72101230445-PHYSICIAN"
+      },
+      "name" : "Example physician role",
+      "description" : "Physician role whose identifier follows the {ssin}-{discipline} convention.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-med-preparation-appendix-81.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-med-preparation-appendix-81"
+      },
+      "name" : "Example: Annex 81 - Preparing medication (proposal)",
+      "description" : "Example of an Annex 81 ServiceRequest proposal for preparing medication.\n\nInputs and values used in this example:\n- Profile: be-annex-81\n- Intent: proposal\n- Prescription type: medication-prefill-preparation-appendix-81\n- Procedure code (SNOMED): 385796006\n- Validity period: 2026-02-18 - 2027-02-18\n- Requester role: nurse (PractitionerRole/67120919457-NURSE)\n- Indications (reasonCode - 13 SNOMED codes):\n  * 1290542000\n  * 129834002\n  * 271299001\n  * 275928001\n  * 359748005\n  * 448176008\n  * 62014003\n  * 708014007\n  * 1137439008\n  * 211071000172100\n  * 211101000172107\n  * 397540003\n  * 52448006",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-bloodletting.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-bloodletting"
+      },
+      "name" : "Example: Bloodletting",
+      "description" : "Example of therapeutic bloodletting including quantity.\n\nInputs and values used in this example:\n- Prescription type: bloodletting\n- Procedure code (SNOMED): 127606004\n- Quantity: 300 mL\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 1 week\n  * count: 3\n  * frequency: 3\n  * period: 1 week\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-chronic-dialysis.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-chronic-dialysis"
+      },
+      "name" : "Example: Chronic home dialysis",
+      "description" : "Example of chronic home dialysis prescription.\n\nInputs and values used in this example:\n- Prescription type: chronic-dialysis\n- Procedure code (SNOMED): 225230008\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 2 months\n  * count: 9\n  * frequency: 1\n  * period: 1 week\n- Feedback to prescriber: true\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication\n  * general-remarks",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-de-convention-center.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-de-convention-center"
+      },
+      "name" : "Example: Diabetes education via convention centre",
+      "description" : "Example of diabetes education delivered through a convention centre.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-convention-center\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 211141000172109\n- Education type: diabetic-education-other\n- Validity period: 2026-02-18 - 2027-02-18\n- Timing:\n  * boundsDuration: 4 months\n  * count: 52\n  * frequency: 3\n  * period: 1 week\n- Feedback to prescriber: false\n- Notes:\n  * general-remarks",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-de-within-care-trajectory.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-de-within-care-trajectory"
+      },
+      "name" : "Example: Diabetes education within care trajectory",
+      "description" : "Example of diabetes education within an established care pathway.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-within-care-trajectory\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 370858005\n- Education type: diabetic-education-additional-hba1c\n- Session type: group-session\n- Performer types (SNOMED):\n  * 106292003\n  * 224543004\n- Validity period: 2026-02-18 - 2026-12-31\n- Number of sessions: 5",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-de-within-start-trajectory.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-de-within-start-trajectory"
+      },
+      "name" : "Example: Diabetes education within start trajectory",
+      "description" : "Example of diabetes education within a start trajectory.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-within-start-trajectory\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 211151000172106\n- Session type: individual-session\n- Validity period: 2026-02-18 – 2026-12-31\n- Number of sessions (count): 4\n- Performer type (SNOMED): 224543004\n- Feedback to prescriber: false\n- Notes:\n  * general-remarks",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-de-without-care-trajectory.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-de-without-care-trajectory"
+      },
+      "name" : "Example: Diabetes education without care trajectory",
+      "description" : "Example of diabetes education for patients without a care trajectory.\n\nInputs and values used in this example:\n- Prescription type: diabetic-education-without-care-trajectory\n- Education code (SNOMED): 385805005\n- Education subtype (SNOMED): 211161000172108\n- Education type: diabetic-education-self-care\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 3 weeks\n  * count: 21\n  * frequency: 1\n  * period: 1 day\n- Feedback to prescriber: true\n- Notes:\n  * general-remarks",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-clinical-imaging.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-clinical-imaging"
+      },
+      "name" : "Example: Diagnostic imaging referral",
+      "description" : "Example of a diagnostic imaging referral prescription with contained patient and imaging attention questionnaire response.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-generic.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-generic"
+      },
+      "name" : "Example: Generic nursing care",
+      "description" : "Example of a generic nursing ServiceRequest.\n\nInputs and values used in this example:\n- Prescription type: generic-nursing\n- Care code (SNOMED): 9632001\n- Care detail (orderDetail): preparation-and-administration-of-medication-for-psychiatric-patient\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 4 months\n  * count: 360\n  * frequency: 3\n  * period: 1 day\n- Priority: routine\n- Feedback to prescriber: false\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication\n  * general-remarks",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-glycemic-test.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-glycemic-test"
+      },
+      "name" : "Example: Glycemic control with glucometer",
+      "description" : "Example of glycemic monitoring using a glucometer.\n\nInputs and values used in this example:\n- Prescription type: glycemic-test\n- Procedure code (SNOMED): 166900001\n- Measurement timing: before-insulin-administration\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 3 weeks\n  * count: 21\n  * frequency: 1\n  * period: 1 day\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication\n  * general-remarks",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-hygienic-care.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-hygienic-care"
+      },
+      "name" : "Example: Hygienic care",
+      "description" : "Example of hygienic nursing care.\n\nInputs and values used in this example:\n- Prescription type: hygienic-care\n- Procedure code (SNOMED): 225964003\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 3 months\n  * count: 39\n  * frequency: 3\n  * period: 1 week\n- Notes:\n  * medical-reason",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-parameters.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-parameters"
+      },
+      "name" : "Example: Measurement of parameters",
+      "description" : "Example of clinical parameter monitoring.\n\nInputs and values used in this example:\n- Prescription type: parameters\n- Procedure code (SNOMED): 61746007\n- Parameter detail (SNOMED): 431314004\n- Validity start date: 2026-02-18\n- Timing:\n  * boundsDuration: 2 months\n  * count: 180\n  * frequency: 3\n  * period: 1 day\n  * when: C\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-med-prep-not-refunded.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-med-prep-not-refunded"
+      },
+      "name" : "Example: Preparation of medicines (not refunded)",
+      "description" : "Example of non-reimbursed medication prefill preparation.\n\nInputs and values used in this example:\n- Prescription type: medication-prefill-preparation-not-refunded\n- Procedure code (SNOMED): 385796006\n- Validity period: 2026-02-18 – 2027-02-18\n- Timing:\n  * frequency: 3\n  * period: 1 week\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * contraindication\n  * general-remarks",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-prior-drp-clinical-imaging.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-prior-drp-clinical-imaging"
+      },
+      "name" : "Example: Prior diagnostic imaging referral",
+      "description" : "A complete prior diagnostic imaging prescription referenced by the main diagnostic imaging example.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-drp-nursing-sampling.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-drp-nursing-sampling"
+      },
+      "name" : "Example: Sample collection",
+      "description" : "Example of a biological sample collection prescription.\n\nInputs and values used in this example:\n- Prescription type: sampling\n- Procedure code (SNOMED): 17636008\n- Sampling detail (SNOMED): 78014005\n- Occurrence count: 1\n- Validity start date: 2026-02-18\n- Medical reason (SNOMED): 404684003\n- Notes:\n  * medical-reason\n  * contraindication",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/be-vs-hybrid-diagnostic-imaging-procedure"
+      },
+      "name" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
+      "description" : "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT and PSS/QSI Codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-practitioner2.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner2"
+      },
+      "name" : "Nurse",
+      "description" : "Example practitioner acting as a nurse.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-NURSE-45094508408.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/NURSE-45094508408"
+      },
+      "name" : "Nurse Requester",
+      "description" : "Nurse acting as a Requester",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-Requester1.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/Requester1"
+      },
+      "name" : "Physician",
+      "description" : "Example practitioner acting as a requesting physician.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-DOCTOR-10829059004.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/DOCTOR-10829059004"
+      },
+      "name" : "Physician Requester",
+      "description" : "Physician acting as a Requester",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-be-cs-pss-qsi-indications.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/be-cs-pss-qsi-indications"
+      },
+      "name" : "PSS Indication",
+      "description" : "PSS indication codes for diagnostic imaging requests.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-01.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-01"
+      },
+      "name" : "PSS radiology scenario 01",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Henry Dutronc, male, 41 years old\n- Indication: progressive shortness of breath, orthopnea, dry cough and suspected pulmonary edema\n- Selected examination: chest X-ray\n- Procedure code (SNOMED): 399208008\n- Initially predefined examination: chest CT with IV contrast\n- Clinical context from Excel: hypertension for 5 years, non-smoker, no documented cardiac disease or known allergies; symptoms progressing over 24-48 hours, oxygen saturation approximately 88%, blood pressure 160/100 mmHg and bilateral basal crackles\n- Final examination rationale from Excel: rapid initial assessment and confirmation\n\nFictitious completions (not specified in Excel): date of birth 1985-04-12, PSS identifier PSS-RAD-001, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-02.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-02"
+      },
+      "name" : "PSS radiology scenario 02",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Ilse Vandekerk, female, 18 years old\n- Indication: persistent fever and unresolved or complicated pneumonia\n- Selected examination: chest X-ray\n- Procedure code (SNOMED): 399208008\n- Predefined examination: chest X-ray\n- Clinical context from Excel: previously diagnosed pneumonia, persistent fever despite antibiotics, continued cough, dyspnea and pleuritic chest pain; no immunodeficiency or known allergies; assess possible abscess, pleural effusion or empyema\n\nFictitious completions (not specified in Excel): date of birth 2008-04-12, PSS identifier PSS-RAD-002, prescription and validity dates, requester, ambulatory track and routine priority; not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-03.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-03"
+      },
+      "name" : "PSS radiology scenario 03",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Gabriel Santini, sex at birth unknown, 79 years old\n- Indication: chest pain with a normal EKG\n- Selected examination: MR angiography of the heart with or without IV contrast\n- Procedure code (SNOMED): 736793003, using the Excel mapping for MR angiography of the heart wo/w IV contrast\n- Initially predefined examination: MR angiography of the chest without IV contrast\n- Clinical context from Excel: chest pain with normal EKG and stable vital signs; no reported syncope, dyspnea, palpitations or signs of heart failure; cardiovascular history, risk factors and medication remain to be assessed\n\nFictitious completions (not specified in Excel): date of birth 1947-04-12, PSS identifier PSS-RAD-003, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, contrast allergy, metallic debris or renal dysfunction and no other safety concern. Fictitious examination rationale: assess cardiac vascular anatomy in addition to the chest pain presentation.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 439.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-04.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-04"
+      },
+      "name" : "PSS radiology scenario 04",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Jeanne Darc, female, 20 years old, currently pregnant\n- Indication: new-onset headaches during pregnancy\n- Selected examination: non-contrast CT of the head\n- Procedure code (SNOMED): 383371000119108\n- Initially predefined examination: MR angiography of the head with or without IV contrast\n- Clinical context from Excel: new headaches during pregnancy; no prior chronic headache, migraine, trauma, neurological disorder or known allergies; assess blood pressure, preeclampsia and neurological warning signs\n\nFictitious completions (not specified in Excel): date of birth 2006-04-12, PSS identifier PSS-RAD-004, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern beyond the documented pregnancy. Fictitious examination rationale: the prescriber selects non-contrast head CT for this illustrative scenario; this is not clinical guidance.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-05.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-05"
+      },
+      "name" : "PSS radiology scenario 05",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Amhet Dine El Ottomani, male, 25 years old\n- Indication: tongue weakness with no other focal neurological deficits\n- Selected examination: MRI of the head with and without contrast\n- Procedure code (SNOMED): 432874000, using the Excel mapping for MR head wo/w IV contrast\n- Predefined examination: none\n- Clinical context from Excel: recent tongue weakness; assess dysarthria, dysphagia, tongue deviation, atrophy and fasciculations; no known neurological disease, recent trauma or surgery, stroke, TIA, neuromuscular disease, head or neck cancer, radiation or known allergies\n\nFictitious completions (not specified in Excel): date of birth 2001-04-12, PSS identifier PSS-RAD-005, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 518.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-06.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-06"
+      },
+      "name" : "PSS radiology scenario 06",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Anne De Montmorency, sex at birth unknown, 39 years old\n- Indication: head trauma with headaches and follow-up after stroke\n- Selected examination: MR angiography of the head with or without IV contrast\n- Procedure code (SNOMED): 702684006, using the Excel mapping for MR angiography of the head wo/w IV contrast\n- Predefined examination: same as selected examination\n- Clinical context from Excel: history of stroke and head trauma with persistent or worsening headaches; assess trauma details, new neurological deficits and stroke risk factors; medications to be reviewed; no known drug allergies\n\nFictitious completions (not specified in Excel): date of birth 1987-04-12, PSS identifier PSS-RAD-006, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, metallic debris or renal dysfunction and no other safety concern. Unspecified cardiovascular risk factors are not treated as confirmed diagnoses.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 435.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-07.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-07"
+      },
+      "name" : "PSS radiology scenario 07",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Anne De Montmorency, male at birth, 8 years old\n- Indication: head trauma with headaches and follow-up after stroke\n- Selected examination: MR angiography of the head with or without IV contrast\n- Procedure code (SNOMED): 702684006, using the Excel mapping for MR angiography of the head wo/w IV contrast\n- Predefined examination: same as selected examination\n- Clinical context from Excel: history of stroke and head trauma with persistent or worsening headaches; assess trauma details, new neurological deficits and stroke risk factors; medications to be reviewed; no known drug allergies\n\nFictitious completions (not specified in Excel): date of birth 2018-04-12, PSS identifier PSS-RAD-007, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. This child is a separate fictitious patient from scenario 06 despite the shared name. Unspecified cardiovascular risk factors are not treated as confirmed diagnoses.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 435.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-08.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-08"
+      },
+      "name" : "PSS radiology scenario 08",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Leslie Unknown, female, 55 years old\n- Indication: stage I breast cancer, asymptomatic, for initial evaluation and exclusion of bone metastases\n- Selected examination: breast MRI without IV contrast\n- Procedure code (SNOMED): 241615005, using the Excel mapping for MR breast wo IV contrast without specified laterality\n- Predefined examination: none\n- Additional indication from Excel: evaluation of tumor size and extent before neoadjuvant chemotherapy\n- Clinical context from Excel: recent stage I breast cancer diagnosis, no bone pain, neurological or systemic symptoms, no prior cancer or known allergies; menopausal status and medication remain to be confirmed\n\nFictitious completions (not specified in Excel): date of birth 1971-04-12, PSS identifier PSS-RAD-008, prescription and validity dates, requester, ambulatory track and routine priority; not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. Breast laterality is intentionally left unspecified, as in Excel.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 475.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-09.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-09"
+      },
+      "name" : "PSS radiology scenario 09",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Jean-Eude Delacompta, male, 61 years old\n- Indication: abnormal sputum production, persistent cough and acute respiratory illness\n- Selected examination: chest X-ray\n- Procedure code (SNOMED): 399208008\n- Predefined examination: chest X-ray\n- Clinical context from Excel: persistent cough for several weeks and abnormal sputum with acute respiratory worsening; assess fever, dyspnea, sputum characteristics, smoking, chronic bronchitis, COPD and recent infection; no known lung cancer, tuberculosis or drug allergies\n\nFictitious completions (not specified in Excel): date of birth 1965-04-12, PSS identifier PSS-RAD-009, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. Possible smoking, chronic bronchitis and COPD are not treated as confirmed diagnoses.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-example-pss-radiology-scenario-10.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/example-pss-radiology-scenario-10"
+      },
+      "name" : "PSS radiology scenario 10",
+      "description" : "Example of a diagnostic imaging prescription.\n\nInputs and values used in this example:\n- Patient: Robin Haarkoe, sex at birth unknown, 37 years old\n- Indication: tongue weakness and facial weakness\n- Selected examination: CT of the head with contrast\n- Procedure code (SNOMED): 711232001\n- Predefined examination: none\n- Clinical context from Excel: recent tongue and facial weakness with dysarthria, dysphagia or tongue deviation to be assessed; assess facial distribution and associated neurological symptoms; no known neurological disease, recent trauma or surgery, stroke, TIA, neuromuscular disease, allergies, recent infection or vaccination\n\nFictitious completions (not specified in Excel): date of birth 1989-04-12, PSS identifier PSS-RAD-010, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, metallic debris or renal dysfunction and no other safety concern.\nClinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx.",
+      "exampleCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure"
+      },
+      "name" : "PSS/QSI Diagnostic Imaging Procedure",
+      "description" : "All PSS/QSI diagnostic imaging procedure codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-be-cs-pss-qsi-diagnostic-imaging-procedure.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure"
+      },
+      "name" : "PSS/QSI Diagnostic Imaging Procedure",
+      "description" : "PSS/QSI diagnostic imaging procedure codes with English displays and Belgian French, Dutch and German designations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-be-vs-pss-qsi-indication.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/be-vs-pss-qsi-indication"
+      },
+      "name" : "PSS/QSI Indication",
+      "description" : "Indication codes for diagnostic imaging requests as PSS Internal Codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-be-vs-ereferral-snomed-designation.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/be-vs-ereferral-snomed-designation"
+      },
+      "name" : "SNOMED CT eReferral Supplement Designations",
+      "description" : "SNOMED CT supplement containing multilingual designations maintained for the eReferral project.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-be-cs-ereferral-snomed-designation.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/be-cs-ereferral-snomed-designation"
+      },
+      "name" : "SNOMED CT eReferral Supplement Designations",
+      "description" : "SNOMED CT supplement containing multilingual designations maintained for the eReferral project.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-72101230446-PHYSICIAN.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/72101230446-PHYSICIAN"
+      },
+      "name" : "Urgency Physician Requester",
+      "description" : "Urgency Physician acting as a Requester",
+      "exampleBoolean" : true
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "eReferral Implementation Guide",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "guidance.html"
+        }],
+        "nameUrl" : "guidance.html",
+        "title" : "Guidance",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "topic-profiles-architecture.html"
+        }],
+        "nameUrl" : "topic-profiles-architecture.html",
+        "title" : "Profiles Architecture",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "topic-profile-rewriting.html"
+        }],
+        "nameUrl" : "topic-profile-rewriting.html",
+        "title" : "Profile Rewriting",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "topic-prescription-lifecycle.html"
+        }],
+        "nameUrl" : "topic-prescription-lifecycle.html",
+        "title" : "Life Cycle",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "topic-prescription-lifecycle-proposal.html"
+          }],
+          "nameUrl" : "topic-prescription-lifecycle-proposal.html",
+          "title" : "Proposal Life Cycle",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "topic-prescription-lifecycle-extension.html"
+          }],
+          "nameUrl" : "topic-prescription-lifecycle-extension.html",
+          "title" : "Prescription Extension",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "topic-prescription-templates.html"
+        }],
+        "nameUrl" : "topic-prescription-templates.html",
+        "title" : "Prescription Templates",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "topic-visibility-blacklisting.html"
+        }],
+        "nameUrl" : "topic-visibility-blacklisting.html",
+        "title" : "Visibility & Blacklisting",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "api-integration.html"
+        }],
+        "nameUrl" : "api-integration.html",
+        "title" : "API Integration",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "api-operations.html"
+        }],
+        "nameUrl" : "api-operations.html",
+        "title" : "API Operations",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-access-matrix.html"
+          }],
+          "nameUrl" : "operation-access-matrix.html",
+          "title" : "Access Matrix",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-create-medical-document.html"
+          }],
+          "nameUrl" : "operation-create-medical-document.html",
+          "title" : "Create a Medical Document",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-consult-search-medical-documents.html"
+          }],
+          "nameUrl" : "operation-consult-search-medical-documents.html",
+          "title" : "Consult or Search Medical Documents",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-complete-medical-document.html"
+          }],
+          "nameUrl" : "operation-complete-medical-document.html",
+          "title" : "Complete a Medical Document",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-cancel-medical-document.html"
+          }],
+          "nameUrl" : "operation-cancel-medical-document.html",
+          "title" : "Cancel a Medical Document",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-assign-care-provider.html"
+          }],
+          "nameUrl" : "operation-assign-care-provider.html",
+          "title" : "Assign a Care Provider",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-unassign-care-provider.html"
+          }],
+          "nameUrl" : "operation-unassign-care-provider.html",
+          "title" : "Unassign a Care Provider",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-record-execution-start.html"
+          }],
+          "nameUrl" : "operation-record-execution-start.html",
+          "title" : "Record Execution Start",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-record-execution-end.html"
+          }],
+          "nameUrl" : "operation-record-execution-end.html",
+          "title" : "Record Execution End",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-record-execution-interruption.html"
+          }],
+          "nameUrl" : "operation-record-execution-interruption.html",
+          "title" : "Record Execution Interruption",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-cancel-execution.html"
+          }],
+          "nameUrl" : "operation-cancel-execution.html",
+          "title" : "Cancel Execution",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-evaluate-proposal.html"
+          }],
+          "nameUrl" : "operation-evaluate-proposal.html",
+          "title" : "Evaluate Proposal",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "operation-evaluate-radiology-prescription.html"
+          }],
+          "nameUrl" : "operation-evaluate-radiology-prescription.html",
+          "title" : "Evaluate Radiology Prescription",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "api-complex-operations.html"
+          }],
+          "nameUrl" : "api-complex-operations.html",
+          "title" : "Complex Operations",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "error-codes.html"
+          }],
+          "nameUrl" : "error-codes.html",
+          "title" : "Error Codes",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mappings-business.html"
+        }],
+        "nameUrl" : "mappings-business.html",
+        "title" : "Business Field Mappings",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "mappings-nursing.html"
+          }],
+          "nameUrl" : "mappings-nursing.html",
+          "title" : "Nursing",
+          "generation" : "markdown",
+          "page" : [{
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-generic.html"
+            }],
+            "nameUrl" : "mapper-nursing-generic.html",
+            "title" : "Generic Nursing",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-bloodletting.html"
+            }],
+            "nameUrl" : "mapper-nursing-bloodletting.html",
+            "title" : "Bloodletting",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-chronic-dialysis.html"
+            }],
+            "nameUrl" : "mapper-nursing-chronic-dialysis.html",
+            "title" : "Chronic Dialysis",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-diabetes-education-convention-center.html"
+            }],
+            "nameUrl" : "mapper-nursing-diabetes-education-convention-center.html",
+            "title" : "Diabetes Education via Convention Centre",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-diabetes-education-start-trajectory.html"
+            }],
+            "nameUrl" : "mapper-nursing-diabetes-education-start-trajectory.html",
+            "title" : "Diabetes Education within Start Trajectory",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-diabetes-education-care-trajectory.html"
+            }],
+            "nameUrl" : "mapper-nursing-diabetes-education-care-trajectory.html",
+            "title" : "Diabetes Education within Care Trajectory",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-diabetes-education-without-trajectory.html"
+            }],
+            "nameUrl" : "mapper-nursing-diabetes-education-without-trajectory.html",
+            "title" : "Diabetes Education without Trajectory",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-glycemic-test.html"
+            }],
+            "nameUrl" : "mapper-nursing-glycemic-test.html",
+            "title" : "Glycemic Test",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-hygienic-care.html"
+            }],
+            "nameUrl" : "mapper-nursing-hygienic-care.html",
+            "title" : "Hygienic Care",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-medication-prefill-not-refunded.html"
+            }],
+            "nameUrl" : "mapper-nursing-medication-prefill-not-refunded.html",
+            "title" : "Medication Prefill Preparation Not Refunded",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-parameters.html"
+            }],
+            "nameUrl" : "mapper-nursing-parameters.html",
+            "title" : "Parameters",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-sampling.html"
+            }],
+            "nameUrl" : "mapper-nursing-sampling.html",
+            "title" : "Sampling",
+            "generation" : "markdown"
+          },
+          {
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-nursing-annex81-medication-preparation.html"
+            }],
+            "nameUrl" : "mapper-nursing-annex81-medication-preparation.html",
+            "title" : "Annex 81 Medication Preparation",
+            "generation" : "markdown"
+          }]
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "mappings-radiology.html"
+          }],
+          "nameUrl" : "mappings-radiology.html",
+          "title" : "Radiology",
+          "generation" : "markdown",
+          "page" : [{
+            "extension" : [{
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "mapper-radiology-diagnostic-imaging.html"
+            }],
+            "nameUrl" : "mapper-radiology-diagnostic-imaging.html",
+            "title" : "Diagnostic Imaging",
+            "generation" : "markdown"
+          }]
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "technical.html"
+        }],
+        "nameUrl" : "technical.html",
+        "title" : "Technical",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "glossary.html"
+        }],
+        "nameUrl" : "glossary.html",
+        "title" : "Glossary",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "changes.html"
+        }],
+        "nameUrl" : "changes.html",
+        "title" : "Changes",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "html"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}
+
+```

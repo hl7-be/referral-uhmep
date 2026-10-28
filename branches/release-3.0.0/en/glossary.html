@@ -1,0 +1,490 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Glossary - eReferral Implementation Guide v3.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7-be.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<!-- Riziv-Inami Platform -->
+<!-- draft -->
+
+<link href="assets/css/riziv-inami.css" rel="stylesheet"/>
+
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        
+<div id="ig-nav">
+  
+  <a id="riziv-inami-logo" no-external="true" href="index.html">
+    <img alt="Smals" src="assets/images/logo-riziv-inami.png"/>
+  </a>
+  <!-- no fitting stylesheet found (status/publisher)-->
+  
+</div>
+<div id="uhmep-header-brand">
+  
+  <a id="eReferral-logo" no-external="true" href="index.html">
+    <img alt="eReferral Implementation Guide" src="assets/images/eReferral-logo.png"/>
+  </a>
+  <!-- no fitting stylesheet found (status/publisher)-->
+  
+  <span class="ereferral-badge">v3.0.0</span>
+<span class="ereferral-badge">draft</span>
+</div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">3.0.0 - 
+
+
+
+  <img alt="Belgium flag" src="assets/images/bel.svg" height="16" title="Belgium"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Topics
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="topic-profiles-architecture.html">Profiles Architecture</a>
+      </li>
+      <li>
+        <a href="topic-profile-rewriting.html">Profile Rewriting</a>
+      </li>
+      <li>
+        <a href="topic-prescription-lifecycle.html">Life Cycle</a>
+      </li>
+      <li>
+        <a href="topic-prescription-templates.html">Prescription Templates</a>
+      </li>
+      <li>
+        <a href="topic-visibility-blacklisting.html">Visibility &amp; Blacklisting</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="api-integration.html">Integration Rules</a>
+      </li>
+      <li>
+        <a href="api-operations.html">Operations</a>
+      </li>
+      <li>
+        <a href="operation-access-matrix.html">Access Matrix</a>
+      </li>
+      <li>
+        <a href="api-complex-operations.html">Complex Operations</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Mappings
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="mappings-business.html">Overview</a>
+      </li>
+      <li>
+        <a href="mappings-nursing.html">Nursing</a>
+      </li>
+      <li>
+        <a href="mappings-radiology.html">Radiology</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html#structures-resource-profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="artifacts.html#structures-extension-definitions">Extensions</a>
+      </li>
+      <li>
+        <a href="artifacts.html#terminology-value-sets">Value Sets</a>
+      </li>
+      <li>
+        <a href="artifacts.html#terminology-code-systems">Code Systems</a>
+      </li>
+      <li>
+        <a href="artifacts.html#example-example-instances">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="technical.html">Technical</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Glossary</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="technical.html">&lt; prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="changes.html">next &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Glossary</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<p>This page defines the terminology used throughout the eReferral Implementation Guide. It focuses on the business concepts, FHIR relationships, and eReferral-specific mechanisms that implementers need to understand.</p>
+
+<p>Support contacts, certificates, required headers, authentication details, and API entry points are documented on the <a href="technical.html">Technical</a> page.</p>
+
+<h2 id="business-terms">Business Terms</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Referral prescription</td>
+      <td>A <code class="language-plaintext highlighter-rouge">ServiceRequest</code> with <code class="language-plaintext highlighter-rouge">intent = order</code>, issued by a prescriber to authorize the provision of care, such as wound care, an Annex 81 prescription, or diagnostic imaging.</td>
+    </tr>
+    <tr>
+      <td>Proposal</td>
+      <td>A <code class="language-plaintext highlighter-rouge">ServiceRequest</code> with <code class="language-plaintext highlighter-rouge">intent = proposal</code>, created by a healthcare professional and submitted to a prescriber for approval or rejection. Once approved, it may result in an effective referral prescription. See <a href="topic-prescription-lifecycle-proposal.html">Proposal Life Cycle</a>.</td>
+    </tr>
+    <tr>
+      <td>Prescriber</td>
+      <td>An authorized healthcare professional who issues a referral prescription or approves a proposal for a patient.</td>
+    </tr>
+    <tr>
+      <td>Treatment provider</td>
+      <td>A healthcare professional who assesses a proposed treatment or provides the care authorized by a referral prescription.</td>
+    </tr>
+    <tr>
+      <td>Assignment</td>
+      <td>The act of assigning a healthcare professional or organization to provide the prescribed care or assess the proposed treatment. It is represented by a <code class="language-plaintext highlighter-rouge">BePerformerTask</code> or <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code>.</td>
+    </tr>
+    <tr>
+      <td>Organization assignment</td>
+      <td>An assignment represented by a <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code>, through which a healthcare organization takes responsibility for the prescribed care or the assessment of a proposed treatment.</td>
+    </tr>
+    <tr>
+      <td>Internal performer</td>
+      <td>A healthcare professional acting within an organization assignment. The corresponding <code class="language-plaintext highlighter-rouge">BePerformerTask</code> references its parent <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code> through <code class="language-plaintext highlighter-rouge">Task.basedOn</code>.</td>
+    </tr>
+    <tr>
+      <td>Execution</td>
+      <td>The performance of the care covered by an assignment. Its current state is represented by <code class="language-plaintext highlighter-rouge">Task.status</code>, while <code class="language-plaintext highlighter-rouge">Task.executionPeriod</code> records when execution started and, when applicable, ended.</td>
+    </tr>
+    <tr>
+      <td>Prescription type</td>
+      <td>The eReferral category identifying the specific kind of prescription, such as hygienic care, phlebotomy, or diagnostic imaging. It is represented by the prescription-type coding in <code class="language-plaintext highlighter-rouge">ServiceRequest.category</code>. See <a href="topic-prescription-templates.html">Prescription Templates</a>.</td>
+    </tr>
+    <tr>
+      <td>Validity period</td>
+      <td>The eReferral-defined period during which the prescribed care may be performed, expressed through <code class="language-plaintext highlighter-rouge">validity.start</code> and <code class="language-plaintext highlighter-rouge">validity.end</code> or <code class="language-plaintext highlighter-rouge">validity.latest</code>. See <a href="api-integration.html#date-and-validity-computation">API Integration – Date and Validity Computation</a>.</td>
+    </tr>
+    <tr>
+      <td>Prescription extension</td>
+      <td>The creation of a new prescription that supersedes and extends a previous prescription. The new <code class="language-plaintext highlighter-rouge">ServiceRequest</code> references the original one through <code class="language-plaintext highlighter-rouge">ServiceRequest.replaces</code>. See <a href="topic-prescription-lifecycle-extension.html">Prescription Extension</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="fhir-and-technical-terms">FHIR and Technical Terms</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRP</td>
+      <td>The federal <em>Digital Referral Profile</em> Implementation Guide (<code class="language-plaintext highlighter-rouge">hl7.fhir.be.drp</code>), which defines the parent FHIR profiles further constrained by eReferral.</td>
+    </tr>
+    <tr>
+      <td>Pseudonymization</td>
+      <td>The protection mechanism applied to patient-identifying information before transmission. In eReferral, the patient’s SSIN is transmitted as a direct pseudonym, while identifying free text is encrypted and represented by an encrypted reference. See <a href="guidance.html#pseudonymization-and-free-text">Guidance – Pseudonymization and Free Text</a> and <a href="api-integration.html#pseudonymization">API Integration – Pseudonymization</a>.</td>
+    </tr>
+    <tr>
+      <td>Direct pseudonym</td>
+      <td>A pseudonymized representation of the patient’s SSIN transmitted using the format <code class="language-plaintext highlighter-rouge">urn:be:fgov:pseudo:v2:{SEC1}:{transitInfo}</code>.</td>
+    </tr>
+    <tr>
+      <td>Encrypted free text</td>
+      <td>Free-text content that may contain identifying information, such as notes, reasons, or status descriptions, encrypted through the eHealth Pseudonymization service and represented by a <code class="language-plaintext highlighter-rouge">urn:be:fgov:pseudo-encrypted:v1:{kid}:{encrypted-text}</code> value.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">kid</code> (key identifier)</td>
+      <td>The identifier of the encryption key used for encrypted free text. It is carried once in <code class="language-plaintext highlighter-rouge">ServiceRequest.meta</code> through <code class="language-plaintext highlighter-rouge">be-ext-key-pseudonymization</code> and must match the <code class="language-plaintext highlighter-rouge">kid</code> contained in every encrypted free-text reference in the resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Task.focus</code></td>
+      <td>The element used by a <code class="language-plaintext highlighter-rouge">BeReferralTask</code>, <code class="language-plaintext highlighter-rouge">BePerformerTask</code>, or <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code> to reference the <code class="language-plaintext highlighter-rouge">ServiceRequest</code> concerned by the task. In eReferral, tasks link to the prescription through <code class="language-plaintext highlighter-rouge">focus</code>; <code class="language-plaintext highlighter-rouge">basedOn</code> is not used for this relationship.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Task.basedOn</code></td>
+      <td>The element used by an internal <code class="language-plaintext highlighter-rouge">BePerformerTask</code> to reference the parent <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code> that authorized its creation. This identifies the performer assignment as internal to the organization assignment.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.replaces</code></td>
+      <td>The element used to link a replacement prescription to the completed or terminated prescription it supersedes. In eReferral, it is used for prescription extension.</td>
+    </tr>
+    <tr>
+      <td>eReferral error code</td>
+      <td>An eReferral-specific error code defined in the <code class="language-plaintext highlighter-rouge">urn:uhmep:errors</code> code system and returned in <code class="language-plaintext highlighter-rouge">OperationOutcome.issue.details</code>. The codes are documented on the <a href="error-codes.html">Error Codes</a> page and in the <a href="UHMEP_API_ErrorCodes_20260723.xlsx">eReferral API Error Codes workbook</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="technical.html">&lt; prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="changes.html">next ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
+          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Wed, Oct 28, 2026 14:55+0000">2026-10-28</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div class="smals-footer">
+  <div class="smals-footer-brand" aria-label="Publishing organisations">
+    <a class="smals-footer-logo" href="https://www.smals.be">
+      <img alt="Smals" src="https://smals.be/themes/custom/websmals_bs4/logo.svg"/>
+    </a>
+    <a class="riziv-inami-footer-logo" href="https://www.inami.be">
+      <img alt="RIZIV-INAMI" src="assets/images/logo-riziv-inami.png"/>
+    </a>
+  </div>
+  <nav class="smals-footer-links" aria-label="Implementation Guide links">
+    <a href="toc.html">Table of Contents</a>
+    <span aria-hidden="true">|</span>
+    <a href="../qa.html">QA Report</a>
+  </nav>
+</div>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-hybrid-diagnostic-imaging-procedure"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-vs-hybrid-diagnostic-imaging-procedure</b></p><a name="be-vs-hybrid-diagnostic-imaging-procedure"> </a><a name="hcbe-vs-hybrid-diagnostic-imaging-procedure"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.html">PSS/QSI Diagnostic Imaging Procedure</a></li><li>Import all the codes that are contained in <a href="ValueSet-be-vs-diagnostic-imaging-procedure.html">eReferral/PSS Diagnostic Imaging Procedure</a></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure"/>
+  <version value="3.0.0"/>
+  <name value="BeVSHybridDiagnosticImagingProcedure"/>
+  <title value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-10-28T14:55:19+00:00"/>
+  <publisher value="Riziv-Inami Platform"/>
+  <contact>
+    <name value="Riziv-Inami Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.riziv-inami.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure Smals"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT and PSS/QSI Codes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO)."/>
+  <compose>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure"/>
+    </include>
+    <include>
+      <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.0"/>
+    </include>
+  </compose>
+</ValueSet>

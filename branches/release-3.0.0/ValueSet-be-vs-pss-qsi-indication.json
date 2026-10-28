@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-pss-qsi-indication",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-pss-qsi-indication</b></p><a name=\"be-vs-pss-qsi-indication\"> </a><a name=\"hcbe-vs-pss-qsi-indication\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-pss-qsi-indications.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;3.0.0</span></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication",
+  "version" : "3.0.0",
+  "name" : "BeVSPSSQSIIndication",
+  "title" : "PSS/QSI Indication",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-10-28T14:55:19+00:00",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Indication codes for diagnostic imaging requests as PSS Internal Codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"
+    }]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "be-cs-ereferral-designation-use",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-ereferral-designation-use</b></p><a name=\"be-cs-ereferral-designation-use\"> </a><a name=\"hcbe-cs-ereferral-designation-use\"> </a><p>This case-sensitive code system <code>https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">eReferral-preferred<a name=\"be-cs-ereferral-designation-use-eReferral-preferred\"> </a></td><td>eReferral preferred term</td></tr><tr><td style=\"white-space:nowrap\">eReferral-synonym<a name=\"be-cs-ereferral-designation-use-eReferral-synonym\"> </a></td><td>eReferral synonym</td></tr></table></div>"
+  },
+  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
+  "version" : "3.0.0",
+  "name" : "BeCSeReferralDesignationUse",
+  "title" : "eReferral Designation Use",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-28T14:55:19+00:00",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Identifies terminology designations maintained specifically for the eReferral project.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "eReferral-preferred",
+    "display" : "eReferral preferred term"
+  },
+  {
+    "code" : "eReferral-synonym",
+    "display" : "eReferral synonym"
+  }]
+}
