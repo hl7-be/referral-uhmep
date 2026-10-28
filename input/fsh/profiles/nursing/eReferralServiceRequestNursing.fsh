@@ -73,4 +73,3 @@ Description: "The nursing profile, generic version. Please note the nursing refe
 * bodySite.id 0..0
 * note.author[x] 0..0
 * note.time 0..0
-* extension[latest] 0..0

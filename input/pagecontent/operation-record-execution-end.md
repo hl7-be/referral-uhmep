@@ -7,6 +7,8 @@ This page describes how to record the end of execution.
 | Target resource | `BePerformerTask` |
 | Successful response | `201 Created` or `200 OK` |
 
+For radiology on the urgency track, execution may also be completed while the prescription is still in business state `READY`. The backend starts the caregiver activity before completing it; this exception is track-specific.
+
 ### Finish Without Existing Assignment
 
 ```json

@@ -7,6 +7,8 @@ This page describes how to cancel a prescription or proposal.
 | Target resource | `ServiceRequest` |
 | Successful response | `200 OK` |
 
+For radiology prescriptions, a Patient may cancel while the prescription is in business state `PENDING` or `READY`. This is a radiology-specific rule and should not be inferred for other prescription types.
+
 ### Payload
 
 ```json

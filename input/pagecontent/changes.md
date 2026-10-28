@@ -2,6 +2,35 @@ This page documents the changes to the eReferral Implementation Guide specificat
 
 ---
 
+### **2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements**
+
+This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,
+and adds examples for the updated PSS/QSI radiology terminology.
+
+<details markdown="1">
+<summary><strong>View detailed v3.0.0 release notes</strong></summary>
+
+#### Radiology workflow clarifications
+
+- **Remove an assignment on the ambulatory track:** An assignment may be removed while the radiology prescription is `READY` or `IN_PROGRESS` and its execution task is `ready` or `in-progress`. The task is deleted and the prescription returns to `READY`. Other tracks and prescription types retain their applicable removal rules.
+- **Complete execution on the urgency track:** Radiology execution may be completed while the prescription remains in business state `READY`. When completing an existing execution, the backend starts the caregiver activity before completing it.
+- **Cancel a radiology prescription:** A Patient may cancel a radiology prescription while its business state is `PENDING` or `READY`. This rule is specific to radiology.
+
+#### FHIR profile constraints and examples
+
+- The Annex 81 technical-type category and the nursing and diagnostic-imaging prescription-type categories are explicitly required.
+- `ServiceRequest.reasonCode` is required by the nursing and diagnostic-imaging profiles. Updated examples represent free-text reasons with the pseudonymization extension.
+- The prior diagnostic-imaging example now uses an active request, and the urgency requester example uses the PractitionerRole identifier expected by its references.
+
+#### Radiology terminology and scenarios
+
+- PSS/QSI indication and diagnostic-imaging procedure terminology is updated, including the corresponding value sets used by the diagnostic-imaging profile.
+- Ten illustrative PSS radiology business-case examples demonstrate the updated terminology in diagnostic-imaging requests.
+
+</details>
+
+---
+
 ### **2026-09-02 — v2.1.0 Release: Validation, Radiology Tracks, and Security — FHIR R4**
 
 This release aligns gateway validation with the NIHDI/RIZIV-INAMI profiles, introduces
@@ -48,13 +77,6 @@ The Implementation Guide remains the single authoritative source for supported w
 structures, profiles, validation rules, and integration examples. The retired PDF Cookbook must
 not be used as the reference for new development. This consolidation was introduced in v2.0.0;
 v2.1.0 reinforces the migration recommendation without duplicating the Cookbook content.
-
-#### Deployed but unavailable capabilities
-
-Heart Failure Medical Orders, Technical Orders, Medical Order consultation, and Heart Failure
-parameter management are deployed behind feature flags but remain disabled in acceptance and
-production. They are not part of the public API capabilities in this release and will be documented
-as available only when activated in a future release.
 
 </details>
 

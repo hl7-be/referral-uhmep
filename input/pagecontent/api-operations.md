@@ -79,7 +79,7 @@ Use these operations when the prescription must be assigned to a healthcare prof
 
 | Business objective | Actors | Endpoint | Task profile | Success | Key integration notes |
 |----|----|----|----|----|----|
-| Remove an assignment | Patient<br>Caregiver<br>Organization | `DELETE /Task/{executionID}` | `BePerformerTask` or `BeOrganizationTask` | `204 No Content` | - Only removable while the execution task is still `ready`.<br>- The task is deleted and cannot be reused.<br>- Internal performer assignments must remain coherent with the organization assignment they reference. |
+| Remove an assignment | Patient<br>Caregiver<br>Organization | `DELETE /Task/{executionID}` | `BePerformerTask` or `BeOrganizationTask` | `204 No Content` | - For ambulatory radiology, allowed while the prescription is `READY` or `IN_PROGRESS` and the execution task is `ready` or `in-progress`; the prescription returns to `READY`.<br>- The task is deleted and cannot be reused.<br>- Internal performer assignments must remain coherent with the organization assignment they reference. |
 
 
 ### Manage Execution Progress
@@ -98,7 +98,7 @@ Healthcare professionals and organizations do not update the clinical `ServiceRe
 | Business objective | Actors | Endpoint | Task status after operation | Success | Key integration notes |
 |----|----|----|----|----|----|
 | Finish execution, not assigned yet | - Healthcare Professional<br>- Organization | `POST /Task` | `completed` | `201 Created` | Create a completed task with:<br>-`executionPeriod.start`<br>-`executionPeriod.end` |
-| Finish execution, already started | - Healthcare Professional<br>- Organization | `PATCH /Task/{executionID}` | `completed` | `200 OK` | - Add only `Task.executionPeriod.end`.<br>- End must not be in the future.<br>- End must not be before start. |
+| Finish execution, already started | - Healthcare Professional<br>- Organization | `PATCH /Task/{executionID}` | `completed` | `200 OK` | - Add only `Task.executionPeriod.end`.<br>- End must not be in the future.<br>- End must not be before start.<br>- Radiology on the urgency track may finish while the prescription is still in business state `READY`. |
 
 #### Record Execution Interruption
 

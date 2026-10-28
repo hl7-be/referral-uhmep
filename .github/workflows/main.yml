@@ -13,15 +13,20 @@ on:
       - main
       - master
       - releasecandidate
+      - release-3.0.0
   pull_request:
     branches: 
       - main
       - master
       - draft
       - releasecandidate
+      - release-3.0.0
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -32,35 +37,59 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Get branch name
-        run: echo ${GITHUB_REF##*/}
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
+      - uses: actions/checkout@v4
+      - name: Checkout DRP parent source
+        uses: actions/checkout@v4
         with:
-          # Get the latest publisher - don't run the batch script but run the line directly
-          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+          repository: hl7-be/referral
+          # Pin phase2-merged so parent profile changes are deliberate.
+          ref: 6fd25e75767b8cfe51aa4adcfd36169de84136ad
+          path: drp-parent
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Download IG Publisher
+        run: curl --fail --location --silent --show-error https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+
+      - name: Build DRP parent package
+        working-directory: drp-parent
+        run: java -jar "$GITHUB_WORKSPACE/input-cache/publisher.jar" publisher -ig .
+
+      - name: Install DRP parent package
+        run: |
+          package_dir="$HOME/.fhir/packages/hl7.fhir.be.drp#1.0.0-phase2-merged"
+          mkdir -p "$package_dir"
+          tar -xzf drp-parent/output/package.tgz -C "$package_dir"
+          node - "$package_dir/package/package.json" <<'NODE'
+          const fs = require('node:fs');
+          const packagePath = process.argv[2];
+          const manifest = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
+          if (manifest.name !== 'hl7.fhir.be.drp') {
+            throw new Error(`Unexpected DRP package: ${manifest.name}`);
+          }
+          manifest.version = '1.0.0-phase2-merged';
+          fs.writeFileSync(packagePath, `${JSON.stringify(manifest, null, 2)}\n`);
+          NODE
+          test -f "$package_dir/package/StructureDefinition-be-referral-servicerequest-diagnosticimaging.json"
 
       - name: Run the IG publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          # Run the publisher - don't run the batch script but run the line directly
-          args: java -jar ./input-cache/publisher.jar publisher -ig .
+        run: java -jar ./input-cache/publisher.jar publisher -ig .
 
       - name: Deploy candidate
         uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: ${{ steps.branch-name.outputs.is_default }} == 'false'
+        if: ${{ github.event_name != 'pull_request' && github.ref_name != github.event.repository.default_branch }}
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.
           commit-message: Deploy candidate branch
-          target-folder: branches/${{ steps.branch-name.outputs.current_branch }}
+          target-folder: branches/${{ github.ref_name }}
           clean: false 
 
       - name: Deploy main
         uses: JamesIves/github-pages-deploy-action@4.1.4
-        if: ${{ steps.branch-name.outputs.is_default }} == 'true'
+        if: ${{ github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch }}
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: ./output # The folder the action should deploy.

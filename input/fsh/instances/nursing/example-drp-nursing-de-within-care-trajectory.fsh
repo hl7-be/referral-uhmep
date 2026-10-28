@@ -17,15 +17,7 @@ Inputs and values used in this example:
 Usage: #example
 
 
-// reasonCode
-* reasonCode[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
-* reasonCode[0].text.extension[0].url = $be-ext-pseudonymization
-* reasonCode[0].text.extension[0].extension[0].url = "marker"
-* reasonCode[0].text.extension[0].extension[0].valueBoolean = true
-* reasonCode[0].text.extension[0].extension[1].url = "format"
-* reasonCode[0].text.extension[0].extension[1].valueCode = #encrypted
-* reasonCode[0].text.extension[0].extension[2].url = "version"
-* reasonCode[0].text.extension[0].extension[2].valuePositiveInt = 1
+
 
 // meta.extension: be-ext-key-pseudonymization
 * meta.extension[0].id = "{{kid}}"
@@ -108,3 +100,13 @@ Usage: #example
 
 * authoredOn = "2026-02-18T14:45:43+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)
+
+// reasonCode
+* reasonCode[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
+* reasonCode[0].text.extension[0].url = $be-ext-pseudonymization
+* reasonCode[0].text.extension[0].extension[0].url = "marker"
+* reasonCode[0].text.extension[0].extension[0].valueBoolean = true
+* reasonCode[0].text.extension[0].extension[1].url = "format"
+* reasonCode[0].text.extension[0].extension[1].valueCode = #encrypted
+* reasonCode[0].text.extension[0].extension[2].url = "version"
+* reasonCode[0].text.extension[0].extension[2].valuePositiveInt = 1

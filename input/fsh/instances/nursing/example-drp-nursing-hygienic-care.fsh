@@ -16,6 +16,9 @@ Inputs and values used in this example:
   * medical-reason"
 Usage: #example
 
+
+
+
 // meta.extension: be-ext-key-pseudonymization
 * meta.extension[0].id = "{{kid}}"
 * meta.extension[0].url = $be-ext-key-pseudonymization

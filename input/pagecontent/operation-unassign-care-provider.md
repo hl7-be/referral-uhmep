@@ -7,7 +7,7 @@ This page describes how to remove an assignment.
 | Target resource | `BePerformerTask` or `BeOrganizationTask` |
 | Successful response | `204 No Content` |
 
-An assignment can be removed only while the execution task is still `ready`.
+For radiology prescriptions on the ambulatory track, an assignment may be removed while the prescription is in business state `READY` or `IN_PROGRESS` and the execution task is `ready` or `in-progress`. The task is deleted and the prescription returns to `READY`. Other tracks and prescription types remain subject to their applicable removal rules.
 
 ### Request
 
