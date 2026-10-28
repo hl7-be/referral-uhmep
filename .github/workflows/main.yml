@@ -55,6 +55,11 @@ jobs:
           node-version: '20'
       - name: Install SUSHI
         run: npm install --global --no-audit --no-fund fsh-sushi@3.17.0
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Install Jekyll
+        run: gem install jekyll --version 4.4.1 --no-document
       - name: Download IG Publisher
         run: curl --fail --location --silent --show-error https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
