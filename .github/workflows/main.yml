@@ -50,6 +50,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install SUSHI
+        run: npm install --global --no-audit --no-fund fsh-sushi@3.17.0
       - name: Download IG Publisher
         run: curl --fail --location --silent --show-error https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
 
