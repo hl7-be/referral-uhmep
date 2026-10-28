@@ -38,14 +38,6 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v4
-      - name: Checkout DRP parent source
-        uses: actions/checkout@v4
-        with:
-          repository: hl7-be/referral
-          # Pin phase2-merged so parent profile changes are deliberate.
-          ref: 6fd25e75767b8cfe51aa4adcfd36169de84136ad
-          path: drp-parent
-          persist-credentials: false
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -62,27 +54,6 @@ jobs:
         run: gem install jekyll --version 4.4.1 --no-document
       - name: Download IG Publisher
         run: curl --fail --location --silent --show-error https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
-
-      - name: Build DRP parent package
-        working-directory: drp-parent
-        run: java -jar "$GITHUB_WORKSPACE/input-cache/publisher.jar" publisher -ig .
-
-      - name: Install DRP parent package
-        run: |
-          package_dir="$HOME/.fhir/packages/hl7.fhir.be.drp#1.0.0-phase2-merged"
-          mkdir -p "$package_dir"
-          tar -xzf drp-parent/output/package.tgz -C "$package_dir"
-          node - "$package_dir/package/package.json" <<'NODE'
-          const fs = require('node:fs');
-          const packagePath = process.argv[2];
-          const manifest = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
-          if (manifest.name !== 'hl7.fhir.be.drp') {
-            throw new Error(`Unexpected DRP package: ${manifest.name}`);
-          }
-          manifest.version = '1.0.0-phase2-merged';
-          fs.writeFileSync(packagePath, `${JSON.stringify(manifest, null, 2)}\n`);
-          NODE
-          test -f "$package_dir/package/StructureDefinition-be-referral-servicerequest-diagnosticimaging.json"
 
       - name: Run the IG publisher
         run: java -jar ./input-cache/publisher.jar publisher -ig .
