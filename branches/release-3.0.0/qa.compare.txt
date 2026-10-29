@@ -1,16 +1,16 @@
 EReferral : Validation Results
 =========================================
 
-err = 34, warn = 95, info = 54, broken links = 0
+err = 39, warn = 96, info = 54, broken links = 0
 $--
 Generated $--. FHIR version $-- for inami.fhir.be.ereferral#$-- (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
- Build Errors : 8 / 59 / 0
+ Build Errors : 8 / 60 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-snomed-designation : 0 / 3 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-indications : 0 / 13 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-radiology-supporting-info-role : 0 / 1 / 1
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral : 1 / 0 / 2
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-67120919457 : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-72101230445 : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-Requester1 : 0 / 0 / 2
@@ -45,8 +45,8 @@ Generated $--. FHIR version $-- for inami.fhir.be.ereferral#$-- (canonical = htt
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-08 : 0 / 0 / 13
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-09 : 0 / 0 / 14
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-10 : 0 / 0 / 13
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept : 0 / 0 / 2
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept : 2 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role : 2 / 0 / 2
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-annex-81 : 0 / 2 / 3
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-imaging-attention-conditions-response : 0 / 0 / 3
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-servicerequest-diagnosticimaging : 1 / 1 / 17
@@ -58,11 +58,13 @@ Generated $--. FHIR version $-- for inami.fhir.be.ereferral#$-- (canonical = htt
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure : 2 / 1 / 4
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-pss-qsi-indication : 0 / 1 / 3
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-radiology-supporting-info-role : 0 / 1 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-radiology-supporting-info-role : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-ereferral-vs-imaging-patient-condition-indication : 0 / 1 / 3
 </table>
 
 == n/a ==
+WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+INFORMATION: ImplementationGuide.dependency[4].url: The correct canonical URL for this dependency is https://www.ehealth.fgov.be/standards/fhir/drp
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 816 column 13
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source is not well formed: Found "</div>" expecting "</h2>" at line 352 column 7
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 354 column 15
@@ -167,6 +169,7 @@ WARNING: Resource: The resource CodeSystem/be-cs-radiology-supporting-info-role 
 
 
 == fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral.json ==
+ERROR: ImplementationGuide/inami.fhir.be.ereferral: ImplementationGuide.dependsOn[4]: The URL should refer directly to the ImplementationGuide resource (e.g. include '/ImplementationGuide/')
 INFORMATION: Resource: The resource ImplementationGuide/inami.fhir.be.ereferral could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
 
@@ -297,11 +300,15 @@ INFORMATION: ServiceRequest/example-pss-radiology-scenario-10: ServiceRequest.co
 
 
 == fsh-generated/resources/StructureDefinition-be-ext-codeable-concept.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept'): Conformance resource /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept.json - the canonical URL (https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-codeable-concept) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept). Use the special-url parameter if you really mean for it not to match
 INFORMATION: Resource: The resource StructureDefinition/be-ext-codeable-concept could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+ERROR: /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept: URL Mismatch https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-codeable-concept vs https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept
 
 
 == fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role.json ==
+ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role'): Conformance resource /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role.json - the canonical URL (https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-radiology-supporting-info-role) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role). Use the special-url parameter if you really mean for it not to match
 INFORMATION: Resource: The resource StructureDefinition/be-ext-radiology-supporting-info-role could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+ERROR: /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role: URL Mismatch https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-radiology-supporting-info-role vs https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role
 
 
 == fsh-generated/resources/StructureDefinition-ereferral-annex-81.json ==
@@ -317,23 +324,23 @@ INFORMATION: StructureDefinition.where(url = 'https://www.riziv-inami.be/standar
 
 
 == fsh-generated/resources/StructureDefinition-ereferral-servicerequest-diagnosticimaging.json ==
-INFORMATION: StructureDefinition.snapshot.element[110].binding.valueSet: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[141].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[153].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[158].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[170].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[171].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[183].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[195].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.snapshot.element[200].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.differential.element[28].binding.valueSet: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.differential.element[44].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.differential.element[50].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.differential.element[54].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.differential.element[58].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
-INFORMATION: StructureDefinition.differential.element[64].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[110].binding.valueSet: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[141].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[153].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[158].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[170].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[171].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[183].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[195].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.snapshot.element[200].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.differential.element[28].binding.valueSet: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.differential.element[44].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.differential.element[50].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.differential.element[54].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.differential.element[58].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: StructureDefinition.differential.element[64].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
 WARNING: StructureDefinition/ereferral-servicerequest-diagnosticimaging: StructureDefinition.snapshot.element[84].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
-ERROR: StructureDefinition/ereferral-servicerequest-diagnosticimaging: StructureDefinition.snapshot.element[199].constraint[1]: Error in constraint 'ereferral-inv-patient-condition-strict' on element ServiceRequest.supportingInfo:patientCondition.extension:patientConditionCodeableConcept.value[x] with expression 'supportingInfo.where(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role').value = 'patient-condition').extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).all((text.exists() and coding.empty()) or (text.empty() and coding.count() = 1 and memberOf('https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication')))': Error evaluating FHIRPath expression: The name 'supportingInfo' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/CodeableConcept] (@char 1)
+ERROR: StructureDefinition/ereferral-servicerequest-diagnosticimaging: StructureDefinition.snapshot.element[199].constraint[1]: Error in constraint 'ereferral-inv-patient-condition-strict' on element ServiceRequest.supportingInfo:patientCondition.extension:patientConditionCodeableConcept.value[x] with expression 'supportingInfo.where(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role').value = 'patient-condition').extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).all((text.exists() and coding.empty()) or (text.empty() and coding.count() = 1 and memberOf('https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication')))': Error evaluating FHIRPath expression: The name 'supportingInfo' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/CodeableConcept] (@char 1)
 INFORMATION: Resource: The resource StructureDefinition/ereferral-servicerequest-diagnosticimaging could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
 
@@ -388,7 +395,7 @@ WARNING: Resource: The resource ValueSet/be-vs-ereferral-snomed-designation shou
 
 == fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.json ==
 ERROR: ValueSet.where(url = 'https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure'): Conformance resource /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.json - the canonical URL (https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure). Use the special-url parameter if you really mean for it not to match
-INFORMATION: ValueSet.compose.include[1].valueSet[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
+INFORMATION: ValueSet.compose.include[1].valueSet[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
 WARNING: Resource: The resource ValueSet/be-vs-hybrid-diagnostic-imaging-procedure should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 INFORMATION: ValueSet.where(id = 'be-vs-hybrid-diagnostic-imaging-procedure'): The value set expansion is too large, and only a subset has been displayed
 ERROR: /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure: URL Mismatch https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure vs https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure
@@ -404,7 +411,6 @@ INFORMATION: ValueSet.where(id = 'be-vs-pss-qsi-indication'): The value set expa
 
 
 == fsh-generated/resources/ValueSet-be-vs-radiology-supporting-info-role.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role to 3.0.0 from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
 WARNING: Resource: The resource ValueSet/be-vs-radiology-supporting-info-role should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
 

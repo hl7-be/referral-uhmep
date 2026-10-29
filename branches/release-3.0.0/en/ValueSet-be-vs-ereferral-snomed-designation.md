@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeVSeReferralSnomedDesignation |
+| Draft as of 2026-10-29 | *Computable Name*:BeVSeReferralSnomedDesignation |
 
  
 SNOMED CT supplement containing multilingual designations maintained for the eReferral project. 
@@ -46,7 +46,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "SNOMED CT eReferral Supplement Designations",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

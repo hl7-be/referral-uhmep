@@ -1,57 +1,52 @@
 {
-  "date" : "Wed, 28 Oct, 2026 14:55:19 +0000",
+  "date" : "Thu, 29 Oct, 2026 04:33:29 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral.json",
-    "size" : 55565,
+    "size" : 55539,
     "processes" : [{
       "activity" : "load",
-      "start" : 166,
-      "length" : 102
+      "start" : 261,
+      "length" : 143
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 19
+      "start" : 266,
+      "length" : 32
     },
     {
       "activity" : "generateNarratives",
-      "start" : 171,
-      "length" : 135
+      "start" : 266,
+      "length" : 81
     },
     {
       "activity" : "validate",
-      "start" : 182,
-      "length" : 7311
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 190,
-      "length" : 1
+      "start" : 286,
+      "length" : 3793
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 195,
-      "length" : 213
+      "start" : 300,
+      "length" : 287
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 166
+      "start" : 316,
+      "length" : 283
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 4
+      "start" : 356,
+      "length" : 5
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 258,
+      "start" : 383,
       "length" : 1
     }]
   },
@@ -60,53 +55,43 @@
     "size" : 682,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 4
+      "start" : 259,
+      "length" : 3
     },
     {
       "activity" : "load",
-      "start" : 165,
+      "start" : 260,
       "length" : 7
     },
     {
       "activity" : "load-configure",
-      "start" : 171,
-      "length" : 4
+      "start" : 266,
+      "length" : 3
     },
     {
-      "activity" : "loadDepInfo",
-      "start" : 171,
-      "length" : 1
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 171,
+      "activity" : "scan",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 171,
+      "start" : 266,
       "length" : 7
     },
     {
       "activity" : "validate",
-      "start" : 176,
-      "length" : 366
+      "start" : 274,
+      "length" : 487
     },
     {
       "activity" : "generate1",
-      "start" : 195,
-      "length" : 18
+      "start" : 300,
+      "length" : 23
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 77
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 1
+      "start" : 316,
+      "length" : 101
     }]
   },
   {
@@ -114,63 +99,63 @@
     "size" : 1444976,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 97
+      "start" : 259,
+      "length" : 182
     },
     {
       "activity" : "load",
-      "start" : 165,
-      "length" : 272
+      "start" : 260,
+      "length" : 282
     },
     {
       "activity" : "load-configure",
-      "start" : 171,
+      "start" : 266,
       "length" : 2
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 78
+      "start" : 266,
+      "length" : 144
     },
     {
       "activity" : "generateNarratives",
-      "start" : 171,
-      "length" : 309
+      "start" : 266,
+      "length" : 516
     },
     {
       "activity" : "validate",
-      "start" : 176,
-      "length" : 1986
+      "start" : 274,
+      "length" : 4311
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 190,
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
-      "length" : 7
+      "start" : 290,
+      "length" : 8
     },
     {
       "activity" : "generate1",
-      "start" : 195,
-      "length" : 1780
+      "start" : 300,
+      "length" : 2450
     },
     {
       "activity" : "generate2",
-      "start" : 209,
-      "length" : 1864
+      "start" : 316,
+      "length" : 3046
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 43
+      "start" : 356,
+      "length" : 56
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 258,
-      "length" : 6
+      "start" : 383,
+      "length" : 4
     }]
   },
   {
@@ -178,63 +163,68 @@
     "size" : 409691,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 34
+      "start" : 260,
+      "length" : 55
     },
     {
       "activity" : "load",
-      "start" : 165,
-      "length" : 97
+      "start" : 260,
+      "length" : 112
     },
     {
       "activity" : "load-configure",
-      "start" : 171,
+      "start" : 266,
+      "length" : 2
+    },
+    {
+      "activity" : "scan",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 28
+      "start" : 266,
+      "length" : 35
     },
     {
       "activity" : "generateNarratives",
-      "start" : 171,
-      "length" : 93
+      "start" : 267,
+      "length" : 201
     },
     {
       "activity" : "validate",
-      "start" : 178,
-      "length" : 475
+      "start" : 279,
+      "length" : 1304
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 190,
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
-      "length" : 2
+      "start" : 290,
+      "length" : 3
     },
     {
       "activity" : "generate1",
-      "start" : 197,
-      "length" : 615
+      "start" : 302,
+      "length" : 791
     },
     {
       "activity" : "generate2",
-      "start" : 211,
-      "length" : 534
+      "start" : 320,
+      "length" : 659
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 22
+      "start" : 357,
+      "length" : 31
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 258,
-      "length" : 3
+      "start" : 383,
+      "length" : 2
     }]
   },
   {
@@ -242,63 +232,63 @@
     "size" : 2090491,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 124
+      "start" : 260,
+      "length" : 231
     },
     {
       "activity" : "load",
-      "start" : 165,
-      "length" : 343
+      "start" : 260,
+      "length" : 344
     },
     {
       "activity" : "load-configure",
-      "start" : 171,
-      "length" : 2
+      "start" : 266,
+      "length" : 6
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 146
+      "start" : 266,
+      "length" : 120
     },
     {
       "activity" : "generateNarratives",
-      "start" : 171,
-      "length" : 308
+      "start" : 267,
+      "length" : 455
     },
     {
       "activity" : "validate",
-      "start" : 179,
-      "length" : 1223
+      "start" : 280,
+      "length" : 2092
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 190,
+      "start" : 290,
       "length" : 2
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
-      "length" : 12
+      "start" : 290,
+      "length" : 14
     },
     {
       "activity" : "generate1",
-      "start" : 198,
-      "length" : 3227
+      "start" : 303,
+      "length" : 4010
     },
     {
       "activity" : "generate2",
-      "start" : 212,
-      "length" : 2327
+      "start" : 320,
+      "length" : 2933
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 132
+      "start" : 357,
+      "length" : 181
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 258,
-      "length" : 11
+      "start" : 383,
+      "length" : 10
     }]
   },
   {
@@ -306,38 +296,38 @@
     "size" : 797,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
+      "start" : 260,
+      "length" : 3
     },
     {
       "activity" : "load",
-      "start" : 166,
+      "start" : 261,
       "length" : 7
     },
     {
-      "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 1
-    },
-    {
       "activity" : "generateNarratives",
-      "start" : 172,
-      "length" : 4
+      "start" : 267,
+      "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 180,
+      "start" : 282,
       "length" : 4
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 16
+      "start" : 307,
+      "length" : 14
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 42
+      "start" : 323,
+      "length" : 39
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 357,
+      "length" : 1
     }]
   },
   {
@@ -345,32 +335,32 @@
     "size" : 488,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 172,
-      "length" : 385
+      "start" : 267,
+      "length" : 660
     },
     {
       "activity" : "validate",
-      "start" : 190,
+      "start" : 290,
       "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 14
+      "start" : 307,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 12
+      "start" : 323,
+      "length" : 14
     },
     {
       "activity" : "generateExampleZip",
-      "start" : 236,
+      "start" : 353,
       "length" : 1
     }]
   },
@@ -378,24 +368,29 @@
     "name" : "fsh-generated/resources/Practitioner-72101230445.json",
     "size" : 492,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 2
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 172,
+      "start" : 268,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 190,
-      "length" : 1
+      "start" : 290,
+      "length" : 2
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 13
+      "start" : 307,
+      "length" : 8
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 4
+      "start" : 323,
+      "length" : 7
     }]
   },
   {
@@ -403,51 +398,61 @@
     "size" : 573,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 172,
-      "length" : 4
+      "start" : 268,
+      "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 190,
-      "length" : 3
+      "start" : 290,
+      "length" : 2
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 13
+      "start" : 307,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 5
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 236,
-      "length" : 1
+      "start" : 323,
+      "length" : 7
     }]
   },
   {
     "name" : "fsh-generated/resources/Practitioner-practitioner2.json",
     "size" : 584,
     "processes" : [{
-      "activity" : "validate",
-      "start" : 190,
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 268,
       "length" : 1
     },
     {
+      "activity" : "validate",
+      "start" : 290,
+      "length" : 3
+    },
+    {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 13
+      "start" : 307,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 214,
+      "start" : 323,
       "length" : 7
     }]
   },
@@ -456,81 +461,86 @@
     "size" : 503,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 172,
+      "start" : 268,
       "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 190,
-      "length" : 17
+      "start" : 290,
+      "length" : 21
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 15
+      "start" : 307,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 9
+      "start" : 323,
+      "length" : 11
     }]
   },
   {
     "name" : "fsh-generated/resources/PractitionerRole-72101230445-PHYSICIAN.json",
     "size" : 515,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 3
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 172,
-      "length" : 2
+      "start" : 268,
+      "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 190,
-      "length" : 2
+      "start" : 290,
+      "length" : 4
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 13
+      "start" : 307,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 6
+      "start" : 323,
+      "length" : 7
     }]
   },
   {
     "name" : "fsh-generated/resources/PractitionerRole-72101230446-PHYSICIAN.json",
     "size" : 523,
     "processes" : [{
-      "activity" : "load-configure",
-      "start" : 171,
+      "activity" : "loadResources",
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 172,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 190,
+      "start" : 268,
       "length" : 1
     },
     {
+      "activity" : "validate",
+      "start" : 290,
+      "length" : 3
+    },
+    {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 14
+      "start" : 307,
+      "length" : 8
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 5
+      "start" : 323,
+      "length" : 7
     }]
   },
   {
@@ -538,1205 +548,1245 @@
     "size" : 517,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 172,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 190,
+      "start" : 268,
       "length" : 1
     },
     {
+      "activity" : "validate",
+      "start" : 290,
+      "length" : 3
+    },
+    {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 10
+      "start" : 307,
+      "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 6
+      "start" : 323,
+      "length" : 7
     }]
   },
   {
     "name" : "fsh-generated/resources/PractitionerRole-NURSE-45094508408.json",
     "size" : 511,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 1
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 172,
+      "start" : 268,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 190,
-      "length" : 1
+      "start" : 290,
+      "length" : 2
     },
     {
       "activity" : "generate1",
-      "start" : 201,
+      "start" : 307,
       "length" : 11
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 4
+      "start" : 323,
+      "length" : 7
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-clinical-imaging.json",
-    "size" : 15593,
+    "size" : 15533,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 3
+      "start" : 260,
+      "length" : 6
     },
     {
-      "activity" : "generateNarratives",
-      "start" : 172,
-      "length" : 850
-    },
-    {
-      "activity" : "validate",
-      "start" : 190,
+      "activity" : "checkR4R4B",
+      "start" : 266,
       "length" : 1
     },
     {
-      "activity" : "validate",
-      "start" : 190,
+      "activity" : "generateNarratives",
+      "start" : 268,
       "length" : 747
     },
     {
+      "activity" : "validate",
+      "start" : 290,
+      "length" : 1025
+    },
+    {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 57
+      "start" : 307,
+      "length" : 85
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 43
+      "start" : 323,
+      "length" : 54
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 383,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-bloodletting.json",
-    "size" : 5776,
+    "size" : 5766,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 6
+      "start" : 260,
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
-      "start" : 173,
-      "length" : 181
+      "start" : 269,
+      "length" : 345
     },
     {
       "activity" : "validate",
-      "start" : 191,
-      "length" : 362
+      "start" : 291,
+      "length" : 538
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 23
+      "start" : 307,
+      "length" : 27
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 18
+      "start" : 323,
+      "length" : 24
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 354,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-chronic-dialysis.json",
-    "size" : 7779,
+    "size" : 7769,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 6
+      "start" : 260,
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
-      "start" : 173,
-      "length" : 2
+      "start" : 269,
+      "length" : 4
     },
     {
       "activity" : "validate",
-      "start" : 191,
-      "length" : 116
+      "start" : 291,
+      "length" : 294
     },
     {
       "activity" : "generate1",
-      "start" : 201,
+      "start" : 307,
       "length" : 24
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 15
+      "start" : 323,
+      "length" : 19
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-de-convention-center.json",
-    "size" : 6712,
+    "size" : 6702,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 3
     },
     {
+      "activity" : "checkR4R4B",
+      "start" : 266,
+      "length" : 1
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 173,
-      "length" : 71
+      "start" : 269,
+      "length" : 61
     },
     {
       "activity" : "validate",
-      "start" : 191,
-      "length" : 165
+      "start" : 292,
+      "length" : 290
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 23
+      "start" : 307,
+      "length" : 18
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 15
+      "start" : 323,
+      "length" : 17
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-care-trajectory.json",
-    "size" : 5633,
+    "size" : 5613,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
+      "start" : 260,
+      "length" : 1
     },
     {
-      "activity" : "checkR4R4B",
-      "start" : 171,
+      "activity" : "load-configure",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 173,
-      "length" : 217
+      "start" : 269,
+      "length" : 511
     },
     {
       "activity" : "validate",
-      "start" : 191,
-      "length" : 477
+      "start" : 292,
+      "length" : 1192
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 19
+      "start" : 307,
+      "length" : 17
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 14
+      "start" : 323,
+      "length" : 15
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-start-trajectory.json",
-    "size" : 6195,
+    "size" : 6180,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 173,
-      "length" : 65
+      "start" : 270,
+      "length" : 139
     },
     {
       "activity" : "validate",
-      "start" : 192,
-      "length" : 80
+      "start" : 293,
+      "length" : 108
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 17
+      "start" : 307,
+      "length" : 22
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 13
+      "start" : 323,
+      "length" : 14
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-de-without-care-trajectory.json",
-    "size" : 6078,
+    "size" : 6068,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 3
+      "start" : 260,
+      "length" : 1
     },
     {
-      "activity" : "load",
-      "start" : 166,
+      "activity" : "checkR4R4B",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 174,
-      "length" : 68
+      "start" : 270,
+      "length" : 129
     },
     {
       "activity" : "validate",
-      "start" : 192,
-      "length" : 140
+      "start" : 293,
+      "length" : 444
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 17
+      "start" : 307,
+      "length" : 25
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 12
+      "start" : 323,
+      "length" : 16
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-generic.json",
-    "size" : 7601,
+    "size" : 7591,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 174,
+      "start" : 260,
       "length" : 2
     },
     {
+      "activity" : "generateNarratives",
+      "start" : 270,
+      "length" : 4
+    },
+    {
       "activity" : "validate",
-      "start" : 192,
-      "length" : 173
+      "start" : 294,
+      "length" : 432
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 17
+      "start" : 307,
+      "length" : 23
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 14
+      "start" : 323,
+      "length" : 17
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-glycemic-test.json",
-    "size" : 8029,
+    "size" : 8019,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 174,
+      "start" : 260,
       "length" : 3
     },
     {
-      "activity" : "scanForUsageStats",
-      "start" : 190,
-      "length" : 1
+      "activity" : "generateNarratives",
+      "start" : 270,
+      "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 192,
-      "length" : 107
+      "start" : 294,
+      "length" : 251
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 21
+      "start" : 308,
+      "length" : 23
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 14
+      "start" : 323,
+      "length" : 16
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-hygienic-care.json",
-    "size" : 5646,
+    "size" : 5636,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 174,
-      "length" : 2
+      "start" : 270,
+      "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 192,
-      "length" : 96
+      "start" : 294,
+      "length" : 93
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 21
+      "start" : 308,
+      "length" : 23
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 12
+      "start" : 323,
+      "length" : 14
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-med-prep-not-refunded.json",
-    "size" : 6478,
+    "size" : 6473,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
+      "start" : 260,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 174,
-      "length" : 1
+      "start" : 270,
+      "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 192,
-      "length" : 94
+      "start" : 294,
+      "length" : 96
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 16
+      "start" : 308,
+      "length" : 21
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 13
+      "start" : 323,
+      "length" : 15
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-med-preparation-appendix-81.json",
-    "size" : 5317,
+    "size" : 5312,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 5
+      "start" : 260,
+      "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 174,
-      "length" : 854
+      "start" : 270,
+      "length" : 1607
     },
     {
       "activity" : "validate",
-      "start" : 192,
-      "length" : 802
+      "start" : 295,
+      "length" : 1668
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 19
+      "start" : 308,
+      "length" : 17
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 12
+      "start" : 323,
+      "length" : 14
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-parameters.json",
-    "size" : 5834,
+    "size" : 5824,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 174,
-      "length" : 66
+      "start" : 272,
+      "length" : 57
     },
     {
       "activity" : "validate",
-      "start" : 193,
-      "length" : 143
+      "start" : 296,
+      "length" : 423
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 19
+      "start" : 308,
+      "length" : 16
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 11
+      "start" : 323,
+      "length" : 15
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-drp-nursing-sampling.json",
-    "size" : 7450,
+    "size" : 7440,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 6
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 1
+      "start" : 260,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 135
+      "start" : 272,
+      "length" : 111
     },
     {
       "activity" : "validate",
-      "start" : 193,
-      "length" : 420
+      "start" : 297,
+      "length" : 960
     },
     {
       "activity" : "generate1",
-      "start" : 201,
+      "start" : 308,
       "length" : 19
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 11
+      "start" : 323,
+      "length" : 16
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-prior-drp-clinical-imaging.json",
-    "size" : 8191,
+    "size" : 8176,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 9
+      "start" : 260,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
+      "start" : 272,
       "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 180,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 194,
-      "length" : 42
+      "start" : 298,
+      "length" : 81
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 32
+      "start" : 308,
+      "length" : 36
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 14
+      "start" : 324,
+      "length" : 19
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-01.json",
-    "size" : 9613,
+    "size" : 9583,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 4
     },
     {
+      "activity" : "checkR4R4B",
+      "start" : 266,
+      "length" : 1
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 175,
+      "start" : 272,
       "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 194,
-      "length" : 95
+      "start" : 298,
+      "length" : 134
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 32
+      "start" : 308,
+      "length" : 39
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 16
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 258,
-      "length" : 1
+      "start" : 324,
+      "length" : 23
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-02.json",
-    "size" : 9605,
+    "size" : 9575,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 2
     },
     {
+      "activity" : "checkR4R4B",
+      "start" : 266,
+      "length" : 1
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 4
+      "start" : 272,
+      "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 194,
-      "length" : 39
+      "start" : 298,
+      "length" : 82
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 37
+      "start" : 308,
+      "length" : 45
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 16
+      "start" : 324,
+      "length" : 22
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-03.json",
-    "size" : 9631,
+    "size" : 9601,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 3
-    },
-    {
-      "activity" : "load-configure",
-      "start" : 171,
-      "length" : 1
+      "start" : 260,
+      "length" : 2
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 3
+      "start" : 272,
+      "length" : 4
     },
     {
       "activity" : "validate",
-      "start" : 194,
-      "length" : 86
+      "start" : 298,
+      "length" : 137
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 42
+      "start" : 308,
+      "length" : 56
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 11
+      "start" : 324,
+      "length" : 21
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-04.json",
-    "size" : 9637,
+    "size" : 9607,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
+      "start" : 260,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 266,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
+      "start" : 272,
       "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 194,
-      "length" : 87
+      "start" : 298,
+      "length" : 221
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 34
+      "start" : 308,
+      "length" : 52
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 11
+      "start" : 324,
+      "length" : 49
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-05.json",
-    "size" : 9626,
+    "size" : 9596,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 175,
+      "start" : 260,
       "length" : 3
     },
     {
+      "activity" : "generateNarratives",
+      "start" : 272,
+      "length" : 4
+    },
+    {
       "activity" : "validate",
-      "start" : 194,
-      "length" : 90
+      "start" : 298,
+      "length" : 210
     },
     {
       "activity" : "generate1",
-      "start" : 201,
-      "length" : 40
+      "start" : 308,
+      "length" : 51
     },
     {
       "activity" : "generate2",
-      "start" : 214,
-      "length" : 11
+      "start" : 324,
+      "length" : 19
     }]
   },
   {
     "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-06.json",
-    "size" : 11056,
+    "size" : 11016,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 2
-    },
-    {
-      "activity" : "validate",
-      "start" : 194,
-      "length" : 115
-    },
-    {
-      "activity" : "generate1",
-      "start" : 202,
-      "length" : 42
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 12
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-07.json",
-    "size" : 11056,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 165,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 194,
-      "length" : 34
-    },
-    {
-      "activity" : "generate1",
-      "start" : 202,
-      "length" : 42
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 11
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-08.json",
-    "size" : 11088,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 194,
-      "length" : 114
-    },
-    {
-      "activity" : "generate1",
-      "start" : 202,
-      "length" : 41
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 11
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-09.json",
-    "size" : 12446,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 3
-    },
-    {
-      "activity" : "validate",
-      "start" : 194,
-      "length" : 69
-    },
-    {
-      "activity" : "generate1",
-      "start" : 202,
-      "length" : 44
-    },
-    {
-      "activity" : "generate2",
-      "start" : 214,
-      "length" : 14
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-10.json",
-    "size" : 11043,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 2
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 171,
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 2
+      "start" : 272,
+      "length" : 5
     },
     {
       "activity" : "validate",
-      "start" : 194,
-      "length" : 110
+      "start" : 298,
+      "length" : 213
     },
     {
       "activity" : "generate1",
-      "start" : 202,
-      "length" : 50
+      "start" : 308,
+      "length" : 52
     },
     {
       "activity" : "generate2",
-      "start" : 215,
-      "length" : 11
+      "start" : 324,
+      "length" : 23
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 383,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-07.json",
+    "size" : 11016,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 266,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 272,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 299,
+      "length" : 68
+    },
+    {
+      "activity" : "generate1",
+      "start" : 308,
+      "length" : 54
+    },
+    {
+      "activity" : "generate2",
+      "start" : 324,
+      "length" : 23
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-08.json",
+    "size" : 11048,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 2
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 266,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 272,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 299,
+      "length" : 321
+    },
+    {
+      "activity" : "generate1",
+      "start" : 308,
+      "length" : 52
+    },
+    {
+      "activity" : "generate2",
+      "start" : 324,
+      "length" : 22
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-09.json",
+    "size" : 12396,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 266,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 272,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 299,
+      "length" : 91
+    },
+    {
+      "activity" : "generate1",
+      "start" : 308,
+      "length" : 45
+    },
+    {
+      "activity" : "generate2",
+      "start" : 324,
+      "length" : 22
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-10.json",
+    "size" : 11003,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 272,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 299,
+      "length" : 137
+    },
+    {
+      "activity" : "generate1",
+      "start" : 308,
+      "length" : 38
+    },
+    {
+      "activity" : "generate2",
+      "start" : 324,
+      "length" : 15
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-be-ext-codeable-concept.json",
-    "size" : 1359,
+    "size" : 1349,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 1
+      "start" : 260,
+      "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 5
+      "start" : 261,
+      "length" : 6
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 166,
-      "length" : 12
+      "start" : 261,
+      "length" : 13
     },
     {
-      "activity" : "loadInfo",
-      "start" : 171,
+      "activity" : "checkR4R4B",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 12
+      "start" : 272,
+      "length" : 16
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 117
+      "start" : 284,
+      "length" : 140
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 190,
-      "length" : 1
-    },
-    {
-      "activity" : "generateLogicalMaps",
-      "start" : 190,
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 202,
-      "length" : 37
+      "start" : 308,
+      "length" : 32
     },
     {
       "activity" : "generate2",
-      "start" : 215,
-      "length" : 562
+      "start" : 324,
+      "length" : 732
     },
     {
       "activity" : "generate2",
-      "start" : 222,
-      "length" : 340
+      "start" : 337,
+      "length" : 342
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 1
-    },
-    {
-      "activity" : "scanProfilesForR5",
-      "start" : 258,
+      "start" : 357,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role.json",
-    "size" : 1494,
+    "size" : 1484,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 1
+    },
+    {
       "activity" : "load",
-      "start" : 166,
+      "start" : 261,
       "length" : 2
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 166,
-      "length" : 12
+      "start" : 261,
+      "length" : 10
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 8
+      "start" : 272,
+      "length" : 10
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 29
+      "start" : 284,
+      "length" : 41
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 290,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 202,
-      "length" : 45
+      "start" : 308,
+      "length" : 44
     },
     {
       "activity" : "generate2",
-      "start" : 215,
-      "length" : 239
+      "start" : 325,
+      "length" : 246
     },
     {
       "activity" : "generate2",
-      "start" : 223,
-      "length" : 35
+      "start" : 337,
+      "length" : 61
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
+      "start" : 357,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-ereferral-annex-81.json",
-    "size" : 9962,
+    "size" : 9957,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
-      "length" : 2
+      "start" : 260,
+      "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 166,
+      "start" : 261,
       "length" : 6
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 166,
-      "length" : 114
+      "start" : 261,
+      "length" : 144
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 33
+      "start" : 272,
+      "length" : 67
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 392
+      "start" : 284,
+      "length" : 616
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 202,
-      "length" : 294
+      "start" : 308,
+      "length" : 398
     },
     {
       "activity" : "generate2",
-      "start" : 215,
-      "length" : 1000
+      "start" : 325,
+      "length" : 1469
     },
     {
       "activity" : "generate2",
-      "start" : 223,
-      "length" : 258
+      "start" : 337,
+      "length" : 553
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 8
+      "start" : 357,
+      "length" : 11
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 383,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 383,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-ereferral-imaging-attention-conditions-response.json",
-    "size" : 2728,
+    "size" : 2723,
     "processes" : [{
-      "activity" : "load",
-      "start" : 166,
-      "length" : 3
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 166,
-      "length" : 31
-    },
-    {
-      "activity" : "scan",
-      "start" : 171,
+      "activity" : "loadResources",
+      "start" : 260,
       "length" : 1
     },
     {
+      "activity" : "load",
+      "start" : 261,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 261,
+      "length" : 46
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 9
+      "start" : 272,
+      "length" : 12
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 138
+      "start" : 284,
+      "length" : 142
     },
     {
-      "activity" : "scanForUsageStats",
-      "start" : 190,
+      "activity" : "validate",
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 202,
-      "length" : 71
+      "start" : 309,
+      "length" : 114
     },
     {
       "activity" : "generate2",
-      "start" : 216,
-      "length" : 206
+      "start" : 326,
+      "length" : 341
     },
     {
       "activity" : "generate2",
-      "start" : 223,
-      "length" : 59
+      "start" : 338,
+      "length" : 115
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
+      "start" : 357,
       "length" : 3
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 258,
-      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-ereferral-servicerequest-diagnosticimaging.json",
-    "size" : 22596,
+    "size" : 22531,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 5
+      "start" : 261,
+      "length" : 7
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 166,
-      "length" : 123
+      "start" : 261,
+      "length" : 231
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 54
+      "start" : 272,
+      "length" : 80
     },
     {
       "activity" : "validate",
-      "start" : 182,
-      "length" : 631
+      "start" : 285,
+      "length" : 1040
     },
     {
       "activity" : "checkConformanceResources",
-      "start" : 190,
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
-      "length" : 2
+      "start" : 290,
+      "length" : 3
     },
     {
       "activity" : "generate1",
-      "start" : 202,
-      "length" : 468
+      "start" : 309,
+      "length" : 566
     },
     {
       "activity" : "generate2",
-      "start" : 217,
-      "length" : 911
+      "start" : 327,
+      "length" : 1859
     },
     {
       "activity" : "generate2",
-      "start" : 223,
-      "length" : 303
+      "start" : 338,
+      "length" : 629
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 13
+      "start" : 357,
+      "length" : 16
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 383,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-ereferral-servicerequest-nursing.json",
-    "size" : 9853,
+    "size" : 9848,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 4
+      "start" : 261,
+      "length" : 6
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 166,
-      "length" : 78
+      "start" : 261,
+      "length" : 107
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 37
+      "start" : 272,
+      "length" : 115
     },
     {
       "activity" : "validate",
-      "start" : 182,
-      "length" : 211
+      "start" : 286,
+      "length" : 262
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
-      "length" : 2
-    },
-    {
-      "activity" : "generate1",
-      "start" : 203,
-      "length" : 345
-    },
-    {
-      "activity" : "generate2",
-      "start" : 217,
-      "length" : 817
-    },
-    {
-      "activity" : "generate2",
-      "start" : 223,
-      "length" : 226
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 10
-    },
-    {
-      "activity" : "scanProfilesForR5",
-      "start" : 258,
+      "start" : 290,
       "length" : 1
     },
     {
+      "activity" : "generate1",
+      "start" : 309,
+      "length" : 422
+    },
+    {
+      "activity" : "generate2",
+      "start" : 328,
+      "length" : 1159
+    },
+    {
+      "activity" : "generate2",
+      "start" : 338,
+      "length" : 259
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 357,
+      "length" : 14
+    },
+    {
       "activity" : "scanExamplesForR5",
-      "start" : 258,
+      "start" : 383,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/Task-ereferral-referral-task.json",
-    "size" : 410,
+    "size" : 405,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
+      "start" : 272,
       "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 195,
-      "length" : 2
+      "start" : 299,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 203,
-      "length" : 11
+      "start" : 310,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 218,
-      "length" : 11
+      "start" : 330,
+      "length" : 16
     }]
   },
   {
@@ -1744,43 +1794,58 @@
     "size" : 124730,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 7
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 23
+      "start" : 261,
+      "length" : 38
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 3
+      "start" : 266,
+      "length" : 8
     },
     {
       "activity" : "generateNarratives",
-      "start" : 175,
-      "length" : 807
+      "start" : 272,
+      "length" : 1052
     },
     {
       "activity" : "validate",
-      "start" : 180,
-      "length" : 130
+      "start" : 282,
+      "length" : 230
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 290,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 299,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 203,
-      "length" : 215
+      "start" : 310,
+      "length" : 264
     },
     {
       "activity" : "generate2",
-      "start" : 218,
-      "length" : 812
+      "start" : 330,
+      "length" : 1061
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 8
+      "start" : 357,
+      "length" : 11
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 383,
+      "length" : 1
     }]
   },
   {
@@ -1788,58 +1853,53 @@
     "size" : 86799,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 4
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 11
+      "start" : 261,
+      "length" : 13
     },
     {
-      "activity" : "load-configure",
-      "start" : 171,
+      "activity" : "scan",
+      "start" : 266,
       "length" : 1
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 171,
-      "length" : 1
+      "start" : 266,
+      "length" : 4
     },
     {
       "activity" : "generateNarratives",
-      "start" : 176,
-      "length" : 256
+      "start" : 273,
+      "length" : 522
     },
     {
       "activity" : "validate",
-      "start" : 180,
-      "length" : 686
+      "start" : 282,
+      "length" : 1360
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 190,
+      "start" : 290,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 203,
-      "length" : 157
+      "start" : 310,
+      "length" : 191
     },
     {
       "activity" : "generate2",
-      "start" : 219,
-      "length" : 432
+      "start" : 331,
+      "length" : 703
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 5
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 258,
-      "length" : 1
+      "start" : 357,
+      "length" : 7
     }]
   },
   {
@@ -1847,33 +1907,33 @@
     "size" : 787,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 5
+      "start" : 261,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 176,
-      "length" : 47
+      "start" : 274,
+      "length" : 60
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 7
+      "start" : 284,
+      "length" : 10
     },
     {
       "activity" : "generate1",
-      "start" : 203,
+      "start" : 310,
       "length" : 12
     },
     {
       "activity" : "generate2",
-      "start" : 220,
-      "length" : 1018
+      "start" : 331,
+      "length" : 2034
     }]
   },
   {
@@ -1881,91 +1941,116 @@
     "size" : 1040,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 7
+      "start" : 261,
+      "length" : 8
     },
     {
       "activity" : "generateNarratives",
-      "start" : 176,
+      "start" : 274,
       "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 5
+      "start" : 284,
+      "length" : 7
     },
     {
       "activity" : "generate1",
-      "start" : 203,
-      "length" : 11
+      "start" : 310,
+      "length" : 13
     },
     {
       "activity" : "generate2",
-      "start" : 221,
-      "length" : 238
+      "start" : 333,
+      "length" : 421
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 357,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.json",
     "size" : 609,
     "processes" : [{
-      "activity" : "load",
-      "start" : 166,
-      "length" : 3
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 1
     },
     {
-      "activity" : "generateNarratives",
-      "start" : 176,
+      "activity" : "load",
+      "start" : 261,
       "length" : 2
     },
     {
+      "activity" : "generateNarratives",
+      "start" : 274,
+      "length" : 1
+    },
+    {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 3
+      "start" : 284,
+      "length" : 5
     },
     {
       "activity" : "generate1",
-      "start" : 203,
+      "start" : 310,
       "length" : 11
     },
     {
       "activity" : "generate2",
-      "start" : 221,
-      "length" : 161
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 238,
-      "length" : 1
+      "start" : 334,
+      "length" : 215
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-be-vs-pss-qsi-indication.json",
     "size" : 546,
     "processes" : [{
+      "activity" : "loadResources",
+      "start" : 260,
+      "length" : 1
+    },
+    {
       "activity" : "load",
-      "start" : 166,
-      "length" : 3
+      "start" : 260,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 261,
+      "length" : 2
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 266,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 274,
+      "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 3
+      "start" : 284,
+      "length" : 4
     },
     {
       "activity" : "generate1",
-      "start" : 203,
+      "start" : 310,
       "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 221,
-      "length" : 192
+      "start" : 334,
+      "length" : 308
     }]
   },
   {
@@ -1973,33 +2058,33 @@
     "size" : 643,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 165,
+      "start" : 260,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 166,
-      "length" : 4
+      "start" : 261,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 176,
+      "start" : 274,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 3
+      "start" : 284,
+      "length" : 4
     },
     {
       "activity" : "generate1",
-      "start" : 203,
+      "start" : 310,
       "length" : 9
     },
     {
       "activity" : "generate2",
-      "start" : 221,
-      "length" : 48
+      "start" : 334,
+      "length" : 54
     }]
   },
   {
@@ -2007,28 +2092,38 @@
     "size" : 828,
     "processes" : [{
       "activity" : "load",
-      "start" : 166,
+      "start" : 261,
       "length" : 2
     },
     {
+      "activity" : "load",
+      "start" : 261,
+      "length" : 1
+    },
+    {
       "activity" : "generateNarratives",
-      "start" : 176,
+      "start" : 274,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 181,
-      "length" : 3
+      "start" : 284,
+      "length" : 4
     },
     {
       "activity" : "generate1",
-      "start" : 203,
-      "length" : 9
+      "start" : 310,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 221,
-      "length" : 1087
+      "start" : 334,
+      "length" : 2206
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 357,
+      "length" : 1
     }]
   },
   {
@@ -2036,7 +2131,7 @@
     "size" : 991,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
+      "start" : 337,
       "length" : 1
     }]
   },
@@ -2046,7 +2141,12 @@
   },
   {
     "name" : "/fsh-generated/includes/fsh-link-references.md",
-    "size" : 4616
+    "size" : 4616,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/fsh-generated/includes/menu.xml",
@@ -2057,13 +2157,18 @@
     "size" : 1978,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
-      "length" : 35
+      "start" : 337,
+      "length" : 48
     }]
   },
   {
     "name" : "/input/pagecontent/topic-visibility-blacklisting.md",
-    "size" : 2450
+    "size" : 2450,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/api-complex-operations.md",
@@ -2071,31 +2176,41 @@
   },
   {
     "name" : "/input/pagecontent/glossary.md",
-    "size" : 5252
-  },
-  {
-    "name" : "/input/pagecontent/operation-complete-medical-document.md",
-    "size" : 1129,
+    "size" : 5252,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
+      "start" : 337,
       "length" : 1
     }]
   },
   {
+    "name" : "/input/pagecontent/operation-complete-medical-document.md",
+    "size" : 1129
+  },
+  {
     "name" : "/input/pagecontent/topic-prescription-templates.md",
-    "size" : 4881
+    "size" : 4881,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/operation-evaluate-radiology-prescription.md",
-    "size" : 6660
+    "size" : 6660,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-hygienic-care.md",
     "size" : 11061,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
+      "start" : 337,
       "length" : 1
     }]
   },
@@ -2105,14 +2220,19 @@
   },
   {
     "name" : "/input/pagecontent/error-codes.md",
-    "size" : 1718
+    "size" : 1718,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-medication-prefill-not-refunded.md",
     "size" : 10998,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
+      "start" : 337,
       "length" : 1
     }]
   },
@@ -2126,14 +2246,19 @@
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-glycemic-test.md",
-    "size" : 14384
+    "size" : 14384,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/mappings-radiology.md",
     "size" : 320,
     "processes" : [{
-      "activity" : "generate2",
-      "start" : 222,
+      "activity" : "checkR4R4B",
+      "start" : 266,
       "length" : 1
     }]
   },
@@ -2143,7 +2268,12 @@
   },
   {
     "name" : "/input/pagecontent/operation-cancel-medical-document.md",
-    "size" : 1153
+    "size" : 1153,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/technical.md",
@@ -2151,7 +2281,12 @@
   },
   {
     "name" : "/input/pagecontent/operation-consult-search-medical-documents.md",
-    "size" : 5602
+    "size" : 5602,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/operation-cancel-execution.md",
@@ -2162,7 +2297,7 @@
     "size" : 12086,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
+      "start" : 337,
       "length" : 1
     }]
   },
@@ -2172,16 +2307,16 @@
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-diabetes-education-without-trajectory.md",
-    "size" : 11437
+    "size" : 11437,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-generic.md",
-    "size" : 17262,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 222,
-      "length" : 1
-    }]
+    "size" : 17262
   },
   {
     "name" : "/input/pagecontent/operation-record-execution-interruption.md",
@@ -2193,7 +2328,17 @@
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-chronic-dialysis.md",
-    "size" : 14244
+    "size" : 14244,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 383,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/operation-evaluate-proposal.md",
@@ -2208,7 +2353,7 @@
     "size" : 19144,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
+      "start" : 337,
       "length" : 1
     }]
   },
@@ -2218,7 +2363,12 @@
   },
   {
     "name" : "/input/pagecontent/guidance.md",
-    "size" : 6332
+    "size" : 6332,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-diabetes-education-start-trajectory.md",
@@ -2226,16 +2376,16 @@
   },
   {
     "name" : "/input/pagecontent/mappings-business.md",
-    "size" : 740,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 222,
-      "length" : 1
-    }]
+    "size" : 740
   },
   {
     "name" : "/input/pagecontent/operation-access-matrix.md",
-    "size" : 5853
+    "size" : 5853,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/changes.md",
@@ -2243,7 +2393,12 @@
   },
   {
     "name" : "/input/pagecontent/mappings-nursing.md",
-    "size" : 2811
+    "size" : 2811,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-diabetes-education-care-trajectory.md",
@@ -2251,16 +2406,16 @@
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-parameters.md",
-    "size" : 14957,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 222,
-      "length" : 1
-    }]
+    "size" : 14957
   },
   {
     "name" : "/input/pagecontent/topic-prescription-lifecycle-extension.md",
-    "size" : 2133
+    "size" : 2133,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/mapper-radiology-diagnostic-imaging.md",
@@ -2275,7 +2430,7 @@
     "size" : 4770,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
+      "start" : 337,
       "length" : 1
     }]
   },
@@ -2285,7 +2440,12 @@
   },
   {
     "name" : "/input/pagecontent/mapper-nursing-bloodletting.md",
-    "size" : 13339
+    "size" : 13339,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/pagecontent/topic-prescription-lifecycle.md",
@@ -2297,16 +2457,16 @@
   },
   {
     "name" : "/template/config",
-    "size" : 0,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 222,
-      "length" : 1
-    }]
+    "size" : 0
   },
   {
     "name" : "/template/config/_config.yml",
-    "size" : 46
+    "size" : 46,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images",
@@ -2322,16 +2482,16 @@
   },
   {
     "name" : "/input/images/extension-workflow.png",
-    "size" : 28179
+    "size" : 28179,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/UHMEP_API_ErrorCodes_20260723.xlsx",
-    "size" : 85162,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 222,
-      "length" : 1
-    }]
+    "size" : 85162
   },
   {
     "name" : "/input/images/annex81-proposal-request.png",
@@ -2343,7 +2503,12 @@
   },
   {
     "name" : "/input/images/performer-task-lifecycle.png",
-    "size" : 359676
+    "size" : 359676,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/simple-prescription-workflow.png",
@@ -2351,16 +2516,16 @@
   },
   {
     "name" : "/input/images/annex81-proposal-assignment.png",
-    "size" : 45274,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 222,
-      "length" : 1
-    }]
+    "size" : 45274
   },
   {
     "name" : "/input/images/lifecycle.png",
-    "size" : 113436
+    "size" : 113436,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 337,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/CURRENT-StatusDiagram-Prescription.svg",
@@ -2368,7 +2533,12 @@
   },
   {
     "name" : "/input/images/task-links.png",
-    "size" : 121611
+    "size" : 121611,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 284,
+      "length" : 1
+    }]
   },
   {
     "name" : "/input/images/annex81-proposal-approval.png",
@@ -2379,8 +2549,8 @@
     "size" : 52639,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 222,
-      "length" : 1
+      "start" : 337,
+      "length" : 2
     }]
   }]
 }

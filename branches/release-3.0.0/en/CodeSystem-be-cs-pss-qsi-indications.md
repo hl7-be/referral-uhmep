@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeCSPSSIndication |
+| Draft as of 2026-10-29 | *Computable Name*:BeCSPSSIndication |
 
  
 PSS indication codes for diagnostic imaging requests. 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "PSS Indication",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

@@ -19,7 +19,7 @@
   fhir:CodeSystem.title [ fhir:value "eReferral Designation Use"] ;
   fhir:CodeSystem.status [ fhir:value "active"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-10-28T14:55:19+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-29T04:33:29+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Riziv-Inami Platform"] ;
   fhir:CodeSystem.contact [
      fhir:index -1 ;

@@ -4,7 +4,7 @@
   <id value="ereferral-annex-81"/>
   <language value="en"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ereferral-annex-81</b></p><a name="ereferral-annex-81"> </a><a name="hcereferral-annex-81"> </a><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ereferral-annex-81-definitions.html#ServiceRequest">ServiceRequest</a><a name="ServiceRequest"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ereferral-inv-annex81-has-nursing-diagnosis, ereferral-inv-annex81-has-medical-problem )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/StructureDefinition-be-annex-81.html">BeAnnex81</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">A request for a service to be performed</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="Annex 81 must contain at least one nursing diagnosis reason code." class="xhtPieceBold constraint">ereferral-inv-annex81-has-nursing-diagnosis</span><span class="constraint">, </span><span title="Annex 81 must contain at least one medical problem reason code." class="xhtPieceBold constraint">ereferral-inv-annex81-has-medical-problem</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ereferral-annex-81</b></p><a name="ereferral-annex-81"> </a><a name="hcereferral-annex-81"> </a><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ereferral-annex-81-definitions.html#ServiceRequest">ServiceRequest</a><a name="ServiceRequest"> </a></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/conformance-rules.html#constraints" title="This element has or is affected by constraints ( ereferral-inv-annex81-has-nursing-diagnosis, ereferral-inv-annex81-has-medical-problem )" class="xhtConstraintStyle">C</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/StructureDefinition-be-annex-81.html">BeAnnex81</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">A request for a service to be performed</span><br class="constraint"/><span class="constraint">Constraints: </span><span title="Annex 81 must contain at least one nursing diagnosis reason code." class="xhtPieceBold constraint">ereferral-inv-annex81-has-nursing-diagnosis</span><span class="constraint">, </span><span title="Annex 81 must contain at least one medical problem reason code." class="xhtPieceBold constraint">ereferral-inv-annex81-has-medical-problem</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.</span><a href="StructureDefinition-ereferral-annex-81-definitions.html#ServiceRequest.meta">meta</a><a name="ServiceRequest.meta"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.meta.</span><a href="StructureDefinition-ereferral-annex-81-definitions.html#ServiceRequest.meta.versionId" class="xhtPieceStrikeout">versionId</a><a name="ServiceRequest.meta.versionId"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceStrikeout"/><span class="xhtPieceStrikeout xhtPieceDeEmphasized">0</span><span class="xhtPieceStrikeout">..</span><span class="xhtPieceStrikeout">0</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">Version specific identifier</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.meta.</span><a href="StructureDefinition-ereferral-annex-81-definitions.html#ServiceRequest.meta.lastUpdated" class="xhtPieceStrikeout">lastUpdated</a><a name="ServiceRequest.meta.lastUpdated"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceStrikeout"/><span class="xhtPieceStrikeout xhtPieceDeEmphasized">0</span><span class="xhtPieceStrikeout">..</span><span class="xhtPieceStrikeout">0</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">When the resource version last changed</span></td></tr>
@@ -67,7 +67,7 @@
   <version value="3.0.0"/>
   <name value="EReferralAnnex81"/>
   <status value="active"/>
-  <date value="2026-10-28T14:55:19+00:00"/>
+  <date value="2026-10-29T04:33:29+00:00"/>
   <publisher value="Riziv-Inami Platform"/>
   <contact>
     <name value="Riziv-Inami Platform"/>
@@ -125,11 +125,11 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="ServiceRequest"/>
-  <baseDefinition value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-annex-81"/>
+  <baseDefinition value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81"/>
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="1.0.0"/>
+      <valueString value="1.1.1"/>
     </extension>
     <element id="ServiceRequest">
       <path value="ServiceRequest"/>
@@ -205,7 +205,7 @@
         <severity value="error"/>
         <human value="An approved Annex81 is always based on a request by a nurse"/>
         <expression value="intent = 'order' implies basedOn.exists()"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-annex-81"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81"/>
       </constraint>
       <constraint>
         <key value="ereferral-inv-annex81-has-nursing-diagnosis"/>
@@ -709,7 +709,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -746,7 +746,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-latest-end-date"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-latest-end-date"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -784,7 +784,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/request-statusReason|5.3.0"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/request-statusReason|5.4.0"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -934,8 +934,8 @@
       <isSummary value="false"/>
       <binding>
         <strength value="preferred"/>
-        <description value="The actual valueset will be provided when a terminology package is available. For current guidance, see the included [ValueSet](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-prescription-status-reason.html)."/>
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/referral/ValueSet/be-vs-prescription-status-reason"/>
+        <description value="The actual valueset will be provided when a terminology package is available. For current guidance, see the included [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-prescription-status-reason.html)."/>
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-prescription-status-reason"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1262,7 +1262,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/referral/NamingSystem/uhmep"/>
+      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/drp/NamingSystem/uhmep"/>
       <example>
         <label value="General"/>
         <valueUri value="http://www.acme.com/identifiers/patient"/>
@@ -1437,7 +1437,7 @@
         <severity value="warning"/>
         <human value="The format of UHMEP-SHORT is 6 capital alphanumerics, without O"/>
         <expression value="Identifier.where(system = 'https://www.ehealth.fgov.be/standards/fhir/referral/NamingSystem/uhmep-short').where(value.extension.empty() or value.extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization').empty()).value.select($this.matches('[A-NP-Z0-9]{6}')).allTrue()"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-annex-81"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -1639,7 +1639,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/referral/NamingSystem/uhmep-short"/>
+      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/drp/NamingSystem/uhmep-short"/>
       <example>
         <label value="General"/>
         <valueUri value="http://www.acme.com/identifiers/patient"/>
@@ -1877,7 +1877,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-annex-81"/>
+        <targetProfile value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2189,7 +2189,7 @@
           <valueString value="ServiceRequestCategory"/>
         </extension>
         <strength value="example"/>
-        <description value="Categories of care that can be prescribed. See [ValueSet](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-categories-of-care.html)."/>
+        <description value="Categories of care that can be prescribed. See [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-categories-of-care.html)."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/servicerequest-category"/>
       </binding>
       <mapping>
@@ -2244,7 +2244,7 @@
           <valueString value="ServiceRequestCategory"/>
         </extension>
         <strength value="example"/>
-        <description value="Technical type for Annex 81 prescriptions. See [ValueSet](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-annex81-technical-type.html)."/>
+        <description value="Technical type for Annex 81 prescriptions. See [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-annex81-technical-type.html)."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/servicerequest-category"/>
       </binding>
       <mapping>
@@ -4172,7 +4172,7 @@
         <severity value="warning"/>
         <human value="date SHALL contain a long date (YYYY-MM-DDThh:mm:ss+zz:zz)"/>
         <expression value="empty() or toString().length()=25"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-annex-81"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -4851,7 +4851,11 @@
       </base>
       <type>
         <code value="Annotation"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-coded-annotation|2.2.0"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-coded-annotation|2.2.0">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints">
+            <valueCode value="full"/>
+          </extension>
+        </profile>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -5108,7 +5112,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="preferred"/>
-        <description value="Types of notes that can be associated with a prescription. See [ValueSet](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-note-type.html)."/>
+        <description value="Types of notes that can be associated with a prescription. See [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-note-type.html)."/>
         <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-note-type"/>
       </binding>
       <mapping>

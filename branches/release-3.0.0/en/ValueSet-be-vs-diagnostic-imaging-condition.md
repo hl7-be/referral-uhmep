@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeVSDiagnosticImagingCondition |
+| Draft as of 2026-10-29 | *Computable Name*:BeVSDiagnosticImagingCondition |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). | |
 
  
@@ -43,7 +43,7 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
   "title" : "eReferral/PSS Diagnostic Imaging Condition",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

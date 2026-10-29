@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeRadiologySupportingInfoRole |
+| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role | *Version*:3.0.0 |
+| Draft as of 2026-10-29 | *Computable Name*:BeRadiologySupportingInfoRole |
 
 Identifies the role of a ServiceRequest.supportingInfo entry used in a diagnostic imaging referral.
 
@@ -40,12 +40,12 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-radiology-
 {
   "resourceType" : "StructureDefinition",
   "id" : "be-ext-radiology-supporting-info-role",
-  "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
   "version" : "3.0.0",
   "name" : "BeRadiologySupportingInfoRole",
   "title" : "eReferral Radiology SupportingInfo Role",
   "status" : "draft",
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -102,7 +102,7 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-radiology-
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
+      "fixedUri" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
     },
     {
       "id" : "Extension.value[x]",

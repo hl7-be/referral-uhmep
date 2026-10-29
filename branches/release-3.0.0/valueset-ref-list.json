@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/ValueSet/be-vs-imaging-modality",
-    "version" : "1.0.0",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-imaging-modality",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BeVSImagingModality",
     "title" : "eReferral Imaging Modality ValueSet",
@@ -48,7 +48,7 @@
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type",
-    "version" : "1.0.0",
+    "version" : "1.1.1",
     "status" : "active",
     "name" : "BeVSNursingPrescriptionTechnicalType",
     "title" : "eReferral Nursing Prescription Technical Type",

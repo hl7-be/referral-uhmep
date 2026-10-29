@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:EReferralServiceRequestDiagnosticImaging |
+| Draft as of 2026-10-29 | *Computable Name*:EReferralServiceRequestDiagnosticImaging |
 
  
 The diagnostic imaging profile. eReferral version. 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
   "version" : "3.0.0",
   "name" : "EReferralServiceRequestDiagnosticImaging",
   "status" : "draft",
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
   "kind" : "resource",
   "abstract" : false,
   "type" : "ServiceRequest",
-  "baseDefinition" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-diagnosticimaging",
+  "baseDefinition" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-diagnosticimaging",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -129,28 +129,28 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
         "key" : "ereferral-inv-urgent-requires-urgency-justification",
         "severity" : "error",
         "human" : "The urgencyJustification extension must be present when priority is urgent.",
-        "expression" : "priority != 'urgent' or extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-urgency-justification').exists()",
+        "expression" : "priority != 'urgent' or extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification').exists()",
         "source" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
       },
       {
         "key" : "ereferral-inv-urgency-justification-value-pseudonymized",
         "severity" : "error",
         "human" : "When urgencyJustification.valueString is present, it must have the be-ext-pseudonymization extension.",
-        "expression" : "extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-urgency-justification').value.ofType(string).all(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization').exists())",
+        "expression" : "extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification').value.ofType(string).all(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization').exists())",
         "source" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
       },
       {
         "key" : "ereferral-inv-patient-condition-concept-text-pseudonymized",
         "severity" : "error",
         "human" : "When patientCondition concept text is present, it must have the be-ext-pseudonymization extension.",
-        "expression" : "supportingInfo.extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).text.all(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization').exists())",
+        "expression" : "supportingInfo.extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).text.all(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization').exists())",
         "source" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
       },
       {
         "key" : "ereferral-inv-patient-condition-code-or-text",
         "severity" : "error",
         "human" : "patientCondition must contain either a coded indication from the allowed ValueSet or encrypted free text.",
-        "expression" : "supportingInfo.extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).all(coding.exists() or text.exists())",
+        "expression" : "supportingInfo.extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).all(coding.exists() or text.exists())",
         "source" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
       },
       {
@@ -404,7 +404,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
       }]
     },
     {
@@ -432,7 +432,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "path" : "ServiceRequest.supportingInfo.extension.value[x]",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/referral/ValueSet/be-vs-imaging-modality"
+        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-imaging-modality"
       }
     },
     {
@@ -443,7 +443,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
       }]
     },
     {
@@ -469,7 +469,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
       }]
     },
     {
@@ -500,7 +500,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
       }]
     },
     {
@@ -530,7 +530,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
         "key" : "ereferral-inv-patient-condition-strict",
         "severity" : "error",
         "human" : "A patient condition must contain either free text, or exactly one coding from the allowed ValueSet. Text may accompany a coding.",
-        "expression" : "supportingInfo.where(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role').value = 'patient-condition').extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).all((text.exists() and coding.empty()) or (text.empty() and coding.count() = 1 and memberOf('https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication')))",
+        "expression" : "supportingInfo.where(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role').value = 'patient-condition').extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).all((text.exists() and coding.empty()) or (text.empty() and coding.count() = 1 and memberOf('https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication')))",
         "source" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"
       }],
       "binding" : {
@@ -546,7 +546,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
       }]
     },
     {

@@ -76,13 +76,13 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
     "profile" : ["https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"]
   },
   "extension" : [{
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period",
     "valuePeriod" : {
       "start" : "2026-02-18"
     }
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-feedback-to-prescriber",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-feedback-to-prescriber",
     "valueBoolean" : false
   }],
   "status" : "draft",

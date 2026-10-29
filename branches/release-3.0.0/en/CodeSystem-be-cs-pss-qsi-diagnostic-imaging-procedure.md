@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeCSPSSQSIDiagnosticImagingProcedure |
+| Draft as of 2026-10-29 | *Computable Name*:BeCSPSSQSIDiagnosticImagingProcedure |
 
  
 PSS/QSI diagnostic imaging procedure codes with English displays and Belgian French, Dutch and German designations. 
@@ -37,7 +37,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "PSS/QSI Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

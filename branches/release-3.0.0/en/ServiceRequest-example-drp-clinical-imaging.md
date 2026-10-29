@@ -48,7 +48,7 @@
     "meta" : {
       "profile" : ["https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response"]
     },
-    "questionnaire" : "https://www.ehealth.fgov.be/standards/fhir/referral/Questionnaire/be-questionnaire-imaging-attention-conditions",
+    "questionnaire" : "https://www.ehealth.fgov.be/standards/fhir/drp/Questionnaire/be-questionnaire-imaging-attention-conditions",
     "status" : "completed",
     "authored" : "2026-03-03T10:15:00+01:00",
     "item" : [{
@@ -209,7 +209,7 @@
     }
   }],
   "extension" : [{
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period",
     "valuePeriod" : {
       "start" : "2026-03-03",
       "end" : "2027-03-03"
@@ -239,14 +239,14 @@
     }
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-pss-info",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-pss-info",
     "valueIdentifier" : {
       "system" : "https://www.ehealth.fgov.be/standards/fhir/pss/NamingSystem/pss-id",
       "value" : "PSS-DRP-IMG-001"
     }
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-urgency-justification",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification",
     "valueString" : "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}",
     "_valueString" : {
       "extension" : [{
@@ -345,25 +345,25 @@
   }],
   "supportingInfo" : [{
     "extension" : [{
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
       "valueCode" : "safety-checklist"
     }],
     "reference" : "#ci-attention-qr"
   },
   {
     "extension" : [{
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
       "valueCode" : "prior-request"
     }],
     "reference" : "ServiceRequest/example-prior-drp-clinical-imaging"
   },
   {
     "extension" : [{
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
       "valueCode" : "prior-request"
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
       "valueCodeableConcept" : {
         "coding" : [{
           "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-modality",
@@ -376,11 +376,11 @@
   },
   {
     "extension" : [{
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
       "valueCode" : "patient-condition"
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
       "valueCodeableConcept" : {
         "coding" : [{
           "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
@@ -393,11 +393,11 @@
   },
   {
     "extension" : [{
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
       "valueCode" : "patient-condition"
     },
     {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
       "valueCodeableConcept" : {
         "text" : "urn:be:fgov:pseudo:v1:{{kid}}:{{jwe}}",
         "_text" : {

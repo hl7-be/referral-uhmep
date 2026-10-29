@@ -6,7 +6,7 @@
 
 ## Task: ereferral-referral-task
 
-Profile: [BeReferralTask](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/StructureDefinition-be-referral-task.html)
+Profile: [BeReferralTask](https://build.fhir.org/ig/hl7-be/referral-uhmep/StructureDefinition-be-referral-task.html)
 
 **status**: Draft
 
@@ -25,7 +25,7 @@ Profile: [BeReferralTask](https://www.ehealth.fgov.be/standards/fhir/referral/1.
   "resourceType" : "Task",
   "id" : "ereferral-referral-task",
   "meta" : {
-    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-task"]
+    "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-task"]
   },
   "status" : "draft",
   "intent" : "order",

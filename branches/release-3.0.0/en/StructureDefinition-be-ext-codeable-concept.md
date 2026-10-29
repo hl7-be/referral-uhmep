@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeExtCodeableConcept |
+| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept | *Version*:3.0.0 |
+| Draft as of 2026-10-29 | *Computable Name*:BeExtCodeableConcept |
 
 Extension able to hold a coded concept on a Reference element.
 
@@ -19,7 +19,7 @@ Extension able to hold a coded concept on a Reference element.
 
 **Usages:**
 
-* Use this Extension: [BeServiceRequestDiagnosticImaging](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/StructureDefinition-be-referral-servicerequest-diagnosticimaging.html)
+* Use this Extension: [BeServiceRequestDiagnosticImaging](https://build.fhir.org/ig/hl7-be/referral-uhmep/StructureDefinition-be-referral-servicerequest-diagnosticimaging.html)
 * Examples for this Extension: [ServiceRequest/example-drp-clinical-imaging](ServiceRequest-example-drp-clinical-imaging.md), [ServiceRequest/example-pss-radiology-scenario-01](ServiceRequest-example-pss-radiology-scenario-01.md), [ServiceRequest/example-pss-radiology-scenario-02](ServiceRequest-example-pss-radiology-scenario-02.md), [ServiceRequest/example-pss-radiology-scenario-03](ServiceRequest-example-pss-radiology-scenario-03.md)... Show 7 more, [ServiceRequest/example-pss-radiology-scenario-04](ServiceRequest-example-pss-radiology-scenario-04.md), [ServiceRequest/example-pss-radiology-scenario-05](ServiceRequest-example-pss-radiology-scenario-05.md), [ServiceRequest/example-pss-radiology-scenario-06](ServiceRequest-example-pss-radiology-scenario-06.md), [ServiceRequest/example-pss-radiology-scenario-07](ServiceRequest-example-pss-radiology-scenario-07.md), [ServiceRequest/example-pss-radiology-scenario-08](ServiceRequest-example-pss-radiology-scenario-08.md), [ServiceRequest/example-pss-radiology-scenario-09](ServiceRequest-example-pss-radiology-scenario-09.md) and [ServiceRequest/example-pss-radiology-scenario-10](ServiceRequest-example-pss-radiology-scenario-10.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/inami.fhir.be.ereferral|current/StructureDefinition/StructureDefinition-be-ext-codeable-concept.json)
@@ -40,12 +40,12 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-codeable-c
 {
   "resourceType" : "StructureDefinition",
   "id" : "be-ext-codeable-concept",
-  "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
   "version" : "3.0.0",
   "name" : "BeExtCodeableConcept",
   "title" : "CodeableConcept Extension for Reference",
   "status" : "draft",
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -103,7 +103,7 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-codeable-c
     {
       "id" : "Extension.url",
       "path" : "Extension.url",
-      "fixedUri" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept"
+      "fixedUri" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept"
     },
     {
       "id" : "Extension.value[x]",

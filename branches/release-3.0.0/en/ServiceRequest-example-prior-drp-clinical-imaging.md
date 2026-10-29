@@ -126,7 +126,7 @@
     "meta" : {
       "profile" : ["https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response"]
     },
-    "questionnaire" : "https://www.ehealth.fgov.be/standards/fhir/referral/Questionnaire/be-questionnaire-imaging-attention-conditions",
+    "questionnaire" : "https://www.ehealth.fgov.be/standards/fhir/drp/Questionnaire/be-questionnaire-imaging-attention-conditions",
     "status" : "completed",
     "authored" : "2025-11-18T09:30:00+01:00",
     "item" : [{
@@ -173,7 +173,7 @@
     }]
   }],
   "extension" : [{
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period",
     "valuePeriod" : {
       "start" : "2025-11-18",
       "end" : "2026-11-18"
@@ -236,7 +236,7 @@
   }],
   "supportingInfo" : [{
     "extension" : [{
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
       "valueCode" : "safety-checklist"
     }],
     "reference" : "#prior-imaging-attention-qr"

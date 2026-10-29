@@ -106,13 +106,13 @@
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.3.0" ]
   ], [
      fhir:index 4 ;
-     fhir:Element.id [ fhir:value "hl7_fhir_be_referral" ] ;
+     fhir:Element.id [ fhir:value "be_smals_fhir_drp_fix" ] ;
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/ImplementationGuide/hl7.fhir.be.referral" ;
-       fhir:link <https://www.ehealth.fgov.be/standards/fhir/referral/ImplementationGuide/hl7.fhir.be.referral>
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/drp" ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/drp>
      ] ;
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.be.referral" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "be.smals.fhir.drp-fix" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current$drp-1.1.1-fixed" ]
   ], [
      fhir:index 5 ;
      fhir:Element.id [ fhir:value "hl7_fhir_be_infsec" ] ;

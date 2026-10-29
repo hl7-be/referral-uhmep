@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeVSDiagnosticImagingProcedure |
+| Draft as of 2026-10-29 | *Computable Name*:BeVSDiagnosticImagingProcedure |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). | |
 
  
@@ -18,7 +18,7 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
  **References** 
 
 * Included into [Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure](ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.md)
-* [BeServiceRequestDiagnosticImaging](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/StructureDefinition-be-referral-servicerequest-diagnosticimaging.html)
+* [BeServiceRequestDiagnosticImaging](https://build.fhir.org/ig/hl7-be/referral-uhmep/StructureDefinition-be-referral-servicerequest-diagnosticimaging.html)
 * [EReferralServiceRequestDiagnosticImaging](StructureDefinition-ereferral-servicerequest-diagnosticimaging.md)
 
 ### Logical Definition (CLD)
@@ -45,7 +45,7 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
   "title" : "eReferral/PSS Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

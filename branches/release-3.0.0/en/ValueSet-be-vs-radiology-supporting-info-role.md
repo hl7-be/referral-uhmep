@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role | *Version*:3.0.0 |
-| Draft as of 2026-10-28 | *Computable Name*:BeVSRadiologySupportingInfoRole |
+| Draft as of 2026-10-29 | *Computable Name*:BeVSRadiologySupportingInfoRole |
 
  
 Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral. 
@@ -42,7 +42,7 @@ Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imagi
   "title" : "eReferral Radiology SupportingInfo Role ValueSet",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-28T14:55:19+00:00",
+  "date" : "2026-10-29T04:33:29+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -73,8 +73,7 @@ Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imagi
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
-      "version" : "3.0.0"
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role"
     }]
   }
 }

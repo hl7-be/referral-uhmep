@@ -5,14 +5,14 @@
   "jurisdiction": "BE",
   "extensions": [
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
       "title": "CodeableConcept Extension for Reference",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+      "url": "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role",
       "title": "eReferral Radiology SupportingInfo Role",
       "types": [
         "code"
@@ -56,7 +56,7 @@
     "http://hl7.org/fhir/StructureDefinition/request-statusReason": [
       "ServiceRequest"
     ],
-    "http://hl7.org/fhir/StructureDefinition/request-statusReason|5.3.0": [
+    "http://hl7.org/fhir/StructureDefinition/request-statusReason|5.4.0": [
       "ServiceRequest"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
@@ -110,6 +110,36 @@
     "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-gender-at-birth": [
       "ServiceRequest.contained"
     ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept|3.0.0": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-feedback-to-prescriber": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-latest-end-date": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-performer-type": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-pss-info": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0": [
+      "ServiceRequest.supportingInfo"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-urgency-justification": [
+      "ServiceRequest"
+    ],
+    "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period": [
+      "ServiceRequest"
+    ],
     "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-key-pseudonymization": [
       "ServiceRequest.meta"
     ],
@@ -125,36 +155,6 @@
     ],
     "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymized-content": [
       "ServiceRequest.contained.birthDate"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept": [
-      "ServiceRequest.supportingInfo"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept|3.0.0": [
-      "ServiceRequest.supportingInfo"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-feedback-to-prescriber": [
-      "ServiceRequest"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-latest-end-date": [
-      "ServiceRequest"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-performer-type": [
-      "ServiceRequest"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-pss-info": [
-      "ServiceRequest"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role": [
-      "ServiceRequest.supportingInfo"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0": [
-      "ServiceRequest.supportingInfo"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-urgency-justification": [
-      "ServiceRequest"
-    ],
-    "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period": [
-      "ServiceRequest"
     ]
   }
 }

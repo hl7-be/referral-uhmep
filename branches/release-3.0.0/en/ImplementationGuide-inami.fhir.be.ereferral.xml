@@ -70,10 +70,10 @@
     <packageId value="hl7.fhir.be.core-clinical"/>
     <version value="1.3.0"/>
   </dependsOn>
-  <dependsOn id="hl7_fhir_be_referral">
-    <uri value="https://www.ehealth.fgov.be/standards/fhir/referral/ImplementationGuide/hl7.fhir.be.referral"/>
-    <packageId value="hl7.fhir.be.referral"/>
-    <version value="1.0.0"/>
+  <dependsOn id="be_smals_fhir_drp_fix">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/drp"/>
+    <packageId value="be.smals.fhir.drp-fix"/>
+    <version value="current$drp-1.1.1-fixed"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_be_infsec">
     <uri value="https://www.ehealth.fgov.be/standards/fhir/infsec/ImplementationGuide/hl7.fhir.be.infsec"/>

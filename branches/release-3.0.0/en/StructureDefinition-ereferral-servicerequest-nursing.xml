@@ -4,7 +4,7 @@
   <id value="ereferral-servicerequest-nursing"/>
   <language value="en"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ereferral-servicerequest-nursing</b></p><a name="ereferral-servicerequest-nursing"> </a><a name="hcereferral-servicerequest-nursing"> </a><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest">ServiceRequest</a><a name="ServiceRequest"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/StructureDefinition-be-referral-servicerequest-nursing.html">BeReferralServiceRequestNursing</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">A request for a service to be performed</span></td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ereferral-servicerequest-nursing</b></p><a name="ereferral-servicerequest-nursing"> </a><a name="hcereferral-servicerequest-nursing"> </a><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest">ServiceRequest</a><a name="ServiceRequest"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/StructureDefinition-be-referral-servicerequest-nursing.html">BeReferralServiceRequestNursing</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">A request for a service to be performed</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.meta">meta</a><a name="ServiceRequest.meta"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.meta.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.meta.versionId" class="xhtPieceStrikeout">versionId</a><a name="ServiceRequest.meta.versionId"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceStrikeout"/><span class="xhtPieceStrikeout xhtPieceDeEmphasized">0</span><span class="xhtPieceStrikeout">..</span><span class="xhtPieceStrikeout">0</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">Version specific identifier</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.meta.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.meta.lastUpdated" class="xhtPieceStrikeout">lastUpdated</a><a name="ServiceRequest.meta.lastUpdated"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceStrikeout"/><span class="xhtPieceStrikeout xhtPieceDeEmphasized">0</span><span class="xhtPieceStrikeout">..</span><span class="xhtPieceStrikeout">0</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">When the resource version last changed</span></td></tr>
@@ -27,7 +27,7 @@
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1341.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.Slices for category.category:discipline.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.category:discipline.coding">coding</a><a name="ServiceRequest.category:discipline.coding"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck13410.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.Slices for category.category:discipline.coding.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.category:discipline.coding.system">system</a><a name="ServiceRequest.category:discipline.coding.system"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri" class="xhtPieceDeEmphasized">uri</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Identity of the terminology system</span><br/><span class="xhtPieceBold">Fixed Value: </span><span class="xhtPieceDarkGreen">http://snomed.info/sct</span> (no extensions allowed)</td></tr>
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck13400.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.Slices for category.category:discipline.coding.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.category:discipline.coding.userSelected" class="xhtPieceStrikeout">userSelected</a><a name="ServiceRequest.category:discipline.coding.userSelected"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceStrikeout"/><span class="xhtPieceStrikeout xhtPieceDeEmphasized">0</span><span class="xhtPieceStrikeout">..</span><span class="xhtPieceStrikeout">0</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">If this coding was chosen directly by the user</span></td></tr>
-<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck125.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.Slices for category.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.category:prescriptionType" title="Slice prescriptionType">category:prescriptionType</a><a name="ServiceRequest.category:prescriptionType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Technical prescription type for nursing referrals</span><br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-nursing-prescription-technical-type.html" title="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type" class="binding">eReferral Nursing Prescription Technical Type</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck125.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.Slices for category.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.category:prescriptionType" title="Slice prescriptionType">category:prescriptionType</a><a name="ServiceRequest.category:prescriptionType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Technical prescription type for nursing referrals</span><br class="binding"/><span class="xhtPieceBold binding">Binding: </span><a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-nursing-prescription-technical-type.html" title="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type" class="binding">eReferral Nursing Prescription Technical Type</a><span class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1241.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.Slices for category.category:prescriptionType.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.category:prescriptionType.coding">coding</a><a name="ServiceRequest.category:prescriptionType.coding"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding" class="xhtPieceDeEmphasized">Coding</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Code defined by a terminology system</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck12400.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.Slices for category.category:prescriptionType.coding.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.category:prescriptionType.coding.system">system</a><a name="ServiceRequest.category:prescriptionType.coding.system"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#uri" class="xhtPieceDeEmphasized">uri</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Identity of the terminology system</span><br/><span class="xhtPieceBold">Fixed Value: </span><span class="xhtPieceDarkGreen">https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</span> (no extensions allowed)</td></tr>
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">ServiceRequest.</span><a href="StructureDefinition-ereferral-servicerequest-nursing-definitions.html#ServiceRequest.doNotPerform" class="xhtPieceStrikeout">doNotPerform</a><a name="ServiceRequest.doNotPerform"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceStrikeout"/><span class="xhtPieceStrikeout xhtPieceDeEmphasized">0</span><span class="xhtPieceStrikeout">..</span><span class="xhtPieceStrikeout">0</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">True if service/procedure should not be performed</span></td></tr>
@@ -79,7 +79,7 @@
   <version value="3.0.0"/>
   <name value="EReferralServiceRequestNursing"/>
   <status value="draft"/>
-  <date value="2026-10-28T14:55:19+00:00"/>
+  <date value="2026-10-29T04:33:29+00:00"/>
   <publisher value="Riziv-Inami Platform"/>
   <contact>
     <name value="Riziv-Inami Platform"/>
@@ -137,11 +137,11 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="ServiceRequest"/>
-  <baseDefinition value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-nursing"/>
+  <baseDefinition value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-nursing"/>
   <derivation value="constraint"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="1.0.0"/>
+      <valueString value="1.1.1"/>
     </extension>
     <element id="ServiceRequest">
       <path value="ServiceRequest"/>
@@ -701,7 +701,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-feedback-to-prescriber"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-feedback-to-prescriber"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -738,7 +738,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -775,7 +775,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-latest-end-date"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-latest-end-date"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -812,7 +812,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-performer-type"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-performer-type"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -850,7 +850,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/request-statusReason|5.3.0"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/request-statusReason|5.4.0"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1000,7 +1000,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="preferred"/>
-        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/referral/ValueSet/be-vs-prescription-status-reason"/>
+        <valueSet value="https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-prescription-status-reason"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1953,7 +1953,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/referral/NamingSystem/uhmep"/>
+      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/drp/NamingSystem/uhmep"/>
       <example>
         <label value="General"/>
         <valueUri value="http://www.acme.com/identifiers/patient"/>
@@ -2128,7 +2128,7 @@
         <severity value="warning"/>
         <human value="The format of UHMEP-SHORT is 6 capital alphanumerics, without O"/>
         <expression value="Identifier.where(system = 'https://www.ehealth.fgov.be/standards/fhir/referral/NamingSystem/uhmep-short').where(value.extension.empty() or value.extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization').empty()).value.select($this.matches('[A-NP-Z0-9]{6}')).allTrue()"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -2330,7 +2330,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/referral/NamingSystem/uhmep-short"/>
+      <fixedUri value="https://www.ehealth.fgov.be/standards/fhir/drp/NamingSystem/uhmep-short"/>
       <example>
         <label value="General"/>
         <valueUri value="http://www.acme.com/identifiers/patient"/>
@@ -2767,7 +2767,7 @@
           <valueString value="ServiceRequestIntent"/>
         </extension>
         <strength value="required"/>
-        <description value="The actual valueset will be provided when a terminology package is available. For current guidance, see the included [ValueSet](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-request-intent.html)."/>
+        <description value="The actual valueset will be provided when a terminology package is available. For current guidance, see the included [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-request-intent.html)."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/request-intent|4.0.1"/>
       </binding>
       <mapping>
@@ -2880,7 +2880,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="preferred"/>
-        <description value="Categories of care that can be prescribed. See [ValueSet](https://www.ehealth.fgov.be/standards/fhir/referral/1.0.0/ValueSet-be-vs-categories-of-care.html)."/>
+        <description value="Categories of care that can be prescribed. See [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-categories-of-care.html)."/>
         <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-categories-of-care"/>
       </binding>
       <mapping>
@@ -3896,7 +3896,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="preferred"/>
-        <description value="The actual valueset will be provided when a terminology package is available."/>
+        <description value="The actual valueset will be provided when a terminology package is available. For current guidance, see the included [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-requested-services-nurse.html)."/>
         <valueSet value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-care-requested"/>
       </binding>
       <mapping>
@@ -3953,7 +3953,7 @@
           <valueString value="OrderDetail"/>
         </extension>
         <strength value="example"/>
-        <description value="The actual valueset will be provided when a terminology package is available."/>
+        <description value="The actual valueset will be provided when a terminology package is available. For current guidance, see the included [ValueSet](https://build.fhir.org/ig/hl7-be/referral-uhmep/ValueSet-be-vs-requested-services-nurse-detail.html)."/>
         <valueSet value="http://hl7.org/fhir/ValueSet/servicerequest-orderdetail"/>
       </binding>
       <mapping>
@@ -5076,7 +5076,7 @@
         <human value="if there's a duration, there needs to be duration units"/>
         <expression value="duration.empty() or durationUnit.exists()"/>
         <xpath value="not(exists(f:duration)) or exists(f:durationUnit)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-2"/>
@@ -5084,7 +5084,7 @@
         <human value="if there's a period, there needs to be period units"/>
         <expression value="period.empty() or periodUnit.exists()"/>
         <xpath value="not(exists(f:period)) or exists(f:periodUnit)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-4"/>
@@ -5092,7 +5092,7 @@
         <human value="duration SHALL be a non-negative value"/>
         <expression value="duration.exists() implies duration &gt;= 0"/>
         <xpath value="f:duration/@value &gt;= 0 or not(f:duration/@value)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-5"/>
@@ -5100,7 +5100,7 @@
         <human value="period SHALL be a non-negative value"/>
         <expression value="period.exists() implies period &gt;= 0"/>
         <xpath value="f:period/@value &gt;= 0 or not(f:period/@value)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-6"/>
@@ -5108,7 +5108,7 @@
         <human value="If there's a periodMax, there must be a period"/>
         <expression value="periodMax.empty() or period.exists()"/>
         <xpath value="not(exists(f:periodMax)) or exists(f:period)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-7"/>
@@ -5116,7 +5116,7 @@
         <human value="If there's a durationMax, there must be a duration"/>
         <expression value="durationMax.empty() or duration.exists()"/>
         <xpath value="not(exists(f:durationMax)) or exists(f:duration)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-8"/>
@@ -5124,7 +5124,7 @@
         <human value="If there's a countMax, there must be a count"/>
         <expression value="countMax.empty() or count.exists()"/>
         <xpath value="not(exists(f:countMax)) or exists(f:count)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-9"/>
@@ -5132,7 +5132,7 @@
         <human value="If there's an offset, there must be a when (and not C, CM, CD, CV)"/>
         <expression value="offset.empty() or (when.exists() and ((when in ('C' | 'CM' | 'CD' | 'CV')).not()))"/>
         <xpath value="not(exists(f:offset)) or exists(f:when)"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <constraint>
         <key value="tim-10"/>
@@ -5140,7 +5140,7 @@
         <human value="If there's a timeOfDay, there cannot be a when, or vice versa"/>
         <expression value="timeOfDay.empty() or when.empty()"/>
         <xpath value="not(exists(f:timeOfDay)) or not(exists(f:when))"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -5853,7 +5853,7 @@
         <severity value="warning"/>
         <human value="date SHALL contain a long date (YYYY-MM-DDThh:mm:ss+zz:zz)"/>
         <expression value="empty() or toString().length()=25"/>
-        <source value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest"/>
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
@@ -6565,7 +6565,11 @@
       </base>
       <type>
         <code value="Annotation"/>
-        <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-coded-annotation|2.2.0"/>
+        <profile value="https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-coded-annotation|2.2.0">
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints">
+            <valueCode value="full"/>
+          </extension>
+        </profile>
       </type>
       <constraint>
         <key value="ele-1"/>

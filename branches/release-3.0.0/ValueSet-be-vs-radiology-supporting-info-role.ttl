@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "be-vs-radiology-supporting-info-role"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-radiology-supporting-info-role</b></p><a name=\"be-vs-radiology-supporting-info-role\"> </a><a name=\"hcbe-vs-radiology-supporting-info-role\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-radiology-supporting-info-role.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role</code></a><span title=\"Version is explicitly stated to be 3.0.0\"> version ?3.0.0</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-radiology-supporting-info-role</b></p><a name=\"be-vs-radiology-supporting-info-role\"> </a><a name=\"hcbe-vs-radiology-supporting-info-role\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-be-cs-radiology-supporting-info-role.html\"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?3.0.0</span></li></ul></div>"
   ] ;
   fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role"] ;
   fhir:ValueSet.version [ fhir:value "3.0.0"] ;
@@ -18,7 +18,7 @@
   fhir:ValueSet.title [ fhir:value "eReferral Radiology SupportingInfo Role ValueSet"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-10-28T14:55:19+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-10-29T04:33:29+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "Riziv-Inami Platform"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;
@@ -55,8 +55,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0 ;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role" ] ;
-       fhir:ValueSet.compose.include.version [ fhir:value "3.0.0" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role" ]
      ]
   ] .
 

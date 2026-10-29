@@ -75,18 +75,18 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
     "profile" : ["https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"]
   },
   "extension" : [{
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period",
     "valuePeriod" : {
       "start" : "2026-02-18",
       "end" : "2026-12-31"
     }
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-feedback-to-prescriber",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-feedback-to-prescriber",
     "valueBoolean" : false
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-performer-type",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-performer-type",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
@@ -95,7 +95,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
     }
   },
   {
-    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-performer-type",
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-performer-type",
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
