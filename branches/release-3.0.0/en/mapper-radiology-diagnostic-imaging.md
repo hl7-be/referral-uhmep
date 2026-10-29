@@ -7,7 +7,7 @@
 
 ## Diagnostic Imaging
 
-Prescription type code: diagnostic imaging prescription type from [`be-vs-prescription-type`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type).
+Prescription type code: diagnostic imaging prescription type from [`be-vs-prescription-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-prescription-type.html).
 
 Example: [example-drp-clinical-imaging](ServiceRequest-example-drp-clinical-imaging.md).
 
@@ -34,17 +34,17 @@ This table maps the business fields to the corresponding FHIR elements.
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| Prescription type | `ServiceRequest.category[prescriptionType]` | ````{ "category": [ { "coding": [ { "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type", "code": "diagnostic-imaging-appendix-82" } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type`](https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type)
+| Prescription type | `ServiceRequest.category[prescriptionType]` | ````{ "category": [ { "coding": [ { "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type", "code": "diagnostic-imaging-appendix-82" } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html)
 * code: `diagnostic-imaging-appendix-82`
-* binding: [`be-vs-prescription-type`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type)
+* binding: [`be-vs-prescription-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-prescription-type.html)
  |
-| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "code": "363679005", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
+| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "code": "363679005", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
 * code: `363679005`
  |
-| Track | `ServiceRequest.category[track]` | ````{ "category": [ { "coding": [ { "code": "ambulatory", "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track" } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track`](https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track)
-* binding: [`be-vs-request-track`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track)
+| Track | `ServiceRequest.category[track]` | ````{ "category": [ { "coding": [ { "code": "ambulatory", "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track" } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-request-track.html)
+* binding: [`be-vs-request-track`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-request-track.html)
  |
-| Requested imaging | `ServiceRequest.code` | ````{ "code": { "coding": [ { "code": "77477000", "system": "http://snomed.info/sct" } ] } }```` | * binding: [`DiagnosticImagingProcedure`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure)
+| Requested imaging | `ServiceRequest.code` | ````{ "code": { "coding": [ { "code": "77477000", "system": "http://snomed.info/sct" } ] } }```` | * binding: [`DiagnosticImagingProcedure`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/ValueSet-be-vs-diagnostic-imaging-procedure.html)
  |
 | Priority | `ServiceRequest.priority` | ````{ "priority": "urgent" }```` | * binding: [`ImagingPriority`](https://www.ehealth.fgov.be/standards/fhir/referral/ValueSet/be-vs-imaging-priority)
  |

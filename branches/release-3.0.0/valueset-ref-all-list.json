@@ -12,8 +12,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -28,8 +28,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -75,8 +75,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -91,8 +91,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -106,10 +106,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-ereferral-imaging-attention-conditions-response.html" : "EReferralImagingAttentionConditionsResponse",
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-imaging-attention-conditions-response.html" : "EReferralImagingAttentionConditionsResponse",
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -124,8 +124,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -140,8 +140,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
@@ -170,8 +170,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
@@ -229,8 +229,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -260,8 +260,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -294,8 +294,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
@@ -310,8 +310,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
@@ -326,8 +326,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/timing-abbreviation",
@@ -372,8 +372,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-imaging-modality",
@@ -410,8 +410,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/ValueSet/be-vs-request-track",
@@ -435,8 +435,8 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition",
@@ -484,8 +484,8 @@
     "uses" : {
     },
     "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81",
-    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-care-requested",

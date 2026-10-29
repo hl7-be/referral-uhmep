@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
   "version" : "3.0.0",
   "name" : "EReferralServiceRequestDiagnosticImaging",
   "status" : "draft",
-  "date" : "2026-10-29T04:45:11+00:00",
+  "date" : "2026-10-29T06:41:01+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

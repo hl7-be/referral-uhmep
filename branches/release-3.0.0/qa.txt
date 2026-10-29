@@ -1,10 +1,10 @@
 EReferral : Validation Results
 =========================================
 
-err = 39, warn = 96, info = 54, broken links = 0
+err = 25, warn = 60, info = 54, broken links = 0
 IG Publisher Version: 3.0.1
-Generated Thu Oct 29 04:51:40 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
- Build Errors : 8 / 60 / 1
+Generated Thu Oct 29 06:47:13 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
+ Build Errors : 0 / 24 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-snomed-designation : 0 / 3 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
@@ -45,8 +45,8 @@ Generated Thu Oct 29 04:51:40 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ere
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-08 : 0 / 0 / 13
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-09 : 0 / 0 / 14
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-10 : 0 / 0 / 13
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept : 2 / 0 / 2
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role : 2 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role : 0 / 0 / 2
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-annex-81 : 0 / 2 / 3
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-imaging-attention-conditions-response : 0 / 0 / 3
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-servicerequest-diagnosticimaging : 1 / 1 / 17
@@ -55,7 +55,7 @@ Generated Thu Oct 29 04:51:40 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ere
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-condition : 0 / 1 / 2
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-procedure : 17 / 2 / 12
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-ereferral-snomed-designation : 0 / 1 / 1
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure : 2 / 1 / 4
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure : 0 / 1 / 4
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-pss-qsi-indication : 0 / 1 / 3
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-radiology-supporting-info-role : 0 / 1 / 1
@@ -66,55 +66,11 @@ Generated Thu Oct 29 04:51:40 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ere
 WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[4].url: The correct canonical URL for this dependency is https://www.ehealth.fgov.be/standards/fhir/drp
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 816 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source is not well formed: Found "</div>" expecting "</h2>" at line 352 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 354 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 355 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 356 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 357 column 9
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The page has more than one top level heading: <h2> (no text) is at the same level as the first heading on the page (<h2> 'Extension: CodeableConcept Extension for Reference - Chan...' (id=root)). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.profile.history.html: The html source has duplicate element ids: root. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 960 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.profile.history.html: The html source is not well formed: Found "</div>" expecting "</h2>" at line 352 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 354 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 355 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 356 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 357 column 9
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.profile.history.html: The page has more than one top level heading: <h2> (no text) is at the same level as the first heading on the page (<h2> 'Extension: eReferral Radiology SupportingInfo Role - Chan...' (id=root)). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.profile.history.html: The html source has duplicate element ids: root. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 4750 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.profile.history.html: The html source is not well formed: Found "</div>" expecting "</h2>" at line 362 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 364 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 365 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 366 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 367 column 9
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.profile.history.html: The page has more than one top level heading: <h2> (no text) is at the same level as the first heading on the page (<h2> 'Resource Profile: EReferralAnnex81 - Change History' (id=root)). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.profile.history.html: The html source has duplicate element ids: root. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 2159 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.profile.history.html: The html source is not well formed: Found "</div>" expecting "</h2>" at line 352 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 354 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 355 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 356 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 357 column 9
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.profile.history.html: The page has more than one top level heading: <h2> (no text) is at the same level as the first heading on the page (<h2> 'Resource Profile: EReferralImagingAttentionConditionsResp...' (id=root)). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.profile.history.html: The html source has duplicate element ids: root. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 7330 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.profile.history.html: The html source is not well formed: Found "</div>" expecting "</h2>" at line 362 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 364 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 365 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 366 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 367 column 9
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.profile.history.html: The page has more than one top level heading: <h2> (no text) is at the same level as the first heading on the page (<h2> 'Resource Profile: EReferralServiceRequestDiagnosticImagin...' (id=root)). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.profile.history.html: The html source has duplicate element ids: root. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 5508 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.profile.history.html: The html source is not well formed: Found "</div>" expecting "</h2>" at line 362 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 364 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 365 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 366 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.profile.history.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 367 column 9
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.profile.history.html: The page has more than one top level heading: <h2> (no text) is at the same level as the first heading on the page (<h2> 'Resource Profile: EReferralServiceRequestNursing - Change...' (id=root)). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.profile.history.html: The html source has duplicate element ids: root. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/glossary.html: The page has more than one top level heading: <h2> 'Business Terms' (id=business-terms) is at the same level as the first heading on the page (<h2> 'Glossary'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/output/en/glossary.html: The page has more than one top level heading: <h2> 'FHIR and Technical Terms' (id=fhir-and-technical-terms) is at the same level as the first heading on the page (<h2> 'Glossary'). A page must have exactly one top level heading, with every other heading beneath it (WCAG compliance test)
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/index.html: Illegal HTML: Illegal HTML element: section
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 175
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 9
@@ -300,15 +256,11 @@ INFORMATION: ServiceRequest/example-pss-radiology-scenario-10: ServiceRequest.co
 
 
 == fsh-generated/resources/StructureDefinition-be-ext-codeable-concept.json ==
-ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept'): Conformance resource /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept.json - the canonical URL (https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-codeable-concept) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept). Use the special-url parameter if you really mean for it not to match
 INFORMATION: Resource: The resource StructureDefinition/be-ext-codeable-concept could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept: URL Mismatch https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-codeable-concept vs https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept
 
 
 == fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role.json ==
-ERROR: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role'): Conformance resource /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role.json - the canonical URL (https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-radiology-supporting-info-role) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role). Use the special-url parameter if you really mean for it not to match
 INFORMATION: Resource: The resource StructureDefinition/be-ext-radiology-supporting-info-role could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role: URL Mismatch https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/be-ext-radiology-supporting-info-role vs https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role
 
 
 == fsh-generated/resources/StructureDefinition-ereferral-annex-81.json ==
@@ -394,11 +346,9 @@ WARNING: Resource: The resource ValueSet/be-vs-ereferral-snomed-designation shou
 
 
 == fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.json ==
-ERROR: ValueSet.where(url = 'https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure'): Conformance resource /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.json - the canonical URL (https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure) does not match the URL (https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure). Use the special-url parameter if you really mean for it not to match
 INFORMATION: ValueSet.compose.include[1].valueSet[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 3.0.0 from choices of 1.1.1 (be.smals.fhir.drp-fix#1.1.1), 3.0.0 (inami.fhir.be.ereferral#3.0.0)
 WARNING: Resource: The resource ValueSet/be-vs-hybrid-diagnostic-imaging-procedure should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 INFORMATION: ValueSet.where(id = 'be-vs-hybrid-diagnostic-imaging-procedure'): The value set expansion is too large, and only a subset has been displayed
-ERROR: /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure: URL Mismatch https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure vs https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure
 
 
 == fsh-generated/resources/ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.json ==
