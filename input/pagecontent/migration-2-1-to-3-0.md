@@ -135,13 +135,3 @@ Do not silently remove or replace clinical codes to eliminate QA errors. Confirm
 | Privacy | Verify pseudonymized identifiers, encrypted free text and matching key references; never substitute real patient data into public fixtures. |
 | Terminology | Test with the target edition and package versions; distinguish invalid codes from unavailable terminology validation. |
 | Retry and concurrent updates | Record behavior when an execution is already completed, an assignment was removed or the resource changes between reads. No new retry/idempotency guarantee is established by this page. |
-
-### Cutover and Open Decisions
-
-1. Agree the environment-specific API release and package baseline with the platform owner.
-2. Revalidate stored test fixtures and generated payloads against the target profiles; do not bulk-rewrite historical production resources without an agreed policy.
-3. Execute the regression checklist and capture responses and read-back resource states using non-identifying data.
-4. Confirm operational terminology support, encrypted-text wire-format consistency and any known validation limitations before sign-off. The current QA includes terminology, extension-context and FHIRPath issues; a generated example is not a compatibility certificate.
-5. Agree partner coexistence, rollback and legacy-profile acceptance arrangements. No coexistence duration, production deployment date or automatic redirect policy is promised here.
-
-The future Referral IG migration and new canonical base require their own final mapping and effective release announcement. They must not be treated as prerequisites already effective in 3.0.0.
