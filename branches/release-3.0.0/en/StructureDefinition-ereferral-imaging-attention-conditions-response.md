@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-imaging
   "version" : "3.0.0",
   "name" : "EReferralImagingAttentionConditionsResponse",
   "status" : "draft",
-  "date" : "2026-10-29T07:36:53+00:00",
+  "date" : "2026-10-29T08:00:07+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

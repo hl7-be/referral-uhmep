@@ -3,7 +3,7 @@ EReferral : Validation Results
 
 err = 25, warn = 60, info = 54, broken links = 0
 IG Publisher Version: 3.0.1
-Generated Thu Oct 29 07:43:08 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
+Generated Thu Oct 29 08:05:49 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
  Build Errors : 0 / 24 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-snomed-designation : 0 / 3 / 1

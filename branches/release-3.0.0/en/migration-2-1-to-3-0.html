@@ -293,7 +293,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#before-and-after-operation-examples" id="markdown-toc-before-and-after-operation-examples">Before and After Operation Examples</a></li>
   <li><a href="#terminology-and-validation-baseline" id="markdown-toc-terminology-and-validation-baseline">Terminology and Validation Baseline</a></li>
   <li><a href="#regression-test-checklist" id="markdown-toc-regression-test-checklist">Regression Test Checklist</a></li>
-  <li><a href="#cutover-and-open-decisions" id="markdown-toc-cutover-and-open-decisions">Cutover and Open Decisions</a></li>
 </ul>
 
 </div>
@@ -709,18 +708,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="cutover-and-open-decisions">Cutover and Open Decisions</h3>
-
-<ol>
-  <li>Agree the environment-specific API release and package baseline with the platform owner.</li>
-  <li>Revalidate stored test fixtures and generated payloads against the target profiles; do not bulk-rewrite historical production resources without an agreed policy.</li>
-  <li>Execute the regression checklist and capture responses and read-back resource states using non-identifying data.</li>
-  <li>Confirm operational terminology support, encrypted-text wire-format consistency and any known validation limitations before sign-off. The current QA includes terminology, extension-context and FHIRPath issues; a generated example is not a compatibility certificate.</li>
-  <li>Agree partner coexistence, rollback and legacy-profile acceptance arrangements. No coexistence duration, production deployment date or automatic redirect policy is promised here.</li>
-</ol>
-
-<p>The future Referral IG migration and new canonical base require their own final mapping and effective release announcement. They must not be treated as prerequisites already effective in 3.0.0.</p>
-
 
 
 </div>
@@ -767,7 +754,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Oct 29, 2026 07:36+0000">2026-10-29</span>
+          Generated <span title="Thu, Oct 29, 2026 08:00+0000">2026-10-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">
