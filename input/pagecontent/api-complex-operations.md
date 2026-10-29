@@ -30,7 +30,7 @@ When the assignment is internal to an organization, the new `BePerformerTask` mu
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
   "status": "ready",

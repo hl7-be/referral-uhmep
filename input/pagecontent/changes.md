@@ -7,6 +7,8 @@ This page documents the changes to the eReferral Implementation Guide specificat
 This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,
 and adds examples for the updated PSS/QSI radiology terminology.
 
+For payload compatibility checks, radiology state transitions, before/after scenarios and regression tests, see [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.html). The announced future migration to the Referral IG and the future canonical-base change are separate from this release.
+
 <details markdown="1">
 <summary><strong>View detailed v3.0.0 release notes</strong></summary>
 

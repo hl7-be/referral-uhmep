@@ -16,7 +16,7 @@ Independent professional:
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
   "status": "in-progress",
@@ -45,7 +45,7 @@ Internal professional represented by an organization:
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
   "status": "in-progress",

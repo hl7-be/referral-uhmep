@@ -10,13 +10,15 @@ This rewrite is a technical compatibility step. It does not change the clinical 
 
 The rewriting applies to the profile URLs declared on incoming `ServiceRequest` resources. When one of the supported eHealth DRP profile URLs is present in `ServiceRequest.meta.profile`, the gateway replaces it with the matching eReferral profile URL.
 
-The currently supported mappings are:
+The following mappings are configured in the gateway source for this release. Confirm that the target environment uses the same configuration before relying on legacy-profile compatibility.
 
 | Incoming eHealth DRP profile | Internal eReferral profile |
 | --- | --- |
-| `https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-diagnosticimaging` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging` |
-| `https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-nursing` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing` |
-| `https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-annex-81` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81` |
+| `https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-diagnosticimaging` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging` |
+| `https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-nursing` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing` |
+| `https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81` |
+
+An incoming eReferral profile already uses the validation target and does not require this rewrite. Other URLs, including similarly named URLs under `/referral/`, are not aliases supplied by this table. Their acceptance must not be inferred from package names or from the announced future namespace migration.
 
 ### Gateway Behavior
 
@@ -39,7 +41,7 @@ Incoming resource profile:
   "resourceType": "ServiceRequest",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-diagnosticimaging"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-diagnosticimaging"
     ]
   }
 }
