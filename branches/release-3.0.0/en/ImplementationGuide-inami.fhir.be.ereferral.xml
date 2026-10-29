@@ -1319,6 +1319,14 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="migration-2-1-to-3-0.html"/>
+        </extension>
+        <nameUrl value="migration-2-1-to-3-0.html"/>
+        <title value="Migration 2.1.0 to 3.0.0"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="topic-profiles-architecture.html"/>
         </extension>
         <nameUrl value="topic-profiles-architecture.html"/>

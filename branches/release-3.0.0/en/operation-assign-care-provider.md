@@ -22,7 +22,7 @@ This page describes how to assign a medical document to a healthcare professiona
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
   "status": "ready",
@@ -49,7 +49,7 @@ This page describes how to assign a medical document to a healthcare professiona
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-organization-task"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-organization-task"
     ]
   },
   "status": "ready",
@@ -78,7 +78,7 @@ The internal professional assignment references the existing organization assign
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
   "status": "ready",

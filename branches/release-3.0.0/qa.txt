@@ -3,7 +3,7 @@ EReferral : Validation Results
 
 err = 25, warn = 60, info = 54, broken links = 0
 IG Publisher Version: 3.0.1
-Generated Thu Oct 29 06:49:21 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
+Generated Thu Oct 29 07:43:08 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
  Build Errors : 0 / 24 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-snomed-designation : 0 / 3 / 1
@@ -65,12 +65,12 @@ Generated Thu Oct 29 06:49:21 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ere
 == n/a ==
 WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[4].url: The correct canonical URL for this dependency is https://www.ehealth.fgov.be/standards/fhir/drp
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 816 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 960 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 4750 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 2159 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 7330 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 5508 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 819 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 963 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 4753 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 2162 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 7333 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 5511 column 13
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/index.html: Illegal HTML: Illegal HTML element: section
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 175
 WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 9

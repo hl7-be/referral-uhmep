@@ -1835,6 +1835,15 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "migration-2-1-to-3-0.html"
+        }],
+        "nameUrl" : "migration-2-1-to-3-0.html",
+        "title" : "Migration 2.1.0 to 3.0.0",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "topic-profiles-architecture.html"
         }],
         "nameUrl" : "topic-profiles-architecture.html",

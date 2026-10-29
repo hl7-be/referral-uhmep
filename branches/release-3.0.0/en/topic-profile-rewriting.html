@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -128,6 +128,9 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1.0 to 3.0.0</a>
+      </li>
       <li>
         <a href="topic-profiles-architecture.html">Profiles Architecture</a>
       </li>
@@ -305,7 +308,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The rewriting applies to the profile URLs declared on incoming <code class="language-plaintext highlighter-rouge">ServiceRequest</code> resources. When one of the supported eHealth DRP profile URLs is present in <code class="language-plaintext highlighter-rouge">ServiceRequest.meta.profile</code>, the gateway replaces it with the matching eReferral profile URL.</p>
 
-<p>The currently supported mappings are:</p>
+<p>The following mappings are configured in the gateway source for this release. Confirm that the target environment uses the same configuration before relying on legacy-profile compatibility.</p>
 
 <table>
   <thead>
@@ -316,19 +319,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-diagnosticimaging</code></td>
+      <td><code class="language-plaintext highlighter-rouge">https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-diagnosticimaging</code></td>
       <td><code class="language-plaintext highlighter-rouge">https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging</code></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-nursing</code></td>
+      <td><code class="language-plaintext highlighter-rouge">https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-nursing</code></td>
       <td><code class="language-plaintext highlighter-rouge">https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing</code></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-annex-81</code></td>
+      <td><code class="language-plaintext highlighter-rouge">https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81</code></td>
       <td><code class="language-plaintext highlighter-rouge">https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81</code></td>
     </tr>
   </tbody>
 </table>
+
+<p>An incoming eReferral profile already uses the validation target and does not require this rewrite. Other URLs, including similarly named URLs under <code class="language-plaintext highlighter-rouge">/referral/</code>, are not aliases supplied by this table. Their acceptance must not be inferred from package names or from the announced future namespace migration.</p>
 
 <h3 id="gateway-behavior">Gateway Behavior</h3>
 
@@ -352,7 +357,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ServiceRequest"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-referral-servicerequest-diagnosticimaging"</span><span class="w">
+      </span><span class="s2">"https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-diagnosticimaging"</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -438,7 +443,7 @@ not provide compatibility for a resource that fails that profile’s constraints
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Oct 29, 2026 06:43+0000">2026-10-29</span>
+          Generated <span title="Thu, Oct 29, 2026 07:36+0000">2026-10-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

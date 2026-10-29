@@ -29,6 +29,7 @@
 * [Consult or Search Medical Documents](en/operation-consult-search-medical-documents.md)
 * [Visibility & Blacklisting](en/topic-visibility-blacklisting.md)
 * [Glossary](en/glossary.md)
+* [Migration 2.1.0 to](en/migration-2-1-to-3-0.md)
 * [Nursing](en/mappings-nursing.md)
 * [Diagnostic Imaging](en/mapper-radiology-diagnostic-imaging.md)
 * [Record Execution End](en/operation-record-execution-end.md)

@@ -41,6 +41,7 @@ The current scope is focused on:
 | | |
 | :--- | :--- |
 | [Guidance](guidance.md) | Implementation rules and modelling choices used across the local profiles. |
+| [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.md) | Payload compatibility checks, radiology transitions, terminology baseline and regression tests. |
 | [API Integration](api-integration.md) | Authentication, identifiers, pseudonymization, validations, and errors. |
 | [API Operations](api-operations.md) | Operation-by-operation map, with allowed roles and links to the error-code workbook. |
 | [Access Matrix](operation-access-matrix.md) | Roles, INAMI access matrix, suspension, and search-filter access control. |

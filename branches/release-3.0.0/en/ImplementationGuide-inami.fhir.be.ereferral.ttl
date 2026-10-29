@@ -1919,6 +1919,16 @@
          fhir:Element.extension [
            fhir:index -1 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "migration-2-1-to-3-0.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "migration-2-1-to-3-0.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Migration 2.1.0 to 3.0.0" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
            fhir:Extension.valueUrl [ fhir:value "topic-profiles-architecture.html" ]
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-profiles-architecture.html" ] ;
