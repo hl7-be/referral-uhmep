@@ -42,7 +42,7 @@ Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imagi
   "title" : "eReferral Radiology SupportingInfo Role ValueSet",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-29T06:41:01+00:00",
+  "date" : "2026-10-29T06:43:17+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

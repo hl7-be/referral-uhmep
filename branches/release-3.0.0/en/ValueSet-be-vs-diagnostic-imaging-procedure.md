@@ -45,7 +45,7 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
   "title" : "eReferral/PSS Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-29T06:41:01+00:00",
+  "date" : "2026-10-29T06:43:17+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

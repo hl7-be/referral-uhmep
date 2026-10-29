@@ -7,8 +7,8 @@
   "status" : "draft",
   "package-id" : "inami.fhir.be.ereferral",
   "ig-ver" : "3.0.0",
-  "date" : "Thu, 29 Oct, 2026 06:41:01 +0000",
-  "dateISO8601" : "2026-10-29T06:41:01+00:00",
+  "date" : "Thu, 29 Oct, 2026 06:43:17 +0000",
+  "dateISO8601" : "2026-10-29T06:43:17+00:00",
   "errs" : 25,
   "warnings" : 60,
   "hints" : 54,
@@ -17,5 +17,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 3436851648
+  "maxMemory" : 2409803512
 }

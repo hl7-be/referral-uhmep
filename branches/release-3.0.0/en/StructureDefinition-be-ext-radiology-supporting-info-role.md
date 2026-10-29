@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-radiology-
   "name" : "BeRadiologySupportingInfoRole",
   "title" : "eReferral Radiology SupportingInfo Role",
   "status" : "draft",
-  "date" : "2026-10-29T06:41:01+00:00",
+  "date" : "2026-10-29T06:43:17+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

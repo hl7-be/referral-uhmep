@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "eReferral Designation Use",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-10-29T06:41:01+00:00",
+  "date" : "2026-10-29T06:43:17+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
