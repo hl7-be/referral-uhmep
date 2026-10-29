@@ -2,7 +2,7 @@ This page defines the terminology used throughout the eReferral Implementation G
 
 Support contacts, certificates, required headers, authentication details, and API entry points are documented on the [Technical](technical.html) page.
 
-## Business Terms
+### Business Terms
 
 | Term | Definition |
 | --- | --- |
@@ -18,7 +18,7 @@ Support contacts, certificates, required headers, authentication details, and AP
 | Validity period | The eReferral-defined period during which the prescribed care may be performed, expressed through `validity.start` and `validity.end` or `validity.latest`. See [API Integration – Date and Validity Computation](api-integration.html#date-and-validity-computation). |
 | Prescription extension | The creation of a new prescription that supersedes and extends a previous prescription. The new `ServiceRequest` references the original one through `ServiceRequest.replaces`. See [Prescription Extension](topic-prescription-lifecycle-extension.html). |
 
-## FHIR and Technical Terms
+### FHIR and Technical Terms
 
 | Term | Definition |
 | --- | --- |

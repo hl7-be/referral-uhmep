@@ -66,7 +66,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>sampling</code></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type"><code>be-vs-nursing-prescription-technical-type</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>sampling</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-nursing-prescription-technical-type.html"><code>be-vs-nursing-prescription-technical-type</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Discipline</td>
@@ -83,7 +83,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
     </tr>
         <tr>
       <td>Validity period</td>
@@ -160,7 +160,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>78014005</code></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-sample-substance-type"><code>be-vs-sample-substance-type</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>78014005</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-sample-substance-type.html"><code>be-vs-sample-substance-type</code></a></li></ul></td>
     </tr>
         <tr>
       <td>This field appears when "Sample type" = "Other"</td>
@@ -177,7 +177,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>78014005</code></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-sample-substance-type"><code>be-vs-sample-substance-type</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>78014005</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-sample-substance-type.html"><code>be-vs-sample-substance-type</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Other:</td>
@@ -202,7 +202,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>78277001</code></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>78277001</code></li></ul></td>
     </tr>
         <tr>
       <td>Body laterality</td>
@@ -228,7 +228,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-laterality"><code>be-vs-laterality</code></a> (required)</li></ul></td>
+      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-laterality.html"><code>be-vs-laterality</code></a> (required)</li></ul></td>
     </tr>
         <tr>
       <td>Body topography</td>
@@ -258,7 +258,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography"><code>be-vs-body-topography</code></a> (preferred)</li><li>Note: this extension's declared FHIR context does not list <code>ServiceRequest.bodySite</code> explicitly (only <code>Condition</code>/<code>Observation</code>/<code>DeviceUseStatement</code>/<code>Procedure.bodySite</code>); to be validated against the IG Publisher build.</li></ul></td>
+      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-body-topography.html"><code>be-vs-body-topography</code></a> (preferred)</li><li>Note: this extension's declared FHIR context does not list <code>ServiceRequest.bodySite</code> explicitly (only <code>Condition</code>/<code>Observation</code>/<code>DeviceUseStatement</code>/<code>Procedure.bodySite</code>); to be validated against the IG Publisher build.</li></ul></td>
     </tr>
         <tr>
       <td>Diagnosis</td>
@@ -466,7 +466,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>contraindication</code></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-note-types.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>contraindication</code></li></ul></td>
     </tr>
         <tr>
       <td>General remarks</td>
@@ -491,7 +491,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>general-remarks</code></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-note-types.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>general-remarks</code></li></ul></td>
     </tr>
         <tr>
       <td>Feedback required</td>

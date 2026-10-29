@@ -8,10 +8,10 @@ If you're a software developer or integrator building a system that sends or rec
 
 ## ⚡ Quick start
 
-**Start here** → [API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/api-integration.html)  
+**Start here** → [API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/api-integration.html)  
 **Then** → Browse the operation pages for your use case (Consult, Create, Assign, etc.)  
 **Reference** → Use the mapper pages to understand data field mapping  
-**Need help?** → Check [Technical References](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/technical.html) and support contacts
+**Need help?** → Check [Technical References](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/technical.html) and support contacts
 
 ---
 
@@ -38,49 +38,49 @@ It does **not** cover:
 
 | Use case | Documentation |
 |----------|---|
-| Look up existing prescriptions or proposals | [Consult / Search Medical Documents](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-consult-search-medical-documents.html) |
-| Send a new prescription or Annex 81 proposal | [Create Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-create-medical-document.html) |
-| Assign a prescription to a care provider or organization | [Assign Care Provider](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-assign-care-provider.html) |
-| Record that execution has started | [Record Execution Start](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-record-execution-start.html) |
-| Record that execution has ended | [Record Execution End](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-record-execution-end.html) |
-| Record an interruption during execution | [Record Execution Interruption](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-record-execution-interruption.html) |
-| Complete a prescription | [Complete Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-complete-medical-document.html) |
-| Cancel a prescription | [Cancel Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-cancel-medical-document.html) |
-| Unassign a care provider | [Unassign Care Provider](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-unassign-care-provider.html) |
+| Look up existing prescriptions or proposals | [Consult / Search Medical Documents](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-consult-search-medical-documents.html) |
+| Send a new prescription or Annex 81 proposal | [Create Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-create-medical-document.html) |
+| Assign a prescription to a care provider or organization | [Assign Care Provider](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-assign-care-provider.html) |
+| Record that execution has started | [Record Execution Start](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-record-execution-start.html) |
+| Record that execution has ended | [Record Execution End](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-record-execution-end.html) |
+| Record an interruption during execution | [Record Execution Interruption](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-record-execution-interruption.html) |
+| Complete a prescription | [Complete Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-complete-medical-document.html) |
+| Cancel a prescription | [Cancel Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-cancel-medical-document.html) |
+| Unassign a care provider | [Unassign Care Provider](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-unassign-care-provider.html) |
 
 ### **Data mappings (fields → FHIR)**
 
 Each prescription type has a mapper page showing how business fields map to FHIR elements:
 
-- [**Radiology** (Diagnostic Imaging)](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-radiology-diagnostic-imaging.html)
+- [**Radiology** (Diagnostic Imaging)](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-radiology-diagnostic-imaging.html)
 - **Nursing care:**
-  - [Generic Nursing](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-generic.html)
-  - [Medication Preparation (Annex 81)](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-annex81-medication-preparation.html)
-  - [Bloodletting](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-bloodletting.html)
-  - [Chronic Dialysis](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-chronic-dialysis.html)
-  - [Glycemic Test](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-glycemic-test.html)
-  - [Hygienic Care](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-hygienic-care.html)
-  - [Medication Prefill (not refunded)](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-medication-prefill-not-refunded.html)
-  - [Sampling](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-sampling.html)
-  - [Diabetes Education](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/mapper-nursing-diabetes-education-start-trajectory.html) (multiple variants)
+  - [Generic Nursing](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-generic.html)
+  - [Medication Preparation (Annex 81)](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-annex81-medication-preparation.html)
+  - [Bloodletting](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-bloodletting.html)
+  - [Chronic Dialysis](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-chronic-dialysis.html)
+  - [Glycemic Test](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-glycemic-test.html)
+  - [Hygienic Care](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-hygienic-care.html)
+  - [Medication Prefill (not refunded)](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-medication-prefill-not-refunded.html)
+  - [Sampling](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-sampling.html)
+  - [Diabetes Education](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/mapper-nursing-diabetes-education-start-trajectory.html) (multiple variants)
 
 ### **Technical essentials**
 
-- [**Technical Overview**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/technical.html) — entry points, headers, reference documents, support contacts, certificates
-- [**Prescription Lifecycle**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/topic-prescription-lifecycle.html) — state transitions and status codes
-- [**Annex 81 Proposal Lifecycle**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/topic-prescription-lifecycle-proposal.html) — how proposals move from request → approval/rejection
-- [**Prescription Templates**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/topic-prescription-templates.html) — category codes and template structure
-- [**Access Control Matrix**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-access-matrix.html) — which roles can perform which operations
-- [**Visibility & Blacklisting**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/topic-visibility-blacklisting.html) — data filtering rules for different user types
+- [**Technical Overview**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/technical.html) — entry points, headers, reference documents, support contacts, certificates
+- [**Prescription Lifecycle**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/topic-prescription-lifecycle.html) — state transitions and status codes
+- [**Annex 81 Proposal Lifecycle**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/topic-prescription-lifecycle-proposal.html) — how proposals move from request → approval/rejection
+- [**Prescription Templates**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/topic-prescription-templates.html) — category codes and template structure
+- [**Access Control Matrix**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-access-matrix.html) — which roles can perform which operations
+- [**Visibility & Blacklisting**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/topic-visibility-blacklisting.html) — data filtering rules for different user types
 
 ### **Profiles & data structures**
 
-- [**All Profiles**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/artifacts.html#1-3-profile) — complete list with links to each profile's formal definition
-- [**Glossary**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/glossary.html) — key terms and concepts explained
+- [**All Profiles**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/artifacts.html) — complete list with links to each profile's formal definition
+- [**Glossary**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/glossary.html) — key terms and concepts explained
 
 ### **Troubleshooting & error handling**
 
-- [**Error Codes & Messages**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/error-codes.html) — what can go wrong and why, with error codes from the operation reference
+- [**Error Codes & Messages**](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/error-codes.html) — what can go wrong and why, with error codes from the operation reference
 - Each operation page lists the **Possible Error Codes** and their meanings
 
 ---
@@ -110,7 +110,7 @@ Each actor is identified by fixed formats:
 - **Care provider** (nurse, specialist): NIHII + SSIN.
 - **Organization**: 11-digit NIHII (Belgian business identifier for health orgs).
 
-See [API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/api-integration.html#identifiers) for exact formats.
+See [API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/api-integration.html#resource-identifiers-and-references) for exact formats.
 
 ### **Privacy: pseudonymization**
 
@@ -144,9 +144,9 @@ For integration questions or issues:
 
 This guide is organized as follows:
 
-1. **[API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/api-integration.html)** — Authentication, headers, request/response basics.
-2. **[API Operations](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/api-operations.html)** — List and overview of all operations (create, consult, assign, etc.).
-3. **[Complex Operations](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/api-complex-operations.html)** — Multi-step workflows (e.g., assign then record execution).
+1. **[API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/api-integration.html)** — Authentication, headers, request/response basics.
+2. **[API Operations](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/api-operations.html)** — List and overview of all operations (create, consult, assign, etc.).
+3. **[Complex Operations](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/api-complex-operations.html)** — Multi-step workflows (e.g., assign then record execution).
 4. **Operation pages** — Each operation in detail (create, consult, cancel, etc.).
 5. **Mapper pages** — Field-by-field mapping for each prescription type.
 6. **Topic pages** — Deep dives on lifecycle, profiles, visibility rules, etc.
@@ -157,15 +157,15 @@ This guide is organized as follows:
 
 ## 🚀 Getting started
 
-**Step 1:** Read [API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/api-integration.html) to understand how to authenticate and call the API.
+**Step 1:** Read [API Integration](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/api-integration.html) to understand how to authenticate and call the API.
 
 **Step 2:** Find your prescription type (e.g., Radiology, Nursing) and read its **mapper page** to see which fields you need to send.
 
-**Step 3:** Pick an operation you want to implement first (usually [Create Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/operation-create-medical-document.html)) and follow its detailed instructions.
+**Step 3:** Pick an operation you want to implement first (usually [Create Medical Document](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/operation-create-medical-document.html)) and follow its detailed instructions.
 
 **Step 4:** Build a JSON payload using the examples on the mapper page, then call the API.
 
-**Step 5:** If you hit an error, check [Error Codes](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-2-0-0/en/error-codes.html) and the **Possible Error Codes** section on each operation page.
+**Step 5:** If you hit an error, check [Error Codes](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/error-codes.html) and the **Possible Error Codes** section on each operation page.
 
 **Questions?** Post to the support email (see above) — they're there to help. 🙌
 

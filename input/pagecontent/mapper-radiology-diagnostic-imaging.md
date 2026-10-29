@@ -1,6 +1,6 @@
 {% raw %}
 
-Prescription type code: diagnostic imaging prescription type from [`be-vs-prescription-type`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type).
+Prescription type code: diagnostic imaging prescription type from [`be-vs-prescription-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-prescription-type.html).
 
 Example: [example-drp-clinical-imaging](ServiceRequest-example-drp-clinical-imaging.html).
 
@@ -50,7 +50,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>diagnostic-imaging-appendix-82</code></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type"><code>be-vs-prescription-type</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>diagnostic-imaging-appendix-82</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-prescription-type.html"><code>be-vs-prescription-type</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Discipline</td>
@@ -67,7 +67,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>363679005</code></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>363679005</code></li></ul></td>
     </tr>
         <tr>
       <td>Track</td>
@@ -84,7 +84,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track"><code>be-vs-request-track</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-request-track.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track</code></a></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-request-track.html"><code>be-vs-request-track</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Requested imaging</td>
@@ -99,7 +99,7 @@ This table maps the business fields to the corresponding FHIR elements.
     ]
   }
 }</code></pre></td>
-      <td><ul><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure"><code>DiagnosticImagingProcedure</code></a></li></ul></td>
+      <td><ul><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/release-3.0.0/en/ValueSet-be-vs-diagnostic-imaging-procedure.html"><code>DiagnosticImagingProcedure</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Priority</td>

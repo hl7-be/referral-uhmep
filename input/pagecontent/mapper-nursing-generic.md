@@ -60,7 +60,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>generic-nursing</code></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type"><code>be-vs-nursing-prescription-technical-type</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>generic-nursing</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-nursing-prescription-technical-type.html"><code>be-vs-nursing-prescription-technical-type</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Discipline</td>
@@ -77,7 +77,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
     </tr>
         <tr>
       <td>Validity period</td>
@@ -154,7 +154,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types</code></a></li><li>code: <code>preparation-and-administration-of-medication-for-psychiatric-patient</code></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-generic-care-types.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types</code></a></li><li>code: <code>preparation-and-administration-of-medication-for-psychiatric-patient</code></li></ul></td>
     </tr>
         <tr>
       <td>This field appears when "Care type" = "Other"</td>
@@ -171,7 +171,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types</code></a></li><li>code: <code>preparation-and-administration-of-medication-for-psychiatric-patient</code></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-generic-care-types.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types</code></a></li><li>code: <code>preparation-and-administration-of-medication-for-psychiatric-patient</code></li></ul></td>
     </tr>
         <tr>
       <td>Other:</td>
@@ -218,7 +218,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>404684003</code></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>404684003</code></li></ul></td>
     </tr>
         <tr>
       <td>Frequency</td>
@@ -355,7 +355,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>404684003</code></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>404684003</code></li></ul></td>
     </tr>
         <tr>
       <td>Contraindications</td>
@@ -401,7 +401,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>contraindication</code></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-note-types.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>contraindication</code></li></ul></td>
     </tr>
         <tr>
       <td>General remarks</td>
@@ -447,7 +447,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>general-remarks</code></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-note-types.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types</code></a></li><li>code: <code>general-remarks</code></li></ul></td>
     </tr>
         <tr>
       <td>Medical reason</td>
@@ -486,7 +486,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>404684003</code></li></ul></td>
+      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>404684003</code></li></ul></td>
     </tr>
         <tr>
       <td>Feedback required</td>
