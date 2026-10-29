@@ -19,6 +19,10 @@ This implementation guide defines the local eReferral FHIR profiles, examples, m
 **This Implementation Guide contains only demonstrative examples of terminology resources.**
 ValueSets and CodeSystems in this Implementation Guide are provided as examples only. The actual ValueSets and CodeSystems will be made available from a terminology package and can then be consulted in the FHIR terminology ecosystem.
 
+**Important: migration from the DRP IG to the Referral IG is planned for the next release.** Integrators must prepare to replace their DRP IG dependencies and references with the corresponding Referral IG artefacts. The final package versions, artefact mappings and transition arrangements remain to be confirmed in the release documentation.
+
+**Important: the canonical base URL is planned to change.** The current base `https://www.riziv-inami.be/standards/fhir/ereferral/...` will move to `https://www.ehealth.fgov.be/standards/fhir/XXX/...`. The final name replacing `XXX` remains to be defined. This is a placeholder, not a canonical URL to use in implementations. The effective release and final URL mapping remain to be confirmed.
+
 **Technical scope only.**This Implementation Guide has a
 **technical purpose**: it helps integrators implement the eReferral FHIR API. It does
 **not**define, and is not the guarantor of, the

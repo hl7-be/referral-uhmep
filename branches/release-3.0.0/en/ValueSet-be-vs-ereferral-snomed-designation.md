@@ -46,7 +46,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "SNOMED CT eReferral Supplement Designations",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-29T04:33:29+00:00",
+  "date" : "2026-10-29T04:45:11+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

@@ -1,7 +1,7 @@
 {
   "version" : "3.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20261029043329",
+  "date" : "20261029044511",
   "name" : "inami.fhir.be.ereferral",
   "jurisdiction" : "urn:iso:std:iso:3166#BE"
 }
