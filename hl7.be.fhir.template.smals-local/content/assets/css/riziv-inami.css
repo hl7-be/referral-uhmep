@@ -768,7 +768,7 @@ a:focus {
 }
 
 #segment-content p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #segment-content table td p,
@@ -1388,7 +1388,7 @@ a:focus,
 #segment-content ol {
   max-width: var(--uhmep-text-width);
   color: var(--riziv-inami-text);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.55;
 }
 

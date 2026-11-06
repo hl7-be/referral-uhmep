@@ -33,22 +33,14 @@ Usage: #example
 * subject.identifier.value = "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}"
 * authoredOn = "2026-09-24T10:15:00+02:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)
-* reasonCode[0].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
-* reasonCode[0].text.extension[0].url = $be-ext-pseudonymization
-* reasonCode[0].text.extension[0].extension[0].url = "marker"
-* reasonCode[0].text.extension[0].extension[0].valueBoolean = true
-* reasonCode[0].text.extension[0].extension[1].url = "format"
-* reasonCode[0].text.extension[0].extension[1].valueCode = #encrypted
-* reasonCode[0].text.extension[0].extension[2].url = "version"
-* reasonCode[0].text.extension[0].extension[2].valuePositiveInt = 1
 * supportingInfo[safetyChecklist].reference = "#pss-radiology-scenario-05-checklist"
-* supportingInfo[safetyChecklist].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role"
+* supportingInfo[safetyChecklist].extension[role].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"
 * supportingInfo[safetyChecklist].extension[role].valueCode = #safety-checklist
 
 Instance: pss-radiology-scenario-05-checklist
 InstanceOf: EReferralImagingAttentionConditionsResponse
 Usage: #inline
-* questionnaire = "https://www.ehealth.fgov.be/standards/fhir/drp/Questionnaire/be-questionnaire-imaging-attention-conditions"
+* questionnaire = "https://www.ehealth.fgov.be/standards/fhir/referral/Questionnaire/be-questionnaire-imaging-attention-conditions"
 * status = #completed
 * authored = "2026-09-24T10:15:00+02:00"
 * item[0].linkId = "implants"
