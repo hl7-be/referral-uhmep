@@ -1,33 +1,41 @@
-This page documents the changes to the eReferral Implementation Guide specification.
+This page documents the changes proposed to the 4.0 target specification. It describes the intended integrator contract, not the current implementation or deployment status.
 
 ---
 
-### **2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements**
+### 2026-10-29 - v4.0.0-draft: Telemonitoring and Namespace Migration
 
-This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,
-and adds examples for the updated PSS/QSI radiology terminology.
+- Include the Telemonitoring medical prescription profile, mappings, vocabularies and example.
+- Define repeatable monitoring parameters and systolic/diastolic pulmonary artery pressure in the 4.0 target contract.
+- Use the published eHealth Referral package `hl7.fhir.be.referral#1.0.0` as the parent for 4.0; the 3.0 line retains its patched DRP dependency after DRP IG decommissioning.
+- Move the local canonical base provisionally to `https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral`.
+- Add a [3.0-to-4.0 migration guide](migration-3-0-to-4-0.html), including the outstanding gateway compatibility gap and regression checks.
 
-For payload compatibility checks, radiology state transitions, before/after scenarios and regression tests, see [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.html). The announced future migration to the Referral IG and the future canonical-base change are separate from this release.
+This is an internal review draft, not a production release announcement. The source comparison covers the locally available 3.0/4.0 branches selected for preparation; semantic review of the full multi-component delta is not complete.
 
 <details markdown="1">
-<summary><strong>View detailed v3.0.0 release notes</strong></summary>
+<summary><strong>View detailed 4.0.0-draft release notes</strong></summary>
 
-#### Radiology workflow clarifications
+#### Telemonitoring
 
-- **Remove an assignment on the ambulatory track:** An assignment may be removed while the radiology prescription is `READY` or `IN_PROGRESS` and its execution task is `ready` or `in-progress`. The task is deleted and the prescription returns to `READY`. Other tracks and prescription types retain their applicable removal rules.
-- **Complete execution on the urgency track:** Radiology execution may be completed while the prescription remains in business state `READY`. When completing an existing execution, the backend starts the caregiver activity before completing it.
-- **Cancel a radiology prescription:** A Patient may cancel a radiology prescription while its business state is `PENDING` or `READY`. This rule is specific to radiology.
+The target contract defines the chronic-heart-failure medical prescription, its monitoring-plan extension, mappings and example. This specification change does not itself announce feature activation or runtime availability.
 
-#### FHIR profile constraints and examples
+The target parameter model uses lists for body weight, systolic/diastolic blood pressure and heart rate, and includes systolic/diastolic pulmonary artery pressure. Integrations targeting 4.0 must preserve repeated threshold ranges and body-weight change ratios. Runtime support is a separate implementation requirement.
 
-- The Annex 81 technical-type category and the nursing and diagnostic-imaging prescription-type categories are explicitly required.
-- `ServiceRequest.reasonCode` is required by the nursing and diagnostic-imaging profiles. Updated examples represent free-text reasons with the pseudonymization extension.
-- The prior diagnostic-imaging example now uses an active request, and the urgency requester example uses the PractitionerRole identifier expected by its references.
+Known implementation gaps remain: the inspected backend requires at least one metric while the target profile permits zero monitoring-plan extensions, and runtime handling of `targetRange` and `sustainedFor` is unverified. See [Telemonitoring](telemonitoring.html).
 
-#### Radiology terminology and scenarios
+#### Referral Parent
 
-- PSS/QSI indication and diagnostic-imaging procedure terminology is updated, including the corresponding value sets used by the diagnostic-imaging profile.
-- Ten illustrative PSS radiology business-case examples demonstrate the updated terminology in diagnostic-imaging requests.
+The draft resolves the published Referral package and uses its `/referral/` profile canonicals. The corresponding internal IG branch already carried part of this migration before this preparation. This is a parent-package and identifier change, not a blanket rename of terminology or an automatic transformation of clinical payloads.
+
+#### Local Canonical Base
+
+Locally owned artefacts use the new provisional eHealth base; the local package ID remains `inami.fhir.be.ereferral`. Historical documentation and the description of actual gateway rewrite targets preserve the old URLs deliberately. No automatic redirect or old-profile acceptance is promised.
+
+#### Application Compatibility and Review Scope
+
+The target gateway still configures legacy DRP ServiceRequest rewrites to the old local canonical. Runtime alignment with the new namespace remains a prerequisite to claiming API compatibility. The Web API contract repository separately adds OpenAPI v2 alongside its renamed v1 contract; this does not change the FHIR R4 version.
+
+Other application and frontend changes remain under review and are not silently classified as having no integration impact. The [migration guide](migration-3-0-to-4-0.html) separates verified changes from outstanding checks.
 
 </details>
 
@@ -79,6 +87,13 @@ The Implementation Guide remains the single authoritative source for supported w
 structures, profiles, validation rules, and integration examples. The retired PDF Cookbook must
 not be used as the reference for new development. This consolidation was introduced in v2.0.0;
 v2.1.0 reinforces the migration recommendation without duplicating the Cookbook content.
+
+#### Deployed but unavailable capabilities
+
+Heart Failure Medical Orders, Technical Orders, Medical Order consultation, and Heart Failure
+parameter management are deployed behind feature flags but remain disabled in acceptance and
+production. They are not part of the public API capabilities in this release and will be documented
+as available only when activated in a future release.
 
 </details>
 

@@ -3,8 +3,6 @@ Parent: BeServiceRequestDiagnosticImaging
 Id: ereferral-servicerequest-diagnosticimaging
 Description: "The diagnostic imaging profile. eReferral version."
 * ^status = #draft
-* category[prescriptionType] 1..1
-* reasonCode 1..1
 
 // --------------------------------------------------------
 // Contained
@@ -23,17 +21,13 @@ Description: "The diagnostic imaging profile. eReferral version."
 
 
 // --------------------------------------------------------
-// SupportingInfo slices are defined by the parent (be-referral-servicerequest-diagnosticimaging)
-// --------------------------------------------------------
-* supportingInfo[safetyChecklist] 1..1
-
-// --------------------------------------------------------
-// Prior results / prior request
+// Prior request
 // --------------------------------------------------------
 * supportingInfo[priorResults].extension contains
     BeRadiologySupportingInfoRole named role 1..1
 * supportingInfo[priorResults].extension[role].valueCode = #prior-results
 
+* supportingInfo[priorRequest] only Reference(ServiceRequest)
 * supportingInfo[priorRequest].extension contains
     BeRadiologySupportingInfoRole named role 1..1
 * supportingInfo[priorRequest].extension[role].valueCode = #prior-request
@@ -55,6 +49,7 @@ Description: "The diagnostic imaging profile. eReferral version."
     BeRadiologySupportingInfoRole named role 1..1
 * supportingInfo[attentionCondition].extension[role].valueCode = #attention-condition
 
+* supportingInfo[patientCondition] only Reference(Condition)
 * supportingInfo[patientCondition].extension contains
     BeRadiologySupportingInfoRole named role 1..1
 * supportingInfo[patientCondition].extension[role].valueCode = #patient-condition

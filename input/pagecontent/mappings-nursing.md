@@ -16,8 +16,23 @@ This page groups the business field mappings for nursing prescription types.
 | Sampling | [Sampling](mapper-nursing-sampling.html) | [example-drp-nursing-sampling](ServiceRequest-example-drp-nursing-sampling.html) |
 | Annex 81 medication preparation | [Annex 81 medication preparation](mapper-nursing-annex81-medication-preparation.html) | [example-drp-nursing-med-preparation-appendix-81](ServiceRequest-example-drp-nursing-med-preparation-appendix-81.html) |
 
+{% include terminology-url-prefixes.html %}
 
+### Nursing terminology
 
+| Artifact | Source | Used for | Used by mapping pages |
+| --- | --- | --- | --- |
+| [`be-vs-nursing-prescription-technical-type`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-nursing-prescription-technical-type.html) | eHealth branch build | Technical prescription type codes carried in `ServiceRequest.category[prescriptionType]`. | All nursing prescription pages. |
+| [`be-vs-nursing-care-requested`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-nursing-care-requested.html) | eHealth branch build | SNOMED CT nursing care requested in `ServiceRequest.code`. | All nursing prescription pages. |
+| [`be-cs-generic-care-types`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-generic-care-types.html) | eHealth branch build | Generic nursing care details represented in `ServiceRequest.orderDetail`. | [Generic nursing](mapper-nursing-generic.html). |
+| [`be-cs-glycemia-measurement-timing`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-glycemia-measurement-timing.html) / [`be-vs-glycemia-measurement-time`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-glycemia-measurement-time.html) | eHealth branch build | Timing of glycemia measurements. | [Glycemic test](mapper-nursing-glycemic-test.html). |
+| [`be-cs-diabetic-education-type`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-diabetic-education-type.html) | eHealth branch build | Diabetes education type and subtype coding. | Diabetes education pages. |
+| [`be-vs-session-type`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-session-type.html) / [`be-vs-session-type-extended`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-session-type-extended.html) | eHealth branch build | Session type coding for education activities. | Diabetes education pages. |
+| [`be-vs-educator-type`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-educator-type.html) | eHealth branch build | Healthcare professional types involved in education. | Diabetes education pages. |
+| [`be-vs-parameter-type`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-parameter-type.html) | eHealth branch build | Clinical parameter / vital sign measured by the nursing care. | [Parameters](mapper-nursing-parameters.html). |
+| [`be-vs-sample-substance-type`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-sample-substance-type.html) | eHealth branch build | Sample or substance type for sampling requests. | [Sampling](mapper-nursing-sampling.html). |
+| [`be-cs-note-types`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-note-types.html) / [`be-vs-note-type`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-note-type.html) | eHealth branch build | Typed clinical notes such as contraindication, medical reason, and general remarks. | Most nursing prescription pages. |
+| [`be-vs-annex81-care-requested`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-annex81-care-requested.html), [`be-vs-annex81-nursing-diagnosis`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-annex81-nursing-diagnosis.html), [`be-vs-annex81-medical-problem`](https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-annex81-medical-problem.html) | eHealth branch build | Annex 81 care, nursing diagnosis, and medical-problem coding. | [Annex 81 medication preparation](mapper-nursing-annex81-medication-preparation.html). |
 
 
 

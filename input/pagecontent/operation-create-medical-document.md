@@ -17,7 +17,7 @@ Use this variant when the connected healthcare professional is the requester.
   "resourceType": "ServiceRequest",
   "meta": {
     "profile": [
-      "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+      "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"
     ]
   },
   "status": "active",
@@ -50,7 +50,7 @@ Use this variant when an organization calls the API with an M2M token and create
   "resourceType": "ServiceRequest",
   "meta": {
     "profile": [
-      "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing"
+      "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"
     ]
   },
   "status": "active",
@@ -83,7 +83,7 @@ For an Annex 81 proposal, use the Annex 81 profile and `intent = proposal`.
   "resourceType": "ServiceRequest",
   "meta": {
     "profile": [
-      "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81"
+      "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-annex-81"
     ]
   },
   "status": "active",
