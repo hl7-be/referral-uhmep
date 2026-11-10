@@ -1,22 +1,7 @@
 Instance: example-drp-nursing-de-without-care-trajectory
 InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education without care trajectory"
-Description: "Example of diabetes education for patients without a care trajectory.
-
-Inputs and values used in this example:
-- Prescription type: diabetic-education-without-care-trajectory
-- Education code (SNOMED): 385805005
-- Education subtype (SNOMED): 211161000172108
-- Education type: diabetic-education-self-care
-- Validity start date: 2026-02-18
-- Timing:
-  * boundsDuration: 3 weeks
-  * count: 21
-  * frequency: 1
-  * period: 1 day
-- Feedback to prescriber: true
-- Notes:
-  * general-remarks"
+Description: "Diabetes self-care education prescription without a care trajectory."
 Usage: #example
 
 
@@ -42,7 +27,7 @@ Usage: #example
 * extension[0].valuePeriod.start = "2026-02-18"
 
 * extension[1].url = $be-ext-feedback-to-prescriber
-* extension[1].valueBoolean = true
+* extension[1].valueBoolean = false
 
 * status = #draft
 * intent = #order
@@ -68,7 +53,7 @@ Usage: #example
 * code.text.extension[0].extension[2].valuePositiveInt = 1
 
 // orderDetail (2 entries)
-* orderDetail[0].coding[0].system = "http://snomed.info/sct"
+* orderDetail[0].coding[0].system = $sct-version
 * orderDetail[0].coding[0].code = #211161000172108
 
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
@@ -87,13 +72,13 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 3
+* occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #wk
-* occurrenceTiming.repeat.count = 21
+* occurrenceTiming.repeat.boundsDuration.code = #a
+* occurrenceTiming.repeat.count = 10
 * occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
-* occurrenceTiming.repeat.periodUnit = #d
+* occurrenceTiming.repeat.periodUnit = #mo
 
 * authoredOn = "2026-02-18T14:13:08+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

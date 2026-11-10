@@ -49,7 +49,7 @@ The current scope is focused on:
 | --- | --- |
 | [Guidance](guidance.html) | Implementation rules and modelling choices used across the local profiles. |
 | [Migration 3.0 to 4.0](migration-3-0-to-4-0.html) | Referral and canonical migration, verified changes and regression checks. |
-| [Telemonitoring](telemonitoring.html) | Medical prescription profile, monitoring parameters and implementation boundaries. |
+| [Telemonitoring](domain-telemonitoring.html) | Medical prescription profile, monitoring parameters and implementation boundaries. |
 | [API Integration](api-integration.html) | Authentication, identifiers, pseudonymization, validations, and errors. |
 | [API Operations](api-operations.html) | Operation-by-operation map, with allowed roles and links to the error-code workbook. |
 | [Access Matrix](operation-access-matrix.html) | Roles, INAMI access matrix, suspension, and search-filter access control. |

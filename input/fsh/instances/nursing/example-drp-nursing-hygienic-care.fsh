@@ -1,19 +1,7 @@
 Instance: example-drp-nursing-hygienic-care
 InstanceOf: EReferralServiceRequestNursing
 Title: "Hygienic care"
-Description: "Example of hygienic nursing care.
-
-Inputs and values used in this example:
-- Prescription type: hygienic-care
-- Procedure code (SNOMED): 225964003
-- Validity start date: 2026-02-18
-- Timing:
-  * boundsDuration: 3 months
-  * count: 39
-  * frequency: 3
-  * period: 1 week
-- Notes:
-  * medical-reason"
+Description: "Nursing prescription for assistance with personal hygiene."
 Usage: #example
 
 
@@ -76,13 +64,16 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 3
+* occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #mo
-* occurrenceTiming.repeat.count = 39
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.boundsDuration.code = #a
+* occurrenceTiming.repeat.count = 104
+* occurrenceTiming.repeat.frequency = 2
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #wk
+
+* reasonCode[0].coding[0].system = $sct
+* reasonCode[0].coding[0].code = #49049000
 
 * authoredOn = "2026-02-18T14:38:49+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

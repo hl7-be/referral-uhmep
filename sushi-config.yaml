@@ -59,9 +59,6 @@ pages:
   migration-3-0-to-4-0.md:
     title: Migration 3.0.0 to 4.0.0-draft
     generation: markdown
-  telemonitoring.md:
-    title: Telemonitoring
-    generation: markdown
   topic-profiles-architecture.md:
     title: Profiles Architecture
     generation: markdown
@@ -135,8 +132,17 @@ pages:
       title: Error Codes
       generation: markdown
   mappings-business.md:
-    title: Business Field Mappings
+    title: Domain & Mapping
     generation: markdown
+    domain-nursing.md:
+      title: Nursing Domain
+      generation: markdown
+    domain-radiology.md:
+      title: Radiology Domain
+      generation: markdown
+    domain-telemonitoring.md:
+      title: Telemonitoring Domain
+      generation: markdown
     mappings-nursing.md:
       title: Nursing
       generation: markdown
@@ -191,6 +197,9 @@ pages:
       mapper-telemonitoring-chronic-heart-failure.md:
         title: Chronic Heart Failure Telemonitoring
         generation: markdown
+    test-server.md:
+      title: Test Server
+      generation: markdown
   technical.md:
     title: Technical
     generation: markdown
@@ -230,7 +239,6 @@ menu:
   Guidance: guidance.html
   Topics:
     Migration 3.0 to 4.0: migration-3-0-to-4-0.html
-    Telemonitoring: telemonitoring.html
     Profiles Architecture: topic-profiles-architecture.html
     Profile Rewriting: topic-profile-rewriting.html
     Life Cycle: topic-prescription-lifecycle.html
@@ -241,11 +249,14 @@ menu:
     Operations: api-operations.html
     Access Matrix: operation-access-matrix.html
     Complex Operations: api-complex-operations.html
-  Mappings:
+  Domain & Mapping:
     Overview: mappings-business.html
-    Nursing: mappings-nursing.html
-    Radiology: mappings-radiology.html
-    Telemonitoring: mappings-telemonitoring.html
+    Nursing Domain: domain-nursing.html
+    Radiology Domain: domain-radiology.html
+    Telemonitoring Domain: domain-telemonitoring.html
+    Nursing Mapping: mappings-nursing.html
+    Radiology Mapping: mappings-radiology.html
+    Telemonitoring Mapping: mappings-telemonitoring.html
   Artifacts:
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
@@ -255,6 +266,7 @@ menu:
   Technical: technical.html
   Resources:
     Glossary: glossary.html
+    Test Server: test-server.html
     Downloads: downloads.html
     Changes: changes.html
 

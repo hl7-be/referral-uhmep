@@ -6,25 +6,7 @@ After clinical assessment her physician identifies a medical need for continued 
 Instance: example-drp-nursing-generic
 InstanceOf: EReferralServiceRequestNursing
 Title: "Generic nursing care"
-Description: "Example of a generic nursing ServiceRequest.
-
-Inputs and values used in this example:
-- Prescription type: generic-nursing
-- Care code (SNOMED): 9632001
-- Care detail (orderDetail): preparation-and-administration-of-medication-to-psychiatric-patient
-- Validity start date: 2026-02-18
-- Timing:
-  * boundsDuration: 4 months
-  * count: 360
-  * frequency: 3
-  * period: 1 day
-- Priority: routine
-- Feedback to prescriber: false
-- Medical reason (SNOMED): 404684003
-- Notes:
-  * medical-reason
-  * contraindication
-  * general-remarks"
+Description: "Generic nursing ServiceRequest for gastrointestinal care."
 Usage: #example
 
 
@@ -47,6 +29,7 @@ Usage: #example
 // top-level extensions
 * extension[0].url = $be-ext-validity-period
 * extension[0].valuePeriod.start = "2026-02-18"
+* extension[0].valuePeriod.end = "2026-02-25"
 * extension[1].url = $be-ext-feedback-to-prescriber
 * extension[1].valueBoolean = false
 
@@ -66,7 +49,7 @@ Usage: #example
 
 // orderDetail
 * orderDetail[0].coding[0].system = $be-cs-generic-care-types
-* orderDetail[0].coding[0].code = #preparation-and-administration-of-medication-to-psychiatric-patient
+* orderDetail[0].coding[0].code = #gastrointestinal-care
 
 // subject.identifier (SSIN pseudonymized)
 * subject.identifier.use = #official
@@ -81,11 +64,11 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 4
+* occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #mo
-* occurrenceTiming.repeat.count = 360
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.boundsDuration.code = #wk
+* occurrenceTiming.repeat.count = 7
+* occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #d
 

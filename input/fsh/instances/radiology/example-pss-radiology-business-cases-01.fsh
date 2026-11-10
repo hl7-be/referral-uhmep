@@ -1,19 +1,7 @@
 Instance: example-pss-radiology-scenario-01
 InstanceOf: EReferralServiceRequestDiagnosticImaging
 Title: "PSS radiology scenario 01"
-Description: "Example of a diagnostic imaging prescription.
-
-Inputs and values used in this example:
-- Patient: Henry Dutronc, male, 41 years old
-- Indication: progressive shortness of breath, orthopnea, dry cough and suspected pulmonary edema
-- Selected examination: chest X-ray
-- Procedure code (SNOMED): 399208008
-- Initially predefined examination: chest CT with IV contrast
-- Clinical context from Excel: hypertension for 5 years, non-smoker, no documented cardiac disease or known allergies; symptoms progressing over 24-48 hours, oxygen saturation approximately 88%, blood pressure 160/100 mmHg and bilateral basal crackles
-- Final examination rationale from Excel: rapid initial assessment and confirmation
-
-Fictitious completions (not specified in Excel): date of birth 1985-04-12, PSS identifier PSS-RAD-001, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
+Description: "PSS radiology example for progressive dyspnea and suspected pulmonary edema, using a chest X-ray order."
 Usage: #example
 
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-001)

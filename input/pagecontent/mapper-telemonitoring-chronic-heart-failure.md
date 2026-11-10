@@ -85,10 +85,46 @@ The medical prescription uses the full telemonitoring profile.
       <td>Fixed coded indication.</td>
     </tr>
     <tr>
-      <td>Monitoring parameters</td>
-      <td><ul><li>Weight</li><li>Systolic blood pressure</li><li>Diastolic blood pressure</li><li>Systolic pulmonary artery pressure (PAPs)</li><li>Diastolic pulmonary artery pressure (PAPd)</li><li>Heart rate</li><li>Related alert rules</li></ul></td>
-      <td>List</td>
-      <td>Parameters may define:<ul><li>thresholds</li><li>target ranges</li><li>rate-of-change rules</li></ul></td>
+      <td>Reference weight</td>
+      <td>Baseline measurement used when defining the body-weight parameter and evaluating its change rules.</td>
+      <td>Reference(Observation)</td>
+      <td>Optional. Reference a standalone weight Observation through `monitoringPlan.extension[baseline]`.</td>
+    </tr>
+    <tr>
+      <td>Body weight</td>
+      <td>Weight-change rules and related alerts.</td>
+      <td>List of Ratios</td>
+      <td>Each change rule specifies a signed weight change over a time window.</td>
+    </tr>
+    <tr>
+      <td>Systolic blood pressure</td>
+      <td>Measured systolic blood pressure and related alert thresholds.</td>
+      <td>Quantity / Range</td>
+      <td>Thresholds and target ranges use UCUM units.</td>
+    </tr>
+    <tr>
+      <td>Diastolic blood pressure</td>
+      <td>Measured diastolic blood pressure and related alert thresholds.</td>
+      <td>Quantity / Range</td>
+      <td>Thresholds and target ranges use UCUM units.</td>
+    </tr>
+    <tr>
+      <td>Systolic pulmonary artery pressure (PAPs)</td>
+      <td>Measured systolic pulmonary artery pressure and related alert thresholds.</td>
+      <td>Quantity / Range</td>
+      <td>Thresholds and target ranges use UCUM units.</td>
+    </tr>
+    <tr>
+      <td>Diastolic pulmonary artery pressure (PAPd)</td>
+      <td>Measured diastolic pulmonary artery pressure and related alert thresholds.</td>
+      <td>Quantity / Range</td>
+      <td>Thresholds and target ranges use UCUM units.</td>
+    </tr>
+    <tr>
+      <td>Heart rate</td>
+      <td>Measured heart rate and related alert thresholds.</td>
+      <td>Quantity / Range</td>
+      <td>Thresholds and target ranges use UCUM units.</td>
     </tr>
     <tr>
       <td>Clinical timing</td>
@@ -131,11 +167,11 @@ The medical prescription uses the full telemonitoring profile.
 
 ### Monitoring parameters
 
-The monitoring plan uses one `be-ext-telemonitoring-plan` extension per configured parameter. Each plan entry carries the measured parameter in `extension[parameter]` and may then add threshold, target range, or change rules.
+The monitoring plan uses one `be-ext-telemonitoring-plan` extension per configured parameter. Each plan entry carries the measured parameter in `extension[parameter]` and may then add threshold, target range, or change rules. For body weight, the optional reference weight is carried in `extension[baseline].valueReference` and points to a standalone `Observation`, not a contained resource.
 
 | Parameter | SNOMED CT code | Display | Typical unit | Rule used by this business requirement |
 | --- | --- | --- | --- | --- |
-| Body weight | `27113001` | Body weight (observable entity) | `kg` | One `change` rule: a weight **gain** or a weight **loss** over a time window (not both at once) |
+| Body weight | `27113001` | Body weight (observable entity) | `kg` | Optional reference weight (`baseline` Observation) and one or more `change` rules over time windows |
 | Systolic blood pressure | `271649006` | Systolic blood pressure (observable entity) | `mm[Hg]` | One `threshold`: an **upper** bound or a **lower** bound (not both at once) |
 | Diastolic blood pressure | `271650006` | Diastolic blood pressure (observable entity) | `mm[Hg]` | One `threshold`: an **upper** bound or a **lower** bound (not both at once) |
 | Systolic pulmonary artery pressure (PAPs) | `250768007` | Pulmonary artery systolic pressure (observable entity) | `mm[Hg]` | One `threshold`: an **upper** bound or a **lower** bound (not both at once) |
@@ -409,7 +445,7 @@ In the supplied examples, each individual `Range` sets one bound (`low` or `high
     </tr>
     <tr>
       <td>Monitoring parameter: body weight</td>
-      <td><code>ServiceRequest.extension[monitoringPlan]</code></td>
+      <td><code>ServiceRequest.extension[monitoringPlan].extension[baseline]</code> and <code>extension[change]</code></td>
       <td><pre><code class="language-json">{
   "extension": [
     {
@@ -425,6 +461,12 @@ In the supplied examples, each individual `Range` sets one bound (`low` or `high
                 "display": "Body weight (observable entity)"
               }
             ]
+          }
+        },
+        {
+          "url": "baseline",
+          "valueReference": {
+            "reference": "Observation/example-telemonitoring-reference-weight"
           }
         },
         {
@@ -446,7 +488,7 @@ In the supplied examples, each individual `Range` sets one bound (`low` or `high
     }
   ]
 }</code></pre></td>
-      <td><ul><li>Parameter code: <code>http://snomed.info/sct#27113001</code></li><li>UCUM unit: <code>kg</code></li><li>The <code>change</code> ratio represents a weight increase rule, for example <code>2 kg / 3 d</code>.</li><li>Time-window units may use <a href="ValueSet-be-vs-telemonitoring-period-unit.html"><code>be-vs-telemonitoring-period-unit</code></a>.</li></ul></td>
+      <td><ul><li>Parameter code: <code>http://snomed.info/sct#27113001</code></li><li>Optional baseline: <code>Reference(Observation)</code> to a standalone weight observation; see <a href="Observation-example-telemonitoring-reference-weight.json">the baseline JSON</a>.</li><li>UCUM unit: <code>kg</code></li><li>The <code>change</code> ratio represents a signed weight-change rule, for example <code>2 kg / 3 d</code>.</li><li>Time-window units may use <a href="ValueSet-be-vs-telemonitoring-period-unit.html"><code>be-vs-telemonitoring-period-unit</code></a>.</li></ul></td>
     </tr>
     <tr>
       <td>Monitoring parameter: systolic blood pressure</td>

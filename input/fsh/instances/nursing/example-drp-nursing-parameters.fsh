@@ -1,22 +1,7 @@
 Instance: example-drp-nursing-parameters
 InstanceOf: EReferralServiceRequestNursing
 Title: "Measurement of parameters"
-Description: "Example of clinical parameter monitoring.
-
-Inputs and values used in this example:
-- Prescription type: parameters
-- Procedure code (SNOMED): 61746007
-- Parameter detail (SNOMED): 431314004
-- Validity start date: 2026-02-18
-- Timing:
-  * boundsDuration: 2 months
-  * count: 180
-  * frequency: 3
-  * period: 1 day
-  * when: C
-- Medical reason (SNOMED): 404684003
-- Notes:
-  * medical-reason"
+Description: "Nursing prescription for blood pressure monitoring while lying down."
 Usage: #example
 
 
@@ -67,8 +52,8 @@ Usage: #example
 * code.text.extension[0].extension[2].valuePositiveInt = 1
 
 // orderDetail
-* orderDetail[0].coding[0].system = "http://snomed.info/sct"
-* orderDetail[0].coding[0].code = #431314004
+* orderDetail[0].coding[0].system = $sct-version
+* orderDetail[0].coding[0].code = #163033001
 
 // subject.identifier
 * subject.identifier.use = #official
@@ -83,14 +68,15 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 2
+* occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #mo
-* occurrenceTiming.repeat.count = 180
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.boundsDuration.code = #wk
+* occurrenceTiming.repeat.count = 14
+* occurrenceTiming.repeat.frequency = 2
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #d
-* occurrenceTiming.repeat.when[0] = #C
+* occurrenceTiming.repeat.when[0] = #MORN
+* occurrenceTiming.repeat.when[1] = #EVE
 
 * authoredOn = "2026-02-18T14:20:30+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

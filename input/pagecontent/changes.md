@@ -10,7 +10,7 @@ This page documents the changes proposed to the 4.0 target specification. It des
 - Move the local canonical base provisionally to `https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral`.
 - Add a [3.0-to-4.0 migration guide](migration-3-0-to-4-0.html), including the outstanding gateway compatibility gap and regression checks.
 
-This is an internal review draft, not a production release announcement. The source comparison covers the locally available 3.0/4.0 branches selected for preparation; semantic review of the full multi-component delta is not complete.
+This is a draft, not a production release announcement.
 
 <details markdown="1">
 <summary><strong>View detailed 4.0.0-draft release notes</strong></summary>
@@ -21,21 +21,21 @@ The target contract defines the chronic-heart-failure medical prescription, its 
 
 The target parameter model uses lists for body weight, systolic/diastolic blood pressure and heart rate, and includes systolic/diastolic pulmonary artery pressure. Integrations targeting 4.0 must preserve repeated threshold ranges and body-weight change ratios. Runtime support is a separate implementation requirement.
 
-Known implementation gaps remain: the inspected backend requires at least one metric while the target profile permits zero monitoring-plan extensions, and runtime handling of `targetRange` and `sustainedFor` is unverified. See [Telemonitoring](telemonitoring.html).
+Known implementation gaps remain: the inspected backend requires at least one metric while the target profile permits zero monitoring-plan extensions, and runtime handling of `targetRange` and `sustainedFor` is unverified. See [Telemonitoring](domain-telemonitoring.html).
 
 #### Referral Parent
 
-The draft resolves the published Referral package and uses its `/referral/` profile canonicals. The corresponding internal IG branch already carried part of this migration before this preparation. This is a parent-package and identifier change, not a blanket rename of terminology or an automatic transformation of clinical payloads.
+The draft resolves the published Referral package and uses its `/referral/` profile canonicals. This is a parent-package and identifier change, not a blanket rename of terminology or an automatic transformation of clinical payloads.
 
 #### Local Canonical Base
 
 Locally owned artefacts use the new provisional eHealth base; the local package ID remains `inami.fhir.be.ereferral`. Historical documentation and the description of actual gateway rewrite targets preserve the old URLs deliberately. No automatic redirect or old-profile acceptance is promised.
 
-#### Application Compatibility and Review Scope
+#### Application Compatibility
 
-The target gateway still configures legacy DRP ServiceRequest rewrites to the old local canonical. Runtime alignment with the new namespace remains a prerequisite to claiming API compatibility. The Web API contract repository separately adds OpenAPI v2 alongside its renamed v1 contract; this does not change the FHIR R4 version.
+The target gateway still configures legacy DRP ServiceRequest rewrites to the old local canonical. Runtime alignment with the new namespace remains a prerequisite to claiming API compatibility.
 
-Other application and frontend changes remain under review and are not silently classified as having no integration impact. The [migration guide](migration-3-0-to-4-0.html) separates verified changes from outstanding checks.
+See the [migration guide](migration-3-0-to-4-0.html) for compatibility requirements and outstanding checks.
 
 </details>
 

@@ -1,21 +1,7 @@
 Instance: example-drp-nursing-sampling
 InstanceOf: EReferralServiceRequestNursing
 Title: "Sample collection"
-Description: "Example of a biological sample collection prescription.
-
-Inputs and values used in this example:
-- Prescription type: sampling
-- Procedure code (SNOMED): 17636008
-- Sampling detail (SNOMED): 78014005
-- Body location (SNOMED): 78277001 (temporal lobe structure)
-- Body laterality (SNOMED, be-ext-laterality): 24028007 (right)
-- Body topography (SNOMED, be-ext-body-topography): 255561001 (medial)
-- Occurrence count: 1
-- Validity start date: 2026-02-18
-- Medical reason (SNOMED): 404684003
-- Notes:
-  * medical-reason
-  * contraindication"
+Description: "Nursing sampling prescription for wound fluid and blood collection."
 Usage: #example
 
 
@@ -67,17 +53,16 @@ Usage: #example
 
 // orderDetail
 * orderDetail[0].coding[0].system = "http://snomed.info/sct"
-* orderDetail[0].coding[0].code = #78014005
+* orderDetail[0].coding[0].code = #247450001
+* orderDetail[1].coding[0].system = "http://snomed.info/sct"
+* orderDetail[1].coding[0].code = #87612001
 
 // bodySite (base location) with laterality and topography extensions
 * bodySite[0].coding[0].system = "http://snomed.info/sct"
-* bodySite[0].coding[0].code = #78277001
+* bodySite[0].coding[0].code = #72696002
 * bodySite[0].extension[0].url = $be-ext-laterality
 * bodySite[0].extension[0].valueCoding.system = "http://snomed.info/sct"
 * bodySite[0].extension[0].valueCoding.code = #24028007
-* bodySite[0].extension[1].url = $be-ext-body-topography
-* bodySite[0].extension[1].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
-* bodySite[0].extension[1].valueCodeableConcept.coding[0].code = #255561001
 
 // subject.identifier
 * subject.identifier.use = #official
