@@ -73,17 +73,12 @@ The current scope is focused on:
 | `eReferralImagingAttentionConditionsResponse` | Contained response for radiology attention/safety checklist information. |
 | `eReferralServiceRequestTelemonitoring` | Medical telemonitoring prescription for chronic heart failure. |
 
-### Business Mappings
+### Domain & Mapping
 
-The IG includes mapping pages generated from the nursing template Excel. These pages map business fields and allowed values to proposed FHIR elements and candidate terminologies.
+Each domain page introduces its scope and links to the domain specification and FHIR mapping.
 
-Start with:
-
-| Domain | Page                                                    |
-| --- |---------------------------------------------------------|
-| Nursing | [Nursing mappings](mappings-nursing.html)               |
-| Radiology | [Radiology mappings](mappings-radiology.html)           |
-| Telemonitoring | [Telemonitoring mappings](mappings-telemonitoring.html) |
-
-
-Terminology notes in the mapping pages are intentionally conservative. Some Excel value lists predate the current ValueSets and may require reconciliation before being treated as normative coded values.
+| Domain | Specification | Mapping |
+| --- | --- | --- |
+| Nursing | [Nursing Specification](domain-nursing-specification.html) | [Nursing Mapping](mappings-nursing.html) |
+| Radiology | [Radiology Specification](domain-radiology-specification.html) | [Radiology Mapping](mappings-radiology.html) |
+| Telemonitoring | [Telemonitoring Specification](domain-telemonitoring-specification.html) | [Telemonitoring Mapping](mappings-telemonitoring.html) |

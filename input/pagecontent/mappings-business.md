@@ -1,14 +1,12 @@
-This section documents how prescription business fields are represented in FHIR.
-
-Mappings are organized by domain and then by prescription type. Each prescription type page contains a table from business field to FHIR element, with notes about cardinality, coding systems, ValueSets, extensions, and pseudonymization requirements.
+This section groups each domain's specification and FHIR mappings. Mapping pages are organized by prescription type and relate business fields to FHIR elements, terminology, extensions and pseudonymization requirements.
 
 ### Domains
 
-| Domain | Mapping pages                                           |
-| --- |---------------------------------------------------------|
-| Nursing | [Nursing mappings](mappings-nursing.html)               |
-| Radiology | [Radiology mappings](mappings-radiology.html)           |
-| Telemonitoring | [Telemonitoring mappings](mappings-telemonitoring.html) |
+| Domain | Specification | Mapping |
+| --- | --- | --- |
+| Nursing | [Nursing Specification](domain-nursing-specification.html) | [Nursing Mapping](mappings-nursing.html) |
+| Radiology | [Radiology Specification](domain-radiology-specification.html) | [Radiology Mapping](mappings-radiology.html) |
+| Telemonitoring | [Telemonitoring Specification](domain-telemonitoring-specification.html) | [Telemonitoring Mapping](mappings-telemonitoring.html) |
 
 ### Table Format
 
