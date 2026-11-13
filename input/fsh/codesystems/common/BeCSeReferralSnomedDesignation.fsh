@@ -14475,7 +14475,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
 
 // =============================================================================
 // ValueSet: eReferral/PSS Diagnostic Imaging Procedure
-// Concepts primarily listed here: 349
+// Concepts primarily listed here: 337
 // =============================================================================
 
 // --- Concepts without eReferral translations ---
@@ -14494,7 +14494,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van abdomen met contrast"
+  * ^designation[2].value = "computertomografie van abdomen met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -14520,28 +14520,6 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Abdomen, ohne i.v. Kontrast"
 
-// SNOMED display: Computed tomography of kidney, ureter and urinary bladder without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16444991000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography of kidney, ureter and urinary bladder without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de reins, uretères et vessie sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van nieren, ureters en blaas zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Computertomographie von Nieren, Harnleiter und Harnblase ohne Kontrastmittel"
-
 // SNOMED display: Computed tomography of abdomen and pelvis with intravenous contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
 * #1148701004
@@ -14552,37 +14530,15 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de l'abdomen et du pelvis avec injection intraveineuse de produit de contraste"
+  * ^designation[1].value = "tomodensitométrie de l'abdomen et du pelvis avec injection intraveineuse de produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van abdomen en bekken met intraveneus contrast"
+  * ^designation[2].value = "computertomografie van abdomen en bekken met intraveneus contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Abdomen-Becken, mit i.v. Kontrast"
-
-// SNOMED display: Computed tomography of abdomen and pelvis without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16457501000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography of abdomen and pelvis without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de abdomen et pelvis sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van abdomen en bekken zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Computertomographie von Abdomen und Becken ohne Kontrastmittel"
 
 // SNOMED display: Computed tomography of abdomen and pelvis with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -14598,7 +14554,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van abdomen en bekken met contrast"
+  * ^designation[2].value = "computertomografie van abdomen en bekken met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -14610,7 +14566,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[0].language = #en
   * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography of abdominal vascular structure with contrast (procedure) or 448443000"
+  * ^designation[0].value = "Computed tomography of abdominal vascular structure with contrast (procedure)"
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
@@ -14634,11 +14590,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par tomodensitométrie d'artères abdominales et pelviennes avec produit de contraste"
+  * ^designation[1].value = "angiographie par tomodensitométrie d'artères abdominales et pelviennes avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomoangiografie van abdominale arterie en bekkenarterie"
+  * ^designation[2].value = "computertomoangiografie van abdominale arterie en bekkenarterie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -14654,11 +14610,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angio-CT de l'abdomen, du bassin et du membre inférieur avec produit de contraste"
+  * ^designation[1].value = "angio-CT de l'abdomen, du bassin et du membre inférieur avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomoangiografie van abdomen, pelvis en onderste extremiteit"
+  * ^designation[2].value = "computertomoangiografie van abdomen, pelvis en onderste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -14684,35 +14640,13 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Angiographie, Aorta thoracalis + supraaortale Äste, mit i.v. Kontrast"
 
-// SNOMED display: Computed tomography angiography of pulmonary artery with contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16332841000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography angiography of pulmonary artery with contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par tomodensitométrie de artère pulmonaire avec contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "CT-angiografie van longslagader met contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "CT-Angiographie von Lungenarterie mit Kontrastmittel"
-
 // SNOMED display: Computed tomography angiography of chest with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
 * #411251000119104
   * ^designation[0].language = #en
   * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography angiography of chest with contrast (procedure) or  426730003"
+  * ^designation[0].value = "Computed tomography angiography of chest with contrast (procedure)"
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
@@ -14726,50 +14660,6 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Angiographie, Thorax, mit i.v. Kontrast"
 
-// SNOMED display: Computed tomography angiography of chest and abdomen with contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16326461000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography angiography of chest and abdomen with contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par tomodensitométrie de thorax et abdomen avec contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "CT-angiografie van thorax en abdomen met contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "CT-Angiographie von Thorax und Abdomen mit Kontrastmittel"
-
-// SNOMED display: Computed tomography angiography of thorax and abdomen and pelvis with contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16462121000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography angiography of thorax and abdomen and pelvis with contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par tomodensitométrie de thorax et abdomen et pelvis avec contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "CT-angiografie van thorax en abdomen en bekken met contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "CT-Angiographie von Thorax und Abdomen und Becken mit Kontrastmittel"
-
 // SNOMED display: Computed tomography angiography of head with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
 * #582101000119108
@@ -14780,7 +14670,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angioscanner de la tête avec contraste"
+  * ^designation[1].value = "angioscanner de la tête avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -14800,7 +14690,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan de la tête et du cou"
+  * ^designation[1].value = "angiographie - CT scan de la tête et du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -14820,11 +14710,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan coronaire"
+  * ^designation[1].value = "angiographie - CT scan coronaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomoangiografie van coronairarterie"
+  * ^designation[2].value = "computertomoangiografie van coronairarterie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -14840,7 +14730,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan de membre inférieur"
+  * ^designation[1].value = "angiographie - CT scan de membre inférieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -14860,7 +14750,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan des vaisseaux du cou"
+  * ^designation[1].value = "angiographie - CT scan des vaisseaux du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -14880,7 +14770,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan des vaisseaux du pelvis"
+  * ^designation[1].value = "angiographie - CT scan des vaisseaux du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -14900,11 +14790,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan du pelvis et membres inférieurs"
+  * ^designation[1].value = "angiographie - CT scan du pelvis et membres inférieurs"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomoangiografie van bekken en onderste extremiteit met contrast"
+  * ^designation[2].value = "computertomoangiografie van bekken en onderste extremiteit met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -14920,7 +14810,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan des structures vasculaires de la colonne vertébrale"
+  * ^designation[1].value = "angiographie - CT scan des structures vasculaires de la colonne vertébrale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -14940,7 +14830,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie - CT scan d'artère du membre supérieur"
+  * ^designation[1].value = "angiographie - CT scan d'artère du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -14960,7 +14850,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie avec produit de contraste"
+  * ^designation[1].value = "tomodensitométrie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15000,11 +14890,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie - CT scan de la cheville"
+  * ^designation[1].value = "arthrographie - CT scan de la cheville"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie met artrografie van enkel"
+  * ^designation[2].value = "computertomografie met artrografie van enkel"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15020,7 +14910,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie - CT scan de la hanche"
+  * ^designation[1].value = "arthrographie - CT scan de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15040,7 +14930,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie - CT scan du genou"
+  * ^designation[1].value = "arthrographie - CT scan du genou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15060,7 +14950,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie - CT scan du coude"
+  * ^designation[1].value = "arthrographie - CT scan du coude"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15080,11 +14970,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie - CT scan de l'épaule"
+  * ^designation[1].value = "arthrographie - CT scan de l'épaule"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie met artrografie van schouder"
+  * ^designation[2].value = "computertomografie met artrografie van schouder"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15100,7 +14990,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie - CT scan du poignet"
+  * ^designation[1].value = "arthrographie - CT scan du poignet"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15144,7 +15034,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van acromioclaviculair gewricht"
+  * ^designation[2].value = "computertomografie van acromioclaviculair gewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15164,7 +15054,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie met contrast van clavicula"
+  * ^designation[2].value = "computertomografie met contrast van clavicula"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15190,28 +15080,6 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Thorax, Schlüsselbein, ohne i.v. Kontrast"
 
-// SNOMED display: High resolution computed tomography of chest without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16335031000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "High resolution computed tomography of chest without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Haute résolution tomodensitométrie de thorax sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Hoge resolutie computertomografie van thorax zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Hochauflösend Computertomographie von Thorax ohne Kontrastmittel"
-
 // SNOMED display: Computed tomography of sternoclavicular joint with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
 * #702506003
@@ -15226,7 +15094,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van sternoclaviculair gewricht met contrast"
+  * ^designation[2].value = "computertomografie van sternoclaviculair gewricht met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15242,11 +15110,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthro-CT sternoclaviculaire sans produit de contraste"
+  * ^designation[1].value = "arthro-CT sternoclaviculaire sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van sternoclaviculair gewricht zonder contrast"
+  * ^designation[2].value = "computertomografie van sternoclaviculair gewricht zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15272,28 +15140,6 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Thorax, Sternum, mit i.v. Kontrast"
 
-// SNOMED display: Computed tomography of sternum without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16334791000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography of sternum without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de sternum sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van sternum zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Computertomographie von Sternum ohne Kontrastmittel"
-
 // SNOMED display: Computed tomography of thorax with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
 * #75385009
@@ -15308,7 +15154,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van thorax met contrastmiddel"
+  * ^designation[2].value = "computertomografie van thorax met contrastmiddel"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15364,7 +15210,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du thorax et de l'abdomen supérieur"
+  * ^designation[1].value = "tomodensitométrie du thorax et de l'abdomen supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15373,28 +15219,6 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Thorax, ohne i.v. Kontrast, inkl. oberes Abdomen"
-
-// SNOMED display: Low dose computed tomography of chest without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16334891000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Low dose computed tomography of chest without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Faible dose tomodensitométrie de thorax sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Lage dosis computertomografie van thorax zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Niedrigdosis Computertomographie von Thorax ohne Kontrastmittel"
 
 // SNOMED display: Computed tomography of thorax and abdomen with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -15410,7 +15234,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van thorax en abdomen met contrast"
+  * ^designation[2].value = "computertomografie van thorax en abdomen met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15426,7 +15250,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du thorax et de l'abdomen sans produit de contraste"
+  * ^designation[1].value = "tomodensitométrie du thorax et de l'abdomen sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15490,7 +15314,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van hersenventrikel met contrast"
+  * ^designation[2].value = "computertomografie van hersenventrikel met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15526,7 +15350,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie à faisceau conique des os de la face"
+  * ^designation[1].value = "tomodensitométrie à faisceau conique des os de la face"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15550,7 +15374,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie-cystografie met intraveneus contrast"
+  * ^designation[2].value = "computertomografie-cystografie met intraveneus contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15570,7 +15394,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Discografie met computertomografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
+  * ^designation[2].value = "discografie met computertomografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15586,11 +15410,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du genou sans produit de contraste"
+  * ^designation[1].value = "tomodensitométrie du genou sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van knie zonder contrast"
+  * ^designation[2].value = "computertomografie van knie zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15606,7 +15430,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Entéroclyse par CT scan"
+  * ^designation[1].value = "entéroclyse par CT scan"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15630,33 +15454,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van dunne darm met contrast"
+  * ^designation[2].value = "computertomografie van dunne darm met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, Enterographie, Abdomen-Becken, mit i.v. Kontrast"
-
-// SNOMED display: Computed tomography of heart with contrast for cardiac structure and morphology (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16439801000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography of heart with contrast for cardiac structure and morphology"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de cœur avec contraste pour cardiac structure et morphology"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van hart met contrast voor cardiac structure en morphology"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Computertomographie von Herz mit Kontrastmittel für cardiac structure und morphology"
 
 // SNOMED display: Computed tomography of mastoid with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -15672,7 +15474,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie met contrast van mastoïd"
+  * ^designation[2].value = "computertomografie met contrast van mastoïd"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15688,11 +15490,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du processus mastoïde de l'os temporal sans produit de contraste"
+  * ^designation[1].value = "tomodensitométrie du processus mastoïde de l'os temporal sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie zonder contrast van mastoïd"
+  * ^designation[2].value = "computertomografie zonder contrast van mastoïd"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15732,7 +15534,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van orbita zonder contrast"
+  * ^designation[2].value = "computertomografie van orbita zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15772,7 +15574,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie zonder contrast van os temporale"
+  * ^designation[2].value = "computertomografie zonder contrast van os temporale"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15832,7 +15634,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van hoofd-halsregio met contrast"
+  * ^designation[2].value = "computertomografie van hoofd-halsregio met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15848,7 +15650,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de la tête et du cou"
+  * ^designation[1].value = "tomodensitométrie de la tête et du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -15912,7 +15714,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van enkel zonder contrast"
+  * ^designation[2].value = "computertomografie van enkel zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -15952,7 +15754,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van voet zonder contrast"
+  * ^designation[2].value = "computertomografie van voet zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16012,7 +15814,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van heup met contrast"
+  * ^designation[2].value = "computertomografie van heup met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16052,7 +15854,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van beide heupen met contrast"
+  * ^designation[2].value = "computertomografie van beide heupen met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16072,7 +15874,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie zonder contrast van beide heupen"
+  * ^designation[2].value = "computertomografie zonder contrast van beide heupen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16092,7 +15894,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van knie met contrast"
+  * ^designation[2].value = "computertomografie van knie met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16208,7 +16010,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie des sinus paranasaux avec contraste"
+  * ^designation[1].value = "tomodensitométrie des sinus paranasaux avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -16228,7 +16030,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomographie computérisée des sinus paranasaux sans contraste"
+  * ^designation[1].value = "tomographie computérisée des sinus paranasaux sans contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -16252,7 +16054,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie met contrast van maxillofaciaal gebied"
+  * ^designation[2].value = "computertomografie met contrast van maxillofaciaal gebied"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16272,7 +16074,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie zonder contrast van maxillofaciaal gebied"
+  * ^designation[2].value = "computertomografie zonder contrast van maxillofaciaal gebied"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16288,7 +16090,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélographie - CT scan"
+  * ^designation[1].value = "myélographie - CT scan"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -16308,7 +16110,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélotomodensitométrie de la région cervicale"
+  * ^designation[1].value = "myélotomodensitométrie de la région cervicale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -16348,7 +16150,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélographie - CT scan de la région lombaire"
+  * ^designation[1].value = "myélographie - CT scan de la région lombaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -16372,7 +16174,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van hals en/of nek met contrastmiddel"
+  * ^designation[2].value = "computertomografie van hals en/of nek met contrastmiddel"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16452,7 +16254,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van sacro-iliacaal gewricht met contrast"
+  * ^designation[2].value = "computertomografie van sacro-iliacaal gewricht met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16488,11 +16290,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du pelvis avec produit de contraste"
+  * ^designation[1].value = "tomodensitométrie du pelvis avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van bekken met contrast"
+  * ^designation[2].value = "computertomografie van bekken met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16508,7 +16310,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du pelvis sans produit de contraste"
+  * ^designation[1].value = "tomodensitométrie du pelvis sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -16532,7 +16334,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van lumbale wervelkolom en sacro-iliacaal gewricht met contrast"
+  * ^designation[2].value = "computertomografie van lumbale wervelkolom en sacro-iliacaal gewricht met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16572,7 +16374,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van hersenperfusie"
+  * ^designation[2].value = "computertomografie van hersenperfusie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16592,7 +16394,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Kwantitatieve computertomografie"
+  * ^designation[2].value = "kwantitatieve computertomografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16628,11 +16430,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de la colonne cervicale avec produit de contraste"
+  * ^designation[1].value = "tomodensitométrie de la colonne cervicale avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Axiale computertomografie van cervicale wervelkolom met contrast"
+  * ^designation[2].value = "axiale computertomografie van cervicale wervelkolom met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16772,7 +16574,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van sacrale wervelkolom met contrast"
+  * ^designation[2].value = "computertomografie van sacrale wervelkolom met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16828,11 +16630,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de la colonne thoracique sans produit de contraste"
+  * ^designation[1].value = "tomodensitométrie de la colonne thoracique sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van thoracale wervelkolom zonder contrast"
+  * ^designation[2].value = "computertomografie van thoracale wervelkolom zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16892,7 +16694,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van gehele wervelkolom met contrast"
+  * ^designation[2].value = "computertomografie van gehele wervelkolom met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16948,11 +16750,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du membre supérieur sans produit de contraste"
+  * ^designation[1].value = "tomodensitométrie du membre supérieur sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van bovenste extremiteit zonder contrast"
+  * ^designation[2].value = "computertomografie van bovenste extremiteit zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -16978,28 +16780,6 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "CT, obere Extremität, Ellbogen, mit i.v. Kontrast"
 
-// SNOMED display: Computed tomography of elbow without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16335961000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Computed tomography of elbow without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie de coude sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van elleboog zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Computertomographie von Ellbogen ohne Kontrastmittel"
-
 // SNOMED display: Computed tomography of finger (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
 * #429924009
@@ -17014,7 +16794,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van vinger, exclusief duim"
+  * ^designation[2].value = "computertomografie van vinger, exclusief duim"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17074,7 +16854,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van hand met contrast"
+  * ^designation[2].value = "computertomografie van hand met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17134,7 +16914,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van scapula"
+  * ^designation[2].value = "computertomografie van scapula"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17154,7 +16934,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van schouder met contrast"
+  * ^designation[2].value = "computertomografie van schouder met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17214,7 +16994,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van pols met contrast"
+  * ^designation[2].value = "computertomografie van pols met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17250,11 +17030,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie du poignet sans produit de contraste"
+  * ^designation[1].value = "tomodensitométrie du poignet sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van pols zonder contrast"
+  * ^designation[2].value = "computertomografie van pols zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17290,11 +17070,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Tomodensitométrie des voies urinaires avec produit de contraste"
+  * ^designation[1].value = "tomodensitométrie des voies urinaires avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Computertomografie van urinewegen met contrast"
+  * ^designation[2].value = "computertomografie van urinewegen met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17310,7 +17090,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie - CT scan"
+  * ^designation[1].value = "veinographie - CT scan"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17330,7 +17110,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Phlébographie d'une veine du membre inférieur par CT-scan avec produit de contraste"
+  * ^designation[1].value = "phlébographie d'une veine du membre inférieur par CT-scan avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17354,7 +17134,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Dubbele-energie-röntgenabsorptiometriescan van gehele lichaam"
+  * ^designation[2].value = "dubbele-energie-röntgenabsorptiometriescan van gehele lichaam"
 
 // SNOMED display: Dual energy X-ray absorptiometry of neck of femur (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -17382,11 +17162,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Absorptiométrie à rayons X en double énergie au niveau de la hanche"
+  * ^designation[1].value = "absorptiométrie à rayons X en double énergie au niveau de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Dubbele-energie-röntgenabsorptiometriescan van heup"
+  * ^designation[2].value = "dubbele-energie-röntgenabsorptiometriescan van heup"
 
 // SNOMED display: Dual energy X-ray absorptiometry of bone of spine (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -17402,7 +17182,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Dubbele-energie-röntgenabsorptiometriescan van wervelkolom"
+  * ^designation[2].value = "dubbele-energie-röntgenabsorptiometriescan van wervelkolom"
 
 // SNOMED display: Dual energy X-ray absorptiometry of bone of lateral spine (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -17430,7 +17210,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Absorptiométrie radiologique à double énergie au niveau de la hanche et de la colonne vertébrale"
+  * ^designation[1].value = "absorptiométrie radiologique à double énergie au niveau de la hanche et de la colonne vertébrale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17446,11 +17226,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Artériographie rénale"
+  * ^designation[1].value = "artériographie rénale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Arteriografie van nier"
+  * ^designation[2].value = "arteriografie van nier"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17466,11 +17246,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie percutanée du sein par aspiration à l'aiguille fine, guidée par imagerie"
+  * ^designation[1].value = "biopsie percutanée du sein par aspiration à l'aiguille fine, guidée par imagerie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Percutane dunnenaaldbiopsie van borst onder geleide van beeldvormende techniek"
+  * ^designation[2].value = "percutane dunnenaaldbiopsie van borst onder geleide van beeldvormende techniek"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17486,11 +17266,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Magnétoencéphalographie (MEG)"
+  * ^designation[1].value = "magnétoencéphalographie (MEG)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magneto-encefalografie"
+  * ^designation[2].value = "magneto-encefalografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17506,11 +17286,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM des reins"
+  * ^designation[1].value = "imagerie par IRM des reins"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van nier"
+  * ^designation[2].value = "magnetic resonance imaging van nier"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17526,7 +17306,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du foie et de la rate"
+  * ^designation[1].value = "imagerie par IRM du foie et de la rate"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17546,7 +17326,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'abdomen avec contraste"
+  * ^designation[1].value = "imagerie par IRM de l'abdomen avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17586,7 +17366,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique de l'abdomen et du pelvis sans produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique de l'abdomen et du pelvis sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17606,11 +17386,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'abdomen et du pelvis avec contraste"
+  * ^designation[1].value = "imagerie par IRM de l'abdomen et du pelvis avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van abdomen en pelvis met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van abdomen en pelvis met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17626,11 +17406,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM du thorax"
+  * ^designation[1].value = "IRM, angiographie, thorax, avec contraste IV"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "MR-angiografie van borstkas"
+  * ^designation[2].value = "MR, angiografie, thorax, met IV contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17646,11 +17426,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des vaisseaux du thorax avec contraste"
+  * ^designation[1].value = "angiographie par IRM des vaisseaux du thorax avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieangiografie van vasculaire structuur van thorax met contrast"
+  * ^designation[2].value = "magnetischeresonantieangiografie van vasculaire structuur van thorax met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17666,7 +17446,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM de l'aorte entière"
+  * ^designation[1].value = "angiographie par IRM de l'aorte entière"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17686,7 +17466,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM de l'aorte entière avec contraste"
+  * ^designation[1].value = "angiographie par IRM de l'aorte entière avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17706,7 +17486,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM de la tête avec contraste"
+  * ^designation[1].value = "angiographie par IRM de la tête avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17726,7 +17506,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par résonance magnétique de la tête sans produit de contraste"
+  * ^designation[1].value = "angiographie par résonance magnétique de la tête sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17746,7 +17526,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM de la tête et du cou"
+  * ^designation[1].value = "angiographie par IRM de la tête et du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17766,11 +17546,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM de la tête et du cou avec contraste"
+  * ^designation[1].value = "angiographie par IRM de la tête et du cou avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieangiografie van hoofd-halsregio met contrast"
+  * ^designation[2].value = "magnetischeresonantieangiografie van hoofd-halsregio met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17786,7 +17566,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie par IRM de la hanche"
+  * ^designation[1].value = "arthrographie par IRM de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17806,7 +17586,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie par IRM du genou"
+  * ^designation[1].value = "arthrographie par IRM du genou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17826,7 +17606,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie par IRM du coude"
+  * ^designation[1].value = "arthrographie par IRM du coude"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17846,11 +17626,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie par IRM de l'épaule"
+  * ^designation[1].value = "arthrographie par IRM de l'épaule"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieartrografie van schouder"
+  * ^designation[2].value = "magnetischeresonantieartrografie van schouder"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17866,7 +17646,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du pouce"
+  * ^designation[1].value = "imagerie par IRM du pouce"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17886,11 +17666,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie par IRM du poignet"
+  * ^designation[1].value = "arthrographie par IRM du poignet"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieartrografie van pols"
+  * ^designation[2].value = "magnetischeresonantieartrografie van pols"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17906,7 +17686,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de sein"
+  * ^designation[1].value = "imagerie par IRM de sein"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17930,7 +17710,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van beide mammae zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van beide mammae zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17946,7 +17726,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de sein avec contraste"
+  * ^designation[1].value = "imagerie par IRM de sein avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -17966,11 +17746,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique bilatérale des seins avec produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique bilatérale des seins avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van beide mammae met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van beide mammae met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -17986,37 +17766,15 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM d'articulation acromio-claviculaire"
+  * ^designation[1].value = "imagerie par IRM d'articulation acromio-claviculaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van acromioclaviculair gewricht"
+  * ^designation[2].value = "magnetic resonance imaging van acromioclaviculair gewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "MRT, Thorax, Akromioklavikulargelenk, ohne i.v. Kontrast"
-
-// SNOMED display: Magnetic resonance imaging of clavicle without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16342871000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Magnetic resonance imaging of clavicle without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique de clavicule sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetische-resonantiebeeldvorming van clavicula zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Magnetresonanztomographie von Klavikula ohne Kontrastmittel"
 
 // SNOMED display: Magnetic resonance imaging of clavicle with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -18028,7 +17786,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la clavicule avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la clavicule avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18048,7 +17806,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'articulation sterno-claviculaire"
+  * ^designation[1].value = "imagerie par IRM de l'articulation sterno-claviculaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18068,11 +17826,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'articulation sternoclaviculaire avec contraste"
+  * ^designation[1].value = "imagerie par IRM de l'articulation sternoclaviculaire avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van sternoclaviculair gewricht met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van sternoclaviculair gewricht met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18108,37 +17866,15 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du sternum avec contraste"
+  * ^designation[1].value = "imagerie par IRM du sternum avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van sternum met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van sternum met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
   * ^designation[3].value = "MRT, Thorax, Sternum, ohne/mit i.v. Kontrast"
-
-// SNOMED display: Magnetic resonance imaging of chest without contrast (procedure)
-// Used in: eReferral/PSS Diagnostic Imaging Procedure
-* #16334561000119100
-  // REVIEW: imaging-context translation generated from the English SNOMED display;
-  // validate specialised clinical wording before publication.
-  * ^designation[0].language = #en
-  * ^designation[0].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[0].use.code = #eReferral-preferred
-  * ^designation[0].value = "Magnetic resonance imaging of chest without contrast"
-  * ^designation[1].language = #fr
-  * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique de thorax sans contraste"
-  * ^designation[2].language = #nl
-  * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetische-resonantiebeeldvorming van thorax zonder contrast"
-  * ^designation[3].language = #de
-  * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
-  * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Magnetresonanztomographie von Thorax ohne Kontrastmittel"
 
 // SNOMED display: Magnetic resonance imaging of chest with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -18150,11 +17886,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique du thorax avec contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique du thorax avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van thorax met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van thorax met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18170,7 +17906,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angio-IRM thoraco-abdomino-pelvienne sans produit de contraste"
+  * ^designation[1].value = "angio-IRM thoraco-abdomino-pelvienne sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18190,11 +17926,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique (IRM) du thorax, de l'abdomen et du pelvis"
+  * ^designation[1].value = "imagerie par résonance magnétique (IRM) du thorax, de l'abdomen et du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van thorax, abdomen en bekken"
+  * ^designation[2].value = "magnetic resonance imaging van thorax, abdomen en bekken"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18210,11 +17946,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Défécographie par IRM"
+  * ^designation[1].value = "défécographie par IRM"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Dynamisch rectaal onderzoek met behulp van magnetic resonance imaging"
+  * ^designation[2].value = "dynamisch rectaal onderzoek met behulp van magnetic resonance imaging"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18230,7 +17966,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la hanche"
+  * ^designation[1].value = "imagerie par IRM de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18250,11 +17986,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la hanche avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la hanche avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van heup met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van heup met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18270,7 +18006,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM des deux hanches"
+  * ^designation[1].value = "imagerie par IRM des deux hanches"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18290,11 +18026,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM des deux hanches avec contraste"
+  * ^designation[1].value = "imagerie par IRM des deux hanches avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van beide heupen met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van beide heupen met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18310,11 +18046,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du genou"
+  * ^designation[1].value = "imagerie par IRM du genou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van knie"
+  * ^designation[2].value = "magnetic resonance imaging van knie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18330,7 +18066,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du genou avec contraste"
+  * ^designation[1].value = "imagerie par IRM du genou avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18350,7 +18086,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de membre inférieur"
+  * ^designation[1].value = "imagerie par IRM de membre inférieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18370,7 +18106,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de membre inférieur avec contraste"
+  * ^designation[1].value = "imagerie par IRM de membre inférieur avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18390,7 +18126,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la cuisse"
+  * ^designation[1].value = "imagerie par IRM de la cuisse"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18410,7 +18146,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM des deux cuisses"
+  * ^designation[1].value = "imagerie par IRM des deux cuisses"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18430,7 +18166,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la cuisse avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la cuisse avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18450,11 +18186,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM des deux cuisses avec contraste"
+  * ^designation[1].value = "imagerie par IRM des deux cuisses avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van beide bovenbenen met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van beide bovenbenen met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18470,7 +18206,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Cholangiopancréatographie par résonance magnétique (MRCP)"
+  * ^designation[1].value = "cholangiopancréatographie par résonance magnétique (MRCP)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18490,7 +18226,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM des voies biliaires et du pancréas avec contraste (MRCP)"
+  * ^designation[1].value = "imagerie par IRM des voies biliaires et du pancréas avec contraste (MRCP)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18514,7 +18250,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van hals zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van hals zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18530,7 +18266,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du cou avec contraste"
+  * ^designation[1].value = "imagerie par IRM du cou avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18550,11 +18286,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du sphincter anal"
+  * ^designation[1].value = "imagerie par IRM du sphincter anal"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van anussfincter"
+  * ^designation[2].value = "magnetic resonance imaging van anussfincter"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18570,7 +18306,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la prostate avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la prostate avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18594,7 +18330,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van beide sacro-iliacale gewrichten zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van beide sacro-iliacale gewrichten zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18634,7 +18370,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van scrotum zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van scrotum zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18650,11 +18386,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du scrotum avec contraste"
+  * ^designation[1].value = "imagerie par IRM du scrotum avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van scrotum met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van scrotum met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18690,11 +18426,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du pelvis avec contraste"
+  * ^designation[1].value = "imagerie par IRM du pelvis avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van pelvis met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van pelvis met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18710,11 +18446,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de plexus lombosacré"
+  * ^designation[1].value = "imagerie par IRM de plexus lombosacré"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van plexus lumbosacralis"
+  * ^designation[2].value = "magnetic resonance imaging van plexus lumbosacralis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18734,7 +18470,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van plexus lumbosacralis met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van plexus lumbosacralis met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18750,7 +18486,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne lombaire et des sacro-iliaques"
+  * ^designation[1].value = "imagerie par IRM de la colonne lombaire et des sacro-iliaques"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18770,7 +18506,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne lombaire et des sacro-iliaques avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la colonne lombaire et des sacro-iliaques avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18790,7 +18526,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne cervicale avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la colonne cervicale avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18810,7 +18546,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique de la colonne cervicale sans produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique de la colonne cervicale sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18834,7 +18570,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van cervicale, thoracale en lumbale wervelkolom met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van cervicale, thoracale en lumbale wervelkolom met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18870,7 +18606,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélographie par IRM"
+  * ^designation[1].value = "myélographie par IRM"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18890,7 +18626,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne lombaire sans contraste"
+  * ^designation[1].value = "imagerie par IRM de la colonne lombaire sans contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18914,7 +18650,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van lumbale wervelkolom zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van lumbale wervelkolom zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -18930,7 +18666,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne lombaire et du sacrum"
+  * ^designation[1].value = "imagerie par IRM de la colonne lombaire et du sacrum"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -18950,11 +18686,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne lombaire et du sacrum avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la colonne lombaire et du sacrum avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van lumbale en sacrale wervelkolom met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van lumbale en sacrale wervelkolom met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19010,11 +18746,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne thoracique avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la colonne thoracique avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van thoracale wervelkolom met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van thoracale wervelkolom met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19030,11 +18766,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique de la colonne thoracique sans produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique de la colonne thoracique sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van thoracale wervelkolom zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van thoracale wervelkolom zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19054,7 +18790,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van thoracale en lumbale wervelkolom zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van thoracale en lumbale wervelkolom zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19070,7 +18806,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne thoracique et lombaire avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la colonne thoracique et lombaire avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -19090,11 +18826,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la colonne vertébrale"
+  * ^designation[1].value = "imagerie par IRM de la colonne vertébrale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van wervelkolom"
+  * ^designation[2].value = "magnetic resonance imaging van wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19110,7 +18846,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique du rachis avec produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique du rachis avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -19130,7 +18866,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique du bras"
+  * ^designation[1].value = "imagerie par résonance magnétique du bras"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -19150,7 +18886,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique du bras avec produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique du bras avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -19170,11 +18906,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du plexus brachial"
+  * ^designation[1].value = "imagerie par IRM du plexus brachial"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van plexus brachialis"
+  * ^designation[2].value = "magnetic resonance imaging van plexus brachialis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19190,11 +18926,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de plexus brachial avec produit de contraste"
+  * ^designation[1].value = "imagerie par IRM de plexus brachial avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van plexus brachialis met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van plexus brachialis met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19210,7 +18946,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coude"
+  * ^designation[1].value = "imagerie par IRM du coude"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -19230,7 +18966,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coude avec contraste"
+  * ^designation[1].value = "imagerie par IRM du coude avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -19254,7 +18990,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van digitus van hand, exclusief digitus I"
+  * ^designation[2].value = "magnetic resonance imaging van digitus van hand, exclusief digitus I"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19290,11 +19026,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique de l'avant-bras avec produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique de l'avant-bras avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van onderarm met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van onderarm met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19310,11 +19046,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la main"
+  * ^designation[1].value = "imagerie par IRM de la main"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van hand"
+  * ^designation[2].value = "magnetic resonance imaging van hand"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19330,11 +19066,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la main avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la main avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van hand met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van hand met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19354,7 +19090,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van schouderblad zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van schouderblad zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19370,11 +19106,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'omoplate avec contraste"
+  * ^designation[1].value = "imagerie par IRM de l'omoplate avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van schouderblad met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van schouderblad met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19390,11 +19126,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'épaule"
+  * ^designation[1].value = "imagerie par IRM de l'épaule"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van schouder"
+  * ^designation[2].value = "magnetic resonance imaging van schouder"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19410,11 +19146,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'épaule avec contraste"
+  * ^designation[1].value = "imagerie par IRM de l'épaule avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van schouder met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van schouder met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19430,11 +19166,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du poignet avec contraste"
+  * ^designation[1].value = "imagerie par IRM du poignet avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van pols met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van pols met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19470,11 +19206,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de l'abdomen"
+  * ^designation[1].value = "échographie de l'abdomen"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van abdomen"
+  * ^designation[2].value = "echografie van abdomen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19490,11 +19226,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie des surrénales"
+  * ^designation[1].value = "échographie des surrénales"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van glandula suprarenalis"
+  * ^designation[2].value = "echografische beeldvorming van glandula suprarenalis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19510,11 +19246,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie da l'abdomen avec contraste"
+  * ^designation[1].value = "échographie da l'abdomen avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Buikecho met contrast"
+  * ^designation[2].value = "buikecho met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19530,11 +19266,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de l'abdomen et du pelvis"
+  * ^designation[1].value = "échographie de l'abdomen et du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Ultrageluidsonderzoek van buik en bekken"
+  * ^designation[2].value = "ultrageluidsonderzoek van buik en bekken"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19550,11 +19286,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du sein"
+  * ^designation[1].value = "échographie du sein"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van mamma"
+  * ^designation[2].value = "echografie van mamma"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19570,11 +19306,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie des deux seins"
+  * ^designation[1].value = "échographie des deux seins"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echoscopie van beide borsten"
+  * ^designation[2].value = "echoscopie van beide borsten"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19590,11 +19326,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du thorax"
+  * ^designation[1].value = "échographie du thorax"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van thorax"
+  * ^designation[2].value = "echografie van thorax"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19610,11 +19346,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie thoracoabdominale"
+  * ^designation[1].value = "échographie thoracoabdominale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echoscopie van borstkas en buik"
+  * ^designation[2].value = "echoscopie van borstkas en buik"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19630,11 +19366,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du coeur du fétus"
+  * ^designation[1].value = "échographie du coeur du fétus"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Foetale echocardiografie"
+  * ^designation[2].value = "foetale echocardiografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19650,11 +19386,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du coeur transoesophagienne"
+  * ^designation[1].value = "échographie du coeur transoesophagienne"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transoesofageale echocardiografie"
+  * ^designation[2].value = "transoesofageale echocardiografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19670,11 +19406,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du coeur transthoracique"
+  * ^designation[1].value = "échographie du coeur transthoracique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transthoracaal echocardiogram"
+  * ^designation[2].value = "transthoracaal echocardiogram"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19690,11 +19426,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la tête"
+  * ^designation[1].value = "échographie de la tête"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van hoofd"
+  * ^designation[2].value = "echografische beeldvorming van hoofd"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19710,11 +19446,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la cheville"
+  * ^designation[1].value = "échographie de la cheville"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van enkelregio"
+  * ^designation[2].value = "echografie van enkelregio"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19730,11 +19466,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du pied"
+  * ^designation[1].value = "échographie du pied"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van voet"
+  * ^designation[2].value = "echografie van voet"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19750,11 +19486,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la hanche"
+  * ^designation[1].value = "échographie de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van heup"
+  * ^designation[2].value = "echografische beeldvorming van heup"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19770,11 +19506,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie bilatérale de la hanche"
+  * ^designation[1].value = "échographie bilatérale de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Ultrageluidsonderzoek van beide heupen"
+  * ^designation[2].value = "ultrageluidsonderzoek van beide heupen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19790,11 +19526,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du genou"
+  * ^designation[1].value = "échographie du genou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van knieregio"
+  * ^designation[2].value = "echografie van knieregio"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19810,11 +19546,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la cuisse"
+  * ^designation[1].value = "échographie de la cuisse"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van bovenbeen"
+  * ^designation[2].value = "echografie van bovenbeen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19830,11 +19566,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie des deux cuisses"
+  * ^designation[1].value = "échographie des deux cuisses"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van beide bovenbenen"
+  * ^designation[2].value = "echografie van beide bovenbenen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19850,11 +19586,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la face"
+  * ^designation[1].value = "échographie de la face"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van aangezicht"
+  * ^designation[2].value = "echografie van aangezicht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19870,11 +19606,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du cou"
+  * ^designation[1].value = "échographie du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van hals"
+  * ^designation[2].value = "echografie van hals"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19890,11 +19626,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la thyroide"
+  * ^designation[1].value = "échographie de la thyroide"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van schildklier"
+  * ^designation[2].value = "echografie van schildklier"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19910,11 +19646,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du pelvis"
+  * ^designation[1].value = "échographie du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van pelvis"
+  * ^designation[2].value = "echo van pelvis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19930,11 +19666,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la vessie"
+  * ^designation[1].value = "échographie de la vessie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van blaas"
+  * ^designation[2].value = "echografie van blaas"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19950,11 +19686,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de l'utérus gravide"
+  * ^designation[1].value = "échographie de l'utérus gravide"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van uterus gravidus"
+  * ^designation[2].value = "echografie van uterus gravidus"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19970,11 +19706,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de l'articulation sacro-iliaque"
+  * ^designation[1].value = "échographie de l'articulation sacro-iliaque"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van articulatio sacroiliaca"
+  * ^designation[2].value = "echo van articulatio sacroiliaca"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -19990,11 +19726,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du scrotum"
+  * ^designation[1].value = "échographie du scrotum"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van balzak"
+  * ^designation[2].value = "echo van balzak"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20030,11 +19766,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la colonne vertébrale"
+  * ^designation[1].value = "échographie de la colonne vertébrale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van wervelkolom"
+  * ^designation[2].value = "echografische beeldvorming van wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20050,11 +19786,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la colonne cervicale"
+  * ^designation[1].value = "échographie de la colonne cervicale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van CWK"
+  * ^designation[2].value = "echo van CWK"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20070,11 +19806,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la colonne lombaire"
+  * ^designation[1].value = "échographie de la colonne lombaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van LWK"
+  * ^designation[2].value = "echo van LWK"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20090,15 +19826,15 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du sacrum"
+  * ^designation[1].value = "ECHO, colonne, lombaire sacrum"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van sacrale wervelkolom"
+  * ^designation[2].value = "US, wervelkolom, lumbaal-sacrum"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "Ultraschall, Wirbelsäule, sakral"
+  * ^designation[3].value = "Ultraschall, Wirbelsäule, lumbosakral"
 
 // SNOMED display: Ultrasonography of thoracic spine (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -20110,11 +19846,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la colonne dorsale"
+  * ^designation[1].value = "échographie de la colonne dorsale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van columna vertebralis thoracalis"
+  * ^designation[2].value = "echo van columna vertebralis thoracalis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20134,7 +19870,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transabdominaal ultrageluidsonderzoek van bekken"
+  * ^designation[2].value = "transabdominaal ultrageluidsonderzoek van bekken"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20150,11 +19886,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie obstétricale"
+  * ^designation[1].value = "échographie obstétricale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Obstetrische echografie à vue"
+  * ^designation[2].value = "obstetrische echografie à vue"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20190,11 +19926,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du col de l'utérus"
+  * ^designation[1].value = "ECHO, bassin, stress-test cervical"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van baarmoederhals"
+  * ^designation[2].value = "US, bekken, cervix stress test"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20210,7 +19946,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie endorectale"
+  * ^designation[1].value = "échographie endorectale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -20230,11 +19966,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie transrectale de prostate"
+  * ^designation[1].value = "échographie transrectale de prostate"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transrectale echografie van prostaat"
+  * ^designation[2].value = "transrectale echografie van prostaat"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20250,11 +19986,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Écho-doppler transvaginal"
+  * ^designation[1].value = "écho-doppler transvaginal"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transvaginaal obstetrisch echo-Doppler-onderzoek"
+  * ^designation[2].value = "transvaginaal obstetrisch echo-Doppler-onderzoek"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20270,11 +20006,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie transvaginale du pelvis"
+  * ^designation[1].value = "échographie transvaginale du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transvaginale ultrasonografie van bekken"
+  * ^designation[2].value = "transvaginale ultrasonografie van bekken"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20290,11 +20026,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du membre supérieur"
+  * ^designation[1].value = "échographie du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van bovenste extremiteit"
+  * ^designation[2].value = "echografie van bovenste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20310,11 +20046,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la partie supérieure du membre supérieur"
+  * ^designation[1].value = "échographie de la partie supérieure du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van bovenarm"
+  * ^designation[2].value = "echografische beeldvorming van bovenarm"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20330,11 +20066,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du coude"
+  * ^designation[1].value = "échographie du coude"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van elleboog"
+  * ^designation[2].value = "echografie van elleboog"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20350,11 +20086,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie des doigts"
+  * ^designation[1].value = "échographie des doigts"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Ultrasonografie van vinger"
+  * ^designation[2].value = "ultrasonografie van vinger"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20370,11 +20106,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de l'avant-bras"
+  * ^designation[1].value = "échographie de l'avant-bras"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van onderarm"
+  * ^designation[2].value = "echografie van onderarm"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20390,11 +20126,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la main"
+  * ^designation[1].value = "échographie de la main"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van hand"
+  * ^designation[2].value = "echografie van hand"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20410,11 +20146,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la région de l'épaule"
+  * ^designation[1].value = "échographie de la région de l'épaule"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van schoudergebied"
+  * ^designation[2].value = "echografie van schoudergebied"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20430,11 +20166,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du pouce"
+  * ^designation[1].value = "échographie du pouce"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echo van pollex"
+  * ^designation[2].value = "echo van pollex"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20450,11 +20186,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du poignet"
+  * ^designation[1].value = "échographie du poignet"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van pols"
+  * ^designation[2].value = "echografie van pols"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20474,7 +20210,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van abdomen"
+  * ^designation[2].value = "röntgenfoto van abdomen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20494,7 +20230,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Serie röntgenfoto's van volledig skelet"
+  * ^designation[2].value = "serie röntgenfoto's van volledig skelet"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20510,7 +20246,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie"
+  * ^designation[1].value = "radiographie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -20530,7 +20266,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie pulmonaire simple"
+  * ^designation[1].value = "radiographie pulmonaire simple"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -20554,7 +20290,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van articulatio acromioclavicularis"
+  * ^designation[2].value = "röntgenfoto van articulatio acromioclavicularis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20570,11 +20306,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de clavicule"
+  * ^designation[1].value = "radiographie de clavicule"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van sleutelbeen"
+  * ^designation[2].value = "röntgenfoto van sleutelbeen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20594,7 +20330,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van botstructuur van rib"
+  * ^designation[2].value = "röntgenfoto van botstructuur van rib"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20614,7 +20350,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van sternoclaviculair gewricht"
+  * ^designation[2].value = "röntgenfoto van sternoclaviculair gewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20634,7 +20370,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van sternum"
+  * ^designation[2].value = "röntgenfoto van sternum"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20650,11 +20386,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie du thorax et de l'abdomen"
+  * ^designation[1].value = "radiographie du thorax et de l'abdomen"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van borstkas en buik"
+  * ^designation[2].value = "röntgenfoto van borstkas en buik"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20674,7 +20410,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van processus mastoideus"
+  * ^designation[2].value = "röntgenfoto van processus mastoideus"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20694,7 +20430,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van sella turcica"
+  * ^designation[2].value = "röntgenfoto van sella turcica"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20714,7 +20450,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van schedel"
+  * ^designation[2].value = "röntgenfoto van schedel"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20734,7 +20470,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van onderste extremiteit"
+  * ^designation[2].value = "röntgenfoto van onderste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20750,11 +20486,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie du fémur"
+  * ^designation[1].value = "radiographie du fémur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van femur"
+  * ^designation[2].value = "röntgenfoto van femur"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20774,7 +20510,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van voet"
+  * ^designation[2].value = "röntgenfoto van voet"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20790,11 +20526,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie simple de la hanche"
+  * ^designation[1].value = "radiographie simple de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van heup"
+  * ^designation[2].value = "röntgenfoto van heup"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20810,11 +20546,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie coxofémorale simple bilatérale"
+  * ^designation[1].value = "radiographie coxofémorale simple bilatérale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van beide heupen"
+  * ^designation[2].value = "röntgenfoto van beide heupen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20834,7 +20570,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van onderbeen"
+  * ^designation[2].value = "röntgenfoto van onderbeen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20850,11 +20586,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie tibiopéronière simple"
+  * ^designation[1].value = "radiographie tibiopéronière simple"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van scheenbeen en kuitbeen"
+  * ^designation[2].value = "röntgenfoto van scheenbeen en kuitbeen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20870,11 +20606,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie standard d'un orteil"
+  * ^designation[1].value = "radiographie standard d'un orteil"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van teen"
+  * ^designation[2].value = "röntgenfoto van teen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20894,7 +20630,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van neusbijholte"
+  * ^designation[2].value = "röntgenfoto van neusbijholte"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20910,11 +20646,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie du cou"
+  * ^designation[1].value = "radiographie du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van hals en/of nek"
+  * ^designation[2].value = "röntgenfoto van hals en/of nek"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20930,11 +20666,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie simple du pelvis"
+  * ^designation[1].value = "radiographie simple du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van bekken"
+  * ^designation[2].value = "röntgenfoto van bekken"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20950,11 +20686,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie conventionnelle de l'articulation sacro-iliaque"
+  * ^designation[1].value = "radiographie conventionnelle de l'articulation sacro-iliaque"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van sacro-iliacaal gewricht"
+  * ^designation[2].value = "röntgenfoto van sacro-iliacaal gewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20974,7 +20710,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van bot van bekken en bot van heup"
+  * ^designation[2].value = "röntgenfoto van bot van bekken en bot van heup"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -20990,11 +20726,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie simple du bassin et du membre inférieur"
+  * ^designation[1].value = "radiographie simple du bassin et du membre inférieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van bekken en onderste extremiteit"
+  * ^designation[2].value = "röntgenfoto van bekken en onderste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21010,11 +20746,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de thorax avec un imageur mobile"
+  * ^designation[1].value = "radiographie de thorax avec un imageur mobile"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van thorax met mobiele beeldversterker"
+  * ^designation[2].value = "röntgenfoto van thorax met mobiele beeldversterker"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21030,11 +20766,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie conventionnelle du poignet"
+  * ^designation[1].value = "radiographie conventionnelle du poignet"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van pols"
+  * ^designation[2].value = "röntgenfoto van pols"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21054,7 +20790,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van regio van wervelkolom"
+  * ^designation[2].value = "röntgenfoto van regio van wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21070,11 +20806,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de la colonne cervicale"
+  * ^designation[1].value = "radiographie de la colonne cervicale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van columna vertebralis cervicalis"
+  * ^designation[2].value = "röntgenfoto van columna vertebralis cervicalis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21090,7 +20826,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie standard de la colonne lombaire"
+  * ^designation[1].value = "radiographie standard de la colonne lombaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21110,11 +20846,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de la colonne lombo-sacrée"
+  * ^designation[1].value = "radiographie de la colonne lombo-sacrée"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenonderzoek van lumbosacrale wervelkolom"
+  * ^designation[2].value = "röntgenonderzoek van lumbosacrale wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21134,7 +20870,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van regio van sacrale wervelkolom"
+  * ^designation[2].value = "röntgenfoto van regio van sacrale wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21154,7 +20890,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van volledige wervelkolom"
+  * ^designation[2].value = "röntgenfoto van volledige wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21174,7 +20910,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van regio van thoracale wervelkolom"
+  * ^designation[2].value = "röntgenfoto van regio van thoracale wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21190,11 +20926,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de la colonne dorso-lombaire"
+  * ^designation[1].value = "radiographie de la colonne dorso-lombaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van TWK en LWK"
+  * ^designation[2].value = "röntgenfoto van TWK en LWK"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21234,7 +20970,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Stress-röntgenfoto van articulatio talocruralis"
+  * ^designation[2].value = "stress-röntgenfoto van articulatio talocruralis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21250,7 +20986,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie du coude"
+  * ^designation[1].value = "radiographie du coude"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21274,7 +21010,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Stress-röntgenfoto van duim"
+  * ^designation[2].value = "stress-röntgenfoto van duim"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21310,11 +21046,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie simple du membre supérieur"
+  * ^designation[1].value = "radiographie simple du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van bovenste ledemaat"
+  * ^designation[2].value = "röntgenfoto van bovenste ledemaat"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21330,11 +21066,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie conventionnelle d'un doigt, sauf le pouce"
+  * ^designation[1].value = "radiographie conventionnelle d'un doigt, sauf le pouce"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van digitus manus, exclusief pollex"
+  * ^designation[2].value = "röntgenfoto van digitus manus, exclusief pollex"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21350,7 +21086,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie conventionnelle de l'avant-bras"
+  * ^designation[1].value = "radiographie conventionnelle de l'avant-bras"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21370,7 +21106,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de la main"
+  * ^designation[1].value = "radiographie de la main"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21390,11 +21126,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de l'humérus"
+  * ^designation[1].value = "radiographie de l'humérus"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van humerus"
+  * ^designation[2].value = "röntgenfoto van humerus"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21410,7 +21146,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie de l'omoplate"
+  * ^designation[1].value = "radiographie de l'omoplate"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21430,7 +21166,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie standard de l'épaule"
+  * ^designation[1].value = "radiographie standard de l'épaule"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21450,11 +21186,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie simple du doigt I de la main"
+  * ^designation[1].value = "radiographie simple du doigt I de la main"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van pollex"
+  * ^designation[2].value = "röntgenfoto van pollex"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21474,11 +21210,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du rein"
+  * ^designation[1].value = "échographie du rein"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van nier"
+  * ^designation[2].value = "echografie van nier"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21494,11 +21230,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du pelvis"
+  * ^designation[1].value = "imagerie par IRM du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van pelvis"
+  * ^designation[2].value = "magnetic resonance imaging van pelvis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21514,11 +21250,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie du rein"
+  * ^designation[1].value = "biopsie du rein"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Nierbiopsie"
+  * ^designation[2].value = "nierbiopsie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21534,11 +21270,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie sélective de la colonne vertébrale"
+  * ^designation[1].value = "angiographie sélective de la colonne vertébrale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Selectieve angiografie van vasculatuur van wervelkolom"
+  * ^designation[2].value = "selectieve angiografie van vasculatuur van wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21554,7 +21290,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie transvaginale"
+  * ^designation[1].value = "échographie transvaginale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21574,11 +21310,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Injection intra-articulaire de la hanche"
+  * ^designation[1].value = "injection intra-articulaire de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Injectie in articulatio coxae"
+  * ^designation[2].value = "injectie in articulatio coxae"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21594,11 +21330,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Ponction-aspiration"
+  * ^designation[1].value = "ponction-aspiration"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Aspiratie"
+  * ^designation[2].value = "aspiratie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21614,11 +21350,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Galactographie"
+  * ^designation[1].value = "galactographie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgencontrastonderzoek van melkgang"
+  * ^designation[2].value = "röntgencontrastonderzoek van melkgang"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21634,11 +21370,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie veineuse au niveau de l'espace épidural"
+  * ^designation[1].value = "angiographie veineuse au niveau de l'espace épidural"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Extradurale venografie"
+  * ^designation[2].value = "extradurale venografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21654,11 +21390,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Mammographie de dépistage"
+  * ^designation[1].value = "mammographie de dépistage"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Screeningsmammografie"
+  * ^designation[2].value = "screeningsmammografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21674,11 +21410,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Injection dans une articulation de la cheville"
+  * ^designation[1].value = "injection dans une articulation de la cheville"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Injectie in articulatio talocruralis"
+  * ^designation[2].value = "injectie in articulatio talocruralis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21694,11 +21430,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radioscopie du thorax"
+  * ^designation[1].value = "radioscopie du thorax"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopie van borstkas"
+  * ^designation[2].value = "fluoroscopie van borstkas"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21714,11 +21450,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Cathétérisme du coeur droit"
+  * ^designation[1].value = "cathétérisme du coeur droit"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Katheterisatie van rechter harthelft"
+  * ^designation[2].value = "katheterisatie van rechter harthelft"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21734,11 +21470,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Mammographie bilatérale"
+  * ^designation[1].value = "mammographie bilatérale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenonderzoek van beide mammae"
+  * ^designation[2].value = "röntgenonderzoek van beide mammae"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21754,7 +21490,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie du sein à aiguille creuse"
+  * ^designation[1].value = "biopsie du sein à aiguille creuse"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21774,11 +21510,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie du poignet"
+  * ^designation[1].value = "arthrographie du poignet"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Artrografie van radiocarpaal gewricht"
+  * ^designation[2].value = "artrografie van radiocarpaal gewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21794,11 +21530,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie à l'aiguille fine du rein"
+  * ^designation[1].value = "biopsie à l'aiguille fine du rein"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fijnenaaldbiopsie van nier"
+  * ^designation[2].value = "fijnenaaldbiopsie van nier"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21818,7 +21554,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging met contrast"
+  * ^designation[2].value = "magnetic resonance imaging met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21834,11 +21570,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie hépatique"
+  * ^designation[1].value = "veinographie hépatique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Flebografie van vena hepatica"
+  * ^designation[2].value = "flebografie van vena hepatica"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21854,7 +21590,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'articulation temporo-mandibulaire"
+  * ^designation[1].value = "imagerie par IRM de l'articulation temporo-mandibulaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -21874,11 +21610,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Mammographie"
+  * ^designation[1].value = "mammographie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Mammografie"
+  * ^designation[2].value = "mammografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21894,11 +21630,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie du membre inférieur"
+  * ^designation[1].value = "veinographie du membre inférieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Flebografie van vene van onderste extremiteit"
+  * ^designation[2].value = "flebografie van vene van onderste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21914,11 +21650,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie de l'épaule"
+  * ^designation[1].value = "arthrographie de l'épaule"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Artrografie van schouder"
+  * ^designation[2].value = "artrografie van schouder"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21934,11 +21670,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie de la trompe de Fallope"
+  * ^designation[1].value = "biopsie de la trompe de Fallope"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van eileider"
+  * ^designation[2].value = "biopsie van eileider"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21954,11 +21690,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Fluoroscopie cardiaque"
+  * ^designation[1].value = "fluoroscopie cardiaque"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Doorlichting van hart"
+  * ^designation[2].value = "doorlichting van hart"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -21994,11 +21730,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie du foie"
+  * ^designation[1].value = "biopsie du foie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van lever"
+  * ^designation[2].value = "biopsie van lever"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22014,11 +21750,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie"
+  * ^designation[1].value = "biopsie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie"
+  * ^designation[2].value = "biopsie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22034,11 +21770,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique sans produit de contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22054,11 +21790,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Thoracentèse"
+  * ^designation[1].value = "thoracentèse"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Thoracocentese"
+  * ^designation[2].value = "thoracocentese"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22074,11 +21810,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie de veines de la tête et du cou"
+  * ^designation[1].value = "angiographie de veines de la tête et du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Flebografie van venen van hoofd-halsregio"
+  * ^designation[2].value = "flebografie van venen van hoofd-halsregio"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22094,11 +21830,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Procédure crurale"
+  * ^designation[1].value = "procédure crurale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Verrichting op bovenbeen"
+  * ^designation[2].value = "verrichting op bovenbeen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22114,11 +21850,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie du genou"
+  * ^designation[1].value = "arthrographie du genou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Artrografie van kniegewricht"
+  * ^designation[2].value = "artrografie van kniegewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22134,11 +21870,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie de la hanche"
+  * ^designation[1].value = "arthrographie de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Beeldvormend onderzoek van articulatio coxae"
+  * ^designation[2].value = "beeldvormend onderzoek van articulatio coxae"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22154,11 +21890,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie veineuse de la tête et/ou du cou et/ou du thorax"
+  * ^designation[1].value = "angiographie veineuse de la tête et/ou du cou et/ou du thorax"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Flebografie van hoofd/hals/thorax"
+  * ^designation[2].value = "flebografie van hoofd/hals/thorax"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22174,11 +21910,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie endoscopique du tractus gastro-intestinal supérieur"
+  * ^designation[1].value = "échographie endoscopique du tractus gastro-intestinal supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Endo-echografie van bovenste deel van maag-darmkanaal"
+  * ^designation[2].value = "endo-echografie van bovenste deel van maag-darmkanaal"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22194,11 +21930,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Cholécystostomie percutanée"
+  * ^designation[1].value = "cholécystostomie percutanée"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Percutane galblaasdrainage"
+  * ^designation[2].value = "percutane galblaasdrainage"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22214,11 +21950,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Pancréatographie endoscopique rétrograde"
+  * ^designation[1].value = "pancréatographie endoscopique rétrograde"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Endoscopisch retrograad röntgencontrastonderzoek van ductus pancreaticus"
+  * ^designation[2].value = "endoscopisch retrograad röntgencontrastonderzoek van ductus pancreaticus"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22234,11 +21970,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie du thorax"
+  * ^designation[1].value = "biopsie du thorax"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van thorax"
+  * ^designation[2].value = "biopsie van thorax"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22254,11 +21990,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Injection d'un anesthésique local et de corticostéroïdes dans l'articulation sacro-iliaque"
+  * ^designation[1].value = "injection d'un anesthésique local et de corticostéroïdes dans l'articulation sacro-iliaque"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Injectie van lokaal anestheticum en steroïd in sacro-iliacaal gewricht"
+  * ^designation[2].value = "injectie van lokaal anestheticum en steroïd in sacro-iliacaal gewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22274,11 +22010,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Shunt portosystémique intrahépatique par voie percutanée (TIPS)"
+  * ^designation[1].value = "shunt portosystémique intrahépatique par voie percutanée (TIPS)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Aanleggen van TIPS"
+  * ^designation[2].value = "aanleggen van TIPS"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22294,11 +22030,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Transit grêle"
+  * ^designation[1].value = "transit grêle"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Bariumklysma voor dunne darm"
+  * ^designation[2].value = "bariumklysma voor dunne darm"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22314,11 +22050,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie d'une articulation interapophysaire postérieure"
+  * ^designation[1].value = "arthrographie d'une articulation interapophysaire postérieure"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Beeldvormend onderzoek van zygapofysiaal gewricht"
+  * ^designation[2].value = "beeldvormend onderzoek van zygapofysiaal gewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22334,11 +22070,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie de la cheville"
+  * ^designation[1].value = "arthrographie de la cheville"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Artrografie van articulatio talocruralis"
+  * ^designation[2].value = "artrografie van articulatio talocruralis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22354,11 +22090,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie d'un vaisseau sanguin de l'abdomen"
+  * ^designation[1].value = "angiographie d'un vaisseau sanguin de l'abdomen"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Angiografie van bloedvat van abdomen"
+  * ^designation[2].value = "angiografie van bloedvat van abdomen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22374,11 +22110,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie d'une veine du pelvis"
+  * ^designation[1].value = "angiographie d'une veine du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Flebografie van vene van pelvis"
+  * ^designation[2].value = "flebografie van vene van pelvis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22394,11 +22130,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Étude du cœur par tomographie par émission de positons"
+  * ^designation[1].value = "étude du cœur par tomographie par émission de positons"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Hartonderzoek met PET"
+  * ^designation[2].value = "hartonderzoek met PET"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22414,11 +22150,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de l'aorte"
+  * ^designation[1].value = "échographie de l'aorte"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van aorta"
+  * ^designation[2].value = "echografische beeldvorming van aorta"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22434,11 +22170,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie intravasculaire d'artère"
+  * ^designation[1].value = "échographie intravasculaire d'artère"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Intravasculaire echografie van arterie"
+  * ^designation[2].value = "intravasculaire echografie van arterie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22454,7 +22190,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la tête"
+  * ^designation[1].value = "imagerie par IRM de la tête"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -22474,7 +22210,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique des sinus paranasaux"
+  * ^designation[1].value = "imagerie par résonance magnétique des sinus paranasaux"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -22494,7 +22230,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coeur"
+  * ^designation[1].value = "imagerie par IRM du coeur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -22514,11 +22250,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du poignet"
+  * ^designation[1].value = "imagerie par IRM du poignet"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van pols"
+  * ^designation[2].value = "magnetic resonance imaging van pols"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22534,7 +22270,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du pied"
+  * ^designation[1].value = "imagerie par IRM du pied"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -22554,7 +22290,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie par IRM de la cheville"
+  * ^designation[1].value = "arthrographie par IRM de la cheville"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -22574,11 +22310,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM des vaisseaux du cou"
+  * ^designation[1].value = "imagerie par IRM des vaisseaux du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van bloedvat van hals"
+  * ^designation[2].value = "magnetic resonance imaging van bloedvat van hals"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22594,11 +22330,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Prélèvement de sang veineux d'un sinus pétreux par cathéter"
+  * ^designation[1].value = "prélèvement de sang veineux d'un sinus pétreux par cathéter"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Katheterisatie van sinus petrosus inferior voor bloedafname"
+  * ^designation[2].value = "katheterisatie van sinus petrosus inferior voor bloedafname"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22614,11 +22350,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie du fémur"
+  * ^designation[1].value = "biopsie du fémur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van femur"
+  * ^designation[2].value = "biopsie van femur"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22634,11 +22370,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie de la glande surrénale"
+  * ^designation[1].value = "biopsie de la glande surrénale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van bijnier"
+  * ^designation[2].value = "biopsie van bijnier"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22654,11 +22390,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Ponction de l'articulation du coude"
+  * ^designation[1].value = "ponction de l'articulation du coude"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Punctie uit ellebooggewricht"
+  * ^designation[2].value = "punctie uit ellebooggewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22674,11 +22410,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Aspiration de l'articulation de la hanche"
+  * ^designation[1].value = "aspiration de l'articulation de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Aspiratie uit articulatio coxae"
+  * ^designation[2].value = "aspiratie uit articulatio coxae"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22694,11 +22430,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Aspiration au niveau d'une articulation du genou"
+  * ^designation[1].value = "aspiration au niveau d'une articulation du genou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Aspiratie uit kniegewricht"
+  * ^designation[2].value = "aspiratie uit kniegewricht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22714,11 +22450,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie de la ceinture scapulaire et du membre supérieur"
+  * ^designation[1].value = "arthrographie de la ceinture scapulaire et du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Beeldvormend onderzoek van gewricht van bovenste ledemaat"
+  * ^designation[2].value = "beeldvormend onderzoek van gewricht van bovenste ledemaat"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22734,11 +22470,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radioscopie de l'abdomen"
+  * ^designation[1].value = "radioscopie de l'abdomen"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopie van abdomen"
+  * ^designation[2].value = "fluoroscopie van abdomen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22754,11 +22490,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie de colonne vertébrale"
+  * ^designation[1].value = "biopsie de colonne vertébrale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van columna vertebralis"
+  * ^designation[2].value = "biopsie van columna vertebralis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22774,11 +22510,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Duplex scan de veines du membre inférieur"
+  * ^designation[1].value = "duplex scan de veines du membre inférieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Duplexonderzoek van venen van been"
+  * ^designation[2].value = "duplexonderzoek van venen van been"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22794,11 +22530,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Duplex scan des artères du membre supérieur"
+  * ^designation[1].value = "duplex scan des artères du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Duplexonderzoek van arterie van bovenste extremiteit"
+  * ^designation[2].value = "duplexonderzoek van arterie van bovenste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22814,11 +22550,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Duplex scan des veines du membre supérieur"
+  * ^designation[1].value = "duplex scan des veines du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Duplexonderzoek van aders van arm"
+  * ^designation[2].value = "duplexonderzoek van aders van arm"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22834,11 +22570,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie laparoscopique"
+  * ^designation[1].value = "échographie laparoscopique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Laparoscopische echografische beeldvorming van abdomen"
+  * ^designation[2].value = "laparoscopische echografische beeldvorming van abdomen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22854,11 +22590,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélogramme"
+  * ^designation[1].value = "myélogramme"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Myelografie"
+  * ^designation[2].value = "myelografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22874,11 +22610,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie du membre supérieur"
+  * ^designation[1].value = "imagerie du membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Beeldvormend onderzoek van bovenste ledemaat"
+  * ^designation[2].value = "beeldvormend onderzoek van bovenste ledemaat"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22894,7 +22630,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Étude mammaire par TEP (tomographie par émission de positons)"
+  * ^designation[1].value = "étude mammaire par TEP (tomographie par émission de positons)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -22914,11 +22650,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélographie cervicale sous radioscopie"
+  * ^designation[1].value = "myélographie cervicale sous radioscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide cervicale myelografie"
+  * ^designation[2].value = "fluoroscopisch geleide cervicale myelografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22934,11 +22670,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM de la tête et du cerveau"
+  * ^designation[1].value = "angiographie par IRM de la tête et du cerveau"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieangiografie van hoofd"
+  * ^designation[2].value = "magnetischeresonantieangiografie van hoofd"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22954,11 +22690,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Artériographie d'une artère bronchique sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "artériographie d'une artère bronchique sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide angiografie van arteria bronchialis"
+  * ^designation[2].value = "fluoroscopisch geleide angiografie van arteria bronchialis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22974,11 +22710,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Hystérosalpingographie fluoroscopique"
+  * ^designation[1].value = "hystérosalpingographie fluoroscopique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Hysterosalpingografie onder röntgendoorlichting"
+  * ^designation[2].value = "hysterosalpingografie onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -22994,15 +22730,15 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "FLUORO, CCD"
+  * ^designation[1].value = "cystographie sous radioscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "FLUOROSCOPIE, CystoColpoDefaecografie"
+  * ^designation[2].value = "fluorescentiecystoscopie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
-  * ^designation[3].value = "DL, Zystokolpoproktographie"
+  * ^designation[3].value = "DL, Zystographie"
 
 // SNOMED display: Fluoroscopic sinography with contrast (procedure)
 // Used in: eReferral/PSS Diagnostic Imaging Procedure
@@ -23014,11 +22750,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radiographie d'une cavité anormale sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "radiographie d'une cavité anormale sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Sinografie onder röntgendoorlichting"
+  * ^designation[2].value = "sinografie onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23034,11 +22770,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Artériographie de l'aorte thoracique sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "artériographie de l'aorte thoracique sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastangiografie van aorta thoracica onder röntgendoorlichting"
+  * ^designation[2].value = "contrastangiografie van aorta thoracica onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23054,11 +22790,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Arthrographie du genou sous radioscopie"
+  * ^designation[1].value = "arthrographie du genou sous radioscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopische artrografie van knie"
+  * ^designation[2].value = "fluoroscopische artrografie van knie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23074,11 +22810,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Défécographie sous contrôle fluoroscopique"
+  * ^designation[1].value = "défécographie sous contrôle fluoroscopique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Defecografie onder röntgendoorlichting"
+  * ^designation[2].value = "defecografie onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23094,11 +22830,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Artériographie de l'artère axillaire sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "artériographie de l'artère axillaire sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide angiografie van arteria axillaris"
+  * ^designation[2].value = "fluoroscopisch geleide angiografie van arteria axillaris"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23114,11 +22850,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Pyélographie antérograde sous radioscopie"
+  * ^designation[1].value = "pyélographie antérograde sous radioscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide antegrade pyelografie"
+  * ^designation[2].value = "fluoroscopisch geleide antegrade pyelografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23134,11 +22870,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie fluoroscopique des artères pulmonaires"
+  * ^designation[1].value = "angiographie fluoroscopique des artères pulmonaires"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastangiografie van arteria pulmonalis onder röntgendoorlichting"
+  * ^designation[2].value = "contrastangiografie van arteria pulmonalis onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23154,11 +22890,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Pyélographie rétrograde sous fluoroscopie"
+  * ^designation[1].value = "pyélographie rétrograde sous fluoroscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Retrograde pyelografie onder doorlichting"
+  * ^designation[2].value = "retrograde pyelografie onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23174,7 +22910,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des artères pulmonaires"
+  * ^designation[1].value = "angiographie par IRM des artères pulmonaires"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -23194,11 +22930,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Vénographie de la veine cave supérieure par fluoroscopie"
+  * ^designation[1].value = "vénographie de la veine cave supérieure par fluoroscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Angiografie van vena cava superior onder röntgendoorlichting"
+  * ^designation[2].value = "angiografie van vena cava superior onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23214,11 +22950,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélographie lombaire sous radioscopie"
+  * ^designation[1].value = "myélographie lombaire sous radioscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Lumbale myelografie onder röntgendoorlichting"
+  * ^designation[2].value = "lumbale myelografie onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23234,11 +22970,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie d'une structure vasculaire abdominale sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie d'une structure vasculaire abdominale sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastangiografie van bloedvat van abdomen onder röntgendoorlichting"
+  * ^designation[2].value = "contrastangiografie van bloedvat van abdomen onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23254,11 +22990,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Fluoroscopie de la hanche"
+  * ^designation[1].value = "fluoroscopie de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Doorlichting van heup"
+  * ^designation[2].value = "doorlichting van heup"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23274,11 +23010,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie du ventricule gauche et d'une artère coronaire sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie du ventricule gauche et d'une artère coronaire sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide angiografie van linker ventrikel en arteriae coronariae"
+  * ^designation[2].value = "fluoroscopisch geleide angiografie van linker ventrikel en arteriae coronariae"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23294,11 +23030,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radioscopie du membre inférieur"
+  * ^designation[1].value = "radioscopie du membre inférieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgendoorlichting van onderste extremiteit"
+  * ^designation[2].value = "röntgendoorlichting van onderste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23314,11 +23050,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie artérielle du membre supérieur sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie artérielle du membre supérieur sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Arteriografie van arterie van bovenste ledemaat onder doorlichting"
+  * ^designation[2].value = "arteriografie van arterie van bovenste ledemaat onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23334,11 +23070,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Artériographie d'une artère du membre inférieur sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "artériographie d'une artère du membre inférieur sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide angiografie van arterie van onderste extremiteit"
+  * ^designation[2].value = "fluoroscopisch geleide angiografie van arterie van onderste extremiteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23354,11 +23090,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM perfusion du cerveau"
+  * ^designation[1].value = "imagerie par IRM perfusion du cerveau"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Perfusie-MRI van hersenen"
+  * ^designation[2].value = "perfusie-MRI van hersenen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23374,11 +23110,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Pharyngographie fluoroscopique"
+  * ^designation[1].value = "pharyngographie fluoroscopique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopische beeldvorming van farynx"
+  * ^designation[2].value = "fluoroscopische beeldvorming van farynx"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23394,11 +23130,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie du côté droit du cœur sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie du côté droit du cœur sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastangiografie van rechterhelft van hart onder röntgendoorlichting"
+  * ^designation[2].value = "contrastangiografie van rechterhelft van hart onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23414,7 +23150,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Cysto-urétrographie de miction"
+  * ^designation[1].value = "cysto-urétrographie de miction"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -23434,7 +23170,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du tractus urinaire"
+  * ^designation[1].value = "imagerie par IRM du tractus urinaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -23454,11 +23190,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie des artéres cérébrales par fluoroscopie"
+  * ^designation[1].value = "angiographie des artéres cérébrales par fluoroscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide angiografie van cerebrale arterie"
+  * ^designation[2].value = "fluoroscopisch geleide angiografie van cerebrale arterie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23474,11 +23210,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Examen radiographique d'un conduit de l'iléon sous fluoroscopie"
+  * ^designation[1].value = "examen radiographique d'un conduit de l'iléon sous fluoroscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Beeldvormend onderzoek van conduit van ileum onder röntgendoorlichting"
+  * ^designation[2].value = "beeldvormend onderzoek van conduit van ileum onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23494,11 +23230,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie fluoroscopique de l'artère coronaire avec produit de contraste"
+  * ^designation[1].value = "angiographie fluoroscopique de l'artère coronaire avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Arteriografie van coronaire arterie onder röntgendoorlichting"
+  * ^designation[2].value = "arteriografie van coronaire arterie onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23514,11 +23250,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Urétrographie sous fluoroscopie"
+  * ^designation[1].value = "urétrographie sous fluoroscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastonderzoek van urethra onder doorlichting"
+  * ^designation[2].value = "contrastonderzoek van urethra onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23534,11 +23270,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie d'une structure vasculaire pelvienne sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie d'une structure vasculaire pelvienne sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastangiografie van bloedvat van bekken onder röntgendoorlichting"
+  * ^designation[2].value = "contrastangiografie van bloedvat van bekken onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23554,11 +23290,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Fluoroscopie du tractus gastro-intestinal supérieur"
+  * ^designation[1].value = "fluoroscopie du tractus gastro-intestinal supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopie van bovenste deel van maag-darmkanaal"
+  * ^designation[2].value = "fluoroscopie van bovenste deel van maag-darmkanaal"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23574,11 +23310,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Myélographie thoracique sous radioscopie"
+  * ^designation[1].value = "myélographie thoracique sous radioscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide thoracale myelografie"
+  * ^designation[2].value = "fluoroscopisch geleide thoracale myelografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23594,11 +23330,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie et ponction du pelvis"
+  * ^designation[1].value = "échographie et ponction du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie en aspiratie uit bekken"
+  * ^designation[2].value = "echografie en aspiratie uit bekken"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23614,11 +23350,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie de l'aorte sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie de l'aorte sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Angiografie van aorta onder doorlichting"
+  * ^designation[2].value = "angiografie van aorta onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23634,11 +23370,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie par IRM de la veine cave supérieure"
+  * ^designation[1].value = "veinographie par IRM de la veine cave supérieure"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van vena cava superior"
+  * ^designation[2].value = "magnetic resonance imaging van vena cava superior"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23654,11 +23390,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Artériographie rénale sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "artériographie rénale sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastangiografie van arteria renalis onder röntgendoorlichting"
+  * ^designation[2].value = "contrastangiografie van arteria renalis onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23674,11 +23410,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie de l'aorte abdominale sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie de l'aorte abdominale sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopische geleide angiografie van abdominale aorta"
+  * ^designation[2].value = "fluoroscopische geleide angiografie van abdominale aorta"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23694,11 +23430,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie à la fluorescéine avec contraste"
+  * ^designation[1].value = "angiographie à la fluorescéine avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Angiografie onder doorlichting"
+  * ^designation[2].value = "angiografie onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23714,11 +23450,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de la partie inférieure de l'abdomen"
+  * ^designation[1].value = "échographie de la partie inférieure de l'abdomen"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming van onderste gedeelte van abdomen"
+  * ^designation[2].value = "echografische beeldvorming van onderste gedeelte van abdomen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23754,11 +23490,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie obstétricale transvaginale"
+  * ^designation[1].value = "échographie obstétricale transvaginale"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transvaginale obstetrische echografie"
+  * ^designation[2].value = "transvaginale obstetrische echografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23774,11 +23510,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Fluoroscopie de la cheville"
+  * ^designation[1].value = "fluoroscopie de la cheville"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Doorlichting van enkel"
+  * ^designation[2].value = "doorlichting van enkel"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23794,11 +23530,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la circulation du liquide céphalorachidien"
+  * ^designation[1].value = "imagerie par IRM de la circulation du liquide céphalorachidien"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van circulatie van hersenvocht"
+  * ^designation[2].value = "magnetic resonance imaging van circulatie van hersenvocht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23814,11 +23550,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radioscopie du système génito-urinaire avec produit de contraste"
+  * ^designation[1].value = "radioscopie du système génito-urinaire avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide genitografie"
+  * ^designation[2].value = "fluoroscopisch geleide genitografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23834,11 +23570,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coeur pour perfusion sous stress"
+  * ^designation[1].value = "imagerie par IRM du coeur pour perfusion sous stress"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Perfusie-MRI van hart onder farmacologische stress"
+  * ^designation[2].value = "perfusie-MRI van hart onder farmacologische stress"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23854,11 +23590,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Injection de la gaine du tendon sous guidage échographique"
+  * ^designation[1].value = "injection de la gaine du tendon sous guidage échographique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Injectie in peesschede onder echogeleide"
+  * ^designation[2].value = "injectie in peesschede onder echogeleide"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23874,11 +23610,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie transrectale de la prostate sous contrôle échographique"
+  * ^designation[1].value = "biopsie transrectale de la prostate sous contrôle échographique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echogeleide transrectale biopsie van prostaat"
+  * ^designation[2].value = "echogeleide transrectale biopsie van prostaat"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23894,7 +23630,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du méat auditif interne avec contraste"
+  * ^designation[1].value = "imagerie par IRM du méat auditif interne avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -23914,11 +23650,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Écho-doppler transcranien"
+  * ^designation[1].value = "écho-doppler transcranien"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transcranieel echo-Doppler-onderzoek"
+  * ^designation[2].value = "transcranieel echo-Doppler-onderzoek"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23934,11 +23670,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie fluoroscopique intraveineuse par soustraction numérique du rein"
+  * ^designation[1].value = "angiographie fluoroscopique intraveineuse par soustraction numérique du rein"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Intraveneuze DSA van nier onder doorlichting"
+  * ^designation[2].value = "intraveneuze DSA van nier onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23954,11 +23690,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Prélèvement d'un échantillon sanguin au niveau de la veine rénale, guidé par radioscopie avec produit de contraste"
+  * ^designation[1].value = "prélèvement d'un échantillon sanguin au niveau de la veine rénale, guidé par radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide afname van bloed uit vena renalis"
+  * ^designation[2].value = "fluoroscopisch geleide afname van bloed uit vena renalis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23974,11 +23710,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Ponction de l'épaule sous controle échographique"
+  * ^designation[1].value = "ponction de l'épaule sous controle échographique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echogeleide aspiratie uit schouder"
+  * ^designation[2].value = "echogeleide aspiratie uit schouder"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -23994,11 +23730,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Ponction de la main sous controle échographique"
+  * ^designation[1].value = "ponction de la main sous controle échographique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echogeleide aspiratie uit hand"
+  * ^designation[2].value = "echogeleide aspiratie uit hand"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24014,7 +23750,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la cheville avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la cheville avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24034,11 +23770,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Injection péridurale lombaire sous contrôle fluoroscopique"
+  * ^designation[1].value = "injection péridurale lombaire sous contrôle fluoroscopique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Epidurale injectie in lumbale wervelkolom onder röntgendoorlichting"
+  * ^designation[2].value = "epidurale injectie in lumbale wervelkolom onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24054,7 +23790,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du pied avec contraste"
+  * ^designation[1].value = "imagerie par IRM du pied avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24074,11 +23810,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique des sinus paranasaux avec contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique des sinus paranasaux avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetische resonantiescan van neusbijholten met contrast"
+  * ^designation[2].value = "magnetische resonantiescan van neusbijholten met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24094,11 +23830,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Ponction du poignet sous controle échographique"
+  * ^designation[1].value = "ponction du poignet sous controle échographique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echogeleide aspiratie uit pols"
+  * ^designation[2].value = "echogeleide aspiratie uit pols"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24114,11 +23850,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du calcanéum"
+  * ^designation[1].value = "imagerie par IRM du calcanéum"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van calcaneus"
+  * ^designation[2].value = "magnetic resonance imaging van calcaneus"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24134,11 +23870,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du bassin et de la hanche"
+  * ^designation[1].value = "imagerie par IRM du bassin et de la hanche"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van bekken en heup"
+  * ^designation[2].value = "magnetic resonance imaging van bekken en heup"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24154,7 +23890,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la tête avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la tête avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24174,7 +23910,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM d'orbite avec contraste"
+  * ^designation[1].value = "imagerie par IRM d'orbite avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24194,11 +23930,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique dynamique du genou"
+  * ^designation[1].value = "imagerie par résonance magnétique dynamique du genou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Dynamische MRI van knie"
+  * ^designation[2].value = "dynamische MRI van knie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24214,7 +23950,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'avant-pied"
+  * ^designation[1].value = "imagerie par IRM de l'avant-pied"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24234,11 +23970,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie du rein sous échographie"
+  * ^designation[1].value = "biopsie du rein sous échographie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van nier onder echoscopische begeleiding"
+  * ^designation[2].value = "biopsie van nier onder echoscopische begeleiding"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24254,11 +23990,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie de l'utérus avec injection de sérum physiologique"
+  * ^designation[1].value = "échographie de l'utérus avec injection de sérum physiologique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van uterus met infusie van fysiologische zoutoplossing"
+  * ^designation[2].value = "echografie van uterus met infusie van fysiologische zoutoplossing"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24274,7 +24010,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie par IRM du pelvis"
+  * ^designation[1].value = "veinographie par IRM du pelvis"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24294,11 +24030,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie Doppler transcrânienne d'une artère intracrânienne avec produit de contraste à microbulles pour détection d'emboles"
+  * ^designation[1].value = "échographie Doppler transcrânienne d'une artère intracrânienne avec produit de contraste à microbulles pour détection d'emboles"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Transcranieel duplexonderzoek van intracraniële arterie met microbellen als contrastmiddel voor emboliedetectie"
+  * ^designation[2].value = "transcranieel duplexonderzoek van intracraniële arterie met microbellen als contrastmiddel voor emboliedetectie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24314,11 +24050,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie à l'aiguille fine de la thyroide sous controle échographique"
+  * ^designation[1].value = "biopsie à l'aiguille fine de la thyroide sous controle échographique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Aspiratiebiopsie van thyroïd onder echogeleide"
+  * ^designation[2].value = "aspiratiebiopsie van thyroïd onder echogeleide"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24334,11 +24070,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la face avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la face avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van aangezicht met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van aangezicht met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24354,7 +24090,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Étude de la captation de la choline marquée au carbone 11 par tomographie par émission de positons avec tomodensitométrie"
+  * ^designation[1].value = "étude de la captation de la choline marquée au carbone 11 par tomographie par émission de positons avec tomodensitométrie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24414,11 +24150,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coeur pour morphologie et fonction avec contraste"
+  * ^designation[1].value = "imagerie par IRM du coeur pour morphologie et fonction avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging voor cardiale morfologie en functie met contrast"
+  * ^designation[2].value = "magnetic resonance imaging voor cardiale morfologie en functie met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24434,11 +24170,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coeur pour morphologie et fonction sous stress"
+  * ^designation[1].value = "imagerie par IRM du coeur pour morphologie et fonction sous stress"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Stressonderzoek van morfologie en functie van hart met behulp van magnetic resonance imaging"
+  * ^designation[2].value = "stressonderzoek van morfologie en functie van hart met behulp van magnetic resonance imaging"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24454,11 +24190,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coeur pour morphologie et fonction sous stress avec contraste"
+  * ^designation[1].value = "imagerie par IRM du coeur pour morphologie et fonction sous stress avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Cardiale MRI met contrast voor morfologie en functie onder farmacologische stress"
+  * ^designation[2].value = "cardiale MRI met contrast voor morfologie en functie onder farmacologische stress"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24474,11 +24210,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échoendoscopie"
+  * ^designation[1].value = "échoendoscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografische beeldvorming met endoscoop"
+  * ^designation[2].value = "echografische beeldvorming met endoscoop"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24498,7 +24234,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Digitale tomosynthese van borst"
+  * ^designation[2].value = "digitale tomosynthese van borst"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24514,11 +24250,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Aspiration au niveau du membre supérieur sous contrôle fluoroscopique"
+  * ^designation[1].value = "aspiration au niveau du membre supérieur sous contrôle fluoroscopique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Aspiratie uit bovenste extremiteit onder doorlichting"
+  * ^designation[2].value = "aspiratie uit bovenste extremiteit onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24534,11 +24270,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Urétrographie rétrograde sous radioscopie"
+  * ^designation[1].value = "urétrographie rétrograde sous radioscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Retrograde urethrografie onder doorlichting"
+  * ^designation[2].value = "retrograde urethrografie onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24554,11 +24290,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Pyélographie IV (intraveineuse) sous fluoroscopie"
+  * ^designation[1].value = "pyélographie IV (intraveineuse) sous fluoroscopie"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch geleide IVP"
+  * ^designation[2].value = "fluoroscopisch geleide IVP"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24574,7 +24310,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du membre inférieur avec contraste"
+  * ^designation[1].value = "imagerie par IRM du membre inférieur avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24594,7 +24330,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de l'articulation temporo-mandibulaire avec contraste"
+  * ^designation[1].value = "imagerie par IRM de l'articulation temporo-mandibulaire avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24614,7 +24350,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la tête et du cou avec contraste"
+  * ^designation[1].value = "imagerie par IRM de la tête et du cou avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24634,7 +24370,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de la tête et du cou"
+  * ^designation[1].value = "imagerie par IRM de la tête et du cou"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24654,11 +24390,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radioscopie du tractus gastro-intestinal supérieur avec progression du transit dans l'intestin grêle"
+  * ^designation[1].value = "radioscopie du tractus gastro-intestinal supérieur avec progression du transit dans l'intestin grêle"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopie van bovenste deel van maag-darmkanaal en dunnedarmpassage"
+  * ^designation[2].value = "fluoroscopie van bovenste deel van maag-darmkanaal en dunnedarmpassage"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24674,11 +24410,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du rectum avec contraste"
+  * ^designation[1].value = "imagerie par IRM du rectum avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van rectum met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van rectum met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24694,7 +24430,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des vaisseaux de la colonne avec contraste"
+  * ^designation[1].value = "angiographie par IRM des vaisseaux de la colonne avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24714,11 +24450,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des vaisseaux du pelvis avec contraste"
+  * ^designation[1].value = "angiographie par IRM des vaisseaux du pelvis avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieangiografie van vasculaire structuur van pelvis met contrast"
+  * ^designation[2].value = "magnetischeresonantieangiografie van vasculaire structuur van pelvis met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24734,7 +24470,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des vaisseaux de membre supérieur"
+  * ^designation[1].value = "angiographie par IRM des vaisseaux de membre supérieur"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24754,11 +24490,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie par IRM des veines intracraniennes avec contraste"
+  * ^designation[1].value = "veinographie par IRM des veines intracraniennes avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieflebografie van intracraniële vene met contrast"
+  * ^designation[2].value = "magnetischeresonantieflebografie van intracraniële vene met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24774,7 +24510,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie par IRM du pelvis avec contraste"
+  * ^designation[1].value = "veinographie par IRM du pelvis avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24794,11 +24530,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie du cou sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie du cou sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Angiografie van bloedvat van hals en/of nek onder doorlichting"
+  * ^designation[2].value = "angiografie van bloedvat van hals en/of nek onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24814,11 +24550,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie de la tête sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie de la tête sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Angiografie van bloedvat van hoofd onder doorlichting"
+  * ^designation[2].value = "angiografie van bloedvat van hoofd onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24834,11 +24570,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie du thorax sous radioscopie avec produit de contraste"
+  * ^designation[1].value = "angiographie du thorax sous radioscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Angiografie van bloedvat van borstkas onder doorlichting"
+  * ^designation[2].value = "angiografie van bloedvat van borstkas onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24854,11 +24590,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Localisation à l'aiguille d'une lésion mammaire sous guidage échographique"
+  * ^designation[1].value = "localisation à l'aiguille d'une lésion mammaire sous guidage échographique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Naaldlokalisatie van laesie van mamma onder echoscopische begeleiding"
+  * ^designation[2].value = "naaldlokalisatie van laesie van mamma onder echoscopische begeleiding"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24874,7 +24610,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des vaisseaux de l'abdomen avec contraste"
+  * ^designation[1].value = "angiographie par IRM des vaisseaux de l'abdomen avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24894,7 +24630,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM de membre inférieur avec contraste"
+  * ^designation[1].value = "angiographie par IRM de membre inférieur avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24914,11 +24650,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Cholangiographie sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "cholangiographie sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastonderzoek van galwegen onder doorlichting"
+  * ^designation[2].value = "contrastonderzoek van galwegen onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24934,11 +24670,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radioscopie du côlon après lavement avec produit de contraste"
+  * ^designation[1].value = "radioscopie du côlon après lavement avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopisch onderzoek na toediening van klysma met contrast"
+  * ^designation[2].value = "fluoroscopisch onderzoek na toediening van klysma met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -24954,7 +24690,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du tractus urinaire avec contraste"
+  * ^designation[1].value = "imagerie par IRM du tractus urinaire avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24974,7 +24710,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du membre supérieur avec contraste"
+  * ^designation[1].value = "imagerie par IRM du membre supérieur avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -24994,11 +24730,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Artériographie d'une artère de l'abdomen sous fluoroscopie avec produit de contraste"
+  * ^designation[1].value = "artériographie d'une artère de l'abdomen sous fluoroscopie avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Arteriografie van abdominale arterie onder doorlichting"
+  * ^designation[2].value = "arteriografie van abdominale arterie onder doorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25014,7 +24750,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de mastoide"
+  * ^designation[1].value = "imagerie par IRM de mastoide"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25034,11 +24770,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM de mastoide avec contraste"
+  * ^designation[1].value = "imagerie par IRM de mastoide avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van mastoïd met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van mastoïd met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25054,7 +24790,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Élastographie par IRM"
+  * ^designation[1].value = "élastographie par IRM"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25074,11 +24810,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des vaisseaux du membre inférieur avec contraste"
+  * ^designation[1].value = "angiographie par IRM des vaisseaux du membre inférieur avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieangiografie van vasculaire structuur van onderste extremiteit met contrast"
+  * ^designation[2].value = "magnetischeresonantieangiografie van vasculaire structuur van onderste extremiteit met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25094,11 +24830,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Entéroclyse par IRM"
+  * ^designation[1].value = "entéroclyse par IRM"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Dunnedarmpassageonderzoek met behulp van MRI"
+  * ^designation[2].value = "dunnedarmpassageonderzoek met behulp van MRI"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25114,7 +24850,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angiographie par IRM des vaisseaux de membre supérieur avec contraste"
+  * ^designation[1].value = "angiographie par IRM des vaisseaux de membre supérieur avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25134,11 +24870,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Veinographie par IRM du cou avec contraste"
+  * ^designation[1].value = "veinographie par IRM du cou avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetischeresonantieflebografie van hals met contrast"
+  * ^designation[2].value = "magnetischeresonantieflebografie van hals met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25154,11 +24890,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Biopsie prostatique sous contrôle par imagerie par résonance magnétique"
+  * ^designation[1].value = "biopsie prostatique sous contrôle par imagerie par résonance magnétique"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Biopsie van glandula prostatica onder geleide van magnetic resonance imaging"
+  * ^designation[2].value = "biopsie van glandula prostatica onder geleide van magnetic resonance imaging"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25178,7 +24914,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluorodeoxyglucosepositronemissietomografie met computertomografie van hersenbasis tot halverwege bovenbeen"
+  * ^designation[2].value = "fluorodeoxyglucosepositronemissietomografie met computertomografie van hersenbasis tot halverwege bovenbeen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25194,11 +24930,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par IRM du coeur avec contraste"
+  * ^designation[1].value = "imagerie par IRM du coeur avec contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van hart met contrast"
+  * ^designation[2].value = "magnetic resonance imaging van hart met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25214,7 +24950,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie cérébrale par TEP/TDM au fluorodésoxyglucose 18F (tomographie par émission de positons avec tomodensitométrie au fluorodésoxyglucose 18F)"
+  * ^designation[1].value = "imagerie cérébrale par TEP/TDM au fluorodésoxyglucose 18F (tomographie par émission de positons avec tomodensitométrie au fluorodésoxyglucose 18F)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25234,7 +24970,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie cérébrale par TEP (tomographie par émission de positons)"
+  * ^designation[1].value = "imagerie cérébrale par TEP (tomographie par émission de positons)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25254,7 +24990,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie myocardique à l'effort par TEP-82Rb (tomographie à émission de positons au rubidium 82)"
+  * ^designation[1].value = "imagerie myocardique à l'effort par TEP-82Rb (tomographie à émission de positons au rubidium 82)"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25274,11 +25010,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échocardiographie de stress"
+  * ^designation[1].value = "échocardiographie de stress"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Stressechocardiografie"
+  * ^designation[2].value = "stressechocardiografie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25294,11 +25030,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie duplex d'une artère carotide"
+  * ^designation[1].value = "échographie duplex d'une artère carotide"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Duplexonderzoek van arteria carotis"
+  * ^designation[2].value = "duplexonderzoek van arteria carotis"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25314,11 +25050,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Injection d'une drogue et/ou d'un médicament dans un tendon"
+  * ^designation[1].value = "injection d'une drogue et/ou d'un médicament dans un tendon"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Injectie van medicatie in pees"
+  * ^designation[2].value = "injectie van medicatie in pees"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25358,7 +25094,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Discografie met injectie van contrast in tussenwervelschijf"
+  * ^designation[2].value = "discografie met injectie van contrast in tussenwervelschijf"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25378,7 +25114,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Discografie met injectie van contrast in tussenwervelschijf van cervicale wervelkolom"
+  * ^designation[2].value = "discografie met injectie van contrast in tussenwervelschijf van cervicale wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25398,7 +25134,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Discografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
+  * ^designation[2].value = "discografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25418,7 +25154,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van knie"
+  * ^designation[2].value = "röntgenfoto van knie"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25438,7 +25174,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van regio van enkel"
+  * ^designation[2].value = "röntgenfoto van regio van enkel"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25458,7 +25194,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgenfoto van orbita"
+  * ^designation[2].value = "röntgenfoto van orbita"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25478,7 +25214,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van sacro-iliacaal gewricht zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van sacro-iliacaal gewricht zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25498,7 +25234,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Lymfangiografie met contrast onder röntgendoorlichting"
+  * ^designation[2].value = "lymfangiografie met contrast onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25518,7 +25254,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Lymfangiografie met contrast van bekken onder röntgendoorlichting"
+  * ^designation[2].value = "lymfangiografie met contrast van bekken onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25538,7 +25274,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Contrastangiografie van aorta abdominalis, beide arteriae femorales en beide iliacale arteriën onder röntgendoorlichting"
+  * ^designation[2].value = "contrastangiografie van aorta abdominalis, beide arteriae femorales en beide iliacale arteriën onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25558,7 +25294,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Selectieve contrastangiocardiografie onder röntgendoorlichting"
+  * ^designation[2].value = "selectieve contrastangiocardiografie onder röntgendoorlichting"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25578,7 +25314,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgendoorlichting van farynx en cervicaal deel van oesofagus met contrast"
+  * ^designation[2].value = "röntgendoorlichting van farynx en cervicaal deel van oesofagus met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25598,7 +25334,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopie van bovenste deel van maag-darmkanaal met barium"
+  * ^designation[2].value = "fluoroscopie van bovenste deel van maag-darmkanaal met barium"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25626,11 +25362,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Fluoroscopie digestive basse après lavement baryté"
+  * ^designation[1].value = "fluoroscopie digestive basse après lavement baryté"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Doorlichting van colon met bariumklysma"
+  * ^designation[2].value = "doorlichting van colon met bariumklysma"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25646,11 +25382,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Fluoroscopie digestive basse avec lavement baryté à contraste aérien"
+  * ^designation[1].value = "fluoroscopie digestive basse avec lavement baryté à contraste aérien"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopie van distale deel van maag-darmkanaal met contrastklysma van barium en lucht"
+  * ^designation[2].value = "fluoroscopie van distale deel van maag-darmkanaal met contrastklysma van barium en lucht"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25690,7 +25426,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Retrograad contraströntgenonderzoek van blaas"
+  * ^designation[2].value = "retrograad contraströntgenonderzoek van blaas"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25746,11 +25482,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Échographie du thorax et du creux axillaire"
+  * ^designation[1].value = "échographie du thorax et du creux axillaire"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Echografie van thorax en axilla"
+  * ^designation[2].value = "echografie van thorax en axilla"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25810,7 +25546,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Drainage van abdomen"
+  * ^designation[2].value = "drainage van abdomen"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25830,7 +25566,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van orbita zonder contrast"
+  * ^designation[2].value = "magnetic resonance imaging van orbita zonder contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25846,11 +25582,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Radioscopie de l'œsophage avec produit de contraste baryté"
+  * ^designation[1].value = "radioscopie de l'œsophage avec produit de contraste baryté"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Röntgendoorlichting van oesofagus met barium"
+  * ^designation[2].value = "röntgendoorlichting van oesofagus met barium"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25866,11 +25602,11 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Fluoroscopie œsophagienne avec produit de contraste"
+  * ^designation[1].value = "fluoroscopie œsophagienne avec produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Fluoroscopie van slokdarm met contrast"
+  * ^designation[2].value = "fluoroscopie van slokdarm met contrast"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
@@ -25886,7 +25622,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Imagerie par résonance magnétique des sinus paranasaux sans contraste"
+  * ^designation[1].value = "imagerie par résonance magnétique des sinus paranasaux sans contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25946,7 +25682,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[1].language = #fr
   * ^designation[1].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[1].use.code = #eReferral-preferred
-  * ^designation[1].value = "Angio-IRM abdominopelvienne sans produit de contraste"
+  * ^designation[1].value = "angio-IRM abdominopelvienne sans produit de contraste"
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
@@ -25970,7 +25706,7 @@ Description: "SNOMED CT supplement containing multilingual designations maintain
   * ^designation[2].language = #nl
   * ^designation[2].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[2].use.code = #eReferral-preferred
-  * ^designation[2].value = "Magnetic resonance imaging van hart voor beoordeling van myocardviabiliteit"
+  * ^designation[2].value = "magnetic resonance imaging van hart voor beoordeling van myocardviabiliteit"
   * ^designation[3].language = #de
   * ^designation[3].use.system = "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use"
   * ^designation[3].use.code = #eReferral-preferred
