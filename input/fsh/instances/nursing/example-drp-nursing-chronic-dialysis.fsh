@@ -1,23 +1,7 @@
 Instance: example-drp-nursing-chronic-dialysis
 InstanceOf: EReferralServiceRequestNursing
 Title: "Chronic home dialysis"
-Description: "Example of chronic home dialysis prescription.
-
-Inputs and values used in this example:
-- Prescription type: chronic-dialysis
-- Procedure code (SNOMED): 225230008
-- Validity start date: 2026-02-18
-- Timing:
-  * boundsDuration: 2 months
-  * count: 9
-  * frequency: 1
-  * period: 1 week
-- Feedback to prescriber: true
-- Medical reason (SNOMED): 404684003
-- Notes:
-  * medical-reason
-  * contraindication
-  * general-remarks"
+Description: "Nursing prescription for chronic peritoneal dialysis."
 Usage: #example
 
 // meta.extension: be-ext-key-pseudonymization
@@ -77,13 +61,13 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 2
+* occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #mo
-* occurrenceTiming.repeat.count = 9
-* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.boundsDuration.code = #a
+* occurrenceTiming.repeat.count = 1095
+* occurrenceTiming.repeat.frequency = 3
 * occurrenceTiming.repeat.period = 1
-* occurrenceTiming.repeat.periodUnit = #wk
+* occurrenceTiming.repeat.periodUnit = #d
 
 * authoredOn = "2026-02-18T14:44:19+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

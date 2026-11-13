@@ -1,19 +1,7 @@
 Instance: example-drp-nursing-de-within-start-trajectory
 InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education within start trajectory"
-Description: "Example of diabetes education within a start trajectory.
-
-Inputs and values used in this example:
-- Prescription type: diabetic-education-within-start-trajectory
-- Education code (SNOMED): 385805005
-- Education subtype (SNOMED): 211151000172106
-- Session type: individual-session
-- Validity period: 2026-02-18 -> 2026-12-31
-- Number of sessions (count): 4
-- Performer type (SNOMED): 224543004
-- Feedback to prescriber: false
-- Notes:
-  * general-remarks"
+Description: "Diabetes education prescription within a start trajectory."
 Usage: #example
 
 
@@ -68,7 +56,7 @@ Usage: #example
 * code.text.extension[0].extension[2].valuePositiveInt = 1
 
 // orderDetail (2 entries)
-* orderDetail[0].coding[0].system = "http://snomed.info/sct"
+* orderDetail[0].coding[0].system = $sct-version
 * orderDetail[0].coding[0].code = #211151000172106
 
 * orderDetail[1].coding[0].system = $be-cs-session-type
@@ -88,6 +76,9 @@ Usage: #example
 
 // occurrenceTiming
 * occurrenceTiming.repeat.count = 4
+* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.period = 3
+* occurrenceTiming.repeat.periodUnit = #mo
 
 * authoredOn = "2026-02-18T14:11:04+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

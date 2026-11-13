@@ -49,7 +49,7 @@ The current scope is focused on:
 | --- | --- |
 | [Guidance](guidance.html) | Implementation rules and modelling choices used across the local profiles. |
 | [Migration 3.0 to 4.0](migration-3-0-to-4-0.html) | Referral and canonical migration, verified changes and regression checks. |
-| [Telemonitoring](telemonitoring.html) | Medical prescription profile, monitoring parameters and implementation boundaries. |
+| [Telemonitoring](domain-telemonitoring.html) | Medical prescription profile, monitoring parameters and implementation boundaries. |
 | [API Integration](api-integration.html) | Authentication, identifiers, pseudonymization, validations, and errors. |
 | [API Operations](api-operations.html) | Operation-by-operation map, with allowed roles and links to the error-code workbook. |
 | [Access Matrix](operation-access-matrix.html) | Roles, INAMI access matrix, suspension, and search-filter access control. |
@@ -73,17 +73,12 @@ The current scope is focused on:
 | `eReferralImagingAttentionConditionsResponse` | Contained response for radiology attention/safety checklist information. |
 | `eReferralServiceRequestTelemonitoring` | Medical telemonitoring prescription for chronic heart failure. |
 
-### Business Mappings
+### Domain & Mapping
 
-The IG includes mapping pages generated from the nursing template Excel. These pages map business fields and allowed values to proposed FHIR elements and candidate terminologies.
+Each domain page introduces its scope and links to the domain specification and FHIR mapping.
 
-Start with:
-
-| Domain | Page                                                    |
-| --- |---------------------------------------------------------|
-| Nursing | [Nursing mappings](mappings-nursing.html)               |
-| Radiology | [Radiology mappings](mappings-radiology.html)           |
-| Telemonitoring | [Telemonitoring mappings](mappings-telemonitoring.html) |
-
-
-Terminology notes in the mapping pages are intentionally conservative. Some Excel value lists predate the current ValueSets and may require reconciliation before being treated as normative coded values.
+| Domain | Specification | Mapping |
+| --- | --- | --- |
+| Nursing | [Nursing Specification](domain-nursing-specification.html) | [Nursing Mapping](mappings-nursing.html) |
+| Radiology | [Radiology Specification](domain-radiology-specification.html) | [Radiology Mapping](mappings-radiology.html) |
+| Telemonitoring | [Telemonitoring Specification](domain-telemonitoring-specification.html) | [Telemonitoring Mapping](mappings-telemonitoring.html) |

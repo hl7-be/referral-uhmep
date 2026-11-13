@@ -1,18 +1,7 @@
 Instance: example-pss-radiology-scenario-06
 InstanceOf: EReferralServiceRequestDiagnosticImaging
 Title: "PSS radiology scenario 06"
-Description: "Example of a diagnostic imaging prescription.
-
-Inputs and values used in this example:
-- Patient: Anne De Montmorency, sex at birth unknown, 39 years old
-- Indication: head trauma with headaches and follow-up after stroke
-- Selected examination: MR angiography of the head with or without IV contrast
-- Procedure code (SNOMED): 702684006, using the Excel mapping for MR angiography of the head wo/w IV contrast
-- Predefined examination: same as selected examination
-- Clinical context from Excel: history of stroke and head trauma with persistent or worsening headaches; assess trauma details, new neurological deficits and stroke risk factors; medications to be reviewed; no known drug allergies
-
-Fictitious completions (not specified in Excel): date of birth 1987-04-12, PSS identifier PSS-RAD-006, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, metallic debris or renal dysfunction and no other safety concern. Unspecified cardiovascular risk factors are not treated as confirmed diagnoses.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 435."
+Description: "PSS radiology example for head trauma with persistent headaches and prior stroke, using MR angiography of the head."
 Usage: #example
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-006)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications#5000247 "Head trauma, headache"

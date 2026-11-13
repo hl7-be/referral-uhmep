@@ -24,6 +24,8 @@ Usage: #example
 * extension[monitoringPlan][0].url = "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"
 * extension[monitoringPlan][0].extension[parameter].url = "parameter"
 * extension[monitoringPlan][0].extension[parameter].valueCodeableConcept.coding[0] = $sct#27113001 "Body weight (observable entity)"
+* extension[monitoringPlan][0].extension[baseline].url = "baseline"
+* extension[monitoringPlan][0].extension[baseline].valueReference = Reference(Observation/example-telemonitoring-reference-weight)
 * extension[monitoringPlan][0].extension[change][0].url = "change"
 * extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.value = 2
 * extension[monitoringPlan][0].extension[change][0].valueRatio.numerator.system = "http://unitsofmeasure.org"

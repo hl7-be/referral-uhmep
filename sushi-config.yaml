@@ -59,9 +59,6 @@ pages:
   migration-3-0-to-4-0.md:
     title: Migration 3.0.0 to 4.0.0-draft
     generation: markdown
-  telemonitoring.md:
-    title: Telemonitoring
-    generation: markdown
   topic-profiles-architecture.md:
     title: Profiles Architecture
     generation: markdown
@@ -135,64 +132,85 @@ pages:
       title: Error Codes
       generation: markdown
   mappings-business.md:
-    title: Business Field Mappings
+    title: Domain & Mapping
     generation: markdown
-    mappings-nursing.md:
+    domain-nursing.md:
       title: Nursing
       generation: markdown
-      mapper-nursing-generic.md:
-        title: Generic Nursing
+      domain-nursing-specification.md:
+        title: Nursing Specification
         generation: markdown
-      mapper-nursing-bloodletting.md:
-        title: Bloodletting
+      mappings-nursing.md:
+        title: Nursing Mapping
         generation: markdown
-      mapper-nursing-chronic-dialysis.md:
-        title: Chronic Dialysis
-        generation: markdown
-      mapper-nursing-diabetes-education-convention-center.md:
-        title: Diabetes Education via Convention Centre
-        generation: markdown
-      mapper-nursing-diabetes-education-start-trajectory.md:
-        title: Diabetes Education within Start Trajectory
-        generation: markdown
-      mapper-nursing-diabetes-education-care-trajectory.md:
-        title: Diabetes Education within Care Trajectory
-        generation: markdown
-      mapper-nursing-diabetes-education-without-trajectory.md:
-        title: Diabetes Education without Trajectory
-        generation: markdown
-      mapper-nursing-glycemic-test.md:
-        title: Glycemic Test
-        generation: markdown
-      mapper-nursing-hygienic-care.md:
-        title: Hygienic Care
-        generation: markdown
-      mapper-nursing-medication-prefill-not-refunded.md:
-        title: Medication Prefill Preparation Not Refunded
-        generation: markdown
-      mapper-nursing-parameters.md:
-        title: Parameters
-        generation: markdown
-      mapper-nursing-sampling.md:
-        title: Sampling
-        generation: markdown
-      mapper-nursing-annex81-medication-preparation.md:
-        title: Annex 81 Medication Preparation
-        generation: markdown
-    mappings-radiology.md:
+        mapper-nursing-generic.md:
+          title: Generic Nursing
+          generation: markdown
+        mapper-nursing-bloodletting.md:
+          title: Bloodletting
+          generation: markdown
+        mapper-nursing-chronic-dialysis.md:
+          title: Chronic Dialysis
+          generation: markdown
+        mapper-nursing-diabetes-education-convention-center.md:
+          title: Diabetes Education via Convention Centre
+          generation: markdown
+        mapper-nursing-diabetes-education-start-trajectory.md:
+          title: Diabetes Education within Start Trajectory
+          generation: markdown
+        mapper-nursing-diabetes-education-care-trajectory.md:
+          title: Diabetes Education within Care Trajectory
+          generation: markdown
+        mapper-nursing-diabetes-education-without-trajectory.md:
+          title: Diabetes Education without Trajectory
+          generation: markdown
+        mapper-nursing-glycemic-test.md:
+          title: Glycemic Test
+          generation: markdown
+        mapper-nursing-hygienic-care.md:
+          title: Hygienic Care
+          generation: markdown
+        mapper-nursing-medication-prefill-not-refunded.md:
+          title: Medication Prefill Preparation Not Refunded
+          generation: markdown
+        mapper-nursing-parameters.md:
+          title: Parameters
+          generation: markdown
+        mapper-nursing-sampling.md:
+          title: Sampling
+          generation: markdown
+        mapper-nursing-annex81-medication-preparation.md:
+          title: Annex 81 Medication Preparation
+          generation: markdown
+    domain-radiology.md:
       title: Radiology
       generation: markdown
-      mapper-radiology-diagnostic-imaging.md:
-        title: Diagnostic Imaging
+      domain-radiology-specification.md:
+        title: Radiology Specification
         generation: markdown
-    mappings-telemonitoring.md:
+      mappings-radiology.md:
+        title: Radiology Mapping
+        generation: markdown
+        mapper-radiology-diagnostic-imaging.md:
+          title: Diagnostic Imaging
+          generation: markdown
+    domain-telemonitoring.md:
       title: Telemonitoring
       generation: markdown
-      mapper-telemonitoring-chronic-heart-failure.md:
-        title: Chronic Heart Failure Telemonitoring
+      domain-telemonitoring-specification.md:
+        title: Telemonitoring Specification
         generation: markdown
+      mappings-telemonitoring.md:
+        title: Telemonitoring Mapping
+        generation: markdown
+        mapper-telemonitoring-chronic-heart-failure.md:
+          title: Chronic Heart Failure Telemonitoring
+          generation: markdown
   technical.md:
     title: Technical
+    generation: markdown
+  test-server.md:
+    title: Test Server
     generation: markdown
   glossary.md:
     title: Glossary
@@ -203,7 +221,7 @@ pages:
   downloads.xml:
     title: Downloads
     generation: html
-  
+
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
 # should follow the format defined in ImplementationGuide:
@@ -230,7 +248,6 @@ menu:
   Guidance: guidance.html
   Topics:
     Migration 3.0 to 4.0: migration-3-0-to-4-0.html
-    Telemonitoring: telemonitoring.html
     Profiles Architecture: topic-profiles-architecture.html
     Profile Rewriting: topic-profile-rewriting.html
     Life Cycle: topic-prescription-lifecycle.html
@@ -241,11 +258,10 @@ menu:
     Operations: api-operations.html
     Access Matrix: operation-access-matrix.html
     Complex Operations: api-complex-operations.html
-  Mappings:
-    Overview: mappings-business.html
-    Nursing: mappings-nursing.html
-    Radiology: mappings-radiology.html
-    Telemonitoring: mappings-telemonitoring.html
+  Domain & Mapping:
+    Nursing: domain-nursing.html
+    Radiology: domain-radiology.html
+    Telemonitoring: domain-telemonitoring.html
   Artifacts:
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
@@ -255,6 +271,7 @@ menu:
   Technical: technical.html
   Resources:
     Glossary: glossary.html
+    Test Server: test-server.html
     Downloads: downloads.html
     Changes: changes.html
 
@@ -332,7 +349,7 @@ resources:
     name: "Example: Bloodletting"
     description: |-
       Example of therapeutic bloodletting including quantity.
-      
+
       Inputs and values used in this example:
       - Prescription type: bloodletting
       - Procedure code (SNOMED): 127606004
@@ -602,5 +619,3 @@ resources:
         * Heart rate threshold 110 /min
       - Patient SSIN is pseudonymized
       - Diagnosis detail and general remarks are pseudonymized encrypted text
-
-

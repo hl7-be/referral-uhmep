@@ -1,19 +1,7 @@
 Instance: example-drp-nursing-de-within-care-trajectory
 InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education within care trajectory"
-Description: "Example of diabetes education within an established care pathway.
-
-Inputs and values used in this example:
-- Prescription type: diabetic-education-within-care-trajectory
-- Education code (SNOMED): 385805005
-- Education subtype (SNOMED): 370858005
-- Education type: diabetic-education-additional-hba1c
-- Session type: group-session
-- Performer types (SNOMED):
-  * 106292003
-  * 224543004
-- Validity period: 2026-02-18 -> 2026-12-31
-- Number of sessions: 5"
+Description: "Diabetes education prescription within an established care pathway."
 Usage: #example
 
 
@@ -41,14 +29,10 @@ Usage: #example
 * extension[1].url = $be-ext-feedback-to-prescriber
 * extension[1].valueBoolean = false
 
-// be-ext-performer-type (x2)
+// be-ext-performer-type
 * extension[2].url = $be-ext-performer-type
 * extension[2].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
-* extension[2].valueCodeableConcept.coding[0].code = #106292003
-
-* extension[3].url = $be-ext-performer-type
-* extension[3].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
-* extension[3].valueCodeableConcept.coding[0].code = #224543004
+* extension[2].valueCodeableConcept.coding[0].code = #224543004
 
 * status = #draft
 * intent = #order
@@ -78,10 +62,16 @@ Usage: #example
 * orderDetail[0].coding[0].code = #370858005
 
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
-* orderDetail[1].coding[0].code = #diabetic-education-additional-hba1c
+* orderDetail[1].coding[0].code = #diabetic-education-material
 
-* orderDetail[2].coding[0].system = $be-cs-session-type
-* orderDetail[2].coding[0].code = #group-session
+* orderDetail[2].coding[0].system = $be-cs-diabetic-education-type
+* orderDetail[2].coding[0].code = #diabetic-education-glucose-meter
+
+* orderDetail[3].coding[0].system = $be-cs-diabetic-education-type
+* orderDetail[3].coding[0].code = #diabetic-education-start-insulin-glp1
+
+* orderDetail[4].coding[0].system = $be-cs-session-type
+* orderDetail[4].coding[0].code = #individual-session
 
 // subject.identifier
 * subject.identifier.use = #official
@@ -97,6 +87,9 @@ Usage: #example
 
 // occurrenceTiming
 * occurrenceTiming.repeat.count = 5
+* occurrenceTiming.repeat.frequency = 5
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #a
 
 * authoredOn = "2026-02-18T14:45:43+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

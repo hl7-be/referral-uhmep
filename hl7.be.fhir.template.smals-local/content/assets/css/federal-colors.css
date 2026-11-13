@@ -40,7 +40,7 @@
   --dragon-text-color: #101020; /* 30. Dragon font color */
 
 }
-  
+
 /* Make the highlight span behave like a full-width block so rows can stack */
 #segment-footer .inner-wrapper span[style*="--footer-highlight-text-color"] {
   display: block;

@@ -1,18 +1,7 @@
 Instance: example-pss-radiology-scenario-03
 InstanceOf: EReferralServiceRequestDiagnosticImaging
 Title: "PSS radiology scenario 03"
-Description: "Example of a diagnostic imaging prescription.
-
-Inputs and values used in this example:
-- Patient: Gabriel Santini, sex at birth unknown, 79 years old
-- Indication: chest pain with a normal EKG
-- Selected examination: MR angiography of the heart with or without IV contrast
-- Procedure code (SNOMED): 736793003, using the Excel mapping for MR angiography of the heart wo/w IV contrast
-- Initially predefined examination: MR angiography of the chest without IV contrast
-- Clinical context from Excel: chest pain with normal EKG and stable vital signs; no reported syncope, dyspnea, palpitations or signs of heart failure; cardiovascular history, risk factors and medication remain to be assessed
-
-Fictitious completions (not specified in Excel): date of birth 1947-04-12, PSS identifier PSS-RAD-003, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, contrast allergy, metallic debris or renal dysfunction and no other safety concern. Fictitious examination rationale: assess cardiac vascular anatomy in addition to the chest pain presentation.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 439."
+Description: "PSS radiology example for chest pain with a normal EKG, using MR angiography of the heart."
 Usage: #example
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-003)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications#2551 "Chest pain, normal EKG"

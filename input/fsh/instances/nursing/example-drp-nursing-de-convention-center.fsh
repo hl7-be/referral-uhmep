@@ -1,22 +1,7 @@
 Instance: example-drp-nursing-de-convention-center
 InstanceOf: EReferralServiceRequestNursing
 Title: "Diabetes education via convention centre"
-Description: "Example of diabetes education delivered through a convention centre.
-
-Inputs and values used in this example:
-- Prescription type: diabetic-education-convention-center
-- Education code (SNOMED): 385805005
-- Education subtype (SNOMED): 211141000172109
-- Education type: diabetic-education-other
-- Validity period: 2026-02-18 -> 2027-02-18
-- Timing:
-  * boundsDuration: 4 months
-  * count: 52
-  * frequency: 3
-  * period: 1 week
-- Feedback to prescriber: false
-- Notes:
-  * general-remarks"
+Description: "Diabetes education prescription via a convention centre."
   Usage: #example
 
 // meta.extension: be-ext-key-pseudonymization
@@ -66,12 +51,12 @@ Inputs and values used in this example:
 
 // orderDetail (2 entries)
 // orderDetail[0] SNOMED code
-* orderDetail[0].coding[0].system = "http://snomed.info/sct"
+* orderDetail[0].coding[0].system = $sct-version
 * orderDetail[0].coding[0].code = #211141000172109
 
 // orderDetail[1] diabetic education type + encrypted text
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
-* orderDetail[1].coding[0].code = #diabetic-education-other
+* orderDetail[1].coding[0].code = #diabetic-education-self-care
 * orderDetail[1].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * orderDetail[1].text.extension[0].url = $be-ext-pseudonymization
 * orderDetail[1].text.extension[0].extension[0].url = "marker"
@@ -94,11 +79,11 @@ Inputs and values used in this example:
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 4
+* occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #mo
-* occurrenceTiming.repeat.count = 52
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.boundsDuration.code = #a
+* occurrenceTiming.repeat.count = 30
+* occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #wk
 

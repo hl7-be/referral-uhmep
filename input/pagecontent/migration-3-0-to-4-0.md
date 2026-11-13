@@ -48,7 +48,7 @@ To reach the target, align application configuration and packaged validator reso
 
 ### Telemonitoring Migration Checks
 
-- Read the [Telemonitoring overview](telemonitoring.html) before adopting the medical prescription profile.
+- Read the [Telemonitoring domain overview](domain-telemonitoring.html) before adopting the medical prescription profile.
 - Implementations targeting 4.0 must preserve every repeated threshold or weight-change rule and support the pulmonary artery pressure parameters defined here.
 - Resolve the target-profile/backend mismatch: the target profile permits zero monitoring plans, while the inspected backend requires at least one nonempty metric list.
 - Verify parameter code systems, UCUM units, ratio amount/period handling and round-trip behavior with multiple rules.

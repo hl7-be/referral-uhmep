@@ -1,18 +1,7 @@
 Instance: example-pss-radiology-scenario-09
 InstanceOf: EReferralServiceRequestDiagnosticImaging
 Title: "PSS radiology scenario 09"
-Description: "Example of a diagnostic imaging prescription.
-
-Inputs and values used in this example:
-- Patient: Jean-Eude Delacompta, male, 61 years old
-- Indication: abnormal sputum production, persistent cough and acute respiratory illness
-- Selected examination: chest X-ray
-- Procedure code (SNOMED): 399208008
-- Predefined examination: chest X-ray
-- Clinical context from Excel: persistent cough for several weeks and abnormal sputum with acute respiratory worsening; assess fever, dyspnea, sputum characteristics, smoking, chronic bronchitis, COPD and recent infection; no known lung cancer, tuberculosis or drug allergies
-
-Fictitious completions (not specified in Excel): date of birth 1965-04-12, PSS identifier PSS-RAD-009, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. Possible smoking, chronic bronchitis and COPD are not treated as confirmed diagnoses.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
+Description: "PSS radiology example for abnormal sputum and persistent cough, using a chest X-ray order."
 Usage: #example
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-009)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications#6001280 "Abnormal sputum"

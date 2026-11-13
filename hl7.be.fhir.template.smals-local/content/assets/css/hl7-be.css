@@ -1,8 +1,8 @@
 /*
- 
+
     Specific layout and styling, project based
-        
-    
+
+
 */
 /*
 Flexslider vs LayerSlider vs SliderRevolution
@@ -14,7 +14,7 @@ breadcrumb vs history what is a breadcrumb hiearchy or history?
 gray-color thingy
 
 widget-row vs thumbs vs joyo-thumbs
-shortcode for 
+shortcode for
 - Fontawesome
 - Accordion
 - Notifications
@@ -28,22 +28,22 @@ widget in sidebar vs in column = uiterlijk op basis van locale class via functio
 
 - SCAFFOLDING							Groundwork for the site. Background colors are set in less or overruled here
 - SCAFFOLDING OBJECTS					Objects reoccurring on every page
-- COMPONENTS							Everything what can be moved around				
+- COMPONENTS							Everything what can be moved around
 - BACK TO TOP							Anchor animating to top of the page
 - EXCEPTIONS FOR SPECIFIC SITUATIONS	Some pages are not like the others
-- D-I-D AREA							Do-It-Dirty 
+- D-I-D AREA							Do-It-Dirty
 
 */
-/* SCAFFOLDING STYLING 
+/* SCAFFOLDING STYLING
 ----------------------------------------------------------------------------------------*/
 
 
 
 :root {
-/* 
+/*
 Color scheme definitions
 Usage:
-   var(--publish-box-bg-color); 
+   var(--publish-box-bg-color);
 */
 
   --ig-status-text-color: #005c96; /* 1. IG Title and status text color */
@@ -278,7 +278,7 @@ body table.markdown-table th {
   padding-left: 7px;
   padding-right: 7px;
   float: right ; /* none or right */
-  border-radius: 5px; 
+  border-radius: 5px;
   border: 0.5px solid #ffffff;
 }
 

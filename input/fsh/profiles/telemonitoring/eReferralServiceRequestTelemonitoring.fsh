@@ -7,9 +7,9 @@ Description: "The telemonitoring profile."
 // --------------------------------------------------------
 // Extensions
 // --------------------------------------------------------
-* extension[feedback] 0..0 
-* extension[latest] 0..0 
-* extension[performerType] 0..0 
+* extension[feedback] 0..0
+* extension[latest] 0..0
+* extension[performerType] 0..0
 
 * extension[validity] 1..1 MS
 * extension[validity].valuePeriod.start 1..1

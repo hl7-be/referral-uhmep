@@ -21,13 +21,11 @@ The 4.0 target model represents monitoring rules as repeatable lists:
 
 Integrations targeting this contract must preserve all repeated threshold or change entries and their units; do not retain only the first range or change rule. A body-weight change uses the ratio numerator as the amount and denominator as the time period. Runtime support must be verified separately against each target environment.
 
-**Known target/runtime gap:** the target FHIR profile permits `monitoringPlan` with cardinality `0..*`, while the inspected backend requires at least one nonempty metric list. The target specification and current backend behavior are therefore not equivalent for an order without metrics; resolve this gap before claiming runtime conformance.
-
 ### Monitoring Plan Extension
 
-Each [monitoring plan](StructureDefinition-be-ext-telemonitoring-plan.html) has one parameter and may contain repeated threshold ranges, an optional target range and repeated change ratios. The draft extension also defines an optional `sustainedFor` duration on a threshold.
+Each [monitoring plan](StructureDefinition-be-ext-telemonitoring-plan.html) has one parameter and may contain a reference measurement (`baseline`), repeated threshold ranges, an optional target range and repeated change ratios. The baseline is a reference to a standalone `Observation`, not a contained resource; for body weight it represents the reference weight against which change rules are evaluated. The draft extension also defines an optional `sustainedFor` duration on a threshold.
 
-The target extension includes threshold `range`, `change`, optional `targetRange` and optional `sustainedFor`. The inspected gateway mapper consumes `range` and `change`; target runtime support for `targetRange` and `sustainedFor` remains unverified. Implementations need explicit support and round-trip tests before claiming conformance to those target fields.
+The target extension includes threshold `range`, `change`, optional `targetRange`, optional `sustainedFor` and optional `baseline`. The inspected gateway mapper consumes `range` and `change`; target runtime support for `targetRange`, `sustainedFor` and `baseline` remains unverified. Implementations need explicit support and round-trip tests before claiming conformance to those target fields.
 
 ### Workflow and Privacy Checks
 
@@ -37,8 +35,8 @@ The target extension includes threshold `range`, `change`, optional `targetRange
 - Validate medical-order examples against the draft profile and confirm the actual route and authorization requirements in the target environment.
 - Validate the intended completion-reason terminology without assuming that every preferred code is enforced as required by the backend.
 
-### Examples and Mappings
+### Examples
 
-The [Telemonitoring mappings](mappings-telemonitoring.html) and [chronic-heart-failure field mapping](mapper-telemonitoring-chronic-heart-failure.html) accompany the generated medical prescription example in [Artifacts](artifacts.html). Examples are illustrative, contain placeholders and are not clinical recommendations or production acceptance tests.
+The [chronic-heart-failure field mapping](mapper-telemonitoring-chronic-heart-failure.html) accompanies the generated medical prescription example in [Artifacts](artifacts.html). Examples are illustrative, contain placeholders and are not clinical recommendations or production acceptance tests.
 
 This documentation states the intended 4.0 Telemonitoring contract. Its inclusion does not announce feature activation or prove that a deployed environment already supports it; consult the applicable release and environment documentation for availability.

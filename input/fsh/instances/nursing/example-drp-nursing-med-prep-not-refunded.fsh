@@ -1,19 +1,7 @@
 Instance: example-drp-nursing-med-prep-not-refunded
 InstanceOf: EReferralServiceRequestNursing
 Title: "Preparation of medicines (not refunded)"
-Description: "Example of non-reimbursed medication prefill preparation.
-
-Inputs and values used in this example:
-- Prescription type: medication-preparation-not-refunded
-- Procedure code (SNOMED): 385796006
-- Validity period: 2026-02-18 -> 2027-02-18
-- Timing:
-  * frequency: 3
-  * period: 1 week
-- Medical reason (SNOMED): 404684003
-- Notes:
-  * contraindication
-  * general-remarks"
+Description: "Non-reimbursed nursing prescription for medication prefill preparation."
 Usage: #example
 
 
@@ -74,7 +62,7 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #wk
 
