@@ -42,7 +42,7 @@ Allowed coded indications for patient condition in diagnostic imaging.
   "title" : "eReferral Imaging Patient Condition Indication",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-13T12:42:03+00:00",
+  "date" : "2026-11-13T14:59:56+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

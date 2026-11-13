@@ -557,8 +557,8 @@
     "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role"],
     "uses" : {
     },
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
-    "StructureDefinition-be-ext-radiology-supporting-info-role.html" : "eReferral Radiology SupportingInfo Role"
+    "StructureDefinition-be-ext-radiology-supporting-info-role.html" : "eReferral Radiology SupportingInfo Role",
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication",

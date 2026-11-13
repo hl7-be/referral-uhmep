@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9d62530f-4af2-411e-a5d8-2dabe06a25b3"/>
+  <id value="ed49e7b7-6134-4716-8795-a5e5f32d45e8"/>
   <meta>
-    <lastUpdated value="2026-11-13T12:42:03.468+00:00"/>
+    <lastUpdated value="2026-11-13T14:59:56.385+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -19927,7 +19927,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -19936,8 +19936,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d6f9e15c-0fa5-4709-8c3c-a828529770a8"/>
-          <timestamp value="2026-11-13T12:46:49+00:00"/>
+          <identifier value="urn:uuid:2a5e565f-159c-4e8b-afef-e07a60cd0c0c"/>
+          <timestamp value="2026-11-13T15:04:00+00:00"/>
           <total value="994"/>
           <offset value="0"/>
           <parameter>
@@ -44863,7 +44863,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -44872,8 +44872,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7802b800-e25d-461f-91ed-24cace270197"/>
-          <timestamp value="2026-11-13T12:46:49+00:00"/>
+          <identifier value="urn:uuid:a6b0e8d2-1f57-4faf-9870-d0c79f91cfcd"/>
+          <timestamp value="2026-11-13T15:04:01+00:00"/>
           <total value="994"/>
           <offset value="0"/>
           <parameter>
@@ -53286,23 +53286,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-418135007"> </a>
+                  <a name="x-http://snomed.info/sct-22791004"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/418135007">418135007</a>
+                  <a href="http://snomed.info/id/22791004">22791004</a>
                 </td>
-                <td>Fluoroscopic cystography</td>
+                <td>Plain X-ray of lumbar and sacral spine</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418135007&quot;, &quot;display&quot;: &quot;Fluoroscopic cystography&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;22791004&quot;, &quot;display&quot;: &quot;Plain X-ray of lumbar and sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418135007&quot;/&gt;&lt;display value=&quot;Fluoroscopic cystography&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;22791004&quot;/&gt;&lt;display value=&quot;Plain X-ray of lumbar and sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -54342,23 +54342,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-168918009"> </a>
+                  <a name="x-http://snomed.info/sct-45036003"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/168918009">168918009</a>
+                  <a href="http://snomed.info/id/45036003">45036003</a>
                 </td>
-                <td>Arthrography of hip joint</td>
+                <td>Ultrasonography of abdomen</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;168918009&quot;, &quot;display&quot;: &quot;Arthrography of hip joint&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;45036003&quot;, &quot;display&quot;: &quot;Ultrasonography of abdomen&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;168918009&quot;/&gt;&lt;display value=&quot;Arthrography of hip joint&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;45036003&quot;/&gt;&lt;display value=&quot;Ultrasonography of abdomen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -54557,28 +54557,6 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;419791000&quot;/&gt;&lt;display value=&quot;US scan and aspiration of pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://snomed.info/sct-702459003"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/702459003">702459003</a>
-                </td>
-                <td>Fluoroscopy guided aspiration of upper limb</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;702459003&quot;, &quot;display&quot;: &quot;Fluoroscopy guided aspiration of upper limb&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;702459003&quot;/&gt;&lt;display value=&quot;Fluoroscopy guided aspiration of upper limb&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -55195,6 +55173,28 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1217550004&quot;/&gt;&lt;display value=&quot;Injection of drug or medicament into tendon&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-113109007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/113109007">113109007</a>
+                </td>
+                <td>MRI of lower extremity</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;113109007&quot;, &quot;display&quot;: &quot;MRI of lower extremity&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;113109007&quot;/&gt;&lt;display value=&quot;MRI of lower extremity&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -56146,28 +56146,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-699583008"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/699583008">699583008</a>
-                </td>
-                <td>MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;699583008&quot;, &quot;display&quot;: &quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;699583008&quot;/&gt;&lt;display value=&quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-414151000119108"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -57070,6 +57048,28 @@
               </tr>
               <tr>
                 <td>
+                  <a name="x-http://snomed.info/sct-168918009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/168918009">168918009</a>
+                </td>
+                <td>Arthrography of hip joint</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;168918009&quot;, &quot;display&quot;: &quot;Arthrography of hip joint&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;168918009&quot;/&gt;&lt;display value=&quot;Arthrography of hip joint&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a name="x-http://snomed.info/sct-431225005"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -57884,28 +57884,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-113109007"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/113109007">113109007</a>
-                </td>
-                <td>MRI of lower extremity</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;113109007&quot;, &quot;display&quot;: &quot;MRI of lower extremity&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;113109007&quot;/&gt;&lt;display value=&quot;MRI of lower extremity&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-433009001"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -58478,23 +58456,45 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-432672003"> </a>
+                  <a name="x-http://snomed.info/sct-418135007"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/432672003">432672003</a>
+                  <a href="http://snomed.info/id/418135007">418135007</a>
                 </td>
-                <td>MRI of pelvis and hip</td>
+                <td>Fluoroscopic cystography</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;432672003&quot;, &quot;display&quot;: &quot;MRI of pelvis and hip&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418135007&quot;, &quot;display&quot;: &quot;Fluoroscopic cystography&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;432672003&quot;/&gt;&lt;display value=&quot;MRI of pelvis and hip&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418135007&quot;/&gt;&lt;display value=&quot;Fluoroscopic cystography&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-418394000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/418394000">418394000</a>
+                </td>
+                <td>US scan of abdomen and pelvis</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418394000&quot;, &quot;display&quot;: &quot;US scan of abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418394000&quot;/&gt;&lt;display value=&quot;US scan of abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -59089,6 +59089,28 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;432215003&quot;/&gt;&lt;display value=&quot;MRI of upper arm with contrast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-428605000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/428605000">428605000</a>
+                </td>
+                <td>Ultrasound scan of sacral spine</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428605000&quot;, &quot;display&quot;: &quot;Ultrasound scan of sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;428605000&quot;/&gt;&lt;display value=&quot;Ultrasound scan of sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -59864,28 +59886,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-45036003"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/45036003">45036003</a>
-                </td>
-                <td>Ultrasonography of abdomen</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;45036003&quot;, &quot;display&quot;: &quot;Ultrasonography of abdomen&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;45036003&quot;/&gt;&lt;display value=&quot;Ultrasonography of abdomen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-241480000"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -60018,23 +60018,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-418394000"> </a>
+                  <a name="x-http://snomed.info/sct-432672003"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/418394000">418394000</a>
+                  <a href="http://snomed.info/id/432672003">432672003</a>
                 </td>
-                <td>US scan of abdomen and pelvis</td>
+                <td>MRI of pelvis and hip</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418394000&quot;, &quot;display&quot;: &quot;US scan of abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;432672003&quot;, &quot;display&quot;: &quot;MRI of pelvis and hip&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418394000&quot;/&gt;&lt;display value=&quot;US scan of abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;432672003&quot;/&gt;&lt;display value=&quot;MRI of pelvis and hip&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -60211,6 +60211,28 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;10321000087109&quot;/&gt;&lt;display value=&quot;Ultrasonography of chest and abdomen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-699583008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/699583008">699583008</a>
+                </td>
+                <td>MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;699583008&quot;, &quot;display&quot;: &quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;699583008&quot;/&gt;&lt;display value=&quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -61096,23 +61118,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-428605000"> </a>
+                  <a name="x-http://snomed.info/sct-702459003"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/428605000">428605000</a>
+                  <a href="http://snomed.info/id/702459003">702459003</a>
                 </td>
-                <td>Ultrasound scan of sacral spine</td>
+                <td>Fluoroscopy guided aspiration of upper limb</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428605000&quot;, &quot;display&quot;: &quot;Ultrasound scan of sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;702459003&quot;, &quot;display&quot;: &quot;Fluoroscopy guided aspiration of upper limb&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;428605000&quot;/&gt;&lt;display value=&quot;Ultrasound scan of sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;702459003&quot;/&gt;&lt;display value=&quot;Fluoroscopy guided aspiration of upper limb&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -62504,28 +62526,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-22791004"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/22791004">22791004</a>
-                </td>
-                <td>Plain X-ray of lumbar and sacral spine</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;22791004&quot;, &quot;display&quot;: &quot;Plain X-ray of lumbar and sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;22791004&quot;/&gt;&lt;display value=&quot;Plain X-ray of lumbar and sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-1290655009"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -62863,7 +62863,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -62872,8 +62872,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e26b5c85-67c3-417d-9213-16fc4496e9e4"/>
-          <timestamp value="2026-11-13T12:46:50+00:00"/>
+          <identifier value="urn:uuid:5afebe2e-5388-4cbb-aea3-4dbaabdc905f"/>
+          <timestamp value="2026-11-13T15:04:01+00:00"/>
           <total value="588"/>
           <offset value="0"/>
           <parameter>
@@ -63680,8 +63680,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="418135007"/>
-            <display value="Fluoroscopic cystography"/>
+            <code value="22791004"/>
+            <display value="Plain X-ray of lumbar and sacral spine"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -63920,8 +63920,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="168918009"/>
-            <display value="Arthrography of hip joint"/>
+            <code value="45036003"/>
+            <display value="Ultrasonography of abdomen"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -63967,11 +63967,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="419791000"/>
             <display value="US scan and aspiration of pelvis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="702459003"/>
-            <display value="Fluoroscopy guided aspiration of upper limb"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -64112,6 +64107,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="1217550004"/>
             <display value="Injection of drug or medicament into tendon"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="113109007"/>
+            <display value="MRI of lower extremity"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -64330,11 +64330,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="699583008"/>
-            <display value="MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="414151000119108"/>
             <display value="Magnetic resonance angiography of chest, abdomen and pelvis without contrast"/>
           </contains>
@@ -64540,6 +64535,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="168918009"/>
+            <display value="Arthrography of hip joint"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="431225005"/>
             <display value="MRI of cerebrospinal fluid flow"/>
           </contains>
@@ -64725,11 +64725,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="113109007"/>
-            <display value="MRI of lower extremity"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="433009001"/>
             <display value="MRI of lower leg with contrast"/>
           </contains>
@@ -64860,8 +64855,13 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="432672003"/>
-            <display value="MRI of pelvis and hip"/>
+            <code value="418135007"/>
+            <display value="Fluoroscopic cystography"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418394000"/>
+            <display value="US scan of abdomen and pelvis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -64997,6 +64997,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="432215003"/>
             <display value="MRI of upper arm with contrast"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="428605000"/>
+            <display value="Ultrasound scan of sacral spine"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -65175,11 +65180,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="45036003"/>
-            <display value="Ultrasonography of abdomen"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="241480000"/>
             <display value="US scan of adrenals"/>
           </contains>
@@ -65210,8 +65210,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="418394000"/>
-            <display value="US scan of abdomen and pelvis"/>
+            <code value="432672003"/>
+            <display value="MRI of pelvis and hip"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -65252,6 +65252,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="10321000087109"/>
             <display value="Ultrasonography of chest and abdomen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="699583008"/>
+            <display value="MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -65455,8 +65460,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="428605000"/>
-            <display value="Ultrasound scan of sacral spine"/>
+            <code value="702459003"/>
+            <display value="Fluoroscopy guided aspiration of upper limb"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -65772,11 +65777,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="840361000"/>
             <display value="Plain X-ray of lumbar spine"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="22791004"/>
-            <display value="Plain X-ray of lumbar and sacral spine"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -69265,23 +69265,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-418135007"> </a>
+                  <a name="x-http://snomed.info/sct-22791004"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/418135007">418135007</a>
+                  <a href="http://snomed.info/id/22791004">22791004</a>
                 </td>
-                <td>Fluoroscopic cystography</td>
+                <td>Plain X-ray of lumbar and sacral spine</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418135007&quot;, &quot;display&quot;: &quot;Fluoroscopic cystography&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;22791004&quot;, &quot;display&quot;: &quot;Plain X-ray of lumbar and sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418135007&quot;/&gt;&lt;display value=&quot;Fluoroscopic cystography&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;22791004&quot;/&gt;&lt;display value=&quot;Plain X-ray of lumbar and sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -70321,23 +70321,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-168918009"> </a>
+                  <a name="x-http://snomed.info/sct-45036003"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/168918009">168918009</a>
+                  <a href="http://snomed.info/id/45036003">45036003</a>
                 </td>
-                <td>Arthrography of hip joint</td>
+                <td>Ultrasonography of abdomen</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;168918009&quot;, &quot;display&quot;: &quot;Arthrography of hip joint&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;45036003&quot;, &quot;display&quot;: &quot;Ultrasonography of abdomen&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;168918009&quot;/&gt;&lt;display value=&quot;Arthrography of hip joint&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;45036003&quot;/&gt;&lt;display value=&quot;Ultrasonography of abdomen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -70536,28 +70536,6 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;419791000&quot;/&gt;&lt;display value=&quot;US scan and aspiration of pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a name="x-http://snomed.info/sct-702459003"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/702459003">702459003</a>
-                </td>
-                <td>Fluoroscopy guided aspiration of upper limb</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;702459003&quot;, &quot;display&quot;: &quot;Fluoroscopy guided aspiration of upper limb&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;702459003&quot;/&gt;&lt;display value=&quot;Fluoroscopy guided aspiration of upper limb&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -71174,6 +71152,28 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1217550004&quot;/&gt;&lt;display value=&quot;Injection of drug or medicament into tendon&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-113109007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/113109007">113109007</a>
+                </td>
+                <td>MRI of lower extremity</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;113109007&quot;, &quot;display&quot;: &quot;MRI of lower extremity&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;113109007&quot;/&gt;&lt;display value=&quot;MRI of lower extremity&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -72125,28 +72125,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-699583008"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/699583008">699583008</a>
-                </td>
-                <td>MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;699583008&quot;, &quot;display&quot;: &quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;699583008&quot;/&gt;&lt;display value=&quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-414151000119108"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -73049,6 +73027,28 @@
               </tr>
               <tr>
                 <td>
+                  <a name="x-http://snomed.info/sct-168918009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/168918009">168918009</a>
+                </td>
+                <td>Arthrography of hip joint</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;168918009&quot;, &quot;display&quot;: &quot;Arthrography of hip joint&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;168918009&quot;/&gt;&lt;display value=&quot;Arthrography of hip joint&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a name="x-http://snomed.info/sct-431225005"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -73863,28 +73863,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-113109007"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/113109007">113109007</a>
-                </td>
-                <td>MRI of lower extremity</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;113109007&quot;, &quot;display&quot;: &quot;MRI of lower extremity&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;113109007&quot;/&gt;&lt;display value=&quot;MRI of lower extremity&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-433009001"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -74457,23 +74435,45 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-432672003"> </a>
+                  <a name="x-http://snomed.info/sct-418135007"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/432672003">432672003</a>
+                  <a href="http://snomed.info/id/418135007">418135007</a>
                 </td>
-                <td>MRI of pelvis and hip</td>
+                <td>Fluoroscopic cystography</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;432672003&quot;, &quot;display&quot;: &quot;MRI of pelvis and hip&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418135007&quot;, &quot;display&quot;: &quot;Fluoroscopic cystography&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;432672003&quot;/&gt;&lt;display value=&quot;MRI of pelvis and hip&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418135007&quot;/&gt;&lt;display value=&quot;Fluoroscopic cystography&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-418394000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/418394000">418394000</a>
+                </td>
+                <td>US scan of abdomen and pelvis</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418394000&quot;, &quot;display&quot;: &quot;US scan of abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418394000&quot;/&gt;&lt;display value=&quot;US scan of abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -75068,6 +75068,28 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;432215003&quot;/&gt;&lt;display value=&quot;MRI of upper arm with contrast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-428605000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/428605000">428605000</a>
+                </td>
+                <td>Ultrasound scan of sacral spine</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428605000&quot;, &quot;display&quot;: &quot;Ultrasound scan of sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;428605000&quot;/&gt;&lt;display value=&quot;Ultrasound scan of sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -75843,28 +75865,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-45036003"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/45036003">45036003</a>
-                </td>
-                <td>Ultrasonography of abdomen</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;45036003&quot;, &quot;display&quot;: &quot;Ultrasonography of abdomen&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;45036003&quot;/&gt;&lt;display value=&quot;Ultrasonography of abdomen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-241480000"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -75997,23 +75997,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-418394000"> </a>
+                  <a name="x-http://snomed.info/sct-432672003"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/418394000">418394000</a>
+                  <a href="http://snomed.info/id/432672003">432672003</a>
                 </td>
-                <td>US scan of abdomen and pelvis</td>
+                <td>MRI of pelvis and hip</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418394000&quot;, &quot;display&quot;: &quot;US scan of abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;432672003&quot;, &quot;display&quot;: &quot;MRI of pelvis and hip&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;418394000&quot;/&gt;&lt;display value=&quot;US scan of abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;432672003&quot;/&gt;&lt;display value=&quot;MRI of pelvis and hip&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -76190,6 +76190,28 @@
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;10321000087109&quot;/&gt;&lt;display value=&quot;Ultrasonography of chest and abdomen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-699583008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/699583008">699583008</a>
+                </td>
+                <td>MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis</td>
+                <td/>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;699583008&quot;, &quot;display&quot;: &quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;699583008&quot;/&gt;&lt;display value=&quot;MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -77075,23 +77097,23 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-428605000"> </a>
+                  <a name="x-http://snomed.info/sct-702459003"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/428605000">428605000</a>
+                  <a href="http://snomed.info/id/702459003">702459003</a>
                 </td>
-                <td>Ultrasound scan of sacral spine</td>
+                <td>Fluoroscopy guided aspiration of upper limb</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;428605000&quot;, &quot;display&quot;: &quot;Ultrasound scan of sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;702459003&quot;, &quot;display&quot;: &quot;Fluoroscopy guided aspiration of upper limb&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;428605000&quot;/&gt;&lt;display value=&quot;Ultrasound scan of sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;702459003&quot;/&gt;&lt;display value=&quot;Fluoroscopy guided aspiration of upper limb&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -78483,28 +78505,6 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://snomed.info/sct-22791004"> </a>
-                  <code>http://snomed.info/sct</code>
-                </td>
-                <td style="white-space:nowrap">  
-                  <a href="http://snomed.info/id/22791004">22791004</a>
-                </td>
-                <td>Plain X-ray of lumbar and sacral spine</td>
-                <td/>
-                <td/>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;22791004&quot;, &quot;display&quot;: &quot;Plain X-ray of lumbar and sacral spine&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-                <td>
-                  <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;22791004&quot;/&gt;&lt;display value=&quot;Plain X-ray of lumbar and sacral spine&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a name="x-http://snomed.info/sct-1290655009"> </a>
                   <code>http://snomed.info/sct</code>
                 </td>
@@ -78842,7 +78842,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78851,8 +78851,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:75286133-852a-4065-be85-d10f83005415"/>
-          <timestamp value="2026-11-13T12:46:50+00:00"/>
+          <identifier value="urn:uuid:460cf475-7520-48cf-8cdd-e21f3ca6ca48"/>
+          <timestamp value="2026-11-13T15:04:01+00:00"/>
           <total value="588"/>
           <offset value="0"/>
           <parameter>
@@ -79659,8 +79659,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="418135007"/>
-            <display value="Fluoroscopic cystography"/>
+            <code value="22791004"/>
+            <display value="Plain X-ray of lumbar and sacral spine"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -79899,8 +79899,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="168918009"/>
-            <display value="Arthrography of hip joint"/>
+            <code value="45036003"/>
+            <display value="Ultrasonography of abdomen"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -79946,11 +79946,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="419791000"/>
             <display value="US scan and aspiration of pelvis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="702459003"/>
-            <display value="Fluoroscopy guided aspiration of upper limb"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -80091,6 +80086,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="1217550004"/>
             <display value="Injection of drug or medicament into tendon"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="113109007"/>
+            <display value="MRI of lower extremity"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -80309,11 +80309,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="699583008"/>
-            <display value="MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="414151000119108"/>
             <display value="Magnetic resonance angiography of chest, abdomen and pelvis without contrast"/>
           </contains>
@@ -80519,6 +80514,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="168918009"/>
+            <display value="Arthrography of hip joint"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="431225005"/>
             <display value="MRI of cerebrospinal fluid flow"/>
           </contains>
@@ -80704,11 +80704,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="113109007"/>
-            <display value="MRI of lower extremity"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="433009001"/>
             <display value="MRI of lower leg with contrast"/>
           </contains>
@@ -80839,8 +80834,13 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="432672003"/>
-            <display value="MRI of pelvis and hip"/>
+            <code value="418135007"/>
+            <display value="Fluoroscopic cystography"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418394000"/>
+            <display value="US scan of abdomen and pelvis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -80976,6 +80976,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="432215003"/>
             <display value="MRI of upper arm with contrast"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="428605000"/>
+            <display value="Ultrasound scan of sacral spine"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -81154,11 +81159,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="45036003"/>
-            <display value="Ultrasonography of abdomen"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="241480000"/>
             <display value="US scan of adrenals"/>
           </contains>
@@ -81189,8 +81189,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="418394000"/>
-            <display value="US scan of abdomen and pelvis"/>
+            <code value="432672003"/>
+            <display value="MRI of pelvis and hip"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -81231,6 +81231,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="10321000087109"/>
             <display value="Ultrasonography of chest and abdomen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="699583008"/>
+            <display value="MRI (Magnetic resonance imaging) of thorax, abdomen and pelvis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -81434,8 +81439,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="428605000"/>
-            <display value="Ultrasound scan of sacral spine"/>
+            <code value="702459003"/>
+            <display value="Fluoroscopy guided aspiration of upper limb"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -81751,11 +81756,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="840361000"/>
             <display value="Plain X-ray of lumbar spine"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="22791004"/>
-            <display value="Plain X-ray of lumbar and sacral spine"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -101877,7 +101877,7 @@
         <title value="SNOMED CT eReferral Supplement Designations"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -101911,8 +101911,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason">
             <valueString value="The code System 'http://snomed.info/sct' has a grammar and so has infinite members"/>
           </extension>
-          <identifier value="urn:uuid:969eae32-f765-4aab-b02a-f6bbc1f06461"/>
-          <timestamp value="2026-11-13T12:46:51.064Z"/>
+          <identifier value="urn:uuid:f5018a12-b775-4dff-965b-cf89167b6b7f"/>
+          <timestamp value="2026-11-13T15:04:02.237Z"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -126979,7 +126979,7 @@
         <title value="SNOMED CT eReferral Supplement Designations"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -127013,8 +127013,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason">
             <valueString value="The code System 'http://snomed.info/sct' has a grammar and so has infinite members"/>
           </extension>
-          <identifier value="urn:uuid:c7285814-9da7-4deb-b23a-f90973e3b778"/>
-          <timestamp value="2026-11-13T12:46:51.388Z"/>
+          <identifier value="urn:uuid:7d8f3d9f-6e51-4ce7-8acd-0e4acb46689b"/>
+          <timestamp value="2026-11-13T15:04:02.552Z"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -154112,7 +154112,7 @@
         <title value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -154121,8 +154121,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c6bc74ff-2f56-4b3b-a518-a8f7cf884496"/>
-          <timestamp value="2026-11-13T12:46:51+00:00"/>
+          <identifier value="urn:uuid:bee45156-ff36-4194-b847-da53c2b1932e"/>
+          <timestamp value="2026-11-13T15:04:02+00:00"/>
           <total value="1451"/>
           <offset value="0"/>
           <parameter>
@@ -181250,7 +181250,7 @@
         <title value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -181259,8 +181259,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c1ab244e-108d-4358-b263-f17c2e1109ae"/>
-          <timestamp value="2026-11-13T12:46:51+00:00"/>
+          <identifier value="urn:uuid:09f6155c-454e-4a95-a85a-c033dba954d1"/>
+          <timestamp value="2026-11-13T15:04:02+00:00"/>
           <total value="1451"/>
           <offset value="0"/>
           <parameter>
@@ -203618,7 +203618,7 @@
         <title value="PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -203627,8 +203627,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:efa6bb6b-30d7-4bb1-95d3-f2aaeb520874"/>
-          <timestamp value="2026-11-13T12:46:51+00:00"/>
+          <identifier value="urn:uuid:45b759f4-8f73-4c3b-bd56-2887f0ef3712"/>
+          <timestamp value="2026-11-13T15:04:03+00:00"/>
           <total value="863"/>
           <offset value="0"/>
           <parameter>
@@ -225272,7 +225272,7 @@
         <title value="PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -225281,8 +225281,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ef9bff04-1625-495c-af59-0e1539cb5482"/>
-          <timestamp value="2026-11-13T12:46:51+00:00"/>
+          <identifier value="urn:uuid:ae07ea89-52ef-4242-a173-d4469d590fc5"/>
+          <timestamp value="2026-11-13T15:04:03+00:00"/>
           <total value="863"/>
           <offset value="0"/>
           <parameter>
@@ -249666,7 +249666,7 @@
         <title value="PSS/QSI Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -249675,8 +249675,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1f0485e4-40c2-49ee-ad2b-92d85a749906"/>
-          <timestamp value="2026-11-13T12:46:52+00:00"/>
+          <identifier value="urn:uuid:907aef8d-8e92-4f6f-a242-6e7286edee46"/>
+          <timestamp value="2026-11-13T15:04:03+00:00"/>
           <total value="4297"/>
           <offset value="0"/>
           <parameter>
@@ -274745,7 +274745,7 @@
         <title value="PSS/QSI Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -274754,8 +274754,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b900a66-9207-4d32-a4a7-6c2ca6a89227"/>
-          <timestamp value="2026-11-13T12:46:52+00:00"/>
+          <identifier value="urn:uuid:2c135396-0fff-4d96-9135-0feb1590e8a0"/>
+          <timestamp value="2026-11-13T15:04:03+00:00"/>
           <total value="4297"/>
           <offset value="0"/>
           <parameter>
@@ -279924,7 +279924,7 @@
         <title value="eReferral Radiology SupportingInfo Role ValueSet"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -279933,8 +279933,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:daa12226-047d-443a-baf0-4a58938e7bb1"/>
-          <timestamp value="2026-11-13T12:46:52+00:00"/>
+          <identifier value="urn:uuid:cc924a91-0a31-47c3-9ad9-0bb6c498bd2f"/>
+          <timestamp value="2026-11-13T15:04:03+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -280123,7 +280123,7 @@
         <title value="eReferral Radiology SupportingInfo Role ValueSet"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -280132,8 +280132,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c2198dcb-eb5a-4148-97ae-bf3f52e9a075"/>
-          <timestamp value="2026-11-13T12:46:52+00:00"/>
+          <identifier value="urn:uuid:3bd6b6a6-7ddd-4758-a37c-95f5782f15f8"/>
+          <timestamp value="2026-11-13T15:04:03+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -300244,7 +300244,7 @@
         <title value="eReferral Imaging Patient Condition Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -300272,8 +300272,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8f147d8d-762f-461a-901e-a44674aa6d22"/>
-          <timestamp value="2026-11-13T12:46:52.776Z"/>
+          <identifier value="urn:uuid:ad32d2eb-e9f4-451f-a0b7-9b5f65dce1f3"/>
+          <timestamp value="2026-11-13T15:04:03.722Z"/>
           <total value="5291"/>
           <offset value="0"/>
           <parameter>
@@ -325376,7 +325376,7 @@
         <title value="eReferral Imaging Patient Condition Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T12:42:03+00:00"/>
+        <date value="2026-11-13T14:59:56+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -325404,8 +325404,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8f147d8d-762f-461a-901e-a44674aa6d22"/>
-          <timestamp value="2026-11-13T12:46:52.776Z"/>
+          <identifier value="urn:uuid:ad32d2eb-e9f4-451f-a0b7-9b5f65dce1f3"/>
+          <timestamp value="2026-11-13T15:04:03.722Z"/>
           <total value="5291"/>
           <offset value="0"/>
           <parameter>

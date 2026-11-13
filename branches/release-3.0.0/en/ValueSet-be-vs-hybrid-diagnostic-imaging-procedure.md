@@ -43,7 +43,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-13T12:42:03+00:00",
+  "date" : "2026-11-13T14:59:56+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

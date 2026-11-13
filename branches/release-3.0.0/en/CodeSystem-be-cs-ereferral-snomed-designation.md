@@ -18942,7 +18942,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van abdomen met contrast"
+      "value" : "computertomografie van abdomen met contrast"
     },
     {
       "language" : "de",
@@ -18989,41 +18989,6 @@ This Code system is referenced in the definition of the following value sets:
     }]
   },
   {
-    "code" : "16444991000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography of kidney, ureter and urinary bladder without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Tomodensitométrie de reins, uretères et vessie sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomografie van nieren, ureters en blaas zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomographie von Nieren, Harnleiter und Harnblase ohne Kontrastmittel"
-    }]
-  },
-  {
     "code" : "1148701004",
     "designation" : [{
       "language" : "en",
@@ -19039,7 +19004,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie de l'abdomen et du pelvis avec injection intraveineuse de produit de contraste"
+      "value" : "tomodensitométrie de l'abdomen et du pelvis avec injection intraveineuse de produit de contraste"
     },
     {
       "language" : "nl",
@@ -19047,7 +19012,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van abdomen en bekken met intraveneus contrast"
+      "value" : "computertomografie van abdomen en bekken met intraveneus contrast"
     },
     {
       "language" : "de",
@@ -19056,41 +19021,6 @@ This Code system is referenced in the definition of the following value sets:
         "code" : "eReferral-preferred"
       },
       "value" : "CT, Abdomen-Becken, mit i.v. Kontrast"
-    }]
-  },
-  {
-    "code" : "16457501000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography of abdomen and pelvis without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Tomodensitométrie de abdomen et pelvis sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomografie van abdomen en bekken zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomographie von Abdomen und Becken ohne Kontrastmittel"
     }]
   },
   {
@@ -19117,7 +19047,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van abdomen en bekken met contrast"
+      "value" : "computertomografie van abdomen en bekken met contrast"
     },
     {
       "language" : "de",
@@ -19136,7 +19066,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computed tomography of abdominal vascular structure with contrast (procedure) or 448443000"
+      "value" : "Computed tomography of abdominal vascular structure with contrast (procedure)"
     },
     {
       "language" : "fr",
@@ -19179,7 +19109,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par tomodensitométrie d'artères abdominales et pelviennes avec produit de contraste"
+      "value" : "angiographie par tomodensitométrie d'artères abdominales et pelviennes avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -19187,7 +19117,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomoangiografie van abdominale arterie en bekkenarterie"
+      "value" : "computertomoangiografie van abdominale arterie en bekkenarterie"
     },
     {
       "language" : "de",
@@ -19214,7 +19144,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angio-CT de l'abdomen, du bassin et du membre inférieur avec produit de contraste"
+      "value" : "angio-CT de l'abdomen, du bassin et du membre inférieur avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -19222,7 +19152,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomoangiografie van abdomen, pelvis en onderste extremiteit"
+      "value" : "computertomoangiografie van abdomen, pelvis en onderste extremiteit"
     },
     {
       "language" : "de",
@@ -19269,41 +19199,6 @@ This Code system is referenced in the definition of the following value sets:
     }]
   },
   {
-    "code" : "16332841000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography angiography of pulmonary artery with contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Angiographie par tomodensitométrie de artère pulmonaire avec contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "CT-angiografie van longslagader met contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "CT-Angiographie von Lungenarterie mit Kontrastmittel"
-    }]
-  },
-  {
     "code" : "411251000119104",
     "designation" : [{
       "language" : "en",
@@ -19311,7 +19206,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computed tomography angiography of chest with contrast (procedure) or  426730003"
+      "value" : "Computed tomography angiography of chest with contrast (procedure)"
     },
     {
       "language" : "fr",
@@ -19339,76 +19234,6 @@ This Code system is referenced in the definition of the following value sets:
     }]
   },
   {
-    "code" : "16326461000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography angiography of chest and abdomen with contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Angiographie par tomodensitométrie de thorax et abdomen avec contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "CT-angiografie van thorax en abdomen met contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "CT-Angiographie von Thorax und Abdomen mit Kontrastmittel"
-    }]
-  },
-  {
-    "code" : "16462121000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography angiography of thorax and abdomen and pelvis with contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Angiographie par tomodensitométrie de thorax et abdomen et pelvis avec contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "CT-angiografie van thorax en abdomen en bekken met contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "CT-Angiographie von Thorax und Abdomen und Becken mit Kontrastmittel"
-    }]
-  },
-  {
     "code" : "582101000119108",
     "designation" : [{
       "language" : "en",
@@ -19424,7 +19249,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angioscanner de la tête avec contraste"
+      "value" : "angioscanner de la tête avec contraste"
     },
     {
       "language" : "nl",
@@ -19459,7 +19284,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan de la tête et du cou"
+      "value" : "angiographie - CT scan de la tête et du cou"
     },
     {
       "language" : "nl",
@@ -19494,7 +19319,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan coronaire"
+      "value" : "angiographie - CT scan coronaire"
     },
     {
       "language" : "nl",
@@ -19502,7 +19327,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomoangiografie van coronairarterie"
+      "value" : "computertomoangiografie van coronairarterie"
     },
     {
       "language" : "de",
@@ -19529,7 +19354,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan de membre inférieur"
+      "value" : "angiographie - CT scan de membre inférieur"
     },
     {
       "language" : "nl",
@@ -19564,7 +19389,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan des vaisseaux du cou"
+      "value" : "angiographie - CT scan des vaisseaux du cou"
     },
     {
       "language" : "nl",
@@ -19599,7 +19424,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan des vaisseaux du pelvis"
+      "value" : "angiographie - CT scan des vaisseaux du pelvis"
     },
     {
       "language" : "nl",
@@ -19634,7 +19459,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan du pelvis et membres inférieurs"
+      "value" : "angiographie - CT scan du pelvis et membres inférieurs"
     },
     {
       "language" : "nl",
@@ -19642,7 +19467,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomoangiografie van bekken en onderste extremiteit met contrast"
+      "value" : "computertomoangiografie van bekken en onderste extremiteit met contrast"
     },
     {
       "language" : "de",
@@ -19669,7 +19494,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan des structures vasculaires de la colonne vertébrale"
+      "value" : "angiographie - CT scan des structures vasculaires de la colonne vertébrale"
     },
     {
       "language" : "nl",
@@ -19704,7 +19529,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie - CT scan d'artère du membre supérieur"
+      "value" : "angiographie - CT scan d'artère du membre supérieur"
     },
     {
       "language" : "nl",
@@ -19739,7 +19564,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie avec produit de contraste"
+      "value" : "tomodensitométrie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -19809,7 +19634,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie - CT scan de la cheville"
+      "value" : "arthrographie - CT scan de la cheville"
     },
     {
       "language" : "nl",
@@ -19817,7 +19642,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie met artrografie van enkel"
+      "value" : "computertomografie met artrografie van enkel"
     },
     {
       "language" : "de",
@@ -19844,7 +19669,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie - CT scan de la hanche"
+      "value" : "arthrographie - CT scan de la hanche"
     },
     {
       "language" : "nl",
@@ -19879,7 +19704,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie - CT scan du genou"
+      "value" : "arthrographie - CT scan du genou"
     },
     {
       "language" : "nl",
@@ -19914,7 +19739,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie - CT scan du coude"
+      "value" : "arthrographie - CT scan du coude"
     },
     {
       "language" : "nl",
@@ -19949,7 +19774,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie - CT scan de l'épaule"
+      "value" : "arthrographie - CT scan de l'épaule"
     },
     {
       "language" : "nl",
@@ -19957,7 +19782,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie met artrografie van schouder"
+      "value" : "computertomografie met artrografie van schouder"
     },
     {
       "language" : "de",
@@ -19984,7 +19809,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie - CT scan du poignet"
+      "value" : "arthrographie - CT scan du poignet"
     },
     {
       "language" : "nl",
@@ -20062,7 +19887,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van acromioclaviculair gewricht"
+      "value" : "computertomografie van acromioclaviculair gewricht"
     },
     {
       "language" : "de",
@@ -20097,7 +19922,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie met contrast van clavicula"
+      "value" : "computertomografie met contrast van clavicula"
     },
     {
       "language" : "de",
@@ -20144,41 +19969,6 @@ This Code system is referenced in the definition of the following value sets:
     }]
   },
   {
-    "code" : "16335031000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "High resolution computed tomography of chest without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Haute résolution tomodensitométrie de thorax sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Hoge resolutie computertomografie van thorax zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Hochauflösend Computertomographie von Thorax ohne Kontrastmittel"
-    }]
-  },
-  {
     "code" : "702506003",
     "designation" : [{
       "language" : "en",
@@ -20202,7 +19992,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van sternoclaviculair gewricht met contrast"
+      "value" : "computertomografie van sternoclaviculair gewricht met contrast"
     },
     {
       "language" : "de",
@@ -20229,7 +20019,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthro-CT sternoclaviculaire sans produit de contraste"
+      "value" : "arthro-CT sternoclaviculaire sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -20237,7 +20027,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van sternoclaviculair gewricht zonder contrast"
+      "value" : "computertomografie van sternoclaviculair gewricht zonder contrast"
     },
     {
       "language" : "de",
@@ -20284,41 +20074,6 @@ This Code system is referenced in the definition of the following value sets:
     }]
   },
   {
-    "code" : "16334791000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography of sternum without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Tomodensitométrie de sternum sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomografie van sternum zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomographie von Sternum ohne Kontrastmittel"
-    }]
-  },
-  {
     "code" : "75385009",
     "designation" : [{
       "language" : "en",
@@ -20342,7 +20097,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van thorax met contrastmiddel"
+      "value" : "computertomografie van thorax met contrastmiddel"
     },
     {
       "language" : "de",
@@ -20439,7 +20194,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du thorax et de l'abdomen supérieur"
+      "value" : "tomodensitométrie du thorax et de l'abdomen supérieur"
     },
     {
       "language" : "nl",
@@ -20456,41 +20211,6 @@ This Code system is referenced in the definition of the following value sets:
         "code" : "eReferral-preferred"
       },
       "value" : "CT, Thorax, ohne i.v. Kontrast, inkl. oberes Abdomen"
-    }]
-  },
-  {
-    "code" : "16334891000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Low dose computed tomography of chest without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Faible dose tomodensitométrie de thorax sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Lage dosis computertomografie van thorax zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Niedrigdosis Computertomographie von Thorax ohne Kontrastmittel"
     }]
   },
   {
@@ -20517,7 +20237,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van thorax en abdomen met contrast"
+      "value" : "computertomografie van thorax en abdomen met contrast"
     },
     {
       "language" : "de",
@@ -20544,7 +20264,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du thorax et de l'abdomen sans produit de contraste"
+      "value" : "tomodensitométrie du thorax et de l'abdomen sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -20657,7 +20377,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van hersenventrikel met contrast"
+      "value" : "computertomografie van hersenventrikel met contrast"
     },
     {
       "language" : "de",
@@ -20719,7 +20439,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie à faisceau conique des os de la face"
+      "value" : "tomodensitométrie à faisceau conique des os de la face"
     },
     {
       "language" : "nl",
@@ -20762,7 +20482,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie-cystografie met intraveneus contrast"
+      "value" : "computertomografie-cystografie met intraveneus contrast"
     },
     {
       "language" : "de",
@@ -20797,7 +20517,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Discografie met computertomografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
+      "value" : "discografie met computertomografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
     },
     {
       "language" : "de",
@@ -20824,7 +20544,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du genou sans produit de contraste"
+      "value" : "tomodensitométrie du genou sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -20832,7 +20552,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van knie zonder contrast"
+      "value" : "computertomografie van knie zonder contrast"
     },
     {
       "language" : "de",
@@ -20859,7 +20579,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Entéroclyse par CT scan"
+      "value" : "entéroclyse par CT scan"
     },
     {
       "language" : "nl",
@@ -20902,7 +20622,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van dunne darm met contrast"
+      "value" : "computertomografie van dunne darm met contrast"
     },
     {
       "language" : "de",
@@ -20911,41 +20631,6 @@ This Code system is referenced in the definition of the following value sets:
         "code" : "eReferral-preferred"
       },
       "value" : "CT, Enterographie, Abdomen-Becken, mit i.v. Kontrast"
-    }]
-  },
-  {
-    "code" : "16439801000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography of heart with contrast for cardiac structure and morphology"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Tomodensitométrie de cœur avec contraste pour cardiac structure et morphology"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomografie van hart met contrast voor cardiac structure en morphology"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomographie von Herz mit Kontrastmittel für cardiac structure und morphology"
     }]
   },
   {
@@ -20972,7 +20657,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie met contrast van mastoïd"
+      "value" : "computertomografie met contrast van mastoïd"
     },
     {
       "language" : "de",
@@ -20999,7 +20684,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du processus mastoïde de l'os temporal sans produit de contraste"
+      "value" : "tomodensitométrie du processus mastoïde de l'os temporal sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -21007,7 +20692,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie zonder contrast van mastoïd"
+      "value" : "computertomografie zonder contrast van mastoïd"
     },
     {
       "language" : "de",
@@ -21077,7 +20762,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van orbita zonder contrast"
+      "value" : "computertomografie van orbita zonder contrast"
     },
     {
       "language" : "de",
@@ -21147,7 +20832,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie zonder contrast van os temporale"
+      "value" : "computertomografie zonder contrast van os temporale"
     },
     {
       "language" : "de",
@@ -21252,7 +20937,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van hoofd-halsregio met contrast"
+      "value" : "computertomografie van hoofd-halsregio met contrast"
     },
     {
       "language" : "de",
@@ -21279,7 +20964,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie de la tête et du cou"
+      "value" : "tomodensitométrie de la tête et du cou"
     },
     {
       "language" : "nl",
@@ -21392,7 +21077,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van enkel zonder contrast"
+      "value" : "computertomografie van enkel zonder contrast"
     },
     {
       "language" : "de",
@@ -21462,7 +21147,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van voet zonder contrast"
+      "value" : "computertomografie van voet zonder contrast"
     },
     {
       "language" : "de",
@@ -21567,7 +21252,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van heup met contrast"
+      "value" : "computertomografie van heup met contrast"
     },
     {
       "language" : "de",
@@ -21637,7 +21322,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van beide heupen met contrast"
+      "value" : "computertomografie van beide heupen met contrast"
     },
     {
       "language" : "de",
@@ -21672,7 +21357,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie zonder contrast van beide heupen"
+      "value" : "computertomografie zonder contrast van beide heupen"
     },
     {
       "language" : "de",
@@ -21707,7 +21392,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van knie met contrast"
+      "value" : "computertomografie van knie met contrast"
     },
     {
       "language" : "de",
@@ -21909,7 +21594,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie des sinus paranasaux avec contraste"
+      "value" : "tomodensitométrie des sinus paranasaux avec contraste"
     },
     {
       "language" : "nl",
@@ -21944,7 +21629,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomographie computérisée des sinus paranasaux sans contraste"
+      "value" : "tomographie computérisée des sinus paranasaux sans contraste"
     },
     {
       "language" : "nl",
@@ -21987,7 +21672,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie met contrast van maxillofaciaal gebied"
+      "value" : "computertomografie met contrast van maxillofaciaal gebied"
     },
     {
       "language" : "de",
@@ -22022,7 +21707,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie zonder contrast van maxillofaciaal gebied"
+      "value" : "computertomografie zonder contrast van maxillofaciaal gebied"
     },
     {
       "language" : "de",
@@ -22049,7 +21734,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélographie - CT scan"
+      "value" : "myélographie - CT scan"
     },
     {
       "language" : "nl",
@@ -22084,7 +21769,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélotomodensitométrie de la région cervicale"
+      "value" : "myélotomodensitométrie de la région cervicale"
     },
     {
       "language" : "nl",
@@ -22154,7 +21839,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélographie - CT scan de la région lombaire"
+      "value" : "myélographie - CT scan de la région lombaire"
     },
     {
       "language" : "nl",
@@ -22197,7 +21882,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van hals en/of nek met contrastmiddel"
+      "value" : "computertomografie van hals en/of nek met contrastmiddel"
     },
     {
       "language" : "de",
@@ -22337,7 +22022,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van sacro-iliacaal gewricht met contrast"
+      "value" : "computertomografie van sacro-iliacaal gewricht met contrast"
     },
     {
       "language" : "de",
@@ -22399,7 +22084,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du pelvis avec produit de contraste"
+      "value" : "tomodensitométrie du pelvis avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -22407,7 +22092,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van bekken met contrast"
+      "value" : "computertomografie van bekken met contrast"
     },
     {
       "language" : "de",
@@ -22434,7 +22119,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du pelvis sans produit de contraste"
+      "value" : "tomodensitométrie du pelvis sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -22477,7 +22162,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van lumbale wervelkolom en sacro-iliacaal gewricht met contrast"
+      "value" : "computertomografie van lumbale wervelkolom en sacro-iliacaal gewricht met contrast"
     },
     {
       "language" : "de",
@@ -22547,7 +22232,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van hersenperfusie"
+      "value" : "computertomografie van hersenperfusie"
     },
     {
       "language" : "de",
@@ -22582,7 +22267,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Kwantitatieve computertomografie"
+      "value" : "kwantitatieve computertomografie"
     },
     {
       "language" : "de",
@@ -22644,7 +22329,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie de la colonne cervicale avec produit de contraste"
+      "value" : "tomodensitométrie de la colonne cervicale avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -22652,7 +22337,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Axiale computertomografie van cervicale wervelkolom met contrast"
+      "value" : "axiale computertomografie van cervicale wervelkolom met contrast"
     },
     {
       "language" : "de",
@@ -22897,7 +22582,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van sacrale wervelkolom met contrast"
+      "value" : "computertomografie van sacrale wervelkolom met contrast"
     },
     {
       "language" : "de",
@@ -22994,7 +22679,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie de la colonne thoracique sans produit de contraste"
+      "value" : "tomodensitométrie de la colonne thoracique sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -23002,7 +22687,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van thoracale wervelkolom zonder contrast"
+      "value" : "computertomografie van thoracale wervelkolom zonder contrast"
     },
     {
       "language" : "de",
@@ -23107,7 +22792,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van gehele wervelkolom met contrast"
+      "value" : "computertomografie van gehele wervelkolom met contrast"
     },
     {
       "language" : "de",
@@ -23204,7 +22889,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du membre supérieur sans produit de contraste"
+      "value" : "tomodensitométrie du membre supérieur sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -23212,7 +22897,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van bovenste extremiteit zonder contrast"
+      "value" : "computertomografie van bovenste extremiteit zonder contrast"
     },
     {
       "language" : "de",
@@ -23259,41 +22944,6 @@ This Code system is referenced in the definition of the following value sets:
     }]
   },
   {
-    "code" : "16335961000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computed tomography of elbow without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Tomodensitométrie de coude sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomografie van elleboog zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Computertomographie von Ellbogen ohne Kontrastmittel"
-    }]
-  },
-  {
     "code" : "429924009",
     "designation" : [{
       "language" : "en",
@@ -23317,7 +22967,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van vinger, exclusief duim"
+      "value" : "computertomografie van vinger, exclusief duim"
     },
     {
       "language" : "de",
@@ -23422,7 +23072,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van hand met contrast"
+      "value" : "computertomografie van hand met contrast"
     },
     {
       "language" : "de",
@@ -23527,7 +23177,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van scapula"
+      "value" : "computertomografie van scapula"
     },
     {
       "language" : "de",
@@ -23562,7 +23212,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van schouder met contrast"
+      "value" : "computertomografie van schouder met contrast"
     },
     {
       "language" : "de",
@@ -23667,7 +23317,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van pols met contrast"
+      "value" : "computertomografie van pols met contrast"
     },
     {
       "language" : "de",
@@ -23729,7 +23379,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie du poignet sans produit de contraste"
+      "value" : "tomodensitométrie du poignet sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -23737,7 +23387,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van pols zonder contrast"
+      "value" : "computertomografie van pols zonder contrast"
     },
     {
       "language" : "de",
@@ -23799,7 +23449,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Tomodensitométrie des voies urinaires avec produit de contraste"
+      "value" : "tomodensitométrie des voies urinaires avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -23807,7 +23457,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Computertomografie van urinewegen met contrast"
+      "value" : "computertomografie van urinewegen met contrast"
     },
     {
       "language" : "de",
@@ -23834,7 +23484,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie - CT scan"
+      "value" : "veinographie - CT scan"
     },
     {
       "language" : "nl",
@@ -23869,7 +23519,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Phlébographie d'une veine du membre inférieur par CT-scan avec produit de contraste"
+      "value" : "phlébographie d'une veine du membre inférieur par CT-scan avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -23912,7 +23562,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Dubbele-energie-röntgenabsorptiometriescan van gehele lichaam"
+      "value" : "dubbele-energie-röntgenabsorptiometriescan van gehele lichaam"
     }]
   },
   {
@@ -23958,7 +23608,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Absorptiométrie à rayons X en double énergie au niveau de la hanche"
+      "value" : "absorptiométrie à rayons X en double énergie au niveau de la hanche"
     },
     {
       "language" : "nl",
@@ -23966,7 +23616,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Dubbele-energie-röntgenabsorptiometriescan van heup"
+      "value" : "dubbele-energie-röntgenabsorptiometriescan van heup"
     }]
   },
   {
@@ -23993,7 +23643,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Dubbele-energie-röntgenabsorptiometriescan van wervelkolom"
+      "value" : "dubbele-energie-röntgenabsorptiometriescan van wervelkolom"
     }]
   },
   {
@@ -24039,7 +23689,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Absorptiométrie radiologique à double énergie au niveau de la hanche et de la colonne vertébrale"
+      "value" : "absorptiométrie radiologique à double énergie au niveau de la hanche et de la colonne vertébrale"
     },
     {
       "language" : "nl",
@@ -24066,7 +23716,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artériographie rénale"
+      "value" : "artériographie rénale"
     },
     {
       "language" : "nl",
@@ -24074,7 +23724,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arteriografie van nier"
+      "value" : "arteriografie van nier"
     },
     {
       "language" : "de",
@@ -24101,7 +23751,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie percutanée du sein par aspiration à l'aiguille fine, guidée par imagerie"
+      "value" : "biopsie percutanée du sein par aspiration à l'aiguille fine, guidée par imagerie"
     },
     {
       "language" : "nl",
@@ -24109,7 +23759,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Percutane dunnenaaldbiopsie van borst onder geleide van beeldvormende techniek"
+      "value" : "percutane dunnenaaldbiopsie van borst onder geleide van beeldvormende techniek"
     },
     {
       "language" : "de",
@@ -24136,7 +23786,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnétoencéphalographie (MEG)"
+      "value" : "magnétoencéphalographie (MEG)"
     },
     {
       "language" : "nl",
@@ -24144,7 +23794,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magneto-encefalografie"
+      "value" : "magneto-encefalografie"
     },
     {
       "language" : "de",
@@ -24171,7 +23821,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM des reins"
+      "value" : "imagerie par IRM des reins"
     },
     {
       "language" : "nl",
@@ -24179,7 +23829,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van nier"
+      "value" : "magnetic resonance imaging van nier"
     },
     {
       "language" : "de",
@@ -24206,7 +23856,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du foie et de la rate"
+      "value" : "imagerie par IRM du foie et de la rate"
     },
     {
       "language" : "nl",
@@ -24241,7 +23891,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'abdomen avec contraste"
+      "value" : "imagerie par IRM de l'abdomen avec contraste"
     },
     {
       "language" : "nl",
@@ -24311,7 +23961,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique de l'abdomen et du pelvis sans produit de contraste"
+      "value" : "imagerie par résonance magnétique de l'abdomen et du pelvis sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -24346,7 +23996,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'abdomen et du pelvis avec contraste"
+      "value" : "imagerie par IRM de l'abdomen et du pelvis avec contraste"
     },
     {
       "language" : "nl",
@@ -24354,7 +24004,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van abdomen en pelvis met contrast"
+      "value" : "magnetic resonance imaging van abdomen en pelvis met contrast"
     },
     {
       "language" : "de",
@@ -24381,7 +24031,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM du thorax"
+      "value" : "IRM, angiographie, thorax, avec contraste IV"
     },
     {
       "language" : "nl",
@@ -24389,7 +24039,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "MR-angiografie van borstkas"
+      "value" : "MR, angiografie, thorax, met IV contrast"
     },
     {
       "language" : "de",
@@ -24416,7 +24066,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des vaisseaux du thorax avec contraste"
+      "value" : "angiographie par IRM des vaisseaux du thorax avec contraste"
     },
     {
       "language" : "nl",
@@ -24424,7 +24074,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieangiografie van vasculaire structuur van thorax met contrast"
+      "value" : "magnetischeresonantieangiografie van vasculaire structuur van thorax met contrast"
     },
     {
       "language" : "de",
@@ -24451,7 +24101,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM de l'aorte entière"
+      "value" : "angiographie par IRM de l'aorte entière"
     },
     {
       "language" : "nl",
@@ -24486,7 +24136,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM de l'aorte entière avec contraste"
+      "value" : "angiographie par IRM de l'aorte entière avec contraste"
     },
     {
       "language" : "nl",
@@ -24521,7 +24171,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM de la tête avec contraste"
+      "value" : "angiographie par IRM de la tête avec contraste"
     },
     {
       "language" : "nl",
@@ -24556,7 +24206,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par résonance magnétique de la tête sans produit de contraste"
+      "value" : "angiographie par résonance magnétique de la tête sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -24591,7 +24241,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM de la tête et du cou"
+      "value" : "angiographie par IRM de la tête et du cou"
     },
     {
       "language" : "nl",
@@ -24626,7 +24276,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM de la tête et du cou avec contraste"
+      "value" : "angiographie par IRM de la tête et du cou avec contraste"
     },
     {
       "language" : "nl",
@@ -24634,7 +24284,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieangiografie van hoofd-halsregio met contrast"
+      "value" : "magnetischeresonantieangiografie van hoofd-halsregio met contrast"
     },
     {
       "language" : "de",
@@ -24661,7 +24311,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie par IRM de la hanche"
+      "value" : "arthrographie par IRM de la hanche"
     },
     {
       "language" : "nl",
@@ -24696,7 +24346,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie par IRM du genou"
+      "value" : "arthrographie par IRM du genou"
     },
     {
       "language" : "nl",
@@ -24731,7 +24381,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie par IRM du coude"
+      "value" : "arthrographie par IRM du coude"
     },
     {
       "language" : "nl",
@@ -24766,7 +24416,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie par IRM de l'épaule"
+      "value" : "arthrographie par IRM de l'épaule"
     },
     {
       "language" : "nl",
@@ -24774,7 +24424,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieartrografie van schouder"
+      "value" : "magnetischeresonantieartrografie van schouder"
     },
     {
       "language" : "de",
@@ -24801,7 +24451,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du pouce"
+      "value" : "imagerie par IRM du pouce"
     },
     {
       "language" : "nl",
@@ -24836,7 +24486,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie par IRM du poignet"
+      "value" : "arthrographie par IRM du poignet"
     },
     {
       "language" : "nl",
@@ -24844,7 +24494,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieartrografie van pols"
+      "value" : "magnetischeresonantieartrografie van pols"
     },
     {
       "language" : "de",
@@ -24871,7 +24521,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de sein"
+      "value" : "imagerie par IRM de sein"
     },
     {
       "language" : "nl",
@@ -24914,7 +24564,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van beide mammae zonder contrast"
+      "value" : "magnetic resonance imaging van beide mammae zonder contrast"
     },
     {
       "language" : "de",
@@ -24941,7 +24591,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de sein avec contraste"
+      "value" : "imagerie par IRM de sein avec contraste"
     },
     {
       "language" : "nl",
@@ -24976,7 +24626,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique bilatérale des seins avec produit de contraste"
+      "value" : "imagerie par résonance magnétique bilatérale des seins avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -24984,7 +24634,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van beide mammae met contrast"
+      "value" : "magnetic resonance imaging van beide mammae met contrast"
     },
     {
       "language" : "de",
@@ -25011,7 +24661,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM d'articulation acromio-claviculaire"
+      "value" : "imagerie par IRM d'articulation acromio-claviculaire"
     },
     {
       "language" : "nl",
@@ -25019,7 +24669,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van acromioclaviculair gewricht"
+      "value" : "magnetic resonance imaging van acromioclaviculair gewricht"
     },
     {
       "language" : "de",
@@ -25028,41 +24678,6 @@ This Code system is referenced in the definition of the following value sets:
         "code" : "eReferral-preferred"
       },
       "value" : "MRT, Thorax, Akromioklavikulargelenk, ohne i.v. Kontrast"
-    }]
-  },
-  {
-    "code" : "16342871000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Magnetic resonance imaging of clavicle without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Imagerie par résonance magnétique de clavicule sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Magnetische-resonantiebeeldvorming van clavicula zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Magnetresonanztomographie von Klavikula ohne Kontrastmittel"
     }]
   },
   {
@@ -25081,7 +24696,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la clavicule avec contraste"
+      "value" : "imagerie par IRM de la clavicule avec contraste"
     },
     {
       "language" : "nl",
@@ -25116,7 +24731,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'articulation sterno-claviculaire"
+      "value" : "imagerie par IRM de l'articulation sterno-claviculaire"
     },
     {
       "language" : "nl",
@@ -25151,7 +24766,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'articulation sternoclaviculaire avec contraste"
+      "value" : "imagerie par IRM de l'articulation sternoclaviculaire avec contraste"
     },
     {
       "language" : "nl",
@@ -25159,7 +24774,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van sternoclaviculair gewricht met contrast"
+      "value" : "magnetic resonance imaging van sternoclaviculair gewricht met contrast"
     },
     {
       "language" : "de",
@@ -25221,7 +24836,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du sternum avec contraste"
+      "value" : "imagerie par IRM du sternum avec contraste"
     },
     {
       "language" : "nl",
@@ -25229,7 +24844,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van sternum met contrast"
+      "value" : "magnetic resonance imaging van sternum met contrast"
     },
     {
       "language" : "de",
@@ -25238,41 +24853,6 @@ This Code system is referenced in the definition of the following value sets:
         "code" : "eReferral-preferred"
       },
       "value" : "MRT, Thorax, Sternum, ohne/mit i.v. Kontrast"
-    }]
-  },
-  {
-    "code" : "16334561000119100",
-    "designation" : [{
-      "language" : "en",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Magnetic resonance imaging of chest without contrast"
-    },
-    {
-      "language" : "fr",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Imagerie par résonance magnétique de thorax sans contraste"
-    },
-    {
-      "language" : "nl",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Magnetische-resonantiebeeldvorming van thorax zonder contrast"
-    },
-    {
-      "language" : "de",
-      "use" : {
-        "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-        "code" : "eReferral-preferred"
-      },
-      "value" : "Magnetresonanztomographie von Thorax ohne Kontrastmittel"
     }]
   },
   {
@@ -25291,7 +24871,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique du thorax avec contraste"
+      "value" : "imagerie par résonance magnétique du thorax avec contraste"
     },
     {
       "language" : "nl",
@@ -25299,7 +24879,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van thorax met contrast"
+      "value" : "magnetic resonance imaging van thorax met contrast"
     },
     {
       "language" : "de",
@@ -25326,7 +24906,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angio-IRM thoraco-abdomino-pelvienne sans produit de contraste"
+      "value" : "angio-IRM thoraco-abdomino-pelvienne sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -25361,7 +24941,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique (IRM) du thorax, de l'abdomen et du pelvis"
+      "value" : "imagerie par résonance magnétique (IRM) du thorax, de l'abdomen et du pelvis"
     },
     {
       "language" : "nl",
@@ -25369,7 +24949,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van thorax, abdomen en bekken"
+      "value" : "magnetic resonance imaging van thorax, abdomen en bekken"
     },
     {
       "language" : "de",
@@ -25396,7 +24976,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Défécographie par IRM"
+      "value" : "défécographie par IRM"
     },
     {
       "language" : "nl",
@@ -25404,7 +24984,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Dynamisch rectaal onderzoek met behulp van magnetic resonance imaging"
+      "value" : "dynamisch rectaal onderzoek met behulp van magnetic resonance imaging"
     },
     {
       "language" : "de",
@@ -25431,7 +25011,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la hanche"
+      "value" : "imagerie par IRM de la hanche"
     },
     {
       "language" : "nl",
@@ -25466,7 +25046,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la hanche avec contraste"
+      "value" : "imagerie par IRM de la hanche avec contraste"
     },
     {
       "language" : "nl",
@@ -25474,7 +25054,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van heup met contrast"
+      "value" : "magnetic resonance imaging van heup met contrast"
     },
     {
       "language" : "de",
@@ -25501,7 +25081,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM des deux hanches"
+      "value" : "imagerie par IRM des deux hanches"
     },
     {
       "language" : "nl",
@@ -25536,7 +25116,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM des deux hanches avec contraste"
+      "value" : "imagerie par IRM des deux hanches avec contraste"
     },
     {
       "language" : "nl",
@@ -25544,7 +25124,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van beide heupen met contrast"
+      "value" : "magnetic resonance imaging van beide heupen met contrast"
     },
     {
       "language" : "de",
@@ -25571,7 +25151,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du genou"
+      "value" : "imagerie par IRM du genou"
     },
     {
       "language" : "nl",
@@ -25579,7 +25159,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van knie"
+      "value" : "magnetic resonance imaging van knie"
     },
     {
       "language" : "de",
@@ -25606,7 +25186,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du genou avec contraste"
+      "value" : "imagerie par IRM du genou avec contraste"
     },
     {
       "language" : "nl",
@@ -25641,7 +25221,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de membre inférieur"
+      "value" : "imagerie par IRM de membre inférieur"
     },
     {
       "language" : "nl",
@@ -25676,7 +25256,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de membre inférieur avec contraste"
+      "value" : "imagerie par IRM de membre inférieur avec contraste"
     },
     {
       "language" : "nl",
@@ -25711,7 +25291,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la cuisse"
+      "value" : "imagerie par IRM de la cuisse"
     },
     {
       "language" : "nl",
@@ -25746,7 +25326,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM des deux cuisses"
+      "value" : "imagerie par IRM des deux cuisses"
     },
     {
       "language" : "nl",
@@ -25781,7 +25361,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la cuisse avec contraste"
+      "value" : "imagerie par IRM de la cuisse avec contraste"
     },
     {
       "language" : "nl",
@@ -25816,7 +25396,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM des deux cuisses avec contraste"
+      "value" : "imagerie par IRM des deux cuisses avec contraste"
     },
     {
       "language" : "nl",
@@ -25824,7 +25404,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van beide bovenbenen met contrast"
+      "value" : "magnetic resonance imaging van beide bovenbenen met contrast"
     },
     {
       "language" : "de",
@@ -25851,7 +25431,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Cholangiopancréatographie par résonance magnétique (MRCP)"
+      "value" : "cholangiopancréatographie par résonance magnétique (MRCP)"
     },
     {
       "language" : "nl",
@@ -25886,7 +25466,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM des voies biliaires et du pancréas avec contraste (MRCP)"
+      "value" : "imagerie par IRM des voies biliaires et du pancréas avec contraste (MRCP)"
     },
     {
       "language" : "nl",
@@ -25929,7 +25509,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van hals zonder contrast"
+      "value" : "magnetic resonance imaging van hals zonder contrast"
     },
     {
       "language" : "de",
@@ -25956,7 +25536,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du cou avec contraste"
+      "value" : "imagerie par IRM du cou avec contraste"
     },
     {
       "language" : "nl",
@@ -25991,7 +25571,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du sphincter anal"
+      "value" : "imagerie par IRM du sphincter anal"
     },
     {
       "language" : "nl",
@@ -25999,7 +25579,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van anussfincter"
+      "value" : "magnetic resonance imaging van anussfincter"
     },
     {
       "language" : "de",
@@ -26026,7 +25606,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la prostate avec contraste"
+      "value" : "imagerie par IRM de la prostate avec contraste"
     },
     {
       "language" : "nl",
@@ -26069,7 +25649,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van beide sacro-iliacale gewrichten zonder contrast"
+      "value" : "magnetic resonance imaging van beide sacro-iliacale gewrichten zonder contrast"
     },
     {
       "language" : "de",
@@ -26139,7 +25719,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van scrotum zonder contrast"
+      "value" : "magnetic resonance imaging van scrotum zonder contrast"
     },
     {
       "language" : "de",
@@ -26166,7 +25746,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du scrotum avec contraste"
+      "value" : "imagerie par IRM du scrotum avec contraste"
     },
     {
       "language" : "nl",
@@ -26174,7 +25754,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van scrotum met contrast"
+      "value" : "magnetic resonance imaging van scrotum met contrast"
     },
     {
       "language" : "de",
@@ -26236,7 +25816,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du pelvis avec contraste"
+      "value" : "imagerie par IRM du pelvis avec contraste"
     },
     {
       "language" : "nl",
@@ -26244,7 +25824,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van pelvis met contrast"
+      "value" : "magnetic resonance imaging van pelvis met contrast"
     },
     {
       "language" : "de",
@@ -26271,7 +25851,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de plexus lombosacré"
+      "value" : "imagerie par IRM de plexus lombosacré"
     },
     {
       "language" : "nl",
@@ -26279,7 +25859,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van plexus lumbosacralis"
+      "value" : "magnetic resonance imaging van plexus lumbosacralis"
     },
     {
       "language" : "de",
@@ -26314,7 +25894,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van plexus lumbosacralis met contrast"
+      "value" : "magnetic resonance imaging van plexus lumbosacralis met contrast"
     },
     {
       "language" : "de",
@@ -26341,7 +25921,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne lombaire et des sacro-iliaques"
+      "value" : "imagerie par IRM de la colonne lombaire et des sacro-iliaques"
     },
     {
       "language" : "nl",
@@ -26376,7 +25956,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne lombaire et des sacro-iliaques avec contraste"
+      "value" : "imagerie par IRM de la colonne lombaire et des sacro-iliaques avec contraste"
     },
     {
       "language" : "nl",
@@ -26411,7 +25991,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne cervicale avec contraste"
+      "value" : "imagerie par IRM de la colonne cervicale avec contraste"
     },
     {
       "language" : "nl",
@@ -26446,7 +26026,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique de la colonne cervicale sans produit de contraste"
+      "value" : "imagerie par résonance magnétique de la colonne cervicale sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -26489,7 +26069,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van cervicale, thoracale en lumbale wervelkolom met contrast"
+      "value" : "magnetic resonance imaging van cervicale, thoracale en lumbale wervelkolom met contrast"
     },
     {
       "language" : "de",
@@ -26551,7 +26131,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélographie par IRM"
+      "value" : "myélographie par IRM"
     },
     {
       "language" : "nl",
@@ -26586,7 +26166,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne lombaire sans contraste"
+      "value" : "imagerie par IRM de la colonne lombaire sans contraste"
     },
     {
       "language" : "nl",
@@ -26629,7 +26209,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van lumbale wervelkolom zonder contrast"
+      "value" : "magnetic resonance imaging van lumbale wervelkolom zonder contrast"
     },
     {
       "language" : "de",
@@ -26656,7 +26236,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne lombaire et du sacrum"
+      "value" : "imagerie par IRM de la colonne lombaire et du sacrum"
     },
     {
       "language" : "nl",
@@ -26691,7 +26271,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne lombaire et du sacrum avec contraste"
+      "value" : "imagerie par IRM de la colonne lombaire et du sacrum avec contraste"
     },
     {
       "language" : "nl",
@@ -26699,7 +26279,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van lumbale en sacrale wervelkolom met contrast"
+      "value" : "magnetic resonance imaging van lumbale en sacrale wervelkolom met contrast"
     },
     {
       "language" : "de",
@@ -26796,7 +26376,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne thoracique avec contraste"
+      "value" : "imagerie par IRM de la colonne thoracique avec contraste"
     },
     {
       "language" : "nl",
@@ -26804,7 +26384,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van thoracale wervelkolom met contrast"
+      "value" : "magnetic resonance imaging van thoracale wervelkolom met contrast"
     },
     {
       "language" : "de",
@@ -26831,7 +26411,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique de la colonne thoracique sans produit de contraste"
+      "value" : "imagerie par résonance magnétique de la colonne thoracique sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -26839,7 +26419,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van thoracale wervelkolom zonder contrast"
+      "value" : "magnetic resonance imaging van thoracale wervelkolom zonder contrast"
     },
     {
       "language" : "de",
@@ -26874,7 +26454,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van thoracale en lumbale wervelkolom zonder contrast"
+      "value" : "magnetic resonance imaging van thoracale en lumbale wervelkolom zonder contrast"
     },
     {
       "language" : "de",
@@ -26901,7 +26481,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne thoracique et lombaire avec contraste"
+      "value" : "imagerie par IRM de la colonne thoracique et lombaire avec contraste"
     },
     {
       "language" : "nl",
@@ -26936,7 +26516,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la colonne vertébrale"
+      "value" : "imagerie par IRM de la colonne vertébrale"
     },
     {
       "language" : "nl",
@@ -26944,7 +26524,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van wervelkolom"
+      "value" : "magnetic resonance imaging van wervelkolom"
     },
     {
       "language" : "de",
@@ -26971,7 +26551,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique du rachis avec produit de contraste"
+      "value" : "imagerie par résonance magnétique du rachis avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -27006,7 +26586,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique du bras"
+      "value" : "imagerie par résonance magnétique du bras"
     },
     {
       "language" : "nl",
@@ -27041,7 +26621,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique du bras avec produit de contraste"
+      "value" : "imagerie par résonance magnétique du bras avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -27076,7 +26656,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du plexus brachial"
+      "value" : "imagerie par IRM du plexus brachial"
     },
     {
       "language" : "nl",
@@ -27084,7 +26664,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van plexus brachialis"
+      "value" : "magnetic resonance imaging van plexus brachialis"
     },
     {
       "language" : "de",
@@ -27111,7 +26691,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de plexus brachial avec produit de contraste"
+      "value" : "imagerie par IRM de plexus brachial avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -27119,7 +26699,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van plexus brachialis met contrast"
+      "value" : "magnetic resonance imaging van plexus brachialis met contrast"
     },
     {
       "language" : "de",
@@ -27146,7 +26726,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coude"
+      "value" : "imagerie par IRM du coude"
     },
     {
       "language" : "nl",
@@ -27181,7 +26761,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coude avec contraste"
+      "value" : "imagerie par IRM du coude avec contraste"
     },
     {
       "language" : "nl",
@@ -27224,7 +26804,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van digitus van hand, exclusief digitus I"
+      "value" : "magnetic resonance imaging van digitus van hand, exclusief digitus I"
     },
     {
       "language" : "de",
@@ -27286,7 +26866,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique de l'avant-bras avec produit de contraste"
+      "value" : "imagerie par résonance magnétique de l'avant-bras avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -27294,7 +26874,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van onderarm met contrast"
+      "value" : "magnetic resonance imaging van onderarm met contrast"
     },
     {
       "language" : "de",
@@ -27321,7 +26901,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la main"
+      "value" : "imagerie par IRM de la main"
     },
     {
       "language" : "nl",
@@ -27329,7 +26909,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van hand"
+      "value" : "magnetic resonance imaging van hand"
     },
     {
       "language" : "de",
@@ -27356,7 +26936,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la main avec contraste"
+      "value" : "imagerie par IRM de la main avec contraste"
     },
     {
       "language" : "nl",
@@ -27364,7 +26944,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van hand met contrast"
+      "value" : "magnetic resonance imaging van hand met contrast"
     },
     {
       "language" : "de",
@@ -27399,7 +26979,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van schouderblad zonder contrast"
+      "value" : "magnetic resonance imaging van schouderblad zonder contrast"
     },
     {
       "language" : "de",
@@ -27426,7 +27006,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'omoplate avec contraste"
+      "value" : "imagerie par IRM de l'omoplate avec contraste"
     },
     {
       "language" : "nl",
@@ -27434,7 +27014,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van schouderblad met contrast"
+      "value" : "magnetic resonance imaging van schouderblad met contrast"
     },
     {
       "language" : "de",
@@ -27461,7 +27041,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'épaule"
+      "value" : "imagerie par IRM de l'épaule"
     },
     {
       "language" : "nl",
@@ -27469,7 +27049,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van schouder"
+      "value" : "magnetic resonance imaging van schouder"
     },
     {
       "language" : "de",
@@ -27496,7 +27076,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'épaule avec contraste"
+      "value" : "imagerie par IRM de l'épaule avec contraste"
     },
     {
       "language" : "nl",
@@ -27504,7 +27084,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van schouder met contrast"
+      "value" : "magnetic resonance imaging van schouder met contrast"
     },
     {
       "language" : "de",
@@ -27531,7 +27111,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du poignet avec contraste"
+      "value" : "imagerie par IRM du poignet avec contraste"
     },
     {
       "language" : "nl",
@@ -27539,7 +27119,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van pols met contrast"
+      "value" : "magnetic resonance imaging van pols met contrast"
     },
     {
       "language" : "de",
@@ -27601,7 +27181,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de l'abdomen"
+      "value" : "échographie de l'abdomen"
     },
     {
       "language" : "nl",
@@ -27609,7 +27189,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van abdomen"
+      "value" : "echografie van abdomen"
     },
     {
       "language" : "de",
@@ -27636,7 +27216,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie des surrénales"
+      "value" : "échographie des surrénales"
     },
     {
       "language" : "nl",
@@ -27644,7 +27224,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van glandula suprarenalis"
+      "value" : "echografische beeldvorming van glandula suprarenalis"
     },
     {
       "language" : "de",
@@ -27671,7 +27251,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie da l'abdomen avec contraste"
+      "value" : "échographie da l'abdomen avec contraste"
     },
     {
       "language" : "nl",
@@ -27679,7 +27259,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Buikecho met contrast"
+      "value" : "buikecho met contrast"
     },
     {
       "language" : "de",
@@ -27706,7 +27286,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de l'abdomen et du pelvis"
+      "value" : "échographie de l'abdomen et du pelvis"
     },
     {
       "language" : "nl",
@@ -27714,7 +27294,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ultrageluidsonderzoek van buik en bekken"
+      "value" : "ultrageluidsonderzoek van buik en bekken"
     },
     {
       "language" : "de",
@@ -27741,7 +27321,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du sein"
+      "value" : "échographie du sein"
     },
     {
       "language" : "nl",
@@ -27749,7 +27329,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van mamma"
+      "value" : "echografie van mamma"
     },
     {
       "language" : "de",
@@ -27776,7 +27356,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie des deux seins"
+      "value" : "échographie des deux seins"
     },
     {
       "language" : "nl",
@@ -27784,7 +27364,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echoscopie van beide borsten"
+      "value" : "echoscopie van beide borsten"
     },
     {
       "language" : "de",
@@ -27811,7 +27391,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du thorax"
+      "value" : "échographie du thorax"
     },
     {
       "language" : "nl",
@@ -27819,7 +27399,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van thorax"
+      "value" : "echografie van thorax"
     },
     {
       "language" : "de",
@@ -27846,7 +27426,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie thoracoabdominale"
+      "value" : "échographie thoracoabdominale"
     },
     {
       "language" : "nl",
@@ -27854,7 +27434,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echoscopie van borstkas en buik"
+      "value" : "echoscopie van borstkas en buik"
     },
     {
       "language" : "de",
@@ -27881,7 +27461,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du coeur du fétus"
+      "value" : "échographie du coeur du fétus"
     },
     {
       "language" : "nl",
@@ -27889,7 +27469,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Foetale echocardiografie"
+      "value" : "foetale echocardiografie"
     },
     {
       "language" : "de",
@@ -27916,7 +27496,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du coeur transoesophagienne"
+      "value" : "échographie du coeur transoesophagienne"
     },
     {
       "language" : "nl",
@@ -27924,7 +27504,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transoesofageale echocardiografie"
+      "value" : "transoesofageale echocardiografie"
     },
     {
       "language" : "de",
@@ -27951,7 +27531,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du coeur transthoracique"
+      "value" : "échographie du coeur transthoracique"
     },
     {
       "language" : "nl",
@@ -27959,7 +27539,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transthoracaal echocardiogram"
+      "value" : "transthoracaal echocardiogram"
     },
     {
       "language" : "de",
@@ -27986,7 +27566,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la tête"
+      "value" : "échographie de la tête"
     },
     {
       "language" : "nl",
@@ -27994,7 +27574,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van hoofd"
+      "value" : "echografische beeldvorming van hoofd"
     },
     {
       "language" : "de",
@@ -28021,7 +27601,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la cheville"
+      "value" : "échographie de la cheville"
     },
     {
       "language" : "nl",
@@ -28029,7 +27609,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van enkelregio"
+      "value" : "echografie van enkelregio"
     },
     {
       "language" : "de",
@@ -28056,7 +27636,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du pied"
+      "value" : "échographie du pied"
     },
     {
       "language" : "nl",
@@ -28064,7 +27644,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van voet"
+      "value" : "echografie van voet"
     },
     {
       "language" : "de",
@@ -28091,7 +27671,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la hanche"
+      "value" : "échographie de la hanche"
     },
     {
       "language" : "nl",
@@ -28099,7 +27679,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van heup"
+      "value" : "echografische beeldvorming van heup"
     },
     {
       "language" : "de",
@@ -28126,7 +27706,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie bilatérale de la hanche"
+      "value" : "échographie bilatérale de la hanche"
     },
     {
       "language" : "nl",
@@ -28134,7 +27714,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ultrageluidsonderzoek van beide heupen"
+      "value" : "ultrageluidsonderzoek van beide heupen"
     },
     {
       "language" : "de",
@@ -28161,7 +27741,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du genou"
+      "value" : "échographie du genou"
     },
     {
       "language" : "nl",
@@ -28169,7 +27749,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van knieregio"
+      "value" : "echografie van knieregio"
     },
     {
       "language" : "de",
@@ -28196,7 +27776,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la cuisse"
+      "value" : "échographie de la cuisse"
     },
     {
       "language" : "nl",
@@ -28204,7 +27784,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van bovenbeen"
+      "value" : "echografie van bovenbeen"
     },
     {
       "language" : "de",
@@ -28231,7 +27811,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie des deux cuisses"
+      "value" : "échographie des deux cuisses"
     },
     {
       "language" : "nl",
@@ -28239,7 +27819,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van beide bovenbenen"
+      "value" : "echografie van beide bovenbenen"
     },
     {
       "language" : "de",
@@ -28266,7 +27846,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la face"
+      "value" : "échographie de la face"
     },
     {
       "language" : "nl",
@@ -28274,7 +27854,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van aangezicht"
+      "value" : "echografie van aangezicht"
     },
     {
       "language" : "de",
@@ -28301,7 +27881,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du cou"
+      "value" : "échographie du cou"
     },
     {
       "language" : "nl",
@@ -28309,7 +27889,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van hals"
+      "value" : "echografie van hals"
     },
     {
       "language" : "de",
@@ -28336,7 +27916,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la thyroide"
+      "value" : "échographie de la thyroide"
     },
     {
       "language" : "nl",
@@ -28344,7 +27924,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van schildklier"
+      "value" : "echografie van schildklier"
     },
     {
       "language" : "de",
@@ -28371,7 +27951,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du pelvis"
+      "value" : "échographie du pelvis"
     },
     {
       "language" : "nl",
@@ -28379,7 +27959,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van pelvis"
+      "value" : "echo van pelvis"
     },
     {
       "language" : "de",
@@ -28406,7 +27986,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la vessie"
+      "value" : "échographie de la vessie"
     },
     {
       "language" : "nl",
@@ -28414,7 +27994,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van blaas"
+      "value" : "echografie van blaas"
     },
     {
       "language" : "de",
@@ -28441,7 +28021,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de l'utérus gravide"
+      "value" : "échographie de l'utérus gravide"
     },
     {
       "language" : "nl",
@@ -28449,7 +28029,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van uterus gravidus"
+      "value" : "echografie van uterus gravidus"
     },
     {
       "language" : "de",
@@ -28476,7 +28056,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de l'articulation sacro-iliaque"
+      "value" : "échographie de l'articulation sacro-iliaque"
     },
     {
       "language" : "nl",
@@ -28484,7 +28064,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van articulatio sacroiliaca"
+      "value" : "echo van articulatio sacroiliaca"
     },
     {
       "language" : "de",
@@ -28511,7 +28091,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du scrotum"
+      "value" : "échographie du scrotum"
     },
     {
       "language" : "nl",
@@ -28519,7 +28099,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van balzak"
+      "value" : "echo van balzak"
     },
     {
       "language" : "de",
@@ -28581,7 +28161,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la colonne vertébrale"
+      "value" : "échographie de la colonne vertébrale"
     },
     {
       "language" : "nl",
@@ -28589,7 +28169,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van wervelkolom"
+      "value" : "echografische beeldvorming van wervelkolom"
     },
     {
       "language" : "de",
@@ -28616,7 +28196,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la colonne cervicale"
+      "value" : "échographie de la colonne cervicale"
     },
     {
       "language" : "nl",
@@ -28624,7 +28204,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van CWK"
+      "value" : "echo van CWK"
     },
     {
       "language" : "de",
@@ -28651,7 +28231,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la colonne lombaire"
+      "value" : "échographie de la colonne lombaire"
     },
     {
       "language" : "nl",
@@ -28659,7 +28239,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van LWK"
+      "value" : "echo van LWK"
     },
     {
       "language" : "de",
@@ -28686,7 +28266,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du sacrum"
+      "value" : "ECHO, colonne, lombaire sacrum"
     },
     {
       "language" : "nl",
@@ -28694,7 +28274,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van sacrale wervelkolom"
+      "value" : "US, wervelkolom, lumbaal-sacrum"
     },
     {
       "language" : "de",
@@ -28702,7 +28282,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ultraschall, Wirbelsäule, sakral"
+      "value" : "Ultraschall, Wirbelsäule, lumbosakral"
     }]
   },
   {
@@ -28721,7 +28301,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la colonne dorsale"
+      "value" : "échographie de la colonne dorsale"
     },
     {
       "language" : "nl",
@@ -28729,7 +28309,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van columna vertebralis thoracalis"
+      "value" : "echo van columna vertebralis thoracalis"
     },
     {
       "language" : "de",
@@ -28764,7 +28344,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transabdominaal ultrageluidsonderzoek van bekken"
+      "value" : "transabdominaal ultrageluidsonderzoek van bekken"
     },
     {
       "language" : "de",
@@ -28791,7 +28371,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie obstétricale"
+      "value" : "échographie obstétricale"
     },
     {
       "language" : "nl",
@@ -28799,7 +28379,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Obstetrische echografie à vue"
+      "value" : "obstetrische echografie à vue"
     },
     {
       "language" : "de",
@@ -28861,7 +28441,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du col de l'utérus"
+      "value" : "ECHO, bassin, stress-test cervical"
     },
     {
       "language" : "nl",
@@ -28869,7 +28449,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van baarmoederhals"
+      "value" : "US, bekken, cervix stress test"
     },
     {
       "language" : "de",
@@ -28896,7 +28476,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie endorectale"
+      "value" : "échographie endorectale"
     },
     {
       "language" : "nl",
@@ -28931,7 +28511,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie transrectale de prostate"
+      "value" : "échographie transrectale de prostate"
     },
     {
       "language" : "nl",
@@ -28939,7 +28519,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transrectale echografie van prostaat"
+      "value" : "transrectale echografie van prostaat"
     },
     {
       "language" : "de",
@@ -28966,7 +28546,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Écho-doppler transvaginal"
+      "value" : "écho-doppler transvaginal"
     },
     {
       "language" : "nl",
@@ -28974,7 +28554,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transvaginaal obstetrisch echo-Doppler-onderzoek"
+      "value" : "transvaginaal obstetrisch echo-Doppler-onderzoek"
     },
     {
       "language" : "de",
@@ -29001,7 +28581,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie transvaginale du pelvis"
+      "value" : "échographie transvaginale du pelvis"
     },
     {
       "language" : "nl",
@@ -29009,7 +28589,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transvaginale ultrasonografie van bekken"
+      "value" : "transvaginale ultrasonografie van bekken"
     },
     {
       "language" : "de",
@@ -29036,7 +28616,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du membre supérieur"
+      "value" : "échographie du membre supérieur"
     },
     {
       "language" : "nl",
@@ -29044,7 +28624,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van bovenste extremiteit"
+      "value" : "echografie van bovenste extremiteit"
     },
     {
       "language" : "de",
@@ -29071,7 +28651,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la partie supérieure du membre supérieur"
+      "value" : "échographie de la partie supérieure du membre supérieur"
     },
     {
       "language" : "nl",
@@ -29079,7 +28659,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van bovenarm"
+      "value" : "echografische beeldvorming van bovenarm"
     },
     {
       "language" : "de",
@@ -29106,7 +28686,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du coude"
+      "value" : "échographie du coude"
     },
     {
       "language" : "nl",
@@ -29114,7 +28694,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van elleboog"
+      "value" : "echografie van elleboog"
     },
     {
       "language" : "de",
@@ -29141,7 +28721,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie des doigts"
+      "value" : "échographie des doigts"
     },
     {
       "language" : "nl",
@@ -29149,7 +28729,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ultrasonografie van vinger"
+      "value" : "ultrasonografie van vinger"
     },
     {
       "language" : "de",
@@ -29176,7 +28756,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de l'avant-bras"
+      "value" : "échographie de l'avant-bras"
     },
     {
       "language" : "nl",
@@ -29184,7 +28764,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van onderarm"
+      "value" : "echografie van onderarm"
     },
     {
       "language" : "de",
@@ -29211,7 +28791,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la main"
+      "value" : "échographie de la main"
     },
     {
       "language" : "nl",
@@ -29219,7 +28799,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van hand"
+      "value" : "echografie van hand"
     },
     {
       "language" : "de",
@@ -29246,7 +28826,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la région de l'épaule"
+      "value" : "échographie de la région de l'épaule"
     },
     {
       "language" : "nl",
@@ -29254,7 +28834,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van schoudergebied"
+      "value" : "echografie van schoudergebied"
     },
     {
       "language" : "de",
@@ -29281,7 +28861,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du pouce"
+      "value" : "échographie du pouce"
     },
     {
       "language" : "nl",
@@ -29289,7 +28869,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echo van pollex"
+      "value" : "echo van pollex"
     },
     {
       "language" : "de",
@@ -29316,7 +28896,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du poignet"
+      "value" : "échographie du poignet"
     },
     {
       "language" : "nl",
@@ -29324,7 +28904,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van pols"
+      "value" : "echografie van pols"
     },
     {
       "language" : "de",
@@ -29359,7 +28939,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van abdomen"
+      "value" : "röntgenfoto van abdomen"
     },
     {
       "language" : "de",
@@ -29394,7 +28974,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Serie röntgenfoto's van volledig skelet"
+      "value" : "serie röntgenfoto's van volledig skelet"
     },
     {
       "language" : "de",
@@ -29421,7 +29001,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie"
+      "value" : "radiographie"
     },
     {
       "language" : "nl",
@@ -29456,7 +29036,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie pulmonaire simple"
+      "value" : "radiographie pulmonaire simple"
     },
     {
       "language" : "nl",
@@ -29499,7 +29079,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van articulatio acromioclavicularis"
+      "value" : "röntgenfoto van articulatio acromioclavicularis"
     },
     {
       "language" : "de",
@@ -29526,7 +29106,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de clavicule"
+      "value" : "radiographie de clavicule"
     },
     {
       "language" : "nl",
@@ -29534,7 +29114,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van sleutelbeen"
+      "value" : "röntgenfoto van sleutelbeen"
     },
     {
       "language" : "de",
@@ -29569,7 +29149,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van botstructuur van rib"
+      "value" : "röntgenfoto van botstructuur van rib"
     },
     {
       "language" : "de",
@@ -29604,7 +29184,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van sternoclaviculair gewricht"
+      "value" : "röntgenfoto van sternoclaviculair gewricht"
     },
     {
       "language" : "de",
@@ -29639,7 +29219,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van sternum"
+      "value" : "röntgenfoto van sternum"
     },
     {
       "language" : "de",
@@ -29666,7 +29246,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie du thorax et de l'abdomen"
+      "value" : "radiographie du thorax et de l'abdomen"
     },
     {
       "language" : "nl",
@@ -29674,7 +29254,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van borstkas en buik"
+      "value" : "röntgenfoto van borstkas en buik"
     },
     {
       "language" : "de",
@@ -29709,7 +29289,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van processus mastoideus"
+      "value" : "röntgenfoto van processus mastoideus"
     },
     {
       "language" : "de",
@@ -29744,7 +29324,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van sella turcica"
+      "value" : "röntgenfoto van sella turcica"
     },
     {
       "language" : "de",
@@ -29779,7 +29359,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van schedel"
+      "value" : "röntgenfoto van schedel"
     },
     {
       "language" : "de",
@@ -29814,7 +29394,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van onderste extremiteit"
+      "value" : "röntgenfoto van onderste extremiteit"
     },
     {
       "language" : "de",
@@ -29841,7 +29421,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie du fémur"
+      "value" : "radiographie du fémur"
     },
     {
       "language" : "nl",
@@ -29849,7 +29429,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van femur"
+      "value" : "röntgenfoto van femur"
     },
     {
       "language" : "de",
@@ -29884,7 +29464,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van voet"
+      "value" : "röntgenfoto van voet"
     },
     {
       "language" : "de",
@@ -29911,7 +29491,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie simple de la hanche"
+      "value" : "radiographie simple de la hanche"
     },
     {
       "language" : "nl",
@@ -29919,7 +29499,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van heup"
+      "value" : "röntgenfoto van heup"
     },
     {
       "language" : "de",
@@ -29946,7 +29526,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie coxofémorale simple bilatérale"
+      "value" : "radiographie coxofémorale simple bilatérale"
     },
     {
       "language" : "nl",
@@ -29954,7 +29534,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van beide heupen"
+      "value" : "röntgenfoto van beide heupen"
     },
     {
       "language" : "de",
@@ -29989,7 +29569,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van onderbeen"
+      "value" : "röntgenfoto van onderbeen"
     },
     {
       "language" : "de",
@@ -30016,7 +29596,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie tibiopéronière simple"
+      "value" : "radiographie tibiopéronière simple"
     },
     {
       "language" : "nl",
@@ -30024,7 +29604,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van scheenbeen en kuitbeen"
+      "value" : "röntgenfoto van scheenbeen en kuitbeen"
     },
     {
       "language" : "de",
@@ -30051,7 +29631,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie standard d'un orteil"
+      "value" : "radiographie standard d'un orteil"
     },
     {
       "language" : "nl",
@@ -30059,7 +29639,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van teen"
+      "value" : "röntgenfoto van teen"
     },
     {
       "language" : "de",
@@ -30094,7 +29674,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van neusbijholte"
+      "value" : "röntgenfoto van neusbijholte"
     },
     {
       "language" : "de",
@@ -30121,7 +29701,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie du cou"
+      "value" : "radiographie du cou"
     },
     {
       "language" : "nl",
@@ -30129,7 +29709,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van hals en/of nek"
+      "value" : "röntgenfoto van hals en/of nek"
     },
     {
       "language" : "de",
@@ -30156,7 +29736,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie simple du pelvis"
+      "value" : "radiographie simple du pelvis"
     },
     {
       "language" : "nl",
@@ -30164,7 +29744,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van bekken"
+      "value" : "röntgenfoto van bekken"
     },
     {
       "language" : "de",
@@ -30191,7 +29771,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie conventionnelle de l'articulation sacro-iliaque"
+      "value" : "radiographie conventionnelle de l'articulation sacro-iliaque"
     },
     {
       "language" : "nl",
@@ -30199,7 +29779,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van sacro-iliacaal gewricht"
+      "value" : "röntgenfoto van sacro-iliacaal gewricht"
     },
     {
       "language" : "de",
@@ -30234,7 +29814,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van bot van bekken en bot van heup"
+      "value" : "röntgenfoto van bot van bekken en bot van heup"
     },
     {
       "language" : "de",
@@ -30261,7 +29841,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie simple du bassin et du membre inférieur"
+      "value" : "radiographie simple du bassin et du membre inférieur"
     },
     {
       "language" : "nl",
@@ -30269,7 +29849,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van bekken en onderste extremiteit"
+      "value" : "röntgenfoto van bekken en onderste extremiteit"
     },
     {
       "language" : "de",
@@ -30296,7 +29876,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de thorax avec un imageur mobile"
+      "value" : "radiographie de thorax avec un imageur mobile"
     },
     {
       "language" : "nl",
@@ -30304,7 +29884,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van thorax met mobiele beeldversterker"
+      "value" : "röntgenfoto van thorax met mobiele beeldversterker"
     },
     {
       "language" : "de",
@@ -30331,7 +29911,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie conventionnelle du poignet"
+      "value" : "radiographie conventionnelle du poignet"
     },
     {
       "language" : "nl",
@@ -30339,7 +29919,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van pols"
+      "value" : "röntgenfoto van pols"
     },
     {
       "language" : "de",
@@ -30374,7 +29954,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van regio van wervelkolom"
+      "value" : "röntgenfoto van regio van wervelkolom"
     },
     {
       "language" : "de",
@@ -30401,7 +29981,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de la colonne cervicale"
+      "value" : "radiographie de la colonne cervicale"
     },
     {
       "language" : "nl",
@@ -30409,7 +29989,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van columna vertebralis cervicalis"
+      "value" : "röntgenfoto van columna vertebralis cervicalis"
     },
     {
       "language" : "de",
@@ -30436,7 +30016,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie standard de la colonne lombaire"
+      "value" : "radiographie standard de la colonne lombaire"
     },
     {
       "language" : "nl",
@@ -30471,7 +30051,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de la colonne lombo-sacrée"
+      "value" : "radiographie de la colonne lombo-sacrée"
     },
     {
       "language" : "nl",
@@ -30479,7 +30059,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenonderzoek van lumbosacrale wervelkolom"
+      "value" : "röntgenonderzoek van lumbosacrale wervelkolom"
     },
     {
       "language" : "de",
@@ -30514,7 +30094,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van regio van sacrale wervelkolom"
+      "value" : "röntgenfoto van regio van sacrale wervelkolom"
     },
     {
       "language" : "de",
@@ -30549,7 +30129,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van volledige wervelkolom"
+      "value" : "röntgenfoto van volledige wervelkolom"
     },
     {
       "language" : "de",
@@ -30584,7 +30164,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van regio van thoracale wervelkolom"
+      "value" : "röntgenfoto van regio van thoracale wervelkolom"
     },
     {
       "language" : "de",
@@ -30611,7 +30191,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de la colonne dorso-lombaire"
+      "value" : "radiographie de la colonne dorso-lombaire"
     },
     {
       "language" : "nl",
@@ -30619,7 +30199,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van TWK en LWK"
+      "value" : "röntgenfoto van TWK en LWK"
     },
     {
       "language" : "de",
@@ -30689,7 +30269,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Stress-röntgenfoto van articulatio talocruralis"
+      "value" : "stress-röntgenfoto van articulatio talocruralis"
     },
     {
       "language" : "de",
@@ -30716,7 +30296,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie du coude"
+      "value" : "radiographie du coude"
     },
     {
       "language" : "nl",
@@ -30759,7 +30339,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Stress-röntgenfoto van duim"
+      "value" : "stress-röntgenfoto van duim"
     },
     {
       "language" : "de",
@@ -30821,7 +30401,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie simple du membre supérieur"
+      "value" : "radiographie simple du membre supérieur"
     },
     {
       "language" : "nl",
@@ -30829,7 +30409,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van bovenste ledemaat"
+      "value" : "röntgenfoto van bovenste ledemaat"
     },
     {
       "language" : "de",
@@ -30856,7 +30436,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie conventionnelle d'un doigt, sauf le pouce"
+      "value" : "radiographie conventionnelle d'un doigt, sauf le pouce"
     },
     {
       "language" : "nl",
@@ -30864,7 +30444,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van digitus manus, exclusief pollex"
+      "value" : "röntgenfoto van digitus manus, exclusief pollex"
     },
     {
       "language" : "de",
@@ -30891,7 +30471,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie conventionnelle de l'avant-bras"
+      "value" : "radiographie conventionnelle de l'avant-bras"
     },
     {
       "language" : "nl",
@@ -30926,7 +30506,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de la main"
+      "value" : "radiographie de la main"
     },
     {
       "language" : "nl",
@@ -30961,7 +30541,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de l'humérus"
+      "value" : "radiographie de l'humérus"
     },
     {
       "language" : "nl",
@@ -30969,7 +30549,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van humerus"
+      "value" : "röntgenfoto van humerus"
     },
     {
       "language" : "de",
@@ -30996,7 +30576,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie de l'omoplate"
+      "value" : "radiographie de l'omoplate"
     },
     {
       "language" : "nl",
@@ -31031,7 +30611,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie standard de l'épaule"
+      "value" : "radiographie standard de l'épaule"
     },
     {
       "language" : "nl",
@@ -31066,7 +30646,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie simple du doigt I de la main"
+      "value" : "radiographie simple du doigt I de la main"
     },
     {
       "language" : "nl",
@@ -31074,7 +30654,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van pollex"
+      "value" : "röntgenfoto van pollex"
     },
     {
       "language" : "de",
@@ -31101,7 +30681,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du rein"
+      "value" : "échographie du rein"
     },
     {
       "language" : "nl",
@@ -31109,7 +30689,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van nier"
+      "value" : "echografie van nier"
     },
     {
       "language" : "de",
@@ -31136,7 +30716,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du pelvis"
+      "value" : "imagerie par IRM du pelvis"
     },
     {
       "language" : "nl",
@@ -31144,7 +30724,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van pelvis"
+      "value" : "magnetic resonance imaging van pelvis"
     },
     {
       "language" : "de",
@@ -31171,7 +30751,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie du rein"
+      "value" : "biopsie du rein"
     },
     {
       "language" : "nl",
@@ -31179,7 +30759,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Nierbiopsie"
+      "value" : "nierbiopsie"
     },
     {
       "language" : "de",
@@ -31206,7 +30786,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie sélective de la colonne vertébrale"
+      "value" : "angiographie sélective de la colonne vertébrale"
     },
     {
       "language" : "nl",
@@ -31214,7 +30794,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Selectieve angiografie van vasculatuur van wervelkolom"
+      "value" : "selectieve angiografie van vasculatuur van wervelkolom"
     },
     {
       "language" : "de",
@@ -31241,7 +30821,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie transvaginale"
+      "value" : "échographie transvaginale"
     },
     {
       "language" : "nl",
@@ -31276,7 +30856,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injection intra-articulaire de la hanche"
+      "value" : "injection intra-articulaire de la hanche"
     },
     {
       "language" : "nl",
@@ -31284,7 +30864,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injectie in articulatio coxae"
+      "value" : "injectie in articulatio coxae"
     },
     {
       "language" : "de",
@@ -31311,7 +30891,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ponction-aspiration"
+      "value" : "ponction-aspiration"
     },
     {
       "language" : "nl",
@@ -31319,7 +30899,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiratie"
+      "value" : "aspiratie"
     },
     {
       "language" : "de",
@@ -31346,7 +30926,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Galactographie"
+      "value" : "galactographie"
     },
     {
       "language" : "nl",
@@ -31354,7 +30934,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgencontrastonderzoek van melkgang"
+      "value" : "röntgencontrastonderzoek van melkgang"
     },
     {
       "language" : "de",
@@ -31381,7 +30961,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie veineuse au niveau de l'espace épidural"
+      "value" : "angiographie veineuse au niveau de l'espace épidural"
     },
     {
       "language" : "nl",
@@ -31389,7 +30969,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Extradurale venografie"
+      "value" : "extradurale venografie"
     },
     {
       "language" : "de",
@@ -31416,7 +30996,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Mammographie de dépistage"
+      "value" : "mammographie de dépistage"
     },
     {
       "language" : "nl",
@@ -31424,7 +31004,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Screeningsmammografie"
+      "value" : "screeningsmammografie"
     },
     {
       "language" : "de",
@@ -31451,7 +31031,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injection dans une articulation de la cheville"
+      "value" : "injection dans une articulation de la cheville"
     },
     {
       "language" : "nl",
@@ -31459,7 +31039,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injectie in articulatio talocruralis"
+      "value" : "injectie in articulatio talocruralis"
     },
     {
       "language" : "de",
@@ -31486,7 +31066,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radioscopie du thorax"
+      "value" : "radioscopie du thorax"
     },
     {
       "language" : "nl",
@@ -31494,7 +31074,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie van borstkas"
+      "value" : "fluoroscopie van borstkas"
     },
     {
       "language" : "de",
@@ -31521,7 +31101,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Cathétérisme du coeur droit"
+      "value" : "cathétérisme du coeur droit"
     },
     {
       "language" : "nl",
@@ -31529,7 +31109,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Katheterisatie van rechter harthelft"
+      "value" : "katheterisatie van rechter harthelft"
     },
     {
       "language" : "de",
@@ -31556,7 +31136,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Mammographie bilatérale"
+      "value" : "mammographie bilatérale"
     },
     {
       "language" : "nl",
@@ -31564,7 +31144,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenonderzoek van beide mammae"
+      "value" : "röntgenonderzoek van beide mammae"
     },
     {
       "language" : "de",
@@ -31591,7 +31171,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie du sein à aiguille creuse"
+      "value" : "biopsie du sein à aiguille creuse"
     },
     {
       "language" : "nl",
@@ -31626,7 +31206,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie du poignet"
+      "value" : "arthrographie du poignet"
     },
     {
       "language" : "nl",
@@ -31634,7 +31214,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artrografie van radiocarpaal gewricht"
+      "value" : "artrografie van radiocarpaal gewricht"
     },
     {
       "language" : "de",
@@ -31661,7 +31241,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie à l'aiguille fine du rein"
+      "value" : "biopsie à l'aiguille fine du rein"
     },
     {
       "language" : "nl",
@@ -31669,7 +31249,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fijnenaaldbiopsie van nier"
+      "value" : "fijnenaaldbiopsie van nier"
     },
     {
       "language" : "de",
@@ -31704,7 +31284,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging met contrast"
+      "value" : "magnetic resonance imaging met contrast"
     },
     {
       "language" : "de",
@@ -31731,7 +31311,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie hépatique"
+      "value" : "veinographie hépatique"
     },
     {
       "language" : "nl",
@@ -31739,7 +31319,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Flebografie van vena hepatica"
+      "value" : "flebografie van vena hepatica"
     },
     {
       "language" : "de",
@@ -31766,7 +31346,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'articulation temporo-mandibulaire"
+      "value" : "imagerie par IRM de l'articulation temporo-mandibulaire"
     },
     {
       "language" : "nl",
@@ -31801,7 +31381,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Mammographie"
+      "value" : "mammographie"
     },
     {
       "language" : "nl",
@@ -31809,7 +31389,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Mammografie"
+      "value" : "mammografie"
     },
     {
       "language" : "de",
@@ -31836,7 +31416,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie du membre inférieur"
+      "value" : "veinographie du membre inférieur"
     },
     {
       "language" : "nl",
@@ -31844,7 +31424,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Flebografie van vene van onderste extremiteit"
+      "value" : "flebografie van vene van onderste extremiteit"
     },
     {
       "language" : "de",
@@ -31871,7 +31451,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie de l'épaule"
+      "value" : "arthrographie de l'épaule"
     },
     {
       "language" : "nl",
@@ -31879,7 +31459,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artrografie van schouder"
+      "value" : "artrografie van schouder"
     },
     {
       "language" : "de",
@@ -31906,7 +31486,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie de la trompe de Fallope"
+      "value" : "biopsie de la trompe de Fallope"
     },
     {
       "language" : "nl",
@@ -31914,7 +31494,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van eileider"
+      "value" : "biopsie van eileider"
     },
     {
       "language" : "de",
@@ -31941,7 +31521,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie cardiaque"
+      "value" : "fluoroscopie cardiaque"
     },
     {
       "language" : "nl",
@@ -31949,7 +31529,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Doorlichting van hart"
+      "value" : "doorlichting van hart"
     },
     {
       "language" : "de",
@@ -32011,7 +31591,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie du foie"
+      "value" : "biopsie du foie"
     },
     {
       "language" : "nl",
@@ -32019,7 +31599,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van lever"
+      "value" : "biopsie van lever"
     },
     {
       "language" : "de",
@@ -32046,7 +31626,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie"
+      "value" : "biopsie"
     },
     {
       "language" : "nl",
@@ -32054,7 +31634,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie"
+      "value" : "biopsie"
     },
     {
       "language" : "de",
@@ -32081,7 +31661,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique sans produit de contraste"
+      "value" : "imagerie par résonance magnétique sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -32089,7 +31669,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging zonder contrast"
+      "value" : "magnetic resonance imaging zonder contrast"
     },
     {
       "language" : "de",
@@ -32116,7 +31696,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Thoracentèse"
+      "value" : "thoracentèse"
     },
     {
       "language" : "nl",
@@ -32124,7 +31704,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Thoracocentese"
+      "value" : "thoracocentese"
     },
     {
       "language" : "de",
@@ -32151,7 +31731,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie de veines de la tête et du cou"
+      "value" : "angiographie de veines de la tête et du cou"
     },
     {
       "language" : "nl",
@@ -32159,7 +31739,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Flebografie van venen van hoofd-halsregio"
+      "value" : "flebografie van venen van hoofd-halsregio"
     },
     {
       "language" : "de",
@@ -32186,7 +31766,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Procédure crurale"
+      "value" : "procédure crurale"
     },
     {
       "language" : "nl",
@@ -32194,7 +31774,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Verrichting op bovenbeen"
+      "value" : "verrichting op bovenbeen"
     },
     {
       "language" : "de",
@@ -32221,7 +31801,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie du genou"
+      "value" : "arthrographie du genou"
     },
     {
       "language" : "nl",
@@ -32229,7 +31809,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artrografie van kniegewricht"
+      "value" : "artrografie van kniegewricht"
     },
     {
       "language" : "de",
@@ -32256,7 +31836,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie de la hanche"
+      "value" : "arthrographie de la hanche"
     },
     {
       "language" : "nl",
@@ -32264,7 +31844,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Beeldvormend onderzoek van articulatio coxae"
+      "value" : "beeldvormend onderzoek van articulatio coxae"
     },
     {
       "language" : "de",
@@ -32291,7 +31871,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie veineuse de la tête et/ou du cou et/ou du thorax"
+      "value" : "angiographie veineuse de la tête et/ou du cou et/ou du thorax"
     },
     {
       "language" : "nl",
@@ -32299,7 +31879,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Flebografie van hoofd/hals/thorax"
+      "value" : "flebografie van hoofd/hals/thorax"
     },
     {
       "language" : "de",
@@ -32326,7 +31906,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie endoscopique du tractus gastro-intestinal supérieur"
+      "value" : "échographie endoscopique du tractus gastro-intestinal supérieur"
     },
     {
       "language" : "nl",
@@ -32334,7 +31914,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Endo-echografie van bovenste deel van maag-darmkanaal"
+      "value" : "endo-echografie van bovenste deel van maag-darmkanaal"
     },
     {
       "language" : "de",
@@ -32361,7 +31941,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Cholécystostomie percutanée"
+      "value" : "cholécystostomie percutanée"
     },
     {
       "language" : "nl",
@@ -32369,7 +31949,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Percutane galblaasdrainage"
+      "value" : "percutane galblaasdrainage"
     },
     {
       "language" : "de",
@@ -32396,7 +31976,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Pancréatographie endoscopique rétrograde"
+      "value" : "pancréatographie endoscopique rétrograde"
     },
     {
       "language" : "nl",
@@ -32404,7 +31984,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Endoscopisch retrograad röntgencontrastonderzoek van ductus pancreaticus"
+      "value" : "endoscopisch retrograad röntgencontrastonderzoek van ductus pancreaticus"
     },
     {
       "language" : "de",
@@ -32431,7 +32011,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie du thorax"
+      "value" : "biopsie du thorax"
     },
     {
       "language" : "nl",
@@ -32439,7 +32019,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van thorax"
+      "value" : "biopsie van thorax"
     },
     {
       "language" : "de",
@@ -32466,7 +32046,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injection d'un anesthésique local et de corticostéroïdes dans l'articulation sacro-iliaque"
+      "value" : "injection d'un anesthésique local et de corticostéroïdes dans l'articulation sacro-iliaque"
     },
     {
       "language" : "nl",
@@ -32474,7 +32054,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injectie van lokaal anestheticum en steroïd in sacro-iliacaal gewricht"
+      "value" : "injectie van lokaal anestheticum en steroïd in sacro-iliacaal gewricht"
     },
     {
       "language" : "de",
@@ -32501,7 +32081,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Shunt portosystémique intrahépatique par voie percutanée (TIPS)"
+      "value" : "shunt portosystémique intrahépatique par voie percutanée (TIPS)"
     },
     {
       "language" : "nl",
@@ -32509,7 +32089,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aanleggen van TIPS"
+      "value" : "aanleggen van TIPS"
     },
     {
       "language" : "de",
@@ -32536,7 +32116,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transit grêle"
+      "value" : "transit grêle"
     },
     {
       "language" : "nl",
@@ -32544,7 +32124,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Bariumklysma voor dunne darm"
+      "value" : "bariumklysma voor dunne darm"
     },
     {
       "language" : "de",
@@ -32571,7 +32151,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie d'une articulation interapophysaire postérieure"
+      "value" : "arthrographie d'une articulation interapophysaire postérieure"
     },
     {
       "language" : "nl",
@@ -32579,7 +32159,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Beeldvormend onderzoek van zygapofysiaal gewricht"
+      "value" : "beeldvormend onderzoek van zygapofysiaal gewricht"
     },
     {
       "language" : "de",
@@ -32606,7 +32186,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie de la cheville"
+      "value" : "arthrographie de la cheville"
     },
     {
       "language" : "nl",
@@ -32614,7 +32194,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artrografie van articulatio talocruralis"
+      "value" : "artrografie van articulatio talocruralis"
     },
     {
       "language" : "de",
@@ -32641,7 +32221,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie d'un vaisseau sanguin de l'abdomen"
+      "value" : "angiographie d'un vaisseau sanguin de l'abdomen"
     },
     {
       "language" : "nl",
@@ -32649,7 +32229,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiografie van bloedvat van abdomen"
+      "value" : "angiografie van bloedvat van abdomen"
     },
     {
       "language" : "de",
@@ -32676,7 +32256,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie d'une veine du pelvis"
+      "value" : "angiographie d'une veine du pelvis"
     },
     {
       "language" : "nl",
@@ -32684,7 +32264,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Flebografie van vene van pelvis"
+      "value" : "flebografie van vene van pelvis"
     },
     {
       "language" : "de",
@@ -32711,7 +32291,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Étude du cœur par tomographie par émission de positons"
+      "value" : "étude du cœur par tomographie par émission de positons"
     },
     {
       "language" : "nl",
@@ -32719,7 +32299,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Hartonderzoek met PET"
+      "value" : "hartonderzoek met PET"
     },
     {
       "language" : "de",
@@ -32746,7 +32326,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de l'aorte"
+      "value" : "échographie de l'aorte"
     },
     {
       "language" : "nl",
@@ -32754,7 +32334,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van aorta"
+      "value" : "echografische beeldvorming van aorta"
     },
     {
       "language" : "de",
@@ -32781,7 +32361,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie intravasculaire d'artère"
+      "value" : "échographie intravasculaire d'artère"
     },
     {
       "language" : "nl",
@@ -32789,7 +32369,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Intravasculaire echografie van arterie"
+      "value" : "intravasculaire echografie van arterie"
     },
     {
       "language" : "de",
@@ -32816,7 +32396,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la tête"
+      "value" : "imagerie par IRM de la tête"
     },
     {
       "language" : "nl",
@@ -32851,7 +32431,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique des sinus paranasaux"
+      "value" : "imagerie par résonance magnétique des sinus paranasaux"
     },
     {
       "language" : "nl",
@@ -32886,7 +32466,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coeur"
+      "value" : "imagerie par IRM du coeur"
     },
     {
       "language" : "nl",
@@ -32921,7 +32501,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du poignet"
+      "value" : "imagerie par IRM du poignet"
     },
     {
       "language" : "nl",
@@ -32929,7 +32509,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van pols"
+      "value" : "magnetic resonance imaging van pols"
     },
     {
       "language" : "de",
@@ -32956,7 +32536,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du pied"
+      "value" : "imagerie par IRM du pied"
     },
     {
       "language" : "nl",
@@ -32991,7 +32571,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie par IRM de la cheville"
+      "value" : "arthrographie par IRM de la cheville"
     },
     {
       "language" : "nl",
@@ -33026,7 +32606,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM des vaisseaux du cou"
+      "value" : "imagerie par IRM des vaisseaux du cou"
     },
     {
       "language" : "nl",
@@ -33034,7 +32614,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van bloedvat van hals"
+      "value" : "magnetic resonance imaging van bloedvat van hals"
     },
     {
       "language" : "de",
@@ -33061,7 +32641,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Prélèvement de sang veineux d'un sinus pétreux par cathéter"
+      "value" : "prélèvement de sang veineux d'un sinus pétreux par cathéter"
     },
     {
       "language" : "nl",
@@ -33069,7 +32649,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Katheterisatie van sinus petrosus inferior voor bloedafname"
+      "value" : "katheterisatie van sinus petrosus inferior voor bloedafname"
     },
     {
       "language" : "de",
@@ -33096,7 +32676,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie du fémur"
+      "value" : "biopsie du fémur"
     },
     {
       "language" : "nl",
@@ -33104,7 +32684,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van femur"
+      "value" : "biopsie van femur"
     },
     {
       "language" : "de",
@@ -33131,7 +32711,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie de la glande surrénale"
+      "value" : "biopsie de la glande surrénale"
     },
     {
       "language" : "nl",
@@ -33139,7 +32719,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van bijnier"
+      "value" : "biopsie van bijnier"
     },
     {
       "language" : "de",
@@ -33166,7 +32746,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ponction de l'articulation du coude"
+      "value" : "ponction de l'articulation du coude"
     },
     {
       "language" : "nl",
@@ -33174,7 +32754,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Punctie uit ellebooggewricht"
+      "value" : "punctie uit ellebooggewricht"
     },
     {
       "language" : "de",
@@ -33201,7 +32781,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiration de l'articulation de la hanche"
+      "value" : "aspiration de l'articulation de la hanche"
     },
     {
       "language" : "nl",
@@ -33209,7 +32789,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiratie uit articulatio coxae"
+      "value" : "aspiratie uit articulatio coxae"
     },
     {
       "language" : "de",
@@ -33236,7 +32816,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiration au niveau d'une articulation du genou"
+      "value" : "aspiration au niveau d'une articulation du genou"
     },
     {
       "language" : "nl",
@@ -33244,7 +32824,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiratie uit kniegewricht"
+      "value" : "aspiratie uit kniegewricht"
     },
     {
       "language" : "de",
@@ -33271,7 +32851,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie de la ceinture scapulaire et du membre supérieur"
+      "value" : "arthrographie de la ceinture scapulaire et du membre supérieur"
     },
     {
       "language" : "nl",
@@ -33279,7 +32859,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Beeldvormend onderzoek van gewricht van bovenste ledemaat"
+      "value" : "beeldvormend onderzoek van gewricht van bovenste ledemaat"
     },
     {
       "language" : "de",
@@ -33306,7 +32886,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radioscopie de l'abdomen"
+      "value" : "radioscopie de l'abdomen"
     },
     {
       "language" : "nl",
@@ -33314,7 +32894,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie van abdomen"
+      "value" : "fluoroscopie van abdomen"
     },
     {
       "language" : "de",
@@ -33341,7 +32921,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie de colonne vertébrale"
+      "value" : "biopsie de colonne vertébrale"
     },
     {
       "language" : "nl",
@@ -33349,7 +32929,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van columna vertebralis"
+      "value" : "biopsie van columna vertebralis"
     },
     {
       "language" : "de",
@@ -33376,7 +32956,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Duplex scan de veines du membre inférieur"
+      "value" : "duplex scan de veines du membre inférieur"
     },
     {
       "language" : "nl",
@@ -33384,7 +32964,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Duplexonderzoek van venen van been"
+      "value" : "duplexonderzoek van venen van been"
     },
     {
       "language" : "de",
@@ -33411,7 +32991,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Duplex scan des artères du membre supérieur"
+      "value" : "duplex scan des artères du membre supérieur"
     },
     {
       "language" : "nl",
@@ -33419,7 +32999,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Duplexonderzoek van arterie van bovenste extremiteit"
+      "value" : "duplexonderzoek van arterie van bovenste extremiteit"
     },
     {
       "language" : "de",
@@ -33446,7 +33026,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Duplex scan des veines du membre supérieur"
+      "value" : "duplex scan des veines du membre supérieur"
     },
     {
       "language" : "nl",
@@ -33454,7 +33034,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Duplexonderzoek van aders van arm"
+      "value" : "duplexonderzoek van aders van arm"
     },
     {
       "language" : "de",
@@ -33481,7 +33061,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie laparoscopique"
+      "value" : "échographie laparoscopique"
     },
     {
       "language" : "nl",
@@ -33489,7 +33069,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Laparoscopische echografische beeldvorming van abdomen"
+      "value" : "laparoscopische echografische beeldvorming van abdomen"
     },
     {
       "language" : "de",
@@ -33516,7 +33096,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélogramme"
+      "value" : "myélogramme"
     },
     {
       "language" : "nl",
@@ -33524,7 +33104,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myelografie"
+      "value" : "myelografie"
     },
     {
       "language" : "de",
@@ -33551,7 +33131,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie du membre supérieur"
+      "value" : "imagerie du membre supérieur"
     },
     {
       "language" : "nl",
@@ -33559,7 +33139,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Beeldvormend onderzoek van bovenste ledemaat"
+      "value" : "beeldvormend onderzoek van bovenste ledemaat"
     },
     {
       "language" : "de",
@@ -33586,7 +33166,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Étude mammaire par TEP (tomographie par émission de positons)"
+      "value" : "étude mammaire par TEP (tomographie par émission de positons)"
     },
     {
       "language" : "nl",
@@ -33621,7 +33201,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélographie cervicale sous radioscopie"
+      "value" : "myélographie cervicale sous radioscopie"
     },
     {
       "language" : "nl",
@@ -33629,7 +33209,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide cervicale myelografie"
+      "value" : "fluoroscopisch geleide cervicale myelografie"
     },
     {
       "language" : "de",
@@ -33656,7 +33236,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM de la tête et du cerveau"
+      "value" : "angiographie par IRM de la tête et du cerveau"
     },
     {
       "language" : "nl",
@@ -33664,7 +33244,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieangiografie van hoofd"
+      "value" : "magnetischeresonantieangiografie van hoofd"
     },
     {
       "language" : "de",
@@ -33691,7 +33271,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artériographie d'une artère bronchique sous fluoroscopie avec produit de contraste"
+      "value" : "artériographie d'une artère bronchique sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -33699,7 +33279,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide angiografie van arteria bronchialis"
+      "value" : "fluoroscopisch geleide angiografie van arteria bronchialis"
     },
     {
       "language" : "de",
@@ -33726,7 +33306,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Hystérosalpingographie fluoroscopique"
+      "value" : "hystérosalpingographie fluoroscopique"
     },
     {
       "language" : "nl",
@@ -33734,7 +33314,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Hysterosalpingografie onder röntgendoorlichting"
+      "value" : "hysterosalpingografie onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -33761,7 +33341,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "FLUORO, CCD"
+      "value" : "cystographie sous radioscopie"
     },
     {
       "language" : "nl",
@@ -33769,7 +33349,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "FLUOROSCOPIE, CystoColpoDefaecografie"
+      "value" : "fluorescentiecystoscopie"
     },
     {
       "language" : "de",
@@ -33777,7 +33357,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "DL, Zystokolpoproktographie"
+      "value" : "DL, Zystographie"
     }]
   },
   {
@@ -33796,7 +33376,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radiographie d'une cavité anormale sous fluoroscopie avec produit de contraste"
+      "value" : "radiographie d'une cavité anormale sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -33804,7 +33384,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Sinografie onder röntgendoorlichting"
+      "value" : "sinografie onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -33831,7 +33411,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artériographie de l'aorte thoracique sous fluoroscopie avec produit de contraste"
+      "value" : "artériographie de l'aorte thoracique sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -33839,7 +33419,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastangiografie van aorta thoracica onder röntgendoorlichting"
+      "value" : "contrastangiografie van aorta thoracica onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -33866,7 +33446,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arthrographie du genou sous radioscopie"
+      "value" : "arthrographie du genou sous radioscopie"
     },
     {
       "language" : "nl",
@@ -33874,7 +33454,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopische artrografie van knie"
+      "value" : "fluoroscopische artrografie van knie"
     },
     {
       "language" : "de",
@@ -33901,7 +33481,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Défécographie sous contrôle fluoroscopique"
+      "value" : "défécographie sous contrôle fluoroscopique"
     },
     {
       "language" : "nl",
@@ -33909,7 +33489,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Defecografie onder röntgendoorlichting"
+      "value" : "defecografie onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -33936,7 +33516,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artériographie de l'artère axillaire sous fluoroscopie avec produit de contraste"
+      "value" : "artériographie de l'artère axillaire sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -33944,7 +33524,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide angiografie van arteria axillaris"
+      "value" : "fluoroscopisch geleide angiografie van arteria axillaris"
     },
     {
       "language" : "de",
@@ -33971,7 +33551,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Pyélographie antérograde sous radioscopie"
+      "value" : "pyélographie antérograde sous radioscopie"
     },
     {
       "language" : "nl",
@@ -33979,7 +33559,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide antegrade pyelografie"
+      "value" : "fluoroscopisch geleide antegrade pyelografie"
     },
     {
       "language" : "de",
@@ -34006,7 +33586,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie fluoroscopique des artères pulmonaires"
+      "value" : "angiographie fluoroscopique des artères pulmonaires"
     },
     {
       "language" : "nl",
@@ -34014,7 +33594,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastangiografie van arteria pulmonalis onder röntgendoorlichting"
+      "value" : "contrastangiografie van arteria pulmonalis onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34041,7 +33621,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Pyélographie rétrograde sous fluoroscopie"
+      "value" : "pyélographie rétrograde sous fluoroscopie"
     },
     {
       "language" : "nl",
@@ -34049,7 +33629,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Retrograde pyelografie onder doorlichting"
+      "value" : "retrograde pyelografie onder doorlichting"
     },
     {
       "language" : "de",
@@ -34076,7 +33656,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des artères pulmonaires"
+      "value" : "angiographie par IRM des artères pulmonaires"
     },
     {
       "language" : "nl",
@@ -34111,7 +33691,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Vénographie de la veine cave supérieure par fluoroscopie"
+      "value" : "vénographie de la veine cave supérieure par fluoroscopie"
     },
     {
       "language" : "nl",
@@ -34119,7 +33699,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiografie van vena cava superior onder röntgendoorlichting"
+      "value" : "angiografie van vena cava superior onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34146,7 +33726,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélographie lombaire sous radioscopie"
+      "value" : "myélographie lombaire sous radioscopie"
     },
     {
       "language" : "nl",
@@ -34154,7 +33734,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Lumbale myelografie onder röntgendoorlichting"
+      "value" : "lumbale myelografie onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34181,7 +33761,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie d'une structure vasculaire abdominale sous radioscopie avec produit de contraste"
+      "value" : "angiographie d'une structure vasculaire abdominale sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34189,7 +33769,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastangiografie van bloedvat van abdomen onder röntgendoorlichting"
+      "value" : "contrastangiografie van bloedvat van abdomen onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34216,7 +33796,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie de la hanche"
+      "value" : "fluoroscopie de la hanche"
     },
     {
       "language" : "nl",
@@ -34224,7 +33804,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Doorlichting van heup"
+      "value" : "doorlichting van heup"
     },
     {
       "language" : "de",
@@ -34251,7 +33831,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie du ventricule gauche et d'une artère coronaire sous radioscopie avec produit de contraste"
+      "value" : "angiographie du ventricule gauche et d'une artère coronaire sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34259,7 +33839,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide angiografie van linker ventrikel en arteriae coronariae"
+      "value" : "fluoroscopisch geleide angiografie van linker ventrikel en arteriae coronariae"
     },
     {
       "language" : "de",
@@ -34286,7 +33866,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radioscopie du membre inférieur"
+      "value" : "radioscopie du membre inférieur"
     },
     {
       "language" : "nl",
@@ -34294,7 +33874,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgendoorlichting van onderste extremiteit"
+      "value" : "röntgendoorlichting van onderste extremiteit"
     },
     {
       "language" : "de",
@@ -34321,7 +33901,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie artérielle du membre supérieur sous radioscopie avec produit de contraste"
+      "value" : "angiographie artérielle du membre supérieur sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34329,7 +33909,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arteriografie van arterie van bovenste ledemaat onder doorlichting"
+      "value" : "arteriografie van arterie van bovenste ledemaat onder doorlichting"
     },
     {
       "language" : "de",
@@ -34356,7 +33936,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artériographie d'une artère du membre inférieur sous fluoroscopie avec produit de contraste"
+      "value" : "artériographie d'une artère du membre inférieur sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34364,7 +33944,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide angiografie van arterie van onderste extremiteit"
+      "value" : "fluoroscopisch geleide angiografie van arterie van onderste extremiteit"
     },
     {
       "language" : "de",
@@ -34391,7 +33971,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM perfusion du cerveau"
+      "value" : "imagerie par IRM perfusion du cerveau"
     },
     {
       "language" : "nl",
@@ -34399,7 +33979,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Perfusie-MRI van hersenen"
+      "value" : "perfusie-MRI van hersenen"
     },
     {
       "language" : "de",
@@ -34426,7 +34006,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Pharyngographie fluoroscopique"
+      "value" : "pharyngographie fluoroscopique"
     },
     {
       "language" : "nl",
@@ -34434,7 +34014,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopische beeldvorming van farynx"
+      "value" : "fluoroscopische beeldvorming van farynx"
     },
     {
       "language" : "de",
@@ -34461,7 +34041,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie du côté droit du cœur sous radioscopie avec produit de contraste"
+      "value" : "angiographie du côté droit du cœur sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34469,7 +34049,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastangiografie van rechterhelft van hart onder röntgendoorlichting"
+      "value" : "contrastangiografie van rechterhelft van hart onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34496,7 +34076,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Cysto-urétrographie de miction"
+      "value" : "cysto-urétrographie de miction"
     },
     {
       "language" : "nl",
@@ -34531,7 +34111,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du tractus urinaire"
+      "value" : "imagerie par IRM du tractus urinaire"
     },
     {
       "language" : "nl",
@@ -34566,7 +34146,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie des artéres cérébrales par fluoroscopie"
+      "value" : "angiographie des artéres cérébrales par fluoroscopie"
     },
     {
       "language" : "nl",
@@ -34574,7 +34154,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide angiografie van cerebrale arterie"
+      "value" : "fluoroscopisch geleide angiografie van cerebrale arterie"
     },
     {
       "language" : "de",
@@ -34601,7 +34181,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Examen radiographique d'un conduit de l'iléon sous fluoroscopie"
+      "value" : "examen radiographique d'un conduit de l'iléon sous fluoroscopie"
     },
     {
       "language" : "nl",
@@ -34609,7 +34189,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Beeldvormend onderzoek van conduit van ileum onder röntgendoorlichting"
+      "value" : "beeldvormend onderzoek van conduit van ileum onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34636,7 +34216,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie fluoroscopique de l'artère coronaire avec produit de contraste"
+      "value" : "angiographie fluoroscopique de l'artère coronaire avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34644,7 +34224,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arteriografie van coronaire arterie onder röntgendoorlichting"
+      "value" : "arteriografie van coronaire arterie onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34671,7 +34251,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Urétrographie sous fluoroscopie"
+      "value" : "urétrographie sous fluoroscopie"
     },
     {
       "language" : "nl",
@@ -34679,7 +34259,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastonderzoek van urethra onder doorlichting"
+      "value" : "contrastonderzoek van urethra onder doorlichting"
     },
     {
       "language" : "de",
@@ -34706,7 +34286,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie d'une structure vasculaire pelvienne sous radioscopie avec produit de contraste"
+      "value" : "angiographie d'une structure vasculaire pelvienne sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34714,7 +34294,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastangiografie van bloedvat van bekken onder röntgendoorlichting"
+      "value" : "contrastangiografie van bloedvat van bekken onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34741,7 +34321,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie du tractus gastro-intestinal supérieur"
+      "value" : "fluoroscopie du tractus gastro-intestinal supérieur"
     },
     {
       "language" : "nl",
@@ -34749,7 +34329,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie van bovenste deel van maag-darmkanaal"
+      "value" : "fluoroscopie van bovenste deel van maag-darmkanaal"
     },
     {
       "language" : "de",
@@ -34776,7 +34356,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Myélographie thoracique sous radioscopie"
+      "value" : "myélographie thoracique sous radioscopie"
     },
     {
       "language" : "nl",
@@ -34784,7 +34364,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide thoracale myelografie"
+      "value" : "fluoroscopisch geleide thoracale myelografie"
     },
     {
       "language" : "de",
@@ -34811,7 +34391,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie et ponction du pelvis"
+      "value" : "échographie et ponction du pelvis"
     },
     {
       "language" : "nl",
@@ -34819,7 +34399,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie en aspiratie uit bekken"
+      "value" : "echografie en aspiratie uit bekken"
     },
     {
       "language" : "de",
@@ -34846,7 +34426,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie de l'aorte sous radioscopie avec produit de contraste"
+      "value" : "angiographie de l'aorte sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34854,7 +34434,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiografie van aorta onder doorlichting"
+      "value" : "angiografie van aorta onder doorlichting"
     },
     {
       "language" : "de",
@@ -34881,7 +34461,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie par IRM de la veine cave supérieure"
+      "value" : "veinographie par IRM de la veine cave supérieure"
     },
     {
       "language" : "nl",
@@ -34889,7 +34469,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van vena cava superior"
+      "value" : "magnetic resonance imaging van vena cava superior"
     },
     {
       "language" : "de",
@@ -34916,7 +34496,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artériographie rénale sous fluoroscopie avec produit de contraste"
+      "value" : "artériographie rénale sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34924,7 +34504,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastangiografie van arteria renalis onder röntgendoorlichting"
+      "value" : "contrastangiografie van arteria renalis onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -34951,7 +34531,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie de l'aorte abdominale sous radioscopie avec produit de contraste"
+      "value" : "angiographie de l'aorte abdominale sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -34959,7 +34539,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopische geleide angiografie van abdominale aorta"
+      "value" : "fluoroscopische geleide angiografie van abdominale aorta"
     },
     {
       "language" : "de",
@@ -34986,7 +34566,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie à la fluorescéine avec contraste"
+      "value" : "angiographie à la fluorescéine avec contraste"
     },
     {
       "language" : "nl",
@@ -34994,7 +34574,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiografie onder doorlichting"
+      "value" : "angiografie onder doorlichting"
     },
     {
       "language" : "de",
@@ -35021,7 +34601,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de la partie inférieure de l'abdomen"
+      "value" : "échographie de la partie inférieure de l'abdomen"
     },
     {
       "language" : "nl",
@@ -35029,7 +34609,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming van onderste gedeelte van abdomen"
+      "value" : "echografische beeldvorming van onderste gedeelte van abdomen"
     },
     {
       "language" : "de",
@@ -35091,7 +34671,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie obstétricale transvaginale"
+      "value" : "échographie obstétricale transvaginale"
     },
     {
       "language" : "nl",
@@ -35099,7 +34679,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transvaginale obstetrische echografie"
+      "value" : "transvaginale obstetrische echografie"
     },
     {
       "language" : "de",
@@ -35126,7 +34706,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie de la cheville"
+      "value" : "fluoroscopie de la cheville"
     },
     {
       "language" : "nl",
@@ -35134,7 +34714,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Doorlichting van enkel"
+      "value" : "doorlichting van enkel"
     },
     {
       "language" : "de",
@@ -35161,7 +34741,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la circulation du liquide céphalorachidien"
+      "value" : "imagerie par IRM de la circulation du liquide céphalorachidien"
     },
     {
       "language" : "nl",
@@ -35169,7 +34749,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van circulatie van hersenvocht"
+      "value" : "magnetic resonance imaging van circulatie van hersenvocht"
     },
     {
       "language" : "de",
@@ -35196,7 +34776,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radioscopie du système génito-urinaire avec produit de contraste"
+      "value" : "radioscopie du système génito-urinaire avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -35204,7 +34784,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide genitografie"
+      "value" : "fluoroscopisch geleide genitografie"
     },
     {
       "language" : "de",
@@ -35231,7 +34811,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coeur pour perfusion sous stress"
+      "value" : "imagerie par IRM du coeur pour perfusion sous stress"
     },
     {
       "language" : "nl",
@@ -35239,7 +34819,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Perfusie-MRI van hart onder farmacologische stress"
+      "value" : "perfusie-MRI van hart onder farmacologische stress"
     },
     {
       "language" : "de",
@@ -35266,7 +34846,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injection de la gaine du tendon sous guidage échographique"
+      "value" : "injection de la gaine du tendon sous guidage échographique"
     },
     {
       "language" : "nl",
@@ -35274,7 +34854,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injectie in peesschede onder echogeleide"
+      "value" : "injectie in peesschede onder echogeleide"
     },
     {
       "language" : "de",
@@ -35301,7 +34881,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie transrectale de la prostate sous contrôle échographique"
+      "value" : "biopsie transrectale de la prostate sous contrôle échographique"
     },
     {
       "language" : "nl",
@@ -35309,7 +34889,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echogeleide transrectale biopsie van prostaat"
+      "value" : "echogeleide transrectale biopsie van prostaat"
     },
     {
       "language" : "de",
@@ -35336,7 +34916,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du méat auditif interne avec contraste"
+      "value" : "imagerie par IRM du méat auditif interne avec contraste"
     },
     {
       "language" : "nl",
@@ -35371,7 +34951,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Écho-doppler transcranien"
+      "value" : "écho-doppler transcranien"
     },
     {
       "language" : "nl",
@@ -35379,7 +34959,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transcranieel echo-Doppler-onderzoek"
+      "value" : "transcranieel echo-Doppler-onderzoek"
     },
     {
       "language" : "de",
@@ -35406,7 +34986,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie fluoroscopique intraveineuse par soustraction numérique du rein"
+      "value" : "angiographie fluoroscopique intraveineuse par soustraction numérique du rein"
     },
     {
       "language" : "nl",
@@ -35414,7 +34994,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Intraveneuze DSA van nier onder doorlichting"
+      "value" : "intraveneuze DSA van nier onder doorlichting"
     },
     {
       "language" : "de",
@@ -35441,7 +35021,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Prélèvement d'un échantillon sanguin au niveau de la veine rénale, guidé par radioscopie avec produit de contraste"
+      "value" : "prélèvement d'un échantillon sanguin au niveau de la veine rénale, guidé par radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -35449,7 +35029,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide afname van bloed uit vena renalis"
+      "value" : "fluoroscopisch geleide afname van bloed uit vena renalis"
     },
     {
       "language" : "de",
@@ -35476,7 +35056,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ponction de l'épaule sous controle échographique"
+      "value" : "ponction de l'épaule sous controle échographique"
     },
     {
       "language" : "nl",
@@ -35484,7 +35064,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echogeleide aspiratie uit schouder"
+      "value" : "echogeleide aspiratie uit schouder"
     },
     {
       "language" : "de",
@@ -35511,7 +35091,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ponction de la main sous controle échographique"
+      "value" : "ponction de la main sous controle échographique"
     },
     {
       "language" : "nl",
@@ -35519,7 +35099,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echogeleide aspiratie uit hand"
+      "value" : "echogeleide aspiratie uit hand"
     },
     {
       "language" : "de",
@@ -35546,7 +35126,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la cheville avec contraste"
+      "value" : "imagerie par IRM de la cheville avec contraste"
     },
     {
       "language" : "nl",
@@ -35581,7 +35161,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injection péridurale lombaire sous contrôle fluoroscopique"
+      "value" : "injection péridurale lombaire sous contrôle fluoroscopique"
     },
     {
       "language" : "nl",
@@ -35589,7 +35169,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Epidurale injectie in lumbale wervelkolom onder röntgendoorlichting"
+      "value" : "epidurale injectie in lumbale wervelkolom onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -35616,7 +35196,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du pied avec contraste"
+      "value" : "imagerie par IRM du pied avec contraste"
     },
     {
       "language" : "nl",
@@ -35651,7 +35231,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique des sinus paranasaux avec contraste"
+      "value" : "imagerie par résonance magnétique des sinus paranasaux avec contraste"
     },
     {
       "language" : "nl",
@@ -35659,7 +35239,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetische resonantiescan van neusbijholten met contrast"
+      "value" : "magnetische resonantiescan van neusbijholten met contrast"
     },
     {
       "language" : "de",
@@ -35686,7 +35266,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Ponction du poignet sous controle échographique"
+      "value" : "ponction du poignet sous controle échographique"
     },
     {
       "language" : "nl",
@@ -35694,7 +35274,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echogeleide aspiratie uit pols"
+      "value" : "echogeleide aspiratie uit pols"
     },
     {
       "language" : "de",
@@ -35721,7 +35301,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du calcanéum"
+      "value" : "imagerie par IRM du calcanéum"
     },
     {
       "language" : "nl",
@@ -35729,7 +35309,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van calcaneus"
+      "value" : "magnetic resonance imaging van calcaneus"
     },
     {
       "language" : "de",
@@ -35756,7 +35336,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du bassin et de la hanche"
+      "value" : "imagerie par IRM du bassin et de la hanche"
     },
     {
       "language" : "nl",
@@ -35764,7 +35344,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van bekken en heup"
+      "value" : "magnetic resonance imaging van bekken en heup"
     },
     {
       "language" : "de",
@@ -35791,7 +35371,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la tête avec contraste"
+      "value" : "imagerie par IRM de la tête avec contraste"
     },
     {
       "language" : "nl",
@@ -35826,7 +35406,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM d'orbite avec contraste"
+      "value" : "imagerie par IRM d'orbite avec contraste"
     },
     {
       "language" : "nl",
@@ -35861,7 +35441,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique dynamique du genou"
+      "value" : "imagerie par résonance magnétique dynamique du genou"
     },
     {
       "language" : "nl",
@@ -35869,7 +35449,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Dynamische MRI van knie"
+      "value" : "dynamische MRI van knie"
     },
     {
       "language" : "de",
@@ -35896,7 +35476,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'avant-pied"
+      "value" : "imagerie par IRM de l'avant-pied"
     },
     {
       "language" : "nl",
@@ -35931,7 +35511,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie du rein sous échographie"
+      "value" : "biopsie du rein sous échographie"
     },
     {
       "language" : "nl",
@@ -35939,7 +35519,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van nier onder echoscopische begeleiding"
+      "value" : "biopsie van nier onder echoscopische begeleiding"
     },
     {
       "language" : "de",
@@ -35966,7 +35546,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie de l'utérus avec injection de sérum physiologique"
+      "value" : "échographie de l'utérus avec injection de sérum physiologique"
     },
     {
       "language" : "nl",
@@ -35974,7 +35554,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van uterus met infusie van fysiologische zoutoplossing"
+      "value" : "echografie van uterus met infusie van fysiologische zoutoplossing"
     },
     {
       "language" : "de",
@@ -36001,7 +35581,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie par IRM du pelvis"
+      "value" : "veinographie par IRM du pelvis"
     },
     {
       "language" : "nl",
@@ -36036,7 +35616,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie Doppler transcrânienne d'une artère intracrânienne avec produit de contraste à microbulles pour détection d'emboles"
+      "value" : "échographie Doppler transcrânienne d'une artère intracrânienne avec produit de contraste à microbulles pour détection d'emboles"
     },
     {
       "language" : "nl",
@@ -36044,7 +35624,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Transcranieel duplexonderzoek van intracraniële arterie met microbellen als contrastmiddel voor emboliedetectie"
+      "value" : "transcranieel duplexonderzoek van intracraniële arterie met microbellen als contrastmiddel voor emboliedetectie"
     },
     {
       "language" : "de",
@@ -36071,7 +35651,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie à l'aiguille fine de la thyroide sous controle échographique"
+      "value" : "biopsie à l'aiguille fine de la thyroide sous controle échographique"
     },
     {
       "language" : "nl",
@@ -36079,7 +35659,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiratiebiopsie van thyroïd onder echogeleide"
+      "value" : "aspiratiebiopsie van thyroïd onder echogeleide"
     },
     {
       "language" : "de",
@@ -36106,7 +35686,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la face avec contraste"
+      "value" : "imagerie par IRM de la face avec contraste"
     },
     {
       "language" : "nl",
@@ -36114,7 +35694,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van aangezicht met contrast"
+      "value" : "magnetic resonance imaging van aangezicht met contrast"
     },
     {
       "language" : "de",
@@ -36141,7 +35721,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Étude de la captation de la choline marquée au carbone 11 par tomographie par émission de positons avec tomodensitométrie"
+      "value" : "étude de la captation de la choline marquée au carbone 11 par tomographie par émission de positons avec tomodensitométrie"
     },
     {
       "language" : "nl",
@@ -36246,7 +35826,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coeur pour morphologie et fonction avec contraste"
+      "value" : "imagerie par IRM du coeur pour morphologie et fonction avec contraste"
     },
     {
       "language" : "nl",
@@ -36254,7 +35834,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging voor cardiale morfologie en functie met contrast"
+      "value" : "magnetic resonance imaging voor cardiale morfologie en functie met contrast"
     },
     {
       "language" : "de",
@@ -36281,7 +35861,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coeur pour morphologie et fonction sous stress"
+      "value" : "imagerie par IRM du coeur pour morphologie et fonction sous stress"
     },
     {
       "language" : "nl",
@@ -36289,7 +35869,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Stressonderzoek van morfologie en functie van hart met behulp van magnetic resonance imaging"
+      "value" : "stressonderzoek van morfologie en functie van hart met behulp van magnetic resonance imaging"
     },
     {
       "language" : "de",
@@ -36316,7 +35896,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coeur pour morphologie et fonction sous stress avec contraste"
+      "value" : "imagerie par IRM du coeur pour morphologie et fonction sous stress avec contraste"
     },
     {
       "language" : "nl",
@@ -36324,7 +35904,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Cardiale MRI met contrast voor morfologie en functie onder farmacologische stress"
+      "value" : "cardiale MRI met contrast voor morfologie en functie onder farmacologische stress"
     },
     {
       "language" : "de",
@@ -36351,7 +35931,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échoendoscopie"
+      "value" : "échoendoscopie"
     },
     {
       "language" : "nl",
@@ -36359,7 +35939,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografische beeldvorming met endoscoop"
+      "value" : "echografische beeldvorming met endoscoop"
     },
     {
       "language" : "de",
@@ -36394,7 +35974,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Digitale tomosynthese van borst"
+      "value" : "digitale tomosynthese van borst"
     },
     {
       "language" : "de",
@@ -36421,7 +36001,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiration au niveau du membre supérieur sous contrôle fluoroscopique"
+      "value" : "aspiration au niveau du membre supérieur sous contrôle fluoroscopique"
     },
     {
       "language" : "nl",
@@ -36429,7 +36009,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Aspiratie uit bovenste extremiteit onder doorlichting"
+      "value" : "aspiratie uit bovenste extremiteit onder doorlichting"
     },
     {
       "language" : "de",
@@ -36456,7 +36036,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Urétrographie rétrograde sous radioscopie"
+      "value" : "urétrographie rétrograde sous radioscopie"
     },
     {
       "language" : "nl",
@@ -36464,7 +36044,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Retrograde urethrografie onder doorlichting"
+      "value" : "retrograde urethrografie onder doorlichting"
     },
     {
       "language" : "de",
@@ -36491,7 +36071,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Pyélographie IV (intraveineuse) sous fluoroscopie"
+      "value" : "pyélographie IV (intraveineuse) sous fluoroscopie"
     },
     {
       "language" : "nl",
@@ -36499,7 +36079,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch geleide IVP"
+      "value" : "fluoroscopisch geleide IVP"
     },
     {
       "language" : "de",
@@ -36526,7 +36106,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du membre inférieur avec contraste"
+      "value" : "imagerie par IRM du membre inférieur avec contraste"
     },
     {
       "language" : "nl",
@@ -36561,7 +36141,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de l'articulation temporo-mandibulaire avec contraste"
+      "value" : "imagerie par IRM de l'articulation temporo-mandibulaire avec contraste"
     },
     {
       "language" : "nl",
@@ -36596,7 +36176,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la tête et du cou avec contraste"
+      "value" : "imagerie par IRM de la tête et du cou avec contraste"
     },
     {
       "language" : "nl",
@@ -36631,7 +36211,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de la tête et du cou"
+      "value" : "imagerie par IRM de la tête et du cou"
     },
     {
       "language" : "nl",
@@ -36666,7 +36246,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radioscopie du tractus gastro-intestinal supérieur avec progression du transit dans l'intestin grêle"
+      "value" : "radioscopie du tractus gastro-intestinal supérieur avec progression du transit dans l'intestin grêle"
     },
     {
       "language" : "nl",
@@ -36674,7 +36254,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie van bovenste deel van maag-darmkanaal en dunnedarmpassage"
+      "value" : "fluoroscopie van bovenste deel van maag-darmkanaal en dunnedarmpassage"
     },
     {
       "language" : "de",
@@ -36701,7 +36281,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du rectum avec contraste"
+      "value" : "imagerie par IRM du rectum avec contraste"
     },
     {
       "language" : "nl",
@@ -36709,7 +36289,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van rectum met contrast"
+      "value" : "magnetic resonance imaging van rectum met contrast"
     },
     {
       "language" : "de",
@@ -36736,7 +36316,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des vaisseaux de la colonne avec contraste"
+      "value" : "angiographie par IRM des vaisseaux de la colonne avec contraste"
     },
     {
       "language" : "nl",
@@ -36771,7 +36351,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des vaisseaux du pelvis avec contraste"
+      "value" : "angiographie par IRM des vaisseaux du pelvis avec contraste"
     },
     {
       "language" : "nl",
@@ -36779,7 +36359,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieangiografie van vasculaire structuur van pelvis met contrast"
+      "value" : "magnetischeresonantieangiografie van vasculaire structuur van pelvis met contrast"
     },
     {
       "language" : "de",
@@ -36806,7 +36386,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des vaisseaux de membre supérieur"
+      "value" : "angiographie par IRM des vaisseaux de membre supérieur"
     },
     {
       "language" : "nl",
@@ -36841,7 +36421,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie par IRM des veines intracraniennes avec contraste"
+      "value" : "veinographie par IRM des veines intracraniennes avec contraste"
     },
     {
       "language" : "nl",
@@ -36849,7 +36429,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieflebografie van intracraniële vene met contrast"
+      "value" : "magnetischeresonantieflebografie van intracraniële vene met contrast"
     },
     {
       "language" : "de",
@@ -36876,7 +36456,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie par IRM du pelvis avec contraste"
+      "value" : "veinographie par IRM du pelvis avec contraste"
     },
     {
       "language" : "nl",
@@ -36911,7 +36491,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie du cou sous fluoroscopie avec produit de contraste"
+      "value" : "angiographie du cou sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -36919,7 +36499,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiografie van bloedvat van hals en/of nek onder doorlichting"
+      "value" : "angiografie van bloedvat van hals en/of nek onder doorlichting"
     },
     {
       "language" : "de",
@@ -36946,7 +36526,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie de la tête sous fluoroscopie avec produit de contraste"
+      "value" : "angiographie de la tête sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -36954,7 +36534,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiografie van bloedvat van hoofd onder doorlichting"
+      "value" : "angiografie van bloedvat van hoofd onder doorlichting"
     },
     {
       "language" : "de",
@@ -36981,7 +36561,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie du thorax sous radioscopie avec produit de contraste"
+      "value" : "angiographie du thorax sous radioscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -36989,7 +36569,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiografie van bloedvat van borstkas onder doorlichting"
+      "value" : "angiografie van bloedvat van borstkas onder doorlichting"
     },
     {
       "language" : "de",
@@ -37016,7 +36596,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Localisation à l'aiguille d'une lésion mammaire sous guidage échographique"
+      "value" : "localisation à l'aiguille d'une lésion mammaire sous guidage échographique"
     },
     {
       "language" : "nl",
@@ -37024,7 +36604,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Naaldlokalisatie van laesie van mamma onder echoscopische begeleiding"
+      "value" : "naaldlokalisatie van laesie van mamma onder echoscopische begeleiding"
     },
     {
       "language" : "de",
@@ -37051,7 +36631,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des vaisseaux de l'abdomen avec contraste"
+      "value" : "angiographie par IRM des vaisseaux de l'abdomen avec contraste"
     },
     {
       "language" : "nl",
@@ -37086,7 +36666,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM de membre inférieur avec contraste"
+      "value" : "angiographie par IRM de membre inférieur avec contraste"
     },
     {
       "language" : "nl",
@@ -37121,7 +36701,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Cholangiographie sous fluoroscopie avec produit de contraste"
+      "value" : "cholangiographie sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -37129,7 +36709,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastonderzoek van galwegen onder doorlichting"
+      "value" : "contrastonderzoek van galwegen onder doorlichting"
     },
     {
       "language" : "de",
@@ -37156,7 +36736,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radioscopie du côlon après lavement avec produit de contraste"
+      "value" : "radioscopie du côlon après lavement avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -37164,7 +36744,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopisch onderzoek na toediening van klysma met contrast"
+      "value" : "fluoroscopisch onderzoek na toediening van klysma met contrast"
     },
     {
       "language" : "de",
@@ -37191,7 +36771,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du tractus urinaire avec contraste"
+      "value" : "imagerie par IRM du tractus urinaire avec contraste"
     },
     {
       "language" : "nl",
@@ -37226,7 +36806,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du membre supérieur avec contraste"
+      "value" : "imagerie par IRM du membre supérieur avec contraste"
     },
     {
       "language" : "nl",
@@ -37261,7 +36841,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Artériographie d'une artère de l'abdomen sous fluoroscopie avec produit de contraste"
+      "value" : "artériographie d'une artère de l'abdomen sous fluoroscopie avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -37269,7 +36849,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Arteriografie van abdominale arterie onder doorlichting"
+      "value" : "arteriografie van abdominale arterie onder doorlichting"
     },
     {
       "language" : "de",
@@ -37296,7 +36876,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de mastoide"
+      "value" : "imagerie par IRM de mastoide"
     },
     {
       "language" : "nl",
@@ -37331,7 +36911,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM de mastoide avec contraste"
+      "value" : "imagerie par IRM de mastoide avec contraste"
     },
     {
       "language" : "nl",
@@ -37339,7 +36919,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van mastoïd met contrast"
+      "value" : "magnetic resonance imaging van mastoïd met contrast"
     },
     {
       "language" : "de",
@@ -37366,7 +36946,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Élastographie par IRM"
+      "value" : "élastographie par IRM"
     },
     {
       "language" : "nl",
@@ -37401,7 +36981,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des vaisseaux du membre inférieur avec contraste"
+      "value" : "angiographie par IRM des vaisseaux du membre inférieur avec contraste"
     },
     {
       "language" : "nl",
@@ -37409,7 +36989,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieangiografie van vasculaire structuur van onderste extremiteit met contrast"
+      "value" : "magnetischeresonantieangiografie van vasculaire structuur van onderste extremiteit met contrast"
     },
     {
       "language" : "de",
@@ -37436,7 +37016,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Entéroclyse par IRM"
+      "value" : "entéroclyse par IRM"
     },
     {
       "language" : "nl",
@@ -37444,7 +37024,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Dunnedarmpassageonderzoek met behulp van MRI"
+      "value" : "dunnedarmpassageonderzoek met behulp van MRI"
     },
     {
       "language" : "de",
@@ -37471,7 +37051,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angiographie par IRM des vaisseaux de membre supérieur avec contraste"
+      "value" : "angiographie par IRM des vaisseaux de membre supérieur avec contraste"
     },
     {
       "language" : "nl",
@@ -37506,7 +37086,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Veinographie par IRM du cou avec contraste"
+      "value" : "veinographie par IRM du cou avec contraste"
     },
     {
       "language" : "nl",
@@ -37514,7 +37094,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetischeresonantieflebografie van hals met contrast"
+      "value" : "magnetischeresonantieflebografie van hals met contrast"
     },
     {
       "language" : "de",
@@ -37541,7 +37121,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie prostatique sous contrôle par imagerie par résonance magnétique"
+      "value" : "biopsie prostatique sous contrôle par imagerie par résonance magnétique"
     },
     {
       "language" : "nl",
@@ -37549,7 +37129,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Biopsie van glandula prostatica onder geleide van magnetic resonance imaging"
+      "value" : "biopsie van glandula prostatica onder geleide van magnetic resonance imaging"
     },
     {
       "language" : "de",
@@ -37584,7 +37164,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluorodeoxyglucosepositronemissietomografie met computertomografie van hersenbasis tot halverwege bovenbeen"
+      "value" : "fluorodeoxyglucosepositronemissietomografie met computertomografie van hersenbasis tot halverwege bovenbeen"
     },
     {
       "language" : "de",
@@ -37611,7 +37191,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par IRM du coeur avec contraste"
+      "value" : "imagerie par IRM du coeur avec contraste"
     },
     {
       "language" : "nl",
@@ -37619,7 +37199,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van hart met contrast"
+      "value" : "magnetic resonance imaging van hart met contrast"
     },
     {
       "language" : "de",
@@ -37646,7 +37226,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie cérébrale par TEP/TDM au fluorodésoxyglucose 18F (tomographie par émission de positons avec tomodensitométrie au fluorodésoxyglucose 18F)"
+      "value" : "imagerie cérébrale par TEP/TDM au fluorodésoxyglucose 18F (tomographie par émission de positons avec tomodensitométrie au fluorodésoxyglucose 18F)"
     },
     {
       "language" : "nl",
@@ -37681,7 +37261,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie cérébrale par TEP (tomographie par émission de positons)"
+      "value" : "imagerie cérébrale par TEP (tomographie par émission de positons)"
     },
     {
       "language" : "nl",
@@ -37716,7 +37296,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie myocardique à l'effort par TEP-82Rb (tomographie à émission de positons au rubidium 82)"
+      "value" : "imagerie myocardique à l'effort par TEP-82Rb (tomographie à émission de positons au rubidium 82)"
     },
     {
       "language" : "nl",
@@ -37751,7 +37331,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échocardiographie de stress"
+      "value" : "échocardiographie de stress"
     },
     {
       "language" : "nl",
@@ -37759,7 +37339,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Stressechocardiografie"
+      "value" : "stressechocardiografie"
     },
     {
       "language" : "de",
@@ -37786,7 +37366,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie duplex d'une artère carotide"
+      "value" : "échographie duplex d'une artère carotide"
     },
     {
       "language" : "nl",
@@ -37794,7 +37374,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Duplexonderzoek van arteria carotis"
+      "value" : "duplexonderzoek van arteria carotis"
     },
     {
       "language" : "de",
@@ -37821,7 +37401,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injection d'une drogue et/ou d'un médicament dans un tendon"
+      "value" : "injection d'une drogue et/ou d'un médicament dans un tendon"
     },
     {
       "language" : "nl",
@@ -37829,7 +37409,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Injectie van medicatie in pees"
+      "value" : "injectie van medicatie in pees"
     },
     {
       "language" : "de",
@@ -37899,7 +37479,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Discografie met injectie van contrast in tussenwervelschijf"
+      "value" : "discografie met injectie van contrast in tussenwervelschijf"
     },
     {
       "language" : "de",
@@ -37934,7 +37514,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Discografie met injectie van contrast in tussenwervelschijf van cervicale wervelkolom"
+      "value" : "discografie met injectie van contrast in tussenwervelschijf van cervicale wervelkolom"
     },
     {
       "language" : "de",
@@ -37969,7 +37549,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Discografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
+      "value" : "discografie met injectie van contrast in tussenwervelschijf van lumbale wervelkolom"
     },
     {
       "language" : "de",
@@ -38004,7 +37584,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van knie"
+      "value" : "röntgenfoto van knie"
     },
     {
       "language" : "de",
@@ -38039,7 +37619,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van regio van enkel"
+      "value" : "röntgenfoto van regio van enkel"
     },
     {
       "language" : "de",
@@ -38074,7 +37654,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgenfoto van orbita"
+      "value" : "röntgenfoto van orbita"
     },
     {
       "language" : "de",
@@ -38109,7 +37689,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van sacro-iliacaal gewricht zonder contrast"
+      "value" : "magnetic resonance imaging van sacro-iliacaal gewricht zonder contrast"
     },
     {
       "language" : "de",
@@ -38144,7 +37724,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Lymfangiografie met contrast onder röntgendoorlichting"
+      "value" : "lymfangiografie met contrast onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -38179,7 +37759,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Lymfangiografie met contrast van bekken onder röntgendoorlichting"
+      "value" : "lymfangiografie met contrast van bekken onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -38214,7 +37794,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Contrastangiografie van aorta abdominalis, beide arteriae femorales en beide iliacale arteriën onder röntgendoorlichting"
+      "value" : "contrastangiografie van aorta abdominalis, beide arteriae femorales en beide iliacale arteriën onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -38249,7 +37829,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Selectieve contrastangiocardiografie onder röntgendoorlichting"
+      "value" : "selectieve contrastangiocardiografie onder röntgendoorlichting"
     },
     {
       "language" : "de",
@@ -38284,7 +37864,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgendoorlichting van farynx en cervicaal deel van oesofagus met contrast"
+      "value" : "röntgendoorlichting van farynx en cervicaal deel van oesofagus met contrast"
     },
     {
       "language" : "de",
@@ -38319,7 +37899,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie van bovenste deel van maag-darmkanaal met barium"
+      "value" : "fluoroscopie van bovenste deel van maag-darmkanaal met barium"
     },
     {
       "language" : "de",
@@ -38365,7 +37945,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie digestive basse après lavement baryté"
+      "value" : "fluoroscopie digestive basse après lavement baryté"
     },
     {
       "language" : "nl",
@@ -38373,7 +37953,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Doorlichting van colon met bariumklysma"
+      "value" : "doorlichting van colon met bariumklysma"
     },
     {
       "language" : "de",
@@ -38400,7 +37980,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie digestive basse avec lavement baryté à contraste aérien"
+      "value" : "fluoroscopie digestive basse avec lavement baryté à contraste aérien"
     },
     {
       "language" : "nl",
@@ -38408,7 +37988,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie van distale deel van maag-darmkanaal met contrastklysma van barium en lucht"
+      "value" : "fluoroscopie van distale deel van maag-darmkanaal met contrastklysma van barium en lucht"
     },
     {
       "language" : "de",
@@ -38478,7 +38058,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Retrograad contraströntgenonderzoek van blaas"
+      "value" : "retrograad contraströntgenonderzoek van blaas"
     },
     {
       "language" : "de",
@@ -38575,7 +38155,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Échographie du thorax et du creux axillaire"
+      "value" : "échographie du thorax et du creux axillaire"
     },
     {
       "language" : "nl",
@@ -38583,7 +38163,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Echografie van thorax en axilla"
+      "value" : "echografie van thorax en axilla"
     },
     {
       "language" : "de",
@@ -38688,7 +38268,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Drainage van abdomen"
+      "value" : "drainage van abdomen"
     },
     {
       "language" : "de",
@@ -38723,7 +38303,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van orbita zonder contrast"
+      "value" : "magnetic resonance imaging van orbita zonder contrast"
     },
     {
       "language" : "de",
@@ -38750,7 +38330,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Radioscopie de l'œsophage avec produit de contraste baryté"
+      "value" : "radioscopie de l'œsophage avec produit de contraste baryté"
     },
     {
       "language" : "nl",
@@ -38758,7 +38338,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Röntgendoorlichting van oesofagus met barium"
+      "value" : "röntgendoorlichting van oesofagus met barium"
     },
     {
       "language" : "de",
@@ -38785,7 +38365,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie œsophagienne avec produit de contraste"
+      "value" : "fluoroscopie œsophagienne avec produit de contraste"
     },
     {
       "language" : "nl",
@@ -38793,7 +38373,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Fluoroscopie van slokdarm met contrast"
+      "value" : "fluoroscopie van slokdarm met contrast"
     },
     {
       "language" : "de",
@@ -38820,7 +38400,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Imagerie par résonance magnétique des sinus paranasaux sans contraste"
+      "value" : "imagerie par résonance magnétique des sinus paranasaux sans contraste"
     },
     {
       "language" : "nl",
@@ -38925,7 +38505,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Angio-IRM abdominopelvienne sans produit de contraste"
+      "value" : "angio-IRM abdominopelvienne sans produit de contraste"
     },
     {
       "language" : "nl",
@@ -38968,7 +38548,7 @@ This Code system is referenced in the definition of the following value sets:
         "system" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
         "code" : "eReferral-preferred"
       },
-      "value" : "Magnetic resonance imaging van hart voor beoordeling van myocardviabiliteit"
+      "value" : "magnetic resonance imaging van hart voor beoordeling van myocardviabiliteit"
     },
     {
       "language" : "de",

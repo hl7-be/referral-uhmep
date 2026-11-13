@@ -45,7 +45,7 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
   "title" : "eReferral/PSS Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-13T12:42:03+00:00",
+  "date" : "2026-11-13T14:59:56+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -707,8 +707,8 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Fluoroscopic contrast enema (procedure)"
       },
       {
-        "code" : "418135007",
-        "display" : "Fluoroscopic cystography with contrast (procedure)"
+        "code" : "22791004",
+        "display" : "Plain X-ray of lumbar and sacral spine (procedure)"
       },
       {
         "code" : "418253005",
@@ -915,8 +915,8 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Arthrography of ankle joint (procedure)"
       },
       {
-        "code" : "168918009",
-        "display" : "Arthrography of hip joint (procedure)"
+        "code" : "45036003",
+        "display" : "Ultrasonography of abdomen (procedure)"
       },
       {
         "code" : "168908004",
@@ -953,10 +953,6 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
       {
         "code" : "419791000",
         "display" : "Ultrasound scan and aspiration of pelvis (procedure)"
-      },
-      {
-        "code" : "702459003",
-        "display" : "Aspiration of upper limb using fluoroscopic guidance (procedure)"
       },
       {
         "code" : "281808001",
@@ -1073,6 +1069,10 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
       {
         "code" : "1217550004",
         "display" : "Injection of drug or medicament into tendon (procedure)"
+      },
+      {
+        "code" : "113109007",
+        "display" : "Magnetic resonance imaging of lower extremity (procedure)"
       },
       {
         "code" : "241196006",
@@ -1255,10 +1255,6 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Magnetic resonance angiography of entire aorta with contrast (procedure)"
       },
       {
-        "code" : "699583008",
-        "display" : "Magnetic resonance imaging of thorax, abdomen and pelvis (procedure)"
-      },
-      {
         "code" : "414151000119108",
         "display" : "Magnetic resonance angiography of chest, abdomen and pelvis without contrast (procedure)"
       },
@@ -1423,6 +1419,10 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Magnetic resonance imaging of chest with contrast (procedure)"
       },
       {
+        "code" : "168918009",
+        "display" : "Arthrography of hip joint (procedure)"
+      },
+      {
         "code" : "431225005",
         "display" : "Magnetic resonance imaging of cerebrospinal fluid flow (procedure)"
       },
@@ -1571,10 +1571,6 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Magnetic resonance imaging of knee with contrast (procedure)"
       },
       {
-        "code" : "113109007",
-        "display" : "Magnetic resonance imaging of lower extremity (procedure)"
-      },
-      {
         "code" : "433009001",
         "display" : "Magnetic resonance imaging of lower leg with contrast (procedure)"
       },
@@ -1679,8 +1675,12 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Magnetic resonance imaging of pelvis with contrast (procedure)"
       },
       {
-        "code" : "432672003",
-        "display" : "Magnetic resonance imaging of pelvis and hip (procedure)"
+        "code" : "418135007",
+        "display" : "Fluoroscopic cystography with contrast (procedure)"
+      },
+      {
+        "code" : "418394000",
+        "display" : "Ultrasound scan of abdomen and pelvis (procedure)"
       },
       {
         "code" : "443078008",
@@ -1789,6 +1789,10 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
       {
         "code" : "432215003",
         "display" : "Magnetic resonance imaging of upper arm with contrast (procedure)"
+      },
+      {
+        "code" : "428605000",
+        "display" : "Ultrasound scan of sacral spine (procedure)"
       },
       {
         "code" : "431849000",
@@ -1935,10 +1939,6 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Imaging of upper limb (procedure)"
       },
       {
-        "code" : "45036003",
-        "display" : "Ultrasonography of abdomen (procedure)"
-      },
-      {
         "code" : "241480000",
         "display" : "Ultrasound scan of adrenals (procedure)"
       },
@@ -1963,8 +1963,8 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Ultrasonography of abdomen with contrast (procedure)"
       },
       {
-        "code" : "418394000",
-        "display" : "Ultrasound scan of abdomen and pelvis (procedure)"
+        "code" : "432672003",
+        "display" : "Magnetic resonance imaging of pelvis and hip (procedure)"
       },
       {
         "code" : "1076851000000101",
@@ -1997,6 +1997,10 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
       {
         "code" : "10321000087109",
         "display" : "Ultrasonography of chest and abdomen (procedure)"
+      },
+      {
+        "code" : "699583008",
+        "display" : "Magnetic resonance imaging of thorax, abdomen and pelvis (procedure)"
       },
       {
         "code" : "439065002",
@@ -2159,8 +2163,8 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
         "display" : "Ultrasonography of lumbar spine (procedure)"
       },
       {
-        "code" : "428605000",
-        "display" : "Ultrasound scan of sacral spine (procedure)"
+        "code" : "702459003",
+        "display" : "Aspiration of upper limb using fluoroscopic guidance (procedure)"
       },
       {
         "code" : "432898007",
@@ -2425,10 +2429,6 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
       {
         "code" : "840361000",
         "display" : "Plain X-ray of lumbar vertebral column region (procedure)"
-      },
-      {
-        "code" : "22791004",
-        "display" : "Plain X-ray of lumbar and sacral spine (procedure)"
       },
       {
         "code" : "1290655009",
