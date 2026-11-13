@@ -33,8 +33,8 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
-    "ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.html" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
-    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.html" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure",

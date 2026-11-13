@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure | *Version*:3.0.0 |
-| Draft as of 2026-10-29 | *Computable Name*:BeVSHybridDiagnosticImagingProcedure |
+| Draft as of 2026-11-13 | *Computable Name*:BeVSHybridDiagnosticImagingProcedure |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). | |
 
  
@@ -43,7 +43,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-29T08:00:07+00:00",
+  "date" : "2026-11-13T12:42:03+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

@@ -331,11 +331,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 Authorization: Bearer &lt;exchanged_ehealth_token&gt;
 </code></pre></div></div>
 
-<p>For an internal professional assignment, the server also verifies that the deleted <code class="language-plaintext highlighter-rouge">BePerformerTask</code> remains coherent with the parent <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code>.</p>
+<p>An organization using M2M access may remove its own <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code>, subject to the applicable removal rules. Removing this task also removes its dependent <code class="language-plaintext highlighter-rouge">BePerformerTask</code> assignments. It cannot selectively remove an internal professional’s <code class="language-plaintext highlighter-rouge">BePerformerTask</code> linked to that organization task through <code class="language-plaintext highlighter-rouge">basedOn</code>.</p>
 
 <h3 id="allowed-roles">Allowed Roles</h3>
 
-<p>Patient, Caregiver, Organization. (For an Annex 81 proposal, a Prescriber may also remove their own assignment.)</p>
+<p>Patient, Caregiver, Organization (for its own <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code> only). For an Annex 81 proposal, a Prescriber may also remove their own assignment.</p>
 
 <h3 id="possible-error-codes">Possible Error Codes</h3>
 
@@ -398,7 +398,7 @@ endpoint. See <a href="error-codes.html">Error Codes</a> for workbook guidance.<
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Oct 29, 2026 08:00+0000">2026-10-29</span>
+          Generated <span title="Fri, Nov 13, 2026 12:42+0000">2026-11-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

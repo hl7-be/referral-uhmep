@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure | *Version*:3.0.0 |
-| Draft as of 2026-10-29 | *Computable Name*:BeVSDiagnosticImagingProcedure |
+| Draft as of 2026-11-13 | *Computable Name*:BeVSDiagnosticImagingProcedure |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). | |
 
  
@@ -45,7 +45,7 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
   "title" : "eReferral/PSS Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-29T08:00:07+00:00",
+  "date" : "2026-11-13T12:42:03+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

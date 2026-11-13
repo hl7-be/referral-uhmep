@@ -47,9 +47,9 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for EReferral</h1>
- <p>Generated Thu Oct 29 08:05:49 UTC 2026, FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = <a href="https://www.riziv-inami.be/standards/fhir/ereferral">https://www.riziv-inami.be/standards/fhir/ereferral</a> (<a href="https://www.riziv-inami.be/standards/fhir/ereferral/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Nov 13 12:47:33 UTC 2026, FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = <a href="https://www.riziv-inami.be/standards/fhir/ereferral">https://www.riziv-inami.be/standards/fhir/ereferral</a> (<a href="https://www.riziv-inami.be/standards/fhir/ereferral/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v3.0.1</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v3.0.3</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = inami.fhir.be.ereferral, Canonical = https://www.riziv-inami.be/standards/fhir/ereferral</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: en. 2 of 55 (3%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
@@ -356,7 +356,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.supplements (l1/c479046)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://snomed.info/sct/11000172109'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td><td><a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></td>
+     <td><b>CodeSystem.supplements (l1/c479009)</b></td><td><b>warning</b></td><td><b>A definition could not be found for Canonical URL 'http://snomed.info/sct/11000172109'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td><td><a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem</b></td><td><b>warning</b></td><td><b>CodeSystem http://snomed.info/sct/11000172109 cannot be found, so can't check if concepts are valid</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_CS_SUPP_CANT_CHECK</span></td><td>--</td>
@@ -519,10 +519,10 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffdddd">
      <td><b>ServiceRequest&#8203;.orderDetail[0]&#8203;.coding[0]&#8203;.code (l107&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code '211141000172109' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l64">log</a>, or see <a href="#vmi190" onClick="document.getElementById('vmi190').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi190" style="display:none"><br/><pre>0ms tx-op
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211141000172109 ("undefined")]"
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211141000172109"
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211141000172109 ("undefined")]"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211141000172109"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
 1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211141000172109" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></td>
    </tr>
 </table>
@@ -537,8 +537,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffdddd">
      <td><b>ServiceRequest&#8203;.orderDetail[0]&#8203;.coding[0]&#8203;.code (l118&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code '211151000172106' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l70">log</a>, or see <a href="#vmi191" onClick="document.getElementById('vmi191').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi191" style="display:none"><br/><pre>0ms tx-op
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211151000172106 ("undefined")]"
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211151000172106"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211151000172106 ("undefined")]"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211151000172106"
 1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
 1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
 1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211151000172106" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></td>
@@ -555,11 +555,11 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffdddd">
      <td><b>ServiceRequest&#8203;.orderDetail[0]&#8203;.coding[0]&#8203;.code (l106&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code '211161000172108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l71">log</a>, or see <a href="#vmi192" onClick="document.getElementById('vmi192').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi192" style="display:none"><br/><pre>0ms tx-op
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211161000172108 ("undefined")]"
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211161000172108"
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
-2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211161000172108" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></td>
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211161000172108 ("undefined")]"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211161000172108"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211161000172108" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></td>
    </tr>
 </table>
 <hr/>
@@ -573,19 +573,19 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffdddd">
      <td><b>ServiceRequest&#8203;.reasonCode[9]&#8203;.coding[0]&#8203;.code (l206&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code '211071000172100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l88">log</a>, or see <a href="#vmi193" onClick="document.getElementById('vmi193').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi193" style="display:none"><br/><pre>0ms tx-op
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211071000172100 ("undefined")]"
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211071000172100"
-2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
-2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
-2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211071000172100" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-annex-81.html">EReferralAnnex81</a></td>
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211071000172100 ("undefined")]"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211071000172100"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211071000172100" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-annex-81.html">EReferralAnnex81</a></td>
    </tr>
    <tr style="background-color: #ffdddd">
      <td><b>ServiceRequest&#8203;.reasonCode[10]&#8203;.coding[0]&#8203;.code (l214&#8203;/c6)</b></td><td><b>error</b></td><td><b>Unknown code '211101000172107' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l89">log</a>, or see <a href="#vmi194" onClick="document.getElementById('vmi194').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Unknown_Code_in_Version</span><div id="vmi194" style="display:none"><br/><pre>0ms tx-op
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211101000172107 ("undefined")]"
-1ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211101000172107"
-2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
-2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
-2ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211101000172107" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-annex-81.html">EReferralAnnex81</a></td>
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Validate "[http://snomed.info/sct#211101000172107 ("undefined")]"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Check "http://snomed.info/sct#211101000172107"
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: check code in (http://snomed.info/sct) at CodeableConcept.coding[0]
+0ms http://snomed.info/sct/vs|http://snomed.info/sct/900000000000207008/version/20250201: Code "211101000172107" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201: undefined</pre></div></td><td><a href="StructureDefinition-ereferral-annex-81.html">EReferralAnnex81</a></td>
    </tr>
 </table>
 <hr/>
@@ -602,15 +602,15 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>ServiceRequest&#8203;.bodySite[0]&#8203;.extension[1]&#8203;.value&#8203;.ofType(CodeableConcept) (l133&#8203;/c12)</b></td><td><b>information</b></td><td><b>None of the codings provided are in the value set 'Body Topography ValueSet' (https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#255561001)</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l99">log</a>, or see <a href="#vmi196" onClick="document.getElementById('vmi196').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_3_CC</span><div id="vmi196" style="display:none"><br/><pre>0ms tx-op
-0ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Analysing https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0 for validation purposes
-0ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Parameters: disp-lang=en, generate-narrative, default-to-latest
-0ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Prepare include[0]: "(http://snomed.info/sct)(conceptis-a106233006)"
+1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Analysing https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0 for validation purposes
+1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Parameters: disp-lang=en, generate-narrative, default-to-latest
+1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Prepare include[0]: "(http://snomed.info/sct)(conceptis-a106233006)"
 1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: CodeSystem found: "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
 1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Validate "[http://snomed.info/sct#255561001 ("undefined")]"
 1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Check "http://snomed.info/sct#255561001"
-2ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct
-2ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: check code in (http://snomed.info/sct)(conceptis-a106233006) at CodeableConcept.coding[0]
-2ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Filter concept is-a 106233006: Code "255561001" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201</pre></div></td><td><a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></td>
+1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: CodeSystem found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201 for http://snomed.info/sct
+1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: check code in (http://snomed.info/sct)(conceptis-a106233006) at CodeableConcept.coding[0]
+1ms https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography|1.3.0: Filter concept is-a 106233006: Code "255561001" not found in http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201</pre></div></td><td><a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b><a href="">ServiceRequest&#8203;.bodySite[0]&#8203;.extension[1] (l131&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing|3.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl57" class="flip" onclick="flip('l57')">Show Reasoning</span><div id="l57" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing|3.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>ServiceRequest.bodySite[0].extension[1]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td><td><a href="StructureDefinition-ereferral-servicerequest-nursing.html">EReferralServiceRequestNursing</a></td>

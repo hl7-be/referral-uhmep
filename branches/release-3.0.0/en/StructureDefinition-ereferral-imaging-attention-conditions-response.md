@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response | *Version*:3.0.0 |
-| Draft as of 2026-10-29 | *Computable Name*:EReferralImagingAttentionConditionsResponse |
+| Draft as of 2026-11-13 | *Computable Name*:EReferralImagingAttentionConditionsResponse |
 
  
 eReferral response to the imaging attention conditions questionnaire. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-imaging
   "version" : "3.0.0",
   "name" : "EReferralImagingAttentionConditionsResponse",
   "status" : "draft",
-  "date" : "2026-10-29T08:00:07+00:00",
+  "date" : "2026-11-13T12:42:03+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

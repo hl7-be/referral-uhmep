@@ -25,11 +25,11 @@ Authorization: Bearer <exchanged_ehealth_token>
 
 ```
 
-For an internal professional assignment, the server also verifies that the deleted `BePerformerTask` remains coherent with the parent `BeOrganizationTask`.
+An organization using M2M access may remove its own `BeOrganizationTask`, subject to the applicable removal rules. Removing this task also removes its dependent `BePerformerTask` assignments. It cannot selectively remove an internal professional’s `BePerformerTask` linked to that organization task through `basedOn`.
 
 ### Allowed Roles
 
-Patient, Caregiver, Organization. (For an Annex 81 proposal, a Prescriber may also remove their own assignment.)
+Patient, Caregiver, Organization (for its own `BeOrganizationTask` only). For an Annex 81 proposal, a Prescriber may also remove their own assignment.
 
 ### Possible Error Codes
 

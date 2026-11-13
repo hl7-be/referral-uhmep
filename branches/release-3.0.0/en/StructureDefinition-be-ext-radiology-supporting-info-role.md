@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role | *Version*:3.0.0 |
-| Draft as of 2026-10-29 | *Computable Name*:BeRadiologySupportingInfoRole |
+| Draft as of 2026-11-13 | *Computable Name*:BeRadiologySupportingInfoRole |
 
 Identifies the role of a ServiceRequest.supportingInfo entry used in a diagnostic imaging referral.
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-radiology-
   "name" : "BeRadiologySupportingInfoRole",
   "title" : "eReferral Radiology SupportingInfo Role",
   "status" : "draft",
-  "date" : "2026-10-29T08:00:07+00:00",
+  "date" : "2026-11-13T12:42:03+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

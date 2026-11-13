@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept | *Version*:3.0.0 |
-| Draft as of 2026-10-29 | *Computable Name*:BeExtCodeableConcept |
+| Draft as of 2026-11-13 | *Computable Name*:BeExtCodeableConcept |
 
 Extension able to hold a coded concept on a Reference element.
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-codeable-c
   "name" : "BeExtCodeableConcept",
   "title" : "CodeableConcept Extension for Reference",
   "status" : "draft",
-  "date" : "2026-10-29T08:00:07+00:00",
+  "date" : "2026-11-13T12:42:03+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
