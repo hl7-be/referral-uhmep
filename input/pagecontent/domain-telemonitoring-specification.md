@@ -4,7 +4,7 @@ This page defines the intended 4.0 FHIR target for the chronic-heart-failure med
 
 Use the [Telemonitoring ServiceRequest profile](StructureDefinition-ereferral-servicerequest-telemonitoring.html) for the medical prescription, including its patient reference, chronic-heart-failure indication, validity and monitoring plan.
 
-The medical profile fixes `category[prescriptionType]` to `telemonitoring-chronic-heart-failure`, the discipline coding to SNOMED CT `394579002`, the procedure to `879780004` and the indication to `48447003`. Its validity extension requires both start and end. These are the draft profile constraints. Code validity must also be checked against the intended SNOMED edition.
+The medical profile fixes `category[prescriptionType]` to `telemonitoring-chronic-heart-failure`, the discipline coding to SNOMED CT `394579002`, the procedure to `879780004` and the indication to `48447003`. Its validity extension requires a start date. The end date is optional. These are the draft profile constraints. Code validity must also be checked against the intended SNOMED edition.
 
 ### Repeatable Monitoring Parameters
 

@@ -13,7 +13,7 @@ Description: "The telemonitoring profile."
 
 * extension[validity] 1..1 MS
 * extension[validity].valuePeriod.start 1..1
-* extension[validity].valuePeriod.end 1..1
+* extension[validity].valuePeriod.end 0..1
 
 * extension[statusReason] 0..1 MS
 * extension[statusReason].valueCodeableConcept from BeVSTelemonitoringCompletedStatusReason (preferred)
