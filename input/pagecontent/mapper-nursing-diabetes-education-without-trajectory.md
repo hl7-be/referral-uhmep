@@ -13,11 +13,11 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |  |  |  |
 | Discipline |  |  |  |
 | Validity period |  |  | Business validity of the prescription. |
-| Patient |  |  | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |  |  | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |  |  | Reference to the prescribing practitioner role. |
 | Education type | - Self-management education<br>- Education for understanding diabetes<br>- Support when self-management is absent<br>- Follow-up after education<br>- Other (not reimbursed) | Enum |  |
 | This field appears when "Education type" = "Other (not reimbursed)" |  |  |  |
-| Other: | ... | String | Required in business template. Conditional free text for "other"; must be encrypted with a pseudonymized key. |
+| Other: | ... | String | Required in business template. Conditional free text for "other". Must be encrypted with a pseudonymized key. |
 | Frequency |  |  | Timing repeat block. |
 | - Number of repetitions | ... times per | Integer | Number of repetitions per period. |
 | - Time unit | - Day<br>- Week<br>- Month | Enum |  |
@@ -25,7 +25,7 @@ This table maps the business fields to the corresponding FHIR elements.
 | - Duration | ... | Integer | Duration value. |
 | - Time unit | - Day(s)<br>- Week(s)<br>- Month<br>- Year(s) | Enum |  |
 | Number of sessions (max) | ... | Integer | Required in business template. Total number of planned sessions. |
-| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
+| General remarks | ... | String | Free text. Must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes<br>- No (par defaut) | Boolean | Required in business template. `be-ext-feedback-to-prescriber`. |
 | Validity start date | Today (default) | Date | Required in business template. `be-ext-validity-period`. |
 

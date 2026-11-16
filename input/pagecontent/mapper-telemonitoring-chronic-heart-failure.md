@@ -241,7 +241,7 @@ The `be-ext-telemonitoring-plan` extension is intentionally generic (see [Extens
   </tbody>
 </table>
 
-In the supplied examples, each individual `Range` sets one bound (`low` or `high`); separate repeated `threshold` entries can carry the other bound for the same parameter. A single `Range` with both bounds is allowed by the extension but is not illustrated in the examples. There is no threshold time window shown; `ServiceRequest.occurrenceTiming` represents the overall monitoring period. For weight, the time window is the `change.valueRatio.denominator` (e.g. `1 wk`); the sign of `change.valueRatio.numerator` distinguishes a gain (positive) from a loss (negative) rule.
+In the supplied examples, each individual `Range` sets one bound (`low` or `high`). Separate repeated `threshold` entries can carry the other bound for the same parameter. A single `Range` with both bounds is allowed by the extension but is not illustrated in the examples. There is no threshold time window shown. `ServiceRequest.occurrenceTiming` represents the overall monitoring period. For weight, the time window is the `change.valueRatio.denominator` (e.g. `1 wk`). The sign of `change.valueRatio.numerator` distinguishes a gain (positive) from a loss (negative) rule.
 
 **Not illustrated by the supplied FSH example** (although allowed by the extension):
 - A single `threshold.range` with both `low` and `high` set at once
@@ -488,7 +488,7 @@ In the supplied examples, each individual `Range` sets one bound (`low` or `high
     }
   ]
 }</code></pre></td>
-      <td><ul><li>Parameter code: <code>http://snomed.info/sct#27113001</code></li><li>Optional baseline: <code>Reference(Observation)</code> to a standalone weight observation; see <a href="Observation-example-telemonitoring-reference-weight.json">the baseline JSON</a>.</li><li>UCUM unit: <code>kg</code></li><li>The <code>change</code> ratio represents a signed weight-change rule, for example <code>2 kg / 3 d</code>.</li><li>Time-window units may use <a href="ValueSet-be-vs-telemonitoring-period-unit.html"><code>be-vs-telemonitoring-period-unit</code></a>.</li></ul></td>
+      <td><ul><li>Parameter code: <code>http://snomed.info/sct#27113001</code></li><li>Optional baseline: <code>Reference(Observation)</code> to a standalone weight observation. See <a href="Observation-example-telemonitoring-reference-weight.json">the baseline JSON</a>.</li><li>UCUM unit: <code>kg</code></li><li>The <code>change</code> ratio represents a signed weight-change rule, for example <code>2 kg / 3 d</code>.</li><li>Time-window units may use <a href="ValueSet-be-vs-telemonitoring-period-unit.html"><code>be-vs-telemonitoring-period-unit</code></a>.</li></ul></td>
     </tr>
     <tr>
       <td>Monitoring parameter: systolic blood pressure</td>

@@ -19,8 +19,8 @@ A connected user is assigned exactly **one** role, which acts as the first layer
 Beyond the base role, eReferral enforces an **access matrix** defined by INAMI. Before allowing an
 action, the API evaluates:
 
-1. the **operation** requested;
-2. the **prescription template type** (defined by INAMI — see [Prescription Templates](topic-prescription-templates.html));
+1. the **operation** requested.
+2. the **prescription template type** (defined by INAMI: see [Prescription Templates](topic-prescription-templates.html)).
 3. the **discipline** of the professional (from the token) or of the organization.
 
 If the user's or organization's discipline is not authorized for the requested template/action,
@@ -31,13 +31,13 @@ the API returns `403 Forbidden`.
 If a healthcare professional is suspended, they lose active working privileges. However, they may
 still **retroactively log work** that was completed before their suspension date. When suspended:
 
-- certain operations are completely blocked;
-- others have modified behaviour (documented on the relevant operation pages);
-- a suspended prescriber can only see prescriptions they created; a suspended caregiver can only
+- certain operations are completely blocked.
+- others have modified behaviour (documented on the relevant operation pages).
+- a suspended prescriber can only see prescriptions they created. A suspended caregiver can only
   see prescriptions on which they are assigned or work.
 
-In machine-to-machine (M2M) integrations, eReferral does not enforce these verifications — they
-are the responsibility of each organization.
+In machine-to-machine (M2M) integrations, eReferral does not enforce these verifications. Each
+organization is responsible for them.
 
 ### Search-Filter Access Control
 
@@ -60,15 +60,14 @@ has an access rule that depends on the connected user's role.
 
 Rule meanings:
 
-- **Free** — the filter may be used or ignored.
-- **Forbidden** — the filter may not be used; using it returns `SEARCH_CRITERIA_NOT_ALLOWED`.
-- **Mandatory** — the filter must be provided; otherwise `REQUIRED_SEARCH_CRITERIA_MISSING`.
-- **Partially Mandatory** — at least one of the partially-mandatory filters must be used;
-  otherwise `REQUIRED_SEARCH_CRITERIA_MISSING`.
-- **Partially Mandatory + Partial Token Verification** — if `patient` is not provided, one of the
-  partial-token-verification filters must match the connected user's token; otherwise
+- **Free:** The filter may be used or ignored.
+- **Forbidden:** The filter may not be used. Using it returns `SEARCH_CRITERIA_NOT_ALLOWED`.
+- **Mandatory:** The filter must be provided. Otherwise `REQUIRED_SEARCH_CRITERIA_MISSING`.
+- **Partially Mandatory:** At least one of the partially mandatory filters must be used. Otherwise `REQUIRED_SEARCH_CRITERIA_MISSING`.
+- **Partially Mandatory + Partial Token Verification:** If `patient` is not provided, one of the
+  partial-token-verification filters must match the connected user's token. Otherwise
   `WRONG_REFERENCE_HEALTHCARE_PROFESSIONAL`. If `patient` **is** provided, no token-correspondence
   check is performed.
 
 **Example.** 
-A prescriber searching without a `patient` filter must provide at least `requester` or `_has:Task:focus:owner=PractitionerRole/…`, and one of those must match their token; otherwise they receive `REQUIRED_SEARCH_CRITERIA_MISSING` or `WRONG_REFERENCE_HEALTHCARE_PROFESSIONAL`.
+A prescriber searching without a `patient` filter must provide at least `requester` or `_has:Task:focus:owner=PractitionerRole/…`, and one of those must match their token. Otherwise they receive `REQUIRED_SEARCH_CRITERIA_MISSING` or `WRONG_REFERENCE_HEALTHCARE_PROFESSIONAL`.

@@ -6,7 +6,7 @@ This page documents the changes proposed to the 4.0 target specification. It des
 
 - Include the Telemonitoring medical prescription profile, mappings, vocabularies and example.
 - Define repeatable monitoring parameters and systolic/diastolic pulmonary artery pressure in the 4.0 target contract.
-- Use the published eHealth Referral package `hl7.fhir.be.referral#1.0.0` as the parent for 4.0; the 3.0 line retains its patched DRP dependency after DRP IG decommissioning.
+- Use the published eHealth Referral package `hl7.fhir.be.referral#1.0.0` as the parent for 4.0. The 3.0 line retains its patched DRP dependency after DRP IG decommissioning.
 - Move the local canonical base provisionally to `https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral`.
 - Add a [3.0-to-4.0 migration guide](migration-3-0-to-4-0.html), including the outstanding gateway compatibility gap and regression checks.
 
@@ -29,7 +29,7 @@ The draft resolves the published Referral package and uses its `/referral/` prof
 
 #### Local Canonical Base
 
-Locally owned artefacts use the new provisional eHealth base; the local package ID remains `inami.fhir.be.ereferral`. Historical documentation and the description of actual gateway rewrite targets preserve the old URLs deliberately. No automatic redirect or old-profile acceptance is promised.
+Locally owned artefacts use the new provisional eHealth base. The local package ID remains `inami.fhir.be.ereferral`. Historical documentation and the description of actual gateway rewrite targets preserve the old URLs deliberately. No automatic redirect or old-profile acceptance is promised.
 
 #### Application Compatibility
 
@@ -41,7 +41,7 @@ See the [migration guide](migration-3-0-to-4-0.html) for compatibility requireme
 
 ---
 
-### **2026-09-02 — v2.1.0 Release: Validation, Radiology Tracks, and Security — FHIR R4**
+### **2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)**
 
 This release aligns gateway validation with the NIHDI/RIZIV-INAMI profiles, introduces
 track-dependent radiology workflow management, and strengthens security and execution
@@ -85,7 +85,7 @@ See [Technical – Encryption](technical.html#encryption) and
 
 The Implementation Guide remains the single authoritative source for supported workflows, FHIR
 structures, profiles, validation rules, and integration examples. The retired PDF Cookbook must
-not be used as the reference for new development. This consolidation was introduced in v2.0.0;
+not be used as the reference for new development. This consolidation was introduced in v2.0.0.
 v2.1.0 reinforces the migration recommendation without duplicating the Cookbook content.
 
 #### Deployed but unavailable capabilities
@@ -99,7 +99,7 @@ as available only when activated in a future release.
 
 ---
 
-### **2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4**
+### **2026-08-05: v2.0.0 Release: eReferral Referral Prescription (STU1, FHIR R4)**
 
 This release makes the Implementation Guide the single source of truth for eReferral integration.
 It adds nursing and radiology profiles and mappings, expands machine-to-machine workflows, and
@@ -119,27 +119,27 @@ New nursing profiles to add constraints on nursing prescriptions and Annex 81 pr
 
 ##### Mapping tables
 Field-by-field mapping tables have been added for every prescription type, showing exactly how business concepts map to FHIR:
-- [Nursing — Generic](mapper-nursing-generic.html)
-- [Nursing — Medication Preparation (Annex 81)](mapper-nursing-annex81-medication-preparation.html)
-- [Nursing — Bloodletting](mapper-nursing-bloodletting.html)
-- [Nursing — Chronic Dialysis](mapper-nursing-chronic-dialysis.html)
-- [Nursing — Glycemic Test](mapper-nursing-glycemic-test.html)
-- [Nursing — Hygienic Care](mapper-nursing-hygienic-care.html)
-- [Nursing — Medication Prefill (not refunded)](mapper-nursing-medication-prefill-not-refunded.html)
-- [Nursing — Sampling](mapper-nursing-sampling.html)
-- [Nursing — Diabetes Education](mapper-nursing-diabetes-education-start-trajectory.html) (multiple variants)
+- [Nursing: Generic](mapper-nursing-generic.html)
+- [Nursing: Medication Preparation (Annex 81)](mapper-nursing-annex81-medication-preparation.html)
+- [Nursing: Bloodletting](mapper-nursing-bloodletting.html)
+- [Nursing: Chronic Dialysis](mapper-nursing-chronic-dialysis.html)
+- [Nursing: Glycemic Test](mapper-nursing-glycemic-test.html)
+- [Nursing: Hygienic Care](mapper-nursing-hygienic-care.html)
+- [Nursing: Medication Prefill (not refunded)](mapper-nursing-medication-prefill-not-refunded.html)
+- [Nursing: Sampling](mapper-nursing-sampling.html)
+- [Nursing: Diabetes Education](mapper-nursing-diabetes-education-start-trajectory.html) (multiple variants)
 
 #### Radiology (Diagnostic Imaging) support
 ##### Profiling
 New profiles and operations enable prescription and management of radiology exams:
-- [eReferral Service Request — Diagnostic Imaging](StructureDefinition-ereferral-servicerequest-diagnosticimaging.html)
+- [eReferral Service Request: Diagnostic Imaging](StructureDefinition-ereferral-servicerequest-diagnosticimaging.html)
 - [eReferral Imaging Attention Conditions Response](StructureDefinition-ereferral-imaging-attention-conditions-response.html)
 
 ##### New radiology-specific operations
 Three new operations handle specific parts of radiology prescription workflows:
-1. **Accept a Radiology Prescription** — confirms the requested exam and readiness to perform the exam
-2. **Substitute a Radiology Exam** — replaces the exam (e.g., CT instead of X-ray)
-3. **Refuse a Radiology Exam** — declines to perform the requested exam
+1. **Accept a Radiology Prescription**: confirms the requested exam and readiness to perform the exam
+2. **Substitute a Radiology Exam**: replaces the exam (e.g., CT instead of X-ray)
+3. **Refuse a Radiology Exam**: declines to perform the requested exam
 
 ##### Mapping tables for integrators
 Field-by-field mapping table has been added for radiology prescription, showing exactly how business concepts map to FHIR:
@@ -148,14 +148,14 @@ Field-by-field mapping table has been added for radiology prescription, showing 
 
 #### Machine-to-Machine (M2M) integration
 The following operations have been expanded to support M2M workflows:
-1. **[Create Medical Document](operation-create-medical-document.html)** — now supports creation of a medical document, prescription or proposal, by an internal professional of an organization
-2. **[Assign Care Provider](operation-assign-care-provider.html)** — expanded to:
+1. **[Create Medical Document](operation-create-medical-document.html)**: now supports creation of a medical document, prescription or proposal, by an internal professional of an organization
+2. **[Assign Care Provider](operation-assign-care-provider.html)**: expanded to:
    - Assign to an organization (`BeOrganizationTask`)
    - Assign to an internal professional within an organization (`BePerformerTask`)
-3. **[Record Execution Start](operation-record-execution-start.html)** — now supports initiation by an internal professional of an organization via POST
-4. **[Unassign Care Provider](operation-unassign-care-provider.html)** — operation to withdraw assignments of an organization or internal professional from a prescription
-5. **[Evaluate Proposal](operation-evaluate-proposal.html)** — now supports evaluation by an internal professional of an organization
-6. **[Evaluate Radiology Prescription](operation-evaluate-radiology-prescription.html)** — supports evaluation by an internal professional of an organization
+3. **[Record Execution Start](operation-record-execution-start.html)**: now supports initiation by an internal professional of an organization via POST
+4. **[Unassign Care Provider](operation-unassign-care-provider.html)**: operation to withdraw assignments of an organization or internal professional from a prescription
+5. **[Evaluate Proposal](operation-evaluate-proposal.html)**: now supports evaluation by an internal professional of an organization
+6. **[Evaluate Radiology Prescription](operation-evaluate-radiology-prescription.html)**: supports evaluation by an internal professional of an organization
 
 
 #### Security & privacy
@@ -164,11 +164,11 @@ The following operations have been expanded to support M2M workflows:
 - See [API Integration](api-integration.html#authentication-and-headers) for full authentication and header requirements
 
 #### Reference materials
-- **[API Integration](api-integration.html)** — authentication, headers, request/response structure
-- **[API Operations](api-operations.html)** — overview of all available operations
-- **[Technical](technical.html)** — entry points, support contacts, certificates
-- **[Access Control Matrix](operation-access-matrix.html)** — which roles can perform which operations
-- **[Error Codes](error-codes.html)** — complete error catalogue and troubleshooting
-- **[Visibility & Blacklisting](topic-visibility-blacklisting.html)** — data filtering rules
+- **[API Integration](api-integration.html)**: authentication, headers, request/response structure
+- **[API Operations](api-operations.html)**: overview of all available operations
+- **[Technical](technical.html)**: entry points, support contacts, certificates
+- **[Access Control Matrix](operation-access-matrix.html)**: which roles can perform which operations
+- **[Error Codes](error-codes.html)**: complete error catalogue and troubleshooting
+- **[Visibility & Blacklisting](topic-visibility-blacklisting.html)**: data filtering rules
 
 </details>

@@ -1,7 +1,7 @@
 This page describes the profile-rewriting targets proposed for the 4.0 draft when an integrator declares a federal DRP or Referral profile. It distinguishes the draft mapping from the gateway configuration inspected during preparation.
 
 <div style="border-left: 4px solid #b91c1c; background-color: #fef2f2; color: #991b1b; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>Gateway configuration alignment required.</strong> The targets below use the provisional <code>https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral</code> canonical of this draft. The inspected gateway configuration still uses the former INAMI targets and does not establish all the source aliases below. These are proposed compatibility mappings, not verified deployed behavior; see <a href="migration-3-0-to-4-0.html">Migration 3.0 to 4.0</a>.</p>
+  <p><strong>Gateway configuration alignment required.</strong> The targets below use the provisional <code>https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral</code> canonical of this draft. The inspected gateway configuration still uses the former INAMI targets and does not establish all the source aliases below. These are proposed compatibility mappings, not verified deployed behavior. See <a href="migration-3-0-to-4-0.html">Migration 3.0 to 4.0</a>.</p>
 </div>
 
 ### Purpose
@@ -31,8 +31,8 @@ To implement these draft mappings, the gateway configuration and its packaged va
 
 When a configured source profile is found:
 
-1. the configured federal profile URL is removed from `ServiceRequest.meta.profile`;
-2. the corresponding eReferral profile URL is added to `ServiceRequest.meta.profile`;
+1. the configured federal profile URL is removed from `ServiceRequest.meta.profile`.
+2. the corresponding eReferral profile URL is added to `ServiceRequest.meta.profile`.
 3. the resource is then processed and validated as an eReferral resource.
 
 If the resource already declares the corresponding local 4.0 profile, no namespace rewrite is needed for that declaration, but the deployed validator must resolve it. An unconfigured URL must not be assumed to receive a matching rewrite.
@@ -77,10 +77,10 @@ against the current profiles and correct validation errors before deployment.
 
 ### Implementation Notes
 
-The inspected gateway still configures three DRP ServiceRequest mappings to the former INAMI targets. It does not establish acceptance of all six proposed source aliases or the new local namespace. Configuration alignment and runtime tests remain necessary; this documentation does not modify the gateway.
+The inspected gateway still configures three DRP ServiceRequest mappings to the former INAMI targets. It does not establish acceptance of all six proposed source aliases or the new local namespace. Configuration alignment and runtime tests remain necessary. This documentation does not modify the gateway.
 
 For 4.0 draft validation, use the local profile URL from this IG in `ServiceRequest.meta.profile`. Before sending it to an API environment, confirm that the environment resolves the new namespace and enforces the intended version.
 
 Systems that log or audit incoming requests may record both values: the profile received at the gateway boundary and the profile used internally after rewriting.
 
-Legacy nursing or imaging inputs require an explicitly configured compatibility path. URL rewriting does not provide compatibility for a resource that fails the target profile's constraints. Historical URLs are listed in the [migration guide](migration-3-0-to-4-0.html); no automatic redirect or general legacy-acceptance guarantee is implied.
+Legacy nursing or imaging inputs require an explicitly configured compatibility path. URL rewriting does not provide compatibility for a resource that fails the target profile's constraints. Historical URLs are listed in the [migration guide](migration-3-0-to-4-0.html). No automatic redirect or general legacy-acceptance guarantee is implied.

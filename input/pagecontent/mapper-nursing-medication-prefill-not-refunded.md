@@ -13,14 +13,14 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |  |  |  |
 | Discipline |  |  |  |
 | Validity period |  |  | Business validity of the prescription. |
-| Patient |  |  | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |  |  | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |  |  | Reference to the prescribing practitioner role. |
-| Diagnosis | ... | String | Required in business template. Free text diagnosis; must be encrypted with a pseudonymized key. |
+| Diagnosis | ... | String | Required in business template. Free text diagnosis. Must be encrypted with a pseudonymized key. |
 | Frequency |  |  | Required in business template. Timing repeat block. |
 | - Number of repetitions | ... times per (default = 1, max. 7) | Integer | Number of repetitions per period. |
 | - Time unit | Week | String |  |
-| Contraindications | ... | String | Free text; must be encrypted with a pseudonymized key. |
-| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
+| Contraindications | ... | String | Free text. Must be encrypted with a pseudonymized key. |
+| General remarks | ... | String | Free text. Must be encrypted with a pseudonymized key. |
 | Prescription validity |  |  | `be-ext-validity-period`. |
 | - Start date | Today (default) | Date | Required in business template. Start of prescription validity. |
 | - End date | Start date + 1 year | Date | Required in business template. End of prescription validity. |

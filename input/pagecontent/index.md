@@ -1,7 +1,7 @@
 This implementation guide defines the local eReferral FHIR profiles, examples, mappings, and guidance for referral prescriptions.
 
 <div style="border-left: 4px solid #b91c1c; background-color: #fef2f2; color: #991b1b; padding: 12px 16px; margin: 16px 0;">
-  <p><strong>4.0.0-draft: the intended integration target.</strong> This draft describes the FHIR contract and package direction proposed for 4.0, including the published Referral parent and Telemonitoring. It is not a statement of current gateway behavior or production availability. The provisional local canonical base is <code>https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral</code>; redirects and runtime acceptance are not implied.</p>
+  <p><strong>4.0.0-draft: the intended integration target.</strong> This draft describes the FHIR contract and package direction proposed for 4.0, including the published Referral parent and Telemonitoring. It is not a statement of current gateway behavior or production availability. The provisional local canonical base is <code>https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral</code>. Redirects and runtime acceptance are not implied.</p>
   <details>
     <summary><strong>Impacts for integrators</strong></summary>
     <p>Review package dependencies, profile and extension references, validator caches and repeated Telemonitoring parameters against the 4.0 target. See <a href="migration-3-0-to-4-0.html">Migration 3.0.0 to 4.0.0-draft</a> for the target contract and known implementation gaps.</p>

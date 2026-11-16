@@ -1,6 +1,6 @@
 This page indexes the FHIR JSON examples intended for Test Server integration scenarios. Examples are generated from the profiles in this guide.
 
-The examples contain pseudonymization placeholders and illustrative values. They demonstrate profile-valid payloads; they do not establish deployment support or clinical guidance. The convention-centre diabetes scenario does not specify a numeric weekly frequency; its example uses once weekly while retaining the stated maximum of 30 sessions.
+The examples contain pseudonymization placeholders and illustrative values. They demonstrate profile-valid payloads. They do not establish deployment support or clinical guidance. The convention-centre diabetes scenario does not specify a numeric weekly frequency. Its example uses once weekly while retaining the stated maximum of 30 sessions.
 
 ## Nursing {#nursing}
 

@@ -106,7 +106,7 @@ For an Annex 81 proposal, use the Annex 81 profile and `intent = proposal`.
 
 {% include error-codes-reference.md %}
 
-On success, the new logical id is returned in the `Location` header and in the JSON payload; a
+On success, the new logical id is returned in the `Location` header and in the JSON payload. A
 six-character **short code** is also generated and returned at consultation.
 
 ### Sequence

@@ -47,7 +47,7 @@ Description: "Per-parameter telemonitoring rule: parameter, thresholds, target r
 * extension[targetRange].url = "targetRange" (exactly)
 * extension[targetRange].value[x] only Range
 
-* extension[change] ^short = "Max allowed change per time window; positive = increase, negative = decrease"
+* extension[change] ^short = "Maximum change per time window. Positive values indicate an increase. Negative values indicate a decrease."
 * extension[change].extension 0..0
 * extension[change].url = "change" (exactly)
 * extension[change].value[x] only Ratio

@@ -68,8 +68,8 @@ The API provides the dedicated [Evaluate Proposal](operation-evaluate-proposal.h
 
 When approval is performed:
 
-- the proposal workflow is completed and the evaluation `BePerformerTask` is completed;
-- a valid prescription is created and the caregiver who authored the original proposal is assigned;
+- the proposal workflow is completed and the evaluation `BePerformerTask` is completed.
+- a valid prescription is created and the caregiver who authored the original proposal is assigned.
 - the workflow tasks are updated consistently by the server (ReferralTask and PerformerTask status).
 
 The approval request may include an optional note. Because this note is clinical free text, it must be encrypted and linked to the pseudonymized key carried in the `Parameters.meta` payload.
@@ -95,8 +95,8 @@ The API provides the same dedicated [Evaluate Proposal](operation-evaluate-propo
 
 When rejection is performed:
 
-- the proposal workflow is marked as completed with a rejected outcome;
-- the `BePerformerTask` is updated to reflect the rejection;
+- the proposal workflow is marked as completed with a rejected outcome.
+- the `BePerformerTask` is updated to reflect the rejection.
 - eReferral updates the status of the related resources accordingly.
 
 The rejection request may also include an optional encrypted clinical note. A successful rejection returns `200 OK`.
