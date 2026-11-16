@@ -20,12 +20,12 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |   |   |   |
 | Discipline |   |   |   |
 | Validity period |   |   | Business validity of the prescription. |
-| Patient |   |   | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |   |   | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |   |   | Reference to the prescribing practitioner role. |
 | Parameter type | - Blood pressure while lying down- Blood pressure while standing- Heart rate- Oxygen saturation- Temperature- Respiratory rate- Stool frequency- Weight- Diuresis- Visual analogue pain scale- Pain type- Stool control- Other | Enum |   |
 | This field appears when “Parameter type” = “Other” |   |   |   |
-| Other: | … | String | Required in business template. Conditional free text for “other”; must be encrypted with a pseudonymized key. |
-| Diagnosis | … | String | Required in business template. Free text diagnosis; must be encrypted with a pseudonymized key. |
+| Other: | … | String | Required in business template. Conditional free text for “other”. Must be encrypted with a pseudonymized key. |
+| Diagnosis | … | String | Required in business template. Free text diagnosis. Must be encrypted with a pseudonymized key. |
 | Time of day | - Avant le repas- Apres le repas- Entre les repas- Matin- Midi- Apres-midi- Soir- Nuit | List | Required in business template.`ServiceRequest.occurrenceTiming.repeat.when`(FHIR EventTiming codes). |
 | Frequency |   |   | Required in business template. Timing repeat block. |
 | - Number of repetitions | … times per | Integer | Number of repetitions per period. |
@@ -34,9 +34,9 @@ This table maps the business fields to the corresponding FHIR elements.
 | - Duration | … | Integer | Duration value. |
 | - Time unit | - Day- Week- Month- Year(s) | Enum |   |
 | Number of sessions (max) | … | Integer | Required in business template. Total number of planned sessions. |
-| Medical reason | … (field becomes mandatory when frequency is more than once per day) | String | Medical reason; coded value when available, otherwise pseudonymized text. |
-| Contraindications | … | String | Free text; must be encrypted with a pseudonymized key. |
-| General remarks | … | String | Free text; must be encrypted with a pseudonymized key. |
+| Medical reason | … (field becomes mandatory when frequency is more than once per day) | String | Medical reason. Coded value when available, otherwise pseudonymized text. |
+| Contraindications | … | String | Free text. Must be encrypted with a pseudonymized key. |
+| General remarks | … | String | Free text. Must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes- No | Boolean | Required in business template.`be-ext-feedback-to-prescriber`. |
 | Validity start date | Today (default) | Date | Required in business template.`be-ext-validity-period`. |
 

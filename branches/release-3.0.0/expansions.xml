@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ed49e7b7-6134-4716-8795-a5e5f32d45e8"/>
+  <id value="07450f79-dc72-40ef-8cf0-5b0ded9c19b3"/>
   <meta>
-    <lastUpdated value="2026-11-13T14:59:56.385+00:00"/>
+    <lastUpdated value="2026-11-16T08:01:16.382+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -2566,15 +2566,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/405538007">405538007</a>
                 </td>
-                <td>Spontaneous hemorrhage</td>
+                <td>Spontaneous haemorrhage</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;405538007&quot;, &quot;display&quot;: &quot;Spontaneous hemorrhage&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;405538007&quot;, &quot;display&quot;: &quot;Spontaneous haemorrhage&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;405538007&quot;/&gt;&lt;display value=&quot;Spontaneous hemorrhage&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;405538007&quot;/&gt;&lt;display value=&quot;Spontaneous haemorrhage&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4146,15 +4146,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/400210000">400210000</a>
                 </td>
-                <td>Hemangioma</td>
+                <td>Haemangioma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;400210000&quot;, &quot;display&quot;: &quot;Hemangioma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;400210000&quot;, &quot;display&quot;: &quot;Haemangioma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;400210000&quot;/&gt;&lt;display value=&quot;Hemangioma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;400210000&quot;/&gt;&lt;display value=&quot;Haemangioma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -5066,15 +5066,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/302835009">302835009</a>
                 </td>
-                <td>Pheochromocytoma</td>
+                <td>Phaeochromocytoma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;302835009&quot;, &quot;display&quot;: &quot;Pheochromocytoma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;302835009&quot;, &quot;display&quot;: &quot;Phaeochromocytoma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;302835009&quot;/&gt;&lt;display value=&quot;Pheochromocytoma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;302835009&quot;/&gt;&lt;display value=&quot;Phaeochromocytoma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -8966,15 +8966,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/197940006">197940006</a>
                 </td>
-                <td>Microscopic hematuria</td>
+                <td>Microscopic haematuria</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197940006&quot;, &quot;display&quot;: &quot;Microscopic hematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197940006&quot;, &quot;display&quot;: &quot;Microscopic haematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197940006&quot;/&gt;&lt;display value=&quot;Microscopic hematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197940006&quot;/&gt;&lt;display value=&quot;Microscopic haematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -9006,15 +9006,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/371020003">371020003</a>
                 </td>
-                <td>Renal hematuria</td>
+                <td>Renal haematuria</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;371020003&quot;, &quot;display&quot;: &quot;Renal hematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;371020003&quot;, &quot;display&quot;: &quot;Renal haematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;371020003&quot;/&gt;&lt;display value=&quot;Renal hematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;371020003&quot;/&gt;&lt;display value=&quot;Renal haematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -9026,15 +9026,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/314280007">314280007</a>
                 </td>
-                <td>Hematuria of undiagnosed cause</td>
+                <td>Haematuria of undiagnosed cause</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;314280007&quot;, &quot;display&quot;: &quot;Hematuria of undiagnosed cause&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;314280007&quot;, &quot;display&quot;: &quot;Haematuria of undiagnosed cause&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;314280007&quot;/&gt;&lt;display value=&quot;Hematuria of undiagnosed cause&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;314280007&quot;/&gt;&lt;display value=&quot;Haematuria of undiagnosed cause&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -9986,15 +9986,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/1230182004">1230182004</a>
                 </td>
-                <td>Acute lower limb ischemia</td>
+                <td>Acute lower limb ischaemia</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1230182004&quot;, &quot;display&quot;: &quot;Acute lower limb ischemia&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1230182004&quot;, &quot;display&quot;: &quot;Acute lower limb ischaemia&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1230182004&quot;/&gt;&lt;display value=&quot;Acute lower limb ischemia&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1230182004&quot;/&gt;&lt;display value=&quot;Acute lower limb ischaemia&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -12986,15 +12986,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/197938001">197938001</a>
                 </td>
-                <td>Painless hematuria</td>
+                <td>Painless haematuria</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197938001&quot;, &quot;display&quot;: &quot;Painless hematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197938001&quot;, &quot;display&quot;: &quot;Painless haematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197938001&quot;/&gt;&lt;display value=&quot;Painless hematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197938001&quot;/&gt;&lt;display value=&quot;Painless haematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -15426,15 +15426,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/156035004">156035004</a>
                 </td>
-                <td>Primary amenorrhea</td>
+                <td>Primary amenorrhoea</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;156035004&quot;, &quot;display&quot;: &quot;Primary amenorrhea&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;156035004&quot;, &quot;display&quot;: &quot;Primary amenorrhoea&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;156035004&quot;/&gt;&lt;display value=&quot;Primary amenorrhea&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;156035004&quot;/&gt;&lt;display value=&quot;Primary amenorrhoea&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -15606,15 +15606,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/72042002">72042002</a>
                 </td>
-                <td>Incontinence of feces</td>
+                <td>Incontinence of faeces</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;72042002&quot;, &quot;display&quot;: &quot;Incontinence of feces&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;72042002&quot;, &quot;display&quot;: &quot;Incontinence of faeces&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;72042002&quot;/&gt;&lt;display value=&quot;Incontinence of feces&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;72042002&quot;/&gt;&lt;display value=&quot;Incontinence of faeces&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -16126,15 +16126,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/82991003">82991003</a>
                 </td>
-                <td>Generalized aches and pains</td>
+                <td>Generalised aches and pains</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;82991003&quot;, &quot;display&quot;: &quot;Generalized aches and pains&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;82991003&quot;, &quot;display&quot;: &quot;Generalised aches and pains&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;82991003&quot;/&gt;&lt;display value=&quot;Generalized aches and pains&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;82991003&quot;/&gt;&lt;display value=&quot;Generalised aches and pains&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -19666,15 +19666,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/161805006">161805006</a>
                 </td>
-                <td>Past pregnancy history of cesarean section</td>
+                <td>Past pregnancy history of caesarean section</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;161805006&quot;, &quot;display&quot;: &quot;Past pregnancy history of cesarean section&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;161805006&quot;, &quot;display&quot;: &quot;Past pregnancy history of caesarean section&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;161805006&quot;/&gt;&lt;display value=&quot;Past pregnancy history of cesarean section&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;161805006&quot;/&gt;&lt;display value=&quot;Past pregnancy history of caesarean section&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -19866,15 +19866,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/258269004">258269004</a>
                 </td>
-                <td>Medium risk tumor</td>
+                <td>Medium risk tumour</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;258269004&quot;, &quot;display&quot;: &quot;Medium risk tumor&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;258269004&quot;, &quot;display&quot;: &quot;Medium risk tumour&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;258269004&quot;/&gt;&lt;display value=&quot;Medium risk tumor&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;258269004&quot;/&gt;&lt;display value=&quot;Medium risk tumour&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -19927,7 +19927,26 @@
         <title value="eReferral/PSS Diagnostic Imaging Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
+        <contact>
+          <name value="Riziv-Inami Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.riziv-inami.be/standards/fhir"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Message Structure Smals"/>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -19936,8 +19955,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2a5e565f-159c-4e8b-afef-e07a60cd0c0c"/>
-          <timestamp value="2026-11-13T15:04:00+00:00"/>
+          <identifier value="urn:uuid:7bb25242-4cb3-4535-aebd-9b1401ed6270"/>
+          <timestamp value="2026-11-16T08:04:24.387Z"/>
           <total value="994"/>
           <offset value="0"/>
           <parameter>
@@ -19945,24 +19964,16 @@
             <valueCode value="en"/>
           </parameter>
           <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="offset"/>
             <valueInteger value="0"/>
           </parameter>
           <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
+            <name value="count"/>
+            <valueInteger value="1000"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -20601,7 +20612,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="405538007"/>
-            <display value="Spontaneous hemorrhage"/>
+            <display value="Spontaneous haemorrhage"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -20996,7 +21007,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="400210000"/>
-            <display value="Hemangioma"/>
+            <display value="Haemangioma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -21226,7 +21237,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="302835009"/>
-            <display value="Pheochromocytoma"/>
+            <display value="Phaeochromocytoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -22201,7 +22212,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="197940006"/>
-            <display value="Microscopic hematuria"/>
+            <display value="Microscopic haematuria"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -22211,12 +22222,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="371020003"/>
-            <display value="Renal hematuria"/>
+            <display value="Renal haematuria"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="314280007"/>
-            <display value="Hematuria of undiagnosed cause"/>
+            <display value="Haematuria of undiagnosed cause"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -22456,7 +22467,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="1230182004"/>
-            <display value="Acute lower limb ischemia"/>
+            <display value="Acute lower limb ischaemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -23206,7 +23217,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="197938001"/>
-            <display value="Painless hematuria"/>
+            <display value="Painless haematuria"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -23816,7 +23827,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="156035004"/>
-            <display value="Primary amenorrhea"/>
+            <display value="Primary amenorrhoea"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -23861,7 +23872,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="72042002"/>
-            <display value="Incontinence of feces"/>
+            <display value="Incontinence of faeces"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -23991,7 +24002,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="82991003"/>
-            <display value="Generalized aches and pains"/>
+            <display value="Generalised aches and pains"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -24876,7 +24887,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="161805006"/>
-            <display value="Past pregnancy history of cesarean section"/>
+            <display value="Past pregnancy history of caesarean section"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -24926,7 +24937,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="258269004"/>
-            <display value="Medium risk tumor"/>
+            <display value="Medium risk tumour"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -27502,15 +27513,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/405538007">405538007</a>
                 </td>
-                <td>Spontaneous hemorrhage</td>
+                <td>Spontaneous haemorrhage</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;405538007&quot;, &quot;display&quot;: &quot;Spontaneous hemorrhage&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;405538007&quot;, &quot;display&quot;: &quot;Spontaneous haemorrhage&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;405538007&quot;/&gt;&lt;display value=&quot;Spontaneous hemorrhage&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;405538007&quot;/&gt;&lt;display value=&quot;Spontaneous haemorrhage&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -29082,15 +29093,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/400210000">400210000</a>
                 </td>
-                <td>Hemangioma</td>
+                <td>Haemangioma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;400210000&quot;, &quot;display&quot;: &quot;Hemangioma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;400210000&quot;, &quot;display&quot;: &quot;Haemangioma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;400210000&quot;/&gt;&lt;display value=&quot;Hemangioma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;400210000&quot;/&gt;&lt;display value=&quot;Haemangioma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -30002,15 +30013,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/302835009">302835009</a>
                 </td>
-                <td>Pheochromocytoma</td>
+                <td>Phaeochromocytoma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;302835009&quot;, &quot;display&quot;: &quot;Pheochromocytoma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;302835009&quot;, &quot;display&quot;: &quot;Phaeochromocytoma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;302835009&quot;/&gt;&lt;display value=&quot;Pheochromocytoma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;302835009&quot;/&gt;&lt;display value=&quot;Phaeochromocytoma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -33902,15 +33913,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/197940006">197940006</a>
                 </td>
-                <td>Microscopic hematuria</td>
+                <td>Microscopic haematuria</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197940006&quot;, &quot;display&quot;: &quot;Microscopic hematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197940006&quot;, &quot;display&quot;: &quot;Microscopic haematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197940006&quot;/&gt;&lt;display value=&quot;Microscopic hematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197940006&quot;/&gt;&lt;display value=&quot;Microscopic haematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -33942,15 +33953,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/371020003">371020003</a>
                 </td>
-                <td>Renal hematuria</td>
+                <td>Renal haematuria</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;371020003&quot;, &quot;display&quot;: &quot;Renal hematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;371020003&quot;, &quot;display&quot;: &quot;Renal haematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;371020003&quot;/&gt;&lt;display value=&quot;Renal hematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;371020003&quot;/&gt;&lt;display value=&quot;Renal haematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -33962,15 +33973,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/314280007">314280007</a>
                 </td>
-                <td>Hematuria of undiagnosed cause</td>
+                <td>Haematuria of undiagnosed cause</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;314280007&quot;, &quot;display&quot;: &quot;Hematuria of undiagnosed cause&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;314280007&quot;, &quot;display&quot;: &quot;Haematuria of undiagnosed cause&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;314280007&quot;/&gt;&lt;display value=&quot;Hematuria of undiagnosed cause&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;314280007&quot;/&gt;&lt;display value=&quot;Haematuria of undiagnosed cause&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -34922,15 +34933,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/1230182004">1230182004</a>
                 </td>
-                <td>Acute lower limb ischemia</td>
+                <td>Acute lower limb ischaemia</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1230182004&quot;, &quot;display&quot;: &quot;Acute lower limb ischemia&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1230182004&quot;, &quot;display&quot;: &quot;Acute lower limb ischaemia&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1230182004&quot;/&gt;&lt;display value=&quot;Acute lower limb ischemia&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1230182004&quot;/&gt;&lt;display value=&quot;Acute lower limb ischaemia&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -37922,15 +37933,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/197938001">197938001</a>
                 </td>
-                <td>Painless hematuria</td>
+                <td>Painless haematuria</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197938001&quot;, &quot;display&quot;: &quot;Painless hematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;197938001&quot;, &quot;display&quot;: &quot;Painless haematuria&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197938001&quot;/&gt;&lt;display value=&quot;Painless hematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;197938001&quot;/&gt;&lt;display value=&quot;Painless haematuria&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -40362,15 +40373,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/156035004">156035004</a>
                 </td>
-                <td>Primary amenorrhea</td>
+                <td>Primary amenorrhoea</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;156035004&quot;, &quot;display&quot;: &quot;Primary amenorrhea&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;156035004&quot;, &quot;display&quot;: &quot;Primary amenorrhoea&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;156035004&quot;/&gt;&lt;display value=&quot;Primary amenorrhea&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;156035004&quot;/&gt;&lt;display value=&quot;Primary amenorrhoea&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -40542,15 +40553,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/72042002">72042002</a>
                 </td>
-                <td>Incontinence of feces</td>
+                <td>Incontinence of faeces</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;72042002&quot;, &quot;display&quot;: &quot;Incontinence of feces&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;72042002&quot;, &quot;display&quot;: &quot;Incontinence of faeces&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;72042002&quot;/&gt;&lt;display value=&quot;Incontinence of feces&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;72042002&quot;/&gt;&lt;display value=&quot;Incontinence of faeces&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -41062,15 +41073,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/82991003">82991003</a>
                 </td>
-                <td>Generalized aches and pains</td>
+                <td>Generalised aches and pains</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;82991003&quot;, &quot;display&quot;: &quot;Generalized aches and pains&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;82991003&quot;, &quot;display&quot;: &quot;Generalised aches and pains&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;82991003&quot;/&gt;&lt;display value=&quot;Generalized aches and pains&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;82991003&quot;/&gt;&lt;display value=&quot;Generalised aches and pains&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -44602,15 +44613,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/161805006">161805006</a>
                 </td>
-                <td>Past pregnancy history of cesarean section</td>
+                <td>Past pregnancy history of caesarean section</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;161805006&quot;, &quot;display&quot;: &quot;Past pregnancy history of cesarean section&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;161805006&quot;, &quot;display&quot;: &quot;Past pregnancy history of caesarean section&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;161805006&quot;/&gt;&lt;display value=&quot;Past pregnancy history of cesarean section&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;161805006&quot;/&gt;&lt;display value=&quot;Past pregnancy history of caesarean section&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -44802,15 +44813,15 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/258269004">258269004</a>
                 </td>
-                <td>Medium risk tumor</td>
+                <td>Medium risk tumour</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;258269004&quot;, &quot;display&quot;: &quot;Medium risk tumor&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;258269004&quot;, &quot;display&quot;: &quot;Medium risk tumour&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;258269004&quot;/&gt;&lt;display value=&quot;Medium risk tumor&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;258269004&quot;/&gt;&lt;display value=&quot;Medium risk tumour&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -44863,7 +44874,26 @@
         <title value="eReferral/PSS Diagnostic Imaging Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
+        <contact>
+          <name value="Riziv-Inami Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.riziv-inami.be/standards/fhir"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Message Structure Smals"/>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -44872,8 +44902,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a6b0e8d2-1f57-4faf-9870-d0c79f91cfcd"/>
-          <timestamp value="2026-11-13T15:04:01+00:00"/>
+          <identifier value="urn:uuid:7bb25242-4cb3-4535-aebd-9b1401ed6270"/>
+          <timestamp value="2026-11-16T08:04:24.387Z"/>
           <total value="994"/>
           <offset value="0"/>
           <parameter>
@@ -44881,24 +44911,16 @@
             <valueCode value="en"/>
           </parameter>
           <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="offset"/>
             <valueInteger value="0"/>
           </parameter>
           <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
+            <name value="count"/>
+            <valueInteger value="1000"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -45537,7 +45559,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="405538007"/>
-            <display value="Spontaneous hemorrhage"/>
+            <display value="Spontaneous haemorrhage"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -45932,7 +45954,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="400210000"/>
-            <display value="Hemangioma"/>
+            <display value="Haemangioma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -46162,7 +46184,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="302835009"/>
-            <display value="Pheochromocytoma"/>
+            <display value="Phaeochromocytoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -47137,7 +47159,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="197940006"/>
-            <display value="Microscopic hematuria"/>
+            <display value="Microscopic haematuria"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -47147,12 +47169,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="371020003"/>
-            <display value="Renal hematuria"/>
+            <display value="Renal haematuria"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="314280007"/>
-            <display value="Hematuria of undiagnosed cause"/>
+            <display value="Haematuria of undiagnosed cause"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -47392,7 +47414,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="1230182004"/>
-            <display value="Acute lower limb ischemia"/>
+            <display value="Acute lower limb ischaemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -48142,7 +48164,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="197938001"/>
-            <display value="Painless hematuria"/>
+            <display value="Painless haematuria"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -48752,7 +48774,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="156035004"/>
-            <display value="Primary amenorrhea"/>
+            <display value="Primary amenorrhoea"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -48797,7 +48819,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="72042002"/>
-            <display value="Incontinence of feces"/>
+            <display value="Incontinence of faeces"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -48927,7 +48949,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="82991003"/>
-            <display value="Generalized aches and pains"/>
+            <display value="Generalised aches and pains"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -49812,7 +49834,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="161805006"/>
-            <display value="Past pregnancy history of cesarean section"/>
+            <display value="Past pregnancy history of caesarean section"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -49862,7 +49884,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="258269004"/>
-            <display value="Medium risk tumor"/>
+            <display value="Medium risk tumour"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -53534,17 +53556,17 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/1343705008">1343705008</a>
                 </td>
-                <td>Fluoroscopy of pharynx and cervical esophagus with contrast</td>
+                <td>Fluoroscopy of pharynx and cervical oesophagus with contrast</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1343705008&quot;, &quot;display&quot;: &quot;Fluoroscopy of pharynx and cervical esophagus with contrast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1343705008&quot;, &quot;display&quot;: &quot;Fluoroscopy of pharynx and cervical oesophagus with contrast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1343705008&quot;/&gt;&lt;display value=&quot;Fluoroscopy of pharynx and cervical esophagus with contrast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1343705008&quot;/&gt;&lt;display value=&quot;Fluoroscopy of pharynx and cervical oesophagus with contrast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -55404,17 +55426,17 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/711208008">711208008</a>
                 </td>
-                <td>Ultrasonography guided needle localization of lesion of breast</td>
+                <td>Ultrasonography guided needle localisation of lesion of breast</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;711208008&quot;, &quot;display&quot;: &quot;Ultrasonography guided needle localization of lesion of breast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;711208008&quot;, &quot;display&quot;: &quot;Ultrasonography guided needle localisation of lesion of breast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;711208008&quot;/&gt;&lt;display value=&quot;Ultrasonography guided needle localization of lesion of breast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;711208008&quot;/&gt;&lt;display value=&quot;Ultrasonography guided needle localisation of lesion of breast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -62863,7 +62885,26 @@
         <title value="eReferral/PSS Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
+        <contact>
+          <name value="Riziv-Inami Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.riziv-inami.be/standards/fhir"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Message Structure Smals"/>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -62872,8 +62913,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5afebe2e-5388-4cbb-aea3-4dbaabdc905f"/>
-          <timestamp value="2026-11-13T15:04:01+00:00"/>
+          <identifier value="urn:uuid:eb0bf880-13a8-4a20-91e1-57037f197576"/>
+          <timestamp value="2026-11-16T08:04:25.012Z"/>
           <total value="588"/>
           <offset value="0"/>
           <parameter>
@@ -62881,24 +62922,16 @@
             <valueCode value="en"/>
           </parameter>
           <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="offset"/>
             <valueInteger value="0"/>
           </parameter>
           <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
+            <name value="count"/>
+            <valueInteger value="1000"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -63736,7 +63769,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="1343705008"/>
-            <display value="Fluoroscopy of pharynx and cervical esophagus with contrast"/>
+            <display value="Fluoroscopy of pharynx and cervical oesophagus with contrast"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -64161,7 +64194,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="711208008"/>
-            <display value="Ultrasonography guided needle localization of lesion of breast"/>
+            <display value="Ultrasonography guided needle localisation of lesion of breast"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -69513,17 +69546,17 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/1343705008">1343705008</a>
                 </td>
-                <td>Fluoroscopy of pharynx and cervical esophagus with contrast</td>
+                <td>Fluoroscopy of pharynx and cervical oesophagus with contrast</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1343705008&quot;, &quot;display&quot;: &quot;Fluoroscopy of pharynx and cervical esophagus with contrast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1343705008&quot;, &quot;display&quot;: &quot;Fluoroscopy of pharynx and cervical oesophagus with contrast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1343705008&quot;/&gt;&lt;display value=&quot;Fluoroscopy of pharynx and cervical esophagus with contrast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;1343705008&quot;/&gt;&lt;display value=&quot;Fluoroscopy of pharynx and cervical oesophagus with contrast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -71383,17 +71416,17 @@
                 <td style="white-space:nowrap">  
                   <a href="http://snomed.info/id/711208008">711208008</a>
                 </td>
-                <td>Ultrasonography guided needle localization of lesion of breast</td>
+                <td>Ultrasonography guided needle localisation of lesion of breast</td>
                 <td/>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;711208008&quot;, &quot;display&quot;: &quot;Ultrasonography guided needle localization of lesion of breast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;711208008&quot;, &quot;display&quot;: &quot;Ultrasonography guided needle localisation of lesion of breast&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;711208008&quot;/&gt;&lt;display value=&quot;Ultrasonography guided needle localization of lesion of breast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;711208008&quot;/&gt;&lt;display value=&quot;Ultrasonography guided needle localisation of lesion of breast&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -78842,7 +78875,26 @@
         <title value="eReferral/PSS Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
+        <contact>
+          <name value="Riziv-Inami Platform"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.riziv-inami.be/standards/fhir"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+          </telecom>
+        </contact>
+        <contact>
+          <name value="Message Structure Smals"/>
+          <telecom>
+            <system value="email"/>
+            <value value="support-uhmep@smals.be"/>
+            <use value="work"/>
+          </telecom>
+        </contact>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -78851,8 +78903,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:460cf475-7520-48cf-8cdd-e21f3ca6ca48"/>
-          <timestamp value="2026-11-13T15:04:01+00:00"/>
+          <identifier value="urn:uuid:eb0bf880-13a8-4a20-91e1-57037f197576"/>
+          <timestamp value="2026-11-16T08:04:25.012Z"/>
           <total value="588"/>
           <offset value="0"/>
           <parameter>
@@ -78860,24 +78912,16 @@
             <valueCode value="en"/>
           </parameter>
           <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="offset"/>
             <valueInteger value="0"/>
           </parameter>
           <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
+            <name value="count"/>
+            <valueInteger value="1000"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -79715,7 +79759,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="1343705008"/>
-            <display value="Fluoroscopy of pharynx and cervical esophagus with contrast"/>
+            <display value="Fluoroscopy of pharynx and cervical oesophagus with contrast"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -80140,7 +80184,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="711208008"/>
-            <display value="Ultrasonography guided needle localization of lesion of breast"/>
+            <display value="Ultrasonography guided needle localisation of lesion of breast"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -81849,6 +81893,9 @@
                 <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
+            <div class="panel panel-info">
+              <div class="panel-body">The code System 'http://snomed.info/sct' has a grammar and so has infinite members</div>
+            </div>
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <table class="codes" data-fhir="generated">
               <tr>
@@ -101877,7 +101924,7 @@
         <title value="SNOMED CT eReferral Supplement Designations"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -101911,8 +101958,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason">
             <valueString value="The code System 'http://snomed.info/sct' has a grammar and so has infinite members"/>
           </extension>
-          <identifier value="urn:uuid:f5018a12-b775-4dff-965b-cf89167b6b7f"/>
-          <timestamp value="2026-11-13T15:04:02.237Z"/>
+          <identifier value="urn:uuid:07df5b01-7c04-4d99-95ce-5f464de4ebc9"/>
+          <timestamp value="2026-11-16T08:04:25.493Z"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -106951,6 +106998,9 @@
                 <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
+            <div class="panel panel-info">
+              <div class="panel-body">The code System 'http://snomed.info/sct' has a grammar and so has infinite members</div>
+            </div>
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <table class="codes" data-fhir="generated">
               <tr>
@@ -126979,7 +127029,7 @@
         <title value="SNOMED CT eReferral Supplement Designations"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -127013,8 +127063,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason">
             <valueString value="The code System 'http://snomed.info/sct' has a grammar and so has infinite members"/>
           </extension>
-          <identifier value="urn:uuid:7d8f3d9f-6e51-4ce7-8acd-0e4acb46689b"/>
-          <timestamp value="2026-11-13T15:04:02.552Z"/>
+          <identifier value="urn:uuid:07df5b01-7c04-4d99-95ce-5f464de4ebc9"/>
+          <timestamp value="2026-11-16T08:04:25.493Z"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -154112,7 +154162,7 @@
         <title value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -154121,8 +154171,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bee45156-ff36-4194-b847-da53c2b1932e"/>
-          <timestamp value="2026-11-13T15:04:02+00:00"/>
+          <identifier value="urn:uuid:d8ed4510-161a-4ed7-8fb4-fc7fcbdee481"/>
+          <timestamp value="2026-11-16T08:04:25+00:00"/>
           <total value="1451"/>
           <offset value="0"/>
           <parameter>
@@ -154152,14 +154202,6 @@
           <parameter>
             <name value="used-valueset"/>
             <valueUri value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.0"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -181250,7 +181292,7 @@
         <title value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -181259,8 +181301,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:09f6155c-454e-4a95-a85a-c033dba954d1"/>
-          <timestamp value="2026-11-13T15:04:02+00:00"/>
+          <identifier value="urn:uuid:d8ed4510-161a-4ed7-8fb4-fc7fcbdee481"/>
+          <timestamp value="2026-11-16T08:04:25+00:00"/>
           <total value="1451"/>
           <offset value="0"/>
           <parameter>
@@ -181290,14 +181332,6 @@
           <parameter>
             <name value="used-valueset"/>
             <valueUri value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.0"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="includeDefinition"/>
-            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -203618,7 +203652,7 @@
         <title value="PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -203627,8 +203661,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:45b759f4-8f73-4c3b-bd56-2887f0ef3712"/>
-          <timestamp value="2026-11-13T15:04:03+00:00"/>
+          <identifier value="urn:uuid:2e046aef-2eca-4407-9e94-31bb6053ae06"/>
+          <timestamp value="2026-11-16T08:04:26+00:00"/>
           <total value="863"/>
           <offset value="0"/>
           <parameter>
@@ -225272,7 +225306,7 @@
         <title value="PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -225281,8 +225315,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ae07ea89-52ef-4242-a173-d4469d590fc5"/>
-          <timestamp value="2026-11-13T15:04:03+00:00"/>
+          <identifier value="urn:uuid:2e046aef-2eca-4407-9e94-31bb6053ae06"/>
+          <timestamp value="2026-11-16T08:04:26+00:00"/>
           <total value="863"/>
           <offset value="0"/>
           <parameter>
@@ -249666,7 +249700,7 @@
         <title value="PSS/QSI Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -249675,8 +249709,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:907aef8d-8e92-4f6f-a242-6e7286edee46"/>
-          <timestamp value="2026-11-13T15:04:03+00:00"/>
+          <identifier value="urn:uuid:b54c9a38-04d6-44ed-ae3a-227d1ed06ce9"/>
+          <timestamp value="2026-11-16T08:04:26+00:00"/>
           <total value="4297"/>
           <offset value="0"/>
           <parameter>
@@ -274745,7 +274779,7 @@
         <title value="PSS/QSI Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -274754,8 +274788,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2c135396-0fff-4d96-9135-0feb1590e8a0"/>
-          <timestamp value="2026-11-13T15:04:03+00:00"/>
+          <identifier value="urn:uuid:b54c9a38-04d6-44ed-ae3a-227d1ed06ce9"/>
+          <timestamp value="2026-11-16T08:04:26+00:00"/>
           <total value="4297"/>
           <offset value="0"/>
           <parameter>
@@ -279924,7 +279958,7 @@
         <title value="eReferral Radiology SupportingInfo Role ValueSet"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -279933,8 +279967,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cc924a91-0a31-47c3-9ad9-0bb6c498bd2f"/>
-          <timestamp value="2026-11-13T15:04:03+00:00"/>
+          <identifier value="urn:uuid:9bb440f8-0260-4c64-8519-3192018a5ca2"/>
+          <timestamp value="2026-11-16T08:04:26+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -280123,7 +280157,7 @@
         <title value="eReferral Radiology SupportingInfo Role ValueSet"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -280132,8 +280166,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3bd6b6a6-7ddd-4758-a37c-95f5782f15f8"/>
-          <timestamp value="2026-11-13T15:04:03+00:00"/>
+          <identifier value="urn:uuid:9bb440f8-0260-4c64-8519-3192018a5ca2"/>
+          <timestamp value="2026-11-16T08:04:26+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -300244,7 +300278,7 @@
         <title value="eReferral Imaging Patient Condition Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -300272,8 +300306,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ad32d2eb-e9f4-451f-a0b7-9b5f65dce1f3"/>
-          <timestamp value="2026-11-13T15:04:03.722Z"/>
+          <identifier value="urn:uuid:cfd7cbd7-d3f4-4308-bdeb-2ae99bf67967"/>
+          <timestamp value="2026-11-16T08:04:26.843Z"/>
           <total value="5291"/>
           <offset value="0"/>
           <parameter>
@@ -325376,7 +325410,7 @@
         <title value="eReferral Imaging Patient Condition Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-13T14:59:56+00:00"/>
+        <date value="2026-11-16T08:01:16+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -325404,8 +325438,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ad32d2eb-e9f4-451f-a0b7-9b5f65dce1f3"/>
-          <timestamp value="2026-11-13T15:04:03.722Z"/>
+          <identifier value="urn:uuid:cfd7cbd7-d3f4-4308-bdeb-2ae99bf67967"/>
+          <timestamp value="2026-11-16T08:04:26.843Z"/>
           <total value="5291"/>
           <offset value="0"/>
           <parameter>

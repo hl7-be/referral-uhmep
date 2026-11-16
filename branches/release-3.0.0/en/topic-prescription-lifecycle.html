@@ -357,7 +357,7 @@ clinical intent, the requested service, the patient, and contextual information 
 perform the care, and it remains the <strong>single source of truth for the prescription</strong>.</p>
 
 <p>The <strong>ReferralTask</strong> tracks the <strong>global workflow of the prescription</strong>. Several healthcare
-professionals or organizations may participate in the execution of a prescription; the
+professionals or organizations may participate in the execution of a prescription. The
 ReferralTask aggregates the state of the workflow and represents the overall status of the
 prescription processing. Its status is derived from the status of the tasks assigned to
 performers or organizations.</p>
@@ -370,7 +370,7 @@ several professionals are involved in the care process.</p>
 <p>An <strong>OrganizationTask</strong> represents the involvement of a healthcare organization responsible for
 performing the prescription, used when the prescription is handled at the organizational level
 rather than directly by an individual practitioner. An organization may assign the work internally
-to one or more healthcare professionals; internal healthcare professionals are identifiable via a
+to one or more healthcare professionals. Internal healthcare professionals are identifiable via a
 <code class="language-plaintext highlighter-rouge">basedOn</code> reference to the OrganizationTask in the PerformerTask.</p>
 
 <div style="text-align:center;">
@@ -381,9 +381,9 @@ to one or more healthcare professionals; internal healthcare professionals are i
 advantages:</p>
 
 <ul>
-  <li>the prescription remains immutable from a clinical perspective;</li>
-  <li>workflow changes do not modify the clinical order;</li>
-  <li>multiple actors can participate in the execution;</li>
+  <li>the prescription remains immutable from a clinical perspective.</li>
+  <li>workflow changes do not modify the clinical order.</li>
+  <li>multiple actors can participate in the execution.</li>
   <li>the global progress of the prescription can be calculated dynamically.</li>
 </ul>
 
@@ -492,8 +492,8 @@ afterward. Caregiver interactions are handled through the <code class="language-
 <p>A <code class="language-plaintext highlighter-rouge">BePerformerTask</code> can be created in three cases:</p>
 
 <ul>
-  <li>when a caregiver is assigned on a prescription by the patient or by another caregiver;</li>
-  <li>when the caregiver starts an execution and the resource was not already created;</li>
+  <li>when a caregiver is assigned on a prescription by the patient or by another caregiver.</li>
+  <li>when the caregiver starts an execution and the resource was not already created.</li>
   <li>when the caregiver completes an execution without a prior assignation or start (a shortcut).</li>
 </ul>
 
@@ -621,7 +621,7 @@ The example below shows a prescription with three assignments:</p>
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

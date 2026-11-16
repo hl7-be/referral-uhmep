@@ -5,7 +5,7 @@
 
 ## Migration 2.1.0 to 3.0.0
 
-This page collects the integration checks for moving from release 2.1.0 to 3.0.0. It complements the [release notes](changes.md), the generated profiles and the operation pages; it does not replace INAMI/RIZIV business requirements.
+This page collects the integration checks for moving from release 2.1.0 to 3.0.0. It complements the [release notes](changes.md), the generated profiles and the operation pages. It does not replace INAMI/RIZIV business requirements.
 
 ### Release Boundaries
 
@@ -21,12 +21,12 @@ The checks below describe the current 3.0.0 artefacts and the changes recorded i
 
 | | | |
 | :--- | :--- | :--- |
-| Nursing prescription type | `category[prescriptionType]`is`1..1`, with one coding and a required binding to the nursing technical-type ValueSet. | Make the template coding explicit; validate every nursing template used by the client. |
+| Nursing prescription type | `category[prescriptionType]`is`1..1`, with one coding and a required binding to the nursing technical-type ValueSet. | Make the template coding explicit. Validate every nursing template used by the client. |
 | Diagnostic-imaging prescription type | `category[prescriptionType]`is`1..1`. | Populate the prescribed imaging template rather than relying on inference. |
 | Annex 81 technical type | `category[annex81TechnicalType]`is`1..1`. | Revalidate proposal and approval fixtures against the Annex 81 profile, not the generic nursing profile. |
 | Nursing and diagnostic-imaging reason | `reasonCode`is`1..1`in both profiles. | Check generators that omit the reason or send multiple reasons. If the reason is patient-specific free text, retain its pseudonymization metadata. |
-| Radiology track and urgency | Track is`ambulatory`,`inpatient`or`urgency`;`priority = urgent`requires an urgency justification. | Keep track and priority separate in the client model; an urgency track is not a substitute for the priority field. |
-| Contained radiology resources | The diagnostic-imaging profile requires the contained patient and safety checklist, with local references. | Resolve`subject`and checklist references inside the same resource; revalidate the contained questionnaire response. |
+| Radiology track and urgency | Track is`ambulatory`,`inpatient`or`urgency`.`priority = urgent`requires an urgency justification. | Keep track and priority separate in the client model. An urgency track is not a substitute for the priority field. |
+| Contained radiology resources | The diagnostic-imaging profile requires the contained patient and safety checklist, with local references. | Resolve`subject`and checklist references inside the same resource. Revalidate the contained questionnaire response. |
 | Profile declaration | Use the eReferral target profile or an explicitly configured legacy DRP mapping. | Check[Profile Rewriting](topic-profile-rewriting.md), including the exact Annex 81 identifier. URL rewriting does not repair payload content. |
 | Organization-scoped actor references | Follow the documented`PractitionerRole`identifier and`Task.basedOn`conventions. | Recheck requester/owner references and the organization-task link in M2M fixtures. This is a compatibility check, not a claim that the identifier convention is newly introduced in 3.0.0. |
 
@@ -34,15 +34,15 @@ Cardinalities and terminology bindings are defined by the generated profiles, no
 
 ### Radiology Operation Matrix
 
-This matrix focuses on migration-sensitive paths. It is not a complete authorization matrix: the [Access Matrix](operation-access-matrix.md), privacy checks, assignment ownership and operation-specific preconditions still apply. Business prescription states are not literal values for `ServiceRequest.status`; see the [status mapping](topic-prescription-lifecycle.md#business-status--fhir-status-mapping).
+This matrix focuses on migration-sensitive paths. It is not a complete authorization matrix: the [Access Matrix](operation-access-matrix.md), privacy checks, assignment ownership and operation-specific preconditions still apply. Business prescription states are not literal values for `ServiceRequest.status`. See the [status mapping](topic-prescription-lifecycle.md#business-status--fhir-status-mapping).
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
-| Remove assignment | Ambulatory | Patient, Caregiver or Organization, subject to removal rights | Prescription`READY`or`IN_PROGRESS`; task`ready`or`in-progress` | Assignment is removed; prescription returns to`READY`. Dependent assignments can also be affected. |
+| Remove assignment | Ambulatory | Patient, Caregiver or Organization, subject to removal rights | Prescription`READY`or`IN_PROGRESS`. Task`ready`or`in-progress` | Assignment is removed. Prescription returns to`READY`. Dependent assignments can also be affected. |
 | Remove assignment | Inpatient | Any caller | Do not reuse the ambulatory exception | Radiology track guard rejects assignment removal. |
 | Remove assignment | Urgency | Any caller | Do not reuse the ambulatory exception | Radiology track guard rejects assignment removal. |
-| Complete an existing execution | Ambulatory | Caregiver or Organization | Prescription`IN_PROGRESS`; caregiver task`in-progress` | Caregiver execution and radiology prescription become completed. |
-| Complete an existing execution | Inpatient | Caregiver or Organization | Prescription`IN_PROGRESS`; caregiver task`in-progress`, with applicable organization linkage | Caregiver execution and radiology prescription become completed. |
+| Complete an existing execution | Ambulatory | Caregiver or Organization | Prescription`IN_PROGRESS`. Caregiver task`in-progress` | Caregiver execution and radiology prescription become completed. |
+| Complete an existing execution | Inpatient | Caregiver or Organization | Prescription`IN_PROGRESS`. Caregiver task`in-progress`, with applicable organization linkage | Caregiver execution and radiology prescription become completed. |
 | Complete an existing execution | Urgency | Caregiver or Organization | The documented exception also permits prescription`READY`without an already-started caregiver task | The backend starts the caregiver activity when necessary, then completes it and the prescription. |
 | Patient cancellation | Ambulatory | Patient | Prescription`PENDING`or`READY` | Prescription becomes canceled. |
 | Patient cancellation | Inpatient | Patient | Prescription`PENDING`or`READY` | Prescription becomes canceled. |
@@ -70,7 +70,7 @@ DELETE /Task/{executionID}
 | `BeReferralTask.status` | `in-progress` | `ready`according to the documented business-state projection |
 | Removed execution task | `status = in-progress` | Assignment deleted, not changed to`cancelled` |
 
-The unchanged `ServiceRequest.status` does not mean that no workflow transition occurred. Refresh the referral task and assignment list. Do not use the removed assignment as an active execution identifier; [Unassign a Care Provider](operation-unassign-care-provider.md) describes the operation.
+The unchanged `ServiceRequest.status` does not mean that no workflow transition occurred. Refresh the referral task and assignment list. Do not use the removed assignment as an active execution identifier. [Unassign a Care Provider](operation-unassign-care-provider.md) describes the operation.
 
 #### Urgency Completion from Ready
 
@@ -80,8 +80,8 @@ Example: an organization completes an existing urgency-track caregiver execution
 | :--- | :--- | :--- |
 | Prescription business state | `READY` | `COMPLETED` |
 | `ServiceRequest.status` | `active` | `completed` |
-| Existing caregiver execution | Not yet started, for example task`ready` | Task`completed`; the backend starts the activity if necessary before finishing it |
-| Global referral task and dates | Current server values | Read back the aggregate task and execution dates; do not infer them solely from the submitted end date |
+| Existing caregiver execution | Not yet started, for example task`ready` | Task`completed`. The backend starts the activity if necessary before finishing it |
+| Global referral task and dates | Current server values | Read back the aggregate task and execution dates. Do not infer them solely from the submitted end date |
 
 This exception is specific to the urgency track. It does not establish a general right to complete an ambulatory or inpatient prescription directly from `READY`, nor does it mean the client must issue a separate start request for this existing-task path.
 
@@ -112,7 +112,7 @@ Example: the patient cancels their own radiology prescription in business state 
 | `ServiceRequest.status` | `active` | `revoked` |
 | `BeReferralTask.status` | `ready` | `cancelled`according to the documented business-state projection |
 
-Requery the server after the operation. Do not infer the final state of every related performer or organization task from the prescription status alone. The same documented patient-cancellation permission also covers `PENDING`; other prescription types retain their own rules.
+Requery the server after the operation. Do not infer the final state of every related performer or organization task from the prescription status alone. The same documented patient-cancellation permission also covers `PENDING`. Other prescription types retain their own rules.
 
 ### Terminology and Validation Baseline
 
@@ -120,10 +120,10 @@ Requery the server after the operation. Do not infer the final state of every re
 | :--- | :--- | :--- |
 | FHIR | R4,`4.0.1` | Use an R4 validator and the target profile set. |
 | Local IG | `inami.fhir.be.ereferral#3.0.0` | Pin a tested build for reproducible integration tests. |
-| DRP parent | `be.smals.fhir.drp-fix`, version`1.1.1`; configured dependency`current$drp-1.1.1-fixed` | The branch alias is mutable. Record the resolved package version, build date and package checksum used for testing. |
+| DRP parent | `be.smals.fhir.drp-fix`, version`1.1.1`. Configured dependency`current$drp-1.1.1-fixed` | The branch alias is mutable. Record the resolved package version, build date and package checksum used for testing. |
 | Belgian dependencies | Core`2.2.0`, Core Clinical`1.3.0`, INFSEC`1.3.0` | Keep validator dependencies aligned with the package under test. |
 | Requested diagnostic-imaging procedure | Current profile has a required binding to the SNOMED-based local procedure ValueSet. | The presence of PSS/QSI or hybrid artefacts in the package does not itself permit PSS/QSI codes in`ServiceRequest.code`. |
-| Patient-condition indication | Preferred binding plus local constraints in the diagnostic-imaging profile. | Review both the binding and applicable invariants; do not assume the preferred binding overrides a stricter invariant. |
+| Patient-condition indication | Preferred binding plus local constraints in the diagnostic-imaging profile. | Review both the binding and applicable invariants. Do not assume the preferred binding overrides a stricter invariant. |
 | SNOMED edition | Must match the coded content and the terminology service used by the target environment. | An international-edition validation failure does not alone establish that a Belgian-extension code is invalid. Confirm edition/version support before changing codes. |
 | Demonstrative terminology | The homepage disclaimer distinguishes example artefacts from the future operational terminology package. | Package conformance is not evidence that every coded service is operationally supported by the API or reimbursable. |
 
@@ -133,15 +133,15 @@ Do not silently remove or replace clinical codes to eliminate QA errors. Confirm
 
 | | |
 | :--- | :--- |
-| Exact legacy profile mappings | Test each of the three configured DRP sources and the corresponding eReferral target. Test an unconfigured URL separately; it must not be assumed to receive the same rewrite. |
+| Exact legacy profile mappings | Test each of the three configured DRP sources and the corresponding eReferral target. Test an unconfigured URL separately. It must not be assumed to receive the same rewrite. |
 | Required elements | Validate representative nursing, Annex 81 and imaging fixtures. Include omitted template category, absent reason and excessive reason cardinality as negative profile tests. |
-| Track versus priority | Cover all three tracks independently of`priority`; test an urgent request without urgency justification. |
+| Track versus priority | Cover all three tracks independently of`priority`. Test an urgent request without urgency justification. |
 | Ambulatory removal | Cover the documented`READY`/`IN_PROGRESS`prescription and`ready`/`in-progress`task cases, then read back the referral task and assignments. |
-| Other-track removal | Verify rejection on inpatient and urgency tracks; capture the actual OperationOutcome and applicable error-code entry. |
+| Other-track removal | Verify rejection on inpatient and urgency tracks. Capture the actual OperationOutcome and applicable error-code entry. |
 | Urgency completion | Cover the existing-task path from`READY`, the normal in-progress path and valid execution dates. Test POST shortcuts separately. |
 | Patient cancellation | Test an authorized patient in`PENDING`and`READY`, a different patient and a state outside those documented permissions. Confirm errors against the operation contract rather than inventing HTTP statuses. |
-| Organization and internal professional | Exercise the organization-scoped actor reference, parent organization task and access checks; include an incoherent`basedOn`reference. |
-| Privacy | Verify pseudonymized identifiers, encrypted free text and matching key references; never substitute real patient data into public fixtures. |
-| Terminology | Test with the target edition and package versions; distinguish invalid codes from unavailable terminology validation. |
+| Organization and internal professional | Exercise the organization-scoped actor reference, parent organization task and access checks. Include an incoherent`basedOn`reference. |
+| Privacy | Verify pseudonymized identifiers, encrypted free text and matching key references. Never substitute real patient data into public fixtures. |
+| Terminology | Test with the target edition and package versions. Distinguish invalid codes from unavailable terminology validation. |
 | Retry and concurrent updates | Record behavior when an execution is already completed, an assignment was removed or the resource changes between reads. No new retry/idempotency guarantee is established by this page. |
 

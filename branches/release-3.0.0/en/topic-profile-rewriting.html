@@ -342,8 +342,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>If a supported eHealth DRP profile is found:</p>
 
 <ol>
-  <li>the eHealth DRP profile URL is removed from <code class="language-plaintext highlighter-rouge">ServiceRequest.meta.profile</code>;</li>
-  <li>the corresponding eReferral profile URL is added to <code class="language-plaintext highlighter-rouge">ServiceRequest.meta.profile</code>;</li>
+  <li>the eHealth DRP profile URL is removed from <code class="language-plaintext highlighter-rouge">ServiceRequest.meta.profile</code>.</li>
+  <li>the corresponding eReferral profile URL is added to <code class="language-plaintext highlighter-rouge">ServiceRequest.meta.profile</code>.</li>
   <li>the resource is then processed and validated as an eReferral resource.</li>
 </ol>
 
@@ -393,7 +393,7 @@ against the current profiles and correct validation errors before deployment.</p
 
 <p>Existing nursing integrations may continue to use a supported legacy URL, but should progressively
 migrate to the NIHDI/RIZIV-INAMI canonical URL for new development. Radiology integrations must use
-resources conforming to the current NIHDI/RIZIV-INAMI diagnostic imaging profile; URL rewriting does
+resources conforming to the current NIHDI/RIZIV-INAMI diagnostic imaging profile. URL rewriting does
 not provide compatibility for a resource that fails that profile’s constraints.</p>
 
 
@@ -443,7 +443,7 @@ not provide compatibility for a resource that fails that profile’s constraints
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

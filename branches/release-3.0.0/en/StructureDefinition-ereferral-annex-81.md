@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81 | *Version*:3.0.0 |
-| Active as of 2026-11-13 | *Computable Name*:EReferralAnnex81 |
+| Active as of 2026-11-16 | *Computable Name*:EReferralAnnex81 |
 
  
 Annex81 proposal and approval 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-annex-8
   "version" : "3.0.0",
   "name" : "EReferralAnnex81",
   "status" : "active",
-  "date" : "2026-11-13T14:59:56+00:00",
+  "date" : "2026-11-16T08:01:16+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

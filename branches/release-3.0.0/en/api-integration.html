@@ -318,9 +318,8 @@ headers (<code class="language-plaintext highlighter-rouge">User-Agent</code>, <
 
 <h3 id="access-control">Access Control</h3>
 
-<p>eReferral applies several layers of access control before processing a request. Full detail — roles,
-the INAMI access matrix, suspension effects, and search-filter access control — is on the
-<a href="operation-access-matrix.html">Access Matrix</a> page.</p>
+<p>The <a href="operation-access-matrix.html">Access Matrix</a> page describes access-control roles, the INAMI access
+matrix, suspension effects and search-filter access control.</p>
 
 <table>
   <thead>
@@ -474,7 +473,7 @@ references:</p>
 eReferral rejects resources where encrypted free text has no matching key or where key usage is ambiguous.</p>
 
 <p>The encryption mechanism itself (how the <code class="language-plaintext highlighter-rouge">{encrypted-text}</code> value is produced) is performed by the
-eHealth Pseudonymization service; see the <a href="technical.html#encryption">Technical – Encryption</a> page.</p>
+eHealth Pseudonymization service. See the <a href="technical.html#encryption">Technical – Encryption</a> page.</p>
 
 <h3 id="common-validations">Common Validations</h3>
 
@@ -541,21 +540,22 @@ eHealth Pseudonymization service; see the <a href="technical.html#encryption">Te
   <li>If <code class="language-plaintext highlighter-rouge">validity.start</code> is empty, it is auto-filled with the <code class="language-plaintext highlighter-rouge">authoredOn</code> date (converted to <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code>).</li>
   <li>The maximum <code class="language-plaintext highlighter-rouge">validity.end</code> depends on the template family
 (see <a href="topic-prescription-templates.html#validity-end-rules-per-template">Prescription Templates – Validity-End Rules</a>):
-standard nursing = <code class="language-plaintext highlighter-rouge">validity.start</code> + 2 years − 1 day; 1-year templates = <code class="language-plaintext highlighter-rouge">validity.start</code> + 1 year;
-end-of-year templates = 31 December of the <code class="language-plaintext highlighter-rouge">validity.start</code> year.</li>
+For standard nursing, the maximum is <code class="language-plaintext highlighter-rouge">validity.start</code> + 2 years − 1 day. For 1-year templates,
+it is <code class="language-plaintext highlighter-rouge">validity.start</code> + 1 year. For end-of-year templates, it is 31 December of the
+<code class="language-plaintext highlighter-rouge">validity.start</code> year.</li>
   <li>Logic: <code class="language-plaintext highlighter-rouge">validity.start &lt;= validity.end &lt;= latest</code> and <code class="language-plaintext highlighter-rouge">validity.end</code> (and <code class="language-plaintext highlighter-rouge">latest</code>) must be <code class="language-plaintext highlighter-rouge">&gt; authoredOn</code>.</li>
   <li>The <code class="language-plaintext highlighter-rouge">TreatmentValidityEndDate</code> (<code class="language-plaintext highlighter-rouge">extension[latest]</code>) is computed and set automatically by the
-backend; for the first nursing iteration, prescribers cannot submit this value themselves
+backend. For the first nursing iteration, prescribers cannot submit this value themselves
 (the extension is closed with cardinality <code class="language-plaintext highlighter-rouge">0..0</code> on <code class="language-plaintext highlighter-rouge">eReferralServiceRequestNursing</code>).</li>
 </ul>
 
 <p><strong>Execution dates (<code class="language-plaintext highlighter-rouge">Task.executionPeriod</code>)</strong></p>
 
 <ul>
-  <li>Execution dates must not be in the future; they may be in the past (for retroactive administrative work).</li>
+  <li>Execution dates must not be in the future. They may be in the past (for retroactive administrative work).</li>
   <li>If <code class="language-plaintext highlighter-rouge">executionPeriod.start</code> is in the past:
     <ul>
-      <li>when <code class="language-plaintext highlighter-rouge">authoredOn &lt;= validity.start</code>, it cannot be before <code class="language-plaintext highlighter-rouge">authoredOn</code>;</li>
+      <li>when <code class="language-plaintext highlighter-rouge">authoredOn &lt;= validity.start</code>, it cannot be before <code class="language-plaintext highlighter-rouge">authoredOn</code>.</li>
       <li>when <code class="language-plaintext highlighter-rouge">validity.start &lt; authoredOn</code>, it cannot be before <code class="language-plaintext highlighter-rouge">validity.start</code>.</li>
     </ul>
   </li>
@@ -679,7 +679,7 @@ IG. See <a href="error-codes.html">Error Codes</a> for workbook contents and fil
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

@@ -5,7 +5,7 @@
 
 ## Prescription Templates
 
-This page catalogues the prescription **templates** supported by eReferral, the technical identifier used to recognize each one, the FHIR profile to use, and the template-dependent validity rules. Templates follow INAMI’s referral-prescription requirements and must be known to eReferral; an unknown template is rejected.
+This page catalogues the prescription **templates** supported by eReferral, the technical identifier used to recognize each one, the FHIR profile to use, and the template-dependent validity rules. Templates follow INAMI’s referral-prescription requirements and must be known to eReferral. An unknown template is rejected.
 
 Integrators are responsible for using the right profile for the prescription they want to create.
 
@@ -51,7 +51,7 @@ The per-template business field mappings (with the concrete `code`, `orderDetail
 
 ### Coding Examples
 
-**Nursing** — “Diabetes education via convention center” as `eReferralServiceRequestNursing`:
+**Nursing**: “Diabetes education via convention center” as `eReferralServiceRequestNursing`:
 
 | | | |
 | :--- | :--- | :--- |
@@ -60,7 +60,7 @@ The per-template business field mappings (with the concrete `code`, `orderDetail
 | `category[discipline]` | `9632001` | `http://snomed.info/sct` |
 | `category[prescriptionType]` | `diabetic-education-convention-center` | `…/be-cs-prescription-type` |
 
-**Annex 81** — as `eReferralAnnex81`:
+**Annex 81**: as `eReferralAnnex81`:
 
 | | | |
 | :--- | :--- | :--- |
@@ -68,7 +68,7 @@ The per-template business field mappings (with the concrete `code`, `orderDetail
 | `category[discipline]` | `9632001` | `http://snomed.info/sct` |
 | `category[annex81TechnicalType]` | `medication-prefill-preparation-appendix-81` | `…/be-cs-prescription-type` |
 
-**Radiology** — as `eReferralServiceRequestDiagnosticImaging`:
+**Radiology**: as `eReferralServiceRequestDiagnosticImaging`:
 
 | | | |
 | :--- | :--- | :--- |

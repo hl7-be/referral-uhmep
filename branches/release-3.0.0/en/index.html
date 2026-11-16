@@ -348,7 +348,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <summary><strong>Impacts for integrators</strong></summary>
       <ul>
         <li>Review FHIR package dependencies and update IG configurations, validators and build pipelines to the published Referral package and its required versions.</li>
-        <li>Review inherited profiles, extensions, terminology bindings and constraints against the final DRP-to-Referral mapping; do not assume that migration is only a package rename.</li>
+        <li>Review inherited profiles, extensions, terminology bindings and constraints against the final DRP-to-Referral mapping. Do not assume that migration is only a package rename.</li>
         <li>Update affected profile declarations, extension URLs and other canonical references in resource generation, validation rules, mappings and examples where required by that mapping.</li>
         <li>Revalidate representative nursing and radiology payloads and rerun integration and regression tests against the target release.</li>
         <li>Assess handling of existing DRP-based resources and exchanges with partners still using DRP. Acceptance of legacy references and any coexistence period are not yet confirmed.</li>
@@ -362,7 +362,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <details>
       <summary><strong>Impacts for integrators</strong></summary>
       <ul>
-        <li>Inventory affected canonical references, including <code>meta.profile</code>, extension <code>url</code> values, profile inheritance and terminology references. Change only URLs covered by the final mapping; other namespaces are not automatically affected.</li>
+        <li>Inventory affected canonical references, including <code>meta.profile</code>, extension <code>url</code> values, profile inheritance and terminology references. Change only URLs covered by the final mapping. Other namespaces are not automatically affected.</li>
         <li>Update hard-coded URL comparisons, configuration, mappings, generated clients, examples and test fixtures that depend on the current canonical base.</li>
         <li>Reload the target packages in validators and canonical resolvers, review caches and verify that the new URLs resolve to the intended artefact versions.</li>
         <li>For affected CodeSystems, assess the impact on <code>Coding.system</code>, persisted coded data and terminology services. Do not bulk-rewrite historical resources without an agreed migration policy.</li>
@@ -591,7 +591,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

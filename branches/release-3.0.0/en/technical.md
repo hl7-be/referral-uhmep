@@ -36,7 +36,7 @@ Referenced eHealth platform documents (these versions or any later ones may be u
 | [Pseudonymization REST](https://ehealth.fgov.be/ehealthplatform/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/c6094d06e6a7b74d2e3c1a8c93cce78acb2d6359/pseudonymisation-rest-v1-9-1.pdf) | 1.0 | 2023-04-04 | eHealth platform |
 | [Identity & Authorization Management (IAM) eXchange](https://ehealth.fgov.be/ehealthplatform/file/cc73d96153bbd5448a56f19d925d05b1379c7f21/0517c18466c48701d37b6e06c01188fa1b452571/iam-exchange-technical-specifications-v1-3.pdf) | 1.1 | 2024-06-28 | eHealth platform |
 
-The FHIR resources used by eReferral are defined in the HL7 Belgium implementation guide artifacts. This IG rewrites the federal `Be*` referral profiles to local `eReferral*` profiles (see [Profile Rewriting](topic-profile-rewriting.md)); the federal source profiles are the `BeReferralServiceRequest*`, `BeReferralTask`, `BePerformerTask`, `BeOrganizationTask`, `BePractitionerRole`, and `BePractitioner` structure definitions.
+The FHIR resources used by eReferral are defined in the HL7 Belgium implementation guide artifacts. This IG rewrites the federal `Be*` referral profiles to local `eReferral*` profiles (see [Profile Rewriting](topic-profile-rewriting.md)). The federal source profiles are the `BeReferralServiceRequest*`, `BeReferralTask`, `BePerformerTask`, `BeOrganizationTask`, `BePractitionerRole`, and `BePractitioner` structure definitions.
 
 ### Support
 

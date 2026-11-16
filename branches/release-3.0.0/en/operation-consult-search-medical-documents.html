@@ -380,7 +380,7 @@ Content-Type: application/x-www-form-urlencoded
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">status</code></td>
-      <td>Filter by FHIR <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code>; translate from business status first.</td>
+      <td>Filter by FHIR <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code>. Translate from business status first.</td>
       <td>Active</td>
     </tr>
     <tr>
@@ -519,13 +519,13 @@ identifier={shortCode}&amp;patient=urn%3Abe%3Afgov%3Apseudo%3Av2%3A%7BSEC1%7D%3A
   <li>The <code class="language-plaintext highlighter-rouge">referenceId</code> must exist in eReferral.</li>
   <li>When searching by short code + patient SSIN, the system replaces any <code class="language-plaintext highlighter-rouge">O</code>/<code class="language-plaintext highlighter-rouge">o</code> with <code class="language-plaintext highlighter-rouge">0</code> to prevent
 checksum failures.</li>
-  <li>Blacklisted prescriptions are returned only when they have at least one execution; cancelled
+  <li>Blacklisted prescriptions are returned only when they have at least one execution. Cancelled
 prescriptions are strictly restricted (caregivers are blocked). See
 <a href="topic-visibility-blacklisting.html">Visibility &amp; Blacklisting</a>.</li>
   <li>(Prescriber) if suspended, only prescriptions they created are visible.</li>
   <li>(Caregiver) if suspended, only prescriptions they are assigned on or work on are visible.</li>
   <li>(Patient) only prescriptions where they are the subject are visible.</li>
-  <li>Search-filter access control depends on the role — see the
+  <li>Search-filter access control depends on the role: see the
 <a href="operation-access-matrix.html#search-filter-access-control">Access Matrix</a>.</li>
 </ul>
 
@@ -590,7 +590,7 @@ endpoint. See <a href="error-codes.html">Error Codes</a> for workbook guidance.<
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

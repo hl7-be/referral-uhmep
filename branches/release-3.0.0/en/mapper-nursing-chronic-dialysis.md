@@ -20,9 +20,9 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |   |   |   |
 | Discipline |   |   |   |
 | Validity period |   |   | Business validity of the prescription. |
-| Patient |   |   | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |   |   | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |   |   | Reference to the prescribing practitioner role. |
-| Diagnosis | … | String | Required in business template. Free text diagnosis; must be encrypted with a pseudonymized key. |
+| Diagnosis | … | String | Required in business template. Free text diagnosis. Must be encrypted with a pseudonymized key. |
 | Frequency |   |   | Required in business template. Timing repeat block. |
 | - Number of repetitions | … times per | Integer | Number of repetitions per period. |
 | - Time unit | - Day- Week- Month | Enum |   |
@@ -30,10 +30,10 @@ This table maps the business fields to the corresponding FHIR elements.
 | - Duration | … | Integer | Duration value. |
 | - Time unit | - Day(s)- Week(s)- Month | Enum |   |
 | Number of sessions (max) | … | Integer | Required in business template. Total number of planned sessions. |
-| Medical reason | … (field becomes mandatory when frequency is more than once per day) | String | Medical reason; coded value when available, otherwise pseudonymized text. |
-| Contraindications | … | String | Free text; must be encrypted with a pseudonymized key. |
-| General remarks | … | String | Free text; must be encrypted with a pseudonymized key. |
-| Medical reason | … | String | Medical reason; coded value when available, otherwise pseudonymized text. |
+| Medical reason | … (field becomes mandatory when frequency is more than once per day) | String | Medical reason. Coded value when available, otherwise pseudonymized text. |
+| Contraindications | … | String | Free text. Must be encrypted with a pseudonymized key. |
+| General remarks | … | String | Free text. Must be encrypted with a pseudonymized key. |
+| Medical reason | … | String | Medical reason. Coded value when available, otherwise pseudonymized text. |
 | Feedback required | - Yes- No | Boolean | Required in business template.`be-ext-feedback-to-prescriber`. |
 | Validity start date | Today (default) | Date | Required in business template.`be-ext-validity-period`. |
 

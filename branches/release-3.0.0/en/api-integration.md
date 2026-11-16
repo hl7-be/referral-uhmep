@@ -24,7 +24,7 @@ To obtain an exchanged token, the integrator must hold a valid eHealth platform 
 
 ### Access Control
 
-eReferral applies several layers of access control before processing a request. Full detail — roles, the INAMI access matrix, suspension effects, and search-filter access control — is on the [Access Matrix](operation-access-matrix.md) page.
+The [Access Matrix](operation-access-matrix.md) page describes access-control roles, the INAMI access matrix, suspension effects and search-filter access control.
 
 | | |
 | :--- | :--- |
@@ -124,7 +124,7 @@ The encryption key is carried once in `ServiceRequest.meta` using `be-ext-key-ps
 
 All encrypted free-text fields in the same resource must refer to this matching key identifier. eReferral rejects resources where encrypted free text has no matching key or where key usage is ambiguous.
 
-The encryption mechanism itself (how the `{encrypted-text}` value is produced) is performed by the eHealth Pseudonymization service; see the [Technical – Encryption](technical.md#encryption) page.
+The encryption mechanism itself (how the `{encrypted-text}` value is produced) is performed by the eHealth Pseudonymization service. See the [Technical – Encryption](technical.md#encryption) page.
 
 ### Common Validations
 
@@ -153,15 +153,15 @@ This section centralizes the date rules referenced by the operation pages.
 
 * `validity.start` may be at most 5 days before `authoredOn`.
 * If `validity.start` is empty, it is auto-filled with the `authoredOn` date (converted to `YYYY-MM-DD`).
-* The maximum `validity.end` depends on the template family (see [Prescription Templates – Validity-End Rules](topic-prescription-templates.md#validity-end-rules-per-template)): standard nursing = `validity.start` + 2 years − 1 day; 1-year templates = `validity.start` + 1 year; end-of-year templates = 31 December of the `validity.start` year.
+* The maximum `validity.end` depends on the template family (see [Prescription Templates – Validity-End Rules](topic-prescription-templates.md#validity-end-rules-per-template)): For standard nursing, the maximum is `validity.start` + 2 years − 1 day. For 1-year templates, it is `validity.start` + 1 year. For end-of-year templates, it is 31 December of the `validity.start` year.
 * Logic: `validity.start <= validity.end <= latest` and `validity.end` (and `latest`) must be `> authoredOn`.
-* The `TreatmentValidityEndDate` (`extension[latest]`) is computed and set automatically by the backend; for the first nursing iteration, prescribers cannot submit this value themselves (the extension is closed with cardinality `0..0` on `eReferralServiceRequestNursing`).
+* The `TreatmentValidityEndDate` (`extension[latest]`) is computed and set automatically by the backend. For the first nursing iteration, prescribers cannot submit this value themselves (the extension is closed with cardinality `0..0` on `eReferralServiceRequestNursing`).
 
 **Execution dates (`Task.executionPeriod`)**
 
-* Execution dates must not be in the future; they may be in the past (for retroactive administrative work).
+* Execution dates must not be in the future. They may be in the past (for retroactive administrative work).
 * If `executionPeriod.start` is in the past: 
-* when `authoredOn <= validity.start`, it cannot be before `authoredOn`;
+* when `authoredOn <= validity.start`, it cannot be before `authoredOn`.
 * when `validity.start < authoredOn`, it cannot be before `validity.start`.
  
 * `executionPeriod.start <= executionPeriod.end` and `executionPeriod.end <= validity.latest`.

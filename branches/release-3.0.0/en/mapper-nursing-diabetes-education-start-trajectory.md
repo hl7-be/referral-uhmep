@@ -20,12 +20,12 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |   |   |   |
 | Discipline |   |   |   |
 | Validity period |   |   | Business validity of the prescription. |
-| Patient |   |   | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |   |   | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |   |   | Reference to the prescribing practitioner role. |
 | Educator type | - Home nurse- Diabetes educator | List |   |
 | Session type | - Individual session (30 min)- Group session (2 hours) | Enum | or be-vs-session-type-extended. |
 | Number of sessions (max) | - … (max. 4 educational services per year)- (choice from 1 to 4, with 4 as the default value) | Integer | Required in business template. Total number of planned sessions. |
-| General remarks | … | String | Free text; must be encrypted with a pseudonymized key. |
+| General remarks | … | String | Free text. Must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes- No (par defaut) | Boolean | Required in business template.`be-ext-feedback-to-prescriber`. |
 | Prescription validity |   |   | `be-ext-validity-period`. |
 | - Start date | Today (default, max. January 1 of the next calendar year) | Date | Required in business template. Start of prescription validity. |

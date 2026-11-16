@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role | *Version*:3.0.0 |
-| Draft as of 2026-11-13 | *Computable Name*:BeCSRadiologySupportingInfoRole |
+| Draft as of 2026-11-16 | *Computable Name*:BeCSRadiologySupportingInfoRole |
 
  
 Identifies the role represented by an entry in ServiceRequest.supportingInfo for a diagnostic imaging referral. 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "eReferral Radiology SupportingInfo Role CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-13T14:59:56+00:00",
+  "date" : "2026-11-16T08:01:16+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

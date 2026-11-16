@@ -326,7 +326,7 @@ Prescriber.
 
 The errors for this operation are listed in the [eReferral API Error Codes workbook](UHMEP_API_ErrorCodes_20260723.xlsx). Filter the **Business Operations** or **API endpoint(s)** sheet for the relevant operation or endpoint. See [Error Codes](error-codes.md) for workbook guidance.
 
-On **approve**, the backend: (1) sets the proposal to `completed`; (2) sets the evaluation `BePerformerTask` to `completed`; (3) creates a valid prescription and assigns the caregiver who authored the original proposal.
+On **approve**, the backend completes the proposal and its evaluation `BePerformerTask`. It then creates a valid prescription and assigns the caregiver who authored the original proposal to it.
 
 ### Sequence
 

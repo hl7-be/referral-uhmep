@@ -288,8 +288,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#2026-10-28---v300-release--radiology-workflow-improvements" id="markdown-toc-2026-10-28---v300-release--radiology-workflow-improvements"><strong>2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements</strong></a></li>
-  <li><a href="#2026-09-02--v210-release-validation-radiology-tracks-and-security--fhir-r4" id="markdown-toc-2026-09-02--v210-release-validation-radiology-tracks-and-security--fhir-r4"><strong>2026-09-02 — v2.1.0 Release: Validation, Radiology Tracks, and Security — FHIR R4</strong></a></li>
-  <li><a href="#2026-08-05--v200-release-ereferral-referral-prescription-stu1--fhir-r4" id="markdown-toc-2026-08-05--v200-release-ereferral-referral-prescription-stu1--fhir-r4"><strong>2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4</strong></a></li>
+  <li><a href="#2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4" id="markdown-toc-2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4"><strong>2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)</strong></a></li>
+  <li><a href="#2026-08-05-v200-release-ereferral-referral-prescription-stu1-fhir-r4" id="markdown-toc-2026-08-05-v200-release-ereferral-referral-prescription-stu1-fhir-r4"><strong>2026-08-05: v2.0.0 Release: eReferral Referral Prescription (STU1, FHIR R4)</strong></a></li>
 </ul>
 
 </div>
@@ -334,7 +334,7 @@ and adds examples for the updated PSS/QSI radiology terminology.</p>
 
 <hr />
 
-<h3 id="2026-09-02--v210-release-validation-radiology-tracks-and-security--fhir-r4"><strong>2026-09-02 — v2.1.0 Release: Validation, Radiology Tracks, and Security — FHIR R4</strong></h3>
+<h3 id="2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4"><strong>2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)</strong></h3>
 
 <p>This release aligns gateway validation with the NIHDI/RIZIV-INAMI profiles, introduces
 track-dependent radiology workflow management, and strengthens security and execution
@@ -380,14 +380,14 @@ tracing requirements.</li>
 
   <p>The Implementation Guide remains the single authoritative source for supported workflows, FHIR
 structures, profiles, validation rules, and integration examples. The retired PDF Cookbook must
-not be used as the reference for new development. This consolidation was introduced in v2.0.0;
+not be used as the reference for new development. This consolidation was introduced in v2.0.0.
 v2.1.0 reinforces the migration recommendation without duplicating the Cookbook content.</p>
 
 </details>
 
 <hr />
 
-<h3 id="2026-08-05--v200-release-ereferral-referral-prescription-stu1--fhir-r4"><strong>2026-08-05 — v2.0.0 Release: eReferral Referral Prescription (STU1) — FHIR R4</strong></h3>
+<h3 id="2026-08-05-v200-release-ereferral-referral-prescription-stu1-fhir-r4"><strong>2026-08-05: v2.0.0 Release: eReferral Referral Prescription (STU1, FHIR R4)</strong></h3>
 
 <p>This release makes the Implementation Guide the single source of truth for eReferral integration.
 It adds nursing and radiology profiles and mappings, expands machine-to-machine workflows, and
@@ -410,31 +410,31 @@ documents the API’s security, access-control, and operational requirements.</p
   <h5 id="mapping-tables">Mapping tables</h5>
   <p>Field-by-field mapping tables have been added for every prescription type, showing exactly how business concepts map to FHIR:</p>
   <ul>
-    <li><a href="mapper-nursing-generic.html">Nursing — Generic</a></li>
-    <li><a href="mapper-nursing-annex81-medication-preparation.html">Nursing — Medication Preparation (Annex 81)</a></li>
-    <li><a href="mapper-nursing-bloodletting.html">Nursing — Bloodletting</a></li>
-    <li><a href="mapper-nursing-chronic-dialysis.html">Nursing — Chronic Dialysis</a></li>
-    <li><a href="mapper-nursing-glycemic-test.html">Nursing — Glycemic Test</a></li>
-    <li><a href="mapper-nursing-hygienic-care.html">Nursing — Hygienic Care</a></li>
-    <li><a href="mapper-nursing-medication-prefill-not-refunded.html">Nursing — Medication Prefill (not refunded)</a></li>
-    <li><a href="mapper-nursing-sampling.html">Nursing — Sampling</a></li>
-    <li><a href="mapper-nursing-diabetes-education-start-trajectory.html">Nursing — Diabetes Education</a> (multiple variants)</li>
+    <li><a href="mapper-nursing-generic.html">Nursing: Generic</a></li>
+    <li><a href="mapper-nursing-annex81-medication-preparation.html">Nursing: Medication Preparation (Annex 81)</a></li>
+    <li><a href="mapper-nursing-bloodletting.html">Nursing: Bloodletting</a></li>
+    <li><a href="mapper-nursing-chronic-dialysis.html">Nursing: Chronic Dialysis</a></li>
+    <li><a href="mapper-nursing-glycemic-test.html">Nursing: Glycemic Test</a></li>
+    <li><a href="mapper-nursing-hygienic-care.html">Nursing: Hygienic Care</a></li>
+    <li><a href="mapper-nursing-medication-prefill-not-refunded.html">Nursing: Medication Prefill (not refunded)</a></li>
+    <li><a href="mapper-nursing-sampling.html">Nursing: Sampling</a></li>
+    <li><a href="mapper-nursing-diabetes-education-start-trajectory.html">Nursing: Diabetes Education</a> (multiple variants)</li>
   </ul>
 
   <h4 id="radiology-diagnostic-imaging-support">Radiology (Diagnostic Imaging) support</h4>
   <h5 id="profiling-1">Profiling</h5>
   <p>New profiles and operations enable prescription and management of radiology exams:</p>
   <ul>
-    <li><a href="StructureDefinition-ereferral-servicerequest-diagnosticimaging.html">eReferral Service Request — Diagnostic Imaging</a></li>
+    <li><a href="StructureDefinition-ereferral-servicerequest-diagnosticimaging.html">eReferral Service Request: Diagnostic Imaging</a></li>
     <li><a href="StructureDefinition-ereferral-imaging-attention-conditions-response.html">eReferral Imaging Attention Conditions Response</a></li>
   </ul>
 
   <h5 id="new-radiology-specific-operations">New radiology-specific operations</h5>
   <p>Three new operations handle specific parts of radiology prescription workflows:</p>
   <ol>
-    <li><strong>Accept a Radiology Prescription</strong> — confirms the requested exam and readiness to perform the exam</li>
-    <li><strong>Substitute a Radiology Exam</strong> — replaces the exam (e.g., CT instead of X-ray)</li>
-    <li><strong>Refuse a Radiology Exam</strong> — declines to perform the requested exam</li>
+    <li><strong>Accept a Radiology Prescription</strong>: confirms the requested exam and readiness to perform the exam</li>
+    <li><strong>Substitute a Radiology Exam</strong>: replaces the exam (e.g., CT instead of X-ray)</li>
+    <li><strong>Refuse a Radiology Exam</strong>: declines to perform the requested exam</li>
   </ol>
 
   <h5 id="mapping-tables-for-integrators">Mapping tables for integrators</h5>
@@ -446,17 +446,17 @@ documents the API’s security, access-control, and operational requirements.</p
   <h4 id="machine-to-machine-m2m-integration">Machine-to-Machine (M2M) integration</h4>
   <p>The following operations have been expanded to support M2M workflows:</p>
   <ol>
-    <li><strong><a href="operation-create-medical-document.html">Create Medical Document</a></strong> — now supports creation of a medical document, prescription or proposal, by an internal professional of an organization</li>
-    <li><strong><a href="operation-assign-care-provider.html">Assign Care Provider</a></strong> — expanded to:
+    <li><strong><a href="operation-create-medical-document.html">Create Medical Document</a></strong>: now supports creation of a medical document, prescription or proposal, by an internal professional of an organization</li>
+    <li><strong><a href="operation-assign-care-provider.html">Assign Care Provider</a></strong>: expanded to:
       <ul>
         <li>Assign to an organization (<code class="language-plaintext highlighter-rouge">BeOrganizationTask</code>)</li>
         <li>Assign to an internal professional within an organization (<code class="language-plaintext highlighter-rouge">BePerformerTask</code>)</li>
       </ul>
     </li>
-    <li><strong><a href="operation-record-execution-start.html">Record Execution Start</a></strong> — now supports initiation by an internal professional of an organization via POST</li>
-    <li><strong><a href="operation-unassign-care-provider.html">Unassign Care Provider</a></strong> — operation to withdraw assignments of an organization or internal professional from a prescription</li>
-    <li><strong><a href="operation-evaluate-proposal.html">Evaluate Proposal</a></strong> — now supports evaluation by an internal professional of an organization</li>
-    <li><strong><a href="operation-evaluate-radiology-prescription.html">Evaluate Radiology Prescription</a></strong> — supports evaluation by an internal professional of an organization</li>
+    <li><strong><a href="operation-record-execution-start.html">Record Execution Start</a></strong>: now supports initiation by an internal professional of an organization via POST</li>
+    <li><strong><a href="operation-unassign-care-provider.html">Unassign Care Provider</a></strong>: operation to withdraw assignments of an organization or internal professional from a prescription</li>
+    <li><strong><a href="operation-evaluate-proposal.html">Evaluate Proposal</a></strong>: now supports evaluation by an internal professional of an organization</li>
+    <li><strong><a href="operation-evaluate-radiology-prescription.html">Evaluate Radiology Prescription</a></strong>: supports evaluation by an internal professional of an organization</li>
   </ol>
 
   <h4 id="security--privacy">Security &amp; privacy</h4>
@@ -468,12 +468,12 @@ documents the API’s security, access-control, and operational requirements.</p
 
   <h4 id="reference-materials">Reference materials</h4>
   <ul>
-    <li><strong><a href="api-integration.html">API Integration</a></strong> — authentication, headers, request/response structure</li>
-    <li><strong><a href="api-operations.html">API Operations</a></strong> — overview of all available operations</li>
-    <li><strong><a href="technical.html">Technical</a></strong> — entry points, support contacts, certificates</li>
-    <li><strong><a href="operation-access-matrix.html">Access Control Matrix</a></strong> — which roles can perform which operations</li>
-    <li><strong><a href="error-codes.html">Error Codes</a></strong> — complete error catalogue and troubleshooting</li>
-    <li><strong><a href="topic-visibility-blacklisting.html">Visibility &amp; Blacklisting</a></strong> — data filtering rules</li>
+    <li><strong><a href="api-integration.html">API Integration</a></strong>: authentication, headers, request/response structure</li>
+    <li><strong><a href="api-operations.html">API Operations</a></strong>: overview of all available operations</li>
+    <li><strong><a href="technical.html">Technical</a></strong>: entry points, support contacts, certificates</li>
+    <li><strong><a href="operation-access-matrix.html">Access Control Matrix</a></strong>: which roles can perform which operations</li>
+    <li><strong><a href="error-codes.html">Error Codes</a></strong>: complete error catalogue and troubleshooting</li>
+    <li><strong><a href="topic-visibility-blacklisting.html">Visibility &amp; Blacklisting</a></strong>: data filtering rules</li>
   </ul>
 
 </details>
@@ -525,7 +525,7 @@ documents the API’s security, access-control, and operational requirements.</p
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

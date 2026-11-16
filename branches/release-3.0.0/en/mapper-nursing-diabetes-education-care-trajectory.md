@@ -20,7 +20,7 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |   |   |   |
 | Discipline |   |   |   |
 | Validity period |   |   | Business validity of the prescription. |
-| Patient |   |   | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |   |   | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |   |   | Reference to the prescribing practitioner role. |
 | Recommended education | - Information about the disease and a healthy lifestyle- Follow-up for a patient who does not move to self-management- Start of insulin or GLP-1 agonist treatment- Additional education for HbA1c > 7.5- Additional education when moving from 1 to 2 injections- Education for patient on oral treatment- Educational material- Use of blood glucose meter | Enum |   |
 | This field appears when “Recommended education” = “Use of blood glucose meter” |   |   |   |
@@ -28,7 +28,7 @@ This table maps the business fields to the corresponding FHIR elements.
 | Session type | - Individual session (30 min)- Group session (2 hours)- Combination | Enum | or be-vs-session-type-extended. |
 | This field appears when “Session type” = “Individual session (30 min)” |   |   |   |
 | Number of sessions (max) | - First five sessions- Five additional sessions | Enum | Required in business template. Total number of planned sessions. |
-| General remarks | … | String | Free text; must be encrypted with a pseudonymized key. |
+| General remarks | … | String | Free text. Must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes- No | Boolean | Required in business template.`be-ext-feedback-to-prescriber`. |
 | Prescription validity |   |   | `be-ext-validity-period`. |
 | - Start date | Today (default, max. January 1 of the next calendar year) | Date | Required in business template. Start of prescription validity. |

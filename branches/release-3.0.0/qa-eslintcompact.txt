@@ -142,4 +142,4 @@ Generic: line 0, col 0, Warning - The html source is not well formed: Found "</d
 /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-ereferral-vs-imaging-patient-condition-indication.json: line 0, col 0, Info - The value set expansion is too large, and only a subset has been displayed (INFORMATIONAL)
 
 err = 25, warn = 60, info = 54, broken links = 0
-IG Publisher Version: 3.0.3
+IG Publisher Version: 3.0.4

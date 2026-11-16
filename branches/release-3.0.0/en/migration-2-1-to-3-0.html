@@ -296,7 +296,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>This page collects the integration checks for moving from release 2.1.0 to 3.0.0. It complements the <a href="changes.html">release notes</a>, the generated profiles and the operation pages; it does not replace INAMI/RIZIV business requirements.</p>
+<p>This page collects the integration checks for moving from release 2.1.0 to 3.0.0. It complements the <a href="changes.html">release notes</a>, the generated profiles and the operation pages. It does not replace INAMI/RIZIV business requirements.</p>
 
 <h3 id="release-boundaries">Release Boundaries</h3>
 
@@ -339,7 +339,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>Nursing prescription type</td>
       <td><code class="language-plaintext highlighter-rouge">category[prescriptionType]</code> is <code class="language-plaintext highlighter-rouge">1..1</code>, with one coding and a required binding to the nursing technical-type ValueSet.</td>
-      <td>Make the template coding explicit; validate every nursing template used by the client.</td>
+      <td>Make the template coding explicit. Validate every nursing template used by the client.</td>
     </tr>
     <tr>
       <td>Diagnostic-imaging prescription type</td>
@@ -358,13 +358,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Radiology track and urgency</td>
-      <td>Track is <code class="language-plaintext highlighter-rouge">ambulatory</code>, <code class="language-plaintext highlighter-rouge">inpatient</code> or <code class="language-plaintext highlighter-rouge">urgency</code>; <code class="language-plaintext highlighter-rouge">priority = urgent</code> requires an urgency justification.</td>
-      <td>Keep track and priority separate in the client model; an urgency track is not a substitute for the priority field.</td>
+      <td>Track is <code class="language-plaintext highlighter-rouge">ambulatory</code>, <code class="language-plaintext highlighter-rouge">inpatient</code> or <code class="language-plaintext highlighter-rouge">urgency</code>. <code class="language-plaintext highlighter-rouge">priority = urgent</code> requires an urgency justification.</td>
+      <td>Keep track and priority separate in the client model. An urgency track is not a substitute for the priority field.</td>
     </tr>
     <tr>
       <td>Contained radiology resources</td>
       <td>The diagnostic-imaging profile requires the contained patient and safety checklist, with local references.</td>
-      <td>Resolve <code class="language-plaintext highlighter-rouge">subject</code> and checklist references inside the same resource; revalidate the contained questionnaire response.</td>
+      <td>Resolve <code class="language-plaintext highlighter-rouge">subject</code> and checklist references inside the same resource. Revalidate the contained questionnaire response.</td>
     </tr>
     <tr>
       <td>Profile declaration</td>
@@ -383,7 +383,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="radiology-operation-matrix">Radiology Operation Matrix</h3>
 
-<p>This matrix focuses on migration-sensitive paths. It is not a complete authorization matrix: the <a href="operation-access-matrix.html">Access Matrix</a>, privacy checks, assignment ownership and operation-specific preconditions still apply. Business prescription states are not literal values for <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code>; see the <a href="topic-prescription-lifecycle.html#business-status--fhir-status-mapping">status mapping</a>.</p>
+<p>This matrix focuses on migration-sensitive paths. It is not a complete authorization matrix: the <a href="operation-access-matrix.html">Access Matrix</a>, privacy checks, assignment ownership and operation-specific preconditions still apply. Business prescription states are not literal values for <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code>. See the <a href="topic-prescription-lifecycle.html#business-status--fhir-status-mapping">status mapping</a>.</p>
 
 <table>
   <thead>
@@ -400,8 +400,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Remove assignment</td>
       <td>Ambulatory</td>
       <td>Patient, Caregiver or Organization, subject to removal rights</td>
-      <td>Prescription <code class="language-plaintext highlighter-rouge">READY</code> or <code class="language-plaintext highlighter-rouge">IN_PROGRESS</code>; task <code class="language-plaintext highlighter-rouge">ready</code> or <code class="language-plaintext highlighter-rouge">in-progress</code></td>
-      <td>Assignment is removed; prescription returns to <code class="language-plaintext highlighter-rouge">READY</code>. Dependent assignments can also be affected.</td>
+      <td>Prescription <code class="language-plaintext highlighter-rouge">READY</code> or <code class="language-plaintext highlighter-rouge">IN_PROGRESS</code>. Task <code class="language-plaintext highlighter-rouge">ready</code> or <code class="language-plaintext highlighter-rouge">in-progress</code></td>
+      <td>Assignment is removed. Prescription returns to <code class="language-plaintext highlighter-rouge">READY</code>. Dependent assignments can also be affected.</td>
     </tr>
     <tr>
       <td>Remove assignment</td>
@@ -421,14 +421,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Complete an existing execution</td>
       <td>Ambulatory</td>
       <td>Caregiver or Organization</td>
-      <td>Prescription <code class="language-plaintext highlighter-rouge">IN_PROGRESS</code>; caregiver task <code class="language-plaintext highlighter-rouge">in-progress</code></td>
+      <td>Prescription <code class="language-plaintext highlighter-rouge">IN_PROGRESS</code>. Caregiver task <code class="language-plaintext highlighter-rouge">in-progress</code></td>
       <td>Caregiver execution and radiology prescription become completed.</td>
     </tr>
     <tr>
       <td>Complete an existing execution</td>
       <td>Inpatient</td>
       <td>Caregiver or Organization</td>
-      <td>Prescription <code class="language-plaintext highlighter-rouge">IN_PROGRESS</code>; caregiver task <code class="language-plaintext highlighter-rouge">in-progress</code>, with applicable organization linkage</td>
+      <td>Prescription <code class="language-plaintext highlighter-rouge">IN_PROGRESS</code>. Caregiver task <code class="language-plaintext highlighter-rouge">in-progress</code>, with applicable organization linkage</td>
       <td>Caregiver execution and radiology prescription become completed.</td>
     </tr>
     <tr>
@@ -507,7 +507,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>The unchanged <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code> does not mean that no workflow transition occurred. Refresh the referral task and assignment list. Do not use the removed assignment as an active execution identifier; <a href="operation-unassign-care-provider.html">Unassign a Care Provider</a> describes the operation.</p>
+<p>The unchanged <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code> does not mean that no workflow transition occurred. Refresh the referral task and assignment list. Do not use the removed assignment as an active execution identifier. <a href="operation-unassign-care-provider.html">Unassign a Care Provider</a> describes the operation.</p>
 
 <h4 id="urgency-completion-from-ready">Urgency Completion from Ready</h4>
 
@@ -535,12 +535,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>Existing caregiver execution</td>
       <td>Not yet started, for example task <code class="language-plaintext highlighter-rouge">ready</code></td>
-      <td>Task <code class="language-plaintext highlighter-rouge">completed</code>; the backend starts the activity if necessary before finishing it</td>
+      <td>Task <code class="language-plaintext highlighter-rouge">completed</code>. The backend starts the activity if necessary before finishing it</td>
     </tr>
     <tr>
       <td>Global referral task and dates</td>
       <td>Current server values</td>
-      <td>Read back the aggregate task and execution dates; do not infer them solely from the submitted end date</td>
+      <td>Read back the aggregate task and execution dates. Do not infer them solely from the submitted end date</td>
     </tr>
   </tbody>
 </table>
@@ -593,7 +593,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Requery the server after the operation. Do not infer the final state of every related performer or organization task from the prescription status alone. The same documented patient-cancellation permission also covers <code class="language-plaintext highlighter-rouge">PENDING</code>; other prescription types retain their own rules.</p>
+<p>Requery the server after the operation. Do not infer the final state of every related performer or organization task from the prescription status alone. The same documented patient-cancellation permission also covers <code class="language-plaintext highlighter-rouge">PENDING</code>. Other prescription types retain their own rules.</p>
 
 <h3 id="terminology-and-validation-baseline">Terminology and Validation Baseline</h3>
 
@@ -618,7 +618,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>DRP parent</td>
-      <td><code class="language-plaintext highlighter-rouge">be.smals.fhir.drp-fix</code>, version <code class="language-plaintext highlighter-rouge">1.1.1</code>; configured dependency <code class="language-plaintext highlighter-rouge">current$drp-1.1.1-fixed</code></td>
+      <td><code class="language-plaintext highlighter-rouge">be.smals.fhir.drp-fix</code>, version <code class="language-plaintext highlighter-rouge">1.1.1</code>. Configured dependency <code class="language-plaintext highlighter-rouge">current$drp-1.1.1-fixed</code></td>
       <td>The branch alias is mutable. Record the resolved package version, build date and package checksum used for testing.</td>
     </tr>
     <tr>
@@ -634,7 +634,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>Patient-condition indication</td>
       <td>Preferred binding plus local constraints in the diagnostic-imaging profile.</td>
-      <td>Review both the binding and applicable invariants; do not assume the preferred binding overrides a stricter invariant.</td>
+      <td>Review both the binding and applicable invariants. Do not assume the preferred binding overrides a stricter invariant.</td>
     </tr>
     <tr>
       <td>SNOMED edition</td>
@@ -663,7 +663,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody>
     <tr>
       <td>Exact legacy profile mappings</td>
-      <td>Test each of the three configured DRP sources and the corresponding eReferral target. Test an unconfigured URL separately; it must not be assumed to receive the same rewrite.</td>
+      <td>Test each of the three configured DRP sources and the corresponding eReferral target. Test an unconfigured URL separately. It must not be assumed to receive the same rewrite.</td>
     </tr>
     <tr>
       <td>Required elements</td>
@@ -671,7 +671,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Track versus priority</td>
-      <td>Cover all three tracks independently of <code class="language-plaintext highlighter-rouge">priority</code>; test an urgent request without urgency justification.</td>
+      <td>Cover all three tracks independently of <code class="language-plaintext highlighter-rouge">priority</code>. Test an urgent request without urgency justification.</td>
     </tr>
     <tr>
       <td>Ambulatory removal</td>
@@ -679,7 +679,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Other-track removal</td>
-      <td>Verify rejection on inpatient and urgency tracks; capture the actual OperationOutcome and applicable error-code entry.</td>
+      <td>Verify rejection on inpatient and urgency tracks. Capture the actual OperationOutcome and applicable error-code entry.</td>
     </tr>
     <tr>
       <td>Urgency completion</td>
@@ -691,15 +691,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Organization and internal professional</td>
-      <td>Exercise the organization-scoped actor reference, parent organization task and access checks; include an incoherent <code class="language-plaintext highlighter-rouge">basedOn</code> reference.</td>
+      <td>Exercise the organization-scoped actor reference, parent organization task and access checks. Include an incoherent <code class="language-plaintext highlighter-rouge">basedOn</code> reference.</td>
     </tr>
     <tr>
       <td>Privacy</td>
-      <td>Verify pseudonymized identifiers, encrypted free text and matching key references; never substitute real patient data into public fixtures.</td>
+      <td>Verify pseudonymized identifiers, encrypted free text and matching key references. Never substitute real patient data into public fixtures.</td>
     </tr>
     <tr>
       <td>Terminology</td>
-      <td>Test with the target edition and package versions; distinguish invalid codes from unavailable terminology validation.</td>
+      <td>Test with the target edition and package versions. Distinguish invalid codes from unavailable terminology validation.</td>
     </tr>
     <tr>
       <td>Retry and concurrent updates</td>
@@ -754,7 +754,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

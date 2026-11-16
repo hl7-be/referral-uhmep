@@ -333,7 +333,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Patient</td>
       <td> </td>
       <td> </td>
-      <td>SSIN identifier; value must follow pseudonymization rules.</td>
+      <td>SSIN identifier. Value must follow pseudonymization rules.</td>
     </tr>
     <tr>
       <td>Requester / prescriber</td>
@@ -357,7 +357,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Other:</td>
       <td>…</td>
       <td>String</td>
-      <td>Required in business template. Conditional free text for “other”; must be encrypted with a pseudonymized key.</td>
+      <td>Required in business template. Conditional free text for “other”. Must be encrypted with a pseudonymized key.</td>
     </tr>
     <tr>
       <td>Body location</td>
@@ -375,13 +375,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Body topography</td>
       <td>- Top<br />- Bottom<br />- Medial<br />- Lateral<br />- Superior<br />- Inferior<br />- Posterior/rear<br />- Anterior/front<br />- Below<br />- Above<br />- Internal<br />- External</td>
       <td>List</td>
-      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.bodySite.extension:topography</code> (<code class="language-plaintext highlighter-rouge">be-ext-body-topography</code>). Note: this extension’s formal FHIR context does not list <code class="language-plaintext highlighter-rouge">ServiceRequest.bodySite</code> explicitly (only <code class="language-plaintext highlighter-rouge">Condition</code>/<code class="language-plaintext highlighter-rouge">Observation</code>/<code class="language-plaintext highlighter-rouge">DeviceUseStatement</code>/<code class="language-plaintext highlighter-rouge">Procedure.bodySite</code>); to be validated against the IG Publisher build.</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest.bodySite.extension:topography</code> (<code class="language-plaintext highlighter-rouge">be-ext-body-topography</code>). Note: this extension’s formal FHIR context does not list <code class="language-plaintext highlighter-rouge">ServiceRequest.bodySite</code> explicitly (only <code class="language-plaintext highlighter-rouge">Condition</code>/<code class="language-plaintext highlighter-rouge">Observation</code>/<code class="language-plaintext highlighter-rouge">DeviceUseStatement</code>/<code class="language-plaintext highlighter-rouge">Procedure.bodySite</code>). To be validated against the IG Publisher build.</td>
     </tr>
     <tr>
       <td>Diagnosis</td>
       <td>…</td>
       <td>String</td>
-      <td>Required in business template. Free text diagnosis; must be encrypted with a pseudonymized key.</td>
+      <td>Required in business template. Free text diagnosis. Must be encrypted with a pseudonymized key.</td>
     </tr>
     <tr>
       <td>Sampling nature</td>
@@ -433,7 +433,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Number of sessions (max)</td>
-      <td>- …<br />- (if “sampling nature” = “single sampling”, the number of sessions is 1; otherwise, the number of sessions should be calculated automatically from the frequency and treatment period)</td>
+      <td>- …<br />- (if “sampling nature” = “single sampling”, the number of sessions is 1. Otherwise, the number of sessions should be calculated automatically from the frequency and treatment period)</td>
       <td>Integer</td>
       <td>Required in business template. Total number of planned sessions.</td>
     </tr>
@@ -441,19 +441,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Medical reason</td>
       <td>… (field becomes mandatory when frequency is more than once per day)</td>
       <td>String</td>
-      <td>Medical reason; coded value when available, otherwise pseudonymized text.</td>
+      <td>Medical reason. Coded value when available, otherwise pseudonymized text.</td>
     </tr>
     <tr>
       <td>Contraindications</td>
       <td>…</td>
       <td>String</td>
-      <td>Free text; must be encrypted with a pseudonymized key.</td>
+      <td>Free text. Must be encrypted with a pseudonymized key.</td>
     </tr>
     <tr>
       <td>General remarks</td>
       <td>…</td>
       <td>String</td>
-      <td>Free text; must be encrypted with a pseudonymized key.</td>
+      <td>Free text. Must be encrypted with a pseudonymized key.</td>
     </tr>
     <tr>
       <td>Feedback required</td>
@@ -691,7 +691,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-body-topography.html"><code>be-vs-body-topography</code></a> (preferred)</li><li>Note: this extension's declared FHIR context does not list <code>ServiceRequest.bodySite</code> explicitly (only <code>Condition</code>/<code>Observation</code>/<code>DeviceUseStatement</code>/<code>Procedure.bodySite</code>); to be validated against the IG Publisher build.</li></ul></td>
+      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-body-topography.html"><code>be-vs-body-topography</code></a> (preferred)</li><li>Note: this extension's declared FHIR context does not list <code>ServiceRequest.bodySite</code> explicitly (only <code>Condition</code>/<code>Observation</code>/<code>DeviceUseStatement</code>/<code>Procedure.bodySite</code>). To be validated against the IG Publisher build.</li></ul></td>
     </tr>
         <tr>
       <td>Diagnosis</td>
@@ -728,7 +728,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
         <tr>
       <td>Sampling nature</td>
-      <td>Coded field; mapping to be confirmed</td>
+      <td>Coded field. Mapping to be confirmed</td>
       <td></td>
       <td></td>
     </tr>
@@ -1004,7 +1004,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

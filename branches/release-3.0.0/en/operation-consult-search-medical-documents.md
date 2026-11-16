@@ -49,7 +49,7 @@ Search filters are submitted as `application/x-www-form-urlencoded` key-value pa
 | | | |
 | :--- | :--- | :--- |
 | `patient` | Filter by patient pseudonym in transit for the eReferral domain. | Active |
-| `status` | Filter by FHIR`ServiceRequest.status`; translate from business status first. | Active |
+| `status` | Filter by FHIR`ServiceRequest.status`. Translate from business status first. | Active |
 | `statusReason` | Filter by additional prescription status information. | Active |
 | `_has:Task:focus:status`with`_profile` | Filter by summary execution/referral-task status. | Active |
 | `requester` | Filter by prescriber. Organization-scoped requester references use`PractitionerRole/{SSIN}-{DISCIPLINE}-NIHII-{nihii11Organization}`. | Active |
@@ -122,11 +122,11 @@ Prescriber, Caregiver, Patient, Organization.
 
 * The `referenceId` must exist in eReferral.
 * When searching by short code + patient SSIN, the system replaces any `O`/`o` with `0` to prevent checksum failures.
-* Blacklisted prescriptions are returned only when they have at least one execution; cancelled prescriptions are strictly restricted (caregivers are blocked). See [Visibility & Blacklisting](topic-visibility-blacklisting.md).
+* Blacklisted prescriptions are returned only when they have at least one execution. Cancelled prescriptions are strictly restricted (caregivers are blocked). See [Visibility & Blacklisting](topic-visibility-blacklisting.md).
 * (Prescriber) if suspended, only prescriptions they created are visible.
 * (Caregiver) if suspended, only prescriptions they are assigned on or work on are visible.
 * (Patient) only prescriptions where they are the subject are visible.
-* Search-filter access control depends on the role — see the [Access Matrix](operation-access-matrix.md#search-filter-access-control).
+* Search-filter access control depends on the role: see the [Access Matrix](operation-access-matrix.md#search-filter-access-control).
 
 ### Possible Error Codes
 

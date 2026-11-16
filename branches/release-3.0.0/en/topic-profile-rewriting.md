@@ -33,8 +33,8 @@ When a request is received, the gateway inspects the resource profile declaratio
 
 If a supported eHealth DRP profile is found:
 
-1. the eHealth DRP profile URL is removed from`ServiceRequest.meta.profile`;
-1. the corresponding eReferral profile URL is added to`ServiceRequest.meta.profile`;
+1. the eHealth DRP profile URL is removed from`ServiceRequest.meta.profile`.
+1. the corresponding eReferral profile URL is added to`ServiceRequest.meta.profile`.
 1. the resource is then processed and validated as an eReferral resource.
 
 If the resource already declares the eReferral profile URL, no rewrite is needed for that profile. If the resource declares an unsupported profile URL, the gateway does not infer an eReferral profile from it.
@@ -83,5 +83,5 @@ Implementers sending resources directly to the eReferral API should preferably u
 
 Systems that log or audit incoming requests may record both values: the profile received at the gateway boundary and the profile used internally after rewriting.
 
-Existing nursing integrations may continue to use a supported legacy URL, but should progressively migrate to the NIHDI/RIZIV-INAMI canonical URL for new development. Radiology integrations must use resources conforming to the current NIHDI/RIZIV-INAMI diagnostic imaging profile; URL rewriting does not provide compatibility for a resource that fails that profile’s constraints.
+Existing nursing integrations may continue to use a supported legacy URL, but should progressively migrate to the NIHDI/RIZIV-INAMI canonical URL for new development. Radiology integrations must use resources conforming to the current NIHDI/RIZIV-INAMI diagnostic imaging profile. URL rewriting does not provide compatibility for a resource that fails that profile’s constraints.
 

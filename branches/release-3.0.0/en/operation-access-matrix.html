@@ -339,8 +339,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 action, the API evaluates:</p>
 
 <ol>
-  <li>the <strong>operation</strong> requested;</li>
-  <li>the <strong>prescription template type</strong> (defined by INAMI — see <a href="topic-prescription-templates.html">Prescription Templates</a>);</li>
+  <li>the <strong>operation</strong> requested.</li>
+  <li>the <strong>prescription template type</strong> (defined by INAMI: see <a href="topic-prescription-templates.html">Prescription Templates</a>).</li>
   <li>the <strong>discipline</strong> of the professional (from the token) or of the organization.</li>
 </ol>
 
@@ -353,14 +353,14 @@ the API returns <code class="language-plaintext highlighter-rouge">403 Forbidden
 still <strong>retroactively log work</strong> that was completed before their suspension date. When suspended:</p>
 
 <ul>
-  <li>certain operations are completely blocked;</li>
-  <li>others have modified behaviour (documented on the relevant operation pages);</li>
-  <li>a suspended prescriber can only see prescriptions they created; a suspended caregiver can only
+  <li>certain operations are completely blocked.</li>
+  <li>others have modified behaviour (documented on the relevant operation pages).</li>
+  <li>a suspended prescriber can only see prescriptions they created. A suspended caregiver can only
 see prescriptions on which they are assigned or work.</li>
 </ul>
 
-<p>In machine-to-machine (M2M) integrations, eReferral does not enforce these verifications — they
-are the responsibility of each organization.</p>
+<p>In machine-to-machine (M2M) integrations, eReferral does not enforce these verifications. Each
+organization is responsible for them.</p>
 
 <h3 id="search-filter-access-control">Search-Filter Access Control</h3>
 
@@ -461,19 +461,18 @@ has an access rule that depends on the connected user’s role.</p>
 <p>Rule meanings:</p>
 
 <ul>
-  <li><strong>Free</strong> — the filter may be used or ignored.</li>
-  <li><strong>Forbidden</strong> — the filter may not be used; using it returns <code class="language-plaintext highlighter-rouge">SEARCH_CRITERIA_NOT_ALLOWED</code>.</li>
-  <li><strong>Mandatory</strong> — the filter must be provided; otherwise <code class="language-plaintext highlighter-rouge">REQUIRED_SEARCH_CRITERIA_MISSING</code>.</li>
-  <li><strong>Partially Mandatory</strong> — at least one of the partially-mandatory filters must be used;
-otherwise <code class="language-plaintext highlighter-rouge">REQUIRED_SEARCH_CRITERIA_MISSING</code>.</li>
-  <li><strong>Partially Mandatory + Partial Token Verification</strong> — if <code class="language-plaintext highlighter-rouge">patient</code> is not provided, one of the
-partial-token-verification filters must match the connected user’s token; otherwise
+  <li><strong>Free:</strong> The filter may be used or ignored.</li>
+  <li><strong>Forbidden:</strong> The filter may not be used. Using it returns <code class="language-plaintext highlighter-rouge">SEARCH_CRITERIA_NOT_ALLOWED</code>.</li>
+  <li><strong>Mandatory:</strong> The filter must be provided. Otherwise <code class="language-plaintext highlighter-rouge">REQUIRED_SEARCH_CRITERIA_MISSING</code>.</li>
+  <li><strong>Partially Mandatory:</strong> At least one of the partially mandatory filters must be used. Otherwise <code class="language-plaintext highlighter-rouge">REQUIRED_SEARCH_CRITERIA_MISSING</code>.</li>
+  <li><strong>Partially Mandatory + Partial Token Verification:</strong> If <code class="language-plaintext highlighter-rouge">patient</code> is not provided, one of the
+partial-token-verification filters must match the connected user’s token. Otherwise
 <code class="language-plaintext highlighter-rouge">WRONG_REFERENCE_HEALTHCARE_PROFESSIONAL</code>. If <code class="language-plaintext highlighter-rouge">patient</code> <strong>is</strong> provided, no token-correspondence
 check is performed.</li>
 </ul>
 
 <p><strong>Example.</strong> 
-A prescriber searching without a <code class="language-plaintext highlighter-rouge">patient</code> filter must provide at least <code class="language-plaintext highlighter-rouge">requester</code> or <code class="language-plaintext highlighter-rouge">_has:Task:focus:owner=PractitionerRole/…</code>, and one of those must match their token; otherwise they receive <code class="language-plaintext highlighter-rouge">REQUIRED_SEARCH_CRITERIA_MISSING</code> or <code class="language-plaintext highlighter-rouge">WRONG_REFERENCE_HEALTHCARE_PROFESSIONAL</code>.</p>
+A prescriber searching without a <code class="language-plaintext highlighter-rouge">patient</code> filter must provide at least <code class="language-plaintext highlighter-rouge">requester</code> or <code class="language-plaintext highlighter-rouge">_has:Task:focus:owner=PractitionerRole/…</code>, and one of those must match their token. Otherwise they receive <code class="language-plaintext highlighter-rouge">REQUIRED_SEARCH_CRITERIA_MISSING</code> or <code class="language-plaintext highlighter-rouge">WRONG_REFERENCE_HEALTHCARE_PROFESSIONAL</code>.</p>
 
 
 
@@ -522,7 +521,7 @@ A prescriber searching without a <code class="language-plaintext highlighter-rou
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 13, 2026 14:59+0000">2026-11-13</span>
+          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">
