@@ -79,7 +79,7 @@ The required radiology track identifies the operational context of the prescript
 `ambulatory`, `inpatient`, or `urgency`. The gateway uses this value when applying the workflow's
 assignment and validation rules and when authorizing substitution, execution, or refusal actions.
 Integrators must preserve the selected track throughout the prescription lifecycle and may only
-submit operations permitted for that track. Track-dependent rules are enforced by the API; a FHIR
+submit operations permitted for that track. Track-dependent rules are enforced by the API. A FHIR
 resource being structurally valid does not by itself authorize an operation.
 
 The track is distinct from `ServiceRequest.priority`. In particular, the rule requiring an urgency

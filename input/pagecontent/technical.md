@@ -33,7 +33,7 @@ Referenced eHealth platform documents (these versions or any later ones may be u
 
 The FHIR resources used by eReferral are defined in the HL7 Belgium implementation guide artifacts.
 This IG rewrites the federal `Be*` referral profiles to local `eReferral*` profiles
-(see [Profile Rewriting](topic-profile-rewriting.html)); the federal source profiles are the
+(see [Profile Rewriting](topic-profile-rewriting.html)). The federal source profiles are the
 `BeReferralServiceRequest*`, `BeReferralTask`, `BePerformerTask`, `BeOrganizationTask`,
 `BePractitionerRole`, and `BePractitioner` structure definitions.
 

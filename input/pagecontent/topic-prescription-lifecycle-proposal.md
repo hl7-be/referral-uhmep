@@ -17,7 +17,7 @@ The workflow is based on a separation between:
 
 ---
 
-### Step 1 — Proposal Request (created by client)
+### Step 1: Proposal Request (created by client)
 
 <div style="text-align:center;">
   <img src="annex81-proposal-request.png" style="width:100%;"/>
@@ -39,7 +39,7 @@ This ensures the workflow can evolve without changing the original clinical requ
 
 ---
 
-### Step 2 — Proposal Assignment (performed by client)
+### Step 2: Proposal Assignment (performed by client)
 
 <div style="text-align:center;">
   <img src="annex81-proposal-assignment.png" style="width:100%;"/>
@@ -55,7 +55,7 @@ This assignment task represents who is responsible for reviewing/processing the 
 
 ---
 
-### Step 3 — Proposal Approval
+### Step 3: Proposal Approval
 
 <div style="text-align:center;">
   <img src="annex81-proposal-approval.png" style="width:100%;"/>
@@ -68,15 +68,15 @@ The API provides the dedicated [Evaluate Proposal](operation-evaluate-proposal.h
 
 When approval is performed:
 
-- the proposal workflow is completed and the evaluation `BePerformerTask` is completed;
-- a valid prescription is created and the caregiver who authored the original proposal is assigned;
+- the proposal workflow is completed and the evaluation `BePerformerTask` is completed.
+- a valid prescription is created and the caregiver who authored the original proposal is assigned.
 - the workflow tasks are updated consistently by the server (ReferralTask and PerformerTask status).
 
 Using the operation ensures the server can apply all workflow rules atomically and keep the resources consistent.
 
 ---
 
-### Step 4 — Proposal Rejection
+### Step 4: Proposal Rejection
 
 <div style="text-align:center;">
   <img src="annex81-proposal-rejection.png" style="width:100%;"/>
@@ -93,8 +93,8 @@ The API provides the same dedicated [Evaluate Proposal](operation-evaluate-propo
 
 When rejection is performed:
 
-- the proposal workflow is marked as completed (rejected outcome);
-- the `BePerformerTask` is updated to reflect the rejection;
+- the proposal workflow is marked as completed (rejected outcome).
+- the `BePerformerTask` is updated to reflect the rejection.
 - eReferral updates the status of the related resources accordingly.
 
 ---

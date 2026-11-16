@@ -24,7 +24,7 @@ prescription created by the prescriber** for its own validity period.
 
 The new ServiceRequest represents a new prescription to allow the **continuation of care**, covering a new validity period that follows on from the original prescription.
 
-It keeps the same patient, requester, and prescribed service as the original prescription; only the
+It keeps the same patient, requester, and prescribed service as the original prescription. Only the
 validity period (and any administrative details tied to that period) differ.
 
 ### Workflow Tracking
@@ -35,8 +35,8 @@ The ReferralTask references the **current active ServiceRequest** through the `T
 
 Creating a new ServiceRequest instead of modifying the original one provides several advantages:
 
-- preserves the **original clinical prescription** and its original validity period;
-- maintains a **clear audit trail** of successive extensions;
+- preserves the **original clinical prescription** and its original validity period.
+- maintains a **clear audit trail** of successive extensions.
 - avoids ambiguity about which validity period was in force when care was executed.
 
 This approach follows common FHIR workflow practices where continuation of care is represented  through **`replaces` relationships rather than in-place modification** of the validity period.

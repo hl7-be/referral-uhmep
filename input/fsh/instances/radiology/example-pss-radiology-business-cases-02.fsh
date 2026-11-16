@@ -9,10 +9,10 @@ Inputs and values used in this example:
 - Selected examination: chest X-ray
 - Procedure code (SNOMED): 399208008
 - Predefined examination: chest X-ray
-- Clinical context from Excel: previously diagnosed pneumonia, persistent fever despite antibiotics, continued cough, dyspnea and pleuritic chest pain; no immunodeficiency or known allergies; assess possible abscess, pleural effusion or empyema
+- Clinical context from Excel: previously diagnosed pneumonia, persistent fever despite antibiotics, continued cough, dyspnea and pleuritic chest pain. No immunodeficiency or known allergies. Assess possible abscess, pleural effusion or empyema
 
-Fictitious completions (not specified in Excel): date of birth 2008-04-12, PSS identifier PSS-RAD-002, prescription and validity dates, requester, ambulatory track and routine priority; not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
+Fictitious completions (not specified in Excel): date of birth 2008-04-12, PSS identifier PSS-RAD-002, prescription and validity dates, requester, ambulatory track and routine priority. Not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern.
+Clinical context is represented by encrypted placeholders in patientCondition.text and note.text. Date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
 Usage: #example
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-002)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications#3074085 "Pneumonia, complicated"

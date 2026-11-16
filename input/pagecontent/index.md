@@ -13,7 +13,7 @@ This implementation guide defines the local eReferral FHIR profiles, examples, m
       <summary><strong>Impacts for integrators</strong></summary>
       <ul>
         <li>Review FHIR package dependencies and update IG configurations, validators and build pipelines to the published Referral package and its required versions.</li>
-        <li>Review inherited profiles, extensions, terminology bindings and constraints against the final DRP-to-Referral mapping; do not assume that migration is only a package rename.</li>
+        <li>Review inherited profiles, extensions, terminology bindings and constraints against the final DRP-to-Referral mapping. Do not assume that migration is only a package rename.</li>
         <li>Update affected profile declarations, extension URLs and other canonical references in resource generation, validation rules, mappings and examples where required by that mapping.</li>
         <li>Revalidate representative nursing and radiology payloads and rerun integration and regression tests against the target release.</li>
         <li>Assess handling of existing DRP-based resources and exchanges with partners still using DRP. Acceptance of legacy references and any coexistence period are not yet confirmed.</li>
@@ -27,7 +27,7 @@ This implementation guide defines the local eReferral FHIR profiles, examples, m
     <details>
       <summary><strong>Impacts for integrators</strong></summary>
       <ul>
-        <li>Inventory affected canonical references, including <code>meta.profile</code>, extension <code>url</code> values, profile inheritance and terminology references. Change only URLs covered by the final mapping; other namespaces are not automatically affected.</li>
+        <li>Inventory affected canonical references, including <code>meta.profile</code>, extension <code>url</code> values, profile inheritance and terminology references. Change only URLs covered by the final mapping. Other namespaces are not automatically affected.</li>
         <li>Update hard-coded URL comparisons, configuration, mappings, generated clients, examples and test fixtures that depend on the current canonical base.</li>
         <li>Reload the target packages in validators and canonical resolvers, review caches and verify that the new URLs resolve to the intended artefact versions.</li>
         <li>For affected CodeSystems, assess the impact on <code>Coding.system</code>, persisted coded data and terminology services. Do not bulk-rewrite historical resources without an agreed migration policy.</li>

@@ -46,7 +46,7 @@ Search filters are submitted as `application/x-www-form-urlencoded` key-value pa
 | Filter | Purpose | Status |
 |----|----|----|
 | `patient` | Filter by patient pseudonym in transit for the eReferral domain. | Active |
-| `status` | Filter by FHIR `ServiceRequest.status`; translate from business status first. | Active |
+| `status` | Filter by FHIR `ServiceRequest.status`. Translate from business status first. | Active |
 | `statusReason` | Filter by additional prescription status information. | Active |
 | `_has:Task:focus:status` with `_profile` | Filter by summary execution/referral-task status. | Active |
 | `requester` | Filter by prescriber. Organization-scoped requester references use `PractitionerRole/{SSIN}-{DISCIPLINE}-NIHII-{nihii11Organization}`. | Active |
@@ -79,7 +79,7 @@ Use these operations when the prescription must be assigned to a healthcare prof
 
 | Business objective | Actors | Endpoint | Task profile | Success | Key integration notes |
 |----|----|----|----|----|----|
-| Remove an assignment | Patient<br>Caregiver<br>Organization | `DELETE /Task/{executionID}` | `BePerformerTask` or `BeOrganizationTask` | `204 No Content` | - For ambulatory radiology, allowed while the prescription is `READY` or `IN_PROGRESS` and the execution task is `ready` or `in-progress`; the prescription returns to `READY`.<br>- The task is deleted and cannot be reused.<br>- Internal performer assignments must remain coherent with the organization assignment they reference. |
+| Remove an assignment | Patient<br>Caregiver<br>Organization | `DELETE /Task/{executionID}` | `BePerformerTask` or `BeOrganizationTask` | `204 No Content` | - For ambulatory radiology, allowed while the prescription is `READY` or `IN_PROGRESS` and the execution task is `ready` or `in-progress`. The prescription returns to `READY`.<br>- The task is deleted and cannot be reused.<br>- Internal performer assignments must remain coherent with the organization assignment they reference. |
 
 
 ### Manage Execution Progress

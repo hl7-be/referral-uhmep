@@ -10,10 +10,10 @@ Inputs and values used in this example:
 - Procedure code (SNOMED): 241615005, using the Excel mapping for MR breast wo IV contrast without specified laterality
 - Predefined examination: none
 - Additional indication from Excel: evaluation of tumor size and extent before neoadjuvant chemotherapy
-- Clinical context from Excel: recent stage I breast cancer diagnosis, no bone pain, neurological or systemic symptoms, no prior cancer or known allergies; menopausal status and medication remain to be confirmed
+- Clinical context from Excel: recent stage I breast cancer diagnosis, no bone pain, neurological or systemic symptoms, no prior cancer or known allergies. Menopausal status and medication remain to be confirmed
 
-Fictitious completions (not specified in Excel): date of birth 1971-04-12, PSS identifier PSS-RAD-008, prescription and validity dates, requester, ambulatory track and routine priority; not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. Breast laterality is intentionally left unspecified, as in Excel.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 475."
+Fictitious completions (not specified in Excel): date of birth 1971-04-12, PSS identifier PSS-RAD-008, prescription and validity dates, requester, ambulatory track and routine priority. Not pregnant, no implants, diabetes, metallic debris or renal dysfunction and no other safety concern. Breast laterality is intentionally left unspecified, as in Excel.
+Clinical context is represented by encrypted placeholders in patientCondition.text and note.text. Date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx, row 475."
 Usage: #example
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-008)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications#3100690 "Breast cancer, stage I, asymptomatic, r/o bone mets, initial exam"

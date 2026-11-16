@@ -309,9 +309,8 @@ Prescriber.
 
 {% include error-codes-reference.md %}
 
-On **approve**, the backend: (1) sets the proposal to `completed`; (2) sets the evaluation
-`BePerformerTask` to `completed`; (3) creates a valid prescription and assigns the caregiver who
-authored the original proposal.
+On **approve**, the backend completes the proposal and its evaluation `BePerformerTask`. It then
+creates a valid prescription and assigns the caregiver who authored the original proposal to it.
 
 ### Sequence
 

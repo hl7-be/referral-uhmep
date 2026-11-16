@@ -14,7 +14,7 @@ Some prescriptions in the **Blacklisted** status are not returned.
 
 A prescription can be blacklisted:
 
-- at creation, because the prescriber was suspended (see [Suspension](operation-access-matrix.html#suspension)); or
+- at creation, because the prescriber was suspended (see [Suspension](operation-access-matrix.html#suspension)). Or
 - after creation, by a retroactive script run by eReferral when a prescriber suspension is
   received some days after creation. Only prescriptions created during the prescriber's suspension
   period are blacklisted.
@@ -24,8 +24,8 @@ Depending on the prescription's status when the blacklisting script runs, the be
 | Status when blacklisted | Behaviour |
 | --- | --- |
 | Draft, Ready, Cancelled, Expired | Prescription is blacklisted and **not returned** (a specific consultation returns an error). |
-| In Progress | Prescription is blacklisted; all `in-progress` executions are changed to **Interrupted**; the prescription **is returned**. |
-| Inactive, Completed | Prescription is blacklisted; the prescription **is returned**. |
+| In Progress | Prescription is blacklisted. All `in-progress` executions are changed to **Interrupted**. The prescription **is returned**. |
+| Inactive, Completed | Prescription is blacklisted. The prescription **is returned**. |
 
 **Summary:** a Blacklisted prescription is returned only if it has one or more executions. If it
 has nothing, or only assignations, it is not returned.
@@ -42,5 +42,5 @@ strictly restricted to ensure confidentiality:
 | Caregiver | Cannot see cancelled prescriptions. |
 
 For cancelled **proposals**, the caregiver visibility differs (a caregiver can see a cancelled
-proposal only if they are its original requester); see
+proposal only if they are its original requester). See
 [API Integration – Visibility Rules](api-integration.html#visibility-rules).

@@ -9,10 +9,10 @@ Inputs and values used in this example:
 - Selected examination: non-contrast CT of the head
 - Procedure code (SNOMED): 383371000119108
 - Initially predefined examination: MR angiography of the head with or without IV contrast
-- Clinical context from Excel: new headaches during pregnancy; no prior chronic headache, migraine, trauma, neurological disorder or known allergies; assess blood pressure, preeclampsia and neurological warning signs
+- Clinical context from Excel: new headaches during pregnancy. No prior chronic headache, migraine, trauma, neurological disorder or known allergies. Assess blood pressure, preeclampsia and neurological warning signs
 
-Fictitious completions (not specified in Excel): date of birth 2006-04-12, PSS identifier PSS-RAD-004, prescription and validity dates, requester, ambulatory track and routine priority; no implants, diabetes, metallic debris or renal dysfunction and no other safety concern beyond the documented pregnancy. Fictitious examination rationale: the prescriber selects non-contrast head CT for this illustrative scenario; this is not clinical guidance.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
+Fictitious completions (not specified in Excel): date of birth 2006-04-12, PSS identifier PSS-RAD-004, prescription and validity dates, requester, ambulatory track and routine priority. No implants, diabetes, metallic debris or renal dysfunction and no other safety concern beyond the documented pregnancy. Fictitious examination rationale: the prescriber selects non-contrast head CT for this illustrative scenario. This is not clinical guidance.
+Clinical context is represented by encrypted placeholders in patientCondition.text and note.text. Date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
 Usage: #example
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-004)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications#3074258 "Headache, new (pregnant)"

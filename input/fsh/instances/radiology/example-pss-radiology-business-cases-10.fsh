@@ -9,10 +9,10 @@ Inputs and values used in this example:
 - Selected examination: CT of the head with contrast
 - Procedure code (SNOMED): 711232001
 - Predefined examination: none
-- Clinical context from Excel: recent tongue and facial weakness with dysarthria, dysphagia or tongue deviation to be assessed; assess facial distribution and associated neurological symptoms; no known neurological disease, recent trauma or surgery, stroke, TIA, neuromuscular disease, allergies, recent infection or vaccination
+- Clinical context from Excel: recent tongue and facial weakness with dysarthria, dysphagia or tongue deviation to be assessed. Assess facial distribution and associated neurological symptoms. No known neurological disease, recent trauma or surgery, stroke, TIA, neuromuscular disease, allergies, recent infection or vaccination
 
-Fictitious completions (not specified in Excel): date of birth 1989-04-12, PSS identifier PSS-RAD-010, prescription and validity dates, requester, ambulatory track and routine priority; no implants, pregnancy, diabetes, metallic debris or renal dysfunction and no other safety concern.
-Clinical context is represented by encrypted placeholders in patientCondition.text and note.text; date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
+Fictitious completions (not specified in Excel): date of birth 1989-04-12, PSS identifier PSS-RAD-010, prescription and validity dates, requester, ambulatory track and routine priority. No implants, pregnancy, diabetes, metallic debris or renal dysfunction and no other safety concern.
+Clinical context is represented by encrypted placeholders in patientCondition.text and note.text. Date of birth and sex at birth remain encrypted. Placeholders are illustrative, not real encrypted patient data. Procedure coding follows Exam List processed.xlsx."
 Usage: #example
 * insert PSSRadiologyBusinessCaseDetails(PSS-RAD-010)
 * supportingInfo[patientCondition].extension[patientConditionCodeableConcept].valueCodeableConcept.coding[0] = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications#3106878 "Tongue weakness"

@@ -13,12 +13,12 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |  |  |  |
 | Discipline |  |  |  |
 | Validity period |  |  | Business validity of the prescription. |
-| Patient |  |  | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |  |  | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |  |  | Reference to the prescribing practitioner role. |
 | Parameter type | - Blood pressure while lying down<br>- Blood pressure while standing<br>- Heart rate<br>- Oxygen saturation<br>- Temperature<br>- Respiratory rate<br>- Stool frequency<br>- Weight<br>- Diuresis<br>- Visual analogue pain scale<br>- Pain type<br>- Stool control<br>- Other | Enum |  |
 | This field appears when "Parameter type" = "Other" |  |  |  |
-| Other: | ... | String | Required in business template. Conditional free text for "other"; must be encrypted with a pseudonymized key. |
-| Diagnosis | ... | String | Required in business template. Free text diagnosis; must be encrypted with a pseudonymized key. |
+| Other: | ... | String | Required in business template. Conditional free text for "other". Must be encrypted with a pseudonymized key. |
+| Diagnosis | ... | String | Required in business template. Free text diagnosis. Must be encrypted with a pseudonymized key. |
 | Time of day | - Avant le repas<br>- Apres le repas<br>- Entre les repas<br>- Matin<br>- Midi<br>- Apres-midi<br>- Soir<br>- Nuit | List | Required in business template. `ServiceRequest.occurrenceTiming.repeat.when` (FHIR EventTiming codes). |
 | Frequency |  |  | Required in business template. Timing repeat block. |
 | - Number of repetitions | ... times per | Integer | Number of repetitions per period. |
@@ -27,9 +27,9 @@ This table maps the business fields to the corresponding FHIR elements.
 | - Duration | ... | Integer | Duration value. |
 | - Time unit | - Day<br>- Week<br>- Month<br>- Year(s) | Enum |  |
 | Number of sessions (max) | ... | Integer | Required in business template. Total number of planned sessions. |
-| Medical reason | ... (field becomes mandatory when frequency is more than once per day) | String | Medical reason; coded value when available, otherwise pseudonymized text. |
-| Contraindications | ... | String | Free text; must be encrypted with a pseudonymized key. |
-| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
+| Medical reason | ... (field becomes mandatory when frequency is more than once per day) | String | Medical reason. Coded value when available, otherwise pseudonymized text. |
+| Contraindications | ... | String | Free text. Must be encrypted with a pseudonymized key. |
+| General remarks | ... | String | Free text. Must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes<br>- No | Boolean | Required in business template. `be-ext-feedback-to-prescriber`. |
 | Validity start date | Today (default) | Date | Required in business template. `be-ext-validity-period`. |
 

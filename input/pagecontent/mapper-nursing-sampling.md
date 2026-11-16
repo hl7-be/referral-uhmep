@@ -13,15 +13,15 @@ This table maps the business fields to the corresponding FHIR elements.
 | Prescription type |  |  |  |
 | Discipline |  |  |  |
 | Validity period |  |  | Business validity of the prescription. |
-| Patient |  |  | SSIN identifier; value must follow pseudonymization rules. |
+| Patient |  |  | SSIN identifier. Value must follow pseudonymization rules. |
 | Requester / prescriber |  |  | Reference to the prescribing practitioner role. |
 | Sample type | - Sputum<br>- Urine<br>- Blood<br>- Stool<br>- Nasal fluid<br>- Saliva<br>- Other | List |  |
 | This field appears when "Sample type" = "Other" |  |  |  |
-| Other: | ... | String | Required in business template. Conditional free text for "other"; must be encrypted with a pseudonymized key. |
+| Other: | ... | String | Required in business template. Conditional free text for "other". Must be encrypted with a pseudonymized key. |
 | Body location | - Posterior region of head<br>- Occipital condyle structure<br>- Temporal lobe<br>- ... (see list below the table) | List | `ServiceRequest.bodySite` base coding (SNOMED). Compare business values with current ValueSets before finalizing. |
 | Body laterality | - Left<br>- Right<br>- Bilateral | List | `ServiceRequest.bodySite.extension:laterality` (`be-ext-laterality`). |
-| Body topography | - Top<br>- Bottom<br>- Medial<br>- Lateral<br>- Superior<br>- Inferior<br>- Posterior/rear<br>- Anterior/front<br>- Below<br>- Above<br>- Internal<br>- External | List | `ServiceRequest.bodySite.extension:topography` (`be-ext-body-topography`). Note: this extension's formal FHIR context does not list `ServiceRequest.bodySite` explicitly (only `Condition`/`Observation`/`DeviceUseStatement`/`Procedure.bodySite`); to be validated against the IG Publisher build. |
-| Diagnosis | ... | String | Required in business template. Free text diagnosis; must be encrypted with a pseudonymized key. |
+| Body topography | - Top<br>- Bottom<br>- Medial<br>- Lateral<br>- Superior<br>- Inferior<br>- Posterior/rear<br>- Anterior/front<br>- Below<br>- Above<br>- Internal<br>- External | List | `ServiceRequest.bodySite.extension:topography` (`be-ext-body-topography`). Note: this extension's formal FHIR context does not list `ServiceRequest.bodySite` explicitly (only `Condition`/`Observation`/`DeviceUseStatement`/`Procedure.bodySite`). To be validated against the IG Publisher build. |
+| Diagnosis | ... | String | Required in business template. Free text diagnosis. Must be encrypted with a pseudonymized key. |
 | Sampling nature | - Single sampling<br>- Recurring sampling | Enum | Compare business values with current ValueSets before finalizing. |
 | These fields appear only when "Sampling nature" = "Recurring sampling" |  |  | No direct mapping inferred automatically from the business label. |
 | Frequency |  |  | Required in business template. Timing repeat block. |
@@ -30,10 +30,10 @@ This table maps the business fields to the corresponding FHIR elements.
 | Treatment period |  |  | Required in business template. Overall treatment period. |
 | - Duration | ... | Integer | Duration value. |
 | - Time unit | - Day(s)<br>- Week(s)<br>- Month<br>- Year(s) | Enum |  |
-| Number of sessions (max) | - ...<br>- (if "sampling nature" = "single sampling", the number of sessions is 1; otherwise, the number of sessions should be calculated automatically from the frequency and treatment period) | Integer | Required in business template. Total number of planned sessions. |
-| Medical reason | ... (field becomes mandatory when frequency is more than once per day) | String | Medical reason; coded value when available, otherwise pseudonymized text. |
-| Contraindications | ... | String | Free text; must be encrypted with a pseudonymized key. |
-| General remarks | ... | String | Free text; must be encrypted with a pseudonymized key. |
+| Number of sessions (max) | - ...<br>- (if "sampling nature" = "single sampling", the number of sessions is 1. Otherwise, the number of sessions should be calculated automatically from the frequency and treatment period) | Integer | Required in business template. Total number of planned sessions. |
+| Medical reason | ... (field becomes mandatory when frequency is more than once per day) | String | Medical reason. Coded value when available, otherwise pseudonymized text. |
+| Contraindications | ... | String | Free text. Must be encrypted with a pseudonymized key. |
+| General remarks | ... | String | Free text. Must be encrypted with a pseudonymized key. |
 | Feedback required | - Yes<br>- No | Boolean | Required in business template. `be-ext-feedback-to-prescriber`. |
 | Validity start date | Today (default) | Date | Required in business template. `be-ext-validity-period`. |
 
@@ -258,7 +258,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-body-topography.html"><code>be-vs-body-topography</code></a> (preferred)</li><li>Note: this extension's declared FHIR context does not list <code>ServiceRequest.bodySite</code> explicitly (only <code>Condition</code>/<code>Observation</code>/<code>DeviceUseStatement</code>/<code>Procedure.bodySite</code>); to be validated against the IG Publisher build.</li></ul></td>
+      <td><ul><li>system: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography"><code>https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography</code></a></li><li>binding: <a href="https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-body-topography.html"><code>be-vs-body-topography</code></a> (preferred)</li><li>Note: this extension's declared FHIR context does not list <code>ServiceRequest.bodySite</code> explicitly (only <code>Condition</code>/<code>Observation</code>/<code>DeviceUseStatement</code>/<code>Procedure.bodySite</code>). To be validated against the IG Publisher build.</li></ul></td>
     </tr>
         <tr>
       <td>Diagnosis</td>
@@ -295,7 +295,7 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
     </tr>
         <tr>
       <td>Sampling nature</td>
-      <td>Coded field; mapping to be confirmed</td>
+      <td>Coded field. Mapping to be confirmed</td>
       <td></td>
       <td></td>
     </tr>

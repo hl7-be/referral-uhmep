@@ -35,7 +35,7 @@ clinical intent, the requested service, the patient, and contextual information 
 perform the care, and it remains the **single source of truth for the prescription**.
 
 The **ReferralTask** tracks the **global workflow of the prescription**. Several healthcare
-professionals or organizations may participate in the execution of a prescription; the
+professionals or organizations may participate in the execution of a prescription. The
 ReferralTask aggregates the state of the workflow and represents the overall status of the
 prescription processing. Its status is derived from the status of the tasks assigned to
 performers or organizations.
@@ -48,7 +48,7 @@ several professionals are involved in the care process.
 An **OrganizationTask** represents the involvement of a healthcare organization responsible for
 performing the prescription, used when the prescription is handled at the organizational level
 rather than directly by an individual practitioner. An organization may assign the work internally
-to one or more healthcare professionals; internal healthcare professionals are identifiable via a
+to one or more healthcare professionals. Internal healthcare professionals are identifiable via a
 `basedOn` reference to the OrganizationTask in the PerformerTask.
 
 <div style="text-align:center;">
@@ -58,9 +58,9 @@ to one or more healthcare professionals; internal healthcare professionals are i
 Separating the prescription (`ServiceRequest`) from workflow tracking (`Task`) provides several
 advantages:
 
-- the prescription remains immutable from a clinical perspective;
-- workflow changes do not modify the clinical order;
-- multiple actors can participate in the execution;
+- the prescription remains immutable from a clinical perspective.
+- workflow changes do not modify the clinical order.
+- multiple actors can participate in the execution.
 - the global progress of the prescription can be calculated dynamically.
 
 This structure aligns with the FHIR workflow pattern and allows flexible orchestration of
@@ -110,8 +110,8 @@ afterward. Caregiver interactions are handled through the `BePerformerTask` reso
 
 A `BePerformerTask` can be created in three cases:
 
-- when a caregiver is assigned on a prescription by the patient or by another caregiver;
-- when the caregiver starts an execution and the resource was not already created;
+- when a caregiver is assigned on a prescription by the patient or by another caregiver.
+- when the caregiver starts an execution and the resource was not already created.
 - when the caregiver completes an execution without a prior assignation or start (a shortcut).
 
 After creation, all further updates are done with the FHIR `PATCH` operation.

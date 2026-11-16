@@ -2,7 +2,7 @@ This page explains how profiles are organized in this Implementation Guide and h
 
 The goal is twofold:
 
-- provide a discussion support for FHIR experts and business stakeholders;
+- provide a discussion support for FHIR experts and business stakeholders.
 - give future implementers a clear view of the concepts, constraints, and responsibilities of each profile.
 
 ### Naming Convention
@@ -24,10 +24,10 @@ Examples:
 Profiles prefixed with `eReferral` represent constraints that are specific to the eReferral FHIR API. They are generally stricter than the corresponding `Be` profiles in order to support rigorous validation of resources received or exposed by the API.
 
 These profiles may:
-- forbid elements that must not be exchanged in the eReferral context;
-- strengthen cardinalities;
-- add invariants;
-- enforce confidentiality restrictions;
+- forbid elements that must not be exchanged in the eReferral context.
+- strengthen cardinalities.
+- add invariants.
+- enforce confidentiality restrictions.
 - define actor-specific technical views.
 
 Examples:
