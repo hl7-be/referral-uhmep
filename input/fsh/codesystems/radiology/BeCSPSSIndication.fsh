@@ -1310,7 +1310,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #3100947 ^designation[1].value = "Aneurysmale subarachnoidale bloeding (SAB), evaluatie cerebrale vaatspasmen"
 * #3100947 ^designation[2].language = #de
 * #3100947 ^designation[2].value = "Intrakranielles Aneurysma, SAB, Vd. a. Vasospasmus"
-* #6001632 "Angiodysplasia, stomach or duodenum "
+* #6001632 "Angiodysplasia, stomach or duodenum"
 * #6001632 ^designation[0].language = #fr-BE
 * #6001632 ^designation[0].value = "Angiodysplasie, estomac ou duodénum"
 * #6001632 ^designation[1].language = #nl-BE
@@ -4908,7 +4908,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6000254 ^designation[1].value = "Carcinoom in situ, spijsverteringsorgaan"
 * #6000254 ^designation[2].language = #de
 * #6000254 ^designation[2].value = "Carcinoma in situ, Verdauungsorgane"
-* #6001806 "Carcinoma in situ, esophagus  "
+* #6001806 "Carcinoma in situ, esophagus"
 * #6001806 ^designation[0].language = #fr-BE
 * #6001806 ^designation[0].value = "Carcinome in situ, œsophage"
 * #6001806 ^designation[1].language = #nl-BE
@@ -8135,7 +8135,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6000786 ^designation[1].value = "Duodenaal ulcus"
 * #6000786 ^designation[2].language = #de
 * #6000786 ^designation[2].value = "Duodenalgeschwür"
-* #6002077 "Duodenitis "
+* #6002077 "Duodenitis"
 * #6002077 ^designation[0].language = #fr-BE
 * #6002077 ^designation[0].value = "Duodénite"
 * #6002077 ^designation[1].language = #nl-BE
@@ -10172,7 +10172,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6002210 ^designation[1].value = "Vreemd voorwerp, anus of rectum"
 * #6002210 ^designation[2].language = #de
 * #6002210 ^designation[2].value = "Fremdkörper, Anus oder Rektum"
-* #6002211 "Foreign body, bronchus "
+* #6002211 "Foreign body, bronchus"
 * #6002211 ^designation[0].language = #fr-BE
 * #6002211 ^designation[0].value = "Corps étranger, bronches"
 * #6002211 ^designation[1].language = #nl-BE
@@ -10214,7 +10214,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6002213 ^designation[1].value = "Vreemd voorwerp, mond"
 * #6002213 ^designation[2].language = #de
 * #6002213 ^designation[2].value = "Fremdkörper, Mund"
-* #6002214 "Foreign body, nasal "
+* #6002214 "Foreign body, nasal"
 * #6002214 ^designation[0].language = #fr-BE
 * #6002214 ^designation[0].value = "Corps étranger, nasal"
 * #6002214 ^designation[1].language = #nl-BE
@@ -10585,7 +10585,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6002226 ^designation[1].value = "Varices van maag"
 * #6002226 ^designation[2].language = #de
 * #6002226 ^designation[2].value = "Magenvarizen"
-* #6002227 "Gastritis "
+* #6002227 "Gastritis"
 * #6002227 ^designation[0].language = #fr-BE
 * #6002227 ^designation[0].value = "Gastrite"
 * #6002227 ^designation[1].language = #nl-BE
@@ -13742,7 +13742,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6001047 ^designation[1].value = "Intraoperatieve of postoperatieve complicaties, GU"
 * #6001047 ^designation[2].language = #de
 * #6001047 ^designation[2].value = "Intraop. und postprozed. Komplikationen, GU-Systems, NEC"
-* #6000969 "Intraop or postop complications, MSK "
+* #6000969 "Intraop or postop complications, MSK"
 * #6000969 ^designation[0].language = #fr-BE
 * #6000969 ^designation[0].value = "Complications peropératoires ou postopératoires, musculo-squelettique"
 * #6000969 ^designation[1].language = #nl-BE
@@ -16640,7 +16640,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6001772 ^designation[1].value = "Mechanische afbraak, permanente hechtingen"
 * #6001772 ^designation[2].language = #de
 * #6001772 ^designation[2].value = "Mechanisches Versagen, permanente Nähte"
-* #6001773 "Mechanical breakdown, prosthetic orbit "
+* #6001773 "Mechanical breakdown, prosthetic orbit"
 * #6001773 ^designation[0].language = #fr-BE
 * #6001773 ^designation[0].value = "Ventilation mécanique, orbite prothétique"
 * #6001773 ^designation[1].language = #nl-BE
@@ -21540,7 +21540,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #973 ^designation[1].value = "Feochromocytoom"
 * #973 ^designation[2].language = #de
 * #973 ^designation[2].value = "Phäochromozytom"
-* #6000706 "Phlebitis "
+* #6000706 "Phlebitis"
 * #6000706 ^designation[0].language = #fr-BE
 * #6000706 ^designation[0].value = "Phlebite"
 * #6000706 ^designation[1].language = #nl-BE
@@ -22870,7 +22870,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #6000972 ^designation[1].value = "Snel progressieve (glomerulo)nefritis syndroom"
 * #6000972 ^designation[2].language = #de
 * #6000972 ^designation[2].value = "Schnell progressierendes Nephritisches Syndrom"
-* #6002771 "Raynaud's syndrome "
+* #6002771 "Raynaud's syndrome"
 * #6002771 ^designation[0].language = #fr-BE
 * #6002771 ^designation[0].value = "Syndrome de Raynaud"
 * #6002771 ^designation[1].language = #nl-BE
@@ -29107,7 +29107,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #555000005 ^designation[1].value = "Baarmoeder malformatie op sonografie moeilijk te classificeren"
 * #555000005 ^designation[2].language = #de
 * #555000005 ^designation[2].value = "Sonografisch schwer einzuordnende Uterusfehlbildung"
-* #555000004 "Uterine malformation suspected clinically "
+* #555000004 "Uterine malformation suspected clinically"
 * #555000004 ^designation[0].language = #fr-BE
 * #555000004 ^designation[0].value = "Malformation utérine suspectée cliniquement"
 * #555000004 ^designation[1].language = #nl-BE
@@ -29317,7 +29317,7 @@ Description: "PSS indication codes for diagnostic imaging requests."
 * #2785 ^designation[1].value = "Valvulaire hartziekte, follow-up"
 * #2785 ^designation[2].language = #de
 * #2785 ^designation[2].value = "Herzklappenerkrankungen, Verlaufskontrolle"
-* #6000085 "Varicella "
+* #6000085 "Varicella"
 * #6000085 ^designation[0].language = #fr-BE
 * #6000085 ^designation[0].value = "Varicelle"
 * #6000085 ^designation[1].language = #nl-BE

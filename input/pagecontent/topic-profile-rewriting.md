@@ -62,6 +62,12 @@ Profile after gateway rewriting:
 
 ### Validation Impact
 
+The profile set loaded by the gateway and the profile set published in this IG must be checked
+separately. A canonical URL does not identify the loaded package version. Profile rewriting does
+not upgrade that package or demonstrate that every constraint added to the 3.0 IG is enforced by
+an existing gateway. Continue to satisfy this IG's required elements even if an older server
+accepts a resource that omits them.
+
 After rewriting, validation is performed against the eReferral profile. Implementers should therefore make sure that resources sent with a federal eHealth DRP profile also satisfy the stricter eReferral profile constraints where applicable.
 
 The rewrite only addresses the canonical profile URL used for routing and validation. It does not automatically transform elements, terminology, cardinalities, extensions, or business data.

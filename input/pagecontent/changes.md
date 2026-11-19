@@ -2,6 +2,31 @@ This page documents the changes to the eReferral Implementation Guide specificat
 
 ---
 
+### 2026-11-18 - 3.0 API Contract Clarifications
+
+The operation guidance now distinguishes the implemented 3.0 API from broader role summaries.
+This is a documentation correction, not the announcement of newly deployed functionality.
+
+<details markdown="1">
+<summary><strong>View the 3.0 contract clarifications</strong></summary>
+
+- A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the
+  caller's role and ownership restrictions.
+- An Organization may remove its own organization task and the dependent assignments, but cannot
+  selectively delete an internal professional's performer task through that route.
+- Prescription extensions use `ServiceRequest.basedOn` in the implemented 3.0 creation and read
+  mappings. `ServiceRequest.replaces` alone does not establish the extension link.
+- Required profile elements remain requirements of this IG. The reviewed gateway's embedded
+  validation package is older and does not establish enforcement of all 3.0 cardinalities.
+
+See [Unassign a Care Provider](operation-unassign-care-provider.html),
+[Prescription Extension](topic-prescription-lifecycle-extension.html) and the
+[migration checks](migration-2-1-to-3-0.html).
+
+</details>
+
+---
+
 ### **2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements**
 
 This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,

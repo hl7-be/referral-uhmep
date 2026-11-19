@@ -40,16 +40,16 @@ This implementation guide defines the local eReferral FHIR profiles, examples, m
 <br>
 {% if site.data.fhir.ig.status == "draft" %}
 <div class="ig-draft-disclaimers">
-  <section style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
+  <div style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
     <strong>This documentation and set of artefacts are still undergoing development.</strong>
-  </section>
-  <section style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
+  </div>
+  <div style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
     <strong>The canonical URL and publication address of this Implementation Guide are provisional and subject to change.</strong>
-  </section>
-  <section style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
+  </div>
+  <div style="border-left: 4px solid #f59e0b; background-color: #fff7ed; padding: 12px 16px; margin: 16px 0;">
     <strong>This Implementation Guide contains only demonstrative examples of terminology resources.</strong>
     <span>ValueSets and CodeSystems in this Implementation Guide are provided as examples only. The actual ValueSets and CodeSystems will be made available from a terminology package and can then be consulted in the FHIR terminology ecosystem.</span>
-  </section>
+  </div>
 </div>
 {% endif %}
 
@@ -81,6 +81,7 @@ The current scope is focused on:
 | [Prescription Templates](topic-prescription-templates.html) | Technical-identifier catalogue, profiles, and validity rules per template. |
 | [Visibility & Blacklisting](topic-visibility-blacklisting.html) | Template visibility, blacklisting behaviour, and cancelled-prescription rules. |
 | [Business Field Mappings](mappings-business.html) | Business field to FHIR mappings, grouped by domain and prescription type. |
+| [Test Server](test-server.html) | Nursing and Radiology test scenarios, business values, FHIR mappings, and request payloads. |
 | [Artifacts](artifacts.html) | Generated FHIR profiles, extensions, ValueSets, CodeSystems, and examples. |
 | [Technical](technical.html) | Entry points, required headers, reference documents, support contacts, and certificates. |
 | [Glossary](glossary.html) | Terminology used across this IG. |

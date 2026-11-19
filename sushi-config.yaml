@@ -188,6 +188,186 @@ pages:
   glossary.md:
     title: Glossary
     generation: markdown
+  test-server.md:
+    title: Test Server
+    generation: markdown
+    test-server-p2m-generic-nursing.md:
+      title: "P2M - Nursing - Generic nursing care"
+      generation: markdown
+    test-server-p2m-annex-81.md:
+      title: "P2M - Nursing - Medication preparation, Annex 81 proposal"
+      generation: markdown
+    test-server-p2m-medication-prefill.md:
+      title: "P2M - Nursing - Medication prefill preparation, not refunded"
+      generation: markdown
+    test-server-p2m-diabetes-convention-centre.md:
+      title: "P2M - Nursing - Diabetes education via convention centre"
+      generation: markdown
+    test-server-p2m-diabetes-start-trajectory.md:
+      title: "P2M - Nursing - Diabetes education within start trajectory"
+      generation: markdown
+    test-server-p2m-diabetes-care-trajectory.md:
+      title: "P2M - Nursing - Diabetes education within care trajectory"
+      generation: markdown
+    test-server-p2m-diabetes-without-care-trajectory.md:
+      title: "P2M - Nursing - Diabetes education without care trajectory"
+      generation: markdown
+    test-server-p2m-personal-hygiene.md:
+      title: "P2M - Nursing - Assistance with personal hygiene"
+      generation: markdown
+    test-server-p2m-peritoneal-dialysis.md:
+      title: "P2M - Nursing - Chronic peritoneal dialysis"
+      generation: markdown
+    test-server-p2m-glycemia-test.md:
+      title: "P2M - Nursing - Glycemia test with glucometer"
+      generation: markdown
+    test-server-p2m-sampling.md:
+      title: "P2M - Nursing - Sampling"
+      generation: markdown
+    test-server-p2m-bloodletting.md:
+      title: "P2M - Nursing - Bloodletting"
+      generation: markdown
+    test-server-p2m-parameters.md:
+      title: "P2M - Nursing - Measurement of parameters"
+      generation: markdown
+    test-server-p2m-assign-organization.md:
+      title: "P2M - Nursing - Assign a prescription to an organization"
+      generation: markdown
+    test-server-p2m-assign-caregiver.md:
+      title: "P2M - Nursing - Assign a prescription to a treatment provider"
+      generation: markdown
+    test-server-p2m-classify-without-consequence.md:
+      title: "P2M - Nursing - Classifying a prescription without consequence"
+      generation: markdown
+    test-server-p2m-start-without-assignment.md:
+      title: "P2M - Nursing - Execute a valid prescription"
+      generation: markdown
+    test-server-p2m-organization-annex-81.md:
+      title: "P2M - Nursing - Create an annex 81 proposal by a nurse"
+      generation: markdown
+    test-server-m2m-generic-nursing.md:
+      title: "M2M - Nursing - Generic nursing care"
+      generation: markdown
+    test-server-m2m-annex-81.md:
+      title: "M2M - Nursing - Medication preparation, Annex 81 proposal"
+      generation: markdown
+    test-server-m2m-medication-prefill.md:
+      title: "M2M - Nursing - Medication prefill preparation, not refunded"
+      generation: markdown
+    test-server-m2m-diabetes-convention-centre.md:
+      title: "M2M - Nursing - Diabetes education via convention centre"
+      generation: markdown
+    test-server-m2m-diabetes-start-trajectory.md:
+      title: "M2M - Nursing - Diabetes education within start trajectory"
+      generation: markdown
+    test-server-m2m-diabetes-care-trajectory.md:
+      title: "M2M - Nursing - Diabetes education within care trajectory"
+      generation: markdown
+    test-server-m2m-diabetes-without-care-trajectory.md:
+      title: "M2M - Nursing - Diabetes education without care trajectory"
+      generation: markdown
+    test-server-m2m-personal-hygiene.md:
+      title: "M2M - Nursing - Assistance with personal hygiene"
+      generation: markdown
+    test-server-m2m-peritoneal-dialysis.md:
+      title: "M2M - Nursing - Chronic peritoneal dialysis"
+      generation: markdown
+    test-server-m2m-glycemia-test.md:
+      title: "M2M - Nursing - Glycemia test with glucometer"
+      generation: markdown
+    test-server-m2m-sampling.md:
+      title: "M2M - Nursing - Sampling"
+      generation: markdown
+    test-server-m2m-bloodletting.md:
+      title: "M2M - Nursing - Bloodletting"
+      generation: markdown
+    test-server-m2m-parameters.md:
+      title: "M2M - Nursing - Measurement of parameters"
+      generation: markdown
+    test-server-m2m-assign-organization.md:
+      title: "M2M - Nursing - Assign a prescription to an organization"
+      generation: markdown
+    test-server-m2m-assign-internal-caregiver.md:
+      title: "M2M - Nursing - Assign a prescription to a caregiver from the organization"
+      generation: markdown
+    test-server-m2m-start-without-assignment.md:
+      title: "M2M - Nursing - Execute a valid prescription"
+      generation: markdown
+    test-server-m2m-organization-annex-81.md:
+      title: "M2M - Nursing - Create an annex 81 proposal by a nurse from an organization"
+      generation: markdown
+    test-server-radiology-p2m-01.md:
+      title: "P2M - Radiology - Suspected pulmonary edema"
+      generation: markdown
+    test-server-radiology-m2m-01.md:
+      title: "M2M - Radiology - Suspected pulmonary edema"
+      generation: markdown
+    test-server-radiology-p2m-02.md:
+      title: "P2M - Radiology - Unresolved or complicated pneumonia"
+      generation: markdown
+    test-server-radiology-m2m-02.md:
+      title: "M2M - Radiology - Unresolved or complicated pneumonia"
+      generation: markdown
+    test-server-radiology-p2m-03.md:
+      title: "P2M - Radiology - Chest pain with a normal ECG"
+      generation: markdown
+    test-server-radiology-m2m-03.md:
+      title: "M2M - Radiology - Chest pain with a normal ECG"
+      generation: markdown
+    test-server-radiology-p2m-04.md:
+      title: "P2M - Radiology - New headaches during pregnancy"
+      generation: markdown
+    test-server-radiology-m2m-04.md:
+      title: "M2M - Radiology - New headaches during pregnancy"
+      generation: markdown
+    test-server-radiology-p2m-05.md:
+      title: "P2M - Radiology - Tongue weakness"
+      generation: markdown
+    test-server-radiology-m2m-05.md:
+      title: "M2M - Radiology - Tongue weakness"
+      generation: markdown
+    test-server-radiology-p2m-06.md:
+      title: "P2M - Radiology - Head trauma and stroke follow-up in an adult"
+      generation: markdown
+    test-server-radiology-m2m-06.md:
+      title: "M2M - Radiology - Head trauma and stroke follow-up in an adult"
+      generation: markdown
+    test-server-radiology-p2m-07.md:
+      title: "P2M - Radiology - Head trauma and stroke follow-up in a child"
+      generation: markdown
+    test-server-radiology-m2m-07.md:
+      title: "M2M - Radiology - Head trauma and stroke follow-up in a child"
+      generation: markdown
+    test-server-radiology-p2m-08.md:
+      title: "P2M - Radiology - Initial breast cancer imaging"
+      generation: markdown
+    test-server-radiology-m2m-08.md:
+      title: "M2M - Radiology - Initial breast cancer imaging"
+      generation: markdown
+    test-server-radiology-p2m-09.md:
+      title: "P2M - Radiology - Persistent cough and abnormal sputum"
+      generation: markdown
+    test-server-radiology-m2m-09.md:
+      title: "M2M - Radiology - Persistent cough and abnormal sputum"
+      generation: markdown
+    test-server-radiology-p2m-10.md:
+      title: "P2M - Radiology - Tongue and facial weakness"
+      generation: markdown
+    test-server-radiology-m2m-10.md:
+      title: "M2M - Radiology - Tongue and facial weakness"
+      generation: markdown
+    test-server-radiology-p2m-11.md:
+      title: "P2M - Radiology - New cough with two selected examinations"
+      generation: markdown
+    test-server-radiology-m2m-11.md:
+      title: "M2M - Radiology - New cough with two selected examinations"
+      generation: markdown
+    test-server-radiology-p2m-12.md:
+      title: "P2M - Radiology - Flank pain with suspected recurrent stones"
+      generation: markdown
+    test-server-radiology-m2m-12.md:
+      title: "M2M - Radiology - Flank pain with suspected recurrent stones"
+      generation: markdown
   changes.md:
     title: Changes
     generation: markdown
@@ -245,6 +425,7 @@ menu:
   Resources:
     Glossary: glossary.html
     Downloads: downloads.html
+    Test Server: test-server.html
     Changes: changes.html
 
 

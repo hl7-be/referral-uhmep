@@ -31,7 +31,7 @@ This matrix focuses on migration-sensitive paths. It is not a complete authoriza
 
 | Operation | Track | Actor context | Initial business state / execution task | Expected effect |
 | --- | --- | --- | --- | --- |
-| Remove assignment | Ambulatory | Patient, Caregiver or Organization, subject to removal rights | Prescription `READY` or `IN_PROGRESS`. Task `ready` or `in-progress` | Assignment is removed. Prescription returns to `READY`. Dependent assignments can also be affected. |
+| Remove assignment | Ambulatory | Authorized Caregiver for their own assignment, or Organization for its own organization task. Patient is not permitted | Prescription `READY` or `IN_PROGRESS`. Task `ready` or `in-progress` | Assignment is removed. Prescription returns to `READY`. Dependent assignments can also be affected. |
 | Remove assignment | Inpatient | Any caller | Do not reuse the ambulatory exception | Radiology track guard rejects assignment removal. |
 | Remove assignment | Urgency | Any caller | Do not reuse the ambulatory exception | Radiology track guard rejects assignment removal. |
 | Complete an existing execution | Ambulatory | Caregiver or Organization | Prescription `IN_PROGRESS`. Caregiver task `in-progress` | Caregiver execution and radiology prescription become completed. |

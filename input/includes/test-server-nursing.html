@@ -1,0 +1,162 @@
+<style>
+details.test-server-example { margin: 12px 0 24px; min-width: 0; border: 1px solid #aebac4; border-radius: 4px; background: #f5f7f8; }
+details.test-server-example summary { display: block; padding: 8px 12px; cursor: pointer; font-weight: bold; list-style: none; }
+details.test-server-example summary::-webkit-details-marker { display: none; }
+details.test-server-example summary::before { content: "+"; display: inline-block; width: 20px; }
+details.test-server-example[open] > summary::before { content: "-"; }
+details.test-server-example summary:focus-visible { outline: 2px solid #16766b; outline-offset: 2px; }
+details.test-server-example pre { box-sizing: border-box; margin: 0; padding: 12px; border-top: 1px solid #aebac4; max-width: 100%; max-height: 480px; overflow: auto; white-space: pre; }
+</style>
+<h4 id="p2m-generic-nursing">Generic nursing care</h4>
+<ol>
+<li>A patient receiving parenteral nutrition consults her physician because of discomfort and difficulties maintaining adequate nutritional intake.</li>
+<li>The physician prescribes generic nursing care for gastrointestinal concerns, with the diagnosis "Nutritional problems with tube feeding or parenteral nutrition": once a day for one week, up to seven sessions, without required feedback.</li>
+<li>The patient assigns a nurse through the mobile application. The nurse reviews the prescription, provides the care and continues the daily visits according to the prescribed schedule.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-generic.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-annex-81">Medication preparation, Annex 81 proposal</h4>
+<ol>
+<li>During regular home care for a patient with dementia, a nurse observes difficulty cooperating with treatment and confusion about the treatment.</li>
+<li>The nurse creates an Annex 81 proposal for weekly medication preparation, recording both nursing diagnoses and dementia as the underlying medical problem. The validity end date is no later than one year after the validity start date.</li>
+<li>The nurse assigns the proposal to a general practitioner. The practitioner accepts or rejects it and may add a comment. In the Word scenario, acceptance converts the proposal into a prescription, while rejection leaves it as a proposal. The decision is returned to the nurse, who prepares the medication and fills the pillbox weekly after acceptance.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-med-preparation-appendix-81.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-medication-prefill">Medication prefill preparation, not refunded</h4>
+<ol>
+<li>A patient reports difficulty adhering to her medication regimen. Following assessment, the physician finds no medical justification for reimbursed medication preparation, but the patient still requests assistance.</li>
+<li>The physician creates a prescription for non-refundable medication prefill preparation once a week, without required feedback. The validity end date is no later than one year after the validity start date.</li>
+<li>The patient assigns a nurse through the mobile application. The nurse reviews the prescription, prepares the medication and fills the pillbox weekly. In this scenario, the nurse charges the patient directly.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-med-prep-not-refunded.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-diabetes-convention-centre">Diabetes education via convention centre</h4>
+<ol>
+<li>A patient with type 1 diabetes is treated by a multidisciplinary team at a recognised diabetes convention centre. After initial education and stabilisation, the team identifies a need for continued support at home.</li>
+<li>A physician from the centre prescribes diabetes self-care education, with a maximum of 30 sessions and no required feedback.</li>
+<li>With the patient's consent, the centre contacts a home nurse, who assigns herself and provides education in coordination with the centre's team. In the Word scenario, care is invoiced to the convention centre or affiliated hospital.</li>
+</ol>
+<p><strong>Source discrepancy:</strong> the narrative specifies three sessions a week, but the template only says "times a week" without a number. The existing JSON uses once weekly with a maximum of 30 sessions.</p>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-de-convention-center.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-diabetes-start-trajectory">Diabetes education within start trajectory</h4>
+<ol>
+<li>A 55-year-old patient with early-stage type 2 diabetes needs education to support lifestyle changes and treatment adherence.</li>
+<li>The physician prescribes individual education sessions provided by a nurse under the preliminary diabetes care path: four sessions per year, with a maximum of four sessions and no required feedback. The validity ends on 31 December of the year in which validity starts.</li>
+<li>The patient assigns a nurse through the mobile application. The nurse reviews the prescription, provides the first individual session and schedules the remaining three within the validity period.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-de-within-start-trajectory.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-diabetes-care-trajectory">Diabetes education within care trajectory</h4>
+<ol>
+<li>A patient with type 2 diabetes treated with insulin is enrolled in a diabetes care path and has a complete global medical file. During follow-up, the physician recommends education on using a blood glucose meter.</li>
+<li>The physician prescribes five individual education sessions per year, with a maximum of the first five sessions and no required feedback. The validity ends on 31 December of the year in which validity starts.</li>
+<li>The patient assigns a nurse through the mobile application. The nurse reviews the instructions and provides a first 30-minute session on the blood glucose meter. The remaining four sessions are scheduled within the validity period.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-de-within-care-trajectory.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-diabetes-without-care-trajectory">Diabetes education without care trajectory</h4>
+<ol>
+<li>A patient who is not enrolled in a diabetes care path has difficulty managing medication, blood glucose monitoring and daily diabetes routines.</li>
+<li>The physician prescribes ten individual self-care education sessions of 30 minutes, once a month, with a maximum of ten sessions and no required feedback. The general remarks specify "10 sessions of 30 min".</li>
+<li>The patient assigns a nurse through the mobile application. The nurse provides the first session and schedules the remaining nine over the following months, within the prescription's validity period.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-de-without-care-trajectory.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-personal-hygiene">Assistance with personal hygiene</h4>
+<ol>
+<li>A patient with Parkinson's disease is disoriented in time and space and experiences nocturnal and occasional daytime urinary incontinence. The physician identifies a need for personal hygiene assistance.</li>
+<li>The physician prescribes assistance once a day for one year, up to 365 sessions, recording Parkinson's disease as the diagnosis. Feedback from the nurse is not required.</li>
+<li>The patient assigns a nurse through the mobile application. At the first home visit, the nurse starts care, completes a Katz scale assessment and records the incontinence. In the Word scenario, the nurse sends the assessment and attestation to the consulting physician for the reimbursement assessment.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-hygienic-care.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-peritoneal-dialysis">Chronic peritoneal dialysis</h4>
+<ol>
+<li>A patient with kidney failure and loss of blood pressure is treated at a convention centre and cannot change dialysis bags independently.</li>
+<li>The centre's physician prescribes home nursing support three times a day for one year, up to 1095 sessions, with feedback required. The remarks specify a dialysis-fluid dwell time of two hours. The medical reason notes that support will only be needed as required once the patient learns to change the bags independently.</li>
+<li>The patient assigns a nurse who has an agreement with the centre. The nurse reviews the prescription, assists with dialysis, records the care and dwell times, and provides feedback to the physician.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-chronic-dialysis.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-glycemia-test">Glycemia test with glucometer</h4>
+<ol>
+<li>A patient with type 2 diabetes has difficulty monitoring her own blood glucose. The physician identifies a need for regular testing to prevent hypoglycemia or hyperglycemia.</li>
+<li>The physician prescribes fasting glycemia tests with a glucometer three times a week for two weeks, up to six sessions, without required feedback. The diagnosis is monitoring of known type 1 or type 2 diabetes.</li>
+<li>The patient assigns a nurse through the mobile application. The nurse performs and documents the fasting tests and shares results with the physician when needed. In the Word scenario, the patient is informed that the service is non-refundable and agrees to cover the costs.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-glycemic-test.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-sampling">Sampling</h4>
+<ol>
+<li>A patient presents with redness, swelling and pain in the right knee, fever and fatigue. The physician suspects a wound infection and requests diagnostic sampling.</li>
+<li>The physician prescribes wound-fluid sampling from the right knee once a day for one week, up to seven sessions, without required feedback. The remarks specify wound fluid for bacterial culture.</li>
+<li>The patient assigns a nurse through the mobile application. The nurse reviews the instructions, collects the samples and documents the dates, times and sample traceability.</li>
+</ol>
+<p><strong>Source discrepancy:</strong> the narrative also mentions a blood draw. The template and existing JSON specify wound fluid only.</p>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-sampling.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-bloodletting">Bloodletting</h4>
+<ol>
+<li>A patient has a chronic condition with excess red blood cells and elevated hematocrit and hemoglobin. The physician identifies a medical need for bloodletting.</li>
+<li>The physician prescribes drawing 350 ml per session, twice a week for two weeks, up to four sessions. Feedback is required after each session to monitor tolerance and response.</li>
+<li>Because of limited mobility, care is arranged at home. The patient assigns a nurse, who checks the equipment, schedules the visits, performs the bloodletting under aseptic conditions and documents the care and feedback.</li>
+</ol>
+<p><strong>Source discrepancy:</strong> the final narrative step mentions visits every three days and a maximum of five sessions. The template and existing JSON specify twice weekly and four sessions.</p>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-bloodletting.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<h4 id="p2m-parameters">Measurement of parameters</h4>
+<ol>
+<li>A patient with Parkinson's disease has recently been diagnosed with orthostatic hypotension. The physician recommends monitoring blood pressure for posture-related fluctuations.</li>
+<li>The physician prescribes blood pressure measurements while lying down, twice a day for one week, up to 14 sessions. Parkinson's disease is recorded as the medical reason and orthostatic hypotension as the diagnosis. Feedback is not required.</li>
+<li>The patient assigns a home nurse through the mobile application. The nurse reviews the instructions, measures blood pressure while the patient is lying down, ideally before medication, and documents the results after each visit.</li>
+</ol>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-parameters.json">
+<summary>FHIR JSON</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<script>
+document.querySelectorAll('details.test-server-example:not([data-requester])').forEach((details) => {
+  details.addEventListener('toggle', async () => {
+    if (!details.open || details.dataset.loaded) return;
+    const code = details.querySelector('code');
+    try {
+      const response = await fetch(details.dataset.json);
+      if (!response.ok) throw new Error('JSON request failed');
+      const resource = await response.json();
+      delete resource.language;
+      delete resource.text;
+      code.textContent = JSON.stringify(resource, null, 2);
+      details.dataset.loaded = 'true';
+      if (window.Prism) Prism.highlightElement(code);
+    } catch {
+      code.textContent = 'Unable to load this JSON example.';
+    }
+  });
+});
+</script>
