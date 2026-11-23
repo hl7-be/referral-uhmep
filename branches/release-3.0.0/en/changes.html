@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14"}
-    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -220,6 +220,9 @@
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
         <a href="changes.html">Changes</a>
       </li>
     </ul>
@@ -243,7 +246,7 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="glossary.html">&lt; prev</a> | 
+            <a href="test-server-radiology-m2m-12.html">&lt; prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -287,6 +290,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#2026-11-18---30-api-contract-clarifications" id="markdown-toc-2026-11-18---30-api-contract-clarifications">2026-11-18 - 3.0 API Contract Clarifications</a></li>
   <li><a href="#2026-10-28---v300-release--radiology-workflow-improvements" id="markdown-toc-2026-10-28---v300-release--radiology-workflow-improvements"><strong>2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements</strong></a></li>
   <li><a href="#2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4" id="markdown-toc-2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4"><strong>2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)</strong></a></li>
   <li><a href="#2026-08-05-v200-release-ereferral-referral-prescription-stu1-fhir-r4" id="markdown-toc-2026-08-05-v200-release-ereferral-referral-prescription-stu1-fhir-r4"><strong>2026-08-05: v2.0.0 Release: eReferral Referral Prescription (STU1, FHIR R4)</strong></a></li>
@@ -294,6 +298,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <p>This page documents the changes to the eReferral Implementation Guide specification.</p>
+
+<hr />
+
+<h3 id="2026-11-18---30-api-contract-clarifications">2026-11-18 - 3.0 API Contract Clarifications</h3>
+
+<p>The operation guidance now distinguishes the implemented 3.0 API from broader role summaries.
+This is a documentation correction, not the announcement of newly deployed functionality.</p>
+
+<details>
+  <summary><strong>View the 3.0 contract clarifications</strong></summary>
+
+  <ul>
+    <li>A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the
+caller’s role and ownership restrictions.</li>
+    <li>An Organization may remove its own organization task and the dependent assignments, but cannot
+selectively delete an internal professional’s performer task through that route.</li>
+    <li>Prescription extensions use <code class="language-plaintext highlighter-rouge">ServiceRequest.basedOn</code> in the implemented 3.0 creation and read
+mappings. <code class="language-plaintext highlighter-rouge">ServiceRequest.replaces</code> alone does not establish the extension link.</li>
+    <li>Required profile elements remain requirements of this IG. The reviewed gateway’s embedded
+validation package is older and does not establish enforcement of all 3.0 cardinalities.</li>
+  </ul>
+
+  <p>See <a href="operation-unassign-care-provider.html">Unassign a Care Provider</a>,
+<a href="topic-prescription-lifecycle-extension.html">Prescription Extension</a> and the
+<a href="migration-2-1-to-3-0.html">migration checks</a>.</p>
+
+</details>
 
 <hr />
 
@@ -502,7 +533,7 @@ documents the API’s security, access-control, and operational requirements.</p
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="glossary.html">&lt; prev</a>
+                <a href="test-server-radiology-m2m-12.html">&lt; prev</a>
 
               </td>
               <td style="text-align:center">
@@ -525,7 +556,7 @@ documents the API’s security, access-control, and operational requirements.</p
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
+          Generated <span title="Mon, Nov 23, 2026 15:27+0000">2026-11-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

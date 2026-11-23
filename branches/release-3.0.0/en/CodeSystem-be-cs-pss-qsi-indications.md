@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications | *Version*:3.0.0 |
-| Draft as of 2026-11-16 | *Computable Name*:BeCSPSSIndication |
+| Draft as of 2026-11-23 | *Computable Name*:BeCSPSSIndication |
 
  
 PSS indication codes for diagnostic imaging requests. 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "PSS Indication",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-16T08:01:16+00:00",
+  "date" : "2026-11-23T15:27:38+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -3046,7 +3046,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6001632",
-    "display" : "Angiodysplasia, stomach or duodenum ",
+    "display" : "Angiodysplasia, stomach or duodenum",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Angiodysplasie, estomac ou duodénum"
@@ -11270,7 +11270,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6001806",
-    "display" : "Carcinoma in situ, esophagus  ",
+    "display" : "Carcinoma in situ, esophagus",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Carcinome in situ, œsophage"
@@ -18646,7 +18646,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6002077",
-    "display" : "Duodenitis ",
+    "display" : "Duodenitis",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Duodénite"
@@ -23302,7 +23302,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6002211",
-    "display" : "Foreign body, bronchus ",
+    "display" : "Foreign body, bronchus",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Corps étranger, bronches"
@@ -23398,7 +23398,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6002214",
-    "display" : "Foreign body, nasal ",
+    "display" : "Foreign body, nasal",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Corps étranger, nasal"
@@ -24246,7 +24246,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6002227",
-    "display" : "Gastritis ",
+    "display" : "Gastritis",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Gastrite"
@@ -31462,7 +31462,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6000969",
-    "display" : "Intraop or postop complications, MSK ",
+    "display" : "Intraop or postop complications, MSK",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Complications peropératoires ou postopératoires, musculo-squelettique"
@@ -38086,7 +38086,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6001773",
-    "display" : "Mechanical breakdown, prosthetic orbit ",
+    "display" : "Mechanical breakdown, prosthetic orbit",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Ventilation mécanique, orbite prothétique"
@@ -49286,7 +49286,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6000706",
-    "display" : "Phlebitis ",
+    "display" : "Phlebitis",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Phlebite"
@@ -52326,7 +52326,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6002771",
-    "display" : "Raynaud's syndrome ",
+    "display" : "Raynaud's syndrome",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Syndrome de Raynaud"
@@ -66582,7 +66582,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "555000004",
-    "display" : "Uterine malformation suspected clinically ",
+    "display" : "Uterine malformation suspected clinically",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Malformation utérine suspectée cliniquement"
@@ -67062,7 +67062,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "code" : "6000085",
-    "display" : "Varicella ",
+    "display" : "Varicella",
     "designation" : [{
       "language" : "fr-BE",
       "value" : "Varicelle"

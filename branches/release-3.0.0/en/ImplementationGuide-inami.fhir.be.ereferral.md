@@ -2231,6 +2231,546 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "test-server.html"
+        }],
+        "nameUrl" : "test-server.html",
+        "title" : "Test Server",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-generic-nursing.html"
+          }],
+          "nameUrl" : "test-server-p2m-generic-nursing.html",
+          "title" : "P2M - Nursing - Generic nursing care",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-annex-81.html"
+          }],
+          "nameUrl" : "test-server-p2m-annex-81.html",
+          "title" : "P2M - Nursing - Medication preparation, Annex 81 proposal",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-medication-prefill.html"
+          }],
+          "nameUrl" : "test-server-p2m-medication-prefill.html",
+          "title" : "P2M - Nursing - Medication prefill preparation, not refunded",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-diabetes-convention-centre.html"
+          }],
+          "nameUrl" : "test-server-p2m-diabetes-convention-centre.html",
+          "title" : "P2M - Nursing - Diabetes education via convention centre",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-diabetes-start-trajectory.html"
+          }],
+          "nameUrl" : "test-server-p2m-diabetes-start-trajectory.html",
+          "title" : "P2M - Nursing - Diabetes education within start trajectory",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-diabetes-care-trajectory.html"
+          }],
+          "nameUrl" : "test-server-p2m-diabetes-care-trajectory.html",
+          "title" : "P2M - Nursing - Diabetes education within care trajectory",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-diabetes-without-care-trajectory.html"
+          }],
+          "nameUrl" : "test-server-p2m-diabetes-without-care-trajectory.html",
+          "title" : "P2M - Nursing - Diabetes education without care trajectory",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-personal-hygiene.html"
+          }],
+          "nameUrl" : "test-server-p2m-personal-hygiene.html",
+          "title" : "P2M - Nursing - Assistance with personal hygiene",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-peritoneal-dialysis.html"
+          }],
+          "nameUrl" : "test-server-p2m-peritoneal-dialysis.html",
+          "title" : "P2M - Nursing - Chronic peritoneal dialysis",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-glycemia-test.html"
+          }],
+          "nameUrl" : "test-server-p2m-glycemia-test.html",
+          "title" : "P2M - Nursing - Glycemia test with glucometer",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-sampling.html"
+          }],
+          "nameUrl" : "test-server-p2m-sampling.html",
+          "title" : "P2M - Nursing - Sampling",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-bloodletting.html"
+          }],
+          "nameUrl" : "test-server-p2m-bloodletting.html",
+          "title" : "P2M - Nursing - Bloodletting",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-parameters.html"
+          }],
+          "nameUrl" : "test-server-p2m-parameters.html",
+          "title" : "P2M - Nursing - Measurement of parameters",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-assign-organization.html"
+          }],
+          "nameUrl" : "test-server-p2m-assign-organization.html",
+          "title" : "P2M - Nursing - Assign a prescription to an organization",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-assign-caregiver.html"
+          }],
+          "nameUrl" : "test-server-p2m-assign-caregiver.html",
+          "title" : "P2M - Nursing - Assign a prescription to a treatment provider",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-classify-without-consequence.html"
+          }],
+          "nameUrl" : "test-server-p2m-classify-without-consequence.html",
+          "title" : "P2M - Nursing - Classifying a prescription without consequence",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-start-without-assignment.html"
+          }],
+          "nameUrl" : "test-server-p2m-start-without-assignment.html",
+          "title" : "P2M - Nursing - Execute a valid prescription",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-p2m-organization-annex-81.html"
+          }],
+          "nameUrl" : "test-server-p2m-organization-annex-81.html",
+          "title" : "P2M - Nursing - Create an annex 81 proposal by a nurse",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-generic-nursing.html"
+          }],
+          "nameUrl" : "test-server-m2m-generic-nursing.html",
+          "title" : "M2M - Nursing - Generic nursing care",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-annex-81.html"
+          }],
+          "nameUrl" : "test-server-m2m-annex-81.html",
+          "title" : "M2M - Nursing - Medication preparation, Annex 81 proposal",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-medication-prefill.html"
+          }],
+          "nameUrl" : "test-server-m2m-medication-prefill.html",
+          "title" : "M2M - Nursing - Medication prefill preparation, not refunded",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-diabetes-convention-centre.html"
+          }],
+          "nameUrl" : "test-server-m2m-diabetes-convention-centre.html",
+          "title" : "M2M - Nursing - Diabetes education via convention centre",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-diabetes-start-trajectory.html"
+          }],
+          "nameUrl" : "test-server-m2m-diabetes-start-trajectory.html",
+          "title" : "M2M - Nursing - Diabetes education within start trajectory",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-diabetes-care-trajectory.html"
+          }],
+          "nameUrl" : "test-server-m2m-diabetes-care-trajectory.html",
+          "title" : "M2M - Nursing - Diabetes education within care trajectory",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-diabetes-without-care-trajectory.html"
+          }],
+          "nameUrl" : "test-server-m2m-diabetes-without-care-trajectory.html",
+          "title" : "M2M - Nursing - Diabetes education without care trajectory",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-personal-hygiene.html"
+          }],
+          "nameUrl" : "test-server-m2m-personal-hygiene.html",
+          "title" : "M2M - Nursing - Assistance with personal hygiene",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-peritoneal-dialysis.html"
+          }],
+          "nameUrl" : "test-server-m2m-peritoneal-dialysis.html",
+          "title" : "M2M - Nursing - Chronic peritoneal dialysis",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-glycemia-test.html"
+          }],
+          "nameUrl" : "test-server-m2m-glycemia-test.html",
+          "title" : "M2M - Nursing - Glycemia test with glucometer",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-sampling.html"
+          }],
+          "nameUrl" : "test-server-m2m-sampling.html",
+          "title" : "M2M - Nursing - Sampling",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-bloodletting.html"
+          }],
+          "nameUrl" : "test-server-m2m-bloodletting.html",
+          "title" : "M2M - Nursing - Bloodletting",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-parameters.html"
+          }],
+          "nameUrl" : "test-server-m2m-parameters.html",
+          "title" : "M2M - Nursing - Measurement of parameters",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-assign-organization.html"
+          }],
+          "nameUrl" : "test-server-m2m-assign-organization.html",
+          "title" : "M2M - Nursing - Assign a prescription to an organization",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-assign-internal-caregiver.html"
+          }],
+          "nameUrl" : "test-server-m2m-assign-internal-caregiver.html",
+          "title" : "M2M - Nursing - Assign a prescription to a caregiver from the organization",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-start-without-assignment.html"
+          }],
+          "nameUrl" : "test-server-m2m-start-without-assignment.html",
+          "title" : "M2M - Nursing - Execute a valid prescription",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-m2m-organization-annex-81.html"
+          }],
+          "nameUrl" : "test-server-m2m-organization-annex-81.html",
+          "title" : "M2M - Nursing - Create an annex 81 proposal by a nurse from an organization",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-01.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-01.html",
+          "title" : "P2M - Radiology - Suspected pulmonary edema",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-01.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-01.html",
+          "title" : "M2M - Radiology - Suspected pulmonary edema",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-02.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-02.html",
+          "title" : "P2M - Radiology - Unresolved or complicated pneumonia",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-02.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-02.html",
+          "title" : "M2M - Radiology - Unresolved or complicated pneumonia",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-03.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-03.html",
+          "title" : "P2M - Radiology - Chest pain with a normal ECG",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-03.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-03.html",
+          "title" : "M2M - Radiology - Chest pain with a normal ECG",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-04.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-04.html",
+          "title" : "P2M - Radiology - New headaches during pregnancy",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-04.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-04.html",
+          "title" : "M2M - Radiology - New headaches during pregnancy",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-05.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-05.html",
+          "title" : "P2M - Radiology - Tongue weakness",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-05.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-05.html",
+          "title" : "M2M - Radiology - Tongue weakness",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-06.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-06.html",
+          "title" : "P2M - Radiology - Head trauma and stroke follow-up in an adult",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-06.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-06.html",
+          "title" : "M2M - Radiology - Head trauma and stroke follow-up in an adult",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-07.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-07.html",
+          "title" : "P2M - Radiology - Head trauma and stroke follow-up in a child",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-07.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-07.html",
+          "title" : "M2M - Radiology - Head trauma and stroke follow-up in a child",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-08.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-08.html",
+          "title" : "P2M - Radiology - Initial breast cancer imaging",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-08.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-08.html",
+          "title" : "M2M - Radiology - Initial breast cancer imaging",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-09.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-09.html",
+          "title" : "P2M - Radiology - Persistent cough and abnormal sputum",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-09.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-09.html",
+          "title" : "M2M - Radiology - Persistent cough and abnormal sputum",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-10.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-10.html",
+          "title" : "P2M - Radiology - Tongue and facial weakness",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-10.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-10.html",
+          "title" : "M2M - Radiology - Tongue and facial weakness",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-11.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-11.html",
+          "title" : "P2M - Radiology - New cough with two selected examinations",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-11.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-11.html",
+          "title" : "M2M - Radiology - New cough with two selected examinations",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-p2m-12.html"
+          }],
+          "nameUrl" : "test-server-radiology-p2m-12.html",
+          "title" : "P2M - Radiology - Flank pain with suspected recurrent stones",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "test-server-radiology-m2m-12.html"
+          }],
+          "nameUrl" : "test-server-radiology-m2m-12.html",
+          "title" : "M2M - Radiology - Flank pain with suspected recurrent stones",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "changes.html"
         }],
         "nameUrl" : "changes.html",

@@ -49,6 +49,7 @@ The current scope is focused on:
 | [Prescription Templates](topic-prescription-templates.md) | Technical-identifier catalogue, profiles, and validity rules per template. |
 | [Visibility & Blacklisting](topic-visibility-blacklisting.md) | Template visibility, blacklisting behaviour, and cancelled-prescription rules. |
 | [Business Field Mappings](mappings-business.md) | Business field to FHIR mappings, grouped by domain and prescription type. |
+| [Test Server](test-server.md) | Nursing and Radiology test scenarios, business values, FHIR mappings, and request payloads. |
 | [Artifacts](artifacts.md) | Generated FHIR profiles, extensions, ValueSets, CodeSystems, and examples. |
 | [Technical](technical.md) | Entry points, required headers, reference documents, support contacts, and certificates. |
 | [Glossary](glossary.md) | Terminology used across this IG. |

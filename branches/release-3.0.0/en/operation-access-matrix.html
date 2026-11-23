@@ -220,6 +220,9 @@
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
         <a href="changes.html">Changes</a>
       </li>
     </ul>
@@ -332,6 +335,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </tbody>
 </table>
+
+<p>These are role summaries, not unconditional permissions. For radiology, a Patient cannot remove
+an assignment. An Organization can remove its own <code class="language-plaintext highlighter-rouge">BeOrganizationTask</code>, but cannot selectively
+remove a linked internal professional’s <code class="language-plaintext highlighter-rouge">BePerformerTask</code> through <code class="language-plaintext highlighter-rouge">DELETE /Task/{executionID}</code>.
+Removing the organization task also removes its dependent assignments. See
+<a href="operation-unassign-care-provider.html">Unassign a Care Provider</a> for the applicable restrictions.</p>
 
 <h3 id="access-matrix">Access Matrix</h3>
 
@@ -521,7 +530,7 @@ A prescriber searching without a <code class="language-plaintext highlighter-rou
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Nov 16, 2026 08:01+0000">2026-11-16</span>
+          Generated <span title="Mon, Nov 23, 2026 15:27+0000">2026-11-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

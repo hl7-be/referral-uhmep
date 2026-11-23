@@ -1671,6 +1671,486 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="test-server.html"/>
+        </extension>
+        <nameUrl value="test-server.html"/>
+        <title value="Test Server"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-generic-nursing.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-generic-nursing.html"/>
+          <title value="P2M - Nursing - Generic nursing care"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-annex-81.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-annex-81.html"/>
+          <title value="P2M - Nursing - Medication preparation, Annex 81 proposal"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-medication-prefill.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-medication-prefill.html"/>
+          <title value="P2M - Nursing - Medication prefill preparation, not refunded"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-diabetes-convention-centre.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-diabetes-convention-centre.html"/>
+          <title value="P2M - Nursing - Diabetes education via convention centre"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-diabetes-start-trajectory.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-diabetes-start-trajectory.html"/>
+          <title value="P2M - Nursing - Diabetes education within start trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-diabetes-care-trajectory.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-diabetes-care-trajectory.html"/>
+          <title value="P2M - Nursing - Diabetes education within care trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-diabetes-without-care-trajectory.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-diabetes-without-care-trajectory.html"/>
+          <title value="P2M - Nursing - Diabetes education without care trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-personal-hygiene.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-personal-hygiene.html"/>
+          <title value="P2M - Nursing - Assistance with personal hygiene"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-peritoneal-dialysis.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-peritoneal-dialysis.html"/>
+          <title value="P2M - Nursing - Chronic peritoneal dialysis"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-glycemia-test.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-glycemia-test.html"/>
+          <title value="P2M - Nursing - Glycemia test with glucometer"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-sampling.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-sampling.html"/>
+          <title value="P2M - Nursing - Sampling"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-bloodletting.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-bloodletting.html"/>
+          <title value="P2M - Nursing - Bloodletting"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-parameters.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-parameters.html"/>
+          <title value="P2M - Nursing - Measurement of parameters"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-assign-organization.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-assign-organization.html"/>
+          <title value="P2M - Nursing - Assign a prescription to an organization"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-assign-caregiver.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-assign-caregiver.html"/>
+          <title value="P2M - Nursing - Assign a prescription to a treatment provider"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-classify-without-consequence.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-classify-without-consequence.html"/>
+          <title value="P2M - Nursing - Classifying a prescription without consequence"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-start-without-assignment.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-start-without-assignment.html"/>
+          <title value="P2M - Nursing - Execute a valid prescription"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-p2m-organization-annex-81.html"/>
+          </extension>
+          <nameUrl value="test-server-p2m-organization-annex-81.html"/>
+          <title value="P2M - Nursing - Create an annex 81 proposal by a nurse"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-generic-nursing.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-generic-nursing.html"/>
+          <title value="M2M - Nursing - Generic nursing care"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-annex-81.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-annex-81.html"/>
+          <title value="M2M - Nursing - Medication preparation, Annex 81 proposal"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-medication-prefill.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-medication-prefill.html"/>
+          <title value="M2M - Nursing - Medication prefill preparation, not refunded"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-diabetes-convention-centre.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-diabetes-convention-centre.html"/>
+          <title value="M2M - Nursing - Diabetes education via convention centre"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-diabetes-start-trajectory.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-diabetes-start-trajectory.html"/>
+          <title value="M2M - Nursing - Diabetes education within start trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-diabetes-care-trajectory.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-diabetes-care-trajectory.html"/>
+          <title value="M2M - Nursing - Diabetes education within care trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-diabetes-without-care-trajectory.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-diabetes-without-care-trajectory.html"/>
+          <title value="M2M - Nursing - Diabetes education without care trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-personal-hygiene.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-personal-hygiene.html"/>
+          <title value="M2M - Nursing - Assistance with personal hygiene"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-peritoneal-dialysis.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-peritoneal-dialysis.html"/>
+          <title value="M2M - Nursing - Chronic peritoneal dialysis"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-glycemia-test.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-glycemia-test.html"/>
+          <title value="M2M - Nursing - Glycemia test with glucometer"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-sampling.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-sampling.html"/>
+          <title value="M2M - Nursing - Sampling"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-bloodletting.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-bloodletting.html"/>
+          <title value="M2M - Nursing - Bloodletting"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-parameters.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-parameters.html"/>
+          <title value="M2M - Nursing - Measurement of parameters"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-assign-organization.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-assign-organization.html"/>
+          <title value="M2M - Nursing - Assign a prescription to an organization"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-assign-internal-caregiver.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-assign-internal-caregiver.html"/>
+          <title value="M2M - Nursing - Assign a prescription to a caregiver from the organization"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-start-without-assignment.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-start-without-assignment.html"/>
+          <title value="M2M - Nursing - Execute a valid prescription"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-m2m-organization-annex-81.html"/>
+          </extension>
+          <nameUrl value="test-server-m2m-organization-annex-81.html"/>
+          <title value="M2M - Nursing - Create an annex 81 proposal by a nurse from an organization"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-01.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-01.html"/>
+          <title value="P2M - Radiology - Suspected pulmonary edema"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-01.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-01.html"/>
+          <title value="M2M - Radiology - Suspected pulmonary edema"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-02.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-02.html"/>
+          <title value="P2M - Radiology - Unresolved or complicated pneumonia"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-02.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-02.html"/>
+          <title value="M2M - Radiology - Unresolved or complicated pneumonia"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-03.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-03.html"/>
+          <title value="P2M - Radiology - Chest pain with a normal ECG"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-03.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-03.html"/>
+          <title value="M2M - Radiology - Chest pain with a normal ECG"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-04.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-04.html"/>
+          <title value="P2M - Radiology - New headaches during pregnancy"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-04.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-04.html"/>
+          <title value="M2M - Radiology - New headaches during pregnancy"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-05.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-05.html"/>
+          <title value="P2M - Radiology - Tongue weakness"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-05.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-05.html"/>
+          <title value="M2M - Radiology - Tongue weakness"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-06.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-06.html"/>
+          <title value="P2M - Radiology - Head trauma and stroke follow-up in an adult"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-06.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-06.html"/>
+          <title value="M2M - Radiology - Head trauma and stroke follow-up in an adult"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-07.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-07.html"/>
+          <title value="P2M - Radiology - Head trauma and stroke follow-up in a child"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-07.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-07.html"/>
+          <title value="M2M - Radiology - Head trauma and stroke follow-up in a child"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-08.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-08.html"/>
+          <title value="P2M - Radiology - Initial breast cancer imaging"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-08.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-08.html"/>
+          <title value="M2M - Radiology - Initial breast cancer imaging"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-09.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-09.html"/>
+          <title value="P2M - Radiology - Persistent cough and abnormal sputum"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-09.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-09.html"/>
+          <title value="M2M - Radiology - Persistent cough and abnormal sputum"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-10.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-10.html"/>
+          <title value="P2M - Radiology - Tongue and facial weakness"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-10.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-10.html"/>
+          <title value="M2M - Radiology - Tongue and facial weakness"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-11.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-11.html"/>
+          <title value="P2M - Radiology - New cough with two selected examinations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-11.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-11.html"/>
+          <title value="M2M - Radiology - New cough with two selected examinations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-p2m-12.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-p2m-12.html"/>
+          <title value="P2M - Radiology - Flank pain with suspected recurrent stones"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-server-radiology-m2m-12.html"/>
+          </extension>
+          <nameUrl value="test-server-radiology-m2m-12.html"/>
+          <title value="M2M - Radiology - Flank pain with suspected recurrent stones"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="changes.html"/>
         </extension>
         <nameUrl value="changes.html"/>

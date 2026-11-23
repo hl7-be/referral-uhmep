@@ -1,16 +1,16 @@
 EReferral : Validation Results
 =========================================
 
-err = 25, warn = 60, info = 54, broken links = 0
-IG Publisher Version: 3.0.4
-Generated Mon Nov 16 08:04:59 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
- Build Errors : 0 / 24 / 1
+err = 9, warn = 34, info = 44, broken links = 0
+IG Publisher Version: 3.0.5
+Generated Mon Nov 23 15:33:19 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ereferral#3.0.0 (canonical = https://www.riziv-inami.be/standards/fhir/ereferral)
+ Build Errors : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-snomed-designation : 0 / 3 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-indications : 0 / 13 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-indications : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-radiology-supporting-info-role : 0 / 1 / 1
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral : 1 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral : 1 / 1 / 2
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-67120919457 : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-72101230445 : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-Requester1 : 0 / 0 / 2
@@ -53,7 +53,7 @@ Generated Mon Nov 16 08:04:59 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ere
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-servicerequest-nursing : 0 / 1 / 2
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Task-ereferral-referral-task : 0 / 0 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-condition : 0 / 1 / 2
- /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-procedure : 17 / 2 / 12
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-procedure : 1 / 10 / 2
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-ereferral-snomed-designation : 0 / 1 / 1
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure : 0 / 1 / 4
  /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
@@ -65,29 +65,6 @@ Generated Mon Nov 16 08:04:59 UTC 2026. FHIR version 4.0.1 for inami.fhir.be.ere
 == n/a ==
 WARNING: ImplementationGuide.dependency[4].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[4].url: The correct canonical URL for this dependency is https://www.ehealth.fgov.be/standards/fhir/drp
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 819 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 963 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 4753 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 2162 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 7333 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 5511 column 13
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/index.html: Illegal HTML: Illegal HTML element: section
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 175
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 9
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 8
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 19
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 175
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 9
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 8
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 7
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 11
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 19
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 15
-WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 11
 
 
 == fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use.json ==
@@ -105,18 +82,6 @@ WARNING: Resource: The resource CodeSystem/be-cs-pss-qsi-diagnostic-imaging-proc
 
 
 == fsh-generated/resources/CodeSystem-be-cs-pss-qsi-indications.json ==
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[186].display: value should not start or finish with whitespace 'Angiodysplasia, stomach or duodenum '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[700].display: value should not start or finish with whitespace 'Carcinoma in situ, esophagus  '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1161].display: value should not start or finish with whitespace 'Duodenitis '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1452].display: value should not start or finish with whitespace 'Foreign body, bronchus '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1458].display: value should not start or finish with whitespace 'Foreign body, nasal '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1511].display: value should not start or finish with whitespace 'Gastritis '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1962].display: value should not start or finish with whitespace 'Intraop or postop complications, MSK '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[2376].display: value should not start or finish with whitespace 'Mechanical breakdown, prosthetic orbit '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[3076].display: value should not start or finish with whitespace 'Phlebitis '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[3266].display: value should not start or finish with whitespace 'Raynaud's syndrome '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[4157].display: value should not start or finish with whitespace 'Uterine malformation suspected clinically '
-WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[4187].display: value should not start or finish with whitespace 'Varicella '
 WARNING: Resource: The resource CodeSystem/be-cs-pss-qsi-indications should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
 
@@ -125,6 +90,7 @@ WARNING: Resource: The resource CodeSystem/be-cs-radiology-supporting-info-role 
 
 
 == fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral.json ==
+WARNING: ImplementationGuide/inami.fhir.be.ereferral: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.be.core-clinical#1.3.0 released on 2026-08-20, but the most recent appropriate version is 1.4.0. This reference is getting old and the more recent version should be considered
 ERROR: ImplementationGuide/inami.fhir.be.ereferral: ImplementationGuide.dependsOn[4]: The URL should refer directly to the ImplementationGuide resource (e.g. include '/ImplementationGuide/')
 INFORMATION: Resource: The resource ImplementationGuide/inami.fhir.be.ereferral could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
@@ -171,18 +137,18 @@ INFORMATION: ServiceRequest/example-drp-clinical-imaging: ServiceRequest.contain
 
 
 == fsh-generated/resources/ServiceRequest-example-drp-nursing-de-convention-center.json ==
-ERROR: ServiceRequest/example-drp-nursing-de-convention-center: ServiceRequest.orderDetail[0].coding[0].code: Unknown code '211141000172109' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: ServiceRequest/example-drp-nursing-de-convention-center: ServiceRequest.orderDetail[0].coding[0].code: Unknown code '211141000172109' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
 
 
 == fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-care-trajectory.json ==
 
 
 == fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-start-trajectory.json ==
-ERROR: ServiceRequest/example-drp-nursing-de-within-start-trajectory: ServiceRequest.orderDetail[0].coding[0].code: Unknown code '211151000172106' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: ServiceRequest/example-drp-nursing-de-within-start-trajectory: ServiceRequest.orderDetail[0].coding[0].code: Unknown code '211151000172106' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
 
 
 == fsh-generated/resources/ServiceRequest-example-drp-nursing-de-without-care-trajectory.json ==
-ERROR: ServiceRequest/example-drp-nursing-de-without-care-trajectory: ServiceRequest.orderDetail[0].coding[0].code: Unknown code '211161000172108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: ServiceRequest/example-drp-nursing-de-without-care-trajectory: ServiceRequest.orderDetail[0].coding[0].code: Unknown code '211161000172108' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
 
 
 == fsh-generated/resources/ServiceRequest-example-drp-nursing-generic.json ==
@@ -198,8 +164,8 @@ ERROR: ServiceRequest/example-drp-nursing-de-without-care-trajectory: ServiceReq
 
 
 == fsh-generated/resources/ServiceRequest-example-drp-nursing-med-preparation-appendix-81.json ==
-ERROR: ServiceRequest/example-drp-nursing-med-preparation-appendix-81: ServiceRequest.reasonCode[9].coding[0].code: Unknown code '211071000172100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
-ERROR: ServiceRequest/example-drp-nursing-med-preparation-appendix-81: ServiceRequest.reasonCode[10].coding[0].code: Unknown code '211101000172107' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)
+ERROR: ServiceRequest/example-drp-nursing-med-preparation-appendix-81: ServiceRequest.reasonCode[9].coding[0].code: Unknown code '211071000172100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
+ERROR: ServiceRequest/example-drp-nursing-med-preparation-appendix-81: ServiceRequest.reasonCode[10].coding[0].code: Unknown code '211101000172107' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition)
 
 
 == fsh-generated/resources/ServiceRequest-example-drp-nursing-parameters.json ==
@@ -310,34 +276,16 @@ WARNING: Resource: The resource ValueSet/be-vs-diagnostic-imaging-condition shou
 
 
 == fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-procedure.json ==
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[6]: The code '30367100' is not valid in the system http://snomed.info/sct (Unknown code '30367100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[52]: The code '1380331007' is not valid in the system http://snomed.info/sct (Unknown code '1380331007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[76]: The code '1371579003' is not valid in the system http://snomed.info/sct (Unknown code '1371579003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[78]: The code '384471000119103' is not valid in the system http://snomed.info/sct (Unknown code '384471000119103' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[87]: The concept '83788002' has a status of inactive and its use should be reviewed
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[149]: Wrong Display Name 'Endoscopic retrograde pancreatography using fluoroscopic guidance with contrast (procedure)' for http://snomed.info/sct#174651007. Valid display is one of 5 choices: 'Endoscopic retrograde pancreatography' (en), 'Diagnostic endoscopic retrograde examination of pancreatic duct' (en), 'ERP' (en), 'Endoscopic retrograde pancreatography (procedure)' (en) or 'ERP - Endoscopic retrograde pancreatography' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[151]: Wrong Display Name 'Fluoroscopic urethrography with contrast (procedure)' for http://snomed.info/sct#419644004. Valid display is one of 3 choices: 'Fluoroscopic urethrography' (en), 'Fluoroscopic urethrography (procedure)' (en) or 'Urethrogram' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[159]: The code '1372723000' is not valid in the system http://snomed.info/sct (Unknown code '1372723000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[166]: Wrong Display Name 'Fluoroscopic pyelography with intravenous contrast (procedure)' for http://snomed.info/sct#702589008. Valid display is one of 2 choices: 'Fluoroscopic intravenous pyelogram' (en) or 'Fluoroscopic intravenous pyelogram (procedure)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[170]: The code '1380321000' is not valid in the system http://snomed.info/sct (Unknown code '1380321000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[171]: Wrong Display Name 'Fluoroscopic retrograde pyelography with contrast (procedure)' for http://snomed.info/sct#418766006. Valid display is one of 3 choices: 'Fluoroscopic retrograde pyelography' (en), 'Fluoroscopic retrograde pyelography (procedure)' (en) or 'Retrograde pyelogram' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[172]: Wrong Display Name 'Fluoroscopic retrograde urethrography with contrast (procedure)' for http://snomed.info/sct#702588000. Valid display is one of 2 choices: 'Fluoroscopic retrograde urethrography' (en) or 'Fluoroscopic retrograde urethrography (procedure)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[179]: Wrong Display Name 'Fluoroscopic micturating cystourethrography with contrast (procedure)' for http://snomed.info/sct#419245009. Valid display is one of 4 choices: 'Fluoroscopic micturating cystourethrography' (en), 'Fluoroscopic micturating cystourethrography (procedure)' (en), 'Micturating cystourethrogram' (en) or 'Fluoroscopic voiding urethrocystography' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[188]: The code '15771000087104' is not valid in the system http://snomed.info/sct (Unknown code '15771000087104' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[197]: The code '1396535008' is not valid in the system http://snomed.info/sct (Unknown code '1396535008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[224]: The code '92691000112101' is not valid in the system http://snomed.info/sct (Unknown code '92691000112101' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[286]: The code '16443821000119102' is not valid in the system http://snomed.info/sct (Unknown code '16443821000119102' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[288]: The code '1396134000' is not valid in the system http://snomed.info/sct (Unknown code '1396134000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[306]: Wrong Display Name 'Magnetic resonance angiography of vascular structure of neck (procedure)' for http://snomed.info/sct#241665001. Valid display is one of 4 choices: 'MRI of neck vessels' (en), 'MRI of neck vessels (procedure)' (en), 'Magnetic resonance imaging of neck vessels' (en) or 'Magnetic resonance imaging of neck vessels (procedure)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[399]: Wrong Display Name 'Fluoroscopic cystography with contrast (procedure)' for http://snomed.info/sct#418135007. Valid display is one of 3 choices: 'Fluoroscopic cystography' (en), 'Fluoroscopic cystography (procedure)' (en) or 'Cystogram' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[458]: The code '1373815000' is not valid in the system http://snomed.info/sct (Unknown code '1373815000' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[463]: Wrong Display Name 'Positron emission tomography with computed tomography of whole body using fluorodeoxyglucose (18-F) (procedure)' for http://snomed.info/sct#443271005. Valid display is one of 5 choices: 'Positron emission tomography with computed tomography using fluorodeoxyglucose (18-F)' (en), 'Positron emission tomography with computed tomography fluorodeoxyglucose imaging of whole body (procedure)' (en), 'Positron emission tomography with computed tomography fluorodeoxyglucose imaging of whole body' (en), 'Positron emission tomography with computed tomography using fluorodeoxyglucose (18-F) (procedure)' (en) or 'PET CT using fluorodeoxyglucose (18-F)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[523]: The code '1381843006' is not valid in the system http://snomed.info/sct (Unknown code '1381843006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[525]: The code '1380210006' is not valid in the system http://snomed.info/sct (Unknown code '1380210006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-INFORMATION: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[531]: Wrong Display Name 'Transrectal ultrasonography of prostate (procedure)' for http://snomed.info/sct#22034001. Valid display is one of 2 choices: 'Echography of prostate, transrectal approach' (en) or 'Echography of prostate, transrectal approach (procedure)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[585]: The code '1362050003' is not valid in the system http://snomed.info/sct (Unknown code '1362050003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[589]: The code '1367647005' is not valid in the system http://snomed.info/sct (Unknown code '1367647005' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
-ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[592]: The code '13661000087100' is not valid in the system http://snomed.info/sct (Unknown code '13661000087100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition))
+ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[6]: The code '30367100' is not valid in the system http://snomed.info/sct (Unknown code '30367100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition))
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[89].display: 'Computed tomography myelogram (procedure)' is no longer considered a correct display for code '241589001' (status = inactive). The correct display is one of CT myelography with contrast,Computed tomography myelography with contrast (procedure),Computed tomography myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[90].display: 'Computed tomography myelogram of cervical region (procedure)' is no longer considered a correct display for code '241590005' (status = inactive). The correct display is one of CT cervical myelography with contrast,Computed tomography cervical myelography with contrast (procedure),Computed tomography cervical myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[91].display: 'Computed tomography myelogram of thoracic region (procedure)' is no longer considered a correct display for code '241591009' (status = inactive). The correct display is one of CT thoracic myelography with contrast,Computed tomography thoracic myelography with contrast (procedure),Computed tomography thoracic myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[92].display: 'Computed tomography myelogram of lumbar region (procedure)' is no longer considered a correct display for code '241592002' (status = inactive). The correct display is one of CT lumbar myelography with contrast,Computed tomography lumbar myelography with contrast (procedure),Computed tomography lumbar myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[255].display: 'Fluoroscopic cervical myelogram (procedure)' is no longer considered a correct display for code '417925004' (status = inactive). The correct display is one of Fluoroscopic cervical myelography with contrast,Fluoroscopic cervical myelography with contrast (procedure)
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[256].display: 'Fluoroscopic thoracic myelogram (procedure)' is no longer considered a correct display for code '419722002' (status = inactive). The correct display is one of Fluoroscopic thoracic myelography with contrast,Fluoroscopic thoracic myelography with contrast (procedure)
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[257].display: 'Fluoroscopic lumbar myelogram (procedure)' is no longer considered a correct display for code '418828001' (status = inactive). The correct display is one of Fluoroscopic lumbar myelography with contrast,Fluoroscopic lumbar myelography with contrast (procedure)
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[400].display: 'Ultrasound scan of abdomen and pelvis (procedure)' is no longer considered a correct display for code '418394000' (status = inactive). The correct display is one of Ultrasonography of abdomen and pelvis,Ultrasound scan of abdomen and pelvis,Ultrasonography of abdomen and pelvis (procedure),Ultrasound of abdomen and pelvis
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[585].display: 'Dynamic plain X-ray of cervical vertebral column region (procedure)' is no longer considered a correct display for code '1362050003' (status = inactive). The correct display is one of Plain X-ray of cervical spine with flexion and extension,Dynamic plain X-ray of cervical vertebral column region,Dynamic plain X-ray of cervical spine,Plain X-ray of cervical spine with flexion and extension (procedure)
 WARNING: Resource: The resource ValueSet/be-vs-diagnostic-imaging-procedure should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
 
 

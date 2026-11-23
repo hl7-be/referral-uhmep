@@ -31,6 +31,8 @@ An organization using M2M access may remove its own `BeOrganizationTask`, subjec
 
 Patient, Caregiver, Organization (for its own `BeOrganizationTask` only). For an Annex 81 proposal, a Prescriber may also remove their own assignment.
 
+For radiology, the Patient role is not permitted to remove an assignment. The caller must be an authorized Caregiver removing their own assignment, or an Organization removing its own organization assignment. The ambulatory-track and state checks do not override these role and ownership restrictions.
+
 ### Possible Error Codes
 
 The errors for this operation are listed in the [eReferral API Error Codes workbook](UHMEP_API_ErrorCodes_20260723.xlsx). Filter the **Business Operations** or **API endpoint(s)** sheet for the relevant operation or endpoint. See [Error Codes](error-codes.md) for workbook guidance.

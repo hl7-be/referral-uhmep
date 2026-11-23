@@ -22,6 +22,8 @@ A connected user is assigned exactly **one** role, which acts as the first layer
 | Organization | Create prescriptions and proposals. Consult list/details/execution tasks of prescriptions and proposals. Assign them to itself, to internal healthcare professionals or to external healthcare professionals. Remove an assignation (own or internal healthcare professional) on a prescription/proposal. |
 | Restricted | If a healthcare professional’s token contains only the “Restricted” role, their licence is suspended and they have strictly limited access (see[Suspension](#suspension)). |
 
+These are role summaries, not unconditional permissions. For radiology, a Patient cannot remove an assignment. An Organization can remove its own `BeOrganizationTask`, but cannot selectively remove a linked internal professional’s `BePerformerTask` through `DELETE /Task/{executionID}`. Removing the organization task also removes its dependent assignments. See [Unassign a Care Provider](operation-unassign-care-provider.md) for the applicable restrictions.
+
 ### Access Matrix
 
 Beyond the base role, eReferral enforces an **access matrix** defined by INAMI. Before allowing an action, the API evaluates:
