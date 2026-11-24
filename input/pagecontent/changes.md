@@ -2,6 +2,21 @@ This page documents the changes proposed to the 4.0 target specification. It des
 
 ---
 
+### 2026-11-24 - v4.0.0-draft: Nursing Example Alignment
+
+Selected Nursing examples now follow the structured Test Server scenarios for timing and session details. This documentation update does not announce new runtime functionality.
+
+<details markdown="1">
+<summary><strong>View detailed Nursing example updates</strong></summary>
+
+- Convention-centre education follows the scenario frequency of three sessions per week, with a maximum of 30 sessions and no invented duration.
+- Start-trajectory education specifies four sessions over one year.
+- Diabetes education without a care trajectory includes the individual-session detail and the feedback-to-prescriber value used by the Test Server example.
+
+</details>
+
+---
+
 ### 2026-10-29 - v4.0.0-draft: Telemonitoring and Namespace Migration
 
 - Include the Telemonitoring medical prescription profile, mappings, vocabularies and example.

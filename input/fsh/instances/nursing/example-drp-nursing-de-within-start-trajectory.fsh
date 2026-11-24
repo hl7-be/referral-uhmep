@@ -76,9 +76,9 @@ Usage: #example
 
 // occurrenceTiming
 * occurrenceTiming.repeat.count = 4
-* occurrenceTiming.repeat.frequency = 1
-* occurrenceTiming.repeat.period = 3
-* occurrenceTiming.repeat.periodUnit = #mo
+* occurrenceTiming.repeat.frequency = 4
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #a
 
 * authoredOn = "2026-02-18T14:11:04+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

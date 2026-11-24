@@ -79,11 +79,8 @@ Description: "Diabetes education prescription via a convention centre."
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 1
-* occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #a
 * occurrenceTiming.repeat.count = 30
-* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.frequency = 3
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #wk
 

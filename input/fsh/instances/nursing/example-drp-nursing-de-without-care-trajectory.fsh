@@ -27,7 +27,7 @@ Usage: #example
 * extension[0].valuePeriod.start = "2026-02-18"
 
 * extension[1].url = $be-ext-feedback-to-prescriber
-* extension[1].valueBoolean = false
+* extension[1].valueBoolean = true
 
 * status = #draft
 * intent = #order
@@ -52,12 +52,14 @@ Usage: #example
 * code.text.extension[0].extension[2].url = "version"
 * code.text.extension[0].extension[2].valuePositiveInt = 1
 
-// orderDetail (2 entries)
+// orderDetail (3 entries)
 * orderDetail[0].coding[0].system = $sct-version
 * orderDetail[0].coding[0].code = #211161000172108
 
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
 * orderDetail[1].coding[0].code = #diabetic-education-self-care
+* orderDetail[2].coding[0].system = $be-cs-session-type
+* orderDetail[2].coding[0].code = #individual-session
 
 // subject.identifier (SSIN pseudonymized)
 * subject.identifier.use = #official

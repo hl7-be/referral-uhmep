@@ -67,10 +67,10 @@ Usage: #example
 * occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
 * occurrenceTiming.repeat.boundsDuration.code = #a
-* occurrenceTiming.repeat.count = 104
-* occurrenceTiming.repeat.frequency = 2
+* occurrenceTiming.repeat.count = 365
+* occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
-* occurrenceTiming.repeat.periodUnit = #wk
+* occurrenceTiming.repeat.periodUnit = #d
 
 * reasonCode[0].coding[0].system = $sct
 * reasonCode[0].coding[0].code = #49049000

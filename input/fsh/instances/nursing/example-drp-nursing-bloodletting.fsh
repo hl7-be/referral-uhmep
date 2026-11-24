@@ -22,7 +22,6 @@ Usage: #example
 // top-level extensions
 * extension[0].url = $be-ext-validity-period
 * extension[0].valuePeriod.start = "2026-02-18"
-* extension[0].valuePeriod.end = "2026-03-04"
 
 * extension[1].url = $be-ext-feedback-to-prescriber
 * extension[1].valueBoolean = true
@@ -72,10 +71,10 @@ Usage: #example
 * occurrenceTiming.repeat.boundsDuration.value = 2
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
 * occurrenceTiming.repeat.boundsDuration.code = #wk
-* occurrenceTiming.repeat.count = 5
-* occurrenceTiming.repeat.frequency = 1
-* occurrenceTiming.repeat.period = 3
-* occurrenceTiming.repeat.periodUnit = #d
+* occurrenceTiming.repeat.count = 4
+* occurrenceTiming.repeat.frequency = 2
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #wk
 
 * authoredOn = "2026-02-18T14:39:54+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

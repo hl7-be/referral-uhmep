@@ -247,7 +247,6 @@ menu:
   Home: index.html
   Guidance: guidance.html
   Topics:
-    Migration 3.0 to 4.0: migration-3-0-to-4-0.html
     Profiles Architecture: topic-profiles-architecture.html
     Profile Rewriting: topic-profile-rewriting.html
     Life Cycle: topic-prescription-lifecycle.html
@@ -271,6 +270,7 @@ menu:
   Technical: technical.html
   Resources:
     Glossary: glossary.html
+    Migration 3.0 to 4.0: migration-3-0-to-4-0.html
     Test Server: test-server.html
     Downloads: downloads.html
     Changes: changes.html

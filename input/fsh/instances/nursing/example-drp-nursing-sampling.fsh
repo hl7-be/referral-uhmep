@@ -1,7 +1,7 @@
 Instance: example-drp-nursing-sampling
 InstanceOf: EReferralServiceRequestNursing
 Title: "Sample collection"
-Description: "Nursing sampling prescription for wound fluid and blood collection."
+Description: "Nursing sampling prescription for wound-fluid collection from the right knee."
 Usage: #example
 
 
@@ -54,8 +54,6 @@ Usage: #example
 // orderDetail
 * orderDetail[0].coding[0].system = "http://snomed.info/sct"
 * orderDetail[0].coding[0].code = #247450001
-* orderDetail[1].coding[0].system = "http://snomed.info/sct"
-* orderDetail[1].coding[0].code = #87612001
 
 // bodySite (base location) with laterality and topography extensions
 * bodySite[0].coding[0].system = "http://snomed.info/sct"
@@ -77,7 +75,13 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.count = 1
+* occurrenceTiming.repeat.boundsDuration.value = 1
+* occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
+* occurrenceTiming.repeat.boundsDuration.code = #wk
+* occurrenceTiming.repeat.count = 7
+* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #d
 
 * authoredOn = "2026-02-18T14:37:42+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

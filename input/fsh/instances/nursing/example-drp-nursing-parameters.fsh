@@ -75,8 +75,6 @@ Usage: #example
 * occurrenceTiming.repeat.frequency = 2
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #d
-* occurrenceTiming.repeat.when[0] = #MORN
-* occurrenceTiming.repeat.when[1] = #EVE
 
 * authoredOn = "2026-02-18T14:20:30+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

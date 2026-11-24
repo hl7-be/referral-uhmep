@@ -62,16 +62,10 @@ Usage: #example
 * orderDetail[0].coding[0].code = #370858005
 
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
-* orderDetail[1].coding[0].code = #diabetic-education-material
+* orderDetail[1].coding[0].code = #diabetic-education-glucose-meter
 
-* orderDetail[2].coding[0].system = $be-cs-diabetic-education-type
-* orderDetail[2].coding[0].code = #diabetic-education-glucose-meter
-
-* orderDetail[3].coding[0].system = $be-cs-diabetic-education-type
-* orderDetail[3].coding[0].code = #diabetic-education-start-insulin-glp1
-
-* orderDetail[4].coding[0].system = $be-cs-session-type
-* orderDetail[4].coding[0].code = #individual-session
+* orderDetail[2].coding[0].system = $be-cs-session-type
+* orderDetail[2].coding[0].code = #individual-session
 
 // subject.identifier
 * subject.identifier.use = #official
