@@ -11,12 +11,12 @@ Description: "Example of a generic nursing ServiceRequest.
 Inputs and values used in this example:
 - Prescription type: generic-nursing
 - Care code (SNOMED): 9632001
-- Care detail (orderDetail): preparation-and-administration-of-medication-to-psychiatric-patient
+- Care detail (orderDetail): gastrointestinal-care
 - Validity start date: 2026-02-18
 - Timing:
-  * boundsDuration: 4 months
-  * count: 360
-  * frequency: 3
+  * boundsDuration: 1 week
+  * count: 7
+  * frequency: 1
   * period: 1 day
 - Priority: routine
 - Feedback to prescriber: false
@@ -66,7 +66,7 @@ Usage: #example
 
 // orderDetail
 * orderDetail[0].coding[0].system = $be-cs-generic-care-types
-* orderDetail[0].coding[0].code = #preparation-and-administration-of-medication-to-psychiatric-patient
+* orderDetail[0].coding[0].code = #gastrointestinal-care
 
 // subject.identifier (SSIN pseudonymized)
 * subject.identifier.use = #official
@@ -81,11 +81,11 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 4
+* occurrenceTiming.repeat.boundsDuration.value = 1
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #mo
-* occurrenceTiming.repeat.count = 360
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.boundsDuration.code = #wk
+* occurrenceTiming.repeat.count = 7
+* occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #d
 

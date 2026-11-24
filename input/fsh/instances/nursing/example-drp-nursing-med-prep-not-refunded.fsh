@@ -8,7 +8,7 @@ Inputs and values used in this example:
 - Procedure code (SNOMED): 385796006
 - Validity period: 2026-02-18 -> 2027-02-18
 - Timing:
-  * frequency: 3
+  * frequency: 1
   * period: 1 week
 - Medical reason (SNOMED): 404684003
 - Notes:
@@ -74,7 +74,7 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #wk
 

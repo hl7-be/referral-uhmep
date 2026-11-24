@@ -6,12 +6,12 @@ Description: "Example of therapeutic bloodletting including quantity.
 Inputs and values used in this example:
 - Prescription type: bloodletting
 - Procedure code (SNOMED): 127606004
-- Quantity: 300 mL
-- Validity period: 2026-02-18 to 2027-02-18
+- Quantity: 350 mL
+- Validity start date: 2026-02-18
 - Timing:
-  * boundsDuration: 1 week
-  * count: 3
-  * frequency: 3
+  * boundsDuration: 2 weeks
+  * count: 4
+  * frequency: 2
   * period: 1 week
 - Medical reason (SNOMED): 404684003
 - Notes:
@@ -36,10 +36,9 @@ Usage: #example
 // top-level extensions
 * extension[0].url = $be-ext-validity-period
 * extension[0].valuePeriod.start = "2026-02-18"
-* extension[0].valuePeriod.start = "2027-02-18"
 
 * extension[1].url = $be-ext-feedback-to-prescriber
-* extension[1].valueBoolean = false
+* extension[1].valueBoolean = true
 
 * status = #draft
 * intent = #order
@@ -65,7 +64,7 @@ Usage: #example
 * code.text.extension[0].extension[2].valuePositiveInt = 1
 
 // quantityQuantity
-* quantityQuantity.value = 300
+* quantityQuantity.value = 350
 * quantityQuantity.unit = "milliliter"
 * quantityQuantity.system = "http://unitsofmeasure.org"
 * quantityQuantity.code = #mL
@@ -83,11 +82,11 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 1
+* occurrenceTiming.repeat.boundsDuration.value = 2
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
 * occurrenceTiming.repeat.boundsDuration.code = #wk
-* occurrenceTiming.repeat.count = 3
-* occurrenceTiming.repeat.frequency = 3
+* occurrenceTiming.repeat.count = 4
+* occurrenceTiming.repeat.frequency = 2
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #wk
 

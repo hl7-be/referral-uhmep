@@ -10,10 +10,9 @@ Inputs and values used in this example:
 - Education type: diabetic-education-self-care
 - Validity start date: 2026-02-18
 - Timing:
-  * boundsDuration: 3 weeks
-  * count: 21
+  * count: 10
   * frequency: 1
-  * period: 1 day
+  * period: 1 month
 - Feedback to prescriber: true
 - Notes:
   * general-remarks"
@@ -73,6 +72,8 @@ Usage: #example
 
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
 * orderDetail[1].coding[0].code = #diabetic-education-self-care
+* orderDetail[2].coding[0].system = $be-cs-session-type
+* orderDetail[2].coding[0].code = #individual-session
 
 // subject.identifier (SSIN pseudonymized)
 * subject.identifier.use = #official
@@ -87,13 +88,10 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 3
-* occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #wk
-* occurrenceTiming.repeat.count = 21
+* occurrenceTiming.repeat.count = 10
 * occurrenceTiming.repeat.frequency = 1
 * occurrenceTiming.repeat.period = 1
-* occurrenceTiming.repeat.periodUnit = #d
+* occurrenceTiming.repeat.periodUnit = #mo
 
 * authoredOn = "2026-02-18T14:13:08+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

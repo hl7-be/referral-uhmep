@@ -6,11 +6,14 @@ Description: "Example of a biological sample collection prescription.
 Inputs and values used in this example:
 - Prescription type: sampling
 - Procedure code (SNOMED): 17636008
-- Sampling detail (SNOMED): 78014005
-- Body location (SNOMED): 78277001 (temporal lobe structure)
+- Sampling detail (orderDetail, SNOMED): 247450001
+- Body location (SNOMED): 72696002 (right knee)
 - Body laterality (SNOMED, be-ext-laterality): 24028007 (right)
-- Body topography (SNOMED, be-ext-body-topography): 255561001 (medial)
-- Occurrence count: 1
+- Timing:
+  * boundsDuration: 1 week
+  * count: 7
+  * frequency: 1
+  * period: 1 day
 - Validity start date: 2026-02-18
 - Medical reason (SNOMED): 404684003
 - Notes:
@@ -67,17 +70,14 @@ Usage: #example
 
 // orderDetail
 * orderDetail[0].coding[0].system = "http://snomed.info/sct"
-* orderDetail[0].coding[0].code = #78014005
+* orderDetail[0].coding[0].code = #247450001
 
 // bodySite (base location) with laterality and topography extensions
 * bodySite[0].coding[0].system = "http://snomed.info/sct"
-* bodySite[0].coding[0].code = #78277001
+* bodySite[0].coding[0].code = #72696002
 * bodySite[0].extension[0].url = $be-ext-laterality
 * bodySite[0].extension[0].valueCoding.system = "http://snomed.info/sct"
 * bodySite[0].extension[0].valueCoding.code = #24028007
-* bodySite[0].extension[1].url = $be-ext-body-topography
-* bodySite[0].extension[1].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
-* bodySite[0].extension[1].valueCodeableConcept.coding[0].code = #255561001
 
 // subject.identifier
 * subject.identifier.use = #official
@@ -92,7 +92,13 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.count = 1
+* occurrenceTiming.repeat.boundsDuration.value = 1
+* occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
+* occurrenceTiming.repeat.boundsDuration.code = #wk
+* occurrenceTiming.repeat.count = 7
+* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #d
 
 * authoredOn = "2026-02-18T14:37:42+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

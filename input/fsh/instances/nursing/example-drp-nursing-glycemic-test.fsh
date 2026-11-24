@@ -9,10 +9,10 @@ Inputs and values used in this example:
 - Measurement timing: before-insulin-administration
 - Validity start date: 2026-02-18
 - Timing:
-  * boundsDuration: 3 weeks
-  * count: 21
-  * frequency: 1
-  * period: 1 day
+  * boundsDuration: 2 weeks
+  * count: 6
+  * frequency: 3
+  * period: 1 week
 - Medical reason (SNOMED): 404684003
 - Notes:
   * medical-reason
@@ -68,7 +68,7 @@ Usage: #example
 
 // orderDetail
 * orderDetail[0].coding[0].system = $be-cs-glycemia-measurement-timing
-* orderDetail[0].coding[0].code = #before-insulin-administration
+* orderDetail[0].coding[0].code = #fasting
 
 // subject.identifier
 * subject.identifier.use = #official
@@ -83,13 +83,13 @@ Usage: #example
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 3
+* occurrenceTiming.repeat.boundsDuration.value = 2
 * occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
 * occurrenceTiming.repeat.boundsDuration.code = #wk
-* occurrenceTiming.repeat.count = 21
-* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.count = 6
+* occurrenceTiming.repeat.frequency = 3
 * occurrenceTiming.repeat.period = 1
-* occurrenceTiming.repeat.periodUnit = #d
+* occurrenceTiming.repeat.periodUnit = #wk
 
 * authoredOn = "2026-02-18T14:17:12+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

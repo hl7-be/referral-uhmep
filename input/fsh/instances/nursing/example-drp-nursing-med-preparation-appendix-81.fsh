@@ -10,20 +10,9 @@ Inputs and values used in this example:
 - Procedure code (SNOMED): 385796006
 - Validity period: 2026-02-18 -> 2027-02-18
 - Requester role: nurse (PractitionerRole/67120919457-NURSE)
-- Indications (reasonCode - 13 SNOMED codes):
-  * 1290542000
-  * 129834002
-  * 271299001
-  * 275928001
-  * 359748005
-  * 448176008
-  * 62014003
-  * 708014007
-  * 1137439008
-  * 211071000172100
-  * 211101000172107
-  * 397540003
-  * 52448006"
+- Nursing diagnoses (SNOMED): 275928001, 1290542000
+- Medical problem (SNOMED): 52448006
+- Frequency: 1 time per week"
 Usage: #example
 
 // meta.extension: be-ext-key-pseudonymization
@@ -81,22 +70,15 @@ Usage: #example
 
 * authoredOn = "2026-02-18T15:03:57+01:00"
 * requester = Reference(PractitionerRole/67120919457-NURSE)
+* occurrenceTiming.repeat.frequency = 1
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #wk
 
 // reasonCode: sliced CodeableConcept, each with 1 coding
 // --- Nursing diagnosis (8) ---
 * reasonCode[0].coding[0] = $sct#275928001
 * reasonCode[+].coding[0] = $sct#1290542000
-* reasonCode[+].coding[0] = $sct#129834002
-* reasonCode[+].coding[0] = $sct#448176008
-* reasonCode[+].coding[0] = $sct#359748005
-* reasonCode[+].coding[0] = $sct#271299001
-* reasonCode[+].coding[0] = $sct#62014003
-* reasonCode[+].coding[0] = $sct#708014007
 
 // --- Medical problem (5) ---
-* reasonCode[+].coding[0] = $sct#1137439008
-* reasonCode[+].coding[0] = $sct#211071000172100
-* reasonCode[+].coding[0] = $sct#211101000172107
-* reasonCode[+].coding[0] = $sct#397540003
 * reasonCode[+].coding[0] = $sct#52448006
 

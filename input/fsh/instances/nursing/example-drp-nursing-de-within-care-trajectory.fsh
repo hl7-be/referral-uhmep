@@ -8,12 +8,15 @@ Inputs and values used in this example:
 - Education code (SNOMED): 385805005
 - Education subtype (SNOMED): 370858005
 - Education type: diabetic-education-additional-hba1c
-- Session type: group-session
+- Session type: individual-session
 - Performer types (SNOMED):
   * 106292003
   * 224543004
 - Validity period: 2026-02-18 -> 2026-12-31
-- Number of sessions: 5"
+- Timing:
+  * count: 5
+  * frequency: 5
+  * period: 1 year"
 Usage: #example
 
 
@@ -44,11 +47,10 @@ Usage: #example
 // be-ext-performer-type (x2)
 * extension[2].url = $be-ext-performer-type
 * extension[2].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
-* extension[2].valueCodeableConcept.coding[0].code = #106292003
+* extension[2].valueCodeableConcept.coding[0].code = #224543004
 
 * extension[3].url = $be-ext-performer-type
 * extension[3].valueCodeableConcept.coding[0].system = "http://snomed.info/sct"
-* extension[3].valueCodeableConcept.coding[0].code = #224543004
 
 * status = #draft
 * intent = #order
@@ -78,10 +80,10 @@ Usage: #example
 * orderDetail[0].coding[0].code = #370858005
 
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
-* orderDetail[1].coding[0].code = #diabetic-education-additional-hba1c
+* orderDetail[1].coding[0].code = #diabetic-education-glucose-meter
 
 * orderDetail[2].coding[0].system = $be-cs-session-type
-* orderDetail[2].coding[0].code = #group-session
+* orderDetail[2].coding[0].code = #individual-session
 
 // subject.identifier
 * subject.identifier.use = #official
@@ -97,6 +99,9 @@ Usage: #example
 
 // occurrenceTiming
 * occurrenceTiming.repeat.count = 5
+* occurrenceTiming.repeat.frequency = 5
+* occurrenceTiming.repeat.period = 1
+* occurrenceTiming.repeat.periodUnit = #a
 
 * authoredOn = "2026-02-18T14:45:43+01:00"
 * requester = Reference(PractitionerRole/72101230445-PHYSICIAN)

@@ -7,11 +7,10 @@ Inputs and values used in this example:
 - Prescription type: diabetic-education-convention-center
 - Education code (SNOMED): 385805005
 - Education subtype (SNOMED): 211141000172109
-- Education type: diabetic-education-other
+- Education type: diabetic-education-self-care
 - Validity period: 2026-02-18 -> 2027-02-18
 - Timing:
-  * boundsDuration: 4 months
-  * count: 52
+  * count: 30
   * frequency: 3
   * period: 1 week
 - Feedback to prescriber: false
@@ -71,7 +70,7 @@ Inputs and values used in this example:
 
 // orderDetail[1] diabetic education type + encrypted text
 * orderDetail[1].coding[0].system = $be-cs-diabetic-education-type
-* orderDetail[1].coding[0].code = #diabetic-education-other
+* orderDetail[1].coding[0].code = #diabetic-education-self-care
 * orderDetail[1].text = "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}"
 * orderDetail[1].text.extension[0].url = $be-ext-pseudonymization
 * orderDetail[1].text.extension[0].extension[0].url = "marker"
@@ -94,10 +93,7 @@ Inputs and values used in this example:
 * subject.identifier.value.extension[0].extension[2].valuePositiveInt = 2
 
 // occurrenceTiming
-* occurrenceTiming.repeat.boundsDuration.value = 4
-* occurrenceTiming.repeat.boundsDuration.system = "http://unitsofmeasure.org"
-* occurrenceTiming.repeat.boundsDuration.code = #mo
-* occurrenceTiming.repeat.count = 52
+* occurrenceTiming.repeat.count = 30
 * occurrenceTiming.repeat.frequency = 3
 * occurrenceTiming.repeat.period = 1
 * occurrenceTiming.repeat.periodUnit = #wk
