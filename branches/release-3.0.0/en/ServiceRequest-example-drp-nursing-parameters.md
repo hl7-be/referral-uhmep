@@ -22,11 +22,11 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **code**: urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
 
-**orderDetail**: Peripheral oxygen saturation
+**orderDetail**: Lying blood pressure
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 180 times, at meals, 3 per 1 day
+**occurrence**: Count 14 times, 2 per 1 day
 
 **authoredOn**: 2026-02-18 14:20:30+0100
 
@@ -129,7 +129,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "orderDetail" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "431314004"
+      "code" : "163033001"
     }]
   }],
   "subject" : {
@@ -159,15 +159,14 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "occurrenceTiming" : {
     "repeat" : {
       "boundsDuration" : {
-        "value" : 2,
+        "value" : 1,
         "system" : "http://unitsofmeasure.org",
-        "code" : "mo"
+        "code" : "wk"
       },
-      "count" : 180,
-      "frequency" : 3,
+      "count" : 14,
+      "frequency" : 2,
       "period" : 1,
-      "periodUnit" : "d",
-      "when" : ["C"]
+      "periodUnit" : "d"
     }
   },
   "authoredOn" : "2026-02-18T14:20:30+01:00",

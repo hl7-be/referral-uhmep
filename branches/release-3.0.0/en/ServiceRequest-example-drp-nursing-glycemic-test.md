@@ -22,11 +22,11 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **code**: urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
 
-**orderDetail**: Before insulin administration
+**orderDetail**: Fasting
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 21 times, Once per 1 day
+**occurrence**: Count 6 times, 3 per 1 week
 
 **authoredOn**: 2026-02-18 14:17:12+0100
 
@@ -139,7 +139,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "orderDetail" : [{
     "coding" : [{
       "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-glycemia-measurement-timing",
-      "code" : "before-insulin-administration"
+      "code" : "fasting"
     }]
   }],
   "subject" : {
@@ -169,14 +169,14 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "occurrenceTiming" : {
     "repeat" : {
       "boundsDuration" : {
-        "value" : 3,
+        "value" : 2,
         "system" : "http://unitsofmeasure.org",
         "code" : "wk"
       },
-      "count" : 21,
-      "frequency" : 1,
+      "count" : 6,
+      "frequency" : 3,
       "period" : 1,
-      "periodUnit" : "d"
+      "periodUnit" : "wk"
     }
   },
   "authoredOn" : "2026-02-18T14:17:12+01:00",

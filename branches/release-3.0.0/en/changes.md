@@ -9,15 +9,11 @@ This page documents the changes to the eReferral Implementation Guide specificat
 
 -------
 
-### 2026-11-18 - 3.0 API Contract Clarifications
-
-The operation guidance now distinguishes the implemented 3.0 API from broader role summaries. This is a documentation correction, not the announcement of newly deployed functionality.
-
--------
-
-### 2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements
+### 2026-10-28 - v3.0.0 Release: Radiology and API Contract Clarifications
 
 This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit, and adds examples for the updated PSS/QSI radiology terminology.
+
+A documentation update on 2026-11-18 also clarified the implemented 3.0 API contract. It is a documentation correction, not the announcement of newly deployed functionality.
 
 For payload compatibility checks, radiology state transitions, before/after scenarios and regression tests, see [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.md). The announced future migration to the Referral IG and the future canonical-base change are separate from this release.
 

@@ -20,11 +20,13 @@ Profile: [EReferralAnnex81](StructureDefinition-ereferral-annex-81.md)
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
+**occurrence**: Once per 1 week
+
 **authoredOn**: 2026-02-18 15:03:57+0100
 
 **requester**: [Nurse Example (official) (https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#67120919457 (use: official)): nurse](PractitionerRole-67120919457-NURSE.md)
 
-**reasonCode**: Drugs - partial non-compliance, Unintentional misuse of medication, Noncompliance with medication regimen, Uses less medication than prescribed, Patient condition unchanged, Patient's condition worsened, Adverse reaction to drug, Does not have an informal caregiver, On complex medication regime, 211071000172100, 211101000172107, Visual impairment, Dementia
+**reasonCode**: Drugs - partial non-compliance, Unintentional misuse of medication, Dementia
 
 
 
@@ -131,6 +133,13 @@ Profile: [EReferralAnnex81](StructureDefinition-ereferral-annex-81.md)
       }
     }
   },
+  "occurrenceTiming" : {
+    "repeat" : {
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "wk"
+    }
+  },
   "authoredOn" : "2026-02-18T15:03:57+01:00",
   "requester" : {
     "reference" : "PractitionerRole/67120919457-NURSE"
@@ -145,66 +154,6 @@ Profile: [EReferralAnnex81](StructureDefinition-ereferral-annex-81.md)
     "coding" : [{
       "system" : "http://snomed.info/sct",
       "code" : "1290542000"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "129834002"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "448176008"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "359748005"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "271299001"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "62014003"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "708014007"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "1137439008"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "211071000172100"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "211101000172107"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "397540003"
     }]
   },
   {

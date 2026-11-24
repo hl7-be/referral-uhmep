@@ -28,7 +28,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 4 times, Once
+**occurrence**: Count 4 times, 4 per 1 year
 
 **authoredOn**: 2026-02-18 14:11:04+0100
 
@@ -176,7 +176,10 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   },
   "occurrenceTiming" : {
     "repeat" : {
-      "count" : 4
+      "count" : 4,
+      "frequency" : 4,
+      "period" : 1,
+      "periodUnit" : "a"
     }
   },
   "authoredOn" : "2026-02-18T14:11:04+01:00",

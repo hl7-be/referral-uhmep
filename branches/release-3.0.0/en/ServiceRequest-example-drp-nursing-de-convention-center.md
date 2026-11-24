@@ -26,7 +26,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 52 times, 3 per 1 week
+**occurrence**: Count 30 times, 3 per 1 week
 
 **authoredOn**: 2026-02-18 14:15:52+0100
 
@@ -136,7 +136,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   {
     "coding" : [{
       "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type",
-      "code" : "diabetic-education-other"
+      "code" : "diabetic-education-self-care"
     }],
     "text" : "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}",
     "_text" : {
@@ -183,12 +183,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   },
   "occurrenceTiming" : {
     "repeat" : {
-      "boundsDuration" : {
-        "value" : 4,
-        "system" : "http://unitsofmeasure.org",
-        "code" : "mo"
-      },
-      "count" : 52,
+      "count" : 30,
       "frequency" : 3,
       "period" : 1,
       "periodUnit" : "wk"

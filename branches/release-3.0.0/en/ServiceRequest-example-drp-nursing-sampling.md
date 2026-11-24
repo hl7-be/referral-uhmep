@@ -22,11 +22,11 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **code**: urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
 
-**orderDetail**: Urine
+**orderDetail**: Exudate
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 1 times, Once
+**occurrence**: Count 7 times, Once per 1 day
 
 **authoredOn**: 2026-02-18 14:37:42+0100
 
@@ -34,7 +34,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **reasonCode**: urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
 
-**bodySite**: Temporal lobe structure
+**bodySite**: Knee region structure
 
 **note**: , 
 
@@ -136,7 +136,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "orderDetail" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "78014005"
+      "code" : "247450001"
     }]
   }],
   "subject" : {
@@ -165,7 +165,15 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   },
   "occurrenceTiming" : {
     "repeat" : {
-      "count" : 1
+      "boundsDuration" : {
+        "value" : 1,
+        "system" : "http://unitsofmeasure.org",
+        "code" : "wk"
+      },
+      "count" : 7,
+      "frequency" : 1,
+      "period" : 1,
+      "periodUnit" : "d"
     }
   },
   "authoredOn" : "2026-02-18T14:37:42+01:00",
@@ -199,19 +207,10 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
         "system" : "http://snomed.info/sct",
         "code" : "24028007"
       }
-    },
-    {
-      "url" : "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography",
-      "valueCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "255561001"
-        }]
-      }
     }],
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "code" : "78277001"
+      "code" : "72696002"
     }]
   }],
   "note" : [{

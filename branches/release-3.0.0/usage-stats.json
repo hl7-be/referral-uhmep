@@ -92,9 +92,6 @@
     "http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints": [
       "StructureDefinition.snapshot.element.type.profile"
     ],
-    "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography": [
-      "ServiceRequest.bodySite"
-    ],
     "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality": [
       "ServiceRequest.bodySite"
     ],

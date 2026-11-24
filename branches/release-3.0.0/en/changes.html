@@ -129,9 +129,6 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration 2.1.0 to 3.0.0</a>
-      </li>
-      <li>
         <a href="topic-profiles-architecture.html">Profiles Architecture</a>
       </li>
       <li>
@@ -217,6 +214,9 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
+        <a href="migration-2-1-to-3-0.html">Migration</a>
+      </li>
+      <li>
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
@@ -290,8 +290,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#2026-11-18---30-api-contract-clarifications" id="markdown-toc-2026-11-18---30-api-contract-clarifications">2026-11-18 - 3.0 API Contract Clarifications</a></li>
-  <li><a href="#2026-10-28---v300-release--radiology-workflow-improvements" id="markdown-toc-2026-10-28---v300-release--radiology-workflow-improvements"><strong>2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements</strong></a></li>
+  <li><a href="#2026-10-28---v300-release-radiology-and-api-contract-clarifications" id="markdown-toc-2026-10-28---v300-release-radiology-and-api-contract-clarifications"><strong>2026-10-28 - v3.0.0 Release: Radiology and API Contract Clarifications</strong></a></li>
   <li><a href="#2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4" id="markdown-toc-2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4"><strong>2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)</strong></a></li>
   <li><a href="#2026-08-05-v200-release-ereferral-referral-prescription-stu1-fhir-r4" id="markdown-toc-2026-08-05-v200-release-ereferral-referral-prescription-stu1-fhir-r4"><strong>2026-08-05: v2.0.0 Release: eReferral Referral Prescription (STU1, FHIR R4)</strong></a></li>
 </ul>
@@ -301,13 +300,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h3 id="2026-11-18---30-api-contract-clarifications">2026-11-18 - 3.0 API Contract Clarifications</h3>
+<h3 id="2026-10-28---v300-release-radiology-and-api-contract-clarifications"><strong>2026-10-28 - v3.0.0 Release: Radiology and API Contract Clarifications</strong></h3>
 
-<p>The operation guidance now distinguishes the implemented 3.0 API from broader role summaries.
-This is a documentation correction, not the announcement of newly deployed functionality.</p>
+<p>This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,
+and adds examples for the updated PSS/QSI radiology terminology.</p>
+
+<p>A documentation update on 2026-11-18 also clarified the implemented 3.0 API contract. It is a
+documentation correction, not the announcement of newly deployed functionality.</p>
+
+<p>For payload compatibility checks, radiology state transitions, before/after scenarios and regression tests, see <a href="migration-2-1-to-3-0.html">Migration 2.1.0 to 3.0.0</a>. The announced future migration to the Referral IG and the future canonical-base change are separate from this release.</p>
 
 <details>
-  <summary><strong>View the 3.0 contract clarifications</strong></summary>
+  <summary><strong>View detailed v3.0.0 release notes</strong></summary>
+
+  <h4 id="api-contract-clarifications-2026-11-18">API contract clarifications (2026-11-18)</h4>
 
   <ul>
     <li>A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the
@@ -323,20 +329,6 @@ validation package is older and does not establish enforcement of all 3.0 cardin
   <p>See <a href="operation-unassign-care-provider.html">Unassign a Care Provider</a>,
 <a href="topic-prescription-lifecycle-extension.html">Prescription Extension</a> and the
 <a href="migration-2-1-to-3-0.html">migration checks</a>.</p>
-
-</details>
-
-<hr />
-
-<h3 id="2026-10-28---v300-release--radiology-workflow-improvements"><strong>2026-10-28 - v3.0.0 Release : Radiology Workflow Improvements</strong></h3>
-
-<p>This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,
-and adds examples for the updated PSS/QSI radiology terminology.</p>
-
-<p>For payload compatibility checks, radiology state transitions, before/after scenarios and regression tests, see <a href="migration-2-1-to-3-0.html">Migration 2.1.0 to 3.0.0</a>. The announced future migration to the Referral IG and the future canonical-base change are separate from this release.</p>
-
-<details>
-  <summary><strong>View detailed v3.0.0 release notes</strong></summary>
 
   <h4 id="radiology-workflow-clarifications">Radiology workflow clarifications</h4>
 
@@ -556,7 +548,7 @@ documents the API’s security, access-control, and operational requirements.</p
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
           Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Nov 23, 2026 15:27+0000">2026-11-23</span>
+          Generated <span title="Tue, Nov 24, 2026 10:36+0000">2026-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

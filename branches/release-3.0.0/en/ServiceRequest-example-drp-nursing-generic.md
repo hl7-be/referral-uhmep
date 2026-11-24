@@ -22,11 +22,11 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **code**: Nursing procedure
 
-**orderDetail**: Preparation and administration of medication to a psychiatric patient
+**orderDetail**: Gastrointestinal care
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 360 times, 3 per 1 day
+**occurrence**: Count 7 times, Once per 1 day
 
 **authoredOn**: 2026-02-18 13:54:36+0100
 
@@ -121,7 +121,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "orderDetail" : [{
     "coding" : [{
       "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types",
-      "code" : "preparation-and-administration-of-medication-to-psychiatric-patient"
+      "code" : "gastrointestinal-care"
     }]
   }],
   "subject" : {
@@ -151,12 +151,12 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "occurrenceTiming" : {
     "repeat" : {
       "boundsDuration" : {
-        "value" : 4,
+        "value" : 1,
         "system" : "http://unitsofmeasure.org",
-        "code" : "mo"
+        "code" : "wk"
       },
-      "count" : 360,
-      "frequency" : 3,
+      "count" : 7,
+      "frequency" : 1,
       "period" : 1,
       "periodUnit" : "d"
     }

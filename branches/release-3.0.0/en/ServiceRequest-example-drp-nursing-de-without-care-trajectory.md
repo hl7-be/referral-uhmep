@@ -22,11 +22,11 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **code**: urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
 
-**orderDetail**: 211161000172108, Education to self-care
+**orderDetail**: 211161000172108, Education to self-care, Individual session
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 21 times, Once per 1 day
+**occurrence**: Count 10 times, Once per 1 month
 
 **authoredOn**: 2026-02-18 14:13:08+0100
 
@@ -137,6 +137,12 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
       "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type",
       "code" : "diabetic-education-self-care"
     }]
+  },
+  {
+    "coding" : [{
+      "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-session-types",
+      "code" : "individual-session"
+    }]
   }],
   "subject" : {
     "identifier" : {
@@ -164,15 +170,10 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   },
   "occurrenceTiming" : {
     "repeat" : {
-      "boundsDuration" : {
-        "value" : 3,
-        "system" : "http://unitsofmeasure.org",
-        "code" : "wk"
-      },
-      "count" : 21,
+      "count" : 10,
       "frequency" : 1,
       "period" : 1,
-      "periodUnit" : "d"
+      "periodUnit" : "mo"
     }
   },
   "authoredOn" : "2026-02-18T14:13:08+01:00",

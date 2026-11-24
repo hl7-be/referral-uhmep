@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition | *Version*:3.0.0 |
-| Draft as of 2026-11-23 | *Computable Name*:BeVSDiagnosticImagingCondition |
+| Draft as of 2026-11-24 | *Computable Name*:BeVSDiagnosticImagingCondition |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). | |
 
  
@@ -43,7 +43,7 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
   "title" : "eReferral/PSS Diagnostic Imaging Condition",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-23T15:27:38+00:00",
+  "date" : "2026-11-24T10:36:42+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -169,10 +169,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Structure of region of foot (body structure)"
       },
       {
-        "code" : "414387006",
-        "display" : "Structure of hematological system (body structure)"
-      },
-      {
         "code" : "30021000",
         "display" : "Structure of lower limb from knee to ankle (body structure)"
       },
@@ -211,22 +207,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "87953007",
         "display" : "Ureteric structure (body structure)"
-      },
-      {
-        "code" : "245500007",
-        "display" : "Structure of anatomical reproductive system (body structure)"
-      },
-      {
-        "code" : "122489005",
-        "display" : "Urinary system structure (body structure)"
-      },
-      {
-        "code" : "113331007",
-        "display" : "Structure of endocrine system (body structure)"
-      },
-      {
-        "code" : "86762007",
-        "display" : "Structure of digestive system (body structure)"
       },
       {
         "code" : "70258002",
@@ -333,20 +313,8 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Tibial plateau structure (body structure)"
       },
       {
-        "code" : "419605007",
-        "display" : "Structure of ankle and/or foot (body structure)"
-      },
-      {
         "code" : "35039007",
         "display" : "Uterine structure (body structure)"
-      },
-      {
-        "code" : "76783986",
-        "display" : "Vaginal structure (body structure)"
-      },
-      {
-        "code" : "76784001",
-        "display" : "Vaginal structure (body structure)"
       },
       {
         "code" : "45292006",
@@ -397,10 +365,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Neoplastic disease (disorder)"
       },
       {
-        "code" : "735427000",
-        "display" : "Stenosis of digestive system (disorder)"
-      },
-      {
         "code" : "362968007",
         "display" : "Disorder of reproductive system (disorder)"
       },
@@ -441,16 +405,8 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Muscle atrophy (disorder)"
       },
       {
-        "code" : "441457006",
-        "display" : "Cyst (disorder)"
-      },
-      {
         "code" : "266569009",
         "display" : "Benign prostatic hyperplasia (disorder)"
-      },
-      {
-        "code" : "1269101009",
-        "display" : "Maternal disorder during antenatal and/or intrapartum and/or postpartum period (disorder)"
       },
       {
         "code" : "879976004",
@@ -459,18 +415,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "118940003",
         "display" : "Disorder of nervous system (disorder)"
-      },
-      {
-        "code" : "439127006",
-        "display" : "Thrombosis (disorder)"
-      },
-      {
-        "code" : "609410002",
-        "display" : "Necrosis of anatomical site (disorder)"
-      },
-      {
-        "code" : "88797001",
-        "display" : "Complication of surgical procedure (disorder)"
       },
       {
         "code" : "128606002",
@@ -597,10 +541,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Foreign body (disorder)"
       },
       {
-        "code" : "64910008",
-        "display" : "Disorder of testis (disorder)"
-      },
-      {
         "code" : "7199000",
         "display" : "Tuberous sclerosis syndrome (disorder)"
       },
@@ -609,28 +549,8 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Malformation of urachus (disorder)"
       },
       {
-        "code" : "25658005",
-        "display" : "Disorder of vagina (disorder)"
-      },
-      {
-        "code" : "428794004",
-        "display" : "Fistula (disorder)"
-      },
-      {
-        "code" : "128073008",
-        "display" : "Disorder of ureter (disorder)"
-      },
-      {
-        "code" : "85919009",
-        "display" : "Disorder of intestine (disorder)"
-      },
-      {
         "code" : "128060009",
         "display" : "Venous varices (disorder)"
-      },
-      {
-        "code" : "5089007",
-        "display" : "Disorder of vulva (disorder)"
       },
       {
         "code" : "429040005",
@@ -687,10 +607,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "69896004",
         "display" : "Rheumatoid arthritis (disorder)"
-      },
-      {
-        "code" : "399112009",
-        "display" : "Seronegative arthritis (disorder)"
       },
       {
         "code" : "240021001",
@@ -753,32 +669,12 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Axillary lymphadenopathy (disorder)"
       },
       {
-        "code" : "27624003",
-        "display" : "Chronic disease (disorder)"
-      },
-      {
-        "code" : "20376005",
-        "display" : "Benign neoplastic disease (disorder)"
-      },
-      {
-        "code" : "56110009",
-        "display" : "Fetal birth trauma (disorder)"
-      },
-      {
         "code" : "363346000",
         "display" : "Malignant neoplastic disease (disorder)"
       },
       {
         "code" : "206226005",
         "display" : "Brachial plexus palsy due to birth trauma (disorder)"
-      },
-      {
-        "code" : "111293003",
-        "display" : "Venous thrombosis (disorder)"
-      },
-      {
-        "code" : "109355002",
-        "display" : "Carcinoma in situ (disorder)"
       },
       {
         "code" : "76581006",
@@ -799,10 +695,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "34000006",
         "display" : "Crohn's disease (disorder)"
-      },
-      {
-        "code" : "25341005",
-        "display" : "Stricture of ureter (disorder)"
       },
       {
         "code" : "204878001",
@@ -1125,10 +1017,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Twins with discordant fetal growth (disorder)"
       },
       {
-        "code" : "415105001",
-        "display" : "Placental abruption (disorder)"
-      },
-      {
         "code" : "197820003",
         "display" : "Dilatation of renal pelvis (disorder)"
       },
@@ -1159,10 +1047,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "111227009",
         "display" : "Ankylosis of joint (disorder)"
-      },
-      {
-        "code" : "202805003",
-        "display" : "Sacroiliac disorder (disorder)"
       },
       {
         "code" : "281255004",
@@ -1197,10 +1081,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Soft tissue infection (disorder)"
       },
       {
-        "code" : "262595009",
-        "display" : "Traumatic amputation (disorder)"
-      },
-      {
         "code" : "64226004",
         "display" : "Colitis (disorder)"
       },
@@ -1229,68 +1109,16 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Urinary tract infectious disease (disorder)"
       },
       {
-        "code" : "297147009",
-        "display" : "Atrophy of vagina (disorder)"
-      },
-      {
         "code" : "418632009",
         "display" : "Endometrial disorder (disorder)"
-      },
-      {
-        "code" : "16320551000119100",
-        "display" : "Bleeding from female genital tract co-occurrent with pregnancy (disorder)"
-      },
-      {
-        "code" : "92473001",
-        "display" : "Benign neoplasm of vagina (disorder)"
       },
       {
         "code" : "766955008",
         "display" : "Obstruction of vein (disorder)"
       },
       {
-        "code" : "197263009",
-        "display" : "Abdominal wall fistula (disorder)"
-      },
-      {
-        "code" : "68666001",
-        "display" : "Fistula of urinary bladder (disorder)"
-      },
-      {
-        "code" : "40046003",
-        "display" : "Intestinovesical fistula (disorder)"
-      },
-      {
         "code" : "197811007",
         "display" : "Vesicoureteric reflux (disorder)"
-      },
-      {
-        "code" : "9707006",
-        "display" : "Intestinal volvulus (disorder)"
-      },
-      {
-        "code" : "48868008",
-        "display" : "Varicose veins of vulva (disorder)"
-      },
-      {
-        "code" : "60098005",
-        "display" : "Cyst of vulva (disorder)"
-      },
-      {
-        "code" : "399382009",
-        "display" : "Dysplasia of vulva (disorder)"
-      },
-      {
-        "code" : "30833006",
-        "display" : "Vulvar vestibulitis (disorder)"
-      },
-      {
-        "code" : "238968009",
-        "display" : "Vulvodynia (disorder)"
-      },
-      {
-        "code" : "721591008",
-        "display" : "Ulcer of vulva and vagina (disorder)"
       },
       {
         "code" : "57406009",
@@ -1313,10 +1141,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Abdominal abscess (disorder)"
       },
       {
-        "code" : "36029005",
-        "display" : "Abscess of penis (disorder)"
-      },
-      {
         "code" : "24557004",
         "display" : "Abscess of intestine (disorder)"
       },
@@ -1329,72 +1153,12 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Pelvic abscess (disorder)"
       },
       {
-        "code" : "82053000",
-        "display" : "Splenic abscess (disorder)"
-      },
-      {
-        "code" : "11654001",
-        "display" : "Achilles tendinitis (disorder)"
-      },
-      {
         "code" : "6215006",
         "display" : "Acute cholangitis (disorder)"
       },
       {
         "code" : "37871000",
         "display" : "Acute hepatitis (disorder)"
-      },
-      {
-        "code" : "61503006",
-        "display" : "Acute nephritis (disorder)"
-      },
-      {
-        "code" : "766986002",
-        "display" : "Acute adrenal insufficiency (disorder)"
-      },
-      {
-        "code" : "386584007",
-        "display" : "Adrenal cortical hypofunction (disorder)"
-      },
-      {
-        "code" : "275437005",
-        "display" : "Adrenocortical hyperfunction (disorder)"
-      },
-      {
-        "code" : "267395000",
-        "display" : "Adrenogenital disorder (disorder)"
-      },
-      {
-        "code" : "111565003",
-        "display" : "Medulloadrenal hyperfunction (disorder)"
-      },
-      {
-        "code" : "266438007",
-        "display" : "Adult hypertrophic pyloric stenosis (disorder)"
-      },
-      {
-        "code" : "38528001",
-        "display" : "Ainhum (disorder)"
-      },
-      {
-        "code" : "75236001",
-        "display" : "Anorectal abscess (disorder)"
-      },
-      {
-        "code" : "88580009",
-        "display" : "Anal polyp (disorder)"
-      },
-      {
-        "code" : "111363006",
-        "display" : "Proctoptosis (disorder)"
-      },
-      {
-        "code" : "275431006",
-        "display" : "Anal sphincter tear (disorder)"
-      },
-      {
-        "code" : "424802006",
-        "display" : "Angiodysplasia of stomach (disorder)"
       },
       {
         "code" : "24288004",
@@ -1413,36 +1177,8 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Osteoarthritis of multiple joints (disorder)"
       },
       {
-        "code" : "202318002",
-        "display" : "Ankle joint ankylosis (disorder)"
-      },
-      {
-        "code" : "429301007",
-        "display" : "Ankylosis of joint of foot (disorder)"
-      },
-      {
-        "code" : "24273009",
-        "display" : "Ankylosis of hip joint (disorder)"
-      },
-      {
-        "code" : "202317007",
-        "display" : "Knee joint ankylosis (disorder)"
-      },
-      {
-        "code" : "40315008",
-        "display" : "Annular pancreas (disorder)"
-      },
-      {
-        "code" : "1337003008",
-        "display" : "Anterior tibial compartment syndrome (disorder)"
-      },
-      {
         "code" : "58997001",
         "display" : "Chronic appendicitis (disorder)"
-      },
-      {
-        "code" : "24764000",
-        "display" : "Concretion of appendix (disorder)"
       },
       {
         "code" : "312378004",
@@ -1469,22 +1205,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Arthritis of wrist (disorder)"
       },
       {
-        "code" : "187371000119108",
-        "display" : "Disorder of articular cartilage of ankle (disorder)"
-      },
-      {
-        "code" : "53417006",
-        "display" : "Articular cartilage disorder (disorder)"
-      },
-      {
-        "code" : "428861009",
-        "display" : "Articular cartilage disorder of hip (disorder)"
-      },
-      {
-        "code" : "897721003",
-        "display" : "Rupture of articular cartilage of knee joint (disorder)"
-      },
-      {
         "code" : "1335746004",
         "display" : "Avascular necrosis of bone of ankle region (disorder)"
       },
@@ -1501,10 +1221,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Aspirated foreign body in respiratory tract (disorder)"
       },
       {
-        "code" : "93030006",
-        "display" : "Congenital absence of spleen (disorder)"
-      },
-      {
         "code" : "281239006",
         "display" : "Exacerbation of asthma (disorder)"
       },
@@ -1517,140 +1233,16 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Atrophy of muscle of lower leg (disorder)"
       },
       {
-        "code" : "44882003",
-        "display" : "Balanitis (disorder)"
-      },
-      {
-        "code" : "26121002",
-        "display" : "Balkan nephropathy (disorder)"
-      },
-      {
-        "code" : "767754009",
-        "display" : "Cyst of testis (disorder)"
-      },
-      {
-        "code" : "134031000119108",
-        "display" : "Benign endometrial hyperplasia (disorder)"
-      },
-      {
-        "code" : "92088003",
-        "display" : "Benign neoplasm of epididymis (disorder)"
-      },
-      {
-        "code" : "92286008",
-        "display" : "Benign neoplasm of penis (disorder)"
-      },
-      {
-        "code" : "92336000",
-        "display" : "Benign neoplasm of scrotum (disorder)"
-      },
-      {
-        "code" : "92432002",
-        "display" : "Benign neoplasm of the peritoneum (disorder)"
-      },
-      {
-        "code" : "92428008",
-        "display" : "Benign neoplasm of testis (disorder)"
-      },
-      {
-        "code" : "92468007",
-        "display" : "Benign neoplasm of urinary system (disorder)"
-      },
-      {
-        "code" : "92470003",
-        "display" : "Benign neoplasm of uterus (disorder)"
-      },
-      {
-        "code" : "92486005",
-        "display" : "Benign neoplasm of vulva (disorder)"
-      },
-      {
-        "code" : "12058611000119100",
-        "display" : "Malposition of bile duct prosthesis (disorder)"
-      },
-      {
-        "code" : "235924006",
-        "display" : "Cyst of biliary tract (disorder)"
-      },
-      {
-        "code" : "722903005",
-        "display" : "Fetal and/or neonatal injury of external genitalia due to birth trauma (disorder)"
-      },
-      {
-        "code" : "722577000",
-        "display" : "Injury of liver due to birth trauma (disorder)"
-      },
-      {
-        "code" : "275364007",
-        "display" : "Spleen injury due to birth trauma (disorder)"
-      },
-      {
         "code" : "399326009",
         "display" : "Malignant neoplasm of urinary bladder (disorder)"
-      },
-      {
-        "code" : "300457003",
-        "display" : "Lesion of urinary bladder (disorder)"
-      },
-      {
-        "code" : "399072004",
-        "display" : "Obstruction of neck of urinary bladder (disorder)"
-      },
-      {
-        "code" : "35999006",
-        "display" : "Blighted ovum (disorder)"
       },
       {
         "code" : "126537000",
         "display" : "Neoplasm of bone (disorder)"
       },
       {
-        "code" : "82385007",
-        "display" : "Budd-Chiari syndrome (disorder)"
-      },
-      {
-        "code" : "111243002",
-        "display" : "Bursitis of knee (disorder)"
-      },
-      {
-        "code" : "92546004",
-        "display" : "Carcinoma in situ of urinary bladder (disorder)"
-      },
-      {
-        "code" : "92564006",
-        "display" : "Carcinoma in situ of uterine cervix (disorder)"
-      },
-      {
-        "code" : "92756002",
-        "display" : "Carcinoma in situ of stomach (disorder)"
-      },
-      {
-        "code" : "92786009",
-        "display" : "Carcinoma in situ of urinary system (disorder)"
-      },
-      {
-        "code" : "9250002",
-        "display" : "Celiac artery compression syndrome (disorder)"
-      },
-      {
-        "code" : "14812002",
-        "display" : "Cellulitis of penis (disorder)"
-      },
-      {
-        "code" : "70637004",
-        "display" : "Cellulitis of toe (disorder)"
-      },
-      {
-        "code" : "197364000",
-        "display" : "Central hemorrhagic necrosis of liver (disorder)"
-      },
-      {
         "code" : "363354003",
         "display" : "Malignant neoplasm of cervix uteri (disorder)"
-      },
-      {
-        "code" : "8098009",
-        "display" : "Sexually transmitted infectious disease (disorder)"
       },
       {
         "code" : "197441003",
@@ -1663,14 +1255,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "1286877004",
         "display" : "Malignant neoplasm of cecum and/or colon and/or rectum (disorder)"
-      },
-      {
-        "code" : "276654001",
-        "display" : "Congenital malformation (disorder)"
-      },
-      {
-        "code" : "367151000119109",
-        "display" : "Stricture of ureter co-occurrent and due to crossing vessel (disorder)"
       },
       {
         "code" : "157271002",
@@ -1755,10 +1339,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "127199000",
         "display" : "Inguinal lymphadenopathy (disorder)"
-      },
-      {
-        "code" : "281436001",
-        "display" : "Displacement of bone graft (disorder)"
       },
       {
         "code" : "71620000",
@@ -1857,10 +1437,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Fracture of knee (disorder)"
       },
       {
-        "code" : "16250001000004100",
-        "display" : "Fracture of shoulder (disorder)"
-      },
-      {
         "code" : "414292006",
         "display" : "Fracture of lower leg (disorder)"
       },
@@ -1943,10 +1519,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "240267008",
         "display" : "Loosening of hip joint prosthesis (disorder)"
-      },
-      {
-        "code" : "15970001000004100",
-        "display" : "Periprosthetic fracture of proximal femur (disorder)"
       },
       {
         "code" : "726218003",
@@ -2201,10 +1773,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Injury of lumbosacral plexus (disorder)"
       },
       {
-        "code" : "202881005",
-        "display" : "Tibialis posterior tendinitis (disorder)"
-      },
-      {
         "code" : "399068003",
         "display" : "Malignant neoplasm of prostate (disorder)"
       },
@@ -2235,14 +1803,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "16065006",
         "display" : "Ankylosis of sacroiliac joint (disorder)"
-      },
-      {
-        "code" : "1303820006",
-        "display" : "Arthritis of sacroiliac joint (disorder)"
-      },
-      {
-        "code" : "16834071000119100",
-        "display" : "Complete obstruction of lumen of small intestine (disorder)"
       },
       {
         "code" : "429196001",
@@ -2369,10 +1929,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Superficial foreign body (disorder)"
       },
       {
-        "code" : "17585008",
-        "display" : "Atrophy of testis (disorder)"
-      },
-      {
         "code" : "363449006",
         "display" : "Malignant neoplasm of testis (disorder)"
       },
@@ -2383,10 +1939,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "58949002",
         "display" : "Tubo-ovarian abscess (disorder)"
-      },
-      {
-        "code" : "699875007",
-        "display" : "Traumatic amputation at level between knee and ankle (disorder)"
       },
       {
         "code" : "64766004",
@@ -2447,10 +1999,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "262560006",
         "display" : "Penetrating wound (disorder)"
-      },
-      {
-        "code" : "784332006",
-        "display" : "Spondyloarthritis (disorder)"
       },
       {
         "code" : "125603006",
@@ -2579,10 +2127,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "36813001",
         "display" : "Placenta previa (disorder)"
-      },
-      {
-        "code" : "1323351000000100",
-        "display" : "First trimester bleeding (disorder)"
       },
       {
         "code" : "706922007",
@@ -2763,10 +2307,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "6923002",
         "display" : "Injury of perineum (disorder)"
-      },
-      {
-        "code" : "1098981000119100",
-        "display" : "Recurrent malignant neoplasm of prostate (disorder)"
       },
       {
         "code" : "709044004",
@@ -2973,10 +2513,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Pathological fracture - lower leg (disorder)"
       },
       {
-        "code" : "94300004",
-        "display" : "Metastatic malignant neoplasm to femur (disorder)"
-      },
-      {
         "code" : "263092008",
         "display" : "Fracture dislocation of foot joint (disorder)"
       },
@@ -3101,10 +2637,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Hemochromatosis (disorder)"
       },
       {
-        "code" : "724942006",
-        "display" : "Injury of tendon at forearm level (disorder)"
-      },
-      {
         "code" : "129157005",
         "display" : "Traumatic dislocation of joint of hand (disorder)"
       },
@@ -3129,18 +2661,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Pain (finding)"
       },
       {
-        "code" : "784285002",
-        "display" : "Tenesmus of urinary bladder (finding)"
-      },
-      {
-        "code" : "249648007",
-        "display" : "Anal sphincter spasm (finding)"
-      },
-      {
-        "code" : "53397008",
-        "display" : "Biliuria (finding)"
-      },
-      {
         "code" : "65124004",
         "display" : "Swelling (finding)"
       },
@@ -3155,58 +2675,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "67374007",
         "display" : "Instability of joint (finding)"
-      },
-      {
-        "code" : "22253001",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253002",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253003",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253004",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253005",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253006",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253007",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253008",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253009",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253010",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253011",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253012",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253013",
-        "display" : "Pain (finding)"
       },
       {
         "code" : "247348008",
@@ -3243,42 +2711,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "131148009",
         "display" : "Bleeding (finding)"
-      },
-      {
-        "code" : "22253014",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253015",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253016",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253017",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253018",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253019",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253020",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253021",
-        "display" : "Pain (finding)"
-      },
-      {
-        "code" : "22253022",
-        "display" : "Pain (finding)"
       },
       {
         "code" : "21522001",
@@ -3665,28 +3097,12 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Neurogenic pain (finding)"
       },
       {
-        "code" : "247398009",
-        "display" : "Neuropathic pain (finding)"
-      },
-      {
         "code" : "298349001",
         "display" : "Soft tissue swelling (finding)"
       },
       {
-        "code" : "299567001",
-        "display" : "Deformity of toe (finding)"
-      },
-      {
-        "code" : "285365001",
-        "display" : "Pain in toe (finding)"
-      },
-      {
         "code" : "428090004",
         "display" : "Mass of urinary bladder (finding)"
-      },
-      {
-        "code" : "271837007",
-        "display" : "Visible peristalsis (finding)"
       },
       {
         "code" : "441683007",
@@ -3837,10 +3253,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Mass of hand (finding)"
       },
       {
-        "code" : "7570001000004100",
-        "display" : "Mass of hip region (finding)"
-      },
-      {
         "code" : "309531006",
         "display" : "Mass of knee (finding)"
       },
@@ -3941,10 +3353,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Plain X-ray of pelvis normal (finding)"
       },
       {
-        "code" : "15883561000119100",
-        "display" : "Ultrasonography of kidney abnormal (finding)"
-      },
-      {
         "code" : "16898991000119100",
         "display" : "Ultrasonography of biliary tract abnormal (finding)"
       },
@@ -4017,14 +3425,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
         "display" : "Plain X-ray of ankle joint abnormal (finding)"
       },
       {
-        "code" : "15634221000119100",
-        "display" : "Computed tomography of pelvis abnormal (finding)"
-      },
-      {
-        "code" : "15633841000119100",
-        "display" : "Magnetic resonance imaging of pelvis abnormal (finding)"
-      },
-      {
         "code" : "168604000",
         "display" : "Plain X-ray of pelvis abnormal (finding)"
       },
@@ -4047,10 +3447,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "1293040003",
         "display" : "Lytic lesion of bone on plain X-ray (finding)"
-      },
-      {
-        "code" : "15803009",
-        "display" : "Pain of urinary bladder (finding)"
       },
       {
         "code" : "129679001",
@@ -4111,10 +3507,6 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
       {
         "code" : "266987004",
         "display" : "History of malignant neoplasm (situation)"
-      },
-      {
-        "code" : "308071004",
-        "display" : "History of peripheral vascular disease procedure (situation)"
       },
       {
         "code" : "429090009",

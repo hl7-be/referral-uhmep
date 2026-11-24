@@ -8,9 +8,9 @@
 
 Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicerequest-nursing.md)
 
-**BeValidityPeriod**: 2027-02-18 --> (ongoing)
+**BeValidityPeriod**: 2026-02-18 --> (ongoing)
 
-**BeFeedbackToPrescriber**: false
+**BeFeedbackToPrescriber**: true
 
 **status**: Draft
 
@@ -22,11 +22,11 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **code**: urn:be:fgov:pseudo-encrypted:v2:{{kid}}:{{jwe}}
 
-**quantity**: 300 milliliter (Details: UCUM codemL = 'mL')
+**quantity**: 350 milliliter (Details: UCUM codemL = 'mL')
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 3 times, 3 per 1 week
+**occurrence**: Count 4 times, 2 per 1 week
 
 **authoredOn**: 2026-02-18 14:39:54+0100
 
@@ -80,12 +80,12 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "extension" : [{
     "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-validity-period",
     "valuePeriod" : {
-      "start" : "2027-02-18"
+      "start" : "2026-02-18"
     }
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-feedback-to-prescriber",
-    "valueBoolean" : false
+    "valueBoolean" : true
   }],
   "status" : "draft",
   "intent" : "order",
@@ -127,7 +127,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
     }
   },
   "quantityQuantity" : {
-    "value" : 300,
+    "value" : 350,
     "unit" : "milliliter",
     "system" : "http://unitsofmeasure.org",
     "code" : "mL"
@@ -159,12 +159,12 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   "occurrenceTiming" : {
     "repeat" : {
       "boundsDuration" : {
-        "value" : 1,
+        "value" : 2,
         "system" : "http://unitsofmeasure.org",
         "code" : "wk"
       },
-      "count" : 3,
-      "frequency" : 3,
+      "count" : 4,
+      "frequency" : 2,
       "period" : 1,
       "periodUnit" : "wk"
     }

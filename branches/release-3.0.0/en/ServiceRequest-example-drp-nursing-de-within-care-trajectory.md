@@ -12,9 +12,9 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **BeFeedbackToPrescriber**: false
 
-**BePerformerType**: Professional nurse
-
 **BePerformerType**: Diabetic nurse
+
+**BePerformerType**: 
 
 **status**: Draft
 
@@ -26,11 +26,11 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **code**: urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
 
-**orderDetail**: Following clinical pathway protocol, Additional education HBA1C>7.5, Group session
+**orderDetail**: Following clinical pathway protocol, Use of blood glucose meter, Individual session
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: Count 5 times, Once
+**occurrence**: Count 5 times, 5 per 1 year
 
 **authoredOn**: 2026-02-18 14:45:43+0100
 
@@ -90,7 +90,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://snomed.info/sct",
-        "code" : "106292003"
+        "code" : "224543004"
       }]
     }
   },
@@ -98,8 +98,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
     "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-performer-type",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://snomed.info/sct",
-        "code" : "224543004"
+        "system" : "http://snomed.info/sct"
       }]
     }
   }],
@@ -151,13 +150,13 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
   {
     "coding" : [{
       "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type",
-      "code" : "diabetic-education-additional-hba1c"
+      "code" : "diabetic-education-glucose-meter"
     }]
   },
   {
     "coding" : [{
       "system" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-session-types",
-      "code" : "group-session"
+      "code" : "individual-session"
     }]
   }],
   "subject" : {
@@ -186,7 +185,10 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
   },
   "occurrenceTiming" : {
     "repeat" : {
-      "count" : 5
+      "count" : 5,
+      "frequency" : 5,
+      "period" : 1,
+      "periodUnit" : "a"
     }
   },
   "authoredOn" : "2026-02-18T14:45:43+01:00",

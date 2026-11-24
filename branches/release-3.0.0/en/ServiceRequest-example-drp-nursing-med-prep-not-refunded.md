@@ -22,7 +22,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **subject**: Identifier: [BeSSINNamingSystem](https://www.ehealth.fgov.be/standards/fhir/core/2.2.0/NamingSystem-be-ssin.html)/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)
 
-**occurrence**: 3 per 1 week
+**occurrence**: Once per 1 week
 
 **authoredOn**: 2026-02-18 14:18:51+0100
 
@@ -150,7 +150,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   },
   "occurrenceTiming" : {
     "repeat" : {
-      "frequency" : 3,
+      "frequency" : 1,
       "period" : 1,
       "periodUnit" : "wk"
     }
