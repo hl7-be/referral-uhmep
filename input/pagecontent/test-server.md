@@ -4,6 +4,8 @@ The examples contain pseudonymization placeholders and illustrative values. They
 
 Where a scenario narrative conflicts with its structured template, the JSON follows the template: bloodletting specifies four sessions in the template but mentions five in the narrative, and sampling specifies wound fluid only in the template although the narrative also mentions a blood draw. For convention-centre education, the example follows the narrative frequency of three sessions per week, with a maximum of 30 sessions and no invented treatment duration.
 
+Captured P2M requests are adapted to the 4.0 draft canonicals. Their target environment was not retained, and they have not been sent to or validated against a 4.0 server.
+
 ## Nursing {#nursing}
 
 ### P2M
@@ -93,6 +95,24 @@ document.querySelectorAll('details.test-server-example').forEach((details) => {
 	});
 });
 </script>
+
+#### Captured P2M requests
+
+| Scenario | Captured request |
+| --- | --- |
+| Generic nursing care | [Open captured request](test-server-p2m-payload-generic-nursing.html) |
+| Medication preparation, Annex 81 proposal | Not included |
+| Medication prefill preparation, not refunded | [Open captured request](test-server-p2m-payload-medication-prefill.html) |
+| Diabetes education via convention centre | [Open captured request](test-server-p2m-payload-diabetes-convention-centre.html) |
+| Diabetes education within start trajectory | [Open captured request](test-server-p2m-payload-diabetes-start-trajectory.html) |
+| Diabetes education within care trajectory | [Open captured request](test-server-p2m-payload-diabetes-care-trajectory.html) |
+| Diabetes education without care trajectory | [Open captured request](test-server-p2m-payload-diabetes-without-care-trajectory.html) |
+| Assistance with personal hygiene | [Open captured request](test-server-p2m-payload-personal-hygiene.html) |
+| Chronic peritoneal dialysis | [Open captured request](test-server-p2m-payload-peritoneal-dialysis.html) |
+| Glycemia test with glucometer | [Open captured request](test-server-p2m-payload-glycemia-test.html) |
+| Sampling | [Open captured request](test-server-p2m-payload-sampling.html) |
+| Bloodletting | [Open captured request](test-server-p2m-payload-bloodletting.html) |
+| Measurement of parameters | [Open captured request](test-server-p2m-payload-parameters.html) |
 
 ### M2M
 

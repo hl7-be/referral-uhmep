@@ -212,6 +212,42 @@ pages:
   test-server.md:
     title: Test Server
     generation: markdown
+    test-server-p2m-payload-generic-nursing.md:
+      title: P2M Nursing - Generic Nursing Care
+      generation: markdown
+    test-server-p2m-payload-medication-prefill.md:
+      title: P2M Nursing - Medication Prefill Preparation
+      generation: markdown
+    test-server-p2m-payload-diabetes-convention-centre.md:
+      title: P2M Nursing - Diabetes Convention Centre
+      generation: markdown
+    test-server-p2m-payload-diabetes-start-trajectory.md:
+      title: P2M Nursing - Diabetes Start Trajectory
+      generation: markdown
+    test-server-p2m-payload-diabetes-care-trajectory.md:
+      title: P2M Nursing - Diabetes Care Trajectory
+      generation: markdown
+    test-server-p2m-payload-diabetes-without-care-trajectory.md:
+      title: P2M Nursing - Diabetes Without Care Trajectory
+      generation: markdown
+    test-server-p2m-payload-personal-hygiene.md:
+      title: P2M Nursing - Personal Hygiene
+      generation: markdown
+    test-server-p2m-payload-peritoneal-dialysis.md:
+      title: P2M Nursing - Peritoneal Dialysis
+      generation: markdown
+    test-server-p2m-payload-glycemia-test.md:
+      title: P2M Nursing - Glycemia Test
+      generation: markdown
+    test-server-p2m-payload-sampling.md:
+      title: P2M Nursing - Sampling
+      generation: markdown
+    test-server-p2m-payload-bloodletting.md:
+      title: P2M Nursing - Bloodletting
+      generation: markdown
+    test-server-p2m-payload-parameters.md:
+      title: P2M Nursing - Parameters
+      generation: markdown
   glossary.md:
     title: Glossary
     generation: markdown
