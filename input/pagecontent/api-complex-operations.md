@@ -8,11 +8,13 @@ Transferring an assignment from one professional to another is not a single API 
 
 | Step | API call | Expected result |
 |----|----|----|
-| 1 | `DELETE /Task/{oldExecutionID}` | The old `BePerformerTask` is removed if it is still `ready`. |
+| 1 | `DELETE /Task/{oldExecutionID}` | The old `BePerformerTask` is removed if it can still be removed (see [Unassign a care provider](operation-unassign-care-provider.html)). |
 | 2 | `POST /Task` | A new `BePerformerTask` is created for the new professional. |
 | 3 | `GET /Task?focus={ServiceRequestID}` | Optional verification of the updated assignment graph. |
 
-The transfer is possible only while the old assignment can still be removed. If execution already started, the old task must be cancelled or completed according to the execution workflow instead of being deleted.
+The transfer is possible only while the old assignment can still be removed. If execution already started, the old task must be cancelled or completed according to the execution workflow instead of being deleted (radiology prescriptions on the ambulatory track are the exception: their assignment can also be removed while `in-progress`).
+
+An Organization cannot currently delete the `BePerformerTask` of one of its internal professionals: that task is removed by the assigned professional, or together with the organization assignment it references.
 
 #### Sequence
 
@@ -30,7 +32,7 @@ When the assignment is internal to an organization, the new `BePerformerTask` mu
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
     ]
   },
   "status": "ready",

@@ -9,10 +9,7 @@ Inputs and values used in this example:
 - Education subtype (SNOMED): 211151000172106
 - Session type: individual-session
 - Validity period: 2026-02-18 -> 2026-12-31
-- Timing:
-  * count: 4
-  * frequency: 4
-  * period: 1 year
+- Number of sessions (count): 4
 - Performer type (SNOMED): 224543004
 - Feedback to prescriber: false
 - Notes:

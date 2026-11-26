@@ -85,7 +85,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
+      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
     </tr>
         <tr>
       <td>Validity period</td>
@@ -163,7 +163,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>708014007</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-nursing-diagnosis.html"><code>be-vs-annex81-nursing-diagnosis</code></a></li></ul></td>
+      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>708014007</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-nursing-diagnosis.html"><code>be-vs-annex81-nursing-diagnosis</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Treatment non-adherence related to:</td>
@@ -180,7 +180,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>52448006</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-medical-problem.html"><code>be-vs-annex81-medical-problem</code></a></li></ul></td>
+      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>52448006</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-medical-problem.html"><code>be-vs-annex81-medical-problem</code></a></li></ul></td>
     </tr>
         <tr>
       <td>Physician comment</td>

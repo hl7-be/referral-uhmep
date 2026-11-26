@@ -17,18 +17,12 @@ For payload compatibility checks, radiology state transitions, before/after scen
 
 #### API contract clarifications (2026-11-18)
 
-- A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the
-  caller's role and ownership restrictions.
-- An Organization may remove its own organization task and the dependent assignments, but cannot
-  selectively delete an internal professional's performer task through that route.
-- Prescription extensions use `ServiceRequest.basedOn` in the implemented 3.0 creation and read
-  mappings. `ServiceRequest.replaces` alone does not establish the extension link.
-- Required profile elements remain requirements of this IG. The reviewed gateway's embedded
-  validation package is older and does not establish enforcement of all 3.0 cardinalities.
+- A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the caller's role and ownership restrictions.
+- An Organization may remove its own organization task and the dependent assignments, but cannot selectively delete an internal professional's performer task through that route.
+- Prescription extensions use `ServiceRequest.basedOn` in the implemented 3.0 creation and read mappings. `ServiceRequest.replaces` alone does not establish the extension link.
+- Required profile elements remain requirements of this IG. The reviewed gateway's embedded validation package is older and does not establish enforcement of all 3.0 cardinalities.
 
-See [Unassign a Care Provider](operation-unassign-care-provider.html),
-[Prescription Extension](topic-prescription-lifecycle-extension.html) and the
-[migration checks](migration-2-1-to-3-0.html).
+See [Unassign a Care Provider](operation-unassign-care-provider.html), [Prescription Extension](topic-prescription-lifecycle-extension.html) and the [migration checks](migration-2-1-to-3-0.html).
 
 #### Radiology workflow clarifications
 

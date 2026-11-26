@@ -8,8 +8,8 @@ name: EReferral
 title: eReferral Implementation Guide
 description: eReferral Implementation Guide
 status: draft
-date: 2026-09-02
-version: 3.0.0
+date: 2026-11-26
+version: 3.0.2
 copyrightYear: 2026+
 releaseLabel: STU
 jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
@@ -18,6 +18,7 @@ dependencies:
   #hl7.fhir.be.medication: 1.0.0
   hl7.fhir.be.core-clinical: 1.3.0
   #hl7.fhir.be.allergy: 1.1.0
+  #hl7.fhir.be.drp: current$phase2-merged
   be.smals.fhir.drp-fix: current$drp-1.1.1-fixed
   hl7.fhir.be.infsec: 1.3.0
 
@@ -55,9 +56,6 @@ pages:
     generation: markdown
   guidance.md:
     title: Guidance
-    generation: markdown
-  migration-2-1-to-3-0.md:
-    title: Migration 2.1.0 to 3.0.0
     generation: markdown
   topic-profiles-architecture.md:
     title: Profiles Architecture
@@ -184,9 +182,6 @@ pages:
         generation: markdown
   technical.md:
     title: Technical
-    generation: markdown
-  glossary.md:
-    title: Glossary
     generation: markdown
   test-server.md:
     title: Test Server
@@ -368,8 +363,14 @@ pages:
     test-server-radiology-m2m-12.md:
       title: "M2M - Radiology - Flank pain with suspected recurrent stones"
       generation: markdown
+  glossary.md:
+    title: Glossary
+    generation: markdown
   changes.md:
     title: Changes
+    generation: markdown
+  migration-2-1-to-3-0.md:
+    title: Migration 2.1.0 to 3.0.0
     generation: markdown
   downloads.xml:
     title: Downloads
@@ -423,11 +424,10 @@ menu:
   Technical: technical.html
   Resources:
     Glossary: glossary.html
-    Migration: migration-2-1-to-3-0.html
-    Downloads: downloads.html
     Test Server: test-server.html
+    Migration 2.1 to 3.0: migration-2-1-to-3-0.html
+    Downloads: downloads.html
     Changes: changes.html
-
 
 parameters:
   shownav: 'true'
@@ -746,4 +746,3 @@ resources:
         * 211101000172107
         * 397540003
         * 52448006
-

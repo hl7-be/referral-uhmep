@@ -13,9 +13,8 @@ Inputs and values used in this example:
   * count: 10
   * frequency: 1
   * period: 1 month
-- Feedback to prescriber: true
-- Notes:
-  * general-remarks"
+- Feedback to prescriber: false
+- General remarks: 10 sessions of 30 min"
 Usage: #example
 
 
@@ -41,7 +40,7 @@ Usage: #example
 * extension[0].valuePeriod.start = "2026-02-18"
 
 * extension[1].url = $be-ext-feedback-to-prescriber
-* extension[1].valueBoolean = true
+* extension[1].valueBoolean = false
 
 * status = #draft
 * intent = #order
@@ -66,7 +65,7 @@ Usage: #example
 * code.text.extension[0].extension[2].url = "version"
 * code.text.extension[0].extension[2].valuePositiveInt = 1
 
-// orderDetail (2 entries)
+// orderDetail (3 entries)
 * orderDetail[0].coding[0].system = "http://snomed.info/sct"
 * orderDetail[0].coding[0].code = #211161000172108
 

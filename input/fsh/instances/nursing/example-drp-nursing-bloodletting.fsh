@@ -7,7 +7,7 @@ Inputs and values used in this example:
 - Prescription type: bloodletting
 - Procedure code (SNOMED): 127606004
 - Quantity: 350 mL
-- Validity start date: 2026-02-18
+- Validity period: 2026-02-18 to 2027-02-18
 - Timing:
   * boundsDuration: 2 weeks
   * count: 4

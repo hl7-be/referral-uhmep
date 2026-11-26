@@ -8,15 +8,12 @@ Inputs and values used in this example:
 - Education code (SNOMED): 385805005
 - Education subtype (SNOMED): 370858005
 - Education type: diabetic-education-additional-hba1c
-- Session type: individual-session
+- Session type: group-session
 - Performer types (SNOMED):
   * 106292003
   * 224543004
 - Validity period: 2026-02-18 -> 2026-12-31
-- Timing:
-  * count: 5
-  * frequency: 5
-  * period: 1 year"
+- Number of sessions: 5"
 Usage: #example
 
 

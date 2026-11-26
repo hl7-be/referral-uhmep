@@ -6,14 +6,10 @@ Description: "Example of a biological sample collection prescription.
 Inputs and values used in this example:
 - Prescription type: sampling
 - Procedure code (SNOMED): 17636008
-- Sampling detail (orderDetail, SNOMED): 247450001
-- Body location (SNOMED): 72696002 (right knee)
+- Sample type (SNOMED): 247450001
+- Body site (SNOMED): 72696002 (right knee)
 - Body laterality (SNOMED, be-ext-laterality): 24028007 (right)
-- Timing:
-  * boundsDuration: 1 week
-  * count: 7
-  * frequency: 1
-  * period: 1 day
+- Occurrence: once a day for one week, up to 7 sessions
 - Validity start date: 2026-02-18
 - Medical reason (SNOMED): 404684003
 - Notes:

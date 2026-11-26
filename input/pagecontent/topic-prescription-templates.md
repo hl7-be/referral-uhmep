@@ -11,9 +11,7 @@ The template is identified by a technical identifier carried in `ServiceRequest.
 (slice `prescriptionType`, or `annex81TechnicalType` for Annex 81). This identifier
 **must always be provided at creation**. Its code system is:
 
-```text
-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type
-```
+`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type`
 
 ### Technical Identifier Catalogue
 

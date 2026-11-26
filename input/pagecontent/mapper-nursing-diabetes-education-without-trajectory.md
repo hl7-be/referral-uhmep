@@ -73,7 +73,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
+      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>9632001</code></li></ul></td>
     </tr>
         <tr>
       <td>Validity period</td>
@@ -150,7 +150,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>211161000172108</code></li></ul></td>
+      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>211161000172108</code></li></ul></td>
     </tr>
         <tr>
       <td>This field appears when "Education type" = "Other (not reimbursed)"</td>
@@ -167,7 +167,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>211161000172108</code></li></ul></td>
+      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>211161000172108</code></li></ul></td>
     </tr>
         <tr>
       <td>Other:</td>

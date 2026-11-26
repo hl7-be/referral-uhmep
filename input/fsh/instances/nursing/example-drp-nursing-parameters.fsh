@@ -13,6 +13,7 @@ Inputs and values used in this example:
   * count: 14
   * frequency: 2
   * period: 1 day
+  * when: C
 - Medical reason (SNOMED): 404684003
 - Notes:
   * medical-reason"

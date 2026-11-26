@@ -73,7 +73,6 @@ The current scope is focused on:
 | Section | Purpose |
 | --- | --- |
 | [Guidance](guidance.html) | Implementation rules and modelling choices used across the local profiles. |
-| [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.html) | Payload compatibility checks, radiology transitions, terminology baseline and regression tests. |
 | [API Integration](api-integration.html) | Authentication, identifiers, pseudonymization, validations, and errors. |
 | [API Operations](api-operations.html) | Operation-by-operation map, with allowed roles and links to the error-code workbook. |
 | [Access Matrix](operation-access-matrix.html) | Roles, INAMI access matrix, suspension, and search-filter access control. |
@@ -84,6 +83,7 @@ The current scope is focused on:
 | [Test Server](test-server.html) | Nursing and Radiology test scenarios, business values, FHIR mappings, and request payloads. |
 | [Artifacts](artifacts.html) | Generated FHIR profiles, extensions, ValueSets, CodeSystems, and examples. |
 | [Technical](technical.html) | Entry points, required headers, reference documents, support contacts, and certificates. |
+| [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.html) | Payload compatibility checks, radiology transitions, terminology baseline and regression tests. |
 | [Glossary](glossary.html) | Terminology used across this IG. |
 | [Downloads](downloads.html) | Downloadable packages and generated resources. |
 | [Changes](changes.html) | Change notes for this local IG. |
@@ -103,9 +103,10 @@ The IG includes mapping pages generated from the nursing template Excel. These p
 
 Start with:
 
-| Domain | Page |
-| --- | --- |
-| Nursing | [Nursing mappings](mappings-nursing.html) |
-| Radiology | [Radiology mappings](mappings-radiology.html) |
+| Domain | Page                                                    |
+| --- |---------------------------------------------------------|
+| Nursing | [Nursing mappings](mappings-nursing.html)               |
+| Radiology | [Radiology mappings](mappings-radiology.html)           |
+
 
 Terminology notes in the mapping pages are intentionally conservative. Some Excel value lists predate the current ValueSets and may require reconciliation before being treated as normative coded values.

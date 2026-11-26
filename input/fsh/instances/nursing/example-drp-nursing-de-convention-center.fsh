@@ -7,7 +7,7 @@ Inputs and values used in this example:
 - Prescription type: diabetic-education-convention-center
 - Education code (SNOMED): 385805005
 - Education subtype (SNOMED): 211141000172109
-- Education type: diabetic-education-self-care
+- Education type: diabetic-education-other
 - Validity period: 2026-02-18 -> 2027-02-18
 - Timing:
   * count: 30

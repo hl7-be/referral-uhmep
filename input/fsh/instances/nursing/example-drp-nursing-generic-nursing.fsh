@@ -11,7 +11,7 @@ Description: "Example of a generic nursing ServiceRequest.
 Inputs and values used in this example:
 - Prescription type: generic-nursing
 - Care code (SNOMED): 9632001
-- Care detail (orderDetail): gastrointestinal-care
+- Care type: gastrointestinal-care
 - Validity start date: 2026-02-18
 - Timing:
   * boundsDuration: 1 week

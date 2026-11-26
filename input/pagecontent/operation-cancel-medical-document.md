@@ -7,7 +7,7 @@ This page describes how to cancel a prescription or proposal.
 | Target resource | `ServiceRequest` |
 | Successful response | `200 OK` |
 
-For radiology prescriptions, a Patient may cancel while the prescription is in business state `PENDING` or `READY`. This is a radiology-specific rule and should not be inferred for other prescription types.
+Cancellation is allowed only while the prescription is in business state `DRAFT`, `PENDING` or `READY`. A Patient may cancel only their own prescription. A Prescriber may cancel only a prescription they created. These status and ownership rules apply across prescription templates, including radiology.
 
 ### Payload
 
@@ -29,8 +29,8 @@ For radiology prescriptions, a Patient may cancel while the prescription is in b
 
 ### Allowed Roles
 
-- Prescription: Prescriber, Patient, Organization.
-- Proposal (Annex 81): Caregiver, Patient, Organization.
+- Prescription: the creating Prescriber or the Patient who owns it.
+- Proposal (Annex 81): the assigned Caregiver or the Patient who owns it. The proposal must be `READY`.
 
 ### Possible Error Codes
 

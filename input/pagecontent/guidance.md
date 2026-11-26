@@ -6,15 +6,17 @@ eReferral referral prescriptions are represented primarily as FHIR `ServiceReque
 
 Business-facing field mappings are documented separately in [Business Field Mappings](mappings-business.html). Those pages are useful when implementing screens or APIs from prescription templates.
 
+Gateway profile URL rewriting is documented separately in [Profile Rewriting](topic-profile-rewriting.html). That page describes how supported federal eHealth DRP profile URLs are replaced with internal eReferral profile URLs before API validation.
+
 ### Must Support
 
 Fields marked as Must Support shall not be ignored by receiving systems. This does not mean the sender must always populate the field, but if the business information is available, the sender should provide it according to the profile.
 
-When a coded value cannot safely or accurately represent the business information, the profile usually allows a text representation. Patient-specific free text must follow the pseudonymization rules described below.
+When a coded value cannot safely or accurately represent the business information, the profile usually allows a text representation. Free text must follow the pseudonymization rules described below.
 
 ### Pseudonymization and Free Text
 
-Several fields can contain patient-specific free text, such as:
+Several fields can contain free text, such as:
 
 | Business content | Typical FHIR location |
 | --- | --- |

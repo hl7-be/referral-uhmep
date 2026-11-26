@@ -67,7 +67,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://www.snomed.org/what-is-snomed-ct"><code>http://snomed.info/sct</code></a></li><li>code: <code>363679005</code></li></ul></td>
+      <td><ul><li>system: <a href="http://snomed.info/sct"><code>http://snomed.info/sct</code></a></li><li>code: <code>363679005</code></li></ul></td>
     </tr>
         <tr>
       <td>Track</td>

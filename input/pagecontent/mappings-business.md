@@ -4,10 +4,10 @@ Mappings are organized by domain and then by prescription type. Each prescriptio
 
 ### Domains
 
-| Domain | Mapping pages |
-| --- | --- |
-| Nursing | [Nursing mappings](mappings-nursing.html) |
-| Radiology | [Radiology mappings](mappings-radiology.html) |
+| Domain | Mapping pages                                           |
+| --- |---------------------------------------------------------|
+| Nursing | [Nursing mappings](mappings-nursing.html)               |
+| Radiology | [Radiology mappings](mappings-radiology.html)           |
 
 ### Table Format
 
