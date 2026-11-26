@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication | *Version*:3.0.0 |
-| Draft as of 2026-11-24 | *Computable Name*:BeVSPSSQSIIndication |
+| Draft as of 2026-11-26 | *Computable Name*:BeVSPSSQSIIndication |
 
  
 Indication codes for diagnostic imaging requests as PSS Internal Codes. 
@@ -42,7 +42,7 @@ Indication codes for diagnostic imaging requests as PSS Internal Codes.
   "title" : "PSS/QSI Indication",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-24T10:36:42+00:00",
+  "date" : "2026-11-26T07:40:55+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

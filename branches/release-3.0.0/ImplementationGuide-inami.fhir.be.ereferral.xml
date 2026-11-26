@@ -1295,358 +1295,223 @@
       <exampleBoolean value="true"/>
     </resource>
     <page>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-        <valueUrl value="toc.html"/>
-      </extension>
       <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="index.html"/>
-        </extension>
         <nameUrl value="index.html"/>
         <title value="eReferral Implementation Guide"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="guidance.html"/>
-        </extension>
         <nameUrl value="guidance.html"/>
         <title value="Guidance"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="migration-2-1-to-3-0.html"/>
-        </extension>
         <nameUrl value="migration-2-1-to-3-0.html"/>
         <title value="Migration 2.1.0 to 3.0.0"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="topic-profiles-architecture.html"/>
-        </extension>
         <nameUrl value="topic-profiles-architecture.html"/>
         <title value="Profiles Architecture"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="topic-profile-rewriting.html"/>
-        </extension>
         <nameUrl value="topic-profile-rewriting.html"/>
         <title value="Profile Rewriting"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="topic-prescription-lifecycle.html"/>
-        </extension>
         <nameUrl value="topic-prescription-lifecycle.html"/>
         <title value="Life Cycle"/>
         <generation value="markdown"/>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="topic-prescription-lifecycle-proposal.html"/>
-          </extension>
           <nameUrl value="topic-prescription-lifecycle-proposal.html"/>
           <title value="Proposal Life Cycle"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="topic-prescription-lifecycle-extension.html"/>
-          </extension>
           <nameUrl value="topic-prescription-lifecycle-extension.html"/>
           <title value="Prescription Extension"/>
           <generation value="markdown"/>
         </page>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="topic-prescription-templates.html"/>
-        </extension>
         <nameUrl value="topic-prescription-templates.html"/>
         <title value="Prescription Templates"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="topic-visibility-blacklisting.html"/>
-        </extension>
         <nameUrl value="topic-visibility-blacklisting.html"/>
         <title value="Visibility &amp; Blacklisting"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="api-integration.html"/>
-        </extension>
         <nameUrl value="api-integration.html"/>
         <title value="API Integration"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="api-operations.html"/>
-        </extension>
         <nameUrl value="api-operations.html"/>
         <title value="API Operations"/>
         <generation value="markdown"/>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-access-matrix.html"/>
-          </extension>
           <nameUrl value="operation-access-matrix.html"/>
           <title value="Access Matrix"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-create-medical-document.html"/>
-          </extension>
           <nameUrl value="operation-create-medical-document.html"/>
           <title value="Create a Medical Document"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-consult-search-medical-documents.html"/>
-          </extension>
           <nameUrl value="operation-consult-search-medical-documents.html"/>
           <title value="Consult or Search Medical Documents"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-complete-medical-document.html"/>
-          </extension>
           <nameUrl value="operation-complete-medical-document.html"/>
           <title value="Complete a Medical Document"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-cancel-medical-document.html"/>
-          </extension>
           <nameUrl value="operation-cancel-medical-document.html"/>
           <title value="Cancel a Medical Document"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-assign-care-provider.html"/>
-          </extension>
           <nameUrl value="operation-assign-care-provider.html"/>
           <title value="Assign a Care Provider"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-unassign-care-provider.html"/>
-          </extension>
           <nameUrl value="operation-unassign-care-provider.html"/>
           <title value="Unassign a Care Provider"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-record-execution-start.html"/>
-          </extension>
           <nameUrl value="operation-record-execution-start.html"/>
           <title value="Record Execution Start"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-record-execution-end.html"/>
-          </extension>
           <nameUrl value="operation-record-execution-end.html"/>
           <title value="Record Execution End"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-record-execution-interruption.html"/>
-          </extension>
           <nameUrl value="operation-record-execution-interruption.html"/>
           <title value="Record Execution Interruption"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-cancel-execution.html"/>
-          </extension>
           <nameUrl value="operation-cancel-execution.html"/>
           <title value="Cancel Execution"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-evaluate-proposal.html"/>
-          </extension>
           <nameUrl value="operation-evaluate-proposal.html"/>
           <title value="Evaluate Proposal"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="operation-evaluate-radiology-prescription.html"/>
-          </extension>
           <nameUrl value="operation-evaluate-radiology-prescription.html"/>
           <title value="Evaluate Radiology Prescription"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="api-complex-operations.html"/>
-          </extension>
           <nameUrl value="api-complex-operations.html"/>
           <title value="Complex Operations"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="error-codes.html"/>
-          </extension>
           <nameUrl value="error-codes.html"/>
           <title value="Error Codes"/>
           <generation value="markdown"/>
         </page>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="mappings-business.html"/>
-        </extension>
         <nameUrl value="mappings-business.html"/>
         <title value="Business Field Mappings"/>
         <generation value="markdown"/>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="mappings-nursing.html"/>
-          </extension>
           <nameUrl value="mappings-nursing.html"/>
           <title value="Nursing"/>
           <generation value="markdown"/>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-generic.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-generic.html"/>
             <title value="Generic Nursing"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-bloodletting.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-bloodletting.html"/>
             <title value="Bloodletting"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-chronic-dialysis.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-chronic-dialysis.html"/>
             <title value="Chronic Dialysis"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-diabetes-education-convention-center.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-diabetes-education-convention-center.html"/>
             <title value="Diabetes Education via Convention Centre"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-diabetes-education-start-trajectory.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-diabetes-education-start-trajectory.html"/>
             <title value="Diabetes Education within Start Trajectory"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-diabetes-education-care-trajectory.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-diabetes-education-care-trajectory.html"/>
             <title value="Diabetes Education within Care Trajectory"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-diabetes-education-without-trajectory.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-diabetes-education-without-trajectory.html"/>
             <title value="Diabetes Education without Trajectory"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-glycemic-test.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-glycemic-test.html"/>
             <title value="Glycemic Test"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-hygienic-care.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-hygienic-care.html"/>
             <title value="Hygienic Care"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-medication-prefill-not-refunded.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-medication-prefill-not-refunded.html"/>
             <title value="Medication Prefill Preparation Not Refunded"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-parameters.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-parameters.html"/>
             <title value="Parameters"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-sampling.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-sampling.html"/>
             <title value="Sampling"/>
             <generation value="markdown"/>
           </page>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-nursing-annex81-medication-preparation.html"/>
-            </extension>
             <nameUrl value="mapper-nursing-annex81-medication-preparation.html"/>
             <title value="Annex 81 Medication Preparation"/>
             <generation value="markdown"/>
           </page>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="mappings-radiology.html"/>
-          </extension>
           <nameUrl value="mappings-radiology.html"/>
           <title value="Radiology"/>
           <generation value="markdown"/>
           <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-              <valueUrl value="mapper-radiology-diagnostic-imaging.html"/>
-            </extension>
             <nameUrl value="mapper-radiology-diagnostic-imaging.html"/>
             <title value="Diagnostic Imaging"/>
             <generation value="markdown"/>
@@ -1654,513 +1519,321 @@
         </page>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="technical.html"/>
-        </extension>
         <nameUrl value="technical.html"/>
         <title value="Technical"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="glossary.html"/>
-        </extension>
         <nameUrl value="glossary.html"/>
         <title value="Glossary"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="test-server.html"/>
-        </extension>
         <nameUrl value="test-server.html"/>
         <title value="Test Server"/>
         <generation value="markdown"/>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-generic-nursing.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-generic-nursing.html"/>
           <title value="P2M - Nursing - Generic nursing care"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-annex-81.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-annex-81.html"/>
           <title value="P2M - Nursing - Medication preparation, Annex 81 proposal"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-medication-prefill.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-medication-prefill.html"/>
           <title value="P2M - Nursing - Medication prefill preparation, not refunded"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-diabetes-convention-centre.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-diabetes-convention-centre.html"/>
           <title value="P2M - Nursing - Diabetes education via convention centre"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-diabetes-start-trajectory.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-diabetes-start-trajectory.html"/>
           <title value="P2M - Nursing - Diabetes education within start trajectory"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-diabetes-care-trajectory.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-diabetes-care-trajectory.html"/>
           <title value="P2M - Nursing - Diabetes education within care trajectory"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-diabetes-without-care-trajectory.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-diabetes-without-care-trajectory.html"/>
           <title value="P2M - Nursing - Diabetes education without care trajectory"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-personal-hygiene.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-personal-hygiene.html"/>
           <title value="P2M - Nursing - Assistance with personal hygiene"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-peritoneal-dialysis.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-peritoneal-dialysis.html"/>
           <title value="P2M - Nursing - Chronic peritoneal dialysis"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-glycemia-test.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-glycemia-test.html"/>
           <title value="P2M - Nursing - Glycemia test with glucometer"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-sampling.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-sampling.html"/>
           <title value="P2M - Nursing - Sampling"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-bloodletting.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-bloodletting.html"/>
           <title value="P2M - Nursing - Bloodletting"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-parameters.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-parameters.html"/>
           <title value="P2M - Nursing - Measurement of parameters"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-assign-organization.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-assign-organization.html"/>
           <title value="P2M - Nursing - Assign a prescription to an organization"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-assign-caregiver.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-assign-caregiver.html"/>
           <title value="P2M - Nursing - Assign a prescription to a treatment provider"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-classify-without-consequence.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-classify-without-consequence.html"/>
           <title value="P2M - Nursing - Classifying a prescription without consequence"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-start-without-assignment.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-start-without-assignment.html"/>
           <title value="P2M - Nursing - Execute a valid prescription"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-p2m-organization-annex-81.html"/>
-          </extension>
           <nameUrl value="test-server-p2m-organization-annex-81.html"/>
           <title value="P2M - Nursing - Create an annex 81 proposal by a nurse"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-generic-nursing.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-generic-nursing.html"/>
           <title value="M2M - Nursing - Generic nursing care"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-annex-81.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-annex-81.html"/>
           <title value="M2M - Nursing - Medication preparation, Annex 81 proposal"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-medication-prefill.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-medication-prefill.html"/>
           <title value="M2M - Nursing - Medication prefill preparation, not refunded"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-diabetes-convention-centre.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-diabetes-convention-centre.html"/>
           <title value="M2M - Nursing - Diabetes education via convention centre"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-diabetes-start-trajectory.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-diabetes-start-trajectory.html"/>
           <title value="M2M - Nursing - Diabetes education within start trajectory"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-diabetes-care-trajectory.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-diabetes-care-trajectory.html"/>
           <title value="M2M - Nursing - Diabetes education within care trajectory"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-diabetes-without-care-trajectory.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-diabetes-without-care-trajectory.html"/>
           <title value="M2M - Nursing - Diabetes education without care trajectory"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-personal-hygiene.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-personal-hygiene.html"/>
           <title value="M2M - Nursing - Assistance with personal hygiene"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-peritoneal-dialysis.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-peritoneal-dialysis.html"/>
           <title value="M2M - Nursing - Chronic peritoneal dialysis"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-glycemia-test.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-glycemia-test.html"/>
           <title value="M2M - Nursing - Glycemia test with glucometer"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-sampling.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-sampling.html"/>
           <title value="M2M - Nursing - Sampling"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-bloodletting.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-bloodletting.html"/>
           <title value="M2M - Nursing - Bloodletting"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-parameters.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-parameters.html"/>
           <title value="M2M - Nursing - Measurement of parameters"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-assign-organization.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-assign-organization.html"/>
           <title value="M2M - Nursing - Assign a prescription to an organization"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-assign-internal-caregiver.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-assign-internal-caregiver.html"/>
           <title value="M2M - Nursing - Assign a prescription to a caregiver from the organization"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-start-without-assignment.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-start-without-assignment.html"/>
           <title value="M2M - Nursing - Execute a valid prescription"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-m2m-organization-annex-81.html"/>
-          </extension>
           <nameUrl value="test-server-m2m-organization-annex-81.html"/>
           <title value="M2M - Nursing - Create an annex 81 proposal by a nurse from an organization"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-01.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-01.html"/>
           <title value="P2M - Radiology - Suspected pulmonary edema"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-01.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-01.html"/>
           <title value="M2M - Radiology - Suspected pulmonary edema"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-02.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-02.html"/>
           <title value="P2M - Radiology - Unresolved or complicated pneumonia"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-02.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-02.html"/>
           <title value="M2M - Radiology - Unresolved or complicated pneumonia"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-03.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-03.html"/>
           <title value="P2M - Radiology - Chest pain with a normal ECG"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-03.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-03.html"/>
           <title value="M2M - Radiology - Chest pain with a normal ECG"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-04.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-04.html"/>
           <title value="P2M - Radiology - New headaches during pregnancy"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-04.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-04.html"/>
           <title value="M2M - Radiology - New headaches during pregnancy"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-05.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-05.html"/>
           <title value="P2M - Radiology - Tongue weakness"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-05.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-05.html"/>
           <title value="M2M - Radiology - Tongue weakness"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-06.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-06.html"/>
           <title value="P2M - Radiology - Head trauma and stroke follow-up in an adult"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-06.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-06.html"/>
           <title value="M2M - Radiology - Head trauma and stroke follow-up in an adult"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-07.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-07.html"/>
           <title value="P2M - Radiology - Head trauma and stroke follow-up in a child"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-07.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-07.html"/>
           <title value="M2M - Radiology - Head trauma and stroke follow-up in a child"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-08.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-08.html"/>
           <title value="P2M - Radiology - Initial breast cancer imaging"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-08.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-08.html"/>
           <title value="M2M - Radiology - Initial breast cancer imaging"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-09.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-09.html"/>
           <title value="P2M - Radiology - Persistent cough and abnormal sputum"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-09.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-09.html"/>
           <title value="M2M - Radiology - Persistent cough and abnormal sputum"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-10.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-10.html"/>
           <title value="P2M - Radiology - Tongue and facial weakness"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-10.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-10.html"/>
           <title value="M2M - Radiology - Tongue and facial weakness"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-11.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-11.html"/>
           <title value="P2M - Radiology - New cough with two selected examinations"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-11.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-11.html"/>
           <title value="M2M - Radiology - New cough with two selected examinations"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-p2m-12.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-p2m-12.html"/>
           <title value="P2M - Radiology - Flank pain with suspected recurrent stones"/>
           <generation value="markdown"/>
         </page>
         <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="test-server-radiology-m2m-12.html"/>
-          </extension>
           <nameUrl value="test-server-radiology-m2m-12.html"/>
           <title value="M2M - Radiology - Flank pain with suspected recurrent stones"/>
           <generation value="markdown"/>
         </page>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="changes.html"/>
-        </extension>
         <nameUrl value="changes.html"/>
         <title value="Changes"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="downloads.html"/>
-        </extension>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="html"/>

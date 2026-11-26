@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "73f16698-c6ca-45e8-b3cd-496f083addda",
+  "id" : "89006b79-5bdb-487a-8b6f-d8e48cd2c2d1",
   "meta" : {
-    "lastUpdated" : "2026-11-24T10:36:42.239+00:00"
+    "lastUpdated" : "2026-11-26T07:40:55.165+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "eReferral/PSS Diagnostic Imaging Condition",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -47,8 +47,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:62495c9e-7f2e-4f88-83b3-187eb5e6ba13",
-        "timestamp" : "2026-11-24T10:39:42.453Z",
+        "identifier" : "urn:uuid:0ea35af3-4397-4132-9c84-659af39fe4c7",
+        "timestamp" : "2026-11-26T07:46:15.105Z",
         "total" : 880,
         "offset" : 0,
         "parameter" : [{
@@ -4488,7 +4488,7 @@
       "title" : "eReferral/PSS Diagnostic Imaging Condition",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -4516,8 +4516,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:62495c9e-7f2e-4f88-83b3-187eb5e6ba13",
-        "timestamp" : "2026-11-24T10:39:42.453Z",
+        "identifier" : "urn:uuid:0ea35af3-4397-4132-9c84-659af39fe4c7",
+        "timestamp" : "2026-11-26T07:46:15.105Z",
         "total" : 880,
         "offset" : 0,
         "parameter" : [{
@@ -8976,7 +8976,7 @@
       "title" : "eReferral/PSS Diagnostic Imaging Procedure",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -9010,8 +9010,8 @@
             "reference" : "#oo1"
           }
         }],
-        "identifier" : "urn:uuid:57fc3c77-293b-4f66-9773-454f73b06c6b",
-        "timestamp" : "2026-11-24T10:39:42.898Z",
+        "identifier" : "urn:uuid:b3f75e0a-1418-4d2a-ad17-a7fefaec5d84",
+        "timestamp" : "2026-11-26T07:46:15.826Z",
         "total" : 604,
         "offset" : 0,
         "parameter" : [{
@@ -12090,7 +12090,7 @@
       "title" : "eReferral/PSS Diagnostic Imaging Procedure",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -12124,8 +12124,8 @@
             "reference" : "#oo1"
           }
         }],
-        "identifier" : "urn:uuid:57fc3c77-293b-4f66-9773-454f73b06c6b",
-        "timestamp" : "2026-11-24T10:39:42.898Z",
+        "identifier" : "urn:uuid:b3f75e0a-1418-4d2a-ad17-a7fefaec5d84",
+        "timestamp" : "2026-11-26T07:46:15.826Z",
         "total" : 604,
         "offset" : 0,
         "parameter" : [{
@@ -15185,7 +15185,7 @@
       "title" : "SNOMED CT eReferral Supplement Designations",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -15221,8 +15221,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason",
           "valueString" : "The code System 'http://snomed.info/sct' has a grammar and so has infinite members"
         }],
-        "identifier" : "urn:uuid:d5e722f9-7bd9-4ff2-b5e6-51052cff2479",
-        "timestamp" : "2026-11-24T10:39:43.296Z",
+        "identifier" : "urn:uuid:9ca830a5-b90e-4b17-87d3-220fe32fb2cf",
+        "timestamp" : "2026-11-26T07:46:16.837Z",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -20261,7 +20261,7 @@
       "title" : "SNOMED CT eReferral Supplement Designations",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -20297,8 +20297,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason",
           "valueString" : "The code System 'http://snomed.info/sct' has a grammar and so has infinite members"
         }],
-        "identifier" : "urn:uuid:d5e722f9-7bd9-4ff2-b5e6-51052cff2479",
-        "timestamp" : "2026-11-24T10:39:43.296Z",
+        "identifier" : "urn:uuid:9ca830a5-b90e-4b17-87d3-220fe32fb2cf",
+        "timestamp" : "2026-11-26T07:46:16.837Z",
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -25337,7 +25337,7 @@
       "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -25346,8 +25346,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a6a5553d-d534-4090-a6e7-e10eee5cb131",
-        "timestamp" : "2026-11-24T10:39:43+00:00",
+        "identifier" : "urn:uuid:01494f01-afb6-493a-8577-66dc7e512734",
+        "timestamp" : "2026-11-26T07:46:17+00:00",
         "total" : 1467,
         "offset" : 0,
         "parameter" : [{
@@ -30399,7 +30399,7 @@
       "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -30408,8 +30408,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a6a5553d-d534-4090-a6e7-e10eee5cb131",
-        "timestamp" : "2026-11-24T10:39:43+00:00",
+        "identifier" : "urn:uuid:01494f01-afb6-493a-8577-66dc7e512734",
+        "timestamp" : "2026-11-26T07:46:17+00:00",
         "total" : 1467,
         "offset" : 0,
         "parameter" : [{
@@ -35461,7 +35461,7 @@
       "title" : "PSS/QSI Diagnostic Imaging Procedure",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -35470,8 +35470,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ac29d0d0-724b-4254-8a79-478c9b6cc826",
-        "timestamp" : "2026-11-24T10:39:44+00:00",
+        "identifier" : "urn:uuid:107d5ece-b877-4e45-b20f-2149e0a57608",
+        "timestamp" : "2026-11-26T07:46:17+00:00",
         "total" : 863,
         "offset" : 0,
         "parameter" : [{
@@ -39826,7 +39826,7 @@
       "title" : "PSS/QSI Diagnostic Imaging Procedure",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -39835,8 +39835,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ac29d0d0-724b-4254-8a79-478c9b6cc826",
-        "timestamp" : "2026-11-24T10:39:44+00:00",
+        "identifier" : "urn:uuid:107d5ece-b877-4e45-b20f-2149e0a57608",
+        "timestamp" : "2026-11-26T07:46:17+00:00",
         "total" : 863,
         "offset" : 0,
         "parameter" : [{
@@ -44191,7 +44191,7 @@
       "title" : "PSS/QSI Indication",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -44200,8 +44200,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3087a1ae-ea3d-42bd-9506-cf55e5e777a6",
-        "timestamp" : "2026-11-24T10:39:44+00:00",
+        "identifier" : "urn:uuid:683ba55c-8df4-4e96-9674-0d0b1c10265a",
+        "timestamp" : "2026-11-26T07:46:18+00:00",
         "total" : 4297,
         "offset" : 0,
         "parameter" : [{
@@ -49241,7 +49241,7 @@
       "title" : "PSS/QSI Indication",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -49250,8 +49250,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3087a1ae-ea3d-42bd-9506-cf55e5e777a6",
-        "timestamp" : "2026-11-24T10:39:44+00:00",
+        "identifier" : "urn:uuid:683ba55c-8df4-4e96-9674-0d0b1c10265a",
+        "timestamp" : "2026-11-26T07:46:18+00:00",
         "total" : 4297,
         "offset" : 0,
         "parameter" : [{
@@ -54291,7 +54291,7 @@
       "title" : "eReferral Radiology SupportingInfo Role ValueSet",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -54300,8 +54300,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fd88c58e-6edf-49be-9ba5-bcd5c728524f",
-        "timestamp" : "2026-11-24T10:39:44+00:00",
+        "identifier" : "urn:uuid:3924480f-eb41-4f31-88c1-79d6e8ee2477",
+        "timestamp" : "2026-11-26T07:46:18+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -54361,7 +54361,7 @@
       "title" : "eReferral Radiology SupportingInfo Role ValueSet",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -54370,8 +54370,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fd88c58e-6edf-49be-9ba5-bcd5c728524f",
-        "timestamp" : "2026-11-24T10:39:44+00:00",
+        "identifier" : "urn:uuid:3924480f-eb41-4f31-88c1-79d6e8ee2477",
+        "timestamp" : "2026-11-26T07:46:18+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -54431,7 +54431,7 @@
       "title" : "eReferral Imaging Patient Condition Indication",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -54459,8 +54459,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0fd0ad24-c65f-4e65-9492-6c9db0f2a0fe",
-        "timestamp" : "2026-11-24T10:39:44.754Z",
+        "identifier" : "urn:uuid:4fbbd8bb-7eab-482a-96f1-d323a71a659c",
+        "timestamp" : "2026-11-26T07:46:19.032Z",
         "total" : 5177,
         "offset" : 0,
         "parameter" : [{
@@ -59512,7 +59512,7 @@
       "title" : "eReferral Imaging Patient Condition Indication",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-11-24T10:36:42+00:00",
+      "date" : "2026-11-26T07:40:55+00:00",
       "contact" : [{
         "name" : "Riziv-Inami Platform",
         "telecom" : [{
@@ -59540,8 +59540,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0fd0ad24-c65f-4e65-9492-6c9db0f2a0fe",
-        "timestamp" : "2026-11-24T10:39:44.754Z",
+        "identifier" : "urn:uuid:4fbbd8bb-7eab-482a-96f1-d323a71a659c",
+        "timestamp" : "2026-11-26T07:46:19.032Z",
         "total" : 5177,
         "offset" : 0,
         "parameter" : [{

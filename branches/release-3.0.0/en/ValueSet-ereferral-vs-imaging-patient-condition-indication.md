@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication | *Version*:3.0.0 |
-| Draft as of 2026-11-24 | *Computable Name*:EReferralVSImagingPatientConditionIndication |
+| Draft as of 2026-11-26 | *Computable Name*:EReferralVSImagingPatientConditionIndication |
 
  
 Allowed coded indications for patient condition in diagnostic imaging. 
@@ -42,7 +42,7 @@ Allowed coded indications for patient condition in diagnostic imaging.
   "title" : "eReferral Imaging Patient Condition Indication",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-24T10:36:42+00:00",
+  "date" : "2026-11-26T07:40:55+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

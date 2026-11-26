@@ -1588,403 +1588,223 @@
       "exampleBoolean" : true
     }],
     "page" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-        "valueUrl" : "toc.html"
-      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "index.html"
-        }],
         "nameUrl" : "index.html",
         "title" : "eReferral Implementation Guide",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "guidance.html"
-        }],
         "nameUrl" : "guidance.html",
         "title" : "Guidance",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "migration-2-1-to-3-0.html"
-        }],
         "nameUrl" : "migration-2-1-to-3-0.html",
         "title" : "Migration 2.1.0 to 3.0.0",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "topic-profiles-architecture.html"
-        }],
         "nameUrl" : "topic-profiles-architecture.html",
         "title" : "Profiles Architecture",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "topic-profile-rewriting.html"
-        }],
         "nameUrl" : "topic-profile-rewriting.html",
         "title" : "Profile Rewriting",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "topic-prescription-lifecycle.html"
-        }],
         "nameUrl" : "topic-prescription-lifecycle.html",
         "title" : "Life Cycle",
         "generation" : "markdown",
         "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "topic-prescription-lifecycle-proposal.html"
-          }],
           "nameUrl" : "topic-prescription-lifecycle-proposal.html",
           "title" : "Proposal Life Cycle",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "topic-prescription-lifecycle-extension.html"
-          }],
           "nameUrl" : "topic-prescription-lifecycle-extension.html",
           "title" : "Prescription Extension",
           "generation" : "markdown"
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "topic-prescription-templates.html"
-        }],
         "nameUrl" : "topic-prescription-templates.html",
         "title" : "Prescription Templates",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "topic-visibility-blacklisting.html"
-        }],
         "nameUrl" : "topic-visibility-blacklisting.html",
         "title" : "Visibility & Blacklisting",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "api-integration.html"
-        }],
         "nameUrl" : "api-integration.html",
         "title" : "API Integration",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "api-operations.html"
-        }],
         "nameUrl" : "api-operations.html",
         "title" : "API Operations",
         "generation" : "markdown",
         "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-access-matrix.html"
-          }],
           "nameUrl" : "operation-access-matrix.html",
           "title" : "Access Matrix",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-create-medical-document.html"
-          }],
           "nameUrl" : "operation-create-medical-document.html",
           "title" : "Create a Medical Document",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-consult-search-medical-documents.html"
-          }],
           "nameUrl" : "operation-consult-search-medical-documents.html",
           "title" : "Consult or Search Medical Documents",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-complete-medical-document.html"
-          }],
           "nameUrl" : "operation-complete-medical-document.html",
           "title" : "Complete a Medical Document",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-cancel-medical-document.html"
-          }],
           "nameUrl" : "operation-cancel-medical-document.html",
           "title" : "Cancel a Medical Document",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-assign-care-provider.html"
-          }],
           "nameUrl" : "operation-assign-care-provider.html",
           "title" : "Assign a Care Provider",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-unassign-care-provider.html"
-          }],
           "nameUrl" : "operation-unassign-care-provider.html",
           "title" : "Unassign a Care Provider",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-record-execution-start.html"
-          }],
           "nameUrl" : "operation-record-execution-start.html",
           "title" : "Record Execution Start",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-record-execution-end.html"
-          }],
           "nameUrl" : "operation-record-execution-end.html",
           "title" : "Record Execution End",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-record-execution-interruption.html"
-          }],
           "nameUrl" : "operation-record-execution-interruption.html",
           "title" : "Record Execution Interruption",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-cancel-execution.html"
-          }],
           "nameUrl" : "operation-cancel-execution.html",
           "title" : "Cancel Execution",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-evaluate-proposal.html"
-          }],
           "nameUrl" : "operation-evaluate-proposal.html",
           "title" : "Evaluate Proposal",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "operation-evaluate-radiology-prescription.html"
-          }],
           "nameUrl" : "operation-evaluate-radiology-prescription.html",
           "title" : "Evaluate Radiology Prescription",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "api-complex-operations.html"
-          }],
           "nameUrl" : "api-complex-operations.html",
           "title" : "Complex Operations",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "error-codes.html"
-          }],
           "nameUrl" : "error-codes.html",
           "title" : "Error Codes",
           "generation" : "markdown"
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "mappings-business.html"
-        }],
         "nameUrl" : "mappings-business.html",
         "title" : "Business Field Mappings",
         "generation" : "markdown",
         "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "mappings-nursing.html"
-          }],
           "nameUrl" : "mappings-nursing.html",
           "title" : "Nursing",
           "generation" : "markdown",
           "page" : [{
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-generic.html"
-            }],
             "nameUrl" : "mapper-nursing-generic.html",
             "title" : "Generic Nursing",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-bloodletting.html"
-            }],
             "nameUrl" : "mapper-nursing-bloodletting.html",
             "title" : "Bloodletting",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-chronic-dialysis.html"
-            }],
             "nameUrl" : "mapper-nursing-chronic-dialysis.html",
             "title" : "Chronic Dialysis",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-diabetes-education-convention-center.html"
-            }],
             "nameUrl" : "mapper-nursing-diabetes-education-convention-center.html",
             "title" : "Diabetes Education via Convention Centre",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-diabetes-education-start-trajectory.html"
-            }],
             "nameUrl" : "mapper-nursing-diabetes-education-start-trajectory.html",
             "title" : "Diabetes Education within Start Trajectory",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-diabetes-education-care-trajectory.html"
-            }],
             "nameUrl" : "mapper-nursing-diabetes-education-care-trajectory.html",
             "title" : "Diabetes Education within Care Trajectory",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-diabetes-education-without-trajectory.html"
-            }],
             "nameUrl" : "mapper-nursing-diabetes-education-without-trajectory.html",
             "title" : "Diabetes Education without Trajectory",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-glycemic-test.html"
-            }],
             "nameUrl" : "mapper-nursing-glycemic-test.html",
             "title" : "Glycemic Test",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-hygienic-care.html"
-            }],
             "nameUrl" : "mapper-nursing-hygienic-care.html",
             "title" : "Hygienic Care",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-medication-prefill-not-refunded.html"
-            }],
             "nameUrl" : "mapper-nursing-medication-prefill-not-refunded.html",
             "title" : "Medication Prefill Preparation Not Refunded",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-parameters.html"
-            }],
             "nameUrl" : "mapper-nursing-parameters.html",
             "title" : "Parameters",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-sampling.html"
-            }],
             "nameUrl" : "mapper-nursing-sampling.html",
             "title" : "Sampling",
             "generation" : "markdown"
           },
           {
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-nursing-annex81-medication-preparation.html"
-            }],
             "nameUrl" : "mapper-nursing-annex81-medication-preparation.html",
             "title" : "Annex 81 Medication Preparation",
             "generation" : "markdown"
           }]
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "mappings-radiology.html"
-          }],
           "nameUrl" : "mappings-radiology.html",
           "title" : "Radiology",
           "generation" : "markdown",
           "page" : [{
-            "extension" : [{
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "mapper-radiology-diagnostic-imaging.html"
-            }],
             "nameUrl" : "mapper-radiology-diagnostic-imaging.html",
             "title" : "Diagnostic Imaging",
             "generation" : "markdown"
@@ -1992,577 +1812,321 @@
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "technical.html"
-        }],
         "nameUrl" : "technical.html",
         "title" : "Technical",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "glossary.html"
-        }],
         "nameUrl" : "glossary.html",
         "title" : "Glossary",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "test-server.html"
-        }],
         "nameUrl" : "test-server.html",
         "title" : "Test Server",
         "generation" : "markdown",
         "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-generic-nursing.html"
-          }],
           "nameUrl" : "test-server-p2m-generic-nursing.html",
           "title" : "P2M - Nursing - Generic nursing care",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-annex-81.html"
-          }],
           "nameUrl" : "test-server-p2m-annex-81.html",
           "title" : "P2M - Nursing - Medication preparation, Annex 81 proposal",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-medication-prefill.html"
-          }],
           "nameUrl" : "test-server-p2m-medication-prefill.html",
           "title" : "P2M - Nursing - Medication prefill preparation, not refunded",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-diabetes-convention-centre.html"
-          }],
           "nameUrl" : "test-server-p2m-diabetes-convention-centre.html",
           "title" : "P2M - Nursing - Diabetes education via convention centre",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-diabetes-start-trajectory.html"
-          }],
           "nameUrl" : "test-server-p2m-diabetes-start-trajectory.html",
           "title" : "P2M - Nursing - Diabetes education within start trajectory",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-diabetes-care-trajectory.html"
-          }],
           "nameUrl" : "test-server-p2m-diabetes-care-trajectory.html",
           "title" : "P2M - Nursing - Diabetes education within care trajectory",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-diabetes-without-care-trajectory.html"
-          }],
           "nameUrl" : "test-server-p2m-diabetes-without-care-trajectory.html",
           "title" : "P2M - Nursing - Diabetes education without care trajectory",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-personal-hygiene.html"
-          }],
           "nameUrl" : "test-server-p2m-personal-hygiene.html",
           "title" : "P2M - Nursing - Assistance with personal hygiene",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-peritoneal-dialysis.html"
-          }],
           "nameUrl" : "test-server-p2m-peritoneal-dialysis.html",
           "title" : "P2M - Nursing - Chronic peritoneal dialysis",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-glycemia-test.html"
-          }],
           "nameUrl" : "test-server-p2m-glycemia-test.html",
           "title" : "P2M - Nursing - Glycemia test with glucometer",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-sampling.html"
-          }],
           "nameUrl" : "test-server-p2m-sampling.html",
           "title" : "P2M - Nursing - Sampling",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-bloodletting.html"
-          }],
           "nameUrl" : "test-server-p2m-bloodletting.html",
           "title" : "P2M - Nursing - Bloodletting",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-parameters.html"
-          }],
           "nameUrl" : "test-server-p2m-parameters.html",
           "title" : "P2M - Nursing - Measurement of parameters",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-assign-organization.html"
-          }],
           "nameUrl" : "test-server-p2m-assign-organization.html",
           "title" : "P2M - Nursing - Assign a prescription to an organization",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-assign-caregiver.html"
-          }],
           "nameUrl" : "test-server-p2m-assign-caregiver.html",
           "title" : "P2M - Nursing - Assign a prescription to a treatment provider",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-classify-without-consequence.html"
-          }],
           "nameUrl" : "test-server-p2m-classify-without-consequence.html",
           "title" : "P2M - Nursing - Classifying a prescription without consequence",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-start-without-assignment.html"
-          }],
           "nameUrl" : "test-server-p2m-start-without-assignment.html",
           "title" : "P2M - Nursing - Execute a valid prescription",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-p2m-organization-annex-81.html"
-          }],
           "nameUrl" : "test-server-p2m-organization-annex-81.html",
           "title" : "P2M - Nursing - Create an annex 81 proposal by a nurse",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-generic-nursing.html"
-          }],
           "nameUrl" : "test-server-m2m-generic-nursing.html",
           "title" : "M2M - Nursing - Generic nursing care",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-annex-81.html"
-          }],
           "nameUrl" : "test-server-m2m-annex-81.html",
           "title" : "M2M - Nursing - Medication preparation, Annex 81 proposal",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-medication-prefill.html"
-          }],
           "nameUrl" : "test-server-m2m-medication-prefill.html",
           "title" : "M2M - Nursing - Medication prefill preparation, not refunded",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-diabetes-convention-centre.html"
-          }],
           "nameUrl" : "test-server-m2m-diabetes-convention-centre.html",
           "title" : "M2M - Nursing - Diabetes education via convention centre",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-diabetes-start-trajectory.html"
-          }],
           "nameUrl" : "test-server-m2m-diabetes-start-trajectory.html",
           "title" : "M2M - Nursing - Diabetes education within start trajectory",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-diabetes-care-trajectory.html"
-          }],
           "nameUrl" : "test-server-m2m-diabetes-care-trajectory.html",
           "title" : "M2M - Nursing - Diabetes education within care trajectory",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-diabetes-without-care-trajectory.html"
-          }],
           "nameUrl" : "test-server-m2m-diabetes-without-care-trajectory.html",
           "title" : "M2M - Nursing - Diabetes education without care trajectory",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-personal-hygiene.html"
-          }],
           "nameUrl" : "test-server-m2m-personal-hygiene.html",
           "title" : "M2M - Nursing - Assistance with personal hygiene",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-peritoneal-dialysis.html"
-          }],
           "nameUrl" : "test-server-m2m-peritoneal-dialysis.html",
           "title" : "M2M - Nursing - Chronic peritoneal dialysis",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-glycemia-test.html"
-          }],
           "nameUrl" : "test-server-m2m-glycemia-test.html",
           "title" : "M2M - Nursing - Glycemia test with glucometer",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-sampling.html"
-          }],
           "nameUrl" : "test-server-m2m-sampling.html",
           "title" : "M2M - Nursing - Sampling",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-bloodletting.html"
-          }],
           "nameUrl" : "test-server-m2m-bloodletting.html",
           "title" : "M2M - Nursing - Bloodletting",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-parameters.html"
-          }],
           "nameUrl" : "test-server-m2m-parameters.html",
           "title" : "M2M - Nursing - Measurement of parameters",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-assign-organization.html"
-          }],
           "nameUrl" : "test-server-m2m-assign-organization.html",
           "title" : "M2M - Nursing - Assign a prescription to an organization",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-assign-internal-caregiver.html"
-          }],
           "nameUrl" : "test-server-m2m-assign-internal-caregiver.html",
           "title" : "M2M - Nursing - Assign a prescription to a caregiver from the organization",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-start-without-assignment.html"
-          }],
           "nameUrl" : "test-server-m2m-start-without-assignment.html",
           "title" : "M2M - Nursing - Execute a valid prescription",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-m2m-organization-annex-81.html"
-          }],
           "nameUrl" : "test-server-m2m-organization-annex-81.html",
           "title" : "M2M - Nursing - Create an annex 81 proposal by a nurse from an organization",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-01.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-01.html",
           "title" : "P2M - Radiology - Suspected pulmonary edema",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-01.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-01.html",
           "title" : "M2M - Radiology - Suspected pulmonary edema",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-02.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-02.html",
           "title" : "P2M - Radiology - Unresolved or complicated pneumonia",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-02.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-02.html",
           "title" : "M2M - Radiology - Unresolved or complicated pneumonia",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-03.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-03.html",
           "title" : "P2M - Radiology - Chest pain with a normal ECG",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-03.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-03.html",
           "title" : "M2M - Radiology - Chest pain with a normal ECG",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-04.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-04.html",
           "title" : "P2M - Radiology - New headaches during pregnancy",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-04.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-04.html",
           "title" : "M2M - Radiology - New headaches during pregnancy",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-05.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-05.html",
           "title" : "P2M - Radiology - Tongue weakness",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-05.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-05.html",
           "title" : "M2M - Radiology - Tongue weakness",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-06.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-06.html",
           "title" : "P2M - Radiology - Head trauma and stroke follow-up in an adult",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-06.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-06.html",
           "title" : "M2M - Radiology - Head trauma and stroke follow-up in an adult",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-07.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-07.html",
           "title" : "P2M - Radiology - Head trauma and stroke follow-up in a child",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-07.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-07.html",
           "title" : "M2M - Radiology - Head trauma and stroke follow-up in a child",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-08.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-08.html",
           "title" : "P2M - Radiology - Initial breast cancer imaging",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-08.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-08.html",
           "title" : "M2M - Radiology - Initial breast cancer imaging",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-09.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-09.html",
           "title" : "P2M - Radiology - Persistent cough and abnormal sputum",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-09.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-09.html",
           "title" : "M2M - Radiology - Persistent cough and abnormal sputum",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-10.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-10.html",
           "title" : "P2M - Radiology - Tongue and facial weakness",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-10.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-10.html",
           "title" : "M2M - Radiology - Tongue and facial weakness",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-11.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-11.html",
           "title" : "P2M - Radiology - New cough with two selected examinations",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-11.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-11.html",
           "title" : "M2M - Radiology - New cough with two selected examinations",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-p2m-12.html"
-          }],
           "nameUrl" : "test-server-radiology-p2m-12.html",
           "title" : "P2M - Radiology - Flank pain with suspected recurrent stones",
           "generation" : "markdown"
         },
         {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "test-server-radiology-m2m-12.html"
-          }],
           "nameUrl" : "test-server-radiology-m2m-12.html",
           "title" : "M2M - Radiology - Flank pain with suspected recurrent stones",
           "generation" : "markdown"
         }]
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "changes.html"
-        }],
         "nameUrl" : "changes.html",
         "title" : "Changes",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "downloads.html"
-        }],
         "nameUrl" : "downloads.html",
         "title" : "Downloads",
         "generation" : "html"

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use | *Version*:3.0.0 |
-| Active as of 2026-11-24 | *Computable Name*:BeCSeReferralDesignationUse |
+| Active as of 2026-11-26 | *Computable Name*:BeCSeReferralDesignationUse |
 
  
 Identifies terminology designations maintained specifically for the eReferral project. 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "eReferral Designation Use",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-24T10:36:42+00:00",
+  "date" : "2026-11-26T07:40:55+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

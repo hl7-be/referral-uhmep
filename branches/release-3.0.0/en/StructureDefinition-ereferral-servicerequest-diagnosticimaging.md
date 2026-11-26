@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging | *Version*:3.0.0 |
-| Draft as of 2026-11-24 | *Computable Name*:EReferralServiceRequestDiagnosticImaging |
+| Draft as of 2026-11-26 | *Computable Name*:EReferralServiceRequestDiagnosticImaging |
 
  
 The diagnostic imaging profile. eReferral version. 
@@ -40,7 +40,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
   "version" : "3.0.0",
   "name" : "EReferralServiceRequestDiagnosticImaging",
   "status" : "draft",
-  "date" : "2026-11-24T10:36:42+00:00",
+  "date" : "2026-11-26T07:40:55+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

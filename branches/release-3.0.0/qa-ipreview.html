@@ -150,7 +150,7 @@ This material contains content that is copyright of SNOMED International. Implem
 
           IG &copy; 2026+ Riziv-Inami Platform.  
           Package inami.fhir.be.ereferral#3.0.0 based on FHIR 4.0.1.
-          Generated 2026-11-24
+          Generated 2026-11-26
           
           
             
@@ -181,6 +181,94 @@ This material contains content that is copyright of SNOMED International. Implem
              
                 CC0
          (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+  // eecf1dfd-6e9f-4680-995d-312b3786233b
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctereferral-annex-81Mo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="en/StructureDefinition-ereferral-annex-81-mappings.html">src</a>
+)
+      </li>
+      <li>
+  // eecf1dfd-6e9f-4680-995d-312b3786233b
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctereferral-imaging-attention-conditions-responseMo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="en/StructureDefinition-ereferral-imaging-attention-conditions-response-mappings.html">src</a>
+)
+      </li>
+      <li>
+  // eecf1dfd-6e9f-4680-995d-312b3786233b
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctereferral-servicerequest-diagnosticimagingMo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="en/StructureDefinition-ereferral-servicerequest-diagnosticimaging-mappings.html">src</a>
+)
+      </li>
+      <li>
+  // eecf1dfd-6e9f-4680-995d-312b3786233b
+if (typeof htColToggle === 'undefined') {
+  window.htColApply = function(k, show) {
+    document.querySelectorAll('[data-col="'+k+'"]').forEach(function(c) { c.style.display = show ? '' : 'none'; });
+    document.querySelectorAll('input[data-col-toggle="'+k+'"]').forEach(function(c) { c.checked = show; });
+  };
+  window.htColToggle = function(cb) {
+    var k = cb.getAttribute('data-col-toggle');
+    try { if (cb.checked) { localStorage.removeItem('ht-col-'+k); } else { localStorage.setItem('ht-col-'+k, 'false'); } } catch (e) { }
+    htColApply(k, cb.checked);
+  };
+}
+document.querySelectorAll('#ctereferral-servicerequest-nursingMo input[data-col-toggle]').forEach(function(cb) {
+  var k = cb.getAttribute('data-col-toggle');
+  var s = null;
+  try { s = localStorage.getItem('ht-col-'+k); } catch (e) { }
+  if (s === 'false') { htColApply(k, false); }
+});
+ (        <a href="en/StructureDefinition-ereferral-servicerequest-nursing-mappings.html">src</a>
 )
       </li>
       <li>
@@ -16572,7 +16660,7 @@ eReferral Implementation Guide - Local Development build (v3.0.0) built by the F
 .  
           Package inami.fhir.be.ereferral#3.0.0 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Tue, Nov 24, 2026 10:36+0000">2026-11-24</span>
+          Generated           <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
 
                     <br/>
 
@@ -16659,13 +16747,26 @@ eReferral Implementation Guide - Local Development build (v3.0.0) built by the F
       </tr>
       <tr>
         <td>
+          <a href="en/StructureDefinition-ereferral-annex-81-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://wiki.siframework.org/CQF">wiki.siframework.org</a>
+        </td>
+        <td>
+          <a href="http://wiki.siframework.org/CQF">Quality Improvement and Clinical Knowledge (QUICK)</a>
+ (quick)
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="en/StructureDefinition-ereferral-annex-81-mappings.html">web</a>
         </td>
         <td>
-          <a href="http://siframework.org/cqf">siframework.org</a>
+          <a href="http://wiki.siframework.org/CQF">wiki.siframework.org</a>
         </td>
         <td>
-          <a href="http://siframework.org/cqf" title="http://siframework.org/cqf">Quality Improvement and Clinical Knowledge (QUICK)</a>
+          <a href="http://wiki.siframework.org/CQF" title="Quality Improvement and Clinical Knowledge (QUICK)">Quality Improvement and Clinical Knowledge (QUICK)</a>
+          <a name="quick"> </a>
           <span style="float: right">
 <a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a>          </span>
         </td>

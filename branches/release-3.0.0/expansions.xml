@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="73f16698-c6ca-45e8-b3cd-496f083addda"/>
+  <id value="89006b79-5bdb-487a-8b6f-d8e48cd2c2d1"/>
   <meta>
-    <lastUpdated value="2026-11-24T10:36:42.239+00:00"/>
+    <lastUpdated value="2026-11-26T07:40:55.165+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -17647,7 +17647,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -17675,8 +17675,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:62495c9e-7f2e-4f88-83b3-187eb5e6ba13"/>
-          <timestamp value="2026-11-24T10:39:42.453Z"/>
+          <identifier value="urn:uuid:0ea35af3-4397-4132-9c84-659af39fe4c7"/>
+          <timestamp value="2026-11-26T07:46:15.105Z"/>
           <total value="880"/>
           <offset value="0"/>
           <parameter>
@@ -39744,7 +39744,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Condition"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -39772,8 +39772,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:62495c9e-7f2e-4f88-83b3-187eb5e6ba13"/>
-          <timestamp value="2026-11-24T10:39:42.453Z"/>
+          <identifier value="urn:uuid:0ea35af3-4397-4132-9c84-659af39fe4c7"/>
+          <timestamp value="2026-11-26T07:46:15.105Z"/>
           <total value="880"/>
           <offset value="0"/>
           <parameter>
@@ -56343,7 +56343,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -56376,8 +56376,8 @@
               <reference value="#oo1"/>
             </valueReference>
           </extension>
-          <identifier value="urn:uuid:57fc3c77-293b-4f66-9773-454f73b06c6b"/>
-          <timestamp value="2026-11-24T10:39:42.898Z"/>
+          <identifier value="urn:uuid:b3f75e0a-1418-4d2a-ad17-a7fefaec5d84"/>
+          <timestamp value="2026-11-26T07:46:15.826Z"/>
           <total value="604"/>
           <offset value="0"/>
           <parameter>
@@ -71567,7 +71567,7 @@
         <title value="eReferral/PSS Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -71600,8 +71600,8 @@
               <reference value="#oo1"/>
             </valueReference>
           </extension>
-          <identifier value="urn:uuid:57fc3c77-293b-4f66-9773-454f73b06c6b"/>
-          <timestamp value="2026-11-24T10:39:42.898Z"/>
+          <identifier value="urn:uuid:b3f75e0a-1418-4d2a-ad17-a7fefaec5d84"/>
+          <timestamp value="2026-11-26T07:46:15.826Z"/>
           <total value="604"/>
           <offset value="0"/>
           <parameter>
@@ -94692,7 +94692,7 @@
         <title value="SNOMED CT eReferral Supplement Designations"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -94726,8 +94726,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason">
             <valueString value="The code System 'http://snomed.info/sct' has a grammar and so has infinite members"/>
           </extension>
-          <identifier value="urn:uuid:d5e722f9-7bd9-4ff2-b5e6-51052cff2479"/>
-          <timestamp value="2026-11-24T10:39:43.296Z"/>
+          <identifier value="urn:uuid:9ca830a5-b90e-4b17-87d3-220fe32fb2cf"/>
+          <timestamp value="2026-11-26T07:46:16.837Z"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -119797,7 +119797,7 @@
         <title value="SNOMED CT eReferral Supplement Designations"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -119831,8 +119831,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed-reason">
             <valueString value="The code System 'http://snomed.info/sct' has a grammar and so has infinite members"/>
           </extension>
-          <identifier value="urn:uuid:d5e722f9-7bd9-4ff2-b5e6-51052cff2479"/>
-          <timestamp value="2026-11-24T10:39:43.296Z"/>
+          <identifier value="urn:uuid:9ca830a5-b90e-4b17-87d3-220fe32fb2cf"/>
+          <timestamp value="2026-11-26T07:46:16.837Z"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -144922,7 +144922,7 @@
         <title value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -144931,8 +144931,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a6a5553d-d534-4090-a6e7-e10eee5cb131"/>
-          <timestamp value="2026-11-24T10:39:43+00:00"/>
+          <identifier value="urn:uuid:01494f01-afb6-493a-8577-66dc7e512734"/>
+          <timestamp value="2026-11-26T07:46:17+00:00"/>
           <total value="1467"/>
           <offset value="0"/>
           <parameter>
@@ -170035,7 +170035,7 @@
         <title value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -170044,8 +170044,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a6a5553d-d534-4090-a6e7-e10eee5cb131"/>
-          <timestamp value="2026-11-24T10:39:43+00:00"/>
+          <identifier value="urn:uuid:01494f01-afb6-493a-8577-66dc7e512734"/>
+          <timestamp value="2026-11-26T07:46:17+00:00"/>
           <total value="1467"/>
           <offset value="0"/>
           <parameter>
@@ -192386,7 +192386,7 @@
         <title value="PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -192395,8 +192395,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ac29d0d0-724b-4254-8a79-478c9b6cc826"/>
-          <timestamp value="2026-11-24T10:39:44+00:00"/>
+          <identifier value="urn:uuid:107d5ece-b877-4e45-b20f-2149e0a57608"/>
+          <timestamp value="2026-11-26T07:46:17+00:00"/>
           <total value="863"/>
           <offset value="0"/>
           <parameter>
@@ -214040,7 +214040,7 @@
         <title value="PSS/QSI Diagnostic Imaging Procedure"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -214049,8 +214049,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ac29d0d0-724b-4254-8a79-478c9b6cc826"/>
-          <timestamp value="2026-11-24T10:39:44+00:00"/>
+          <identifier value="urn:uuid:107d5ece-b877-4e45-b20f-2149e0a57608"/>
+          <timestamp value="2026-11-26T07:46:17+00:00"/>
           <total value="863"/>
           <offset value="0"/>
           <parameter>
@@ -238434,7 +238434,7 @@
         <title value="PSS/QSI Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -238443,8 +238443,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3087a1ae-ea3d-42bd-9506-cf55e5e777a6"/>
-          <timestamp value="2026-11-24T10:39:44+00:00"/>
+          <identifier value="urn:uuid:683ba55c-8df4-4e96-9674-0d0b1c10265a"/>
+          <timestamp value="2026-11-26T07:46:18+00:00"/>
           <total value="4297"/>
           <offset value="0"/>
           <parameter>
@@ -263513,7 +263513,7 @@
         <title value="PSS/QSI Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -263522,8 +263522,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3087a1ae-ea3d-42bd-9506-cf55e5e777a6"/>
-          <timestamp value="2026-11-24T10:39:44+00:00"/>
+          <identifier value="urn:uuid:683ba55c-8df4-4e96-9674-0d0b1c10265a"/>
+          <timestamp value="2026-11-26T07:46:18+00:00"/>
           <total value="4297"/>
           <offset value="0"/>
           <parameter>
@@ -268692,7 +268692,7 @@
         <title value="eReferral Radiology SupportingInfo Role ValueSet"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -268701,8 +268701,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd88c58e-6edf-49be-9ba5-bcd5c728524f"/>
-          <timestamp value="2026-11-24T10:39:44+00:00"/>
+          <identifier value="urn:uuid:3924480f-eb41-4f31-88c1-79d6e8ee2477"/>
+          <timestamp value="2026-11-26T07:46:18+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -268891,7 +268891,7 @@
         <title value="eReferral Radiology SupportingInfo Role ValueSet"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -268900,8 +268900,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd88c58e-6edf-49be-9ba5-bcd5c728524f"/>
-          <timestamp value="2026-11-24T10:39:44+00:00"/>
+          <identifier value="urn:uuid:3924480f-eb41-4f31-88c1-79d6e8ee2477"/>
+          <timestamp value="2026-11-26T07:46:18+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -289012,7 +289012,7 @@
         <title value="eReferral Imaging Patient Condition Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -289040,8 +289040,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0fd0ad24-c65f-4e65-9492-6c9db0f2a0fe"/>
-          <timestamp value="2026-11-24T10:39:44.754Z"/>
+          <identifier value="urn:uuid:4fbbd8bb-7eab-482a-96f1-d323a71a659c"/>
+          <timestamp value="2026-11-26T07:46:19.032Z"/>
           <total value="5177"/>
           <offset value="0"/>
           <parameter>
@@ -314144,7 +314144,7 @@
         <title value="eReferral Imaging Patient Condition Indication"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-11-24T10:36:42+00:00"/>
+        <date value="2026-11-26T07:40:55+00:00"/>
         <contact>
           <name value="Riziv-Inami Platform"/>
           <telecom>
@@ -314172,8 +314172,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0fd0ad24-c65f-4e65-9492-6c9db0f2a0fe"/>
-          <timestamp value="2026-11-24T10:39:44.754Z"/>
+          <identifier value="urn:uuid:4fbbd8bb-7eab-482a-96f1-d323a71a659c"/>
+          <timestamp value="2026-11-26T07:46:19.032Z"/>
           <total value="5177"/>
           <offset value="0"/>
           <parameter>
