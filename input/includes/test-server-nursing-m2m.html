@@ -1,0 +1,59 @@
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-hygienic-care.json" data-requester="PractitionerRole/40799287001-PHYSICIAN-NIHII-{nihii11Organization}" data-reason-code="32798002" data-validity-start="2023-11-08">
+<summary>Assistance with personal hygiene</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-parameters.json" data-requester="PractitionerRole/40799287001-PHYSICIAN-NIHII-{nihii11Organization}" data-order-detail-code="163033001" data-order-detail-version="http://snomed.info/sct/11000172109" data-reason-code="28651003" data-validity-start="2023-11-08">
+<summary>Measurement of parameters</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-generic.json" data-requester="PractitionerRole/40799287001-PHYSICIAN-NIHII-{nihii11Organization}" data-order-detail-code="384719006" data-order-detail-version="http://snomed.info/sct/11000172109" data-reason-code="2492009" data-validity-start="2023-11-08">
+<summary>Generic nursing care</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<details class="test-server-example" data-json="ServiceRequest-example-drp-nursing-med-preparation-appendix-81.json" data-requester="PractitionerRole/{SSIN}-{DISCIPLINE}-NIHII-{nihii11Organization}" data-subject="Patient/urn:be:fgov:pseudo:v2:{SEC1}:{transitInfo}">
+<summary>Annex 81 proposal by an organization nurse</summary>
+<pre><code class="language-json"></code></pre>
+</details>
+<script>
+document.querySelectorAll('details.test-server-example[data-requester]').forEach((details) => {
+  details.addEventListener('toggle', async () => {
+    if (!details.open || details.dataset.loaded) return;
+    const code = details.querySelector('code');
+    try {
+      const response = await fetch(details.dataset.json);
+      if (!response.ok) throw new Error('JSON request failed');
+      const resource = await response.json();
+      resource.status = 'active';
+      resource.subject = {
+        reference: details.dataset.subject || 'Patient/urn:be:fgov:pseudo:v2:{SEC1}:{transit-info}'
+      };
+      resource.requester = { reference: details.dataset.requester };
+      if (details.dataset.orderDetailCode) {
+        resource.orderDetail = [{
+          coding: [{
+            system: 'http://snomed.info/sct',
+            ...(details.dataset.orderDetailVersion && { version: details.dataset.orderDetailVersion }),
+            code: details.dataset.orderDetailCode
+          }]
+        }];
+      }
+      if (details.dataset.reasonCode) {
+        resource.reasonCode = [{
+          coding: [{ system: 'http://snomed.info/sct', code: details.dataset.reasonCode }]
+        }];
+      }
+      if (details.dataset.validityStart) {
+        const validity = resource.extension.find((extension) => extension.url.endsWith('/be-ext-validity-period'));
+        validity.valuePeriod.start = details.dataset.validityStart;
+      }
+      delete resource.language;
+      delete resource.text;
+      code.textContent = JSON.stringify(resource, null, 2);
+      details.dataset.loaded = 'true';
+      if (window.Prism) Prism.highlightElement(code);
+    } catch {
+      code.textContent = 'Unable to load this JSON example.';
+    }
+  });
+});
+</script>
