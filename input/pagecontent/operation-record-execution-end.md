@@ -16,7 +16,7 @@ For radiology on the urgency track, execution may also be completed while the pr
   "resourceType": "Task",
   "meta": {
     "profile": [
-      "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-performer-task"
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
   "status": "completed",
