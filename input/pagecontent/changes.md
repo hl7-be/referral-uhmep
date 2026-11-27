@@ -24,6 +24,10 @@ For payload compatibility checks, radiology state transitions, before/after scen
 
 See [Unassign a Care Provider](operation-unassign-care-provider.html), [Prescription Extension](topic-prescription-lifecycle-extension.html) and the [migration checks](migration-2-1-to-3-0.html).
 
+#### Organization and authorization clarifications (2026-11-26)
+
+This documentation update records the 3.0 organization execution-cancellation path, organization-specific list visibility, Annex 81 organization policy and organization authorization matching. It does not announce a new runtime feature or confirm deployment configuration. See [Cancel Execution](operation-cancel-execution.html), [Access Matrix](operation-access-matrix.html), [Consult Search Medical Documents](operation-consult-search-medical-documents.html) and the [migration checks](migration-2-1-to-3-0.html).
+
 #### Radiology workflow clarifications
 
 - **Remove an assignment on the ambulatory track:** An assignment may be removed while the radiology prescription is `READY` or `IN_PROGRESS` and its execution task is `ready` or `in-progress`. The task is deleted and the prescription returns to `READY`. Other tracks and prescription types retain their applicable removal rules.
@@ -42,8 +46,6 @@ See [Unassign a Care Provider](operation-unassign-care-provider.html), [Prescrip
 - Ten illustrative PSS radiology business-case examples demonstrate the updated terminology in diagnostic-imaging requests.
 
 </details>
-
----
 
 ### **2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)**
 

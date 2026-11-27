@@ -25,7 +25,7 @@ matrix, suspension effects and search-filter access control.
 | Layer | Integration impact |
 |----|----|
 | Role | The connected user is treated as one of:<br>- patient<br>- prescriber<br>- caregiver<br>- organization<br>- restricted healthcare professional |
-| Access matrix | The operation must be authorized.<br>- The prescription template must be authorized.<br>- The discipline must be authorized.<br>- Unauthorized combinations return `403 Forbidden`. |
+| Access matrix | The operation and prescription template must be authorized. Professional access is evaluated using discipline and Organization access uses the organization's OIDC identity (type code). Unauthorized combinations return `403 Forbidden`. |
 | Suspension | Suspended healthcare professionals have limited access. Some operations are blocked, while retroactive execution registration may remain possible for work done before suspension. |
 | Patient privacy | Checks applied depending on the operation:<br>- informed consent<br>- therapeutic relationship<br>- therapeutic exclusion |
 | M2M responsibility | In machine-to-machine integrations, some access and privacy checks may remain the responsibility of the calling organization. |

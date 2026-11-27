@@ -74,7 +74,7 @@ When approval is performed:
 
 The approval request may include an optional note. Because this note is clinical free text, it must be encrypted and linked to the pseudonymized key carried in the `Parameters.meta` payload.
 
-Using the operation ensures the server can apply all workflow rules atomically and keep the resources consistent. A successful approval returns `201 Created`.
+Using the operation ensures the server can apply all workflow rules atomically and keep the resources consistent. A successful approval returns `200 OK`.
 
 ---
 

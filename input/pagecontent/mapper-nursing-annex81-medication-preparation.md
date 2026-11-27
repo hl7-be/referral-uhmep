@@ -55,7 +55,7 @@ This table maps the business fields to the corresponding FHIR elements.
     </tr>
         <tr>
       <td>Prescription type</td>
-      <td><code>ServiceRequest.category[prescriptionType]</code></td>
+      <td><code>ServiceRequest.category[annex81TechnicalType]</code></td>
       <td><pre><code class="language-json">{
   "category": [
     {
@@ -68,7 +68,7 @@ This table maps the business fields to the corresponding FHIR elements.
     }
   ]
 }</code></pre></td>
-      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>medication-prefill-preparation-appendix-81</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-nursing-prescription-technical-type.html"><code>be-vs-nursing-prescription-technical-type</code></a></li></ul></td>
+      <td><ul><li>system: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></a></li><li>code: <code>medication-prefill-preparation-appendix-81</code></li><li>binding: <a href="https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-technical-type.html"><code>be-vs-annex81-technical-type</code></a> (required)</li></ul></td>
     </tr>
         <tr>
       <td>Discipline</td>

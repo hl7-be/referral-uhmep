@@ -49,6 +49,8 @@ Search filters are submitted as `application/x-www-form-urlencoded` key-value pa
 | `_count` | Integer between `1` and `25` | Page size. The default and maximum are `25`. Values below `1` or above `25` are rejected. | Active |
 | `_offset` | Integer | Zero-based result offset. If omitted, it defaults to `0`. | Active |
 
+For Organizations, list visibility is governed by separate authorization for prescription lists and proposal lists. Permission to consult an individual document does not by itself grant access to its list. The backend filters the accessible templates using those list permissions. A template without a matching list permission is excluded. Other roles use their individual document-consultation permissions.
+
 ##### Examples
 ###### Search By Patient And Status
 

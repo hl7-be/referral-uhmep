@@ -1,5 +1,7 @@
 This page groups the business field mappings for nursing prescription types.
 
+The [Annex 81 profile](StructureDefinition-ereferral-annex-81.html) binds `category[annex81TechnicalType]` to `be-vs-annex81-technical-type` and `code` to `be-vs-annex81-care-requested`, both with required strength. These bindings make the terminology of the inherited coded constraints explicit. They do not change element cardinalities or establish runtime enforcement.
+
 | Prescription type | Mapping page | Example |
 | --- | --- | --- |
 | Generic nursing | [Generic nursing](mapper-nursing-generic.html) | [example-drp-nursing-generic](ServiceRequest-example-drp-nursing-generic.html) |

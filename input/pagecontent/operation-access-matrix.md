@@ -11,7 +11,7 @@ A connected user is assigned exactly **one** role, which acts as the first layer
 | Patient | Consult own prescriptions, tasks and lists. Resolve exposed `Practitioner` and `PractitionerRole` references. Assign/remove caregivers or organizations. Cancel own prescriptions.                                                                                                                        |
 | Prescriber | Create, consult and cancel prescriptions. Consult lists and caregiver execution tasks.                                                                                                                                                                                                                    |
 | Caregiver | Consult prescriptions/lists/tasks. Execute treatments (start, finish, interrupt, cancel). Assign/remove caregivers or organizations. Transfer assignations.                                                                                                                                               |
-| Organization | Create prescriptions and proposals. Consult list/details/execution tasks of prescriptions and proposals. Assign them to itself, to internal healthcare professionals or to external healthcare professionals. Remove its own organization assignation on a prescription. |
+| Organization | Create prescriptions and proposals. Consult lists, details and execution tasks only for templates and actions authorized for its organization identity. Assign prescriptions and proposals to itself, to internal healthcare professionals or to external healthcare professionals. Remove its own organization assignment on a prescription, subject to the applicable rules. |
 | Restricted | If a healthcare professional's token contains only the "Restricted" role, their licence is suspended and they have strictly limited access (see [Suspension](#suspension)).                                                                                                                               |
 
 These are role summaries, not unconditional permissions. For radiology, a Patient cannot remove
@@ -27,10 +27,11 @@ action, the API evaluates:
 
 1. the **operation** requested.
 2. the **prescription template type** (defined by INAMI: see [Prescription Templates](topic-prescription-templates.html)).
-3. the **discipline** of the professional (from the token) or of the organization.
+3. for professionals, the **discipline** associated with the token; for Organizations, the organization identity used by the authorization policy.
 
-If the user's or organization's discipline is not authorized for the requested template/action,
-the API returns `403 Forbidden`.
+For professionals, the matrix evaluates the discipline associated with the token. For an Organization, the authorization-policy match uses the prescription template, requested action and organization's OIDC identity; organization type is not part of this match. This is separate from resolving the organization and its type through CoBRHA when an API flow requires that information. An unauthorized template/action combination returns `403 Forbidden`.
+
+For Annex 81, organization policy covers prescription consultation and list access, execution, interruption, assignment and assignment withdrawal, in addition to the separately governed proposal actions. These permissions are policy-dependent: they do not imply that every Organization is authorized, and they do not change the Annex 81 FHIR profile.
 
 ### Suspension
 
@@ -49,6 +50,8 @@ organization is responsible for them.
 
 When searching for a list of prescriptions/proposals (`POST /ServiceRequest/_search`), each filter
 has an access rule that depends on the connected user's role.
+
+For Organizations, list visibility is governed by separate authorization for prescription lists and proposal lists. Permission to consult an individual document does not by itself grant access to its list. The backend filters the accessible templates using those list permissions; a template without a matching list permission is excluded. Other roles use their individual document-consultation permissions.
 
 | Filter | Prescriber | Caregiver | Patient | Organization |
 | --- | --- | --- | --- | --- |
