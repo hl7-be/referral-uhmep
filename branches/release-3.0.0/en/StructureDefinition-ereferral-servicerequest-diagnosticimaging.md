@@ -1,4 +1,4 @@
-# EReferralServiceRequestDiagnosticImaging - eReferral Implementation Guide v3.0.0
+# EReferralServiceRequestDiagnosticImaging - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging | *Version*:3.0.0 |
-| Draft as of 2026-11-26 | *Computable Name*:EReferralServiceRequestDiagnosticImaging |
+| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging | *Version*:3.0.2 |
+| Draft as of 2026-11-27 | *Computable Name*:EReferralServiceRequestDiagnosticImaging |
 
  
 The diagnostic imaging profile. eReferral version. 
@@ -37,10 +37,10 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
   "resourceType" : "StructureDefinition",
   "id" : "ereferral-servicerequest-diagnosticimaging",
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "EReferralServiceRequestDiagnosticImaging",
   "status" : "draft",
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -318,7 +318,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "path" : "ServiceRequest.code",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.0"
+        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.2"
       }
     },
     {
@@ -404,7 +404,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.2"]
       }]
     },
     {
@@ -443,7 +443,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.2"]
       }]
     },
     {
@@ -469,7 +469,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.2"]
       }]
     },
     {
@@ -500,7 +500,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.2"]
       }]
     },
     {
@@ -546,7 +546,7 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-service
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.0"]
+        "profile" : ["https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-radiology-supporting-info-role|3.0.2"]
       }]
     },
     {

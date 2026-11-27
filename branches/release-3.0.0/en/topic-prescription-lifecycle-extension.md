@@ -1,4 +1,4 @@
-# Prescription Extension - eReferral Implementation Guide v3.0.0
+# Prescription Extension - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Life Cycle**](topic-prescription-lifecycle.md)
@@ -14,9 +14,7 @@ To support this scenario, the model allows the creation of a **new ServiceReques
 
 When a prescription’s validity period needs to be extended, a **new ServiceRequest** is created.
 
-The implemented 3.0 API links the new prescription to the original through `ServiceRequest.basedOn`. The creation route reads the first reference, with at most one such reference accepted by the creation mapper. The read representation also exposes the extension link through `basedOn`. Sending `ServiceRequest.replaces` alone must not be assumed to create a linked extension.
-
-This is the implemented 3.0 relationship convention, not a claim that `basedOn` and `replaces` have interchangeable FHIR meanings. Validate the complete new request against the target profile rather than assuming that a returned resource can be resubmitted unchanged.
+The new prescription references the original through `ServiceRequest.basedOn`.
 
 This allows the system to maintain a clear history of prescriptions while preserving the original clinical intent: the original ServiceRequest remains unchanged and represents the **initial prescription created by the prescriber** for its own validity period.
 
@@ -24,7 +22,7 @@ This allows the system to maintain a clear history of prescriptions while preser
 
 The new ServiceRequest represents a new prescription to allow the **continuation of care**, covering a new validity period that follows on from the original prescription.
 
-For continuation of the same care, retain the original patient, requester and prescribed service and supply the new validity period. The creation route requires a complete new prescription, not an instruction to copy the original. Its extension validator checks that the original exists and has the same patient and template. This does not establish that the server automatically copies the requester or enforces that only validity-period fields differ.
+For continuation of the same care, retain the original patient, requester and prescribed service and supply the new validity period. The creation route requires a complete new prescription, not an instruction to copy the original. Its extension validator checks that the original exists and has the same patient and template.
 
 ### Workflow Tracking
 

@@ -1,4 +1,4 @@
-# Prescription Templates - eReferral Implementation Guide v3.0.0
+# Prescription Templates - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * **Prescription Templates**
@@ -13,10 +13,7 @@ Integrators are responsible for using the right profile for the prescription the
 
 The template is identified by a technical identifier carried in `ServiceRequest.category` (slice `prescriptionType`, or `annex81TechnicalType` for Annex 81). This identifier **must always be provided at creation**. Its code system is:
 
-```
-https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type
-
-```
+`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type`
 
 ### Technical Identifier Catalogue
 

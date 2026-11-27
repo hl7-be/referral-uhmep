@@ -1,4 +1,4 @@
-# Diabetes Education within Care Trajectory - eReferral Implementation Guide v3.0.0
+# Diabetes Education within Care Trajectory - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Business Field Mappings**](mappings-business.md)
@@ -42,26 +42,26 @@ This table maps the business fields to the corresponding FHIR elements.
 * code: `diabetic-education-within-care-trajectory`
 * binding: [`be-vs-nursing-prescription-technical-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-nursing-prescription-technical-type.html)
  |
-| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `9632001`
  |
 | Validity period | `ServiceRequest.extension[validity]` | ````{ "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period", "valuePeriod": { "start": "2026-02-18", "end": "2026-12-31" } } ] }```` |  |
 | Patient | `ServiceRequest.subject` | ````{ "subject": { "identifier": { "use": "official", "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin", "value": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}", "_value": { "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization", "extension": [ { "url": "marker", "valueBoolean": true }, { "url": "format", "valueCode": "direct" }, { "url": "version", "valuePositiveInt": 2 } ] } ] } } } }```` |  |
 | Requester / prescriber | `ServiceRequest.requester` | ````{ "requester": { "reference": "PractitionerRole/72101230445-PHYSICIAN" } }```` |  |
-| Recommended education | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Recommended education | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `370858005`
  |
-| This field appears when "Recommended education" = "Use of blood glucose meter" | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| This field appears when "Recommended education" = "Use of blood glucose meter" | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `370858005`
  |
-| Educator type | `ServiceRequest.extension[performerType]` | ````{ "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-performer-type", "valueCodeableConcept": { "coding": [ { "system": "http://snomed.info/sct", "code": "106292003" } ] } } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Educator type | `ServiceRequest.extension[performerType]` | ````{ "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-performer-type", "valueCodeableConcept": { "coding": [ { "system": "http://snomed.info/sct", "code": "106292003" } ] } } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `106292003`
  |
-| Session type | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Session type | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `370858005`
 * binding: [`be-vs-session-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-session-type.html)
  |
-| This field appears when "Session type" = "Individual session (30 min)" | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| This field appears when "Session type" = "Individual session (30 min)" | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "370858005" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `370858005`
 * binding: [`be-vs-session-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-session-type.html)
 * binding: [`be-vs-session-type-extended`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-session-type-extended.html)

@@ -1,4 +1,4 @@
-# Consult or Search Medical Documents - eReferral Implementation Guide v3.0.0
+# Consult or Search Medical Documents - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**API Operations**](api-operations.md)
@@ -46,18 +46,21 @@ Content-Type: application/x-www-form-urlencoded
 
 Search filters are submitted as `application/x-www-form-urlencoded` key-value pairs in `POST /ServiceRequest/_search`.
 
-| | | |
-| :--- | :--- | :--- |
-| `patient` | Filter by patient pseudonym in transit for the eReferral domain. | Active |
-| `status` | Filter by FHIR`ServiceRequest.status`. Translate from business status first. | Active |
-| `statusReason` | Filter by additional prescription status information. | Active |
-| `_has:Task:focus:status`with`_profile` | Filter by summary execution/referral-task status. | Active |
-| `requester` | Filter by prescriber. Organization-scoped requester references use`PractitionerRole/{SSIN}-{DISCIPLINE}-NIHII-{nihii11Organization}`. | Active |
-| `_has:Task:focus:owner` | Filter by assigned caregiver or assigned organization. | Active |
-| `code` | Filter by template code using`{system}|{code}`. | To be replaced by`category`with`system=https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type` |
-| `intent` | Separate prescriptions (`order`) from proposals (`proposal`). | Active |
-| `_count` | Page size. Default and maximum are currently 25. Higher values return an invalid-count error. | Active |
-| `_offset` | Zero-based result offset. Defaults to 0. | Active |
+| | | | |
+| :--- | :--- | :--- | :--- |
+| `patient` | Patient pseudonym in transit (domain UHMEP), e.g.`urn:be:fgov:pseudo:v2:{SEC1}:{transitInfo}` | Filter by patient of the prescription. | Active |
+| `status` | `{status}` | Filter by prescription status. | Active |
+| `statusReason` | `{statusReason}` | Filter by additional information for prescription status. | Active |
+| `_has:Task:focus:status-_profile` | `{status}$Profile/be-referral-task` | Filter by summary of execution status. | Active |
+| `requester` | `PractitionerRole/{Prescriber SSIN}-{Prescriber discipline}` | Filter by prescriber of the prescription. | Active |
+| `_has:Task:focus:owner` | `PractitionerRole/{Caregiver SSIN}-{Caregiver discipline}` | Filter by caregiver assigned to the prescription. | Active |
+| `_has:Task:focus:owner` | `Organization/{IdType}-{Id}` | Filter by organization assigned to the prescription. | Active |
+| `code` | `{code system}|{template code}` | Filter on the template of the prescription. | To be replaced by`category`with`system=https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type` |
+| `intent` | `order`or`proposal` | Separate prescriptions from proposals. | Active |
+| `_count` | Integer between`1`and`25` | Page size. The default and maximum are`25`. Values below`1`or above`25`are rejected. | Active |
+| `_offset` | Integer | Zero-based result offset. If omitted, it defaults to`0`. | Active |
+
+For Organizations, list visibility is governed by separate authorization for prescription lists and proposal lists. Permission to consult an individual document does not by itself grant access to its list. The backend filters the accessible templates using those list permissions. A template without a matching list permission is excluded. Other roles use their individual document-consultation permissions.
 
 ##### Examples
 

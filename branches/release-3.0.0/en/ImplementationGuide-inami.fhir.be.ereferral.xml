@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral"/>
-  <version value="3.0.0"/>
+  <version value="3.0.2"/>
   <name value="EReferral"/>
   <title value="eReferral Implementation Guide"/>
   <status value="draft"/>
-  <date value="2026-09-02"/>
+  <date value="2026-11-26"/>
   <publisher value="Riziv-Inami Platform"/>
   <contact>
     <name value="Riziv-Inami Platform"/>
@@ -58,7 +58,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.4.0"/>
+    <version value="5.4.1"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_be_core">
     <uri value="https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core"/>
@@ -1309,11 +1309,6 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="migration-2-1-to-3-0.html"/>
-        <title value="Migration 2.1.0 to 3.0.0"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
         <nameUrl value="topic-profiles-architecture.html"/>
         <title value="Profiles Architecture"/>
         <generation value="markdown"/>
@@ -1521,11 +1516,6 @@
       <page>
         <nameUrl value="technical.html"/>
         <title value="Technical"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="glossary.html"/>
-        <title value="Glossary"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1829,8 +1819,18 @@
         </page>
       </page>
       <page>
+        <nameUrl value="glossary.html"/>
+        <title value="Glossary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="changes.html"/>
         <title value="Changes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="migration-2-1-to-3-0.html"/>
+        <title value="Migration 2.1.0 to 3.0.0"/>
         <generation value="markdown"/>
       </page>
       <page>

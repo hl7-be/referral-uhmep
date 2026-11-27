@@ -1,4 +1,4 @@
-# eReferral/PSS Diagnostic Imaging Procedure - eReferral Implementation Guide v3.0.0
+# eReferral/PSS Diagnostic Imaging Procedure - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure | *Version*:3.0.0 |
-| Draft as of 2026-11-26 | *Computable Name*:BeVSDiagnosticImagingProcedure |
+| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure | *Version*:3.0.2 |
+| Draft as of 2026-11-27 | *Computable Name*:BeVSDiagnosticImagingProcedure |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). | |
 
  
@@ -40,12 +40,12 @@ Diagnostic care services that can be prescribed for diagnostic imaging using SNO
   "resourceType" : "ValueSet",
   "id" : "be-vs-diagnostic-imaging-procedure",
   "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeVSDiagnosticImagingProcedure",
   "title" : "eReferral/PSS Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

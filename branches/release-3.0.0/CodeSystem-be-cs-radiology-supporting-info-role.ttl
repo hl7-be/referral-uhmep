@@ -13,12 +13,12 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-radiology-supporting-info-role</b></p><a name=\"be-cs-radiology-supporting-info-role\"> </a><a name=\"hcbe-cs-radiology-supporting-info-role\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">prior-results<a name=\"be-cs-radiology-supporting-info-role-prior-results\"> </a></td></tr><tr><td style=\"white-space:nowrap\">prior-request<a name=\"be-cs-radiology-supporting-info-role-prior-request\"> </a></td></tr><tr><td style=\"white-space:nowrap\">attention-condition<a name=\"be-cs-radiology-supporting-info-role-attention-condition\"> </a></td></tr><tr><td style=\"white-space:nowrap\">safety-checklist<a name=\"be-cs-radiology-supporting-info-role-safety-checklist\"> </a></td></tr><tr><td style=\"white-space:nowrap\">patient-condition<a name=\"be-cs-radiology-supporting-info-role-patient-condition\"> </a></td></tr></table></div>"
   ] ;
   fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role"] ;
-  fhir:CodeSystem.version [ fhir:value "3.0.0"] ;
+  fhir:CodeSystem.version [ fhir:value "3.0.2"] ;
   fhir:CodeSystem.name [ fhir:value "BeCSRadiologySupportingInfoRole"] ;
   fhir:CodeSystem.title [ fhir:value "eReferral Radiology SupportingInfo Role CodeSystem"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-26T07:40:55+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-27T09:41:34+00:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "Riziv-Inami Platform"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;

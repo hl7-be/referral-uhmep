@@ -1,4 +1,4 @@
-# Migration 2.1.0 to 3.0.0 - eReferral Implementation Guide v3.0.0
+# Migration 2.1.0 to 3.0.0 - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * **Migration 2.1.0 to 3.0.0**
@@ -49,6 +49,14 @@ This matrix focuses on migration-sensitive paths. It is not a complete authoriza
 | Patient cancellation | Urgency | Patient | Prescription`PENDING`or`READY` | Prescription becomes canceled. |
 
 For other actors, terminal states, missing assignments and POST-based creation/completion shortcuts, use the relevant operation page rather than extrapolating from these rows. In particular, an existing-task completion and creating a task already marked `completed` are separate routes with their own preconditions.
+
+### Organization Cancellation and Access
+
+An Organization may cancel a caregiver execution only when the execution’s `basedOn` references an organization task assigned to that Organization. The eligible prescription state is represented by `ServiceRequest.status = active` and `BeReferralTask.status = in-progress` or `on-hold`. The request sets the execution `Task.status` to `cancelled`; it does not cancel the `ServiceRequest`. Re-read the related resources after the operation. See [Cancel Execution](operation-cancel-execution.md).
+
+Organization access to prescription and proposal lists is separate from permission to consult an individual prescription or proposal. The backend filters list-accessible templates by the relevant list permission. Annex 81 organization policies also define prescription-level consultation/list, execution, interruption, assignment and assignment-withdrawal rights, separately from proposal rights. These permissions remain specific to the organization policy and template; they are not constraints of the Annex 81 FHIR profile.
+
+The organization policy match uses the template, requested action and OIDC identity, not organization type. This does not replace CoBRHA identity resolution or other checks that use organization information. See [Access Matrix](operation-access-matrix.md).
 
 ### Before and After Operation Examples
 
@@ -140,6 +148,10 @@ Do not silently remove or replace clinical codes to eliminate QA errors. Confirm
 | Other-track removal | Verify rejection on inpatient and urgency tracks. Capture the actual OperationOutcome and applicable error-code entry. |
 | Urgency completion | Cover the existing-task path from`READY`, the normal in-progress path and valid execution dates. Test POST shortcuts separately. |
 | Patient cancellation | Test an authorized patient in`PENDING`and`READY`, a different patient and a state outside those documented permissions. Confirm errors against the operation contract rather than inventing HTTP statuses. |
+| Organization execution cancellation | Test the assigned Organization with an eligible`ServiceRequest`and parent`BeReferralTask`, a different Organization, and an ineligible prescription state. Confirm that only the execution`Task`is cancelled and the`ServiceRequest`is not revoked. |
+| Organization list visibility | Test list access separately from individual-document access for prescription and proposal templates; verify that templates without the corresponding list permission are excluded. |
+| Annex 81 organization policy | Verify prescription-level actions and proposal actions independently, including an organization identity with no matching policy. Do not infer access from the FHIR profile alone. |
+| Radiology pseudonym mapping | Verify that`Patient.birthDate`content maps to the birthdate field and`be-ext-gender-at-birth`content maps to the gender-at-birth field; include distinct values to detect a swap. |
 | Organization and internal professional | Exercise the organization-scoped actor reference, parent organization task and access checks. Include an incoherent`basedOn`reference. |
 | Privacy | Verify pseudonymized identifiers, encrypted free text and matching key references. Never substitute real patient data into public fixtures. |
 | Terminology | Test with the target edition and package versions. Distinguish invalid codes from unavailable terminology validation. |

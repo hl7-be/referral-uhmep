@@ -1,4 +1,4 @@
-# EReferralImagingAttentionConditionsResponse - eReferral Implementation Guide v3.0.0
+# EReferralImagingAttentionConditionsResponse - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response | *Version*:3.0.0 |
-| Draft as of 2026-11-26 | *Computable Name*:EReferralImagingAttentionConditionsResponse |
+| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response | *Version*:3.0.2 |
+| Draft as of 2026-11-27 | *Computable Name*:EReferralImagingAttentionConditionsResponse |
 
  
 eReferral response to the imaging attention conditions questionnaire. 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-imaging
   "resourceType" : "StructureDefinition",
   "id" : "ereferral-imaging-attention-conditions-response",
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "EReferralImagingAttentionConditionsResponse",
   "status" : "draft",
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

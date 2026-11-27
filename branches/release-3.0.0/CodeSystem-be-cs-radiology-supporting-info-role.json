@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-radiology-supporting-info-role</b></p><a name=\"be-cs-radiology-supporting-info-role\"> </a><a name=\"hcbe-cs-radiology-supporting-info-role\"> </a><p>This case-sensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">prior-results<a name=\"be-cs-radiology-supporting-info-role-prior-results\"> </a></td></tr><tr><td style=\"white-space:nowrap\">prior-request<a name=\"be-cs-radiology-supporting-info-role-prior-request\"> </a></td></tr><tr><td style=\"white-space:nowrap\">attention-condition<a name=\"be-cs-radiology-supporting-info-role-attention-condition\"> </a></td></tr><tr><td style=\"white-space:nowrap\">safety-checklist<a name=\"be-cs-radiology-supporting-info-role-safety-checklist\"> </a></td></tr><tr><td style=\"white-space:nowrap\">patient-condition<a name=\"be-cs-radiology-supporting-info-role-patient-condition\"> </a></td></tr></table></div>"
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeCSRadiologySupportingInfoRole",
   "title" : "eReferral Radiology SupportingInfo Role CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

@@ -1,4 +1,4 @@
-# Record Execution Start - eReferral Implementation Guide v3.0.0
+# Record Execution Start - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**API Operations**](api-operations.md)
@@ -27,27 +27,26 @@ Independent professional:
       "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
-  "status": "in-progress",
-  "intent": "order",
+  "partOf": [{
+    "reference": "Task/{referralTaskId}"
+  }],
   "focus": {
     "reference": "ServiceRequest/{serviceRequestId}"
   },
-  "partOf": [
-    {
-      "reference": "Task/{referralTaskId}"
-    }
-  ],
+  "status": "in-progress",
+  "intent": "order",
+  "executionPeriod": {
+    "start": "2026-11-12"
+  },
+  "authoredOn": "2026-11-12",
   "owner": {
     "reference": "PractitionerRole/{SSIN}-{DISCIPLINE}"
-  },
-  "executionPeriod": {
-    "start": "2026-07-03T09:00:00+02:00"
   }
 }
 
 ```
 
-Internal professional represented by an organization:
+Internal professional represented by an organization (adds `basedOn`):
 
 ```
 {
@@ -57,26 +56,25 @@ Internal professional represented by an organization:
       "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
-  "status": "in-progress",
-  "intent": "order",
+  "partOf": [{
+    "reference": "Task/{referralTaskId}"
+  }],
   "focus": {
     "reference": "ServiceRequest/{serviceRequestId}"
   },
-  "partOf": [
-    {
-      "reference": "Task/{referralTaskId}"
-    }
-  ],
   "basedOn": [
     {
       "reference": "Task/{organizationTaskId}"
     }
   ],
+  "status": "in-progress",
+  "intent": "order",
+  "executionPeriod": {
+    "start": "2026-11-12"
+  },
+  "authoredOn": "2026-11-12",
   "owner": {
     "reference": "PractitionerRole/{SSIN}-{DISCIPLINE}"
-  },
-  "executionPeriod": {
-    "start": "2026-07-03T09:00:00+02:00"
   }
 }
 

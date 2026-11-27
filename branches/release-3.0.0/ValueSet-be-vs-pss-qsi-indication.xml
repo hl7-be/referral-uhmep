@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="be-vs-pss-qsi-indication"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-vs-pss-qsi-indication</b></p><a name="be-vs-pss-qsi-indication"> </a><a name="hcbe-vs-pss-qsi-indication"> </a><ul><li>Include all codes defined in <a href="CodeSystem-be-cs-pss-qsi-indications.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;3.0.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-vs-pss-qsi-indication</b></p><a name="be-vs-pss-qsi-indication"> </a><a name="hcbe-vs-pss-qsi-indication"> </a><ul><li>Include all codes defined in <a href="CodeSystem-be-cs-pss-qsi-indications.html"><code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;3.0.2</span></li></ul></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication"/>
-  <version value="3.0.0"/>
+  <version value="3.0.2"/>
   <name value="BeVSPSSQSIIndication"/>
   <title value="PSS/QSI Indication"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-11-26T07:40:55+00:00"/>
+  <date value="2026-11-27T09:41:34+00:00"/>
   <publisher value="Riziv-Inami Platform"/>
   <contact>
     <name value="Riziv-Inami Platform"/>

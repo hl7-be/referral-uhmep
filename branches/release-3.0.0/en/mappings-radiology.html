@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Radiology - eReferral Implementation Guide v3.0.0</title>
+    <title>Radiology - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11.2"}
-    h3,h4,h5,h6{--heading-prefix:"11.2.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.2"}
+    h3,h4,h5,h6{--heading-prefix:"10.2.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Radiology</h2>
   
 
@@ -307,6 +307,111 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Diagnostic imaging</td>
       <td><a href="mapper-radiology-diagnostic-imaging.html">Diagnostic imaging</a></td>
       <td><a href="ServiceRequest-example-drp-clinical-imaging.html">example-drp-clinical-imaging</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="terminology-url-prefixes">
+  <p><strong>Terminology URL sources used on this page</strong></p>
+  <table class="mapping-table">
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Base URL</th>
+        <th>Use</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Official eHealth FHIR publication</td>
+        <td><code>https://www.ehealth.fgov.be/standards/fhir/</code></td>
+        <td>Preferred source for stable published eHealth terminology artifacts.</td>
+      </tr>
+      <tr>
+        <td>eHealth branch build</td>
+        <td><code>https://build.fhir.org/ig/hl7-be/</code></td>
+        <td>Temporary source for artifacts available only in an eHealth build branch.</td>
+      </tr>
+      <tr>
+        <td>Local eReferral IG</td>
+        <td><code>https://www.riziv-inami.be/standards/fhir/ereferral/</code></td>
+        <td>Preferred source when an artifact is defined or duplicated in this eReferral IG.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="radiology-terminology">Radiology terminology</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artifact</th>
+      <th>Source</th>
+      <th>Used for</th>
+      <th>Binding / mapping notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-prescription-type.html"><code class="language-plaintext highlighter-rouge">be-vs-prescription-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Diagnostic imaging prescription type in <code class="language-plaintext highlighter-rouge">ServiceRequest.category[prescriptionType]</code>.</td>
+      <td>Use with <code class="language-plaintext highlighter-rouge">be-cs-prescription-type#diagnostic-imaging-appendix-82</code>.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-be-vs-diagnostic-imaging-procedure.html"><code class="language-plaintext highlighter-rouge">be-vs-diagnostic-imaging-procedure</code></a></td>
+      <td>Local eReferral IG</td>
+      <td>SNOMED CT diagnostic imaging procedure in <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code>.</td>
+      <td>Prefer the local eReferral artifact because it is defined in this IG.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-be-vs-diagnostic-imaging-condition.html"><code class="language-plaintext highlighter-rouge">be-vs-diagnostic-imaging-condition</code></a></td>
+      <td>Local eReferral IG</td>
+      <td>SNOMED CT body structure, disorder, finding, situation, or staging condition supporting the imaging request.</td>
+      <td>Prefer the local eReferral artifact because it is defined in this IG.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-be-cs-pss-qsi-indications.html"><code class="language-plaintext highlighter-rouge">be-cs-pss-qsi-indications</code></a> / <a href="ValueSet-be-vs-pss-qsi-indication.html"><code class="language-plaintext highlighter-rouge">be-vs-pss-qsi-indication</code></a></td>
+      <td>Local eReferral IG</td>
+      <td>PSS/QSI indication codes for diagnostic imaging requests.</td>
+      <td>Prefer the local eReferral CodeSystem/ValueSet because the PSS indication content is bundled in this IG.</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ereferral-vs-imaging-patient-condition-indication.html"><code class="language-plaintext highlighter-rouge">ereferral-vs-imaging-patient-condition-indication</code></a></td>
+      <td>Local eReferral IG</td>
+      <td>Combined patient-condition indication binding for diagnostic imaging supporting information.</td>
+      <td>Includes local PSS/QSI indications and local SNOMED CT diagnostic imaging conditions.</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-be-cs-radiology-supporting-info-role.html"><code class="language-plaintext highlighter-rouge">be-cs-radiology-supporting-info-role</code></a> / <a href="ValueSet-be-vs-radiology-supporting-info-role.html"><code class="language-plaintext highlighter-rouge">be-vs-radiology-supporting-info-role</code></a></td>
+      <td>Local eReferral IG</td>
+      <td>Role of each radiology <code class="language-plaintext highlighter-rouge">supportingInfo</code> item.</td>
+      <td>Codes include <code class="language-plaintext highlighter-rouge">prior-results</code>, <code class="language-plaintext highlighter-rouge">prior-request</code>, <code class="language-plaintext highlighter-rouge">attention-condition</code>, <code class="language-plaintext highlighter-rouge">safety-checklist</code>, and <code class="language-plaintext highlighter-rouge">patient-condition</code>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-request-track.html"><code class="language-plaintext highlighter-rouge">be-cs-request-track</code></a> / <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-request-track.html"><code class="language-plaintext highlighter-rouge">be-vs-request-track</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Care setting / request track such as ambulatory.</td>
+      <td>Used in <code class="language-plaintext highlighter-rouge">ServiceRequest.orderDetail</code>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-imaging-modality.html"><code class="language-plaintext highlighter-rouge">be-cs-imaging-modality</code></a> / <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-imaging-modality.html"><code class="language-plaintext highlighter-rouge">be-vs-imaging-modality</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Imaging modality types for prior imaging requests.</td>
+      <td>Use the branch build until the artifact is available in a stable official publication or duplicated locally.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-imaging-priority.html"><code class="language-plaintext highlighter-rouge">be-cs-imaging-priority</code></a> / <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-imaging-priority.html"><code class="language-plaintext highlighter-rouge">be-vs-imaging-priority</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Imaging-specific priority codes.</td>
+      <td>The base FHIR <code class="language-plaintext highlighter-rouge">RequestPriority</code> binding may still apply where the profile uses <code class="language-plaintext highlighter-rouge">ServiceRequest.priority</code>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-implant-type.html"><code class="language-plaintext highlighter-rouge">be-vs-implant-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Implant information captured in the imaging attention-conditions response.</td>
+      <td>Used by the supporting questionnaire/response content rather than directly by the main <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code>.</td>
     </tr>
   </tbody>
 </table>
@@ -357,8 +462,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

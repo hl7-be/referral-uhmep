@@ -1,4 +1,4 @@
-# SNOMED CT eReferral Supplement Designations - eReferral Implementation Guide v3.0.0
+# SNOMED CT eReferral Supplement Designations - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation | *Version*:3.0.0 |
+| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation | *Version*:3.0.2 |
 | Draft as of 2026-08-03 | *Computable Name*:BeCSeReferralSnomedDesignation |
 | **Copyright/Legal**: This supplement contains identifiers and project-specific terms for SNOMED CT concepts. SNOMED CT is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). Use is subject to the applicable SNOMED CT licence. | |
 
@@ -32,7 +32,7 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "be-cs-ereferral-snomed-designation",
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeCSeReferralSnomedDesignation",
   "title" : "SNOMED CT eReferral Supplement Designations",
   "status" : "draft",

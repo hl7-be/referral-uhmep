@@ -14,11 +14,11 @@
      fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide inami.fhir.be.ereferral</b></p><a name=\"inami.fhir.be.ereferral\"> </a><a name=\"hcinami.fhir.be.ereferral\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>EReferral</h2><p>The official URL for this implementation guide is: </p><pre>https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral</pre><div><p>eReferral Implementation Guide</p>\n</div></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral"] ;
-  fhir:ImplementationGuide.version [ fhir:value "3.0.0"] ;
+  fhir:ImplementationGuide.version [ fhir:value "3.0.2"] ;
   fhir:ImplementationGuide.name [ fhir:value "EReferral"] ;
   fhir:ImplementationGuide.title [ fhir:value "eReferral Implementation Guide"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-02"^^xsd:date] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-26"^^xsd:date] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Riziv-Inami Platform"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -85,7 +85,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.4.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.4.1" ]
   ], [
      fhir:index 2 ;
      fhir:Element.id [ fhir:value "hl7_fhir_be_core" ] ;
@@ -1901,21 +1901,16 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2 ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "migration-2-1-to-3-0.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Migration 2.1.0 to 3.0.0" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 3 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-profiles-architecture.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles Architecture" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 4 ;
+         fhir:index 3 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-profile-rewriting.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Profile Rewriting" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5 ;
+         fhir:index 4 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-prescription-lifecycle.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Life Cycle" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
@@ -1931,22 +1926,22 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
        ], [
-         fhir:index 6 ;
+         fhir:index 5 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-prescription-templates.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Prescription Templates" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 7 ;
+         fhir:index 6 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "topic-visibility-blacklisting.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Visibility & Blacklisting" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 8 ;
+         fhir:index 7 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "api-integration.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "API Integration" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 9 ;
+         fhir:index 8 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "api-operations.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "API Operations" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
@@ -2027,7 +2022,7 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
        ], [
-         fhir:index 10 ;
+         fhir:index 9 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "mappings-business.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Business Field Mappings" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
@@ -2115,17 +2110,12 @@
            ]
          ]
        ], [
-         fhir:index 11 ;
+         fhir:index 10 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "technical.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Technical" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 12 ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "glossary.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Glossary" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index 13 ;
+         fhir:index 11 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "test-server.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Test Server" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
@@ -2426,9 +2416,19 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]
        ], [
-         fhir:index 14 ;
+         fhir:index 12 ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "glossary.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Glossary" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 13 ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 14 ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "migration-2-1-to-3-0.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Migration 2.1.0 to 3.0.0" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 15 ;

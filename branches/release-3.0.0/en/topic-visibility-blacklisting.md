@@ -1,4 +1,4 @@
-# Visibility & Blacklisting - eReferral Implementation Guide v3.0.0
+# Visibility & Blacklisting - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * **Visibility & Blacklisting**

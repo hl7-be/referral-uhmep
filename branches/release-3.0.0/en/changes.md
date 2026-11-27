@@ -1,4 +1,4 @@
-# Changes - eReferral Implementation Guide v3.0.0
+# Changes - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * **Changes**
@@ -16,8 +16,6 @@ This release clarifies radiology workflow behavior, makes required FHIR profile 
 A documentation update on 2026-11-18 also clarified the implemented 3.0 API contract. It is a documentation correction, not the announcement of newly deployed functionality.
 
 For payload compatibility checks, radiology state transitions, before/after scenarios and regression tests, see [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.md). The announced future migration to the Referral IG and the future canonical-base change are separate from this release.
-
--------
 
 ### 2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)
 

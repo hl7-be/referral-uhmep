@@ -1,4 +1,4 @@
-# Evaluate Radiology Prescription - eReferral Implementation Guide v3.0.0
+# Evaluate Radiology Prescription - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**API Operations**](api-operations.md)
@@ -6,18 +6,31 @@
 
 ## Evaluate Radiology Prescription
 
-This page describes how a radiology performer evaluates an exam request.
+This page describes how a radiology performer evaluates an exam request: **accept**, **substitute** or **refuse** it.
+
+Each decision is recorded on a `BePerformerTask`. Which request to use depends on whether a `BePerformerTask` is already linked to the prescription for the connected user:
+
+| | | |
+| :--- | :--- | :--- |
+| A`BePerformerTask`already exists for the connected user on this prescription | `PATCH /Task/{executionId}`(on the performer task itself) | `200 OK` |
+| No`BePerformerTask`exists yet for the connected user on this prescription | `POST /Task` | `201 Created` |
 
 | | |
 | :--- | :--- |
 | Business operation | Evaluate radiology prescription |
-| Endpoint | `PATCH /Task/{executionId}` |
 | Target resource | `BePerformerTask` |
-| Successful response | `200 OK` |
 
-### Accept Exam
+| | | |
+| :--- | :--- | :--- |
+| Accept | `accepted` | none |
+| Substitute | `accepted` | `Task.output`with type`substituted`and the new exam |
+| Refuse | `rejected` | `Task.statusReason`with the refusal reason |
 
-#### Already Assigned (PATCH)
+### PATCH: a performer task already exists
+
+`PATCH /Task/{executionId}`
+
+#### Accept Exam (PATCH)
 
 ```
 {
@@ -36,7 +49,7 @@ This page describes how a radiology performer evaluates an exam request.
         },
         {
           "name": "value",
-          "valueString": "accepted"
+          "valueCode": "accepted"
         }
       ]
     }
@@ -45,7 +58,7 @@ This page describes how a radiology performer evaluates an exam request.
 
 ```
 
-### Substitute Exam
+#### Substitute Exam (PATCH)
 
 ```
 {
@@ -146,7 +159,7 @@ This page describes how a radiology performer evaluates an exam request.
 
 ```
 
-### Refuse Exam
+#### Refuse Exam (PATCH)
 
 ```
 {
@@ -202,9 +215,13 @@ This page describes how a radiology performer evaluates an exam request.
 
 ```
 
-### POST Variant: Independent Performer
+### POST: no performer task exists yet
 
-The same decision can be recorded by creating a performer task directly. Use this pattern for accept, substitute or refuse by changing `status`, `statusReason` and `output`.
+`POST /Task`
+
+A new `BePerformerTask` is created that carries the decision. `focus` points to the prescription, `partOf` to the related referral task (same id as the prescription), and `owner` to the connected performer.
+
+#### Accept Exam (POST)
 
 ```
 {
@@ -214,17 +231,43 @@ The same decision can be recorded by creating a performer task directly. Use thi
       "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
-  "partOf": {
+  "partOf": [{
     "reference": "Task/{{serviceRequestID}}"
-  },
-  "focus": [{
-    "reference": "ServiceRequest/{{serviceRequestID}}"
   }],
-  "status": "{{status}}",
+  "focus": {
+    "reference": "ServiceRequest/{{serviceRequestID}}"
+  },
+  "status": "accepted",
   "intent": "order",
   "authoredOn": "{{recordedDate}}",
   "owner": {
-    "reference":"PractitionerRole/{{practitionerSsin}}-{{practitionerDiscipline}}"
+    "reference": "PractitionerRole/{{practitionerSsin}}-{{practitionerDiscipline}}"
+  }
+}
+
+```
+
+#### Substitute Exam (POST)
+
+```
+{
+  "resourceType": "Task",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
+    ]
+  },
+  "partOf": [{
+    "reference": "Task/{{serviceRequestID}}"
+  }],
+  "focus": {
+    "reference": "ServiceRequest/{{serviceRequestID}}"
+  },
+  "status": "accepted",
+  "intent": "order",
+  "authoredOn": "{{recordedDate}}",
+  "owner": {
+    "reference": "PractitionerRole/{{practitionerSsin}}-{{practitionerDiscipline}}"
   },
   "output": [
     {
@@ -245,22 +288,12 @@ The same decision can be recorded by creating a performer task directly. Use thi
         ]
       }
     }
-  ],
-  "statusReason": {
-    "coding": [
-      {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-refusal-reason",
-        "code": "{{refuse_reason}}"
-      }
-    ]
-  }
+  ]
 }
 
 ```
 
-### POST Variant: Performer Of Organization
-
-When the performer acts within an organization assignment, add `basedOn` pointing to the organization task.
+#### Refuse Exam (POST)
 
 ```
 {
@@ -270,38 +303,18 @@ When the performer acts within an organization assignment, add `basedOn` pointin
       "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-performer-task"
     ]
   },
-  "partOf": {
+  "partOf": [{
     "reference": "Task/{{serviceRequestID}}"
-  },
-  "focus": [{
-    "reference": "ServiceRequest/{{serviceRequestID}}"
   }],
-  "status": "{{status}}",
+  "focus": {
+    "reference": "ServiceRequest/{{serviceRequestID}}"
+  },
+  "status": "rejected",
   "intent": "order",
   "authoredOn": "{{recordedDate}}",
   "owner": {
-    "reference":"PractitionerRole/{{practitionerSsin}}-{{practitionerDiscipline}}-{{organizationNihii11}}"
+    "reference": "PractitionerRole/{{practitionerSsin}}-{{practitionerDiscipline}}"
   },
-  "output": [
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-task-output-type",
-            "code": "substituted"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "{{code_of_new_exam}}"
-          }
-        ]
-      }
-    }
-  ],
   "statusReason": {
     "coding": [
       {
@@ -314,15 +327,44 @@ When the performer acts within an organization assignment, add `basedOn` pointin
 
 ```
 
-### Allowed Roles
+### Performer that is part of an organization
 
-Caregiver (radiology performer), Organization.
+When the organization has been assigned to the prescription (`BeOrganizationTask`) and the performer acts as an internal professional of that organization, the three decisions above work exactly the same way. The only difference is how the performer task is linked to the organization assignment:
 
-### Possible Error Codes
+* **POST** (no performer task yet): add `basedOn` pointing to the `BeOrganizationTask`. `owner` stays the same (`PractitionerRole/{ssin}-{discipline}`).
+* **PATCH** (performer task already exists): nothing changes. The `basedOn` link was set when the performer task was created, and the task is patched exactly as shown above.
+
+Only the additional content is shown below. Combine it with the matching Accept, Substitute or Refuse POST example above; everything else stays as defined there.
+
+```
+{
+  "resourceType": "Task",
+  "basedOn": [
+    {
+      "reference": "Task/{{organizationTaskId}}"
+    }
+  ]
+}
+
+```
+
+#### Preconditions and Decision Rules
+
+* **Accept:** Radiology only. The prescription must be `READY` and the performer task must be `ready`. Emergency-track acceptance is not supported. A Caregiver must own the task. A Caregiver cannot accept an inpatient exam. An Organization must be assigned to the prescription and use an authorized discipline.
+* **Substitute:** The prescription and performer task must be `READY` or `IN_PROGRESS`. A Caregiver must own the task, or an Organization must match the linked organization task referenced by `basedOn`. The new exam is recorded in `Task.output`.
+* **Refuse:** The prescription and performer task must be `READY` or `IN_PROGRESS`. A Caregiver must own the task, or an Organization must match the linked organization task referenced by `basedOn`. The refusal reason is recorded in `Task.statusReason`.
+
+For all three decisions, the applicable access-matrix permission is enforced. Organization decisions also depend on the corresponding organization feature being enabled.
+
+#### Allowed Roles
+
+Assigned radiology Caregiver, Organization assigned to the task or its `basedOn` organization task.
+
+#### Possible Error Codes
 
 The errors for this operation are listed in the [eReferral API Error Codes workbook](UHMEP_API_ErrorCodes_20260723.xlsx). Filter the **Business Operations** or **API endpoint(s)** sheet for the relevant operation or endpoint. See [Error Codes](error-codes.md) for workbook guidance.
 
-### Sequence
+#### Sequence
 
 Evaluate Radiology Prescription sequence
 

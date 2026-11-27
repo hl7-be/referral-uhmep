@@ -1,4 +1,4 @@
-# Proposal Life Cycle - eReferral Implementation Guide v3.0.0
+# Proposal Life Cycle - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Life Cycle**](topic-prescription-lifecycle.md)
@@ -25,7 +25,7 @@ The workflow is based on a separation between:
 
 -------
 
-### Step 1: Proposal Request (created by client)
+### Step 1 - Proposal Request (created by client)
 
 A client system creates an Annex 81 proposal as a `ServiceRequest` with:
 
@@ -35,7 +35,7 @@ A client system creates an Annex 81 proposal as a `ServiceRequest` with:
 
 After the proposal is created, eReferral creates the corresponding `BeReferralTask` to track the lifecycle of the proposal.
 
-The ReferralTask references the proposal using:
+The `BeReferralTask` references the proposal using:
 
 * `Task.focus → ServiceRequest`
 
@@ -43,7 +43,7 @@ This ensures the workflow can evolve without changing the original clinical requ
 
 -------
 
-### Step 2: Proposal Assignment (performed by client)
+### Step 2 - Proposal Assignment (performed by client)
 
 When a caregiver (e.g. GP) is assigned to handle the proposal, the client creates a `BePerformerTask`:
 
@@ -51,11 +51,11 @@ When a caregiver (e.g. GP) is assigned to handle the proposal, the client create
 * `BePerformerTask.focus → the same ServiceRequest (proposal)`
 * `BePerformerTask.owner → assigned PractitionerRole`
 
-This assignment task represents who is responsible for reviewing/processing the proposal.
+This assignment task represents who is responsible for reviewing or processing the proposal.
 
 -------
 
-### Step 3: Proposal Approval
+### Step 3 - Proposal Approval
 
 Approving a proposal is not just a status update. It produces a new “approved request” state.
 
@@ -67,11 +67,13 @@ When approval is performed:
 * a valid prescription is created and the caregiver who authored the original proposal is assigned.
 * the workflow tasks are updated consistently by the server (ReferralTask and PerformerTask status).
 
-Using the operation ensures the server can apply all workflow rules atomically and keep the resources consistent.
+The approval request may include an optional note. Because this note is clinical free text, it must be encrypted and linked to the pseudonymized key carried in the `Parameters.meta` payload.
+
+Using the operation ensures the server can apply all workflow rules atomically and keep the resources consistent. A successful approval returns `200 OK`.
 
 -------
 
-### Step 4: Proposal Rejection
+### Step 4 - Proposal Rejection
 
 Rejecting a proposal is also a business transaction and must:
 
@@ -83,9 +85,11 @@ The API provides the same dedicated [Evaluate Proposal](operation-evaluate-propo
 
 When rejection is performed:
 
-* the proposal workflow is marked as completed (rejected outcome).
+* the proposal workflow is marked as completed with a rejected outcome.
 * the `BePerformerTask` is updated to reflect the rejection.
 * eReferral updates the status of the related resources accordingly.
+
+The rejection request may also include an optional encrypted clinical note. A successful rejection returns `200 OK`.
 
 -------
 

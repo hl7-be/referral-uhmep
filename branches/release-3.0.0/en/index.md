@@ -1,4 +1,4 @@
-# eReferral Implementation Guide - eReferral Implementation Guide v3.0.0
+# eReferral Implementation Guide - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * **eReferral Implementation Guide**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral | *Version*:3.0.0 |
-| Draft as of 2026-09-02 | *Computable Name*:EReferral |
+| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral | *Version*:3.0.2 |
+| Draft as of 2026-11-26 | *Computable Name*:EReferral |
 
 This implementation guide defines the local eReferral FHIR profiles, examples, mappings, and guidance for referral prescriptions.
 
@@ -41,7 +41,6 @@ The current scope is focused on:
 | | |
 | :--- | :--- |
 | [Guidance](guidance.md) | Implementation rules and modelling choices used across the local profiles. |
-| [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.md) | Payload compatibility checks, radiology transitions, terminology baseline and regression tests. |
 | [API Integration](api-integration.md) | Authentication, identifiers, pseudonymization, validations, and errors. |
 | [API Operations](api-operations.md) | Operation-by-operation map, with allowed roles and links to the error-code workbook. |
 | [Access Matrix](operation-access-matrix.md) | Roles, INAMI access matrix, suspension, and search-filter access control. |
@@ -52,6 +51,7 @@ The current scope is focused on:
 | [Test Server](test-server.md) | Nursing and Radiology test scenarios, business values, FHIR mappings, and request payloads. |
 | [Artifacts](artifacts.md) | Generated FHIR profiles, extensions, ValueSets, CodeSystems, and examples. |
 | [Technical](technical.md) | Entry points, required headers, reference documents, support contacts, and certificates. |
+| [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.md) | Payload compatibility checks, radiology transitions, terminology baseline and regression tests. |
 | [Glossary](glossary.md) | Terminology used across this IG. |
 | [Downloads](downloads.md) | Downloadable packages and generated resources. |
 | [Changes](changes.md) | Change notes for this local IG. |

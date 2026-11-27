@@ -1,4 +1,4 @@
-# inami.fhir.be.ereferral#3.0.0: eReferral Implementation Guide(en)
+# inami.fhir.be.ereferral#3.0.2: eReferral Implementation Guide(en)
 
 ## Pages
 
@@ -13,7 +13,7 @@
 * [P2M - Nursing - Bloodletting](en/test-server-p2m-bloodletting.md)
 * [M2M - Nursing - Diabetes education via convention centre](en/test-server-m2m-diabetes-convention-centre.md)
 * [Profile Rewriting](en/topic-profile-rewriting.md)
-* [Migration 2.1.0 to](en/migration-2-1-to-3-0.md)
+* [Migration 2.1.0 to 3.0.0](en/migration-2-1-to-3-0.md)
 * [P2M - Radiology - Tongue and facial weakness](en/test-server-radiology-p2m-10.md)
 * [M2M - Nursing - Medication preparation, Annex 81 proposal](en/test-server-m2m-annex-81.md)
 * [M2M - Radiology - Head trauma and stroke follow-up in an adult](en/test-server-radiology-m2m-06.md)

@@ -1,4 +1,4 @@
-# Hygienic Care - eReferral Implementation Guide v3.0.0
+# Hygienic Care - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Business Field Mappings**](mappings-business.md)
@@ -44,7 +44,7 @@ This table maps the business fields to the corresponding FHIR elements.
 * code: `hygienic-care`
 * binding: [`be-vs-nursing-prescription-technical-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-nursing-prescription-technical-type.html)
  |
-| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `9632001`
  |
 | Validity period | `ServiceRequest.extension[validity]` | ````{ "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period", "valuePeriod": { "start": "2026-02-18" } } ] }```` |  |

@@ -1,4 +1,4 @@
-# Annex 81 Medication Preparation - eReferral Implementation Guide v3.0.0
+# Annex 81 Medication Preparation - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Business Field Mappings**](mappings-business.md)
@@ -34,21 +34,21 @@ This table maps the business fields to the corresponding FHIR elements.
 | :--- | :--- | :--- | :--- |
 | Profile | `ServiceRequest.meta.profile` | ````{ "meta": { "profile": [ "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81" ] } }```` |  |
 | Intent | `ServiceRequest.intent` | ````{ "intent": "proposal" }```` |  |
-| Prescription type | `ServiceRequest.category[prescriptionType]` | ````{ "category": [ { "coding": [ { "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type", "code": "medication-prefill-preparation-appendix-81" } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html)
+| Prescription type | `ServiceRequest.category[annex81TechnicalType]` | ````{ "category": [ { "coding": [ { "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type", "code": "medication-prefill-preparation-appendix-81" } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-prescription-type.html)
 * code: `medication-prefill-preparation-appendix-81`
-* binding: [`be-vs-nursing-prescription-technical-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-nursing-prescription-technical-type.html)
+* binding: [`be-vs-annex81-technical-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-technical-type.html) (required)
  |
-| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `9632001`
  |
 | Validity period | `ServiceRequest.extension[validity]` | ````{ "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period", "valuePeriod": { "start": "2026-02-18", "end": "2027-02-18" } } ] }```` |  |
 | Patient | `ServiceRequest.subject` | ````{ "subject": { "identifier": { "use": "official", "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin", "value": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}", "_value": { "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization", "extension": [ { "url": "marker", "valueBoolean": true }, { "url": "format", "valueCode": "direct" }, { "url": "version", "valuePositiveInt": 2 } ] } ] } } } }```` |  |
 | Requester / prescriber | `ServiceRequest.requester` | ````{ "requester": { "reference": "PractitionerRole/67120919457-NURSE" } }```` |  |
-| Reason | `ServiceRequest.reasonCode[nursingDiagnosis]` | ````{ "reasonCode": [ { "coding": [ { "code": "708014007", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Reason | `ServiceRequest.reasonCode[nursingDiagnosis]` | ````{ "reasonCode": [ { "coding": [ { "code": "708014007", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `708014007`
 * binding: [`be-vs-annex81-nursing-diagnosis`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-nursing-diagnosis.html)
  |
-| Treatment non-adherence related to: | ServiceRequest.reasonCode[medicalProblem] | ````{ "reasonCode": [ { "coding": [ { "code": "52448006", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Treatment non-adherence related to: | ServiceRequest.reasonCode[medicalProblem] | ````{ "reasonCode": [ { "coding": [ { "code": "52448006", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `52448006`
 * binding: [`be-vs-annex81-medical-problem`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-annex81-medical-problem.html)
  |

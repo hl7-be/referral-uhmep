@@ -1,4 +1,4 @@
-# Profile Rewriting - eReferral Implementation Guide v3.0.0
+# Profile Rewriting - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * **Profile Rewriting**
@@ -15,9 +15,9 @@ This rewrite is a technical compatibility step. It does not change the clinical 
 
 ### Scope
 
-The rewriting applies to the profile URLs declared on incoming `ServiceRequest` resources. When one of the supported eHealth DRP profile URLs is present in `ServiceRequest.meta.profile`, the gateway replaces it with the matching eReferral profile URL.
+The Gateway configuration lists three profile replacements for `ServiceRequest` profile URLs. The incoming-resource interceptor itself operates on any FHIR resource it receives and replaces a configured canonical in that resource’s `meta.profile` without checking the resource type. This does not establish support for source URLs that are not configured.
 
-The following mappings are configured in the gateway source for this release. Confirm that the target environment uses the same configuration before relying on legacy-profile compatibility.
+The currently supported mappings are:
 
 | | |
 | :--- | :--- |
@@ -25,17 +25,14 @@ The following mappings are configured in the gateway source for this release. Co
 | `https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-referral-servicerequest-nursing` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-servicerequest-nursing` |
 | `https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-annex-81` | `https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81` |
 
-An incoming eReferral profile already uses the validation target and does not require this rewrite. Other URLs, including similarly named URLs under `/referral/`, are not aliases supplied by this table. Their acceptance must not be inferred from package names or from the announced future namespace migration.
-
 ### Gateway Behavior
 
 When a request is received, the gateway inspects the resource profile declarations before forwarding the resource to the internal eReferral API.
 
-If a supported eHealth DRP profile is found:
+If the received resource’s `meta.profile` contains a configured source canonical:
 
-1. the eHealth DRP profile URL is removed from`ServiceRequest.meta.profile`.
-1. the corresponding eReferral profile URL is added to`ServiceRequest.meta.profile`.
-1. the resource is then processed and validated as an eReferral resource.
+1. that canonical is replaced with the corresponding eReferral profile URL in`resource.meta.profile`.
+1. the resource is then processed by the eReferral API.
 
 If the resource already declares the eReferral profile URL, no rewrite is needed for that profile. If the resource declares an unsupported profile URL, the gateway does not infer an eReferral profile from it.
 

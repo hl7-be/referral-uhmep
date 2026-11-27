@@ -11,12 +11,12 @@
     "valueCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation"
   }],
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeVSeReferralSnomedDesignation",
   "title" : "SNOMED CT eReferral Supplement Designations",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

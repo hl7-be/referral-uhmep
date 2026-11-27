@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Guidance - eReferral Implementation Guide v3.0.0</title>
+    <title>Guidance - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -250,7 +250,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="migration-2-1-to-3-0.html">next &gt;</a>
+          | <a href="topic-profiles-architecture.html">next &gt;</a>
 
           </span>
 
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Guidance</h2>
   
 
@@ -311,15 +311,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Business-facing field mappings are documented separately in <a href="mappings-business.html">Business Field Mappings</a>. Those pages are useful when implementing screens or APIs from prescription templates.</p>
 
+<p>Gateway profile URL rewriting is documented separately in <a href="topic-profile-rewriting.html">Profile Rewriting</a>. That page describes how supported federal eHealth DRP profile URLs are replaced with internal eReferral profile URLs before API validation.</p>
+
 <h3 id="must-support">Must Support</h3>
 
 <p>Fields marked as Must Support shall not be ignored by receiving systems. This does not mean the sender must always populate the field, but if the business information is available, the sender should provide it according to the profile.</p>
 
-<p>When a coded value cannot safely or accurately represent the business information, the profile usually allows a text representation. Patient-specific free text must follow the pseudonymization rules described below.</p>
+<p>When a coded value cannot safely or accurately represent the business information, the profile usually allows a text representation. Free text must follow the pseudonymization rules described below.</p>
 
 <h3 id="pseudonymization-and-free-text">Pseudonymization and Free Text</h3>
 
-<p>Several fields can contain patient-specific free text, such as:</p>
+<p>Several fields can contain free text, such as:</p>
 
 <table>
   <thead>
@@ -522,7 +524,7 @@ justification is driven by <code class="language-plaintext highlighter-rouge">pr
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="migration-2-1-to-3-0.html">next ></a>
+                <a href="topic-profiles-architecture.html">next ></a>
 
               </td>
             </tr>
@@ -536,8 +538,8 @@ justification is driven by <code class="language-plaintext highlighter-rouge">pr
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

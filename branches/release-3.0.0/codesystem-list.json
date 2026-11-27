@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure",
-    "version" : "3.0.0",
+    "version" : "3.0.2",
     "status" : "draft",
     "name" : "BeCSPSSQSIDiagnosticImagingProcedure",
     "title" : "PSS/QSI Diagnostic Imaging Procedure",
@@ -9,7 +9,7 @@
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
-    "version" : "3.0.0",
+    "version" : "3.0.2",
     "status" : "draft",
     "name" : "BeCSPSSIndication",
     "title" : "PSS Indication",
@@ -17,7 +17,7 @@
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
-    "version" : "3.0.0",
+    "version" : "3.0.2",
     "status" : "draft",
     "name" : "BeCSRadiologySupportingInfoRole",
     "title" : "eReferral Radiology SupportingInfo Role CodeSystem",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-    "version" : "3.0.0",
+    "version" : "3.0.2",
     "status" : "active",
     "name" : "BeCSeReferralDesignationUse",
     "title" : "eReferral Designation Use",
@@ -33,7 +33,7 @@
   },
   {
     "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation",
-    "version" : "3.0.0",
+    "version" : "3.0.2",
     "status" : "draft",
     "name" : "BeCSeReferralSnomedDesignation",
     "title" : "SNOMED CT eReferral Supplement Designations",

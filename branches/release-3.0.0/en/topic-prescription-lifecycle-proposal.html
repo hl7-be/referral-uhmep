@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Proposal Life Cycle - eReferral Implementation Guide v3.0.0</title>
+    <title>Proposal Life Cycle - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"6.1"}
-    h3,h4,h5,h6{--heading-prefix:"6.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1"}
+    h3,h4,h5,h6{--heading-prefix:"5.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Proposal Life Cycle</h2>
   
 
@@ -291,10 +291,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#key-resources" id="markdown-toc-key-resources">Key Resources</a></li>
-  <li><a href="#step-1-proposal-request-created-by-client" id="markdown-toc-step-1-proposal-request-created-by-client">Step 1: Proposal Request (created by client)</a></li>
-  <li><a href="#step-2-proposal-assignment-performed-by-client" id="markdown-toc-step-2-proposal-assignment-performed-by-client">Step 2: Proposal Assignment (performed by client)</a></li>
-  <li><a href="#step-3-proposal-approval" id="markdown-toc-step-3-proposal-approval">Step 3: Proposal Approval</a></li>
-  <li><a href="#step-4-proposal-rejection" id="markdown-toc-step-4-proposal-rejection">Step 4: Proposal Rejection</a></li>
+  <li><a href="#step-1---proposal-request-created-by-client" id="markdown-toc-step-1---proposal-request-created-by-client">Step 1 - Proposal Request (created by client)</a></li>
+  <li><a href="#step-2---proposal-assignment-performed-by-client" id="markdown-toc-step-2---proposal-assignment-performed-by-client">Step 2 - Proposal Assignment (performed by client)</a></li>
+  <li><a href="#step-3---proposal-approval" id="markdown-toc-step-3---proposal-approval">Step 3 - Proposal Approval</a></li>
+  <li><a href="#step-4---proposal-rejection" id="markdown-toc-step-4---proposal-rejection">Step 4 - Proposal Rejection</a></li>
   <li><a href="#why-approvalrejection-use-operations" id="markdown-toc-why-approvalrejection-use-operations">Why Approval/Rejection Use Operations</a></li>
 </ul>
 
@@ -343,7 +343,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h3 id="step-1-proposal-request-created-by-client">Step 1: Proposal Request (created by client)</h3>
+<h3 id="step-1---proposal-request-created-by-client">Step 1 - Proposal Request (created by client)</h3>
 
 <div style="text-align:center;">
   <img src="annex81-proposal-request.png" style="width:100%;" />
@@ -359,7 +359,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>After the proposal is created, eReferral creates the corresponding <code class="language-plaintext highlighter-rouge">BeReferralTask</code> to track the lifecycle of the proposal.</p>
 
-<p>The ReferralTask references the proposal using:</p>
+<p>The <code class="language-plaintext highlighter-rouge">BeReferralTask</code> references the proposal using:</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Task.focus → ServiceRequest</code></li>
@@ -369,7 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h3 id="step-2-proposal-assignment-performed-by-client">Step 2: Proposal Assignment (performed by client)</h3>
+<h3 id="step-2---proposal-assignment-performed-by-client">Step 2 - Proposal Assignment (performed by client)</h3>
 
 <div style="text-align:center;">
   <img src="annex81-proposal-assignment.png" style="width:100%;" />
@@ -383,11 +383,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">BePerformerTask.owner → assigned PractitionerRole</code></li>
 </ul>
 
-<p>This assignment task represents who is responsible for reviewing/processing the proposal.</p>
+<p>This assignment task represents who is responsible for reviewing or processing the proposal.</p>
 
 <hr />
 
-<h3 id="step-3-proposal-approval">Step 3: Proposal Approval</h3>
+<h3 id="step-3---proposal-approval">Step 3 - Proposal Approval</h3>
 
 <div style="text-align:center;">
   <img src="annex81-proposal-approval.png" style="width:100%;" />
@@ -406,11 +406,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>the workflow tasks are updated consistently by the server (ReferralTask and PerformerTask status).</li>
 </ul>
 
-<p>Using the operation ensures the server can apply all workflow rules atomically and keep the resources consistent.</p>
+<p>The approval request may include an optional note. Because this note is clinical free text, it must be encrypted and linked to the pseudonymized key carried in the <code class="language-plaintext highlighter-rouge">Parameters.meta</code> payload.</p>
+
+<p>Using the operation ensures the server can apply all workflow rules atomically and keep the resources consistent. A successful approval returns <code class="language-plaintext highlighter-rouge">200 OK</code>.</p>
 
 <hr />
 
-<h3 id="step-4-proposal-rejection">Step 4: Proposal Rejection</h3>
+<h3 id="step-4---proposal-rejection">Step 4 - Proposal Rejection</h3>
 
 <div style="text-align:center;">
   <img src="annex81-proposal-rejection.png" style="width:100%;" />
@@ -430,10 +432,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>When rejection is performed:</p>
 
 <ul>
-  <li>the proposal workflow is marked as completed (rejected outcome).</li>
+  <li>the proposal workflow is marked as completed with a rejected outcome.</li>
   <li>the <code class="language-plaintext highlighter-rouge">BePerformerTask</code> is updated to reflect the rejection.</li>
   <li>eReferral updates the status of the related resources accordingly.</li>
 </ul>
+
+<p>The rejection request may also include an optional encrypted clinical note. A successful rejection returns <code class="language-plaintext highlighter-rouge">200 OK</code>.</p>
 
 <hr />
 
@@ -498,8 +502,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

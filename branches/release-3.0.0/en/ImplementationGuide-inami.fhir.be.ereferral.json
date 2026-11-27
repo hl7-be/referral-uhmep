@@ -7,11 +7,11 @@
     "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide inami.fhir.be.ereferral</b></p><a name=\"inami.fhir.be.ereferral\"> </a><a name=\"hcinami.fhir.be.ereferral\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>EReferral</h2><p>The official URL for this implementation guide is: </p><pre>https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral</pre><div><p>eReferral Implementation Guide</p>\n</div></div>"
   },
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "EReferral",
   "title" : "eReferral Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-02",
+  "date" : "2026-11-26",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -61,7 +61,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.4.0"
+    "version" : "5.4.1"
   },
   {
     "id" : "hl7_fhir_be_core",
@@ -1602,11 +1602,6 @@
         "generation" : "markdown"
       },
       {
-        "nameUrl" : "migration-2-1-to-3-0.html",
-        "title" : "Migration 2.1.0 to 3.0.0",
-        "generation" : "markdown"
-      },
-      {
         "nameUrl" : "topic-profiles-architecture.html",
         "title" : "Profiles Architecture",
         "generation" : "markdown"
@@ -1814,11 +1809,6 @@
       {
         "nameUrl" : "technical.html",
         "title" : "Technical",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "glossary.html",
-        "title" : "Glossary",
         "generation" : "markdown"
       },
       {
@@ -2122,8 +2112,18 @@
         }]
       },
       {
+        "nameUrl" : "glossary.html",
+        "title" : "Glossary",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "changes.html",
         "title" : "Changes",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "migration-2-1-to-3-0.html",
+        "title" : "Migration 2.1.0 to 3.0.0",
         "generation" : "markdown"
       },
       {

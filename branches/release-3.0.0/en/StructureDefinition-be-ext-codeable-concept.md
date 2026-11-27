@@ -1,4 +1,4 @@
-# CodeableConcept Extension for Reference - eReferral Implementation Guide v3.0.0
+# CodeableConcept Extension for Reference - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept | *Version*:3.0.0 |
-| Draft as of 2026-11-26 | *Computable Name*:BeExtCodeableConcept |
+| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept | *Version*:3.0.2 |
+| Draft as of 2026-11-27 | *Computable Name*:BeExtCodeableConcept |
 
 Extension able to hold a coded concept on a Reference element.
 
@@ -41,11 +41,11 @@ Other representations of profile: [CSV](../StructureDefinition-be-ext-codeable-c
   "resourceType" : "StructureDefinition",
   "id" : "be-ext-codeable-concept",
   "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-codeable-concept",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeExtCodeableConcept",
   "title" : "CodeableConcept Extension for Reference",
   "status" : "draft",
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

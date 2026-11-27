@@ -10,11 +10,11 @@
   "id" : "inami.fhir.be.ereferral",
   "language" : "en",
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ImplementationGuide/inami.fhir.be.ereferral",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "EReferral",
   "title" : "eReferral Implementation Guide",
   "status" : "draft",
-  "date" : "2026-09-02",
+  "date" : "2026-11-26",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -64,7 +64,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.4.0"
+    "version" : "5.4.1"
   },
   {
     "id" : "hl7_fhir_be_core",
@@ -1821,11 +1821,6 @@
         "generation" : "markdown"
       },
       {
-        "nameUrl" : "migration-2-1-to-3-0.html",
-        "title" : "Migration 2.1.0 to 3.0.0",
-        "generation" : "markdown"
-      },
-      {
         "nameUrl" : "topic-profiles-architecture.html",
         "title" : "Profiles Architecture",
         "generation" : "markdown"
@@ -2033,11 +2028,6 @@
       {
         "nameUrl" : "technical.html",
         "title" : "Technical",
-        "generation" : "markdown"
-      },
-      {
-        "nameUrl" : "glossary.html",
-        "title" : "Glossary",
         "generation" : "markdown"
       },
       {
@@ -2341,8 +2331,18 @@
         }]
       },
       {
+        "nameUrl" : "glossary.html",
+        "title" : "Glossary",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "changes.html",
         "title" : "Changes",
+        "generation" : "markdown"
+      },
+      {
+        "nameUrl" : "migration-2-1-to-3-0.html",
+        "title" : "Migration 2.1.0 to 3.0.0",
         "generation" : "markdown"
       },
       {

@@ -1,4 +1,4 @@
-# SNOMED CT eReferral Supplement Designations - eReferral Implementation Guide v3.0.0
+# SNOMED CT eReferral Supplement Designations - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation | *Version*:3.0.0 |
-| Draft as of 2026-11-26 | *Computable Name*:BeVSeReferralSnomedDesignation |
+| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation | *Version*:3.0.2 |
+| Draft as of 2026-11-27 | *Computable Name*:BeVSeReferralSnomedDesignation |
 
  
 SNOMED CT supplement containing multilingual designations maintained for the eReferral project. 
@@ -41,12 +41,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "valueCanonical" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-snomed-designation"
   }],
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/ValueSet/be-vs-ereferral-snomed-designation",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeVSeReferralSnomedDesignation",
   "title" : "SNOMED CT eReferral Supplement Designations",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

@@ -1,4 +1,4 @@
-# eReferral/PSS Diagnostic Imaging Condition - eReferral Implementation Guide v3.0.0
+# eReferral/PSS Diagnostic Imaging Condition - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition | *Version*:3.0.0 |
-| Draft as of 2026-11-26 | *Computable Name*:BeVSDiagnosticImagingCondition |
+| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition | *Version*:3.0.2 |
+| Draft as of 2026-11-27 | *Computable Name*:BeVSDiagnosticImagingCondition |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO). | |
 
  
@@ -38,12 +38,12 @@ Clinical conditions that can support a diagnostic imaging request using SNOMED C
   "resourceType" : "ValueSet",
   "id" : "be-vs-diagnostic-imaging-condition",
   "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeVSDiagnosticImagingCondition",
   "title" : "eReferral/PSS Diagnostic Imaging Condition",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

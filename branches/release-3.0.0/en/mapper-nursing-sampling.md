@@ -1,4 +1,4 @@
-# Sampling - eReferral Implementation Guide v3.0.0
+# Sampling - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Business Field Mappings**](mappings-business.md)
@@ -54,29 +54,29 @@ Body location values (see SNOMED codes table below): Head, Eye, Ear, Mouth, Nose
 * code: `sampling`
 * binding: [`be-vs-nursing-prescription-technical-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-nursing-prescription-technical-type.html)
  |
-| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "9632001" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `9632001`
  |
 | Validity period | `ServiceRequest.extension[validity]` | ````{ "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period", "valuePeriod": { "start": "2026-02-18" } } ] }```` |  |
 | Patient | `ServiceRequest.subject` | ````{ "subject": { "identifier": { "use": "official", "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin", "value": "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}", "_value": { "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization", "extension": [ { "url": "marker", "valueBoolean": true }, { "url": "format", "valueCode": "direct" }, { "url": "version", "valuePositiveInt": 2 } ] } ] } } } }```` |  |
 | Requester / prescriber | `ServiceRequest.requester` | ````{ "requester": { "reference": "PractitionerRole/72101230445-PHYSICIAN" } }```` |  |
-| Sample type | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78014005" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Sample type | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78014005" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `78014005`
 * binding: [`be-vs-sample-substance-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-sample-substance-type.html)
  |
-| This field appears when "Sample type" = "Other" | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78014005" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| This field appears when "Sample type" = "Other" | `ServiceRequest.orderDetail` | ````{ "orderDetail": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78014005" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `78014005`
 * binding: [`be-vs-sample-substance-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-sample-substance-type.html)
  |
 | Other: | `CodeableConcept.text` | ````{ "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}" }```` |  |
-| Body location | `ServiceRequest.bodySite` | ````{ "bodySite": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78277001" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Body location | `ServiceRequest.bodySite` | ````{ "bodySite": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78277001" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `78277001`
  |
 | Body laterality | `ServiceRequest.bodySite.extension:laterality` | ````{ "bodySite": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78277001" } ], "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality", "valueCoding": { "system": "http://snomed.info/sct", "code": "24028007" } } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality`](https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-laterality)
-* binding: [`be-vs-laterality`](https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-laterality.html) (required)
+* binding: [`be-vs-laterality`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-laterality) (required)
  |
 | Body topography | `ServiceRequest.bodySite.extension:topography` | ````{ "bodySite": [ { "coding": [ { "system": "http://snomed.info/sct", "code": "78277001" } ], "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography", "valueCodeableConcept": { "coding": [ { "system": "http://snomed.info/sct", "code": "255561001" } ] } } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography`](https://www.ehealth.fgov.be/standards/fhir/core-clinical/StructureDefinition/be-ext-body-topography)
-* binding: [`be-vs-body-topography`](https://www.ehealth.fgov.be/standards/fhir/core-clinical/1.3.0/ValueSet-be-vs-body-topography.html) (preferred)
+* binding: [`be-vs-body-topography`](https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography) (preferred)
 * Note: this extension's declared FHIR context does not list `ServiceRequest.bodySite` explicitly (only `Condition`/`Observation`/`DeviceUseStatement`/`Procedure.bodySite`). To be validated against the IG Publisher build.
  |
 | Diagnosis | `ServiceRequest.reasonCode.text` | ````{ "reasonCode": [ { "text": "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}", "_text": { "extension": [ { "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization", "extension": [ { "url": "marker", "valueBoolean": true }, { "url": "format", "valueCode": "encrypted" }, { "url": "version", "valuePositiveInt": 1 } ] } ] } } ] }```` |  |

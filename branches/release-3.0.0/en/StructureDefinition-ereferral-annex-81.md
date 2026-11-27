@@ -1,4 +1,4 @@
-# EReferralAnnex81 - eReferral Implementation Guide v3.0.0
+# EReferralAnnex81 - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81 | *Version*:3.0.0 |
-| Active as of 2026-11-26 | *Computable Name*:EReferralAnnex81 |
+| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81 | *Version*:3.0.2 |
+| Active as of 2026-11-27 | *Computable Name*:EReferralAnnex81 |
 
  
 Annex81 proposal and approval 
@@ -37,10 +37,10 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-annex-8
   "resourceType" : "StructureDefinition",
   "id" : "ereferral-annex-81",
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/StructureDefinition/ereferral-annex-81",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "EReferralAnnex81",
   "status" : "active",
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -183,12 +183,24 @@ Other representations of profile: [CSV](../StructureDefinition-ereferral-annex-8
       "id" : "ServiceRequest.category:annex81TechnicalType",
       "path" : "ServiceRequest.category",
       "sliceName" : "annex81TechnicalType",
-      "min" : 1
+      "min" : 1,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-technical-type"
+      }
     },
     {
       "id" : "ServiceRequest.doNotPerform",
       "path" : "ServiceRequest.doNotPerform",
       "max" : "0"
+    },
+    {
+      "id" : "ServiceRequest.code",
+      "path" : "ServiceRequest.code",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-care-requested"
+      }
     },
     {
       "id" : "ServiceRequest.orderDetail",

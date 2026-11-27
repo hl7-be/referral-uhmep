@@ -1,4 +1,4 @@
-# Example: Diabetes education without care trajectory - eReferral Implementation Guide v3.0.0
+# Example: Diabetes education without care trajectory - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -10,7 +10,7 @@ Profile: [EReferralServiceRequestNursing](StructureDefinition-ereferral-servicer
 
 **BeValidityPeriod**: 2026-02-18 --> (ongoing)
 
-**BeFeedbackToPrescriber**: true
+**BeFeedbackToPrescriber**: false
 
 **status**: Draft
 
@@ -85,7 +85,7 @@ urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{jwe}}
   },
   {
     "url" : "https://www.ehealth.fgov.be/standards/fhir/drp/StructureDefinition/be-ext-feedback-to-prescriber",
-    "valueBoolean" : true
+    "valueBoolean" : false
   }],
   "status" : "draft",
   "intent" : "order",

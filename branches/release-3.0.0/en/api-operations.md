@@ -1,4 +1,4 @@
-# API Operations - eReferral Implementation Guide v3.0.0
+# API Operations - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * **API Operations**
@@ -47,25 +47,26 @@ Each operation below has a dedicated page with endpoint details, request payload
 
 Search filters are submitted as `application/x-www-form-urlencoded` key-value pairs in `POST /ServiceRequest/_search`.
 
-| | | |
-| :--- | :--- | :--- |
-| `patient` | Filter by patient pseudonym in transit for the eReferral domain. | Active |
-| `status` | Filter by FHIR`ServiceRequest.status`. Translate from business status first. | Active |
-| `statusReason` | Filter by additional prescription status information. | Active |
-| `_has:Task:focus:status`with`_profile` | Filter by summary execution/referral-task status. | Active |
-| `requester` | Filter by prescriber. Organization-scoped requester references use`PractitionerRole/{SSIN}-{DISCIPLINE}-NIHII-{nihii11Organization}`. | Active |
-| `_has:Task:focus:owner` | Filter by assigned caregiver or assigned organization. | Active |
-| `code` | Filter by template code using`{system}|{code}`. | To be replaced by`category`with`system=https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type` |
-| `intent` | Separate prescriptions (`order`) from proposals (`proposal`). | Active |
-| `_count` | Page size. Default and maximum are currently 25. Higher values return an invalid-count error. | Active |
-| `_offset` | Zero-based result offset. Defaults to 0. | Active |
+| | | | |
+| :--- | :--- | :--- | :--- |
+| `patient` | Patient pseudonym in transit (domain UHMEP), e.g.`urn:be:fgov:pseudo:v2:{SEC1}:{transitInfo}` | Filter by patient of the prescription. | Active |
+| `status` | `{status}` | Filter by prescription status. | Active |
+| `statusReason` | `{statusReason}` | Filter by additional information for prescription status. | Active |
+| `_has:Task:focus:status-_profile` | `{status}$Profile/be-referral-task` | Filter by summary of execution status. | Active |
+| `requester` | `PractitionerRole/{Prescriber SSIN}-{Prescriber discipline}` | Filter by prescriber of the prescription. | Active |
+| `_has:Task:focus:owner` | `PractitionerRole/{Caregiver SSIN}-{Caregiver discipline}` | Filter by caregiver assigned to the prescription. | Active |
+| `_has:Task:focus:owner` | `Organization/{IdType}-{Id}` | Filter by organization assigned to the prescription. | Active |
+| `code` | `{code system}|{template code}` | Filter on the template of the prescription. | To be replaced by`category`with`system=https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type` |
+| `intent` | `order`or`proposal` | Separate prescriptions from proposals. | Active |
+| `_count` | Not specified | Page size. Default and maximum are currently 25. Higher values return an invalid-count error. | Active |
+| `_offset` | Not specified | Zero-based result offset. Defaults to 0. | Active |
 
 #### Cancel a Medical Document
 
 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Cancel a prescription | - Patient- Healthcare Professional (Physician)- Organization | `PATCH /ServiceRequest` | `ServiceRequest` | `200 OK` | Replace`ServiceRequest.status`by`revoked`and, optionally, add a cancellation reason |
-| Cancel a proposal | - Patient- Healthcare Professional (Caregiver)- Organization | `PATCH /ServiceRequest` | `ServiceRequest` | `200 OK` | Replace`ServiceRequest.status`by`revoked`and, optionally, add a cancellation reason |
+| Cancel a prescription | Patient, or the creating Prescriber | `PATCH /ServiceRequest/{id}` | `ServiceRequest` | `200 OK` | Replace`ServiceRequest.status`by`revoked`and optionally add a cancellation reason. The business status must be`DRAFT`,`PENDING`or`READY`. |
+| Cancel an Annex 81 proposal | Patient, or the assigned Caregiver | `PATCH /ServiceRequest/{id}` | `ServiceRequest` | `200 OK` | Replace`ServiceRequest.status`by`revoked`and optionally add a cancellation reason. The proposal must be`READY`. |
 
 ### Manage Assignment
 
@@ -83,7 +84,7 @@ Use these operations when the prescription must be assigned to a healthcare prof
 
 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Remove an assignment | PatientCaregiverOrganization | `DELETE /Task/{executionID}` | `BePerformerTask`or`BeOrganizationTask` | `204 No Content` | - For ambulatory radiology, allowed while the prescription is`READY`or`IN_PROGRESS`and the execution task is`ready`or`in-progress`. The prescription returns to`READY`.- The task is deleted and cannot be reused.- Internal performer assignments must remain coherent with the organization assignment they reference. |
+| Remove an assignment | PatientCaregiverOrganization | `DELETE /Task/{executionID}` | `BePerformerTask`or`BeOrganizationTask` | `204 No Content` | - Only removable while the execution task is still`ready`; for ambulatory radiology, removal is also allowed when the prescription is`READY`or`IN_PROGRESS`and the task is`in-progress`. The prescription returns to`READY`.- The task is deleted and cannot be reused.- Caregivers may remove only their own assignment. Organizations may remove their own`BeOrganizationTask`; this also removes linked internal performer tasks. They cannot selectively remove an internal professional’s task.- A Patient cannot remove a radiology assignment. |
 
 ### Manage Execution Progress
 
@@ -128,7 +129,7 @@ Healthcare professionals and organizations do not update the clinical `ServiceRe
 
 | | | | | |
 | :--- | :--- | :--- | :--- | :--- |
-| Accept Exam | - Healthcare Professional- Organization | `PATCH /Task/{executionId}` | `200 OK` | Replace`PerformerTask.status`by`accepted` |
-| Substitute Exam | - Healthcare Professional- Organization | `PATCH /Task/{executionId}` | `200 OK` | - Replace`PerformerTask.status`by`accepted`- Add new exam to perform as`PerformerTask.output[]` |
-| Refuse Exam | - Healthcare Professional- Organization | `PATCH /Task/{referralTaskId}` | `200 OK` | Replace`PerformerTask.status`by`rejected` |
+| Accept Exam | Assigned Radiology Caregiver, or authorized Organization | `PATCH /Task/{executionId}`if the performer’s task exists, otherwise`POST /Task` | `200 OK`(PATCH)`201 Created`(POST) | Replace performer task status with`accepted`. The prescription/task must be`READY`; urgency-track acceptance is not supported. An individual Caregiver cannot accept an inpatient exam. |
+| Substitute Exam | Assigned Radiology Caregiver, or authorized Organization | `PATCH /Task/{executionId}`if the performer’s task exists, otherwise`POST /Task` | `200 OK`(PATCH)`201 Created`(POST) | Set status to`accepted`and add the replacement exam to`PerformerTask.output[]`. See the detailed page for status, assignment and access-matrix preconditions. |
+| Refuse Exam | Assigned Radiology Caregiver, or authorized Organization | `PATCH /Task/{executionId}`if the performer’s task exists, otherwise`POST /Task` | `200 OK`(PATCH)`201 Created`(POST) | Set status to`rejected`and add`PerformerTask.statusReason`. See the detailed page for status, assignment and access-matrix preconditions. |
 

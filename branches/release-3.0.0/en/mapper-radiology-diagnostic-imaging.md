@@ -1,4 +1,4 @@
-# Diagnostic Imaging - eReferral Implementation Guide v3.0.0
+# Diagnostic Imaging - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Business Field Mappings**](mappings-business.md)
@@ -38,7 +38,7 @@ This table maps the business fields to the corresponding FHIR elements.
 * code: `diagnostic-imaging-appendix-82`
 * binding: [`be-vs-prescription-type`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/ValueSet-be-vs-prescription-type.html)
  |
-| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "code": "363679005", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](https://www.snomed.org/what-is-snomed-ct)
+| Discipline | `ServiceRequest.category[discipline]` | ````{ "category": [ { "coding": [ { "code": "363679005", "system": "http://snomed.info/sct" } ] } ] }```` | * system: [`http://snomed.info/sct`](http://snomed.info/sct)
 * code: `363679005`
  |
 | Track | `ServiceRequest.category[track]` | ````{ "category": [ { "coding": [ { "code": "ambulatory", "system": "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track" } ] } ] }```` | * system: [`https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track`](https://build.fhir.org/ig/hl7-be/referral-uhmep/branches/drp-1.1.1-fixed/CodeSystem-be-cs-request-track.html)

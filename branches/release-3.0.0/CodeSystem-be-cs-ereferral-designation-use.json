@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-ereferral-designation-use</b></p><a name=\"be-cs-ereferral-designation-use\"> </a><a name=\"hcbe-cs-ereferral-designation-use\"> </a><p>This case-sensitive code system <code>https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">eReferral-preferred<a name=\"be-cs-ereferral-designation-use-eReferral-preferred\"> </a></td><td>eReferral preferred term</td></tr><tr><td style=\"white-space:nowrap\">eReferral-synonym<a name=\"be-cs-ereferral-designation-use-eReferral-synonym\"> </a></td><td>eReferral synonym</td></tr></table></div>"
   },
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeCSeReferralDesignationUse",
   "title" : "eReferral Designation Use",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

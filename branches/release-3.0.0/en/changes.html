@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changes - eReferral Implementation Guide v3.0.0</title>
+    <title>Changes - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15"}
-    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -246,11 +246,11 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="test-server-radiology-m2m-12.html">&lt; prev</a> | 
+            <a href="glossary.html">&lt; prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="downloads.html">next &gt;</a>
+          | <a href="migration-2-1-to-3-0.html">next &gt;</a>
 
           </span>
 
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changes</h2>
   
 
@@ -316,19 +316,17 @@ documentation correction, not the announcement of newly deployed functionality.<
   <h4 id="api-contract-clarifications-2026-11-18">API contract clarifications (2026-11-18)</h4>
 
   <ul>
-    <li>A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the
-caller’s role and ownership restrictions.</li>
-    <li>An Organization may remove its own organization task and the dependent assignments, but cannot
-selectively delete an internal professional’s performer task through that route.</li>
-    <li>Prescription extensions use <code class="language-plaintext highlighter-rouge">ServiceRequest.basedOn</code> in the implemented 3.0 creation and read
-mappings. <code class="language-plaintext highlighter-rouge">ServiceRequest.replaces</code> alone does not establish the extension link.</li>
-    <li>Required profile elements remain requirements of this IG. The reviewed gateway’s embedded
-validation package is older and does not establish enforcement of all 3.0 cardinalities.</li>
+    <li>A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the caller’s role and ownership restrictions.</li>
+    <li>An Organization may remove its own organization task and the dependent assignments, but cannot selectively delete an internal professional’s performer task through that route.</li>
+    <li>Prescription extensions use <code class="language-plaintext highlighter-rouge">ServiceRequest.basedOn</code> in the implemented 3.0 creation and read mappings. <code class="language-plaintext highlighter-rouge">ServiceRequest.replaces</code> alone does not establish the extension link.</li>
+    <li>Required profile elements remain requirements of this IG. The reviewed gateway’s embedded validation package is older and does not establish enforcement of all 3.0 cardinalities.</li>
   </ul>
 
-  <p>See <a href="operation-unassign-care-provider.html">Unassign a Care Provider</a>,
-<a href="topic-prescription-lifecycle-extension.html">Prescription Extension</a> and the
-<a href="migration-2-1-to-3-0.html">migration checks</a>.</p>
+  <p>See <a href="operation-unassign-care-provider.html">Unassign a Care Provider</a>, <a href="topic-prescription-lifecycle-extension.html">Prescription Extension</a> and the <a href="migration-2-1-to-3-0.html">migration checks</a>.</p>
+
+  <h4 id="organization-and-authorization-clarifications-2026-11-26">Organization and authorization clarifications (2026-11-26)</h4>
+
+  <p>This documentation update records the 3.0 organization execution-cancellation path, organization-specific list visibility, Annex 81 organization policy and organization authorization matching. It does not announce a new runtime feature or confirm deployment configuration. See <a href="operation-cancel-execution.html">Cancel Execution</a>, <a href="operation-access-matrix.html">Access Matrix</a>, <a href="operation-consult-search-medical-documents.html">Consult Search Medical Documents</a> and the <a href="migration-2-1-to-3-0.html">migration checks</a>.</p>
 
   <h4 id="radiology-workflow-clarifications">Radiology workflow clarifications</h4>
 
@@ -354,8 +352,6 @@ validation package is older and does not establish enforcement of all 3.0 cardin
   </ul>
 
 </details>
-
-<hr />
 
 <h3 id="2026-09-02-v210-release-validation-radiology-tracks-and-security-fhir-r4"><strong>2026-09-02: v2.1.0 Release: Validation, Radiology Tracks, and Security (FHIR R4)</strong></h3>
 
@@ -525,7 +521,7 @@ documents the API’s security, access-control, and operational requirements.</p
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="test-server-radiology-m2m-12.html">&lt; prev</a>
+                <a href="glossary.html">&lt; prev</a>
 
               </td>
               <td style="text-align:center">
@@ -533,7 +529,7 @@ documents the API’s security, access-control, and operational requirements.</p
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="downloads.html">next ></a>
+                <a href="migration-2-1-to-3-0.html">next ></a>
 
               </td>
             </tr>
@@ -547,8 +543,8 @@ documents the API’s security, access-control, and operational requirements.</p
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

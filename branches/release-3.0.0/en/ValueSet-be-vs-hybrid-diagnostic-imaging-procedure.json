@@ -7,12 +7,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-hybrid-diagnostic-imaging-procedure</b></p><a name=\"be-vs-hybrid-diagnostic-imaging-procedure\"> </a><a name=\"hcbe-vs-hybrid-diagnostic-imaging-procedure\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.html\">PSS/QSI Diagnostic Imaging Procedure</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-be-vs-diagnostic-imaging-procedure.html\">eReferral/PSS Diagnostic Imaging Procedure</a></li></ul></div>"
   },
   "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeVSHybridDiagnosticImagingProcedure",
   "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
@@ -47,7 +47,7 @@
       "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure"]
     },
     {
-      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.0"]
+      "valueSet" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure|3.0.2"]
     }]
   }
 }

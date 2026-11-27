@@ -1,4 +1,4 @@
-# Example: Measurement of parameters - eReferral Implementation Guide v3.0.0
+# Example: Measurement of parameters - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

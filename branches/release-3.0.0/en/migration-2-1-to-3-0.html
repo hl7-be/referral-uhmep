@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Migration 2.1.0 to 3.0.0 - eReferral Implementation Guide v3.0.0</title>
+    <title>Migration 2.1.0 to 3.0.0 - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -246,11 +246,11 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="guidance.html">&lt; prev</a> | 
+            <a href="changes.html">&lt; prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="topic-profiles-architecture.html">next &gt;</a>
+          | <a href="downloads.html">next &gt;</a>
 
           </span>
 
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Migration 2.1.0 to 3.0.0</h2>
   
 
@@ -293,6 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#release-boundaries" id="markdown-toc-release-boundaries">Release Boundaries</a></li>
   <li><a href="#payload-compatibility-checklist" id="markdown-toc-payload-compatibility-checklist">Payload Compatibility Checklist</a></li>
   <li><a href="#radiology-operation-matrix" id="markdown-toc-radiology-operation-matrix">Radiology Operation Matrix</a></li>
+  <li><a href="#organization-cancellation-and-access" id="markdown-toc-organization-cancellation-and-access">Organization Cancellation and Access</a></li>
   <li><a href="#before-and-after-operation-examples" id="markdown-toc-before-and-after-operation-examples">Before and After Operation Examples</a></li>
   <li><a href="#terminology-and-validation-baseline" id="markdown-toc-terminology-and-validation-baseline">Terminology and Validation Baseline</a></li>
   <li><a href="#regression-test-checklist" id="markdown-toc-regression-test-checklist">Regression Test Checklist</a></li>
@@ -466,6 +467,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </table>
 
 <p>For other actors, terminal states, missing assignments and POST-based creation/completion shortcuts, use the relevant operation page rather than extrapolating from these rows. In particular, an existing-task completion and creating a task already marked <code class="language-plaintext highlighter-rouge">completed</code> are separate routes with their own preconditions.</p>
+
+<h3 id="organization-cancellation-and-access">Organization Cancellation and Access</h3>
+
+<p>An Organization may cancel a caregiver execution only when the execution’s <code class="language-plaintext highlighter-rouge">basedOn</code> references an organization task assigned to that Organization. The eligible prescription state is represented by <code class="language-plaintext highlighter-rouge">ServiceRequest.status = active</code> and <code class="language-plaintext highlighter-rouge">BeReferralTask.status = in-progress</code> or <code class="language-plaintext highlighter-rouge">on-hold</code>. The request sets the execution <code class="language-plaintext highlighter-rouge">Task.status</code> to <code class="language-plaintext highlighter-rouge">cancelled</code>; it does not cancel the <code class="language-plaintext highlighter-rouge">ServiceRequest</code>. Re-read the related resources after the operation. See <a href="operation-cancel-execution.html">Cancel Execution</a>.</p>
+
+<p>Organization access to prescription and proposal lists is separate from permission to consult an individual prescription or proposal. The backend filters list-accessible templates by the relevant list permission. Annex 81 organization policies also define prescription-level consultation/list, execution, interruption, assignment and assignment-withdrawal rights, separately from proposal rights. These permissions remain specific to the organization policy and template; they are not constraints of the Annex 81 FHIR profile.</p>
+
+<p>The organization policy match uses the template, requested action and OIDC identity, not organization type. This does not replace CoBRHA identity resolution or other checks that use organization information. See <a href="operation-access-matrix.html">Access Matrix</a>.</p>
 
 <h3 id="before-and-after-operation-examples">Before and After Operation Examples</h3>
 
@@ -693,6 +702,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Test an authorized patient in <code class="language-plaintext highlighter-rouge">PENDING</code> and <code class="language-plaintext highlighter-rouge">READY</code>, a different patient and a state outside those documented permissions. Confirm errors against the operation contract rather than inventing HTTP statuses.</td>
     </tr>
     <tr>
+      <td>Organization execution cancellation</td>
+      <td>Test the assigned Organization with an eligible <code class="language-plaintext highlighter-rouge">ServiceRequest</code> and parent <code class="language-plaintext highlighter-rouge">BeReferralTask</code>, a different Organization, and an ineligible prescription state. Confirm that only the execution <code class="language-plaintext highlighter-rouge">Task</code> is cancelled and the <code class="language-plaintext highlighter-rouge">ServiceRequest</code> is not revoked.</td>
+    </tr>
+    <tr>
+      <td>Organization list visibility</td>
+      <td>Test list access separately from individual-document access for prescription and proposal templates; verify that templates without the corresponding list permission are excluded.</td>
+    </tr>
+    <tr>
+      <td>Annex 81 organization policy</td>
+      <td>Verify prescription-level actions and proposal actions independently, including an organization identity with no matching policy. Do not infer access from the FHIR profile alone.</td>
+    </tr>
+    <tr>
+      <td>Radiology pseudonym mapping</td>
+      <td>Verify that <code class="language-plaintext highlighter-rouge">Patient.birthDate</code> content maps to the birthdate field and <code class="language-plaintext highlighter-rouge">be-ext-gender-at-birth</code> content maps to the gender-at-birth field; include distinct values to detect a swap.</td>
+    </tr>
+    <tr>
       <td>Organization and internal professional</td>
       <td>Exercise the organization-scoped actor reference, parent organization task and access checks. Include an incoherent <code class="language-plaintext highlighter-rouge">basedOn</code> reference.</td>
     </tr>
@@ -734,7 +759,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="guidance.html">&lt; prev</a>
+                <a href="changes.html">&lt; prev</a>
 
               </td>
               <td style="text-align:center">
@@ -742,7 +767,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="topic-profiles-architecture.html">next ></a>
+                <a href="downloads.html">next ></a>
 
               </td>
             </tr>
@@ -756,8 +781,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

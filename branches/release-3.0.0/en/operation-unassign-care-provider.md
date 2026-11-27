@@ -1,4 +1,4 @@
-# Unassign a Care Provider - eReferral Implementation Guide v3.0.0
+# Unassign a Care Provider - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**API Operations**](api-operations.md)
@@ -15,7 +15,7 @@ This page describes how to remove an assignment.
 | Target resource | `BePerformerTask`or`BeOrganizationTask` |
 | Successful response | `204 No Content` |
 
-For radiology prescriptions on the ambulatory track, an assignment may be removed while the prescription is in business state `READY` or `IN_PROGRESS` and the execution task is `ready` or `in-progress`. The task is deleted and the prescription returns to `READY`. Other tracks and prescription types remain subject to their applicable removal rules.
+An assignment can be removed only while the execution task is still `ready`. For radiology prescriptions on the ambulatory track, removal is also allowed while the prescription is in business state `READY` or `IN_PROGRESS` and the execution task is `in-progress`. The task is deleted and the prescription returns to `READY`. Other tracks and prescription types remain subject to their applicable removal rules.
 
 ### Request
 
@@ -31,7 +31,9 @@ An organization using M2M access may remove its own `BeOrganizationTask`, subjec
 
 Patient, Caregiver, Organization (for its own `BeOrganizationTask` only). For an Annex 81 proposal, a Prescriber may also remove their own assignment.
 
-For radiology, the Patient role is not permitted to remove an assignment. The caller must be an authorized Caregiver removing their own assignment, or an Organization removing its own organization assignment. The ambulatory-track and state checks do not override these role and ownership restrictions.
+* A Caregiver can remove only their own assignment.
+* An Organization can currently remove only its own organization assignment (`BeOrganizationTask`), not the `BePerformerTask` of one of its internal professionals. An internal professional’s assignment is removed by that professional, or together with the organization assignment it references.
+* For radiology prescriptions, only an authorized Caregiver removing their own assignment or an Organization removing its own organization assignment may unassign. A Patient cannot remove a radiology assignment.
 
 ### Possible Error Codes
 

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Nursing - eReferral Implementation Guide v3.0.0</title>
+    <title>Nursing - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11.1"}
-    h3,h4,h5,h6{--heading-prefix:"11.1.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.1"}
+    h3,h4,h5,h6{--heading-prefix:"10.1.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Nursing</h2>
   
 
@@ -293,6 +293,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 <p>This page groups the business field mappings for nursing prescription types.</p>
+
+<p>The <a href="StructureDefinition-ereferral-annex-81.html">Annex 81 profile</a> binds <code class="language-plaintext highlighter-rouge">category[annex81TechnicalType]</code> to <code class="language-plaintext highlighter-rouge">be-vs-annex81-technical-type</code> and <code class="language-plaintext highlighter-rouge">code</code> to <code class="language-plaintext highlighter-rouge">be-vs-annex81-care-requested</code>, both with required strength. These bindings make the terminology of the inherited coded constraints explicit. They do not change element cardinalities or establish runtime enforcement.</p>
 
 <table>
   <thead>
@@ -371,6 +373,117 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<div class="terminology-url-prefixes">
+  <p><strong>Terminology URL sources used on this page</strong></p>
+  <table class="mapping-table">
+    <thead>
+      <tr>
+        <th>Source</th>
+        <th>Base URL</th>
+        <th>Use</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Official eHealth FHIR publication</td>
+        <td><code>https://www.ehealth.fgov.be/standards/fhir/</code></td>
+        <td>Preferred source for stable published eHealth terminology artifacts.</td>
+      </tr>
+      <tr>
+        <td>eHealth branch build</td>
+        <td><code>https://build.fhir.org/ig/hl7-be/</code></td>
+        <td>Temporary source for artifacts available only in an eHealth build branch.</td>
+      </tr>
+      <tr>
+        <td>Local eReferral IG</td>
+        <td><code>https://www.riziv-inami.be/standards/fhir/ereferral/</code></td>
+        <td>Preferred source when an artifact is defined or duplicated in this eReferral IG.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="nursing-terminology">Nursing terminology</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artifact</th>
+      <th>Source</th>
+      <th>Used for</th>
+      <th>Used by mapping pages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-nursing-prescription-technical-type.html"><code class="language-plaintext highlighter-rouge">be-vs-nursing-prescription-technical-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Technical prescription type codes carried in <code class="language-plaintext highlighter-rouge">ServiceRequest.category[prescriptionType]</code>.</td>
+      <td>All nursing prescription pages.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-nursing-care-requested.html"><code class="language-plaintext highlighter-rouge">be-vs-nursing-care-requested</code></a></td>
+      <td>eHealth branch build</td>
+      <td>SNOMED CT nursing care requested in <code class="language-plaintext highlighter-rouge">ServiceRequest.code</code>.</td>
+      <td>All nursing prescription pages.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-generic-care-types.html"><code class="language-plaintext highlighter-rouge">be-cs-generic-care-types</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Generic nursing care details represented in <code class="language-plaintext highlighter-rouge">ServiceRequest.orderDetail</code>.</td>
+      <td><a href="mapper-nursing-generic.html">Generic nursing</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-glycemia-measurement-timing.html"><code class="language-plaintext highlighter-rouge">be-cs-glycemia-measurement-timing</code></a> / <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-glycemia-measurement-time.html"><code class="language-plaintext highlighter-rouge">be-vs-glycemia-measurement-time</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Timing of glycemia measurements.</td>
+      <td><a href="mapper-nursing-glycemic-test.html">Glycemic test</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-diabetic-education-type.html"><code class="language-plaintext highlighter-rouge">be-cs-diabetic-education-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Diabetes education type and subtype coding.</td>
+      <td>Diabetes education pages.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-session-type.html"><code class="language-plaintext highlighter-rouge">be-vs-session-type</code></a> / <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-session-type-extended.html"><code class="language-plaintext highlighter-rouge">be-vs-session-type-extended</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Session type coding for education activities.</td>
+      <td>Diabetes education pages.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-educator-type.html"><code class="language-plaintext highlighter-rouge">be-vs-educator-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Healthcare professional types involved in education.</td>
+      <td>Diabetes education pages.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-parameter-type.html"><code class="language-plaintext highlighter-rouge">be-vs-parameter-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Clinical parameter / vital sign measured by the nursing care.</td>
+      <td><a href="mapper-nursing-parameters.html">Parameters</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-sample-substance-type.html"><code class="language-plaintext highlighter-rouge">be-vs-sample-substance-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Sample or substance type for sampling requests.</td>
+      <td><a href="mapper-nursing-sampling.html">Sampling</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/CodeSystem-be-cs-note-types.html"><code class="language-plaintext highlighter-rouge">be-cs-note-types</code></a> / <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-note-type.html"><code class="language-plaintext highlighter-rouge">be-vs-note-type</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Typed clinical notes such as contraindication, medical reason, and general remarks.</td>
+      <td>Most nursing prescription pages.</td>
+    </tr>
+    <tr>
+      <td><a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-annex81-care-requested.html"><code class="language-plaintext highlighter-rouge">be-vs-annex81-care-requested</code></a>, <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-annex81-nursing-diagnosis.html"><code class="language-plaintext highlighter-rouge">be-vs-annex81-nursing-diagnosis</code></a>, <a href="https://build.fhir.org/ig/hl7-be/referral/branches/phase2-merged/en/ValueSet-be-vs-annex81-medical-problem.html"><code class="language-plaintext highlighter-rouge">be-vs-annex81-medical-problem</code></a></td>
+      <td>eHealth branch build</td>
+      <td>Annex 81 care, nursing diagnosis, and medical-problem coding.</td>
+      <td><a href="mapper-nursing-annex81-medication-preparation.html">Annex 81 medication preparation</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -417,8 +530,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Consult or Search Medical Documents - eReferral Implementation Guide v3.0.0</title>
+    <title>Consult or Search Medical Documents - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10.3"}
-    h3,h4,h5,h6{--heading-prefix:"10.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.3"}
+    h3,h4,h5,h6{--heading-prefix:"9.3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Consult or Search Medical Documents</h2>
   
 
@@ -371,6 +371,7 @@ Content-Type: application/x-www-form-urlencoded
   <thead>
     <tr>
       <th>Filter</th>
+      <th>Accepted format</th>
       <th>Purpose</th>
       <th>Status</th>
     </tr>
@@ -378,56 +379,74 @@ Content-Type: application/x-www-form-urlencoded
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">patient</code></td>
-      <td>Filter by patient pseudonym in transit for the eReferral domain.</td>
+      <td>Patient pseudonym in transit (domain UHMEP), e.g. <code class="language-plaintext highlighter-rouge">urn:be:fgov:pseudo:v2:{SEC1}:{transitInfo}</code></td>
+      <td>Filter by patient of the prescription.</td>
       <td>Active</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">status</code></td>
-      <td>Filter by FHIR <code class="language-plaintext highlighter-rouge">ServiceRequest.status</code>. Translate from business status first.</td>
+      <td><code class="language-plaintext highlighter-rouge">{status}</code></td>
+      <td>Filter by prescription status.</td>
       <td>Active</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">statusReason</code></td>
-      <td>Filter by additional prescription status information.</td>
+      <td><code class="language-plaintext highlighter-rouge">{statusReason}</code></td>
+      <td>Filter by additional information for prescription status.</td>
       <td>Active</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">_has:Task:focus:status</code> with <code class="language-plaintext highlighter-rouge">_profile</code></td>
-      <td>Filter by summary execution/referral-task status.</td>
+      <td><code class="language-plaintext highlighter-rouge">_has:Task:focus:status-_profile</code></td>
+      <td><code class="language-plaintext highlighter-rouge">{status}$Profile/be-referral-task</code></td>
+      <td>Filter by summary of execution status.</td>
       <td>Active</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">requester</code></td>
-      <td>Filter by prescriber. Organization-scoped requester references use <code class="language-plaintext highlighter-rouge">PractitionerRole/{SSIN}-{DISCIPLINE}-NIHII-{nihii11Organization}</code>.</td>
+      <td><code class="language-plaintext highlighter-rouge">PractitionerRole/{Prescriber SSIN}-{Prescriber discipline}</code></td>
+      <td>Filter by prescriber of the prescription.</td>
       <td>Active</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">_has:Task:focus:owner</code></td>
-      <td>Filter by assigned caregiver or assigned organization.</td>
+      <td><code class="language-plaintext highlighter-rouge">PractitionerRole/{Caregiver SSIN}-{Caregiver discipline}</code></td>
+      <td>Filter by caregiver assigned to the prescription.</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">_has:Task:focus:owner</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Organization/{IdType}-{Id}</code></td>
+      <td>Filter by organization assigned to the prescription.</td>
       <td>Active</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">code</code></td>
-      <td>Filter by template code using <code class="language-plaintext highlighter-rouge">{system}|{code}</code>.</td>
+      <td><code>{code system}&#124;{template code}</code></td>
+      <td>Filter on the template of the prescription.</td>
       <td>To be replaced by <code class="language-plaintext highlighter-rouge">category</code> with <code class="language-plaintext highlighter-rouge">system=https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type</code></td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">intent</code></td>
-      <td>Separate prescriptions (<code class="language-plaintext highlighter-rouge">order</code>) from proposals (<code class="language-plaintext highlighter-rouge">proposal</code>).</td>
+      <td><code class="language-plaintext highlighter-rouge">order</code> or <code class="language-plaintext highlighter-rouge">proposal</code></td>
+      <td>Separate prescriptions from proposals.</td>
       <td>Active</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">_count</code></td>
-      <td>Page size. Default and maximum are currently 25. Higher values return an invalid-count error.</td>
+      <td>Integer between <code class="language-plaintext highlighter-rouge">1</code> and <code class="language-plaintext highlighter-rouge">25</code></td>
+      <td>Page size. The default and maximum are <code class="language-plaintext highlighter-rouge">25</code>. Values below <code class="language-plaintext highlighter-rouge">1</code> or above <code class="language-plaintext highlighter-rouge">25</code> are rejected.</td>
       <td>Active</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">_offset</code></td>
-      <td>Zero-based result offset. Defaults to 0.</td>
+      <td>Integer</td>
+      <td>Zero-based result offset. If omitted, it defaults to <code class="language-plaintext highlighter-rouge">0</code>.</td>
       <td>Active</td>
     </tr>
   </tbody>
 </table>
+
+<p>For Organizations, list visibility is governed by separate authorization for prescription lists and proposal lists. Permission to consult an individual document does not by itself grant access to its list. The backend filters the accessible templates using those list permissions. A template without a matching list permission is excluded. Other roles use their individual document-consultation permissions.</p>
 
 <h5 id="examples">Examples</h5>
 <h6 id="search-by-patient-and-status">Search By Patient And Status</h6>
@@ -592,8 +611,8 @@ endpoint. See <a href="error-codes.html">Error Codes</a> for workbook guidance.<
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

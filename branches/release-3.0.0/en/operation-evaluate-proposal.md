@@ -1,4 +1,4 @@
-# Evaluate Proposal - eReferral Implementation Guide v3.0.0
+# Evaluate Proposal - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**API Operations**](api-operations.md)
@@ -320,7 +320,7 @@ Reject returns the proposal id.
 
 ### Allowed Roles
 
-Prescriber.
+Prescriber; Organization acting on behalf of an internal prescriber, when the `requester` identifies that prescriber and the applicable authorization policy permits the operation.
 
 ### Possible Error Codes
 

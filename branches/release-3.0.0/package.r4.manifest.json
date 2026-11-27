@@ -1,6 +1,6 @@
 {
-  "version" : "3.0.0",
-  "date" : "20261126074055",
+  "version" : "3.0.2",
+  "date" : "20261127094134",
   "notForPublication" : true,
   "name" : "inami.fhir.be.ereferral.r4"
 }

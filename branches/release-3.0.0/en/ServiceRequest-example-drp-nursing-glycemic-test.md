@@ -1,4 +1,4 @@
-# Example: Glycemic control with glucometer - eReferral Implementation Guide v3.0.0
+# Example: Glycemic control with glucometer - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

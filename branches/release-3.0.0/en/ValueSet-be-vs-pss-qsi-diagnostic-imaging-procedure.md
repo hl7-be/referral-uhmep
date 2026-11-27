@@ -1,4 +1,4 @@
-# PSS/QSI Diagnostic Imaging Procedure - eReferral Implementation Guide v3.0.0
+# PSS/QSI Diagnostic Imaging Procedure - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure | *Version*:3.0.0 |
-| Draft as of 2026-11-26 | *Computable Name*:BeVSPSSQSIDiagnosticImagingProcedure |
+| *Official URL*:https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure | *Version*:3.0.2 |
+| Draft as of 2026-11-27 | *Computable Name*:BeVSPSSQSIDiagnosticImagingProcedure |
 
  
 All PSS/QSI diagnostic imaging procedure codes. 
@@ -37,12 +37,12 @@ All PSS/QSI diagnostic imaging procedure codes.
   "resourceType" : "ValueSet",
   "id" : "be-vs-pss-qsi-diagnostic-imaging-procedure",
   "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeVSPSSQSIDiagnosticImagingProcedure",
   "title" : "PSS/QSI Diagnostic Imaging Procedure",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Access Matrix - eReferral Implementation Guide v3.0.0</title>
+    <title>Access Matrix - eReferral Implementation Guide v3.0.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,8 +54,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10.1"}
-    h3,h4,h5,h6{--heading-prefix:"10.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.1"}
+    h3,h4,h5,h6{--heading-prefix:"9.1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -77,7 +77,7 @@
   </a>
   <!-- no fitting stylesheet found (status/publisher)-->
   
-  <span class="ereferral-badge">v3.0.0</span>
+  <span class="ereferral-badge">v3.0.2</span>
 <span class="ereferral-badge">draft</span>
 </div>
 
@@ -85,7 +85,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">eReferral Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">3.0.0 - 
+            <span style="display:inline-block;">3.0.2 - 
 
 
 
@@ -214,13 +214,13 @@
         <a href="glossary.html">Glossary</a>
       </li>
       <li>
-        <a href="migration-2-1-to-3-0.html">Migration</a>
+        <a href="test-server.html">Test Server</a>
+      </li>
+      <li>
+        <a href="migration-2-1-to-3-0.html">Migration 2.1 to 3.0</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
-      </li>
-      <li>
-        <a href="test-server.html">Test Server</a>
       </li>
       <li>
         <a href="changes.html">Changes</a>
@@ -272,7 +272,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">eReferral Implementation Guide - Local Development build (v3.0.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.riziv-inami.be/standards/fhir/ereferral/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Access Matrix</h2>
   
 
@@ -327,7 +327,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Organization</td>
-      <td>Create prescriptions and proposals. Consult list/details/execution tasks of prescriptions and proposals. Assign them to itself, to internal healthcare professionals or to external healthcare professionals. Remove an assignation (own or internal healthcare professional) on a prescription/proposal.</td>
+      <td>Create prescriptions and proposals. Consult lists, details and execution tasks only for templates and actions authorized for its organization identity. Assign prescriptions and proposals to itself, to internal healthcare professionals or to external healthcare professionals. Remove its own organization assignment on a prescription, subject to the applicable rules.</td>
     </tr>
     <tr>
       <td>Restricted</td>
@@ -350,11 +350,12 @@ action, the API evaluates:</p>
 <ol>
   <li>the <strong>operation</strong> requested.</li>
   <li>the <strong>prescription template type</strong> (defined by INAMI: see <a href="topic-prescription-templates.html">Prescription Templates</a>).</li>
-  <li>the <strong>discipline</strong> of the professional (from the token) or of the organization.</li>
+  <li>for professionals, the <strong>discipline</strong> associated with the token; for Organizations, the organization identity used by the authorization policy.</li>
 </ol>
 
-<p>If the user’s or organization’s discipline is not authorized for the requested template/action,
-the API returns <code class="language-plaintext highlighter-rouge">403 Forbidden</code>.</p>
+<p>For professionals, the matrix evaluates the discipline associated with the token. For an Organization, the authorization-policy match uses the prescription template, requested action and organization’s OIDC identity; organization type is not part of this match. This is separate from resolving the organization and its type through CoBRHA when an API flow requires that information. An unauthorized template/action combination returns <code class="language-plaintext highlighter-rouge">403 Forbidden</code>.</p>
+
+<p>For Annex 81, organization policy covers prescription consultation and list access, execution, interruption, assignment and assignment withdrawal, in addition to the separately governed proposal actions. These permissions are policy-dependent: they do not imply that every Organization is authorized, and they do not change the Annex 81 FHIR profile.</p>
 
 <h3 id="suspension">Suspension</h3>
 
@@ -375,6 +376,8 @@ organization is responsible for them.</p>
 
 <p>When searching for a list of prescriptions/proposals (<code class="language-plaintext highlighter-rouge">POST /ServiceRequest/_search</code>), each filter
 has an access rule that depends on the connected user’s role.</p>
+
+<p>For Organizations, list visibility is governed by separate authorization for prescription lists and proposal lists. Permission to consult an individual document does not by itself grant access to its list. The backend filters the accessible templates using those list permissions; a template without a matching list permission is excluded. Other roles use their individual document-consultation permissions.</p>
 
 <table>
   <thead>
@@ -529,8 +532,8 @@ A prescriber searching without a <code class="language-plaintext highlighter-rou
 
 
           IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.riziv-inami.be/standards/fhir">Riziv-Inami Platform</a>.  
-          Package inami.fhir.be.ereferral#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 26, 2026 07:40+0000">2026-11-26</span>
+          Package inami.fhir.be.ereferral#3.0.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Fri, Nov 27, 2026 09:41+0000">2026-11-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div class="smals-footer">

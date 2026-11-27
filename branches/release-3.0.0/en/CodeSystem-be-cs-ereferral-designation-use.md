@@ -1,4 +1,4 @@
-# eReferral Designation Use - eReferral Implementation Guide v3.0.0
+# eReferral Designation Use - eReferral Implementation Guide v3.0.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use | *Version*:3.0.0 |
-| Active as of 2026-11-26 | *Computable Name*:BeCSeReferralDesignationUse |
+| *Official URL*:https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use | *Version*:3.0.2 |
+| Active as of 2026-11-27 | *Computable Name*:BeCSeReferralDesignationUse |
 
  
 Identifies terminology designations maintained specifically for the eReferral project. 
@@ -31,12 +31,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "be-cs-ereferral-designation-use",
   "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/CodeSystem/be-cs-ereferral-designation-use",
-  "version" : "3.0.0",
+  "version" : "3.0.2",
   "name" : "BeCSeReferralDesignationUse",
   "title" : "eReferral Designation Use",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-26T07:40:55+00:00",
+  "date" : "2026-11-27T09:41:34+00:00",
   "publisher" : "Riziv-Inami Platform",
   "contact" : [{
     "name" : "Riziv-Inami Platform",
