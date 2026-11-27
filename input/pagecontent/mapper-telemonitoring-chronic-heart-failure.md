@@ -167,6 +167,8 @@ The medical prescription uses the full telemonitoring profile.
 
 ### Monitoring parameters
 
+The parameter CodeableConcept has a required binding to `be-vs-telemonitoring-parameter-type` in the [monitoring plan extension](StructureDefinition-be-ext-telemonitoring-plan.html). A present concept must contain a coding from that ValueSet; additional equivalent codings remain possible. This is a profile conformance requirement, not a claim of runtime enforcement.
+
 The monitoring plan uses one `be-ext-telemonitoring-plan` extension per configured parameter. Each plan entry carries the measured parameter in `extension[parameter]` and may then add threshold, target range, or change rules. For body weight, the optional reference weight is carried in `extension[baseline].valueReference` and points to a standalone `Observation`, not a contained resource.
 
 | Parameter | SNOMED CT code | Display | Typical unit | Rule used by this business requirement |

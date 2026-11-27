@@ -3,6 +3,8 @@ Parent: BeAnnex81
 Description: "Annex81 proposal and approval"
 Id: ereferral-annex-81
 * ^status = #active
+* category[annex81TechnicalType] from be-vs-annex81-technical-type (required)
+* code from be-vs-annex81-care-requested (required)
 
 
 // --------------------------------------------------------

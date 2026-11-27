@@ -20,7 +20,7 @@ Description: "Per-parameter telemonitoring rule: parameter, thresholds, target r
 * extension[parameter].extension 0..0
 * extension[parameter].url = "parameter" (exactly)
 * extension[parameter].value[x] only CodeableConcept
-* extension[parameter].valueCodeableConcept from BeVSTelemonitoringParameterType (preferred)
+* extension[parameter].valueCodeableConcept from BeVSTelemonitoringParameterType (required)
 
 // LM: monitoringPlan.baseline — reference measurement the rules are evaluated against
 // (e.g. reference weight 80 kg). Should reference a standalone Observation, not a contained one.

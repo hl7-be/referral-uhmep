@@ -1,7 +1,7 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
-  "url" : "https://www.riziv-inami.be/standards/fhir/ereferral/Requirements/fromNarrative",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/Requirements/fromNarrative",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",
