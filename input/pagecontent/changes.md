@@ -2,7 +2,13 @@ This page documents the changes proposed to the 4.0 target specification. It des
 
 ---
 
-### 2026-11-24 - v4.0.0-draft: Nursing Example Alignment
+### 2026-10-29 - v4.0.0-draft: Telemonitoring and Namespace Migration
+
+- Include the Telemonitoring medical prescription profile, mappings, vocabularies and example.
+- Define repeatable monitoring parameters and systolic/diastolic pulmonary artery pressure in the 4.0 target contract.
+- Use the published eHealth Referral package `hl7.fhir.be.referral#1.0.0` as the parent for 4.0. The 3.0 line retains its patched DRP dependency after DRP IG decommissioning.
+- Move the local canonical base provisionally to `https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral`.
+- Add a [3.0-to-4.0 migration guide](migration-3-0-to-4-0.html), including the outstanding gateway compatibility gap and regression checks.
 
 Selected Nursing examples now follow the structured Test Server scenarios for timing and session details. This documentation update does not announce new runtime functionality.
 
@@ -14,16 +20,6 @@ Selected Nursing examples now follow the structured Test Server scenarios for ti
 - Diabetes education without a care trajectory includes the individual-session detail and the feedback-to-prescriber value used by the Test Server example.
 
 </details>
-
----
-
-### 2026-10-29 - v4.0.0-draft: Telemonitoring and Namespace Migration
-
-- Include the Telemonitoring medical prescription profile, mappings, vocabularies and example.
-- Define repeatable monitoring parameters and systolic/diastolic pulmonary artery pressure in the 4.0 target contract.
-- Use the published eHealth Referral package `hl7.fhir.be.referral#1.0.0` as the parent for 4.0. The 3.0 line retains its patched DRP dependency after DRP IG decommissioning.
-- Move the local canonical base provisionally to `https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral`.
-- Add a [3.0-to-4.0 migration guide](migration-3-0-to-4-0.html), including the outstanding gateway compatibility gap and regression checks.
 
 This is a draft, not a production release announcement.
 
@@ -51,6 +47,53 @@ Locally owned artefacts use the new provisional eHealth base. The local package 
 The target gateway still configures legacy DRP ServiceRequest rewrites to the old local canonical. Runtime alignment with the new namespace remains a prerequisite to claiming API compatibility.
 
 See the [migration guide](migration-3-0-to-4-0.html) for compatibility requirements and outstanding checks.
+
+</details>
+
+---
+
+### **2026-10-28 - v3.0.0 Release: Radiology and API Contract Clarifications**
+
+This release clarifies radiology workflow behavior, makes required FHIR profile elements explicit,
+and adds examples for the updated PSS/QSI radiology terminology.
+
+A documentation update on 2026-11-18 also clarified the implemented 3.0 API contract. It is a
+documentation correction, not the announcement of newly deployed functionality.
+
+For payload compatibility checks, radiology state transitions, before/after scenarios and regression tests, see [Migration 2.1.0 to 3.0.0](migration-2-1-to-3-0.html). The announced future migration to the Referral IG and the future canonical-base change are separate from this release.
+
+<details markdown="1">
+<summary><strong>View detailed v3.0.0 release notes</strong></summary>
+
+#### API contract clarifications (2026-11-18)
+
+- A Patient cannot remove a radiology assignment. The ambulatory-track exception retains the caller's role and ownership restrictions.
+- An Organization may remove its own organization task and the dependent assignments, but cannot selectively delete an internal professional's performer task through that route.
+- Prescription extensions use `ServiceRequest.basedOn` in the implemented 3.0 creation and read mappings. `ServiceRequest.replaces` alone does not establish the extension link.
+- Required profile elements remain requirements of this IG. The reviewed gateway's embedded validation package is older and does not establish enforcement of all 3.0 cardinalities.
+
+See [Unassign a Care Provider](operation-unassign-care-provider.html), [Prescription Extension](topic-prescription-lifecycle-extension.html) and the [migration checks](migration-2-1-to-3-0.html).
+
+#### Organization and authorization clarifications (2026-11-26)
+
+This documentation update records the 3.0 organization execution-cancellation path, organization-specific list visibility, Annex 81 organization policy and organization authorization matching. It does not announce a new runtime feature or confirm deployment configuration. See [Cancel Execution](operation-cancel-execution.html), [Access Matrix](operation-access-matrix.html), [Consult Search Medical Documents](operation-consult-search-medical-documents.html) and the [migration checks](migration-2-1-to-3-0.html).
+
+#### Radiology workflow clarifications
+
+- **Remove an assignment on the ambulatory track:** An assignment may be removed while the radiology prescription is `READY` or `IN_PROGRESS` and its execution task is `ready` or `in-progress`. The task is deleted and the prescription returns to `READY`. Other tracks and prescription types retain their applicable removal rules.
+- **Complete execution on the urgency track:** Radiology execution may be completed while the prescription remains in business state `READY`. When completing an existing execution, the backend starts the caregiver activity before completing it.
+- **Cancel a radiology prescription:** A Patient may cancel a radiology prescription while its business state is `PENDING` or `READY`. This rule is specific to radiology.
+
+#### FHIR profile constraints and examples
+
+- The Annex 81 technical-type category and the nursing and diagnostic-imaging prescription-type categories are explicitly required.
+- `ServiceRequest.reasonCode` is required by the nursing and diagnostic-imaging profiles. Updated examples represent free-text reasons with the pseudonymization extension.
+- The prior diagnostic-imaging example now uses an active request, and the urgency requester example uses the PractitionerRole identifier expected by its references.
+
+#### Radiology terminology and scenarios
+
+- PSS/QSI indication and diagnostic-imaging procedure terminology is updated, including the corresponding value sets used by the diagnostic-imaging profile.
+- Ten illustrative PSS radiology business-case examples demonstrate the updated terminology in diagnostic-imaging requests.
 
 </details>
 
