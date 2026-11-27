@@ -1,0 +1,220 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/CodeSystem/be-cs-telemonitoring-completed-status-reason> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "be-cs-telemonitoring-completed-status-reason"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem be-cs-telemonitoring-completed-status-reason</b></p><a name=\"be-cs-telemonitoring-completed-status-reason\"> </a><a name=\"hcbe-cs-telemonitoring-completed-status-reason\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>snomed</td><td>snomed</td><td>Coding</td><td>Related SNOMED CT concept, when available</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-telemonitoring-completed-status-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>snomed</b></td></tr><tr><td style=\"white-space:nowrap\">patient-non-compliant<a name=\"be-cs-telemonitoring-completed-status-reason-patient-non-compliant\"> </a></td><td>The patient does not comply with the conditions of telemonitoring.</td><td/></tr><tr><td style=\"white-space:nowrap\">patient-deceased<a name=\"be-cs-telemonitoring-completed-status-reason-patient-deceased\"> </a></td><td>The patient has died.</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 419099009}\">Dead</a></td></tr><tr><td style=\"white-space:nowrap\">patient-requested-stop<a name=\"be-cs-telemonitoring-completed-status-reason-patient-requested-stop\"> </a></td><td>The patient has decided to stop telemonitoring.</td><td/></tr><tr><td style=\"white-space:nowrap\">medical-reasons<a name=\"be-cs-telemonitoring-completed-status-reason-medical-reasons\"> </a></td><td>Telemonitoring is stopped for medical reasons.</td><td/></tr><tr><td style=\"white-space:nowrap\">patient-stabilised<a name=\"be-cs-telemonitoring-completed-status-reason-patient-stabilised\"> </a></td><td>The patient has stabilised.</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 161901003}\">Chronic sick</a></td></tr><tr><td style=\"white-space:nowrap\">patient-transplanted<a name=\"be-cs-telemonitoring-completed-status-reason-patient-transplanted\"> </a></td><td>The patient received a transplant.</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\" title=\"{http://snomed.info/sct 77465005}\">Transplantation to recipient</a></td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"be-cs-telemonitoring-completed-status-reason-other\"> </a></td><td>Other (free text).</td><td/></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>patient-non-compliant</td><td>Der Patient hält die Bedingungen des Telemonitorings nicht ein.</td><td>Le patient ne respecte pas les conditions de la télésurveillance.</td><td>De patiënt leeft de voorwaarden van telemonitoring niet na.</td></tr><tr><td>patient-deceased</td><td>Der Patient ist verstorben.</td><td>Le patient est décédé.</td><td>De patiënt is overleden.</td></tr><tr><td>patient-requested-stop</td><td>Der Patient hat beschlossen, das Telemonitoring zu beenden.</td><td>Le patient a décidé d'arrêter la télésurveillance.</td><td>De patiënt heeft besloten om telemonitoring stop te zetten.</td></tr><tr><td>medical-reasons</td><td>Das Telemonitoring wird aus medizinischen Gründen beendet.</td><td>La télésurveillance est arrêtée pour des raisons médicales.</td><td>De telemonitoring wordt om medische redenen stopgezet.</td></tr><tr><td>patient-stabilised</td><td>Der Patient ist stabilisiert.</td><td>Le patient est stabilisé.</td><td>De patiënt is gestabiliseerd.</td></tr><tr><td>patient-transplanted</td><td>Der Patient hat eine Transplantation erhalten.</td><td>Le patient a reçu une transplantation.</td><td>De patiënt kreeg een transplantatie.</td></tr><tr><td>other</td><td>Sonstiges (Freitext).</td><td>Autre (texte libre).</td><td>Andere (vrije tekst).</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-telemonitoring-completed-status-reason"] ;
+  fhir:CodeSystem.version [ fhir:value "4.0.0-draft"] ;
+  fhir:CodeSystem.name [ fhir:value "BeCSTelemonitoringCompletedStatusReason"] ;
+  fhir:CodeSystem.title [ fhir:value "BeCSTelemonitoringCompletedStatusReason"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-27T13:05:37+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Riziv-Inami Platform"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Riziv-Inami Platform" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.riziv-inami.be/standards/fhir" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "support-uhmep@smals.be" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Message Structure Smals" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "email" ] ;
+       fhir:ContactPoint.value [ fhir:value "support-uhmep@smals.be" ] ;
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Status reasons for a completed telemonitoring ServiceRequest"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "BE" ] ;
+       fhir:Coding.display [ fhir:value "Belgium" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.property [
+     fhir:index -1 ;
+     fhir:CodeSystem.property.code [ fhir:value "snomed" ] ;
+     fhir:CodeSystem.property.description [ fhir:value "Related SNOMED CT concept, when available" ] ;
+     fhir:CodeSystem.property.type [ fhir:value "Coding" ]
+  ] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-non-compliant" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "The patient does not comply with the conditions of telemonitoring." ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "De patiënt leeft de voorwaarden van telemonitoring niet na." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient ne respecte pas les conditions de la télésurveillance." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Der Patient hält die Bedingungen des Telemonitorings nicht ein." ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-deceased" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "The patient has died." ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "De patiënt is overleden." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est décédé." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Der Patient ist verstorben." ]
+     ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:419099009 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "419099009" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-requested-stop" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "The patient has decided to stop telemonitoring." ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "De patiënt heeft besloten om telemonitoring stop te zetten." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a décidé d'arrêter la télésurveillance." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Der Patient hat beschlossen, das Telemonitoring zu beenden." ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "medical-reasons" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Telemonitoring is stopped for medical reasons." ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "De telemonitoring wordt om medische redenen stopgezet." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "La télésurveillance est arrêtée pour des raisons médicales." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Das Telemonitoring wird aus medizinischen Gründen beendet." ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-stabilised" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "The patient has stabilised." ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "De patiënt is gestabiliseerd." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient est stabilisé." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Der Patient ist stabilisiert." ]
+     ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:161901003 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "161901003" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "patient-transplanted" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "The patient received a transplant." ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "De patiënt kreeg een transplantatie." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Le patient a reçu une transplantation." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Der Patient hat eine Transplantation erhalten." ]
+     ] ;
+     fhir:CodeSystem.concept.property [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.property.code [ fhir:value "snomed" ] ;
+       fhir:CodeSystem.concept.property.valueCoding [
+         a sct:77465005 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "77465005" ]
+       ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Other (free text)." ] ;
+     fhir:CodeSystem.concept.designation [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Andere (vrije tekst)." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Autre (texte libre)." ]
+     ], [
+       fhir:index -1 ;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de-BE" ] ;
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Sonstiges (Freitext)." ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/CodeSystem/be-cs-telemonitoring-completed-status-reason.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,128 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "be-vs-telemonitoring-parameter-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet be-vs-telemonitoring-parameter-type</b></p><a name=\"be-vs-telemonitoring-parameter-type\"> </a><a name=\"hcbe-vs-telemonitoring-parameter-type\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Deutsch (German, de)</b></td></tr><tr><td><a href=\"http://snomed.info/id/27113001\">27113001</a></td><td>Body weight (observable entity)</td><td>Gewicht</td><td>Poids corporel</td><td>Körpergewicht</td></tr><tr><td><a href=\"http://snomed.info/id/271649006\">271649006</a></td><td>Systolic blood pressure (observable entity)</td><td>Systolische bloeddruk</td><td>Tension artérielle systolique</td><td>Systolischer Blutdruck</td></tr><tr><td><a href=\"http://snomed.info/id/271650006\">271650006</a></td><td>Diastolic blood pressure (observable entity)</td><td>Diastolische bloeddruk</td><td>Tension artérielle diastolique</td><td>Diastolischer Blutdruck</td></tr><tr><td><a href=\"http://snomed.info/id/364075005\">364075005</a></td><td>Heart rate (observable entity)</td><td>Hartslag</td><td>Fréquence cardiaque</td><td>Herzfrequenz</td></tr><tr><td><a href=\"http://snomed.info/id/250768007\">250768007</a></td><td>Pulmonary artery systolic pressure (observable entity)</td><td></td><td>Pression artérielle pulmonaire systolique (PAPs)</td><td></td></tr><tr><td><a href=\"http://snomed.info/id/250769004\">250769004</a></td><td>Pulmonary artery diastolic pressure (observable entity)</td><td></td><td>Pression artérielle pulmonaire diastolique (PAPd)</td><td></td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-parameter-type",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSTelemonitoringParameterType",
+  "title" : "Telemonitoring Parameter Type",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-11-27T13:05:37+00:00",
+  "publisher" : "Riziv-Inami Platform",
+  "contact" : [{
+    "name" : "Riziv-Inami Platform",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.riziv-inami.be/standards/fhir"
+    },
+    {
+      "system" : "email",
+      "value" : "support-uhmep@smals.be"
+    }]
+  },
+  {
+    "name" : "Message Structure Smals",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "support-uhmep@smals.be",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Clinical parameters that can be monitored in a telemonitoring request.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "BE",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "27113001",
+        "display" : "Body weight (observable entity)",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "Gewicht"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Poids corporel"
+        },
+        {
+          "language" : "de-BE",
+          "value" : "Körpergewicht"
+        }]
+      },
+      {
+        "code" : "271649006",
+        "display" : "Systolic blood pressure (observable entity)",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "Systolische bloeddruk"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Tension artérielle systolique"
+        },
+        {
+          "language" : "de-BE",
+          "value" : "Systolischer Blutdruck"
+        }]
+      },
+      {
+        "code" : "271650006",
+        "display" : "Diastolic blood pressure (observable entity)",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "Diastolische bloeddruk"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Tension artérielle diastolique"
+        },
+        {
+          "language" : "de-BE",
+          "value" : "Diastolischer Blutdruck"
+        }]
+      },
+      {
+        "code" : "364075005",
+        "display" : "Heart rate (observable entity)",
+        "designation" : [{
+          "language" : "nl-BE",
+          "value" : "Hartslag"
+        },
+        {
+          "language" : "fr-BE",
+          "value" : "Fréquence cardiaque"
+        },
+        {
+          "language" : "de-BE",
+          "value" : "Herzfrequenz"
+        }]
+      },
+      {
+        "code" : "250768007",
+        "display" : "Pulmonary artery systolic pressure (observable entity)",
+        "designation" : [{
+          "language" : "fr-BE",
+          "value" : "Pression artérielle pulmonaire systolique (PAPs)"
+        }]
+      },
+      {
+        "code" : "250769004",
+        "display" : "Pulmonary artery diastolic pressure (observable entity)",
+        "designation" : [{
+          "language" : "fr-BE",
+          "value" : "Pression artérielle pulmonaire diastolique (PAPd)"
+        }]
+      }]
+    }]
+  }
+}

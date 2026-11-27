@@ -1,0 +1,188 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/ValueSet/be-vs-imaging-modality",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeVSImagingModality",
+    "title" : "eReferral Imaging Modality ValueSet",
+    "description" : "Allowed modalities for imaging requests.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-modality"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/ValueSet/be-vs-ereferral-snomed-designation",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSeReferralSnomedDesignation",
+    "title" : "SNOMED CT eReferral Supplement Designations",
+    "description" : "SNOMED CT supplement containing multilingual designations maintained for the eReferral project.",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-care-requested",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeVSAnnex81CareRequested",
+    "title" : "eReferral Annex 81 Care Requested",
+    "description" : "Clinical care services for Annex 81 prescriptions.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-technical-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeVSAnnex81TechnicalType",
+    "title" : "eReferral Annex 81 Technical Type",
+    "description" : "Technical type for Annex 81 prescriptions.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-annex-81.html" : "EReferralAnnex81"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSDiagnosticImagingCondition",
+    "title" : "eReferral/PSS Diagnostic Imaging Condition",
+    "description" : "Clinical conditions that can support a diagnostic imaging request using SNOMED CT.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "ValueSet-ereferral-vs-imaging-patient-condition-indication.html" : "eReferral Imaging Patient Condition Indication"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSDiagnosticImagingProcedure",
+    "title" : "eReferral/PSS Diagnostic Imaging Procedure",
+    "description" : "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging",
+    "ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.html" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSHybridDiagnosticImagingProcedure",
+    "title" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure",
+    "description" : "Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT and PSS/QSI Codes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure",
+    "http://snomed.info/sct"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "BeVSNursingPrescriptionTechnicalType",
+    "title" : "eReferral Nursing Prescription Technical Type",
+    "description" : "Technical types of nursing prescriptions for routing and workflow purposes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-servicerequest-nursing.html" : "EReferralServiceRequestNursing"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSPSSQSIDiagnosticImagingProcedure",
+    "title" : "PSS/QSI Diagnostic Imaging Procedure",
+    "description" : "All PSS/QSI diagnostic imaging procedure codes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure"],
+    "uses" : {
+    },
+    "ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.html" : "Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSPSSQSIIndication",
+    "title" : "PSS/QSI Indication",
+    "description" : "Indication codes for diagnostic imaging requests as PSS Internal Codes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"],
+    "uses" : {
+    },
+    "ValueSet-ereferral-vs-imaging-patient-condition-indication.html" : "eReferral Imaging Patient Condition Indication"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSRadiologySupportingInfoRole",
+    "title" : "eReferral Radiology SupportingInfo Role ValueSet",
+    "description" : "Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role"],
+    "uses" : {
+    },
+    "StructureDefinition-be-ext-radiology-supporting-info-role.html" : "eReferral Radiology SupportingInfo Role"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-completed-status-reason",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSTelemonitoringCompletedStatusReason",
+    "title" : "Telemonitoring completed status reason",
+    "description" : "Allowed status reasons when a telemonitoring ServiceRequest is completed.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-telemonitoring-completed-status-reason"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-servicerequest-telemonitoring.html" : "eReferralServiceRequestTelemonitoring"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-parameter-type",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSTelemonitoringParameterType",
+    "title" : "Telemonitoring Parameter Type",
+    "description" : "Clinical parameters that can be monitored in a telemonitoring request.",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-be-ext-telemonitoring-plan.html" : "Telemonitoring plan"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-period-unit",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSTelemonitoringPeriodUnit",
+    "title" : "Telemonitoring period unit",
+    "description" : "Allowed UCUM time units for telemonitoring period configuration.",
+    "systems" : ["http://unitsofmeasure.org"]
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-prescription-technical-type",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "BeVSTelemonitoringTechnicalType",
+    "title" : "eReferral Telemonitoring Prescription Technical Type",
+    "description" : "Technical types of telemonitoring prescriptions for routing and workflow purposes.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-servicerequest-telemonitoring.html" : "eReferralServiceRequestTelemonitoring"
+  },
+  {
+    "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication",
+    "version" : "4.0.0-draft",
+    "status" : "draft",
+    "name" : "EReferralVSImagingPatientConditionIndication",
+    "title" : "eReferral Imaging Patient Condition Indication",
+    "description" : "Allowed coded indications for patient condition in diagnostic imaging.",
+    "systems" : ["https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
+    "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ereferral-servicerequest-diagnosticimaging.html" : "EReferralServiceRequestDiagnosticImaging"
+  }]
+}

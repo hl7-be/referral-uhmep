@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="inami.fhir.be.ereferral"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide inami.fhir.be.ereferral</b></p><a name="inami.fhir.be.ereferral"> </a><a name="hcinami.fhir.be.ereferral"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>EReferral</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/ImplementationGuide/inami.fhir.be.ereferral</pre><div><p>eReferral Implementation Guide</p>
+</div></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/ImplementationGuide/inami.fhir.be.ereferral"/>
+  <version value="4.0.0-draft"/>
+  <name value="EReferral"/>
+  <title value="eReferral Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2026-10-29"/>
+  <publisher value="Riziv-Inami Platform"/>
+  <contact>
+    <name value="Riziv-Inami Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.riziv-inami.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure Smals"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="eReferral Implementation Guide"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="inami.fhir.be.ereferral"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.5.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.4.1"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_be_core">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/core/ImplementationGuide/hl7.fhir.be.core"/>
+    <packageId value="hl7.fhir.be.core"/>
+    <version value="2.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_be_core_clinical">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/core-clinical/ImplementationGuide/hl7.fhir.be.core-clinical"/>
+    <packageId value="hl7.fhir.be.core-clinical"/>
+    <version value="1.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_be_referral">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/referral/ImplementationGuide/hl7.fhir.be.referral"/>
+    <packageId value="hl7.fhir.be.referral"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_be_infsec">
+    <uri value="https://www.ehealth.fgov.be/standards/fhir/infsec/ImplementationGuide/hl7.fhir.be.infsec"/>
+    <packageId value="hl7.fhir.be.infsec"/>
+    <version value="1.3.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.3.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2026+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Draft for review"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="shownav"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-multiples"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-for-patients-without-trajectory"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type-with-trajectory"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-generic-care-types"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-glycemia-measurement-timing"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-session-types"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-diabetic-education-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-implant-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-modality"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-imaging-priority"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-monitoring-comparator"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-request-track"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-telemonitoring-completed-status-reason"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-care-requested"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-medical-problem"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-nursing-diagnosis"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-annex81-technical-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-laterality"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-site"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-body-topography"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-categories-of-care"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diabetes-education-identifier"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-education-type-with-trajectory"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-education-type-without-trajectory"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-educator-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-glycemia-measurement-time"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-note-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-care-requested"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-nursing-prescription-technical-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-parameter-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-sample-substance-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-session-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-session-type-extended"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-prescription-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-implant-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-imaging-modality"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-imaging-priority"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-request-track"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-completed-status-reason"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-parameter-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-period-unit"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-prescription-technical-type"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-telemonitoring-completed-status-reason"/>
+      </reference>
+      <name value="BeCSTelemonitoringCompletedStatusReason"/>
+      <description value="Status reasons for a completed telemonitoring ServiceRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-ext-codeable-concept"/>
+      </reference>
+      <name value="CodeableConcept Extension for Reference"/>
+      <description value="Extension able to hold a coded concept on a Reference element."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-ereferral-designation-use"/>
+      </reference>
+      <name value="eReferral Designation Use"/>
+      <description value="Identifies terminology designations maintained specifically for the eReferral project."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ereferral-vs-imaging-patient-condition-indication"/>
+      </reference>
+      <name value="eReferral Imaging Patient Condition Indication"/>
+      <description value="Allowed coded indications for patient condition in diagnostic imaging."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-ext-radiology-supporting-info-role"/>
+      </reference>
+      <name value="eReferral Radiology SupportingInfo Role"/>
+      <description value="Identifies the role of a ServiceRequest.supportingInfo entry used in a diagnostic imaging referral."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-radiology-supporting-info-role"/>
+      </reference>
+      <name value="eReferral Radiology SupportingInfo Role CodeSystem"/>
+      <description value="Identifies the role represented by an entry in ServiceRequest.supportingInfo for a diagnostic imaging referral."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-radiology-supporting-info-role"/>
+      </reference>
+      <name value="eReferral Radiology SupportingInfo Role ValueSet"/>
+      <description value="Allowed roles for entries in ServiceRequest.supportingInfo in a diagnostic imaging referral."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-telemonitoring-prescription-technical-type"/>
+      </reference>
+      <name value="eReferral Telemonitoring Prescription Technical Type"/>
+      <description value="Technical types of telemonitoring prescriptions for routing and workflow purposes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/ereferral-referral-task"/>
+      </reference>
+      <name value="ereferral-referral-task"/>
+      <description value="Example referral task associated with a nursing prescription."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-diagnostic-imaging-condition"/>
+      </reference>
+      <name value="eReferral/PSS Diagnostic Imaging Condition"/>
+      <description value="Clinical conditions that can support a diagnostic imaging request using SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-diagnostic-imaging-procedure"/>
+      </reference>
+      <name value="eReferral/PSS Diagnostic Imaging Procedure"/>
+      <description value="Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ereferral-annex-81"/>
+      </reference>
+      <name value="EReferralAnnex81"/>
+      <description value="Annex81 proposal and approval"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ereferral-imaging-attention-conditions-response"/>
+      </reference>
+      <name value="EReferralImagingAttentionConditionsResponse"/>
+      <description value="eReferral response to the imaging attention conditions questionnaire."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+      </reference>
+      <name value="EReferralServiceRequestDiagnosticImaging"/>
+      <description value="The diagnostic imaging profile. eReferral version."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ereferral-servicerequest-nursing"/>
+      </reference>
+      <name value="EReferralServiceRequestNursing"/>
+      <description value="The nursing profile, generic version. Please note the nursing referral for medication does NOT depend on this generic version but is a FHIR prodfile on a different FHIR resource (MedicationRequest)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ereferral-servicerequest-telemonitoring"/>
+      </reference>
+      <name value="eReferralServiceRequestTelemonitoring"/>
+      <description value="The telemonitoring profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/67120919457"/>
+      </reference>
+      <name value="Example nurse identified by SSIN"/>
+      <description value="Example nurse referenced by the eReferral examples."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/67120919457-NURSE"/>
+      </reference>
+      <name value="Example nurse role"/>
+      <description value="Nurse role whose identifier follows the {ssin}-{discipline} convention."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/72101230445"/>
+      </reference>
+      <name value="Example physician identified by SSIN"/>
+      <description value="Example physician referenced by the eReferral examples."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/72101230445-PHYSICIAN"/>
+      </reference>
+      <name value="Example physician role"/>
+      <description value="Physician role whose identifier follows the {ssin}-{discipline} convention."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-med-preparation-appendix-81"/>
+      </reference>
+      <name value="Example: Annex 81 - Preparing medication (proposal)"/>
+      <description value="Example of an Annex 81 ServiceRequest proposal for preparing medication.&#xA;&#xA;Inputs and values used in this example:&#xA;- Profile: be-annex-81&#xA;- Intent: proposal&#xA;- Prescription type: medication-prefill-preparation-appendix-81&#xA;- Procedure code (SNOMED): 385796006&#xA;- Validity period: 2026-02-18 - 2027-02-18&#xA;- Requester role: nurse (PractitionerRole/67120919457-NURSE)&#xA;- Indications (reasonCode - 13 SNOMED codes):&#xA;  * 1290542000&#xA;  * 129834002&#xA;  * 271299001&#xA;  * 275928001&#xA;  * 359748005&#xA;  * 448176008&#xA;  * 62014003&#xA;  * 708014007&#xA;  * 1137439008&#xA;  * 211071000172100&#xA;  * 211101000172107&#xA;  * 397540003&#xA;  * 52448006"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-annex-81"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-bloodletting"/>
+      </reference>
+      <name value="Example: Bloodletting"/>
+      <description value="Example of therapeutic bloodletting including quantity.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: bloodletting&#xA;- Procedure code (SNOMED): 127606004&#xA;- Quantity: 300 mL&#xA;- Validity start date: 2026-02-18&#xA;- Timing:&#xA;  * boundsDuration: 1 week&#xA;  * count: 3&#xA;  * frequency: 3&#xA;  * period: 1 week&#xA;- Medical reason (SNOMED): 404684003&#xA;- Notes:&#xA;  * medical-reason"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-chronic-dialysis"/>
+      </reference>
+      <name value="Example: Chronic home dialysis"/>
+      <description value="Example of chronic home dialysis prescription.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: chronic-dialysis&#xA;- Procedure code (SNOMED): 225230008&#xA;- Validity start date: 2026-02-18&#xA;- Timing:&#xA;  * boundsDuration: 2 months&#xA;  * count: 9&#xA;  * frequency: 1&#xA;  * period: 1 week&#xA;- Feedback to prescriber: true&#xA;- Medical reason (SNOMED): 404684003&#xA;- Notes:&#xA;  * medical-reason&#xA;  * contraindication&#xA;  * general-remarks"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-de-convention-center"/>
+      </reference>
+      <name value="Example: Diabetes education via convention centre"/>
+      <description value="Example of diabetes education delivered through a convention centre.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: diabetic-education-convention-center&#xA;- Education code (SNOMED): 385805005&#xA;- Education subtype (SNOMED): 211141000172109&#xA;- Education type: diabetic-education-other&#xA;- Validity period: 2026-02-18 - 2027-02-18&#xA;- Timing:&#xA;  * boundsDuration: 4 months&#xA;  * count: 52&#xA;  * frequency: 3&#xA;  * period: 1 week&#xA;- Feedback to prescriber: false&#xA;- Notes:&#xA;  * general-remarks"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-de-within-care-trajectory"/>
+      </reference>
+      <name value="Example: Diabetes education within care trajectory"/>
+      <description value="Example of diabetes education within an established care pathway.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: diabetic-education-within-care-trajectory&#xA;- Education code (SNOMED): 385805005&#xA;- Education subtype (SNOMED): 370858005&#xA;- Education type: diabetic-education-additional-hba1c&#xA;- Session type: group-session&#xA;- Performer types (SNOMED):&#xA;  * 106292003&#xA;  * 224543004&#xA;- Validity period: 2026-02-18 - 2026-12-31&#xA;- Number of sessions: 5"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-de-within-start-trajectory"/>
+      </reference>
+      <name value="Example: Diabetes education within start trajectory"/>
+      <description value="Example of diabetes education within a start trajectory.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: diabetic-education-within-start-trajectory&#xA;- Education code (SNOMED): 385805005&#xA;- Education subtype (SNOMED): 211151000172106&#xA;- Session type: individual-session&#xA;- Validity period: 2026-02-18 – 2026-12-31&#xA;- Number of sessions (count): 4&#xA;- Performer type (SNOMED): 224543004&#xA;- Feedback to prescriber: false&#xA;- Notes:&#xA;  * general-remarks"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-de-without-care-trajectory"/>
+      </reference>
+      <name value="Example: Diabetes education without care trajectory"/>
+      <description value="Example of diabetes education for patients without a care trajectory.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: diabetic-education-without-care-trajectory&#xA;- Education code (SNOMED): 385805005&#xA;- Education subtype (SNOMED): 211161000172108&#xA;- Education type: diabetic-education-self-care&#xA;- Validity start date: 2026-02-18&#xA;- Timing:&#xA;  * boundsDuration: 3 weeks&#xA;  * count: 21&#xA;  * frequency: 1&#xA;  * period: 1 day&#xA;- Feedback to prescriber: true&#xA;- Notes:&#xA;  * general-remarks"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-clinical-imaging"/>
+      </reference>
+      <name value="Example: Diagnostic imaging referral"/>
+      <description value="Example of a diagnostic imaging referral prescription with contained patient and imaging attention questionnaire response."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-generic"/>
+      </reference>
+      <name value="Example: Generic nursing care"/>
+      <description value="Example of a generic nursing ServiceRequest.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: generic-nursing&#xA;- Care code (SNOMED): 9632001&#xA;- Care detail (orderDetail): preparation-and-administration-of-medication-for-psychiatric-patient&#xA;- Validity start date: 2026-02-18&#xA;- Timing:&#xA;  * boundsDuration: 4 months&#xA;  * count: 360&#xA;  * frequency: 3&#xA;  * period: 1 day&#xA;- Priority: routine&#xA;- Feedback to prescriber: false&#xA;- Medical reason (SNOMED): 404684003&#xA;- Notes:&#xA;  * medical-reason&#xA;  * contraindication&#xA;  * general-remarks"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-glycemic-test"/>
+      </reference>
+      <name value="Example: Glycemic control with glucometer"/>
+      <description value="Example of glycemic monitoring using a glucometer.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: glycemic-test&#xA;- Procedure code (SNOMED): 166900001&#xA;- Measurement timing: before-insulin-administration&#xA;- Validity start date: 2026-02-18&#xA;- Timing:&#xA;  * boundsDuration: 3 weeks&#xA;  * count: 21&#xA;  * frequency: 1&#xA;  * period: 1 day&#xA;- Medical reason (SNOMED): 404684003&#xA;- Notes:&#xA;  * medical-reason&#xA;  * contraindication&#xA;  * general-remarks"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-hygienic-care"/>
+      </reference>
+      <name value="Example: Hygienic care"/>
+      <description value="Example of hygienic nursing care.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: hygienic-care&#xA;- Procedure code (SNOMED): 225964003&#xA;- Validity start date: 2026-02-18&#xA;- Timing:&#xA;  * boundsDuration: 3 months&#xA;  * count: 39&#xA;  * frequency: 3&#xA;  * period: 1 week&#xA;- Notes:&#xA;  * medical-reason"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-parameters"/>
+      </reference>
+      <name value="Example: Measurement of parameters"/>
+      <description value="Example of clinical parameter monitoring.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: parameters&#xA;- Procedure code (SNOMED): 61746007&#xA;- Parameter detail (SNOMED): 431314004&#xA;- Validity start date: 2026-02-18&#xA;- Timing:&#xA;  * boundsDuration: 2 months&#xA;  * count: 180&#xA;  * frequency: 3&#xA;  * period: 1 day&#xA;  * when: C&#xA;- Medical reason (SNOMED): 404684003&#xA;- Notes:&#xA;  * medical-reason"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-med-prep-not-refunded"/>
+      </reference>
+      <name value="Example: Preparation of medicines (not refunded)"/>
+      <description value="Example of non-reimbursed medication prefill preparation.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: medication-prefill-preparation-not-refunded&#xA;- Procedure code (SNOMED): 385796006&#xA;- Validity period: 2026-02-18 – 2027-02-18&#xA;- Timing:&#xA;  * frequency: 3&#xA;  * period: 1 week&#xA;- Medical reason (SNOMED): 404684003&#xA;- Notes:&#xA;  * contraindication&#xA;  * general-remarks"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-prior-drp-clinical-imaging"/>
+      </reference>
+      <name value="Example: Prior diagnostic imaging referral"/>
+      <description value="A complete prior diagnostic imaging prescription referenced by the main diagnostic imaging example."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-nursing-sampling"/>
+      </reference>
+      <name value="Example: Sample collection"/>
+      <description value="Example of a biological sample collection prescription.&#xA;&#xA;Inputs and values used in this example:&#xA;- Prescription type: sampling&#xA;- Procedure code (SNOMED): 17636008&#xA;- Sampling detail (SNOMED): 78014005&#xA;- Occurrence count: 1&#xA;- Validity start date: 2026-02-18&#xA;- Medical reason (SNOMED): 404684003&#xA;- Notes:&#xA;  * medical-reason&#xA;  * contraindication"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-drp-telemonitoring-chronic-heart-failure"/>
+      </reference>
+      <name value="Example: Telemonitoring prescription for chronic heart failure"/>
+      <description value="Example of a medical telemonitoring prescription for chronic heart failure.&#xA;&#xA;Inputs and values used in this example:&#xA;- Profile: ereferral-servicerequest-telemonitoring&#xA;- Prescription type: telemonitoring-chronic-heart-failure&#xA;- Discipline (SNOMED): 394579002&#xA;- Procedure code (SNOMED): 879780004&#xA;- Diagnosis (SNOMED): 84114007&#xA;- Validity period: 2026-05-22 - 2026-11-22&#xA;- Monitoring plan:&#xA;  * Body weight increase of 2 kg over 3 days&#xA;  * Systolic blood pressure threshold 160 mm[Hg]&#xA;  * Diastolic blood pressure threshold 100 mm[Hg]&#xA;  * Heart rate threshold 110 /min&#xA;- Patient SSIN is pseudonymized&#xA;- Diagnosis detail and general remarks are pseudonymized encrypted text"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-telemonitoring"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-telemonitoring-reference-weight"/>
+      </reference>
+      <name value="Example: telemonitoring reference weight"/>
+      <description value="Illustrative baseline weight referenced by the chronic heart failure telemonitoring example. Not clinical guidance."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-hybrid-diagnostic-imaging-procedure"/>
+      </reference>
+      <name value="Hybrid SNOMED CT and PSS/QSI Diagnostic Imaging Procedure"/>
+      <description value="Diagnostic care services that can be prescribed for diagnostic imaging using SNOMED CT and PSS/QSI Codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner2"/>
+      </reference>
+      <name value="Nurse"/>
+      <description value="Example practitioner acting as a nurse."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/NURSE-45094508408"/>
+      </reference>
+      <name value="Nurse Requester"/>
+      <description value="Nurse acting as a Requester"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Requester1"/>
+      </reference>
+      <name value="Physician"/>
+      <description value="Example practitioner acting as a requesting physician."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/DOCTOR-10829059004"/>
+      </reference>
+      <name value="Physician Requester"/>
+      <description value="Physician acting as a Requester"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-pss-qsi-indications"/>
+      </reference>
+      <name value="PSS Indication"/>
+      <description value="PSS indication codes for diagnostic imaging requests."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-01"/>
+      </reference>
+      <name value="PSS radiology scenario 01"/>
+      <description value="PSS radiology example for progressive dyspnea and suspected pulmonary edema, using a chest X-ray order."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-02"/>
+      </reference>
+      <name value="PSS radiology scenario 02"/>
+      <description value="PSS radiology example for persistent symptoms of pneumonia, using a chest X-ray order."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-03"/>
+      </reference>
+      <name value="PSS radiology scenario 03"/>
+      <description value="PSS radiology example for chest pain with a normal EKG, using MR angiography of the heart."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-04"/>
+      </reference>
+      <name value="PSS radiology scenario 04"/>
+      <description value="PSS radiology example for new headaches during pregnancy, using a non-contrast head CT."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-05"/>
+      </reference>
+      <name value="PSS radiology scenario 05"/>
+      <description value="PSS radiology example for tongue weakness, using an MRI of the head with and without contrast."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-06"/>
+      </reference>
+      <name value="PSS radiology scenario 06"/>
+      <description value="PSS radiology example for head trauma with persistent headaches and prior stroke, using MR angiography of the head."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-07"/>
+      </reference>
+      <name value="PSS radiology scenario 07"/>
+      <description value="PSS radiology example for a child with head trauma and persistent headaches, using MR angiography of the head."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-08"/>
+      </reference>
+      <name value="PSS radiology scenario 08"/>
+      <description value="PSS radiology example for asymptomatic stage I breast cancer, using breast MRI without contrast."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-09"/>
+      </reference>
+      <name value="PSS radiology scenario 09"/>
+      <description value="PSS radiology example for abnormal sputum and persistent cough, using a chest X-ray order."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-pss-radiology-scenario-10"/>
+      </reference>
+      <name value="PSS radiology scenario 10"/>
+      <description value="PSS radiology example for tongue and facial weakness, using contrast-enhanced head CT."/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure"/>
+      </reference>
+      <name value="PSS/QSI Diagnostic Imaging Procedure"/>
+      <description value="All PSS/QSI diagnostic imaging procedure codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure"/>
+      </reference>
+      <name value="PSS/QSI Diagnostic Imaging Procedure"/>
+      <description value="PSS/QSI diagnostic imaging procedure codes with English displays and Belgian French, Dutch and German designations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-pss-qsi-indication"/>
+      </reference>
+      <name value="PSS/QSI Indication"/>
+      <description value="Indication codes for diagnostic imaging requests as PSS Internal Codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-ereferral-snomed-designation"/>
+      </reference>
+      <name value="SNOMED CT eReferral Supplement Designations"/>
+      <description value="SNOMED CT supplement containing multilingual designations maintained for the eReferral project."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/be-cs-ereferral-snomed-designation"/>
+      </reference>
+      <name value="SNOMED CT eReferral Supplement Designations"/>
+      <description value="SNOMED CT supplement containing multilingual designations maintained for the eReferral project."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-telemonitoring-completed-status-reason"/>
+      </reference>
+      <name value="Telemonitoring completed status reason"/>
+      <description value="Allowed status reasons when a telemonitoring ServiceRequest is completed."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-telemonitoring-parameter-type"/>
+      </reference>
+      <name value="Telemonitoring Parameter Type"/>
+      <description value="Clinical parameters that can be monitored in a telemonitoring request."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-vs-telemonitoring-period-unit"/>
+      </reference>
+      <name value="Telemonitoring period unit"/>
+      <description value="Allowed UCUM time units for telemonitoring period configuration."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-ext-telemonitoring-plan"/>
+      </reference>
+      <name value="Telemonitoring plan"/>
+      <description value="Per-parameter telemonitoring rule: parameter, thresholds, target range, change limits."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/DOCTOR-12009390800"/>
+      </reference>
+      <name value="Urgency Physician Requester"/>
+      <description value="Urgency Physician acting as a Requester"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="eReferral Implementation Guide"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="migration-3-0-to-4-0.html"/>
+        <title value="Migration 3.0.0 to 4.0.0-draft"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="topic-profiles-architecture.html"/>
+        <title value="Profiles Architecture"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="topic-profile-rewriting.html"/>
+        <title value="Profile Rewriting"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="topic-prescription-lifecycle.html"/>
+        <title value="Life Cycle"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="topic-prescription-lifecycle-proposal.html"/>
+          <title value="Proposal Life Cycle"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="topic-prescription-lifecycle-extension.html"/>
+          <title value="Prescription Extension"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="topic-prescription-templates.html"/>
+        <title value="Prescription Templates"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="topic-visibility-blacklisting.html"/>
+        <title value="Visibility &amp; Blacklisting"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="api-integration.html"/>
+        <title value="API Integration"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="api-operations.html"/>
+        <title value="API Operations"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="operation-access-matrix.html"/>
+          <title value="Access Matrix"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-create-medical-document.html"/>
+          <title value="Create a Medical Document"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-consult-search-medical-documents.html"/>
+          <title value="Consult or Search Medical Documents"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-complete-medical-document.html"/>
+          <title value="Complete a Medical Document"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-cancel-medical-document.html"/>
+          <title value="Cancel a Medical Document"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-assign-care-provider.html"/>
+          <title value="Assign a Care Provider"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-unassign-care-provider.html"/>
+          <title value="Unassign a Care Provider"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-record-execution-start.html"/>
+          <title value="Record Execution Start"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-record-execution-end.html"/>
+          <title value="Record Execution End"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-record-execution-interruption.html"/>
+          <title value="Record Execution Interruption"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-cancel-execution.html"/>
+          <title value="Cancel Execution"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-evaluate-proposal.html"/>
+          <title value="Evaluate Proposal"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="operation-evaluate-radiology-prescription.html"/>
+          <title value="Evaluate Radiology Prescription"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="api-complex-operations.html"/>
+          <title value="Complex Operations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="error-codes.html"/>
+          <title value="Error Codes"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="mappings-business.html"/>
+        <title value="Domain &amp; Mapping"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="domain-nursing.html"/>
+          <title value="Nursing"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="domain-nursing-specification.html"/>
+            <title value="Nursing Specification"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="mappings-nursing.html"/>
+            <title value="Nursing Mapping"/>
+            <generation value="markdown"/>
+            <page>
+              <nameUrl value="mapper-nursing-generic.html"/>
+              <title value="Generic Nursing"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-bloodletting.html"/>
+              <title value="Bloodletting"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-chronic-dialysis.html"/>
+              <title value="Chronic Dialysis"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-diabetes-education-convention-center.html"/>
+              <title value="Diabetes Education via Convention Centre"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-diabetes-education-start-trajectory.html"/>
+              <title value="Diabetes Education within Start Trajectory"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-diabetes-education-care-trajectory.html"/>
+              <title value="Diabetes Education within Care Trajectory"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-diabetes-education-without-trajectory.html"/>
+              <title value="Diabetes Education without Trajectory"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-glycemic-test.html"/>
+              <title value="Glycemic Test"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-hygienic-care.html"/>
+              <title value="Hygienic Care"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-medication-prefill-not-refunded.html"/>
+              <title value="Medication Prefill Preparation Not Refunded"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-parameters.html"/>
+              <title value="Parameters"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-sampling.html"/>
+              <title value="Sampling"/>
+              <generation value="markdown"/>
+            </page>
+            <page>
+              <nameUrl value="mapper-nursing-annex81-medication-preparation.html"/>
+              <title value="Annex 81 Medication Preparation"/>
+              <generation value="markdown"/>
+            </page>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="domain-radiology.html"/>
+          <title value="Radiology"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="domain-radiology-specification.html"/>
+            <title value="Radiology Specification"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="mappings-radiology.html"/>
+            <title value="Radiology Mapping"/>
+            <generation value="markdown"/>
+            <page>
+              <nameUrl value="mapper-radiology-diagnostic-imaging.html"/>
+              <title value="Diagnostic Imaging"/>
+              <generation value="markdown"/>
+            </page>
+          </page>
+        </page>
+        <page>
+          <nameUrl value="domain-telemonitoring.html"/>
+          <title value="Telemonitoring"/>
+          <generation value="markdown"/>
+          <page>
+            <nameUrl value="domain-telemonitoring-specification.html"/>
+            <title value="Telemonitoring Specification"/>
+            <generation value="markdown"/>
+          </page>
+          <page>
+            <nameUrl value="mappings-telemonitoring.html"/>
+            <title value="Telemonitoring Mapping"/>
+            <generation value="markdown"/>
+            <page>
+              <nameUrl value="mapper-telemonitoring-chronic-heart-failure.html"/>
+              <title value="Chronic Heart Failure Telemonitoring"/>
+              <generation value="markdown"/>
+            </page>
+          </page>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="technical.html"/>
+        <title value="Technical"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="test-server.html"/>
+        <title value="Test Server"/>
+        <generation value="markdown"/>
+        <page>
+          <nameUrl value="test-server-p2m-payload-generic-nursing.html"/>
+          <title value="P2M Nursing - Generic Nursing Care"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-medication-prefill.html"/>
+          <title value="P2M Nursing - Medication Prefill Preparation"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-diabetes-convention-centre.html"/>
+          <title value="P2M Nursing - Diabetes Convention Centre"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-diabetes-start-trajectory.html"/>
+          <title value="P2M Nursing - Diabetes Start Trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-diabetes-care-trajectory.html"/>
+          <title value="P2M Nursing - Diabetes Care Trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-diabetes-without-care-trajectory.html"/>
+          <title value="P2M Nursing - Diabetes Without Care Trajectory"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-personal-hygiene.html"/>
+          <title value="P2M Nursing - Personal Hygiene"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-peritoneal-dialysis.html"/>
+          <title value="P2M Nursing - Peritoneal Dialysis"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-glycemia-test.html"/>
+          <title value="P2M Nursing - Glycemia Test"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-sampling.html"/>
+          <title value="P2M Nursing - Sampling"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-bloodletting.html"/>
+          <title value="P2M Nursing - Bloodletting"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <nameUrl value="test-server-p2m-payload-parameters.html"/>
+          <title value="P2M Nursing - Parameters"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="glossary.html"/>
+        <title value="Glossary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

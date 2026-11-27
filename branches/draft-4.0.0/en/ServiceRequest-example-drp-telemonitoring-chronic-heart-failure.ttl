@@ -1,0 +1,454 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/ServiceRequest/example-drp-telemonitoring-chronic-heart-failure> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "example-drp-telemonitoring-chronic-heart-failure"] ;
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "{{kid}}" ] ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "key" ] ;
+         fhir:Extension.valueString [
+           fhir:value "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}" ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Element.extension [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "marker" ] ;
+               fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "format" ] ;
+               fhir:Extension.valueCode [ fhir:value "direct" ]
+             ], [
+               fhir:index -1 ;
+               fhir:Extension.url [ fhir:value "version" ] ;
+               fhir:Extension.valuePositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+             ] ;
+             fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-key-pseudonymization" ]
+     ] ;
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-telemonitoring" ;
+       fhir:index -1 ;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-telemonitoring>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest example-drp-telemonitoring-chronic-heart-failure</b></p><a name=\"example-drp-telemonitoring-chronic-heart-failure\"> </a><a name=\"hcexample-drp-telemonitoring-chronic-heart-failure\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ereferral-servicerequest-telemonitoring.html\">eReferralServiceRequestTelemonitoring</a></p></div><p><b>BeValidityPeriod</b>: 2026-05-22 --&gt; 2026-11-22</p><blockquote><p><b>Telemonitoring plan</b></p><ul><li>parameter: <span title=\"Codes:{http://snomed.info/sct 27113001}\">Body weight (observable entity)</span></li><li>baseline: <a href=\"Observation-example-telemonitoring-reference-weight.html\">Observation Body weight</a></li><li>change: 2 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span>/3 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></li><li>change: -2 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span>/3 d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  coded = 'd')</span></li></ul></blockquote><blockquote><p><b>Telemonitoring plan</b></p><blockquote><p><b>url</b></p>parameter</blockquote><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 271649006}\">Systolic blood pressure (observable entity)</span></p><p><b>range</b>: 160-?</p><blockquote><p><b>url</b></p>threshold</blockquote><p><b>range</b>: ?-90</p><blockquote><p><b>url</b></p>threshold</blockquote></blockquote><blockquote><p><b>Telemonitoring plan</b></p><blockquote><p><b>url</b></p>parameter</blockquote><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 271650006}\">Diastolic blood pressure (observable entity)</span></p><p><b>range</b>: 100-?</p><blockquote><p><b>url</b></p>threshold</blockquote><p><b>range</b>: ?-60</p><blockquote><p><b>url</b></p>threshold</blockquote></blockquote><blockquote><p><b>Telemonitoring plan</b></p><blockquote><p><b>url</b></p>parameter</blockquote><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 364075005}\">Heart rate (observable entity)</span></p><p><b>range</b>: 110-?</p><blockquote><p><b>url</b></p>threshold</blockquote><p><b>range</b>: ?-50</p><blockquote><p><b>url</b></p>threshold</blockquote></blockquote><blockquote><p><b>Telemonitoring plan</b></p><blockquote><p><b>url</b></p>parameter</blockquote><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 250768007}\">Pulmonary artery systolic pressure (observable entity)</span></p><p><b>range</b>: 50-?</p><blockquote><p><b>url</b></p>threshold</blockquote><p><b>range</b>: ?-10</p><blockquote><p><b>url</b></p>threshold</blockquote></blockquote><blockquote><p><b>Telemonitoring plan</b></p><blockquote><p><b>url</b></p>parameter</blockquote><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 250769004}\">Pulmonary artery diastolic pressure (observable entity)</span></p><p><b>range</b>: 30-?</p><blockquote><p><b>url</b></p>threshold</blockquote><p><b>range</b>: ?-5</p><blockquote><p><b>url</b></p>threshold</blockquote></blockquote><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 394579002}\">Cardiology</span>, <span title=\"Codes:{https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type telemonitoring-chronic-heart-failure}\">telemonitoring-chronic-heart-failure</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 879780004}\">Telehealth monitoring for chronic heart failure</span></p><p><b>subject</b>: Identifier: <a href=\"https://www.ehealth.fgov.be/standards/fhir/core/2.1.2/NamingSystem-be-ssin.html\" title=\"NISS/INSZ\">BeSSINNamingSystem</a>/urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}} (use: official)</p><p><b>occurrence</b>: Once per 1 day</p><p><b>authoredOn</b>: 2026-05-22 09:30:00+0200</p><p><b>requester</b>: <a href=\"PractitionerRole-72101230445-PHYSICIAN.html\">Physician Example (official) (https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin#BeSSINNamingSystem#72101230445 (use: official)): physician</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 48447003}\">Chronic heart failure</span></p><p><b>note</b>: </p><blockquote><div><p>urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}</p>\n</div></blockquote></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-validity-period" ] ;
+     fhir:Extension.valuePeriod [
+       fhir:Period.start [ fhir:value "2026-05-22"^^xsd:date ] ;
+       fhir:Period.end [ fhir:value "2026-11-22"^^xsd:date ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "parameter" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           a sct:27113001 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "27113001" ] ;
+           fhir:Coding.display [ fhir:value "Body weight (observable entity)" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "baseline" ] ;
+       fhir:Extension.valueReference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/Observation/example-telemonitoring-reference-weight> ;
+         fhir:Reference.reference [ fhir:value "Observation/example-telemonitoring-reference-weight" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "change" ] ;
+       fhir:Extension.valueRatio [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "kg" ]
+         ] ;
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "d" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "change" ] ;
+       fhir:Extension.valueRatio [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "-2"^^xsd:decimal ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "kg" ]
+         ] ;
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ] ;
+           fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+           fhir:Quantity.code [ fhir:value "d" ]
+         ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "parameter" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           a sct:271649006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "271649006" ] ;
+           fhir:Coding.display [ fhir:value "Systolic blood pressure (observable entity)" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.low [
+             fhir:Quantity.value [ fhir:value "160"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.high [
+             fhir:Quantity.value [ fhir:value "90"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "parameter" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           a sct:271650006 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "271650006" ] ;
+           fhir:Coding.display [ fhir:value "Diastolic blood pressure (observable entity)" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.low [
+             fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.high [
+             fhir:Quantity.value [ fhir:value "60"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "parameter" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           a sct:364075005 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "364075005" ] ;
+           fhir:Coding.display [ fhir:value "Heart rate (observable entity)" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.low [
+             fhir:Quantity.value [ fhir:value "110"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "/min" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.high [
+             fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "/min" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "parameter" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           a sct:250768007 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "250768007" ] ;
+           fhir:Coding.display [ fhir:value "Pulmonary artery systolic pressure (observable entity)" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.low [
+             fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.high [
+             fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "parameter" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           a sct:250769004 ;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+           fhir:Coding.code [ fhir:value "250769004" ] ;
+           fhir:Coding.display [ fhir:value "Pulmonary artery diastolic pressure (observable entity)" ]
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.low [
+             fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "range" ] ;
+         fhir:Extension.valueRange [
+           fhir:Range.high [
+             fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ] ;
+             fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+             fhir:Quantity.code [ fhir:value "mm[Hg]" ]
+           ]
+         ]
+       ] ;
+       fhir:Extension.url [ fhir:value "threshold" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan" ]
+  ] ;
+  fhir:ServiceRequest.status [ fhir:value "active"] ;
+  fhir:ServiceRequest.intent [ fhir:value "order"] ;
+  fhir:ServiceRequest.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:394579002 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "394579002" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type" ] ;
+       fhir:Coding.code [ fhir:value "telemonitoring-chronic-heart-failure" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:879780004 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "879780004" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.subject [
+     fhir:Reference.identifier [
+       fhir:Identifier.use [ fhir:value "official" ] ;
+       fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin" ] ;
+       fhir:Identifier.value [
+         fhir:value "urn:be:fgov:pseudo:v2:{{SEC1}}:{{transit-info}}" ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "marker" ] ;
+             fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "format" ] ;
+             fhir:Extension.valueCode [ fhir:value "direct" ]
+           ], [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "version" ] ;
+             fhir:Extension.valuePositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+           ] ;
+           fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+         ]
+       ]
+     ]
+  ] ;
+  fhir:ServiceRequest.occurrenceTiming [
+     fhir:Timing.repeat [
+       fhir:Timing.repeat.boundsDuration [
+         fhir:Quantity.value [ fhir:value "6"^^xsd:decimal ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mo" ]
+       ] ;
+       fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ] ;
+       fhir:Timing.repeat.period [ fhir:value "1"^^xsd:decimal ] ;
+       fhir:Timing.repeat.periodUnit [ fhir:value "d" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.authoredOn [ fhir:value "2026-05-22T09:30:00+02:00"^^xsd:dateTime] ;
+  fhir:ServiceRequest.requester [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/PractitionerRole/72101230445-PHYSICIAN> ;
+     fhir:Reference.reference [ fhir:value "PractitionerRole/72101230445-PHYSICIAN" ]
+  ] ;
+  fhir:ServiceRequest.reasonCode [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:48447003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "48447003" ] ;
+       fhir:Coding.display [ fhir:value "Chronic heart failure" ]
+     ]
+  ] ;
+  fhir:ServiceRequest.note [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-ext-codeableconcept" ] ;
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index -1 ;
+           fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-note-types" ] ;
+           fhir:Coding.code [ fhir:value "general-remarks" ]
+         ]
+       ]
+     ] ;
+     fhir:Annotation.text [
+       fhir:value "urn:be:fgov:pseudo-encrypted:v1:{{kid}}:{{encrypted-general-remarks}}" ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "marker" ] ;
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "format" ] ;
+           fhir:Extension.valueCode [ fhir:value "encrypted" ]
+         ], [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "version" ] ;
+           fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+         ] ;
+         fhir:Extension.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/ServiceRequest/example-drp-telemonitoring-chronic-heart-failure.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

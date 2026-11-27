@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-vs-telemonitoring-period-unit"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet be-vs-telemonitoring-period-unit</b></p><a name="be-vs-telemonitoring-period-unit"> </a><a name="hcbe-vs-telemonitoring-period-unit"> </a><ul><li>Include these codes as defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>d</td><td>day</td></tr><tr><td>wk</td><td>week</td></tr><tr><td>mo</td><td>month</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-period-unit"/>
+  <version value="4.0.0-draft"/>
+  <name value="BeVSTelemonitoringPeriodUnit"/>
+  <title value="Telemonitoring period unit"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-11-27T13:05:37+00:00"/>
+  <publisher value="Riziv-Inami Platform"/>
+  <contact>
+    <name value="Riziv-Inami Platform"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.riziv-inami.be/standards/fhir"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message Structure Smals"/>
+    <telecom>
+      <system value="email"/>
+      <value value="support-uhmep@smals.be"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Allowed UCUM time units for telemonitoring period configuration."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BE"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://unitsofmeasure.org"/>
+      <concept>
+        <code value="d"/>
+        <display value="day"/>
+      </concept>
+      <concept>
+        <code value="wk"/>
+        <display value="week"/>
+      </concept>
+      <concept>
+        <code value="mo"/>
+        <display value="month"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

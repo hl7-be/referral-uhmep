@@ -1,0 +1,189 @@
+[{
+  "id" : "be-ext-codeable-concept",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept",
+  "version" : "4.0.0-draft",
+  "name" : "BeExtCodeableConcept"
+},
+{
+  "id" : "be-ext-radiology-supporting-info-role",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role",
+  "version" : "4.0.0-draft",
+  "name" : "BeRadiologySupportingInfoRole"
+},
+{
+  "id" : "be-ext-telemonitoring-plan",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-telemonitoring-plan",
+  "version" : "4.0.0-draft",
+  "name" : "BeTelemonitoringPlan"
+},
+{
+  "id" : "be-cs-ereferral-designation-use",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/CodeSystem/be-cs-ereferral-designation-use",
+  "version" : "4.0.0-draft",
+  "name" : "BeCSeReferralDesignationUse"
+},
+{
+  "id" : "be-cs-ereferral-snomed-designation",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/CodeSystem/be-cs-ereferral-snomed-designation",
+  "version" : "4.0.0-draft",
+  "name" : "BeCSeReferralSnomedDesignation"
+},
+{
+  "id" : "inami.fhir.be.ereferral",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/ImplementationGuide/inami.fhir.be.ereferral",
+  "version" : "4.0.0-draft",
+  "name" : "EReferral"
+},
+{
+  "id" : "ereferral-annex-81",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-annex-81",
+  "version" : "4.0.0-draft",
+  "name" : "EReferralAnnex81"
+},
+{
+  "id" : "ereferral-imaging-attention-conditions-response",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response",
+  "version" : "4.0.0-draft",
+  "name" : "EReferralImagingAttentionConditionsResponse"
+},
+{
+  "id" : "ereferral-servicerequest-diagnosticimaging",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-diagnosticimaging",
+  "version" : "4.0.0-draft",
+  "name" : "EReferralServiceRequestDiagnosticImaging"
+},
+{
+  "id" : "ereferral-servicerequest-nursing",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-nursing",
+  "version" : "4.0.0-draft",
+  "name" : "EReferralServiceRequestNursing"
+},
+{
+  "id" : "ereferral-servicerequest-telemonitoring",
+  "type" : "StructureDefinition",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-servicerequest-telemonitoring",
+  "version" : "4.0.0-draft",
+  "name" : "eReferralServiceRequestTelemonitoring"
+},
+{
+  "id" : "be-vs-ereferral-snomed-designation",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/ValueSet/be-vs-ereferral-snomed-designation",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSeReferralSnomedDesignation"
+},
+{
+  "id" : "be-cs-pss-qsi-diagnostic-imaging-procedure",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure",
+  "version" : "4.0.0-draft",
+  "name" : "BeCSPSSQSIDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-cs-pss-qsi-indications",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-pss-qsi-indications",
+  "version" : "4.0.0-draft",
+  "name" : "BeCSPSSIndication"
+},
+{
+  "id" : "be-cs-radiology-supporting-info-role",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role",
+  "version" : "4.0.0-draft",
+  "name" : "BeCSRadiologySupportingInfoRole"
+},
+{
+  "id" : "be-cs-telemonitoring-completed-status-reason",
+  "type" : "CodeSystem",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-telemonitoring-completed-status-reason",
+  "version" : "4.0.0-draft",
+  "name" : "BeCSTelemonitoringCompletedStatusReason"
+},
+{
+  "id" : "be-vs-diagnostic-imaging-condition",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-condition",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSDiagnosticImagingCondition"
+},
+{
+  "id" : "be-vs-diagnostic-imaging-procedure",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-vs-hybrid-diagnostic-imaging-procedure",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-hybrid-diagnostic-imaging-procedure",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSHybridDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-vs-pss-qsi-diagnostic-imaging-procedure",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSPSSQSIDiagnosticImagingProcedure"
+},
+{
+  "id" : "be-vs-pss-qsi-indication",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-pss-qsi-indication",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSPSSQSIIndication"
+},
+{
+  "id" : "be-vs-radiology-supporting-info-role",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-radiology-supporting-info-role",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSRadiologySupportingInfoRole"
+},
+{
+  "id" : "be-vs-telemonitoring-completed-status-reason",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-completed-status-reason",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSTelemonitoringCompletedStatusReason"
+},
+{
+  "id" : "be-vs-telemonitoring-parameter-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-parameter-type",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSTelemonitoringParameterType"
+},
+{
+  "id" : "be-vs-telemonitoring-period-unit",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-period-unit",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSTelemonitoringPeriodUnit"
+},
+{
+  "id" : "be-vs-telemonitoring-prescription-technical-type",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-prescription-technical-type",
+  "version" : "4.0.0-draft",
+  "name" : "BeVSTelemonitoringTechnicalType"
+},
+{
+  "id" : "ereferral-vs-imaging-patient-condition-indication",
+  "type" : "ValueSet",
+  "url" : "https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication",
+  "version" : "4.0.0-draft",
+  "name" : "EReferralVSImagingPatientConditionIndication"
+}]

@@ -1,0 +1,420 @@
+EReferral : Validation Results
+=========================================
+
+err = 6, warn = 85, info = 57, broken links = 4
+$--
+Generated $--. FHIR version $-- for inami.fhir.be.ereferral#$-- (canonical = https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral)
+ Build Errors : 5 / 27 / 0
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-ereferral-snomed-designation : 0 / 3 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-pss-qsi-indications : 0 / 13 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-radiology-supporting-info-role : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/CodeSystem-be-cs-telemonitoring-completed-status-reason : 0 / 2 / 9
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral : 0 / 1 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Observation-example-telemonitoring-reference-weight : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-67120919457 : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-72101230445 : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-Requester1 : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Practitioner-practitioner2 : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/PractitionerRole-67120919457-NURSE : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/PractitionerRole-72101230445-PHYSICIAN : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/PractitionerRole-DOCTOR-10829059004 : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/PractitionerRole-DOCTOR-12009390800 : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/PractitionerRole-NURSE-45094508408 : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-clinical-imaging : 0 / 0 / 14
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-bloodletting : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-chronic-dialysis : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-de-convention-center : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-care-trajectory : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-start-trajectory : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-de-without-care-trajectory : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-generic : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-glycemic-test : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-hygienic-care : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-med-prep-not-refunded : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-med-preparation-appendix-81 : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-parameters : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-nursing-sampling : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-drp-telemonitoring-chronic-heart-failure : 2 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-prior-drp-clinical-imaging : 0 / 0 / 11
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-01 : 0 / 0 / 12
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-02 : 0 / 0 / 12
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-03 : 0 / 0 / 12
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-04 : 0 / 0 / 12
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-05 : 0 / 0 / 12
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-06 : 0 / 0 / 13
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-07 : 0 / 0 / 13
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-08 : 0 / 0 / 13
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-09 : 0 / 0 / 14
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-10 : 0 / 0 / 13
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-codeable-concept : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-be-ext-telemonitoring-plan : 0 / 0 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-annex-81 : 0 / 2 / 3
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-imaging-attention-conditions-response : 0 / 0 / 3
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-servicerequest-diagnosticimaging : 1 / 1 / 17
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-servicerequest-nursing : 0 / 1 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/StructureDefinition-ereferral-servicerequest-telemonitoring : 0 / 2 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/Task-ereferral-referral-task : 0 / 0 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-condition : 0 / 1 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-procedure : 1 / 10 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-ereferral-snomed-designation : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure : 0 / 1 / 4
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-pss-qsi-indication : 0 / 1 / 3
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-radiology-supporting-info-role : 0 / 1 / 2
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-telemonitoring-completed-status-reason : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-telemonitoring-parameter-type : 0 / 1 / 5
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-telemonitoring-period-unit : 0 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-be-vs-telemonitoring-prescription-technical-type : 1 / 1 / 1
+ /home/runner/work/referral-uhmep/referral-uhmep/fsh-generated/resources/ValueSet-ereferral-vs-imaging-patient-condition-indication : 0 / 1 / 3
+</table>
+
+== n/a ==
+ERROR: ImplementationGuide: The IG's repository has 8 scripts or programs in its root folder (/home/runner/work/referral-uhmep/referral-uhmep): _build.bat, _build.sh, _gencontinuous.bat, _gencontinuous.sh, _genonce.bat, _genonce.sh, _updatePublisher.bat, _updatePublisher.sh. Scripts and programs don't belong in an IG's repository: they arrive with every pull, and people run them out of habit, so anyone who can change the repository can run code on the computer of everyone who builds the IG. Remove them from the repository (people who want them can get them from their source, and keep them out of the IG's repository). IMPORTANT: in a future version of the IG Publisher, the build will stop here, and the ci-build will refuse to build the IG. If you accept these as they are, you can say so now by running the IG Publisher with '-allow-committed-scripts' (recorded in /home/runner/.fhir/fhir-settings.json, for this IG), and local builds will go on then (but not the ci-build). The IG Publisher doesn't check what they do: accepting them is your decision
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-codeable-concept.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 823 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-radiology-supporting-info-role.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 967 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-be-ext-telemonitoring-plan.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 1655 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-annex-81.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 5588 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-imaging-attention-conditions-response.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 2275 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-diagnosticimaging.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 7810 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-nursing.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 5982 column 13
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/StructureDefinition-ereferral-servicerequest-telemonitoring.html: The html source is not well formed: Found "</p>" expecting "</div>" at line 6000 column 13
+ERROR: en/changes.html#/html/body/div/div/div/div/div/p/a at Line 366, column 117: The link 'migration-2-1-to-3-0.html' for "Migration 2.1.0 to 3.0.0" cannot be resolved
+ERROR: en/changes.html#/html/body/div/div/div/div/div/details/p/a at Line 380, column 178: The link 'migration-2-1-to-3-0.html' for "migration checks" cannot be resolved
+ERROR: en/changes.html#/html/body/div/div/div/div/div/details/p/a at Line 384, column 509: The link 'migration-2-1-to-3-0.html' for "migration checks" cannot be resolved
+ERROR: en/downloads.html#/html/body/div/div/div/div/div/div/p/a at Line 286, column 51: The link 'full-ig.zip' for "here" cannot be resolved
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/index.html: Illegal HTML: Illegal HTML element: section
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 175
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 9
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 8
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 7
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 11
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 19
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 15
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 11
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/test-server.html#/html/body/div/div/div/div/div/script at Line 376, column 2: The <script> containing the javascript 'document.querySelect'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/en/test-server.html#/html/body/div/div/div/div/div/script at Line 482, column 2: The <script> containing the javascript 'document.querySelect'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 175
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 9
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 8
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 7
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 11
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 19
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 15
+WARNING: /home/runner/work/referral-uhmep/referral-uhmep/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 11
+
+
+== fsh-generated/resources/CodeSystem-be-cs-ereferral-designation-use.json ==
+WARNING: Resource: The resource CodeSystem/be-cs-ereferral-designation-use should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-be-cs-ereferral-snomed-designation.json ==
+WARNING: CodeSystem/be-cs-ereferral-snomed-designation: CodeSystem.supplements: A definition could not be found for Canonical URL 'http://snomed.info/sct/11000172109'
+WARNING: CodeSystem/be-cs-ereferral-snomed-designation: CodeSystem: CodeSystem http://snomed.info/sct/11000172109 cannot be found, so can't check if concepts are valid
+WARNING: Resource: The resource CodeSystem/be-cs-ereferral-snomed-designation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-be-cs-pss-qsi-diagnostic-imaging-procedure.json ==
+WARNING: Resource: The resource CodeSystem/be-cs-pss-qsi-diagnostic-imaging-procedure should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-be-cs-pss-qsi-indications.json ==
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[186].display: value should not start or finish with whitespace 'Angiodysplasia, stomach or duodenum '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[700].display: value should not start or finish with whitespace 'Carcinoma in situ, esophagus  '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1161].display: value should not start or finish with whitespace 'Duodenitis '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1452].display: value should not start or finish with whitespace 'Foreign body, bronchus '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1458].display: value should not start or finish with whitespace 'Foreign body, nasal '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1511].display: value should not start or finish with whitespace 'Gastritis '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[1962].display: value should not start or finish with whitespace 'Intraop or postop complications, MSK '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[2376].display: value should not start or finish with whitespace 'Mechanical breakdown, prosthetic orbit '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[3076].display: value should not start or finish with whitespace 'Phlebitis '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[3266].display: value should not start or finish with whitespace 'Raynaud's syndrome '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[4157].display: value should not start or finish with whitespace 'Uterine malformation suspected clinically '
+WARNING: CodeSystem/be-cs-pss-qsi-indications: CodeSystem.concept[4187].display: value should not start or finish with whitespace 'Varicella '
+WARNING: Resource: The resource CodeSystem/be-cs-pss-qsi-indications should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-be-cs-radiology-supporting-info-role.json ==
+WARNING: Resource: The resource CodeSystem/be-cs-radiology-supporting-info-role should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/CodeSystem-be-cs-telemonitoring-completed-status-reason.json ==
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[0].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[1].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[2].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[3].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[4].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+WARNING: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[4].property[0].value.ofType(Coding): The concept '161901003' has a status of inactive and its use should be reviewed
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[5].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.concept[6].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: CodeSystem/be-cs-telemonitoring-completed-status-reason: CodeSystem.property[0]: This property has only a code ('snomed') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+WARNING: Resource: The resource CodeSystem/be-cs-telemonitoring-completed-status-reason should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ImplementationGuide-inami.fhir.be.ereferral.json ==
+WARNING: ImplementationGuide/inami.fhir.be.ereferral: ImplementationGuide.dependsOn[3]: The ImplementationGuide uses package hl7.fhir.be.core-clinical#1.3.0 released on 2026-08-20, but the most recent appropriate version is 1.4.0. This reference is getting old and the more recent version should be considered
+INFORMATION: Resource: The resource ImplementationGuide/inami.fhir.be.ereferral could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Observation-example-telemonitoring-reference-weight.json ==
+WARNING: Observation/example-telemonitoring-reference-weight: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Practitioner-67120919457.json ==
+WARNING: Practitioner/67120919457: Practitioner.meta.profile[0]: There are multiple different potential matches for the url 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.2.0', found versions: 2.1.2 (from hl7.fhir.be.core#2.1.2), 2.2.0 (from hl7.fhir.be.core#2.2.0). Suggested fix: change the canonical reference from 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner' to 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.2.0'
+
+
+== fsh-generated/resources/Practitioner-72101230445.json ==
+WARNING: Practitioner/72101230445: Practitioner.meta.profile[0]: There are multiple different potential matches for the url 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.2.0', found versions: 2.1.2 (from hl7.fhir.be.core#2.1.2), 2.2.0 (from hl7.fhir.be.core#2.2.0). Suggested fix: change the canonical reference from 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner' to 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitioner|2.2.0'
+
+
+== fsh-generated/resources/Practitioner-Requester1.json ==
+
+
+== fsh-generated/resources/Practitioner-practitioner2.json ==
+
+
+== fsh-generated/resources/PractitionerRole-67120919457-NURSE.json ==
+WARNING: PractitionerRole/67120919457-NURSE: PractitionerRole.meta.profile[0]: There are multiple different potential matches for the url 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.2.0', found versions: 2.1.2 (from hl7.fhir.be.core#2.1.2), 2.2.0 (from hl7.fhir.be.core#2.2.0). Suggested fix: change the canonical reference from 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole' to 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole|2.2.0'
+
+
+== fsh-generated/resources/PractitionerRole-72101230445-PHYSICIAN.json ==
+WARNING: PractitionerRole/72101230445-PHYSICIAN: PractitionerRole.meta.profile[0]: There are multiple different potential matches for the url 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.2.0', found versions: 2.1.2 (from hl7.fhir.be.core#2.1.2), 2.2.0 (from hl7.fhir.be.core#2.2.0). Suggested fix: change the canonical reference from 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole' to 'https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-practitionerrole|2.2.0'
+
+
+== fsh-generated/resources/PractitionerRole-DOCTOR-10829059004.json ==
+
+
+== fsh-generated/resources/PractitionerRole-DOCTOR-12009390800.json ==
+
+
+== fsh-generated/resources/PractitionerRole-NURSE-45094508408.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-clinical-imaging.json ==
+INFORMATION: ServiceRequest/example-drp-clinical-imaging: ServiceRequest.contained[1]/*Patient/patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-bloodletting.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-chronic-dialysis.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-de-convention-center.json ==
+WARNING: ServiceRequest/example-drp-nursing-de-convention-center: ServiceRequest.orderDetail[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct/11000172109' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-care-trajectory.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-de-within-start-trajectory.json ==
+WARNING: ServiceRequest/example-drp-nursing-de-within-start-trajectory: ServiceRequest.orderDetail[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct/11000172109' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-de-without-care-trajectory.json ==
+WARNING: ServiceRequest/example-drp-nursing-de-without-care-trajectory: ServiceRequest.orderDetail[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct/11000172109' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-generic.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-glycemic-test.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-hygienic-care.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-med-prep-not-refunded.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-med-preparation-appendix-81.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-parameters.json ==
+WARNING: ServiceRequest/example-drp-nursing-parameters: ServiceRequest.orderDetail[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct/11000172109' could not be found, so the code cannot be validated
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-nursing-sampling.json ==
+
+
+== fsh-generated/resources/ServiceRequest-example-drp-telemonitoring-chronic-heart-failure.json ==
+INFORMATION: ServiceRequest/example-drp-telemonitoring-chronic-heart-failure: ServiceRequest.category[0]: None of the codings provided are in the value set 'eReferral Categories of Care' (https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-categories-of-care|1.0.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#394579002)
+ERROR: ServiceRequest/example-drp-telemonitoring-chronic-heart-failure: ServiceRequest.category[1].coding[0].code: Unknown code 'telemonitoring-chronic-heart-failure' in the CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type' version '1.0.0'
+ERROR: ServiceRequest/example-drp-telemonitoring-chronic-heart-failure: ServiceRequest.category[1]: None of the codings provided are in the value set 'eReferral Telemonitoring Prescription Technical Type' (https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-telemonitoring-prescription-technical-type|4.0.0-draft), and a coding from this value set is required) (codes = https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type#telemonitoring-chronic-heart-failure)
+
+
+== fsh-generated/resources/ServiceRequest-example-prior-drp-clinical-imaging.json ==
+INFORMATION: ServiceRequest/example-prior-drp-clinical-imaging: ServiceRequest.contained[0]/*Patient/prior-imaging-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-01.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-01: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-01-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-02.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-02: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-02-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-03.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-03: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-03-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-04.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-04: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-04-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-05.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-05: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-05-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-06.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-06: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-06-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-07.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-07: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-07-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-08.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-08: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-08-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-09.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-09: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-09-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/ServiceRequest-example-pss-radiology-scenario-10.json ==
+INFORMATION: ServiceRequest/example-pss-radiology-scenario-10: ServiceRequest.contained[0]/*Patient/pss-radiology-scenario-10-patient*/.birthDate.extension[0]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/core/StructureDefinition/be-patient|2.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/StructureDefinition-be-ext-codeable-concept.json ==
+INFORMATION: Resource: The resource StructureDefinition/be-ext-codeable-concept could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-be-ext-radiology-supporting-info-role.json ==
+INFORMATION: Resource: The resource StructureDefinition/be-ext-radiology-supporting-info-role could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-be-ext-telemonitoring-plan.json ==
+INFORMATION: Resource: The resource StructureDefinition/be-ext-telemonitoring-plan could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ereferral-annex-81.json ==
+INFORMATION: StructureDefinition/ereferral-annex-81: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.1 is deprecated with the note: 'Use additionalBinding extension or element instead'
+WARNING: StructureDefinition/ereferral-annex-81: StructureDefinition.snapshot.element[51].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/ereferral-annex-81: StructureDefinition.snapshot.element[52].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: Resource: The resource StructureDefinition/ereferral-annex-81 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ereferral-imaging-attention-conditions-response.json ==
+INFORMATION: Resource: The resource StructureDefinition/ereferral-imaging-attention-conditions-response could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+INFORMATION: StructureDefinition.where(url = 'https://www.ehealth.fgov.be/standards/fhir/riziv-inami-ereferral/StructureDefinition/ereferral-imaging-attention-conditions-response'): The Implementation Guide contains no explicitly linked examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-ereferral-servicerequest-diagnosticimaging.json ==
+INFORMATION: StructureDefinition.snapshot.element[110].binding.valueSet: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[141].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[153].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[158].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[170].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[171].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[183].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[195].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.snapshot.element[200].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.differential.element[26].binding.valueSet: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.differential.element[40].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.differential.element[46].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.differential.element[50].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.differential.element[54].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+INFORMATION: StructureDefinition.differential.element[60].type[0].profile[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+WARNING: StructureDefinition/ereferral-servicerequest-diagnosticimaging: StructureDefinition.snapshot.element[84].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+ERROR: StructureDefinition/ereferral-servicerequest-diagnosticimaging: StructureDefinition.snapshot.element[199].constraint[1]: Error in constraint 'ereferral-inv-patient-condition-strict' on element ServiceRequest.supportingInfo:patientCondition.extension:patientConditionCodeableConcept.value[x] with expression 'supportingInfo.where(extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-radiology-supporting-info-role').value = 'patient-condition').extension.where(url = 'https://www.ehealth.fgov.be/standards/fhir/referral/StructureDefinition/be-ext-codeable-concept').value.ofType(CodeableConcept).all((text.exists() and coding.empty()) or (text.empty() and coding.count() = 1 and memberOf('https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/ereferral-vs-imaging-patient-condition-indication')))': Error evaluating FHIRPath expression: The name 'supportingInfo' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/CodeableConcept] (@char 1)
+INFORMATION: Resource: The resource StructureDefinition/ereferral-servicerequest-diagnosticimaging could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ereferral-servicerequest-nursing.json ==
+WARNING: StructureDefinition/ereferral-servicerequest-nursing: StructureDefinition.snapshot.element[68].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: Resource: The resource StructureDefinition/ereferral-servicerequest-nursing could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/StructureDefinition-ereferral-servicerequest-telemonitoring.json ==
+WARNING: StructureDefinition/ereferral-servicerequest-telemonitoring: StructureDefinition: Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+WARNING: StructureDefinition/ereferral-servicerequest-telemonitoring: StructureDefinition.snapshot.element[103].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: Resource: The resource StructureDefinition/ereferral-servicerequest-telemonitoring could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/Task-ereferral-referral-task.json ==
+
+
+== fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-condition.json ==
+INFORMATION: ValueSet/be-vs-diagnostic-imaging-condition: ValueSet.compose.include[0]: The value set include has too many concepts to validate (1,032, more than the limit of 1,000), so each individual code has not been checked
+WARNING: Resource: The resource ValueSet/be-vs-diagnostic-imaging-condition should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-diagnostic-imaging-procedure.json ==
+ERROR: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[6]: The code '30367100' is not valid in the system http://snomed.info/sct (Unknown code '30367100' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20260701' (International Edition))
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[89].display: 'Computed tomography myelogram (procedure)' is no longer considered a correct display for code '241589001' (status = inactive). The correct display is one of CT myelography with contrast,Computed tomography myelography with contrast (procedure),Computed tomography myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[90].display: 'Computed tomography myelogram of cervical region (procedure)' is no longer considered a correct display for code '241590005' (status = inactive). The correct display is one of CT cervical myelography with contrast,Computed tomography cervical myelography with contrast (procedure),Computed tomography cervical myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[91].display: 'Computed tomography myelogram of thoracic region (procedure)' is no longer considered a correct display for code '241591009' (status = inactive). The correct display is one of CT thoracic myelography with contrast,Computed tomography thoracic myelography with contrast (procedure),Computed tomography thoracic myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[92].display: 'Computed tomography myelogram of lumbar region (procedure)' is no longer considered a correct display for code '241592002' (status = inactive). The correct display is one of CT lumbar myelography with contrast,Computed tomography lumbar myelography with contrast (procedure),Computed tomography lumbar myelography with contrast
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[255].display: 'Fluoroscopic cervical myelogram (procedure)' is no longer considered a correct display for code '417925004' (status = inactive). The correct display is one of Fluoroscopic cervical myelography with contrast,Fluoroscopic cervical myelography with contrast (procedure)
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[256].display: 'Fluoroscopic thoracic myelogram (procedure)' is no longer considered a correct display for code '419722002' (status = inactive). The correct display is one of Fluoroscopic thoracic myelography with contrast,Fluoroscopic thoracic myelography with contrast (procedure)
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[257].display: 'Fluoroscopic lumbar myelogram (procedure)' is no longer considered a correct display for code '418828001' (status = inactive). The correct display is one of Fluoroscopic lumbar myelography with contrast,Fluoroscopic lumbar myelography with contrast (procedure)
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[400].display: 'Ultrasound scan of abdomen and pelvis (procedure)' is no longer considered a correct display for code '418394000' (status = inactive). The correct display is one of Ultrasonography of abdomen and pelvis,Ultrasound scan of abdomen and pelvis,Ultrasonography of abdomen and pelvis (procedure),Ultrasound of abdomen and pelvis
+WARNING: ValueSet/be-vs-diagnostic-imaging-procedure: ValueSet.compose.include[0].concept[585].display: 'Dynamic plain X-ray of cervical vertebral column region (procedure)' is no longer considered a correct display for code '1362050003' (status = inactive). The correct display is one of Plain X-ray of cervical spine with flexion and extension,Dynamic plain X-ray of cervical vertebral column region,Dynamic plain X-ray of cervical spine,Plain X-ray of cervical spine with flexion and extension (procedure)
+WARNING: Resource: The resource ValueSet/be-vs-diagnostic-imaging-procedure should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-ereferral-snomed-designation.json ==
+WARNING: Resource: The resource ValueSet/be-vs-ereferral-snomed-designation should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-hybrid-diagnostic-imaging-procedure.json ==
+INFORMATION: ValueSet.compose.include[1].valueSet[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/ValueSet/be-vs-diagnostic-imaging-procedure to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+WARNING: Resource: The resource ValueSet/be-vs-hybrid-diagnostic-imaging-procedure should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+INFORMATION: ValueSet.where(id = 'be-vs-hybrid-diagnostic-imaging-procedure'): The value set expansion is too large, and only a subset has been displayed
+
+
+== fsh-generated/resources/ValueSet-be-vs-pss-qsi-diagnostic-imaging-procedure.json ==
+WARNING: Resource: The resource ValueSet/be-vs-pss-qsi-diagnostic-imaging-procedure should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-pss-qsi-indication.json ==
+WARNING: Resource: The resource ValueSet/be-vs-pss-qsi-indication should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+INFORMATION: ValueSet.where(id = 'be-vs-pss-qsi-indication'): The value set expansion is too large, and only a subset has been displayed
+
+
+== fsh-generated/resources/ValueSet-be-vs-radiology-supporting-info-role.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-radiology-supporting-info-role to 4.0.0-draft from choices of 1.0.0 (hl7.fhir.be.referral#1.0.0), 4.0.0-draft (inami.fhir.be.ereferral#4.0.0-draft)
+WARNING: Resource: The resource ValueSet/be-vs-radiology-supporting-info-role should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-telemonitoring-completed-status-reason.json ==
+WARNING: Resource: The resource ValueSet/be-vs-telemonitoring-completed-status-reason should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-telemonitoring-parameter-type.json ==
+INFORMATION: ValueSet/be-vs-telemonitoring-parameter-type: ValueSet.compose.include[0].concept[0].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: ValueSet/be-vs-telemonitoring-parameter-type: ValueSet.compose.include[0].concept[1].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: ValueSet/be-vs-telemonitoring-parameter-type: ValueSet.compose.include[0].concept[2].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+INFORMATION: ValueSet/be-vs-telemonitoring-parameter-type: ValueSet.compose.include[0].concept[3].designation[2].language: The value provided ('de-BE') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'de-BE' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#de-BE' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+WARNING: Resource: The resource ValueSet/be-vs-telemonitoring-parameter-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-telemonitoring-period-unit.json ==
+WARNING: Resource: The resource ValueSet/be-vs-telemonitoring-period-unit should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-be-vs-telemonitoring-prescription-technical-type.json ==
+ERROR: ValueSet/be-vs-telemonitoring-prescription-technical-type: ValueSet.compose.include[0].concept[0]: The code 'telemonitoring-chronic-heart-failure' is not valid in the system https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type (Unknown code 'telemonitoring-chronic-heart-failure' in the CodeSystem 'https://www.ehealth.fgov.be/standards/fhir/terminology/CodeSystem/be-cs-prescription-type' version '1.0.0')
+WARNING: Resource: The resource ValueSet/be-vs-telemonitoring-prescription-technical-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+
+== fsh-generated/resources/ValueSet-ereferral-vs-imaging-patient-condition-indication.json ==
+WARNING: Resource: The resource ValueSet/ereferral-vs-imaging-patient-condition-indication should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+INFORMATION: ValueSet.where(id = 'ereferral-vs-imaging-patient-condition-indication'): The value set expansion is too large, and only a subset has been displayed
+
+
